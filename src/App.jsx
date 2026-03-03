@@ -8,6 +8,7 @@ const NAV_ITEMS = [
   { label: "Service Areas", target: "areas" },
   { label: "Learning Center", target: "learning" },
   { label: "Careers", target: "careers" },
+  { label: "Instant Quote", target: "quote" },
 ];
 
 function scrollTo(id) {
@@ -254,6 +255,536 @@ const WHY_US = [
     competitor: "No local competitor has dedicated vertical pages",
   },
 ];
+// =============================================
+// INSTANT QUOTE CALCULATOR - DATA & LOGIC
+// =============================================
+
+const QUOTE_INDUSTRIES = [
+  { id: "office", icon: "🏢", title: "Commercial Office", desc: "Workspaces & Lobbies" },
+  { id: "medical", icon: "🏥", title: "Medical Facility", desc: "Clinics & Urgent Care" },
+  { id: "education", icon: "🏫", title: "Education", desc: "Schools & Universities" },
+  { id: "daycare", icon: "👶", title: "Daycare / Preschool", desc: "Early Childhood" },
+  { id: "church", icon: "⛪", title: "Religious", desc: "Places of Worship" },
+  { id: "fitness", icon: "💪", title: "Fitness Center", desc: "Gyms & Studios" },
+  { id: "retail", icon: "🏪", title: "Retail", desc: "Showrooms & Shops" },
+  { id: "warehouse", icon: "🏭", title: "Warehouse", desc: "Logistics & Storage" },
+  { id: "hoa", icon: "🏠", title: "HOA / Condo", desc: "Common Areas" },
+  { id: "hotel", icon: "🏨", title: "Hospitality", desc: "Hotels & Motels" },
+  { id: "government", icon: "🏛️", title: "Government", desc: "Municipal & Public" },
+];
+
+const PRESET_ROOMS = {
+  education: [
+    { name: "Classroom", minutesPerRoom: 15 }, { name: "Laboratory", minutesPerRoom: 17 },
+    { name: "Library", minutesPerRoom: 60 }, { name: "Cafeteria", minutesPerRoom: 60 },
+    { name: "Gymnasium", minutesPerRoom: 60 }, { name: "Auditorium", minutesPerRoom: 60 },
+    { name: "Office (Admin)", minutesPerRoom: 5 }, { name: "Staff Room", minutesPerRoom: 15 },
+    { name: "Restroom", minutesPerRoom: 15 }, { name: "Hallway", minutesPerRoom: 20 },
+    { name: "Staircase", minutesPerRoom: 15 }, { name: "Entryway/Lobby", minutesPerRoom: 15 },
+    { name: "Nurse's Office", minutesPerRoom: 7 }, { name: "Multipurpose Room", minutesPerRoom: 15 },
+  ],
+  office: [
+    { name: "Private Office", minutesPerRoom: 10 }, { name: "Conference Room", minutesPerRoom: 20 },
+    { name: "Open Workspace", minutesPerRoom: 30 }, { name: "Restroom", minutesPerRoom: 15 },
+    { name: "Kitchen/Breakroom", minutesPerRoom: 20 }, { name: "Lobby", minutesPerRoom: 15 },
+  ],
+  medical: [
+    { name: "Exam Room", minutesPerRoom: 20 }, { name: "Waiting Area", minutesPerRoom: 25 },
+    { name: "Lab", minutesPerRoom: 30 }, { name: "Restroom", minutesPerRoom: 15 },
+  ],
+  retail: [
+    { name: "Sales Floor", minutesPerRoom: 40 }, { name: "Stock Room", minutesPerRoom: 20 },
+    { name: "Restroom", minutesPerRoom: 15 },
+  ],
+  warehouse: [
+    { name: "Dock Area", minutesPerRoom: 30 }, { name: "Office", minutesPerRoom: 10 },
+    { name: "Restroom", minutesPerRoom: 15 },
+  ],
+  fitness: [
+    { name: "Main Weight Floor", minutesPerRoom: 45 }, { name: "Cardio Deck", minutesPerRoom: 40 },
+    { name: "Locker Room (Men)", minutesPerRoom: 60 }, { name: "Locker Room (Women)", minutesPerRoom: 60 },
+    { name: "Yoga/Group Studio", minutesPerRoom: 25 },
+  ],
+  daycare: [
+    { name: "Infant Room", minutesPerRoom: 40 }, { name: "Toddler Room", minutesPerRoom: 35 },
+    { name: "Indoor Play Area", minutesPerRoom: 45 }, { name: "Staff Lounge", minutesPerRoom: 15 },
+    { name: "Restroom", minutesPerRoom: 20 },
+  ],
+  hoa: [
+    { name: "Lobby", minutesPerRoom: 30 }, { name: "Corridor", minutesPerRoom: 20 },
+    { name: "Gym", minutesPerRoom: 45 }, { name: "Restroom", minutesPerRoom: 15 },
+  ],
+  hotel: [
+    { name: "Guest Room", minutesPerRoom: 30 }, { name: "Lobby", minutesPerRoom: 40 },
+    { name: "Public Restroom", minutesPerRoom: 20 },
+  ],
+  government: [
+    { name: "Public Office", minutesPerRoom: 15 }, { name: "Waiting Room", minutesPerRoom: 20 },
+    { name: "Restroom", minutesPerRoom: 20 },
+  ],
+  church: [
+    { name: "Main Sanctuary", minutesPerRoom: 60 }, { name: "Fellowship Hall", minutesPerRoom: 45 },
+    { name: "Nursery/Childcare", minutesPerRoom: 30 }, { name: "Classroom", minutesPerRoom: 15 },
+    { name: "Restroom", minutesPerRoom: 20 }, { name: "Vestibule/Lobby", minutesPerRoom: 25 },
+  ],
+};
+
+function formatCurrency(amount) {
+  return new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", minimumFractionDigits: 0, maximumFractionDigits: 0 }).format(amount);
+}
+
+function calculateQuote(settings, rooms, porters) {
+  const { industry, squareFootage, churchCapacity, seatingType, buildingSize, laborHoursPerDay, showerCount, hasSauna, studentCount, changingStations } = settings;
+  let grandTotal = 0;
+  const breakdown = [];
+  const DAYS_PER_MONTH = 21.67;
+  const INTERNAL_LABOR_COST = 17.50;
+  const HOURLY_RATE = parseFloat((INTERNAL_LABOR_COST / 0.72).toFixed(2));
+
+  const calcRoomLabor = (rmList) => {
+    const dailyMins = rmList.reduce((acc, r) => acc + (r.quantity * r.minutesPerRoom), 0);
+    const monthlyHours = (dailyMins / 60) * DAYS_PER_MONTH;
+    return { cost: monthlyHours * HOURLY_RATE, hours: monthlyHours };
+  };
+
+  let totalMonthlyHours = 0;
+
+  switch (industry) {
+    case "church": {
+      const d = calcRoomLabor(rooms);
+      const capRate = seatingType === "pews" ? 1.65 : 1.25;
+      const sanctuaryLabor = (churchCapacity || 250) * capRate * 4.33;
+      grandTotal = d.cost + sanctuaryLabor;
+      totalMonthlyHours = d.hours + sanctuaryLabor / HOURLY_RATE;
+      breakdown.push({ label: "Sanctuary Intensive Care", value: sanctuaryLabor }, { label: "Administrative & Annex Areas", value: d.cost });
+      break;
+    }
+    case "fitness": {
+      const base = squareFootage * 0.22;
+      const showerLabor = (showerCount || 0) * 45;
+      const saunaLabor = hasSauna ? 150 : 0;
+      grandTotal = base + showerLabor + saunaLabor;
+      totalMonthlyHours = grandTotal / HOURLY_RATE;
+      breakdown.push({ label: "Floor & Equipment Hygiene", value: base }, { label: "Wet Area Sanitation", value: showerLabor + saunaLabor });
+      break;
+    }
+    case "daycare": {
+      const d = calcRoomLabor(rooms);
+      const disinf = (studentCount || 20) * 18.50;
+      const stationLabor = (changingStations || 0) * 35;
+      grandTotal = d.cost + disinf + stationLabor;
+      totalMonthlyHours = d.hours + (disinf + stationLabor) / HOURLY_RATE;
+      breakdown.push({ label: "Core Facility Labor", value: d.cost }, { label: "Disinfection Surcharge", value: disinf + stationLabor });
+      break;
+    }
+    case "medical":
+      grandTotal = squareFootage * 0.26;
+      totalMonthlyHours = grandTotal / HOURLY_RATE;
+      breakdown.push({ label: "Terminal Sanitation Labor", value: grandTotal });
+      break;
+    case "education": {
+      const d = calcRoomLabor(rooms);
+      const porterHrs = porters.reduce((acc, p) => acc + p.quantity * p.hoursPerDay, 0) * DAYS_PER_MONTH;
+      const porterCost = porterHrs * (HOURLY_RATE * 1.15);
+      grandTotal = d.cost + porterCost;
+      totalMonthlyHours = d.hours + porterHrs;
+      breakdown.push({ label: "Academic Area Maintenance", value: d.cost }, { label: "Day Porter Logistics", value: porterCost });
+      break;
+    }
+    case "office":
+      grandTotal = squareFootage * 0.15;
+      totalMonthlyHours = grandTotal / HOURLY_RATE;
+      breakdown.push({ label: "Portfolio-Wide Logistics", value: grandTotal });
+      break;
+    case "warehouse": {
+      const whLabor = (laborHoursPerDay * DAYS_PER_MONTH) * HOURLY_RATE;
+      const scrub = (settings.warehouseScrubbingSqFt || 5000) * 0.10;
+      grandTotal = whLabor + scrub;
+      totalMonthlyHours = laborHoursPerDay * DAYS_PER_MONTH;
+      breakdown.push({ label: "Managed Man-Hours", value: whLabor }, { label: "Machine Scrubbing", value: scrub });
+      break;
+    }
+    case "hotel": {
+      const guestCost = (settings.hotelRooms || 50) * 15;
+      const commonCost = squareFootage * 0.17;
+      grandTotal = guestCost + commonCost;
+      totalMonthlyHours = grandTotal / HOURLY_RATE;
+      breakdown.push({ label: "BOH Operational Support", value: guestCost }, { label: "FOH Public Visibility", value: commonCost });
+      break;
+    }
+    case "hoa":
+      if (buildingSize === "small") grandTotal = 1100;
+      else if (buildingSize === "medium") grandTotal = 2600;
+      else if (buildingSize === "large") grandTotal = 3200;
+      else grandTotal = 5500;
+      totalMonthlyHours = grandTotal / HOURLY_RATE;
+      breakdown.push({ label: "Amenity Maintenance", value: grandTotal });
+      break;
+    default:
+      grandTotal = squareFootage * 0.18;
+      totalMonthlyHours = grandTotal / HOURLY_RATE;
+      breakdown.push({ label: "Facility Maintenance", value: grandTotal });
+  }
+
+  if (settings.serviceType === "onetime") {
+    grandTotal = grandTotal * 0.8;
+  }
+
+  return { grandTotal, breakdown };
+}
+
+// =============================================
+// QUOTE CALCULATOR COMPONENT
+// =============================================
+
+function QuoteCalculator() {
+  const [step, setStep] = useState("industry"); // industry | objective | calculator
+  const [settings, setSettings] = useState({
+    industry: "office", serviceType: "recurring", squareFootage: 5000,
+    frequencyPerWeek: 3, hotelRooms: 50, churchCapacity: 300, seatingType: "pews",
+    buildingSize: "medium", retailSize: "medium", laborHoursPerDay: 4,
+    warehouseScrubbingSqFt: 5000, showerCount: 2, hasSauna: false,
+    studentCount: 50, changingStations: 2,
+  });
+  const [rooms, setRooms] = useState([]);
+  const [porters, setPorters] = useState([{ id: "p1", name: "Day Porter", quantity: 0, hoursPerDay: 4 }]);
+
+  const quote = calculateQuote(settings, rooms, porters);
+
+  const selectIndustry = (id) => {
+    setSettings((p) => ({ ...p, industry: id }));
+    const presets = PRESET_ROOMS[id] || [];
+    setRooms(presets.map((p, i) => ({ id: `r${i}`, name: p.name, quantity: 0, minutesPerRoom: p.minutesPerRoom })));
+    setStep("objective");
+  };
+
+  const selectObjective = (type) => {
+    setSettings((p) => ({ ...p, serviceType: type }));
+    setStep("calculator");
+  };
+
+  const updateRoom = (id, field, value) => setRooms((prev) => prev.map((r) => (r.id === id ? { ...r, [field]: value } : r)));
+  const removeRoom = (id) => setRooms((prev) => prev.filter((r) => r.id !== id));
+  const addRoom = (preset) => {
+    if (preset) {
+      const p = (PRESET_ROOMS[settings.industry] || []).find((x) => x.name === preset);
+      if (p) setRooms((prev) => [...prev, { id: "r" + Math.random().toString(36).slice(2, 8), name: p.name, quantity: 1, minutesPerRoom: p.minutesPerRoom }]);
+    } else {
+      setRooms((prev) => [...prev, { id: "r" + Math.random().toString(36).slice(2, 8), name: "Custom Area", quantity: 1, minutesPerRoom: 15 }]);
+    }
+  };
+
+  const cardBase = {
+    background: "#fff", borderRadius: 16, border: "1px solid #eee",
+    transition: "all 0.3s", cursor: "pointer",
+  };
+
+  // ---- STEP 1: Industry Selection ----
+  if (step === "industry") {
+    return (
+      <section id="quote" style={{ background: "linear-gradient(165deg, #0a1a12, #0d2818, #122d1c)", padding: "100px 24px" }}>
+        <div style={{ maxWidth: 1280, margin: "0 auto", textAlign: "center" }}>
+          <div style={{ fontSize: 12, color: "#2ecc71", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'DM Sans', sans-serif" }}>
+            Step 1 of 3 — Instant Quote Calculator
+          </div>
+          <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 48px)", fontWeight: 700, color: "#fff", lineHeight: 1.15, marginBottom: 16 }}>
+            Select Your <span style={{ color: "#2ecc71" }}>Facility Type</span>
+          </h2>
+          <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 16, color: "rgba(255,255,255,0.5)", marginBottom: 48, maxWidth: 560, margin: "0 auto 48px" }}>
+            Choose your industry and get a customized cleaning estimate in under 60 seconds.
+          </p>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: 16, maxWidth: 1000, margin: "0 auto" }}>
+            {QUOTE_INDUSTRIES.map((ind) => (
+              <div
+                key={ind.id}
+                onClick={() => selectIndustry(ind.id)}
+                style={{
+                  background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.1)",
+                  borderRadius: 16, padding: "32px 20px", cursor: "pointer", textAlign: "center",
+                  transition: "all 0.3s",
+                }}
+                onMouseOver={(e) => { e.currentTarget.style.borderColor = "#2ecc71"; e.currentTarget.style.background = "rgba(46,204,113,0.08)"; e.currentTarget.style.transform = "translateY(-4px)"; }}
+                onMouseOut={(e) => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.1)"; e.currentTarget.style.background = "rgba(255,255,255,0.04)"; e.currentTarget.style.transform = "translateY(0)"; }}
+              >
+                <div style={{ fontSize: 36, marginBottom: 12 }}>{ind.icon}</div>
+                <div style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 700, fontSize: 15, color: "#fff", marginBottom: 4 }}>{ind.title}</div>
+                <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)", textTransform: "uppercase", letterSpacing: "0.08em" }}>{ind.desc}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  // ---- STEP 2: Service Type ----
+  if (step === "objective") {
+    return (
+      <section id="quote" style={{ background: "linear-gradient(165deg, #0a1a12, #0d2818, #122d1c)", padding: "100px 24px" }}>
+        <div style={{ maxWidth: 800, margin: "0 auto", textAlign: "center" }}>
+          <button onClick={() => setStep("industry")} style={{ background: "none", border: "none", color: "rgba(255,255,255,0.4)", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", cursor: "pointer", marginBottom: 32, fontFamily: "'DM Sans', sans-serif" }}>← Back to Industries</button>
+          <div style={{ fontSize: 12, color: "#2ecc71", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'DM Sans', sans-serif" }}>Step 2 of 3</div>
+          <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 48px)", fontWeight: 700, color: "#fff", lineHeight: 1.15, marginBottom: 48 }}>Service Frequency</h2>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }} className="quote-freq-grid">
+            <div
+              onClick={() => selectObjective("recurring")}
+              style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 20, padding: 40, cursor: "pointer", textAlign: "left", transition: "all 0.3s" }}
+              onMouseOver={(e) => { e.currentTarget.style.borderColor = "#2ecc71"; e.currentTarget.style.transform = "translateY(-4px)"; }}
+              onMouseOut={(e) => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.1)"; e.currentTarget.style.transform = "translateY(0)"; }}
+            >
+              <div style={{ fontSize: 36, marginBottom: 16 }}>📅</div>
+              <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 22, fontWeight: 700, color: "#fff", marginBottom: 8 }}>Ongoing Maintenance</div>
+              <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.5)" }}>Regular daily or weekly cleaning services.</div>
+            </div>
+            <div
+              onClick={() => selectObjective("onetime")}
+              style={{ background: "rgba(46,204,113,0.08)", border: "1px solid rgba(46,204,113,0.25)", borderRadius: 20, padding: 40, cursor: "pointer", textAlign: "left", transition: "all 0.3s" }}
+              onMouseOver={(e) => { e.currentTarget.style.borderColor = "#2ecc71"; e.currentTarget.style.transform = "translateY(-4px)"; }}
+              onMouseOut={(e) => { e.currentTarget.style.borderColor = "rgba(46,204,113,0.25)"; e.currentTarget.style.transform = "translateY(0)"; }}
+            >
+              <div style={{ fontSize: 36, marginBottom: 16 }}>✨</div>
+              <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 22, fontWeight: 700, color: "#fff", marginBottom: 8 }}>One-Time Deep Clean</div>
+              <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.5)" }}>Post-construction, move-in/out, or seasonal refresh.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  // ---- STEP 3: Calculator ----
+  const industryPresets = PRESET_ROOMS[settings.industry] || [];
+  const industryLabel = QUOTE_INDUSTRIES.find((i) => i.id === settings.industry)?.title || settings.industry;
+
+  return (
+    <section id="quote" style={{ background: "linear-gradient(165deg, #0a1a12, #0d2818, #122d1c)", padding: "100px 24px" }}>
+      <div style={{ maxWidth: 1280, margin: "0 auto" }}>
+        {/* Header */}
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 40, paddingBottom: 20, borderBottom: "1px solid rgba(255,255,255,0.08)", flexWrap: "wrap", gap: 12 }}>
+          <button onClick={() => setStep("objective")} style={{ background: "none", border: "none", color: "rgba(255,255,255,0.4)", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", cursor: "pointer", fontFamily: "'DM Sans', sans-serif" }}>← Change Service</button>
+          <div style={{ display: "flex", gap: 10 }}>
+            <span style={{ background: "rgba(46,204,113,0.12)", color: "#2ecc71", padding: "6px 14px", borderRadius: 100, fontSize: 12, fontWeight: 700, fontFamily: "'DM Sans', sans-serif", textTransform: "capitalize" }}>{industryLabel}</span>
+            <span style={{ background: "rgba(255,255,255,0.08)", color: "rgba(255,255,255,0.6)", padding: "6px 14px", borderRadius: 100, fontSize: 12, fontWeight: 700, fontFamily: "'DM Sans', sans-serif", textTransform: "capitalize" }}>{settings.serviceType === "recurring" ? "Ongoing" : "One-Time"}</span>
+          </div>
+        </div>
+
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 380px", gap: 40, alignItems: "start" }} className="quote-calc-grid">
+          {/* Left: Controls */}
+          <div>
+            {/* Square Footage */}
+            {!["church"].includes(settings.industry) && (
+              <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20, padding: 32, marginBottom: 24 }}>
+                <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 12 }}>Total Square Footage</div>
+                <div style={{ display: "flex", alignItems: "baseline", gap: 10, marginBottom: 16 }}>
+                  <span style={{ fontFamily: "'Playfair Display', serif", fontSize: 36, fontWeight: 800, color: "#fff" }}>{settings.squareFootage.toLocaleString()}</span>
+                  <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.4)" }}>Sq. Ft.</span>
+                </div>
+                <input type="range" min={settings.industry === "education" ? 5000 : 1000} max={settings.industry === "education" ? 250000 : 50000} step={500} value={settings.squareFootage}
+                  onChange={(e) => setSettings({ ...settings, squareFootage: parseInt(e.target.value) })}
+                  style={{ width: "100%", accentColor: "#2ecc71" }} />
+              </div>
+            )}
+
+            {/* Industry-specific controls */}
+            {settings.industry === "church" && (
+              <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20, padding: 32, marginBottom: 24 }}>
+                <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 12 }}>Sanctuary Capacity</div>
+                <div style={{ display: "flex", alignItems: "baseline", gap: 10, marginBottom: 16 }}>
+                  <span style={{ fontFamily: "'Playfair Display', serif", fontSize: 36, fontWeight: 800, color: "#fff" }}>{settings.churchCapacity}</span>
+                  <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.4)" }}>seats</span>
+                </div>
+                <input type="range" min={50} max={2000} step={50} value={settings.churchCapacity}
+                  onChange={(e) => setSettings({ ...settings, churchCapacity: parseInt(e.target.value) })}
+                  style={{ width: "100%", accentColor: "#2ecc71" }} />
+                <div style={{ display: "flex", gap: 10, marginTop: 16 }}>
+                  {["pews", "chairs"].map((t) => (
+                    <button key={t} onClick={() => setSettings({ ...settings, seatingType: t })}
+                      style={{ padding: "8px 20px", borderRadius: 8, border: "1px solid", borderColor: settings.seatingType === t ? "#2ecc71" : "rgba(255,255,255,0.15)", background: settings.seatingType === t ? "rgba(46,204,113,0.15)" : "transparent", color: settings.seatingType === t ? "#2ecc71" : "rgba(255,255,255,0.5)", fontSize: 13, fontWeight: 600, cursor: "pointer", fontFamily: "'DM Sans', sans-serif", textTransform: "capitalize" }}>{t}</button>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {settings.industry === "fitness" && (
+              <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20, padding: 32, marginBottom: 24 }}>
+                <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 16 }}>Wet Area Details</div>
+                <div style={{ display: "flex", gap: 24, flexWrap: "wrap" }}>
+                  <div>
+                    <label style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.6)", display: "block", marginBottom: 6 }}>Shower Stalls</label>
+                    <input type="number" value={settings.showerCount} min={0}
+                      onChange={(e) => setSettings({ ...settings, showerCount: parseInt(e.target.value) || 0 })}
+                      style={{ width: 80, padding: "8px 12px", borderRadius: 8, border: "1px solid rgba(255,255,255,0.15)", background: "rgba(255,255,255,0.06)", color: "#fff", fontSize: 15, fontFamily: "'DM Sans', sans-serif", textAlign: "center" }} />
+                  </div>
+                  <label style={{ display: "flex", alignItems: "center", gap: 10, cursor: "pointer" }}>
+                    <input type="checkbox" checked={settings.hasSauna} onChange={(e) => setSettings({ ...settings, hasSauna: e.target.checked })} style={{ accentColor: "#2ecc71", width: 18, height: 18 }} />
+                    <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.7)" }}>Has Sauna / Steam Room</span>
+                  </label>
+                </div>
+              </div>
+            )}
+
+            {settings.industry === "daycare" && (
+              <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20, padding: 32, marginBottom: 24 }}>
+                <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 16 }}>Enrollment Details</div>
+                <div style={{ display: "flex", gap: 24, flexWrap: "wrap" }}>
+                  <div>
+                    <label style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.6)", display: "block", marginBottom: 6 }}>Students Enrolled</label>
+                    <input type="number" value={settings.studentCount} min={1}
+                      onChange={(e) => setSettings({ ...settings, studentCount: parseInt(e.target.value) || 1 })}
+                      style={{ width: 80, padding: "8px 12px", borderRadius: 8, border: "1px solid rgba(255,255,255,0.15)", background: "rgba(255,255,255,0.06)", color: "#fff", fontSize: 15, fontFamily: "'DM Sans', sans-serif", textAlign: "center" }} />
+                  </div>
+                  <div>
+                    <label style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.6)", display: "block", marginBottom: 6 }}>Changing Stations</label>
+                    <input type="number" value={settings.changingStations} min={0}
+                      onChange={(e) => setSettings({ ...settings, changingStations: parseInt(e.target.value) || 0 })}
+                      style={{ width: 80, padding: "8px 12px", borderRadius: 8, border: "1px solid rgba(255,255,255,0.15)", background: "rgba(255,255,255,0.06)", color: "#fff", fontSize: 15, fontFamily: "'DM Sans', sans-serif", textAlign: "center" }} />
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {settings.industry === "hoa" && (
+              <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20, padding: 32, marginBottom: 24 }}>
+                <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 16 }}>Building Size</div>
+                <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
+                  {["small", "medium", "large", "luxury"].map((s) => (
+                    <button key={s} onClick={() => setSettings({ ...settings, buildingSize: s })}
+                      style={{ padding: "10px 20px", borderRadius: 8, border: "1px solid", borderColor: settings.buildingSize === s ? "#2ecc71" : "rgba(255,255,255,0.15)", background: settings.buildingSize === s ? "rgba(46,204,113,0.15)" : "transparent", color: settings.buildingSize === s ? "#2ecc71" : "rgba(255,255,255,0.5)", fontSize: 13, fontWeight: 600, cursor: "pointer", fontFamily: "'DM Sans', sans-serif", textTransform: "capitalize" }}>{s}</button>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {settings.industry === "warehouse" && (
+              <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20, padding: 32, marginBottom: 24 }}>
+                <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 16 }}>Labor Details</div>
+                <div style={{ display: "flex", gap: 24, flexWrap: "wrap", alignItems: "flex-end" }}>
+                  <div>
+                    <label style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.6)", display: "block", marginBottom: 6 }}>Labor Hours/Day</label>
+                    <input type="number" value={settings.laborHoursPerDay} min={1} max={16}
+                      onChange={(e) => setSettings({ ...settings, laborHoursPerDay: parseInt(e.target.value) || 4 })}
+                      style={{ width: 80, padding: "8px 12px", borderRadius: 8, border: "1px solid rgba(255,255,255,0.15)", background: "rgba(255,255,255,0.06)", color: "#fff", fontSize: 15, fontFamily: "'DM Sans', sans-serif", textAlign: "center" }} />
+                  </div>
+                  <div>
+                    <label style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.6)", display: "block", marginBottom: 6 }}>Scrubbing Sq Ft</label>
+                    <input type="number" value={settings.warehouseScrubbingSqFt} min={0} step={1000}
+                      onChange={(e) => setSettings({ ...settings, warehouseScrubbingSqFt: parseInt(e.target.value) || 0 })}
+                      style={{ width: 120, padding: "8px 12px", borderRadius: 8, border: "1px solid rgba(255,255,255,0.15)", background: "rgba(255,255,255,0.06)", color: "#fff", fontSize: 15, fontFamily: "'DM Sans', sans-serif", textAlign: "center" }} />
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* Room Breakdown */}
+            <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20, padding: 32, marginBottom: 24 }}>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 20, flexWrap: "wrap", gap: 12 }}>
+                <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: 20, fontWeight: 700, color: "#fff", margin: 0 }}>Room Breakdown</h3>
+                <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
+                  <select
+                    onChange={(e) => { if (e.target.value) { addRoom(e.target.value); e.target.value = ""; } }}
+                    style={{ padding: "8px 14px", borderRadius: 8, border: "1px solid rgba(255,255,255,0.15)", background: "rgba(255,255,255,0.06)", color: "rgba(255,255,255,0.7)", fontSize: 13, fontFamily: "'DM Sans', sans-serif", cursor: "pointer" }}>
+                    <option value="">+ Add Room Type</option>
+                    {industryPresets.map((p) => (<option key={p.name} value={p.name}>{p.name}</option>))}
+                  </select>
+                  <button onClick={() => addRoom(null)} style={{ background: "none", border: "none", color: "#2ecc71", fontSize: 12, fontWeight: 700, cursor: "pointer", fontFamily: "'DM Sans', sans-serif", whiteSpace: "nowrap" }}>+ Custom</button>
+                </div>
+              </div>
+
+              {rooms.length === 0 && (
+                <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.3)", textAlign: "center", padding: 24 }}>Add rooms above to build your quote.</p>
+              )}
+
+              <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+                {rooms.map((room) => (
+                  <div key={room.id} style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)", borderRadius: 12, padding: "12px 16px", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12 }}>
+                    <input type="text" value={room.name} onChange={(e) => updateRoom(room.id, "name", e.target.value)}
+                      style={{ background: "transparent", border: "none", color: "#fff", fontFamily: "'DM Sans', sans-serif", fontWeight: 600, fontSize: 14, flex: 1, minWidth: 0, outline: "none" }} />
+                    <div style={{ display: "flex", alignItems: "center", gap: 10, flexShrink: 0 }}>
+                      <button onClick={() => updateRoom(room.id, "quantity", Math.max(0, room.quantity - 1))}
+                        style={{ width: 32, height: 32, borderRadius: "50%", border: "1px solid rgba(255,255,255,0.15)", background: "transparent", color: "rgba(255,255,255,0.5)", fontSize: 18, cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center" }}>−</button>
+                      <span style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 800, fontSize: 16, color: "#fff", minWidth: 24, textAlign: "center" }}>{room.quantity}</span>
+                      <button onClick={() => updateRoom(room.id, "quantity", room.quantity + 1)}
+                        style={{ width: 32, height: 32, borderRadius: "50%", border: "1px solid rgba(46,204,113,0.3)", background: "rgba(46,204,113,0.08)", color: "#2ecc71", fontSize: 18, cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center" }}>+</button>
+                      <button onClick={() => removeRoom(room.id)}
+                        style={{ background: "none", border: "none", color: "rgba(255,255,255,0.2)", fontSize: 16, cursor: "pointer", padding: "0 4px" }}>✕</button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Porter Services */}
+            {["education", "office", "medical"].includes(settings.industry) && (
+              <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20, padding: 32 }}>
+                <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: 20, fontWeight: 700, color: "#fff", marginBottom: 20 }}>Day Porter Services</h3>
+                {porters.map((porter) => (
+                  <div key={porter.id} style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)", borderRadius: 12, padding: 16, display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 16 }}>
+                    <div>
+                      <div style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 700, fontSize: 15, color: "#fff" }}>{porter.name}</div>
+                      <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)", textTransform: "uppercase", letterSpacing: "0.08em" }}>Daily On-site Support</div>
+                    </div>
+                    <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
+                      <div style={{ textAlign: "center" }}>
+                        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10, color: "rgba(255,255,255,0.4)", textTransform: "uppercase", marginBottom: 4 }}>Hrs/Day</div>
+                        <input type="number" value={porter.hoursPerDay} min={1} max={12}
+                          onChange={(e) => setPorters((prev) => prev.map((p) => (p.id === porter.id ? { ...p, hoursPerDay: parseFloat(e.target.value) || 4 } : p)))}
+                          style={{ width: 56, padding: "6px", borderRadius: 8, border: "1px solid rgba(255,255,255,0.15)", background: "rgba(255,255,255,0.06)", color: "#fff", fontSize: 14, fontFamily: "'DM Sans', sans-serif", textAlign: "center" }} />
+                      </div>
+                      <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                        <button onClick={() => setPorters((prev) => prev.map((p) => (p.id === porter.id ? { ...p, quantity: Math.max(0, p.quantity - 1) } : p)))}
+                          style={{ width: 32, height: 32, borderRadius: "50%", border: "1px solid rgba(255,255,255,0.15)", background: "transparent", color: "rgba(255,255,255,0.5)", fontSize: 18, cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center" }}>−</button>
+                        <span style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 800, fontSize: 16, color: "#fff", minWidth: 20, textAlign: "center" }}>{porter.quantity}</span>
+                        <button onClick={() => setPorters((prev) => prev.map((p) => (p.id === porter.id ? { ...p, quantity: p.quantity + 1 } : p)))}
+                          style={{ width: 32, height: 32, borderRadius: "50%", border: "1px solid rgba(46,204,113,0.3)", background: "rgba(46,204,113,0.08)", color: "#2ecc71", fontSize: 18, cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center" }}>+</button>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Right: Quote Summary (sticky) */}
+          <div style={{ position: "sticky", top: 100 }}>
+            <div style={{ background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 20, padding: 36, backdropFilter: "blur(10px)" }}>
+              <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "#2ecc71", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 12 }}>
+                {settings.serviceType === "recurring" ? "Estimated Monthly Cost" : "One-Time Deep Clean"}
+              </div>
+              <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 44, fontWeight: 800, color: "#fff", marginBottom: 24, lineHeight: 1 }}>
+                {formatCurrency(quote.grandTotal)}
+                {settings.serviceType === "recurring" && <span style={{ fontSize: 16, color: "rgba(255,255,255,0.4)", fontFamily: "'DM Sans', sans-serif", fontWeight: 600 }}> /mo</span>}
+              </div>
+
+              <div style={{ background: "rgba(255,255,255,0.04)", borderRadius: 12, padding: 16, marginBottom: 24 }}>
+                {quote.breakdown.map((item, i) => (
+                  <div key={i} style={{ display: "flex", justifyContent: "space-between", padding: "10px 0", borderBottom: i < quote.breakdown.length - 1 ? "1px solid rgba(255,255,255,0.06)" : "none" }}>
+                    <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.5)" }}>{item.label}</span>
+                    <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 700, color: "#fff" }}>{formatCurrency(item.value)}</span>
+                  </div>
+                ))}
+              </div>
+
+              <a href="#" onClick={(e) => { e.preventDefault(); const el = document.getElementById("contact"); if (el) el.scrollIntoView({ behavior: "smooth" }); }}
+                style={{ display: "block", width: "100%", padding: "14px", background: "linear-gradient(135deg, #2ecc71, #27ae60)", border: "none", borderRadius: 10, color: "#fff", fontSize: 14, fontWeight: 700, fontFamily: "'DM Sans', sans-serif", textAlign: "center", textDecoration: "none", boxShadow: "0 4px 20px rgba(46,204,113,0.3)", boxSizing: "border-box", cursor: "pointer" }}>
+                Request Formal Proposal →
+              </a>
+
+              <button onClick={() => { setStep("industry"); setRooms([]); setPorters([{ id: "p1", name: "Day Porter", quantity: 0, hoursPerDay: 4 }]); }}
+                style={{ display: "block", width: "100%", marginTop: 12, padding: "12px", background: "none", border: "none", color: "rgba(255,255,255,0.35)", fontSize: 12, fontWeight: 600, fontFamily: "'DM Sans', sans-serif", cursor: "pointer", textTransform: "uppercase", letterSpacing: "0.08em" }}>
+                Start Over
+              </button>
+
+              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.25)", textAlign: "center", marginTop: 16, lineHeight: 1.5 }}>
+                Estimate based on industry standards. Final pricing confirmed after complimentary walkthrough.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function useInView(options = {}) {
   const ref = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -1483,6 +2014,8 @@ export default function GreenPointWebsite() {
         .mobile-toggle { display: none !important; }
         @media (max-width: 1024px) {
           .hero-grid, .about-grid, .janitrack-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+          .quote-calc-grid { grid-template-columns: 1fr !important; }
+          .quote-freq-grid { grid-template-columns: 1fr !important; }
           .hero-form { order: -1; }
           .services-grid, .testimonials-grid, .blog-grid { grid-template-columns: 1fr 1fr !important; }
           .stats-grid { grid-template-columns: 1fr 1fr !important; }
@@ -1513,6 +2046,7 @@ export default function GreenPointWebsite() {
       <Services />
       <IndustriesSection />
       <ProcessSection />
+      <QuoteCalculator />
       <JaniTrack />
       <WhyGreenPoint />
       <TestimonialsSection />
