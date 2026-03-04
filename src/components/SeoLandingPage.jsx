@@ -11,7 +11,7 @@ import {
 const PHONE_NUMBER = "347-332-9348";
 const PHONE_HREF = "tel:+13473329348";
 
-function getIndustryIcon(key, size = 20, color = "#2ecc71") {
+function getIndustryIcon(key, size = 20, color = "#00E676") {
   const map = {
     school: <SchoolIcon size={size} color={color} />,
     church: <ChurchIcon size={size} color={color} />,
@@ -42,7 +42,7 @@ export default function SeoLandingPage({
   const [openFaq, setOpenFaq] = useState(null);
 
   return (
-    <div style={{ fontFamily: "'DM Sans', sans-serif", margin: 0, padding: 0 }}>
+    <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", margin: 0, padding: 0, background: "#060A07" }}>
       <style>{`
         @keyframes seoFadeUp {
           from { opacity: 0; transform: translateY(24px); }
@@ -53,30 +53,22 @@ export default function SeoLandingPage({
           to { opacity: 1; transform: scale(1); }
         }
         @keyframes seoPulseDot {
-          0%, 100% { box-shadow: 0 0 0 0 rgba(46,204,113,0.5); }
-          60% { box-shadow: 0 0 0 8px rgba(46,204,113,0); }
+          0%, 100% { box-shadow: 0 0 0 0 rgba(0,230,118,0.5); }
+          60% { box-shadow: 0 0 0 8px rgba(0,230,118,0); }
         }
         .seo-fade-up { animation: seoFadeUp 0.7s ease forwards; opacity: 0; }
         .seo-scale-in { animation: seoScaleIn 0.5s ease forwards; opacity: 0; }
         .seo-live-dot { animation: seoPulseDot 2.5s ease infinite; }
-        @keyframes seoShimmer {
-          0% { transform: translateX(-100%); }
-          100% { transform: translateX(200%); }
-        }
-        .seo-svc-card { transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; position: relative; overflow: hidden; }
-        .seo-svc-card:hover { transform: translateY(-4px) !important; box-shadow: 0 16px 48px rgba(0,0,0,0.09) !important; border-color: rgba(46,204,113,0.4) !important; }
-        .seo-svc-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, #2ecc71, #27ae60, #2ecc71); background-size: 200% auto; animation: seoShimmer 2s linear infinite; opacity: 0; transition: opacity 0.3s ease; }
-        .seo-svc-card:hover::before { opacity: 1; }
-        .seo-dot-texture { background-image: radial-gradient(circle, rgba(0,0,0,0.04) 1px, transparent 1px); background-size: 24px 24px; }
-        .seo-why-card { transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease; }
-        .seo-why-card:hover { background: rgba(255,255,255,0.08) !important; border-color: rgba(46,204,113,0.3) !important; transform: translateY(-2px); }
+        .seo-svc-card { transition: transform 0.3s ease, border-color 0.3s ease; }
+        .seo-svc-card:hover { transform: translateY(-4px) !important; border-color: rgba(0,230,118,0.3) !important; }
+        .seo-why-card { transition: border-color 0.25s ease, transform 0.25s ease; }
+        .seo-why-card:hover { border-color: rgba(0,230,118,0.25) !important; transform: translateY(-2px); }
         .seo-cta-primary { transition: transform 0.3s ease, box-shadow 0.3s ease; }
-        .seo-cta-primary:hover { transform: translateY(-3px) !important; box-shadow: 0 12px 40px rgba(46,204,113,0.55) !important; }
-        .seo-cta-ghost { transition: background 0.3s ease, border-color 0.3s ease; }
-        .seo-cta-ghost:hover { background: rgba(255,255,255,0.12) !important; border-color: rgba(255,255,255,0.35) !important; }
-        .seo-faq-row { transition: border-left-color 0.3s ease; border-left: 3px solid transparent; }
-        .seo-faq-row.faq-open { border-left-color: #2ecc71; }
-        .seo-faq-btn:hover span:first-child { color: #2ecc71 !important; }
+        .seo-cta-primary:hover { transform: translateY(-2px) !important; box-shadow: 0 8px 40px rgba(0,230,118,0.35) !important; }
+        .seo-cta-ghost { transition: border-color 0.3s ease; }
+        .seo-cta-ghost:hover { border-color: rgba(0,230,118,0.4) !important; color: #00E676 !important; }
+        .seo-faq-row { transition: border-left-color 0.3s ease; border-left: 2px solid transparent; }
+        .seo-faq-row.faq-open { border-left-color: #00E676; }
         @media (max-width: 640px) { .why-grid-seo { grid-template-columns: 1fr !important; } }
       `}</style>
 
@@ -87,38 +79,35 @@ export default function SeoLandingPage({
 
       {/* Hero */}
       <section style={{
-        position: "relative", background: "linear-gradient(165deg, #0a1a12 0%, #0d2818 40%, #122d1c 100%)",
+        position: "relative", background: "#060A07",
         padding: "140px 24px 80px", overflow: "hidden",
       }}>
-        {/* Background depth */}
-        <div style={{ position: "absolute", top: -200, right: -200, width: 700, height: 700, background: "radial-gradient(circle, rgba(46,204,113,0.1) 0%, transparent 65%)", borderRadius: "50%", pointerEvents: "none" }} />
-        <div style={{ position: "absolute", bottom: -100, left: -100, width: 400, height: 400, background: "radial-gradient(circle, rgba(46,204,113,0.05) 0%, transparent 70%)", borderRadius: "50%", pointerEvents: "none" }} />
         <div style={{ position: "absolute", inset: 0, opacity: 0.03, backgroundImage: "linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)", backgroundSize: "60px 60px", pointerEvents: "none" }} />
 
         <div style={{ position: "relative", zIndex: 2, maxWidth: 880, margin: "0 auto", textAlign: "center" }}>
           {/* Credential badge */}
           <div className="seo-fade-up" style={{ animationDelay: "0s" }}>
             <div style={{
-              display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(46,204,113,0.1)",
-              border: "1px solid rgba(46,204,113,0.25)", borderRadius: 100, padding: "6px 16px", marginBottom: 28,
+              display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(0,230,118,0.08)",
+              border: "1px solid rgba(0,230,118,0.15)", borderRadius: 0, padding: "6px 16px", marginBottom: 28,
             }}>
-              <div className="seo-live-dot" style={{ width: 8, height: 8, borderRadius: "50%", background: "#2ecc71" }} />
-              <span style={{ fontSize: 12, color: "#2ecc71", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", fontFamily: "'DM Sans', sans-serif" }}>
+              <div className="seo-live-dot" style={{ width: 6, height: 6, borderRadius: 0, background: "#00E676" }} />
+              <span style={{ fontSize: 10, color: "#00E676", fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", fontFamily: "'JetBrains Mono', monospace" }}>
                 MBE Certified · Licensed & Insured · SAM.gov Registered
               </span>
             </div>
           </div>
 
           <h1 className="seo-fade-up" style={{
-            fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(32px, 5vw, 56px)",
-            fontWeight: 700, color: "#fff", lineHeight: 1.1, marginBottom: 24, letterSpacing: "-0.02em",
+            fontFamily: "'Syne', sans-serif", fontSize: "clamp(32px, 5vw, 56px)",
+            fontWeight: 800, color: "#fff", lineHeight: 1.05, marginBottom: 24, letterSpacing: "-0.03em",
             animationDelay: "0.15s",
           }}>
-            {headline} <span style={{ color: "#2ecc71" }}>{highlightWord}</span>
+            {headline} <span style={{ color: "#00E676" }}>{highlightWord}</span>
           </h1>
 
           <p className="seo-fade-up" style={{
-            fontFamily: "'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.6)",
+            fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.55)",
             lineHeight: 1.7, marginBottom: 36, maxWidth: 640, margin: "0 auto 36px",
             animationDelay: "0.3s",
           }}>
@@ -127,18 +116,20 @@ export default function SeoLandingPage({
 
           <div className="seo-fade-up" style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap", animationDelay: "0.45s" }}>
             <a href="/#contact" className="seo-cta-primary" style={{
-              background: "linear-gradient(135deg, #2ecc71, #27ae60)", color: "#fff", padding: "16px 36px",
-              borderRadius: 10, fontWeight: 700, fontSize: 16, textDecoration: "none", fontFamily: "'DM Sans', sans-serif",
-              boxShadow: "0 4px 28px rgba(46,204,113,0.4)", display: "inline-flex", alignItems: "center", gap: 8,
+              background: "#00E676", color: "#060A07", padding: "16px 36px",
+              borderRadius: 4, fontWeight: 700, fontSize: 13, textDecoration: "none", fontFamily: "'Syne', sans-serif",
+              letterSpacing: "0.06em", textTransform: "uppercase",
+              display: "inline-flex", alignItems: "center", gap: 8,
             }}>
               Schedule a Free Walkthrough →
             </a>
             <a href={PHONE_HREF} className="seo-cta-ghost" style={{
-              background: "rgba(255,255,255,0.05)", color: "#fff", padding: "16px 36px",
-              borderRadius: 10, fontWeight: 600, fontSize: 16, textDecoration: "none", fontFamily: "'DM Sans', sans-serif",
+              background: "transparent", color: "#fff", padding: "16px 36px",
+              borderRadius: 4, fontWeight: 600, fontSize: 13, textDecoration: "none", fontFamily: "'Syne', sans-serif",
               border: "1px solid rgba(255,255,255,0.15)", display: "inline-flex", alignItems: "center", gap: 8,
+              letterSpacing: "0.04em", textTransform: "uppercase",
             }}>
-              <PhoneIcon size={18} color="#2ecc71" /> {PHONE_NUMBER}
+              <PhoneIcon size={16} color="#00E676" /> {PHONE_NUMBER}
             </a>
           </div>
 
@@ -146,12 +137,12 @@ export default function SeoLandingPage({
             <div style={{ display: "flex", gap: 12, justifyContent: "center", marginTop: 40, flexWrap: "wrap" }}>
               {trustBadges.map((badge, bi) => (
                 <div key={badge} className="seo-scale-in" style={{
-                  display: "flex", alignItems: "center", gap: 6, background: "rgba(46,204,113,0.08)",
-                  border: "1px solid rgba(46,204,113,0.2)", borderRadius: 100, padding: "5px 14px",
+                  display: "flex", alignItems: "center", gap: 6, background: "rgba(0,230,118,0.06)",
+                  border: "1px solid rgba(0,230,118,0.15)", borderRadius: 0, padding: "5px 14px",
                   animationDelay: `${0.6 + bi * 0.1}s`,
                 }}>
-                  <span style={{ color: "#2ecc71", fontWeight: 700, fontSize: 12 }}>✓</span>
-                  <span style={{ color: "rgba(255,255,255,0.7)", fontSize: 12, fontFamily: "'DM Sans', sans-serif", fontWeight: 600 }}>{badge}</span>
+                  <span style={{ color: "#00E676", fontWeight: 700, fontSize: 11, fontFamily: "'JetBrains Mono', monospace" }}>✓</span>
+                  <span style={{ color: "rgba(255,255,255,0.65)", fontSize: 11, fontFamily: "'JetBrains Mono', monospace", fontWeight: 500, letterSpacing: "0.05em" }}>{badge}</span>
                 </div>
               ))}
             </div>
@@ -159,13 +150,16 @@ export default function SeoLandingPage({
         </div>
       </section>
 
+      {/* Diagonal cut */}
+      <div style={{ height: 60, marginTop: -1, background: "linear-gradient(to bottom right, #060A07 49.5%, #0A0F0B 50.5%)" }} />
+
       {/* Intro Content */}
       {introParagraphs.length > 0 && (
-        <section style={{ background: "#fff", padding: "80px 24px", borderBottom: "1px solid #f0f0f0" }}>
+        <section style={{ background: "#0A0F0B", padding: "80px 24px" }}>
           <div style={{ maxWidth: 800, margin: "0 auto" }}>
             {introParagraphs.map((para, i) => (
               <p key={i} style={{
-                fontFamily: "'DM Sans', sans-serif", fontSize: 17, color: "#444", lineHeight: 1.85,
+                fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 17, color: "rgba(255,255,255,0.6)", lineHeight: 1.85,
                 marginBottom: i < introParagraphs.length - 1 ? 24 : 0,
               }}>
                 {para}
@@ -177,21 +171,26 @@ export default function SeoLandingPage({
 
       {/* Services Grid */}
       {services.length > 0 && (
-        <section className="seo-dot-texture" style={{ background: "#fafbfa", padding: "80px 24px" }}>
+        <section style={{ background: "#060A07", padding: "80px 24px" }}>
           <div style={{ maxWidth: 1280, margin: "0 auto" }}>
-            <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 700, color: "#0d2818", textAlign: "center", marginBottom: 48 }}>
-              What's Included
+            <div style={{ display: "flex", alignItems: "center", gap: 16, justifyContent: "center", marginBottom: 16 }}>
+              <div style={{ height: 1, width: 48, background: "rgba(0,230,118,0.3)" }} />
+              <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "#00E676", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase" }}>Services Included</span>
+              <div style={{ height: 1, width: 48, background: "rgba(0,230,118,0.3)" }} />
+            </div>
+            <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 800, color: "#fff", textAlign: "center", marginBottom: 48, letterSpacing: "-0.02em" }}>
+              What&apos;s Included
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 24 }}>
               {services.map((svc, i) => (
                 <div key={i} className="seo-svc-card" style={{
-                  background: "#fff", borderRadius: 16, padding: 32, border: "1px solid #eee",
+                  background: "#0D1310", borderRadius: 0, padding: 32, border: "1px solid rgba(0,230,118,0.08)",
                 }}>
-                  <div style={{ width: 48, height: 48, borderRadius: 12, background: "rgba(46,204,113,0.08)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 16, border: "1px solid rgba(46,204,113,0.12)" }}>
+                  <div style={{ width: 48, height: 48, borderRadius: 0, background: "rgba(0,230,118,0.08)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 16, border: "1px solid rgba(0,230,118,0.12)" }}>
                     {getIndustryIcon(svc.iconKey || "building", 24)}
                   </div>
-                  <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: 18, fontWeight: 700, color: "#0d2818", marginBottom: 8 }}>{svc.title}</h3>
-                  <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: "#666", lineHeight: 1.7 }}>{svc.desc}</p>
+                  <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: 18, fontWeight: 700, color: "#fff", marginBottom: 8 }}>{svc.title}</h3>
+                  <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.55)", lineHeight: 1.7 }}>{svc.desc}</p>
                 </div>
               ))}
             </div>
@@ -199,27 +198,33 @@ export default function SeoLandingPage({
         </section>
       )}
 
+      {/* Diagonal cut */}
+      <div style={{ height: 60, marginTop: -1, background: "linear-gradient(to bottom left, #060A07 49.5%, #0A0F0B 50.5%)" }} />
+
       {/* Why Choose Us */}
       {whyChooseUs.length > 0 && (
-        <section style={{ background: "linear-gradient(165deg, #0a1a12 0%, #0d2818 50%, #122d1c 100%)", padding: "80px 24px", position: "relative", overflow: "hidden" }}>
-          <div style={{ position: "absolute", top: -150, right: -150, width: 500, height: 500, background: "radial-gradient(circle, rgba(46,204,113,0.07) 0%, transparent 70%)", borderRadius: "50%", pointerEvents: "none" }} />
-          <div style={{ position: "absolute", inset: 0, opacity: 0.025, backgroundImage: "linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)", backgroundSize: "60px 60px", pointerEvents: "none" }} />
+        <section style={{ background: "#0A0F0B", padding: "80px 24px", position: "relative" }}>
           <div style={{ maxWidth: 880, margin: "0 auto", position: "relative", zIndex: 1 }}>
-            <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 700, color: "#fff", textAlign: "center", marginBottom: 48 }}>
-              Why Facility Managers Choose <span style={{ color: "#2ecc71" }}>GreenPoint</span>
+            <div style={{ display: "flex", alignItems: "center", gap: 16, justifyContent: "center", marginBottom: 16 }}>
+              <div style={{ height: 1, width: 48, background: "rgba(0,230,118,0.3)" }} />
+              <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "#00E676", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase" }}>Why GreenPoint</span>
+              <div style={{ height: 1, width: 48, background: "rgba(0,230,118,0.3)" }} />
+            </div>
+            <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 800, color: "#fff", textAlign: "center", marginBottom: 48, letterSpacing: "-0.02em" }}>
+              Why Facility Managers Choose <span style={{ color: "#00E676" }}>GreenPoint</span>
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }} className="why-grid-seo">
               {whyChooseUs.map((item, i) => (
                 <div key={i} className="seo-why-card" style={{
-                  background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)",
-                  borderRadius: 14, padding: 28, display: "flex", gap: 16, alignItems: "flex-start",
+                  background: "#0D1310", border: "1px solid rgba(0,230,118,0.08)",
+                  borderRadius: 0, padding: 28, display: "flex", gap: 16, alignItems: "flex-start",
                 }}>
-                  <div style={{ width: 40, height: 40, borderRadius: 10, background: "rgba(46,204,113,0.12)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, border: "1px solid rgba(46,204,113,0.15)" }}>
+                  <div style={{ width: 40, height: 40, borderRadius: 0, background: "rgba(0,230,118,0.08)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, border: "1px solid rgba(0,230,118,0.12)" }}>
                     {getIndustryIcon(item.iconKey || "shield", 20)}
                   </div>
                   <div>
-                    <div style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 700, fontSize: 15, color: "#fff", marginBottom: 6 }}>{item.title}</div>
-                    <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.55)", lineHeight: 1.7 }}>{item.desc}</div>
+                    <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 15, color: "#fff", marginBottom: 6 }}>{item.title}</div>
+                    <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.7 }}>{item.desc}</div>
                   </div>
                 </div>
               ))}
@@ -228,25 +233,33 @@ export default function SeoLandingPage({
         </section>
       )}
 
+      {/* Diagonal cut */}
+      <div style={{ height: 60, marginTop: -1, background: "linear-gradient(to bottom right, #0A0F0B 49.5%, #060A07 50.5%)" }} />
+
       {/* FAQ */}
       {faqItems.length > 0 && (
-        <section style={{ background: "#fff", padding: "80px 24px" }}>
+        <section style={{ background: "#060A07", padding: "80px 24px" }}>
           <div style={{ maxWidth: 800, margin: "0 auto" }}>
-            <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 700, color: "#0d2818", textAlign: "center", marginBottom: 48 }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 16, justifyContent: "center", marginBottom: 16 }}>
+              <div style={{ height: 1, width: 48, background: "rgba(0,230,118,0.3)" }} />
+              <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "#00E676", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase" }}>FAQ</span>
+              <div style={{ height: 1, width: 48, background: "rgba(0,230,118,0.3)" }} />
+            </div>
+            <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 800, color: "#fff", textAlign: "center", marginBottom: 48, letterSpacing: "-0.02em" }}>
               Frequently Asked Questions
             </h2>
             {faqItems.map((item, i) => (
-              <div key={i} className={`seo-faq-row${openFaq === i ? " faq-open" : ""}`} style={{ borderBottom: "1px solid #eee" }}>
+              <div key={i} className={`seo-faq-row${openFaq === i ? " faq-open" : ""}`} style={{ borderBottom: "1px solid rgba(255,255,255,0.06)" }}>
                 <button className="seo-faq-btn" onClick={() => setOpenFaq(openFaq === i ? null : i)}
                   style={{
                     width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center",
                     padding: "20px 0 20px 16px", background: "none", border: "none", cursor: "pointer", textAlign: "left", gap: 20,
                   }}>
-                  <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 16, fontWeight: 600, color: openFaq === i ? "#2ecc71" : "#0d2818", transition: "color 0.2s", lineHeight: 1.4 }}>{item.q}</span>
-                  <span style={{ fontSize: 22, color: openFaq === i ? "#2ecc71" : "#aaa", flexShrink: 0, transform: openFaq === i ? "rotate(45deg)" : "rotate(0deg)", transition: "transform 0.3s, color 0.2s" }}>+</span>
+                  <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 15, fontWeight: 600, color: openFaq === i ? "#00E676" : "#fff", transition: "color 0.2s", lineHeight: 1.4 }}>{item.q}</span>
+                  <span style={{ fontSize: 22, color: openFaq === i ? "#00E676" : "rgba(255,255,255,0.3)", flexShrink: 0, transform: openFaq === i ? "rotate(45deg)" : "rotate(0deg)", transition: "transform 0.3s, color 0.2s" }}>+</span>
                 </button>
                 <div style={{ maxHeight: openFaq === i ? 400 : 0, overflow: "hidden", transition: "max-height 0.4s ease", paddingBottom: openFaq === i ? 20 : 0, paddingLeft: 16 }}>
-                  <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 15, color: "#555", lineHeight: 1.8, paddingRight: 48 }}>{item.a}</p>
+                  <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 15, color: "rgba(255,255,255,0.55)", lineHeight: 1.8, paddingRight: 48 }}>{item.a}</p>
                 </div>
               </div>
             ))}
@@ -255,35 +268,40 @@ export default function SeoLandingPage({
       )}
 
       {/* CTA */}
-      <section style={{ background: "linear-gradient(165deg, #0a1a12 0%, #0d2818 50%, #122d1c 100%)", padding: "100px 24px", position: "relative", overflow: "hidden" }}>
-        <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", width: 700, height: 700, background: "radial-gradient(circle, rgba(46,204,113,0.12) 0%, transparent 60%)", borderRadius: "50%", pointerEvents: "none" }} />
-        <div style={{ position: "absolute", inset: 0, opacity: 0.025, backgroundImage: "linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)", backgroundSize: "60px 60px", pointerEvents: "none" }} />
+      <section style={{ background: "#0A0F0B", padding: "100px 24px", position: "relative", overflow: "hidden" }}>
         <div style={{ maxWidth: 700, margin: "0 auto", textAlign: "center", position: "relative", zIndex: 1 }}>
-          <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(24px, 3vw, 40px)", fontWeight: 700, color: "#fff", marginBottom: 16, lineHeight: 1.15 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 16, justifyContent: "center", marginBottom: 16 }}>
+            <div style={{ height: 1, width: 48, background: "rgba(0,230,118,0.3)" }} />
+            <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "#00E676", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase" }}>Get Started</span>
+            <div style={{ height: 1, width: 48, background: "rgba(0,230,118,0.3)" }} />
+          </div>
+          <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(24px, 3vw, 40px)", fontWeight: 800, color: "#fff", marginBottom: 16, lineHeight: 1.1, letterSpacing: "-0.02em" }}>
             {ctaHeadline}
           </h2>
-          <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 16, color: "rgba(255,255,255,0.6)", lineHeight: 1.7, marginBottom: 40 }}>
+          <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "rgba(255,255,255,0.5)", lineHeight: 1.7, marginBottom: 40 }}>
             {ctaSubheadline}
           </p>
           <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
             <a href="/#contact" className="seo-cta-primary" style={{
-              background: "linear-gradient(135deg, #2ecc71, #27ae60)", color: "#fff", padding: "18px 40px",
-              borderRadius: 10, fontWeight: 700, fontSize: 16, textDecoration: "none", fontFamily: "'DM Sans', sans-serif",
-              boxShadow: "0 4px 28px rgba(46,204,113,0.4)", display: "inline-flex", alignItems: "center", gap: 8,
+              background: "#00E676", color: "#060A07", padding: "18px 40px",
+              borderRadius: 4, fontWeight: 700, fontSize: 13, textDecoration: "none", fontFamily: "'Syne', sans-serif",
+              letterSpacing: "0.06em", textTransform: "uppercase",
+              display: "inline-flex", alignItems: "center", gap: 8,
             }}>
               Schedule My Walkthrough →
             </a>
             <a href={PHONE_HREF} className="seo-cta-ghost" style={{
-              background: "rgba(255,255,255,0.07)", color: "#fff", padding: "18px 40px",
-              borderRadius: 10, fontWeight: 600, fontSize: 16, textDecoration: "none", fontFamily: "'DM Sans', sans-serif",
-              border: "1px solid rgba(255,255,255,0.2)", display: "inline-flex", alignItems: "center", gap: 8,
+              background: "transparent", color: "#fff", padding: "18px 40px",
+              borderRadius: 4, fontWeight: 600, fontSize: 13, textDecoration: "none", fontFamily: "'Syne', sans-serif",
+              border: "1px solid rgba(255,255,255,0.15)", display: "inline-flex", alignItems: "center", gap: 8,
+              letterSpacing: "0.04em", textTransform: "uppercase", transition: "border-color 0.3s, color 0.3s",
             }}>
-              <PhoneIcon size={18} color="#2ecc71" /> {PHONE_NUMBER}
+              <PhoneIcon size={16} color="#00E676" /> {PHONE_NUMBER}
             </a>
           </div>
           <div style={{ marginTop: 20 }}>
-            <a href="/#schedule" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.5)", textDecoration: "none", transition: "color 0.2s" }}
-              onMouseOver={(e) => e.target.style.color = "#2ecc71"} onMouseOut={(e) => e.target.style.color = "rgba(255,255,255,0.5)"}>
+            <a href="/#schedule" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.4)", textDecoration: "none", transition: "color 0.2s" }}
+              onMouseOver={(e) => e.target.style.color = "#00E676"} onMouseOut={(e) => e.target.style.color = "rgba(255,255,255,0.4)"}>
               Or schedule a consultation online →
             </a>
           </div>
@@ -295,11 +313,11 @@ export default function SeoLandingPage({
               { label: "Hours", value: "Mon–Sat 7AM–8PM · 24/7 Emergency" },
             ].map((info) => (
               <div key={info.label} style={{ textAlign: "center" }}>
-                <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: 6 }}>{info.label}</div>
+                <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "rgba(255,255,255,0.35)", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 6 }}>{info.label}</div>
                 {info.href ? (
-                  <a href={info.href} style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 15, color: "rgba(255,255,255,0.85)", fontWeight: 600, textDecoration: "none", display: "block" }}>{info.value}</a>
+                  <a href={info.href} style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 15, color: "rgba(255,255,255,0.8)", fontWeight: 600, textDecoration: "none", display: "block" }}>{info.value}</a>
                 ) : (
-                  <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.7)", fontWeight: 500 }}>{info.value}</div>
+                  <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.6)", fontWeight: 500 }}>{info.value}</div>
                 )}
               </div>
             ))}

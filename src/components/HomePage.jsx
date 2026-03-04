@@ -10,33 +10,24 @@ import {
 } from './Icons';
 
 // Angled SVG section divider — use between dark/light section transitions
-function SectionDivider({ fromColor = "#0a1a12", toColor = "#fff" }) {
+function SectionDivider({ fromColor = "#060A07", toColor = "#0A0F0B" }) {
   return (
-    <div style={{ position: "relative", height: 60, background: toColor, marginTop: -1, lineHeight: 0 }}>
-      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style={{ width: "100%", height: "100%", display: "block" }}>
-        <path d="M0,0 L1440,0 L0,60 Z" fill={fromColor} />
-      </svg>
-    </div>
+    <div style={{ height: 60, marginTop: -1, background: `linear-gradient(to bottom right, ${fromColor} 49.5%, ${toColor} 50.5%)` }} />
   );
 }
 
-// Reverse: light section above, dark below
-function SectionDividerReverse({ fromColor = "#fff", toColor = "#0a1a12" }) {
+function SectionDividerReverse({ fromColor = "#0A0F0B", toColor = "#060A07" }) {
   return (
-    <div style={{ position: "relative", height: 60, background: toColor, marginTop: -1, lineHeight: 0 }}>
-      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style={{ width: "100%", height: "100%", display: "block" }}>
-        <path d="M1440,0 L1440,60 L0,60 Z" fill={fromColor} />
-      </svg>
-    </div>
+    <div style={{ height: 60, marginTop: -1, background: `linear-gradient(to bottom left, ${fromColor} 49.5%, ${toColor} 50.5%)` }} />
   );
 }
 
 // Icon wrapper for consistent sizing in cards
-function IconBox({ children, size = 48, bg = 'rgba(46,204,113,0.08)', radius = 14, dark = false }) {
+function IconBox({ children, size = 48, bg = 'rgba(0,230,118,0.08)', radius = 0, dark = false }) {
   return (
     <div style={{
       width: size, height: size, borderRadius: radius,
-      background: dark ? 'rgba(46,204,113,0.12)' : bg,
+      background: dark ? 'rgba(0,230,118,0.12)' : bg,
       display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0,
     }}>
       {children}
@@ -45,7 +36,7 @@ function IconBox({ children, size = 48, bg = 'rgba(46,204,113,0.08)', radius = 1
 }
 
 // Icon resolver - maps string keys to SVG components
-function getIcon(key, size = 28, color = '#2ecc71') {
+function getIcon(key, size = 28, color = '#00E676') {
   const icons = {
     'building': <BuildingIcon size={size} color={color} />,
     'shield-check': <ShieldCheckIcon size={size} color={color} />,
@@ -568,15 +559,15 @@ function QuoteCalculator() {
   // ---- STEP 1: Industry Selection ----
   if (step === "industry") {
     return (
-      <section id="quote" style={{ background: "linear-gradient(165deg, #0a1a12, #0d2818, #122d1c)", padding: "100px 24px" }}>
+      <section id="quote" style={{ background: "#060A07", padding: "100px 24px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto", textAlign: "center" }}>
-          <div style={{ fontSize: 12, color: "#2ecc71", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'DM Sans', sans-serif" }}>
+          <div style={{ fontSize: 10, color: "#00E676", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
             Step 1 of 3 — Instant Quote Calculator
           </div>
-          <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 48px)", fontWeight: 700, color: "#fff", lineHeight: 1.15, marginBottom: 16 }}>
-            Select Your <span style={{ color: "#2ecc71" }}>Facility Type</span>
+          <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 4vw, 48px)", fontWeight: 700, color: "#fff", lineHeight: 1.15, marginBottom: 16 }}>
+            Select Your <span style={{ color: "#00E676" }}>Facility Type</span>
           </h2>
-          <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 16, color: "rgba(255,255,255,0.5)", marginBottom: 48, maxWidth: 560, margin: "0 auto 48px" }}>
+          <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "rgba(255,255,255,0.5)", marginBottom: 48, maxWidth: 560, margin: "0 auto 48px" }}>
             Choose your industry and get a customized cleaning estimate in under 60 seconds.
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: 16, maxWidth: 1000, margin: "0 auto" }}>
@@ -589,15 +580,15 @@ function QuoteCalculator() {
                   borderRadius: 16, padding: "32px 20px", cursor: "pointer", textAlign: "center",
                   transition: "all 0.3s",
                 }}
-                onMouseOver={(e) => { e.currentTarget.style.borderColor = "#2ecc71"; e.currentTarget.style.background = "rgba(46,204,113,0.08)"; e.currentTarget.style.transform = "translateY(-4px)"; }}
+                onMouseOver={(e) => { e.currentTarget.style.borderColor = "#00E676"; e.currentTarget.style.background = "rgba(0,230,118,0.08)"; e.currentTarget.style.transform = "translateY(-4px)"; }}
                 onMouseOut={(e) => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.1)"; e.currentTarget.style.background = "rgba(255,255,255,0.04)"; e.currentTarget.style.transform = "translateY(0)"; }}
               >
                 <IconBox size={56} radius={14} dark>
                   {getIcon(ind.iconKey, 28)}
                 </IconBox>
                 <div style={{ height: 12 }} />
-                <div style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 700, fontSize: 15, color: "#fff", marginBottom: 4 }}>{ind.title}</div>
-                <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)", textTransform: "uppercase", letterSpacing: "0.08em" }}>{ind.desc}</div>
+                <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 700, fontSize: 15, color: "#fff", marginBottom: 4 }}>{ind.title}</div>
+                <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)", textTransform: "uppercase", letterSpacing: "0.08em" }}>{ind.desc}</div>
               </div>
             ))}
           </div>
@@ -609,37 +600,37 @@ function QuoteCalculator() {
   // ---- STEP 2: Service Type ----
   if (step === "objective") {
     return (
-      <section id="quote" style={{ background: "linear-gradient(165deg, #0a1a12, #0d2818, #122d1c)", padding: "100px 24px" }}>
+      <section id="quote" style={{ background: "#060A07", padding: "100px 24px" }}>
         <div style={{ maxWidth: 800, margin: "0 auto", textAlign: "center" }}>
-          <button onClick={() => setStep("industry")} style={{ background: "none", border: "none", color: "rgba(255,255,255,0.4)", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", cursor: "pointer", marginBottom: 32, fontFamily: "'DM Sans', sans-serif" }}>← Back to Industries</button>
-          <div style={{ fontSize: 12, color: "#2ecc71", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'DM Sans', sans-serif" }}>Step 2 of 3</div>
-          <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 48px)", fontWeight: 700, color: "#fff", lineHeight: 1.15, marginBottom: 48 }}>Service Frequency</h2>
+          <button onClick={() => setStep("industry")} style={{ background: "none", border: "none", color: "rgba(255,255,255,0.4)", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", cursor: "pointer", marginBottom: 32, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>← Back to Industries</button>
+          <div style={{ fontSize: 10, color: "#00E676", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>Step 2 of 3</div>
+          <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 4vw, 48px)", fontWeight: 700, color: "#fff", lineHeight: 1.15, marginBottom: 48 }}>Service Frequency</h2>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }} className="quote-freq-grid">
             <div
               onClick={() => selectObjective("recurring")}
               style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 20, padding: 40, cursor: "pointer", textAlign: "left", transition: "all 0.3s" }}
-              onMouseOver={(e) => { e.currentTarget.style.borderColor = "#2ecc71"; e.currentTarget.style.transform = "translateY(-4px)"; }}
+              onMouseOver={(e) => { e.currentTarget.style.borderColor = "#00E676"; e.currentTarget.style.transform = "translateY(-4px)"; }}
               onMouseOut={(e) => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.1)"; e.currentTarget.style.transform = "translateY(0)"; }}
             >
               <IconBox size={56} radius={14} dark>
                 {getIcon('calendar', 28)}
               </IconBox>
               <div style={{ height: 16 }} />
-              <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 22, fontWeight: 700, color: "#fff", marginBottom: 8 }}>Ongoing Maintenance</div>
-              <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.5)" }}>Regular daily or weekly cleaning services.</div>
+              <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 22, fontWeight: 700, color: "#fff", marginBottom: 8 }}>Ongoing Maintenance</div>
+              <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.5)" }}>Regular daily or weekly cleaning services.</div>
             </div>
             <div
               onClick={() => selectObjective("onetime")}
-              style={{ background: "rgba(46,204,113,0.08)", border: "1px solid rgba(46,204,113,0.25)", borderRadius: 20, padding: 40, cursor: "pointer", textAlign: "left", transition: "all 0.3s" }}
-              onMouseOver={(e) => { e.currentTarget.style.borderColor = "#2ecc71"; e.currentTarget.style.transform = "translateY(-4px)"; }}
-              onMouseOut={(e) => { e.currentTarget.style.borderColor = "rgba(46,204,113,0.25)"; e.currentTarget.style.transform = "translateY(0)"; }}
+              style={{ background: "rgba(0,230,118,0.08)", border: "1px solid rgba(0,230,118,0.25)", borderRadius: 20, padding: 40, cursor: "pointer", textAlign: "left", transition: "all 0.3s" }}
+              onMouseOver={(e) => { e.currentTarget.style.borderColor = "#00E676"; e.currentTarget.style.transform = "translateY(-4px)"; }}
+              onMouseOut={(e) => { e.currentTarget.style.borderColor = "rgba(0,230,118,0.25)"; e.currentTarget.style.transform = "translateY(0)"; }}
             >
               <IconBox size={56} radius={14} dark>
                 {getIcon('sparkles', 28)}
               </IconBox>
               <div style={{ height: 16 }} />
-              <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 22, fontWeight: 700, color: "#fff", marginBottom: 8 }}>One-Time Deep Clean</div>
-              <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.5)" }}>Post-construction, move-in/out, or seasonal refresh.</div>
+              <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 22, fontWeight: 700, color: "#fff", marginBottom: 8 }}>One-Time Deep Clean</div>
+              <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.5)" }}>Post-construction, move-in/out, or seasonal refresh.</div>
             </div>
           </div>
         </div>
@@ -652,14 +643,14 @@ function QuoteCalculator() {
   const industryLabel = QUOTE_INDUSTRIES.find((i) => i.id === settings.industry)?.title || settings.industry;
 
   return (
-    <section id="quote" style={{ background: "linear-gradient(165deg, #0a1a12, #0d2818, #122d1c)", padding: "100px 24px" }}>
+    <section id="quote" style={{ background: "#060A07", padding: "100px 24px" }}>
       <div style={{ maxWidth: 1280, margin: "0 auto" }}>
         {/* Header */}
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 40, paddingBottom: 20, borderBottom: "1px solid rgba(255,255,255,0.08)", flexWrap: "wrap", gap: 12 }}>
-          <button onClick={() => setStep("objective")} style={{ background: "none", border: "none", color: "rgba(255,255,255,0.4)", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", cursor: "pointer", fontFamily: "'DM Sans', sans-serif" }}>← Change Service</button>
+          <button onClick={() => setStep("objective")} style={{ background: "none", border: "none", color: "rgba(255,255,255,0.4)", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", cursor: "pointer", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>← Change Service</button>
           <div style={{ display: "flex", gap: 10 }}>
-            <span style={{ background: "rgba(46,204,113,0.12)", color: "#2ecc71", padding: "6px 14px", borderRadius: 100, fontSize: 12, fontWeight: 700, fontFamily: "'DM Sans', sans-serif", textTransform: "capitalize" }}>{industryLabel}</span>
-            <span style={{ background: "rgba(255,255,255,0.08)", color: "rgba(255,255,255,0.6)", padding: "6px 14px", borderRadius: 100, fontSize: 12, fontWeight: 700, fontFamily: "'DM Sans', sans-serif", textTransform: "capitalize" }}>{settings.serviceType === "recurring" ? "Ongoing" : "One-Time"}</span>
+            <span style={{ background: "rgba(0,230,118,0.12)", color: "#00E676", padding: "6px 14px", borderRadius: 100, fontSize: 12, fontWeight: 700, fontFamily: "'Plus Jakarta Sans', sans-serif", textTransform: "capitalize" }}>{industryLabel}</span>
+            <span style={{ background: "rgba(255,255,255,0.08)", color: "rgba(255,255,255,0.6)", padding: "6px 14px", borderRadius: 100, fontSize: 12, fontWeight: 700, fontFamily: "'Plus Jakarta Sans', sans-serif", textTransform: "capitalize" }}>{settings.serviceType === "recurring" ? "Ongoing" : "One-Time"}</span>
           </div>
         </div>
 
@@ -669,32 +660,32 @@ function QuoteCalculator() {
             {/* Square Footage */}
             {!["church"].includes(settings.industry) && (
               <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20, padding: 32, marginBottom: 24 }}>
-                <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 12 }}>Total Square Footage</div>
+                <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 12 }}>Total Square Footage</div>
                 <div style={{ display: "flex", alignItems: "baseline", gap: 10, marginBottom: 16 }}>
-                  <span style={{ fontFamily: "'Playfair Display', serif", fontSize: 36, fontWeight: 800, color: "#fff" }}>{settings.squareFootage.toLocaleString()}</span>
-                  <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.4)" }}>Sq. Ft.</span>
+                  <span style={{ fontFamily: "'Syne', sans-serif", fontSize: 36, fontWeight: 800, color: "#fff" }}>{settings.squareFootage.toLocaleString()}</span>
+                  <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.4)" }}>Sq. Ft.</span>
                 </div>
                 <input type="range" min={settings.industry === "education" ? 5000 : 1000} max={settings.industry === "education" ? 250000 : 50000} step={500} value={settings.squareFootage}
                   onChange={(e) => setSettings({ ...settings, squareFootage: parseInt(e.target.value) })}
-                  style={{ width: "100%", accentColor: "#2ecc71" }} />
+                  style={{ width: "100%", accentColor: "#00E676" }} />
               </div>
             )}
 
             {/* Industry-specific controls */}
             {settings.industry === "church" && (
               <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20, padding: 32, marginBottom: 24 }}>
-                <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 12 }}>Sanctuary Capacity</div>
+                <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 12 }}>Sanctuary Capacity</div>
                 <div style={{ display: "flex", alignItems: "baseline", gap: 10, marginBottom: 16 }}>
-                  <span style={{ fontFamily: "'Playfair Display', serif", fontSize: 36, fontWeight: 800, color: "#fff" }}>{settings.churchCapacity}</span>
-                  <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.4)" }}>seats</span>
+                  <span style={{ fontFamily: "'Syne', sans-serif", fontSize: 36, fontWeight: 800, color: "#fff" }}>{settings.churchCapacity}</span>
+                  <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.4)" }}>seats</span>
                 </div>
                 <input type="range" min={50} max={2000} step={50} value={settings.churchCapacity}
                   onChange={(e) => setSettings({ ...settings, churchCapacity: parseInt(e.target.value) })}
-                  style={{ width: "100%", accentColor: "#2ecc71" }} />
+                  style={{ width: "100%", accentColor: "#00E676" }} />
                 <div style={{ display: "flex", gap: 10, marginTop: 16 }}>
                   {["pews", "chairs"].map((t) => (
                     <button key={t} onClick={() => setSettings({ ...settings, seatingType: t })}
-                      style={{ padding: "8px 20px", borderRadius: 8, border: "1px solid", borderColor: settings.seatingType === t ? "#2ecc71" : "rgba(255,255,255,0.15)", background: settings.seatingType === t ? "rgba(46,204,113,0.15)" : "transparent", color: settings.seatingType === t ? "#2ecc71" : "rgba(255,255,255,0.5)", fontSize: 13, fontWeight: 600, cursor: "pointer", fontFamily: "'DM Sans', sans-serif", textTransform: "capitalize" }}>{t}</button>
+                      style={{ padding: "8px 20px", borderRadius: 8, border: "1px solid", borderColor: settings.seatingType === t ? "#00E676" : "rgba(255,255,255,0.15)", background: settings.seatingType === t ? "rgba(0,230,118,0.15)" : "transparent", color: settings.seatingType === t ? "#00E676" : "rgba(255,255,255,0.5)", fontSize: 13, fontWeight: 600, cursor: "pointer", fontFamily: "'Plus Jakarta Sans', sans-serif", textTransform: "capitalize" }}>{t}</button>
                   ))}
                 </div>
               </div>
@@ -702,17 +693,17 @@ function QuoteCalculator() {
 
             {settings.industry === "fitness" && (
               <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20, padding: 32, marginBottom: 24 }}>
-                <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 16 }}>Wet Area Details</div>
+                <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 16 }}>Wet Area Details</div>
                 <div style={{ display: "flex", gap: 24, flexWrap: "wrap" }}>
                   <div>
-                    <label style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.6)", display: "block", marginBottom: 6 }}>Shower Stalls</label>
+                    <label style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.6)", display: "block", marginBottom: 6 }}>Shower Stalls</label>
                     <input type="number" value={settings.showerCount} min={0}
                       onChange={(e) => setSettings({ ...settings, showerCount: parseInt(e.target.value) || 0 })}
-                      style={{ width: 80, padding: "8px 12px", borderRadius: 8, border: "1px solid rgba(255,255,255,0.15)", background: "rgba(255,255,255,0.06)", color: "#fff", fontSize: 15, fontFamily: "'DM Sans', sans-serif", textAlign: "center" }} />
+                      style={{ width: 80, padding: "8px 12px", borderRadius: 8, border: "1px solid rgba(255,255,255,0.15)", background: "rgba(255,255,255,0.06)", color: "#fff", fontSize: 15, fontFamily: "'Plus Jakarta Sans', sans-serif", textAlign: "center" }} />
                   </div>
                   <label style={{ display: "flex", alignItems: "center", gap: 10, cursor: "pointer" }}>
-                    <input type="checkbox" checked={settings.hasSauna} onChange={(e) => setSettings({ ...settings, hasSauna: e.target.checked })} style={{ accentColor: "#2ecc71", width: 18, height: 18 }} />
-                    <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.7)" }}>Has Sauna / Steam Room</span>
+                    <input type="checkbox" checked={settings.hasSauna} onChange={(e) => setSettings({ ...settings, hasSauna: e.target.checked })} style={{ accentColor: "#00E676", width: 18, height: 18 }} />
+                    <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.7)" }}>Has Sauna / Steam Room</span>
                   </label>
                 </div>
               </div>
@@ -720,19 +711,19 @@ function QuoteCalculator() {
 
             {settings.industry === "daycare" && (
               <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20, padding: 32, marginBottom: 24 }}>
-                <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 16 }}>Enrollment Details</div>
+                <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 16 }}>Enrollment Details</div>
                 <div style={{ display: "flex", gap: 24, flexWrap: "wrap" }}>
                   <div>
-                    <label style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.6)", display: "block", marginBottom: 6 }}>Students Enrolled</label>
+                    <label style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.6)", display: "block", marginBottom: 6 }}>Students Enrolled</label>
                     <input type="number" value={settings.studentCount} min={1}
                       onChange={(e) => setSettings({ ...settings, studentCount: parseInt(e.target.value) || 1 })}
-                      style={{ width: 80, padding: "8px 12px", borderRadius: 8, border: "1px solid rgba(255,255,255,0.15)", background: "rgba(255,255,255,0.06)", color: "#fff", fontSize: 15, fontFamily: "'DM Sans', sans-serif", textAlign: "center" }} />
+                      style={{ width: 80, padding: "8px 12px", borderRadius: 8, border: "1px solid rgba(255,255,255,0.15)", background: "rgba(255,255,255,0.06)", color: "#fff", fontSize: 15, fontFamily: "'Plus Jakarta Sans', sans-serif", textAlign: "center" }} />
                   </div>
                   <div>
-                    <label style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.6)", display: "block", marginBottom: 6 }}>Changing Stations</label>
+                    <label style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.6)", display: "block", marginBottom: 6 }}>Changing Stations</label>
                     <input type="number" value={settings.changingStations} min={0}
                       onChange={(e) => setSettings({ ...settings, changingStations: parseInt(e.target.value) || 0 })}
-                      style={{ width: 80, padding: "8px 12px", borderRadius: 8, border: "1px solid rgba(255,255,255,0.15)", background: "rgba(255,255,255,0.06)", color: "#fff", fontSize: 15, fontFamily: "'DM Sans', sans-serif", textAlign: "center" }} />
+                      style={{ width: 80, padding: "8px 12px", borderRadius: 8, border: "1px solid rgba(255,255,255,0.15)", background: "rgba(255,255,255,0.06)", color: "#fff", fontSize: 15, fontFamily: "'Plus Jakarta Sans', sans-serif", textAlign: "center" }} />
                   </div>
                 </div>
               </div>
@@ -740,11 +731,11 @@ function QuoteCalculator() {
 
             {settings.industry === "hoa" && (
               <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20, padding: 32, marginBottom: 24 }}>
-                <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 16 }}>Building Size</div>
+                <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 16 }}>Building Size</div>
                 <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
                   {["small", "medium", "large", "luxury"].map((s) => (
                     <button key={s} onClick={() => setSettings({ ...settings, buildingSize: s })}
-                      style={{ padding: "10px 20px", borderRadius: 8, border: "1px solid", borderColor: settings.buildingSize === s ? "#2ecc71" : "rgba(255,255,255,0.15)", background: settings.buildingSize === s ? "rgba(46,204,113,0.15)" : "transparent", color: settings.buildingSize === s ? "#2ecc71" : "rgba(255,255,255,0.5)", fontSize: 13, fontWeight: 600, cursor: "pointer", fontFamily: "'DM Sans', sans-serif", textTransform: "capitalize" }}>{s}</button>
+                      style={{ padding: "10px 20px", borderRadius: 8, border: "1px solid", borderColor: settings.buildingSize === s ? "#00E676" : "rgba(255,255,255,0.15)", background: settings.buildingSize === s ? "rgba(0,230,118,0.15)" : "transparent", color: settings.buildingSize === s ? "#00E676" : "rgba(255,255,255,0.5)", fontSize: 13, fontWeight: 600, cursor: "pointer", fontFamily: "'Plus Jakarta Sans', sans-serif", textTransform: "capitalize" }}>{s}</button>
                   ))}
                 </div>
               </div>
@@ -752,19 +743,19 @@ function QuoteCalculator() {
 
             {settings.industry === "warehouse" && (
               <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20, padding: 32, marginBottom: 24 }}>
-                <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 16 }}>Labor Details</div>
+                <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 16 }}>Labor Details</div>
                 <div style={{ display: "flex", gap: 24, flexWrap: "wrap", alignItems: "flex-end" }}>
                   <div>
-                    <label style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.6)", display: "block", marginBottom: 6 }}>Labor Hours/Day</label>
+                    <label style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.6)", display: "block", marginBottom: 6 }}>Labor Hours/Day</label>
                     <input type="number" value={settings.laborHoursPerDay} min={1} max={16}
                       onChange={(e) => setSettings({ ...settings, laborHoursPerDay: parseInt(e.target.value) || 4 })}
-                      style={{ width: 80, padding: "8px 12px", borderRadius: 8, border: "1px solid rgba(255,255,255,0.15)", background: "rgba(255,255,255,0.06)", color: "#fff", fontSize: 15, fontFamily: "'DM Sans', sans-serif", textAlign: "center" }} />
+                      style={{ width: 80, padding: "8px 12px", borderRadius: 8, border: "1px solid rgba(255,255,255,0.15)", background: "rgba(255,255,255,0.06)", color: "#fff", fontSize: 15, fontFamily: "'Plus Jakarta Sans', sans-serif", textAlign: "center" }} />
                   </div>
                   <div>
-                    <label style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.6)", display: "block", marginBottom: 6 }}>Scrubbing Sq Ft</label>
+                    <label style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.6)", display: "block", marginBottom: 6 }}>Scrubbing Sq Ft</label>
                     <input type="number" value={settings.warehouseScrubbingSqFt} min={0} step={1000}
                       onChange={(e) => setSettings({ ...settings, warehouseScrubbingSqFt: parseInt(e.target.value) || 0 })}
-                      style={{ width: 120, padding: "8px 12px", borderRadius: 8, border: "1px solid rgba(255,255,255,0.15)", background: "rgba(255,255,255,0.06)", color: "#fff", fontSize: 15, fontFamily: "'DM Sans', sans-serif", textAlign: "center" }} />
+                      style={{ width: 120, padding: "8px 12px", borderRadius: 8, border: "1px solid rgba(255,255,255,0.15)", background: "rgba(255,255,255,0.06)", color: "#fff", fontSize: 15, fontFamily: "'Plus Jakarta Sans', sans-serif", textAlign: "center" }} />
                   </div>
                 </div>
               </div>
@@ -773,33 +764,33 @@ function QuoteCalculator() {
             {/* Room Breakdown */}
             <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20, padding: 32, marginBottom: 24 }}>
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 20, flexWrap: "wrap", gap: 12 }}>
-                <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: 20, fontWeight: 700, color: "#fff", margin: 0 }}>Room Breakdown</h3>
+                <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: 20, fontWeight: 700, color: "#fff", margin: 0 }}>Room Breakdown</h3>
                 <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
                   <select
                     onChange={(e) => { if (e.target.value) { addRoom(e.target.value); e.target.value = ""; } }}
-                    style={{ padding: "8px 14px", borderRadius: 8, border: "1px solid rgba(255,255,255,0.15)", background: "rgba(255,255,255,0.06)", color: "rgba(255,255,255,0.7)", fontSize: 13, fontFamily: "'DM Sans', sans-serif", cursor: "pointer" }}>
+                    style={{ padding: "8px 14px", borderRadius: 8, border: "1px solid rgba(255,255,255,0.15)", background: "rgba(255,255,255,0.06)", color: "rgba(255,255,255,0.7)", fontSize: 13, fontFamily: "'Plus Jakarta Sans', sans-serif", cursor: "pointer" }}>
                     <option value="">+ Add Room Type</option>
                     {industryPresets.map((p) => (<option key={p.name} value={p.name}>{p.name}</option>))}
                   </select>
-                  <button onClick={() => addRoom(null)} style={{ background: "none", border: "none", color: "#2ecc71", fontSize: 12, fontWeight: 700, cursor: "pointer", fontFamily: "'DM Sans', sans-serif", whiteSpace: "nowrap" }}>+ Custom</button>
+                  <button onClick={() => addRoom(null)} style={{ background: "none", border: "none", color: "#00E676", fontSize: 12, fontWeight: 700, cursor: "pointer", fontFamily: "'Plus Jakarta Sans', sans-serif", whiteSpace: "nowrap" }}>+ Custom</button>
                 </div>
               </div>
 
               {rooms.length === 0 && (
-                <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.3)", textAlign: "center", padding: 24 }}>Add rooms above to build your quote.</p>
+                <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.3)", textAlign: "center", padding: 24 }}>Add rooms above to build your quote.</p>
               )}
 
               <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
                 {rooms.map((room) => (
                   <div key={room.id} style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)", borderRadius: 12, padding: "12px 16px", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12 }}>
                     <input type="text" value={room.name} onChange={(e) => updateRoom(room.id, "name", e.target.value)}
-                      style={{ background: "transparent", border: "none", color: "#fff", fontFamily: "'DM Sans', sans-serif", fontWeight: 600, fontSize: 14, flex: 1, minWidth: 0, outline: "none" }} />
+                      style={{ background: "transparent", border: "none", color: "#fff", fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 600, fontSize: 14, flex: 1, minWidth: 0, outline: "none" }} />
                     <div style={{ display: "flex", alignItems: "center", gap: 10, flexShrink: 0 }}>
                       <button onClick={() => updateRoom(room.id, "quantity", Math.max(0, room.quantity - 1))}
                         style={{ width: 32, height: 32, borderRadius: "50%", border: "1px solid rgba(255,255,255,0.15)", background: "transparent", color: "rgba(255,255,255,0.5)", fontSize: 18, cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center" }}>−</button>
-                      <span style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 800, fontSize: 16, color: "#fff", minWidth: 24, textAlign: "center" }}>{room.quantity}</span>
+                      <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800, fontSize: 16, color: "#fff", minWidth: 24, textAlign: "center" }}>{room.quantity}</span>
                       <button onClick={() => updateRoom(room.id, "quantity", room.quantity + 1)}
-                        style={{ width: 32, height: 32, borderRadius: "50%", border: "1px solid rgba(46,204,113,0.3)", background: "rgba(46,204,113,0.08)", color: "#2ecc71", fontSize: 18, cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center" }}>+</button>
+                        style={{ width: 32, height: 32, borderRadius: "50%", border: "1px solid rgba(0,230,118,0.3)", background: "rgba(0,230,118,0.08)", color: "#00E676", fontSize: 18, cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center" }}>+</button>
                       <button onClick={() => removeRoom(room.id)}
                         style={{ background: "none", border: "none", color: "rgba(255,255,255,0.2)", fontSize: 16, cursor: "pointer", padding: "0 4px" }}>✕</button>
                     </div>
@@ -811,26 +802,26 @@ function QuoteCalculator() {
             {/* Porter Services */}
             {["education", "office", "medical"].includes(settings.industry) && (
               <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20, padding: 32 }}>
-                <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: 20, fontWeight: 700, color: "#fff", marginBottom: 20 }}>Day Porter Services</h3>
+                <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: 20, fontWeight: 700, color: "#fff", marginBottom: 20 }}>Day Porter Services</h3>
                 {porters.map((porter) => (
                   <div key={porter.id} style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)", borderRadius: 12, padding: 16, display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 16 }}>
                     <div>
-                      <div style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 700, fontSize: 15, color: "#fff" }}>{porter.name}</div>
-                      <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)", textTransform: "uppercase", letterSpacing: "0.08em" }}>Daily On-site Support</div>
+                      <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 700, fontSize: 15, color: "#fff" }}>{porter.name}</div>
+                      <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)", textTransform: "uppercase", letterSpacing: "0.08em" }}>Daily On-site Support</div>
                     </div>
                     <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
                       <div style={{ textAlign: "center" }}>
-                        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10, color: "rgba(255,255,255,0.4)", textTransform: "uppercase", marginBottom: 4 }}>Hrs/Day</div>
+                        <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 10, color: "rgba(255,255,255,0.4)", textTransform: "uppercase", marginBottom: 4 }}>Hrs/Day</div>
                         <input type="number" value={porter.hoursPerDay} min={1} max={12}
                           onChange={(e) => setPorters((prev) => prev.map((p) => (p.id === porter.id ? { ...p, hoursPerDay: parseFloat(e.target.value) || 4 } : p)))}
-                          style={{ width: 56, padding: "6px", borderRadius: 8, border: "1px solid rgba(255,255,255,0.15)", background: "rgba(255,255,255,0.06)", color: "#fff", fontSize: 14, fontFamily: "'DM Sans', sans-serif", textAlign: "center" }} />
+                          style={{ width: 56, padding: "6px", borderRadius: 8, border: "1px solid rgba(255,255,255,0.15)", background: "rgba(255,255,255,0.06)", color: "#fff", fontSize: 14, fontFamily: "'Plus Jakarta Sans', sans-serif", textAlign: "center" }} />
                       </div>
                       <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
                         <button onClick={() => setPorters((prev) => prev.map((p) => (p.id === porter.id ? { ...p, quantity: Math.max(0, p.quantity - 1) } : p)))}
                           style={{ width: 32, height: 32, borderRadius: "50%", border: "1px solid rgba(255,255,255,0.15)", background: "transparent", color: "rgba(255,255,255,0.5)", fontSize: 18, cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center" }}>−</button>
-                        <span style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 800, fontSize: 16, color: "#fff", minWidth: 20, textAlign: "center" }}>{porter.quantity}</span>
+                        <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800, fontSize: 16, color: "#fff", minWidth: 20, textAlign: "center" }}>{porter.quantity}</span>
                         <button onClick={() => setPorters((prev) => prev.map((p) => (p.id === porter.id ? { ...p, quantity: p.quantity + 1 } : p)))}
-                          style={{ width: 32, height: 32, borderRadius: "50%", border: "1px solid rgba(46,204,113,0.3)", background: "rgba(46,204,113,0.08)", color: "#2ecc71", fontSize: 18, cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center" }}>+</button>
+                          style={{ width: 32, height: 32, borderRadius: "50%", border: "1px solid rgba(0,230,118,0.3)", background: "rgba(0,230,118,0.08)", color: "#00E676", fontSize: 18, cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center" }}>+</button>
                       </div>
                     </div>
                   </div>
@@ -841,26 +832,26 @@ function QuoteCalculator() {
 
           {/* Right: Quote Summary (sticky) */}
           <div style={{ position: "sticky", top: 100 }}>
-            <div style={{ background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 20, padding: 36, backdropFilter: "blur(10px)" }}>
-              <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "#2ecc71", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 12 }}>
+            <div style={{ background: "#0D1310", border: "1px solid rgba(0,230,118,0.12)", borderRadius: 0, padding: 36 }}>
+              <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: "#00E676", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 12 }}>
                 {settings.serviceType === "recurring" ? "Estimated Monthly Cost" : "One-Time Deep Clean"}
               </div>
-              <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 44, fontWeight: 800, color: "#fff", marginBottom: 24, lineHeight: 1 }}>
+              <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 44, fontWeight: 800, color: "#fff", marginBottom: 24, lineHeight: 1 }}>
                 {formatCurrency(quote.grandTotal)}
-                {settings.serviceType === "recurring" && <span style={{ fontSize: 16, color: "rgba(255,255,255,0.4)", fontFamily: "'DM Sans', sans-serif", fontWeight: 600 }}> /mo</span>}
+                {settings.serviceType === "recurring" && <span style={{ fontSize: 16, color: "rgba(255,255,255,0.4)", fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 600 }}> /mo</span>}
               </div>
 
               <div style={{ background: "rgba(255,255,255,0.04)", borderRadius: 12, padding: 16, marginBottom: 24 }}>
                 {quote.breakdown.map((item, i) => (
                   <div key={i} style={{ display: "flex", justifyContent: "space-between", padding: "10px 0", borderBottom: i < quote.breakdown.length - 1 ? "1px solid rgba(255,255,255,0.06)" : "none" }}>
-                    <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.5)" }}>{item.label}</span>
-                    <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 700, color: "#fff" }}>{formatCurrency(item.value)}</span>
+                    <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.5)" }}>{item.label}</span>
+                    <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, fontWeight: 700, color: "#fff" }}>{formatCurrency(item.value)}</span>
                   </div>
                 ))}
               </div>
 
               <a href="#" onClick={(e) => { e.preventDefault(); const el = document.getElementById("contact"); if (el) el.scrollIntoView({ behavior: "smooth" }); }}
-                style={{ display: "block", width: "100%", padding: "14px", background: "linear-gradient(135deg, #2ecc71, #27ae60)", border: "none", borderRadius: 10, color: "#fff", fontSize: 14, fontWeight: 700, fontFamily: "'DM Sans', sans-serif", textAlign: "center", textDecoration: "none", boxShadow: "0 4px 20px rgba(46,204,113,0.3)", boxSizing: "border-box", cursor: "pointer" }}>
+                style={{ display: "block", width: "100%", padding: "14px", background: "#00E676", border: "none", borderRadius: 4, color: "#060A07", fontSize: 13, fontWeight: 700, fontFamily: "'Syne', sans-serif", textTransform: "uppercase", letterSpacing: "0.04em", textAlign: "center", textDecoration: "none", boxSizing: "border-box", cursor: "pointer" }}>
                 Request Formal Proposal →
               </a>
 
@@ -868,14 +859,14 @@ function QuoteCalculator() {
               <div style={{ marginTop: 16, padding: '18px', background: 'rgba(255,255,255,0.03)', borderRadius: 10, border: '1px solid rgba(255,255,255,0.07)' }}>
                 {quoteEmailSubmitted ? (
                   <div style={{ textAlign: 'center', padding: '4px 0' }}>
-                    <div style={{ color: '#2ecc71', fontSize: 20, marginBottom: 6 }}>✓</div>
-                    <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: 'rgba(255,255,255,0.7)', margin: 0 }}>
+                    <div style={{ color: '#00E676', fontSize: 20, marginBottom: 6 }}>✓</div>
+                    <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: 'rgba(255,255,255,0.7)', margin: 0 }}>
                       Check your inbox — your detailed quote has been sent.
                     </p>
                   </div>
                 ) : (
                   <>
-                    <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: 'rgba(255,255,255,0.5)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 10 }}>
+                    <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: 'rgba(255,255,255,0.5)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 10 }}>
                       Get Your Detailed Quote Breakdown
                     </div>
                     <div style={{ display: 'flex', gap: 8 }}>
@@ -884,12 +875,12 @@ function QuoteCalculator() {
                         placeholder="your@email.com"
                         value={quoteEmail}
                         onChange={(e) => setQuoteEmail(e.target.value)}
-                        onFocus={(e) => (e.target.style.borderColor = 'rgba(46,204,113,0.5)')}
+                        onFocus={(e) => (e.target.style.borderColor = 'rgba(0,230,118,0.5)')}
                         onBlur={(e) => (e.target.style.borderColor = 'rgba(255,255,255,0.12)')}
                         style={{
                           flex: 1, padding: '10px 12px', background: 'rgba(255,255,255,0.06)',
                           border: '1px solid rgba(255,255,255,0.12)', borderRadius: 6, color: '#fff',
-                          fontSize: 13, outline: 'none', fontFamily: "'DM Sans', sans-serif", boxSizing: 'border-box',
+                          fontSize: 13, outline: 'none', fontFamily: "'Plus Jakarta Sans', sans-serif", boxSizing: 'border-box',
                           transition: 'border-color 0.2s',
                         }}
                       />
@@ -900,10 +891,10 @@ function QuoteCalculator() {
                           setQuoteEmailSubmitted(true);
                         }}
                         style={{
-                          padding: '10px 16px', background: 'linear-gradient(135deg, #2ecc71, #27ae60)',
-                          border: 'none', borderRadius: 6, color: '#fff', fontSize: 12, fontWeight: 700,
-                          cursor: 'pointer', fontFamily: "'DM Sans', sans-serif", whiteSpace: 'nowrap',
-                          boxShadow: '0 2px 12px rgba(46,204,113,0.25)',
+                          padding: '10px 16px', background: '#00E676',
+                          border: 'none', borderRadius: 4, color: '#060A07', fontSize: 12, fontWeight: 700,
+                          cursor: 'pointer', fontFamily: "'Plus Jakarta Sans', sans-serif", whiteSpace: 'nowrap',
+                          boxShadow: '0 2px 12px rgba(0,230,118,0.25)',
                         }}
                       >
                         Send →
@@ -921,21 +912,21 @@ function QuoteCalculator() {
                   display: 'block', width: '100%', marginTop: 10, padding: '12px',
                   background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.12)',
                   borderRadius: 10, color: 'rgba(255,255,255,0.75)', fontSize: 13, fontWeight: 600,
-                  fontFamily: "'DM Sans', sans-serif", textAlign: 'center', textDecoration: 'none',
+                  fontFamily: "'Plus Jakarta Sans', sans-serif", textAlign: 'center', textDecoration: 'none',
                   boxSizing: 'border-box', transition: 'background 0.2s, border-color 0.2s',
                 }}
-                onMouseOver={(e) => { e.currentTarget.style.background = 'rgba(46,204,113,0.08)'; e.currentTarget.style.borderColor = 'rgba(46,204,113,0.3)'; }}
+                onMouseOver={(e) => { e.currentTarget.style.background = 'rgba(0,230,118,0.08)'; e.currentTarget.style.borderColor = 'rgba(0,230,118,0.3)'; }}
                 onMouseOut={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,0.05)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.12)'; }}
               >
                 Schedule a Walkthrough to Confirm Pricing
               </a>
 
               <button onClick={() => { setStep("industry"); setRooms([]); setPorters([{ id: "p1", name: "Day Porter", quantity: 0, hoursPerDay: 4 }]); }}
-                style={{ display: "block", width: "100%", marginTop: 12, padding: "12px", background: "none", border: "none", color: "rgba(255,255,255,0.35)", fontSize: 12, fontWeight: 600, fontFamily: "'DM Sans', sans-serif", cursor: "pointer", textTransform: "uppercase", letterSpacing: "0.08em" }}>
+                style={{ display: "block", width: "100%", marginTop: 12, padding: "12px", background: "none", border: "none", color: "rgba(255,255,255,0.35)", fontSize: 12, fontWeight: 600, fontFamily: "'Plus Jakarta Sans', sans-serif", cursor: "pointer", textTransform: "uppercase", letterSpacing: "0.08em" }}>
                 Start Over
               </button>
 
-              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.25)", textAlign: "center", marginTop: 16, lineHeight: 1.5 }}>
+              <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.25)", textAlign: "center", marginTop: 16, lineHeight: 1.5 }}>
                 Estimate based on industry standards. Final pricing confirmed after complimentary walkthrough.
               </p>
             </div>
@@ -990,7 +981,7 @@ function Header({ scrolled }) {
         left: 0,
         right: 0,
         zIndex: 1000,
-        background: scrolled ? "rgba(10, 26, 18, 0.85)" : "transparent",
+        background: scrolled ? "rgba(6, 10, 7, 0.92)" : "transparent",
         backdropFilter: scrolled ? "blur(24px) saturate(1.4)" : "none",
         WebkitBackdropFilter: scrolled ? "blur(24px) saturate(1.4)" : "none",
         borderBottom: scrolled ? "1px solid rgba(46, 204, 113, 0.2)" : "none",
@@ -1002,17 +993,17 @@ function Header({ scrolled }) {
       <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 24px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
         <a href="#" style={{ display: "flex", alignItems: "center", gap: 12, textDecoration: "none" }}>
           <div style={{
-            width: 44, height: 44, borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center",
-            background: "linear-gradient(135deg, #2ecc71, #27ae60)", fontWeight: 800, fontSize: 20, color: "#fff",
-            boxShadow: "0 2px 12px rgba(46,204,113,0.3)",
+            width: 44, height: 44, borderRadius: 0, display: "flex", alignItems: "center", justifyContent: "center",
+            background: "#00E676", fontWeight: 800, fontSize: 20, color: "#060A07",
+            fontFamily: "'Syne', sans-serif",
           }}>
             G
           </div>
           <div>
-            <div style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: 20, fontWeight: 700, color: "#fff", letterSpacing: "-0.02em", lineHeight: 1.1 }}>
+            <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 20, fontWeight: 700, color: "#fff", letterSpacing: "-0.02em", lineHeight: 1.1 }}>
               GreenPoint
             </div>
-            <div style={{ fontSize: 10, color: "rgba(255,255,255,0.6)", letterSpacing: "0.15em", textTransform: "uppercase", fontFamily: "'DM Sans', sans-serif" }}>
+            <div style={{ fontSize: 10, color: "rgba(255,255,255,0.6)", letterSpacing: "0.15em", textTransform: "uppercase", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
               Maintenance Services Corp
             </div>
           </div>
@@ -1026,10 +1017,10 @@ function Header({ scrolled }) {
               onClick={(e) => { e.preventDefault(); scrollTo(item.target); }}
               style={{
                 color: "rgba(255,255,255,0.8)", textDecoration: "none", fontSize: 13, fontWeight: 500,
-                fontFamily: "'DM Sans', sans-serif", letterSpacing: "0.01em",
+                fontFamily: "'Plus Jakarta Sans', sans-serif", letterSpacing: "0.01em",
                 transition: "color 0.2s",
               }}
-              onMouseOver={(e) => (e.target.style.color = "#2ecc71")}
+              onMouseOver={(e) => (e.target.style.color = "#00E676")}
               onMouseOut={(e) => (e.target.style.color = "rgba(255,255,255,0.8)")}
             >
               {item.label}
@@ -1039,22 +1030,22 @@ function Header({ scrolled }) {
             href={PHONE_HREF}
             style={{
               color: "#fff", textDecoration: "none", fontSize: 14, fontWeight: 700,
-              fontFamily: "'DM Sans', sans-serif", display: "flex", alignItems: "center", gap: 6,
+              fontFamily: "'Plus Jakarta Sans', sans-serif", display: "flex", alignItems: "center", gap: 6,
             }}
           >
-            <PhoneIcon size={16} color="#2ecc71" /> {PHONE_NUMBER}
+            <PhoneIcon size={16} color="#00E676" /> {PHONE_NUMBER}
           </a>
           <a
             href="#"
             onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}
             style={{
-              background: "linear-gradient(135deg, #2ecc71, #27ae60)", color: "#fff", padding: "10px 24px",
-              borderRadius: 8, fontWeight: 600, fontSize: 14, textDecoration: "none",
-              fontFamily: "'DM Sans', sans-serif", boxShadow: "0 2px 12px rgba(46,204,113,0.3)",
-              transition: "transform 0.2s, box-shadow 0.2s", whiteSpace: "nowrap",
+              background: "#00E676", color: "#060A07", padding: "10px 24px",
+              borderRadius: 4, fontWeight: 700, fontSize: 13, textDecoration: "none",
+              fontFamily: "'Syne', sans-serif", letterSpacing: "0.04em", textTransform: "uppercase",
+              transition: "transform 0.2s", whiteSpace: "nowrap",
             }}
-            onMouseOver={(e) => { e.target.style.transform = "translateY(-1px)"; e.target.style.boxShadow = "0 4px 20px rgba(46,204,113,0.4)"; }}
-            onMouseOut={(e) => { e.target.style.transform = "translateY(0)"; e.target.style.boxShadow = "0 2px 12px rgba(46,204,113,0.3)"; }}
+            onMouseOver={(e) => { e.target.style.transform = "translateY(-1px)"; e.target.style.boxShadow = "0 4px 20px rgba(0,230,118,0.4)"; }}
+            onMouseOut={(e) => { e.target.style.transform = "translateY(0)"; e.target.style.boxShadow = "0 2px 12px rgba(0,230,118,0.3)"; }}
           >
             Schedule Walkthrough
           </a>
@@ -1079,16 +1070,16 @@ function Header({ scrolled }) {
         }}>
           {NAV_ITEMS.map((item) => (
             <a key={item.label} href="#" onClick={(e) => { e.preventDefault(); setMobileOpen(false); scrollTo(item.target); }}
-              style={{ color: "rgba(255,255,255,0.85)", textDecoration: "none", fontSize: 16, fontFamily: "'DM Sans', sans-serif" }}>
+              style={{ color: "rgba(255,255,255,0.85)", textDecoration: "none", fontSize: 16, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
               {item.label}
             </a>
           ))}
           <a href={PHONE_HREF}
-            style={{ color: "#fff", textDecoration: "none", fontSize: 16, fontWeight: 700, fontFamily: "'DM Sans', sans-serif", display: "flex", alignItems: "center", gap: 8 }}>
-            <PhoneIcon size={16} color="#2ecc71" /> {PHONE_NUMBER}
+            style={{ color: "#fff", textDecoration: "none", fontSize: 16, fontWeight: 700, fontFamily: "'Plus Jakarta Sans', sans-serif", display: "flex", alignItems: "center", gap: 8 }}>
+            <PhoneIcon size={16} color="#00E676" /> {PHONE_NUMBER}
           </a>
           <a href="#" onClick={(e) => { e.preventDefault(); setMobileOpen(false); scrollTo("contact"); }}
-            style={{ background: "#2ecc71", color: "#fff", padding: "12px 24px", borderRadius: 8, fontWeight: 600, textDecoration: "none", textAlign: "center", fontFamily: "'DM Sans', sans-serif" }}>
+            style={{ background: "#00E676", color: "#060A07", padding: "12px 24px", borderRadius: 4, fontWeight: 700, textDecoration: "none", textAlign: "center", fontFamily: "'Syne', sans-serif", textTransform: "uppercase", letterSpacing: "0.04em", fontSize: 13 }}>
             Schedule Walkthrough
           </a>
         </div>
@@ -1146,51 +1137,51 @@ function HeroLeadForm() {
   const inputStyle = {
     width: '100%', padding: '12px 16px', background: 'rgba(255,255,255,0.06)',
     border: '1px solid rgba(255,255,255,0.12)', borderRadius: 8, color: '#fff', fontSize: 15,
-    outline: 'none', fontFamily: "'DM Sans', sans-serif", boxSizing: 'border-box',
+    outline: 'none', fontFamily: "'Plus Jakarta Sans', sans-serif", boxSizing: 'border-box',
     transition: 'border-color 0.2s',
   };
 
   const labelStyle = {
     display: 'block', fontSize: 11, color: 'rgba(255,255,255,0.5)', marginBottom: 8,
     fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase',
-    fontFamily: "'DM Sans', sans-serif",
+    fontFamily: "'Plus Jakarta Sans', sans-serif",
   };
 
   const backBtnStyle = {
     background: 'none', border: 'none', color: 'rgba(255,255,255,0.4)', fontSize: 12,
-    fontWeight: 600, cursor: 'pointer', marginBottom: 18, fontFamily: "'DM Sans', sans-serif",
+    fontWeight: 600, cursor: 'pointer', marginBottom: 18, fontFamily: "'Plus Jakarta Sans', sans-serif",
     padding: 0, display: 'flex', alignItems: 'center', gap: 4,
   };
 
   const stepLabelStyle = {
-    fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: '#2ecc71',
+    fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: '#00E676',
     fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: 6,
   };
 
   const headingStyle = {
-    fontFamily: "'Playfair Display', serif", fontSize: 21, color: '#fff',
+    fontFamily: "'Syne', sans-serif", fontSize: 21, color: '#fff',
     marginBottom: 4, fontWeight: 700, lineHeight: 1.25,
   };
 
   const subStyle = {
-    fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: 'rgba(255,255,255,0.4)',
+    fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: 'rgba(255,255,255,0.4)',
     marginBottom: 22,
   };
 
   const pillBtn = (active) => ({
     flex: 1, padding: '11px 8px', borderRadius: 8, fontSize: 13, fontWeight: 600,
-    cursor: 'pointer', fontFamily: "'DM Sans', sans-serif", textAlign: 'center',
-    background: active ? 'rgba(46,204,113,0.12)' : 'rgba(255,255,255,0.04)',
-    border: '1px solid', borderColor: active ? '#2ecc71' : 'rgba(255,255,255,0.1)',
-    color: active ? '#2ecc71' : 'rgba(255,255,255,0.65)',
+    cursor: 'pointer', fontFamily: "'Plus Jakarta Sans', sans-serif", textAlign: 'center',
+    background: active ? 'rgba(0,230,118,0.12)' : 'rgba(255,255,255,0.04)',
+    border: '1px solid', borderColor: active ? '#00E676' : 'rgba(255,255,255,0.1)',
+    color: active ? '#00E676' : 'rgba(255,255,255,0.65)',
     transition: 'all 0.18s',
   });
 
   const continueBtn = {
-    width: '100%', padding: '14px', background: 'linear-gradient(135deg, #2ecc71, #27ae60)',
-    border: 'none', borderRadius: 9, color: '#fff', fontSize: 15, fontWeight: 700,
-    cursor: 'pointer', fontFamily: "'DM Sans', sans-serif",
-    boxShadow: '0 4px 20px rgba(46,204,113,0.28)', transition: 'transform 0.18s, box-shadow 0.18s',
+    width: '100%', padding: '14px', background: '#00E676',
+    border: 'none', borderRadius: 4, color: '#060A07', fontSize: 13, fontWeight: 700,
+    cursor: 'pointer', fontFamily: "'Syne', sans-serif", textTransform: 'uppercase', letterSpacing: '0.04em',
+    transition: 'transform 0.18s',
   };
 
   function handleSubmit() {
@@ -1206,21 +1197,21 @@ function HeroLeadForm() {
   if (submitted) {
     return (
       <div className="hero-form" style={{
-        background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(46,204,113,0.3)',
-        borderRadius: 20, padding: '48px 40px', backdropFilter: 'blur(10px)', textAlign: 'center',
+        background: '#0D1310', border: '1px solid rgba(0,230,118,0.3)',
+        borderRadius: 0, padding: '48px 40px', textAlign: 'center',
       }}>
-        <div style={{ marginBottom: 20 }}><CheckCircleIcon size={52} color="#2ecc71" /></div>
-        <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: 24, color: '#fff', marginBottom: 10 }}>
+        <div style={{ marginBottom: 20 }}><CheckCircleIcon size={52} color="#00E676" /></div>
+        <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: 24, color: '#fff', marginBottom: 10 }}>
           Walkthrough Requested
         </h3>
-        <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 15, color: 'rgba(255,255,255,0.6)', lineHeight: 1.7, marginBottom: 28 }}>
+        <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 15, color: 'rgba(255,255,255,0.6)', lineHeight: 1.7, marginBottom: 28 }}>
           Thank you! We'll contact you within <strong style={{ color: '#fff' }}>4 business hours</strong> to confirm your walkthrough.
         </p>
-        <div style={{ padding: '16px 20px', background: 'rgba(46,204,113,0.07)', borderRadius: 10, border: '1px solid rgba(46,204,113,0.15)' }}>
-          <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: 'rgba(255,255,255,0.45)', marginBottom: 4 }}>
+        <div style={{ padding: '16px 20px', background: 'rgba(0,230,118,0.07)', borderRadius: 10, border: '1px solid rgba(0,230,118,0.15)' }}>
+          <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 12, color: 'rgba(255,255,255,0.45)', marginBottom: 4 }}>
             Prefer to talk now?
           </div>
-          <a href={PHONE_HREF} style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 18, color: '#2ecc71', fontWeight: 700, textDecoration: 'none' }}>
+          <a href={PHONE_HREF} style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 18, color: '#00E676', fontWeight: 700, textDecoration: 'none' }}>
             {PHONE_NUMBER}
           </a>
         </div>
@@ -1230,19 +1221,19 @@ function HeroLeadForm() {
 
   return (
     <div className="hero-form" style={{
-      background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.1)',
-      borderRadius: 20, padding: '36px 40px', backdropFilter: 'blur(10px)',
+      background: '#0D1310', border: '1px solid rgba(0,230,118,0.1)',
+      borderRadius: 0, padding: '36px 40px',
     }}>
       {/* Progress bar */}
       <div style={{ display: 'flex', gap: 6, marginBottom: 28, alignItems: 'center' }}>
         {[1, 2, 3].map((s) => (
           <div key={s} style={{
             flex: 1, height: 3, borderRadius: 2,
-            background: s <= formStep ? '#2ecc71' : 'rgba(255,255,255,0.1)',
+            background: s <= formStep ? '#00E676' : 'rgba(255,255,255,0.1)',
             transition: 'background 0.3s',
           }} />
         ))}
-        <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: 'rgba(255,255,255,0.35)', marginLeft: 8, whiteSpace: 'nowrap' }}>
+        <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: 'rgba(255,255,255,0.35)', marginLeft: 8, whiteSpace: 'nowrap' }}>
           {formStep} / 3
         </span>
       </div>
@@ -1263,26 +1254,26 @@ function HeroLeadForm() {
                   key={ft.value}
                   onClick={() => setFormData({ ...formData, facilityType: ft.value })}
                   style={{
-                    background: active ? 'rgba(46,204,113,0.12)' : 'rgba(255,255,255,0.03)',
-                    border: '1px solid', borderColor: active ? '#2ecc71' : 'rgba(255,255,255,0.1)',
+                    background: active ? 'rgba(0,230,118,0.12)' : 'rgba(255,255,255,0.03)',
+                    border: '1px solid', borderColor: active ? '#00E676' : 'rgba(255,255,255,0.1)',
                     borderRadius: 10, padding: '12px 10px', cursor: 'pointer', textAlign: 'left',
                     display: 'flex', alignItems: 'center', gap: 9, transition: 'all 0.18s',
                     gridColumn: ft.value === 'other' ? 'span 2' : undefined,
                   }}
-                  onMouseOver={(e) => { if (!active) e.currentTarget.style.borderColor = 'rgba(46,204,113,0.35)'; }}
+                  onMouseOver={(e) => { if (!active) e.currentTarget.style.borderColor = 'rgba(0,230,118,0.35)'; }}
                   onMouseOut={(e) => { if (!active) e.currentTarget.style.borderColor = 'rgba(255,255,255,0.1)'; }}
                 >
                   <span style={{ display: 'flex', flexShrink: 0 }}>
-                    {getIcon(ft.iconKey, 16, active ? '#2ecc71' : 'rgba(255,255,255,0.45)')}
+                    {getIcon(ft.iconKey, 16, active ? '#00E676' : 'rgba(255,255,255,0.45)')}
                   </span>
                   <span style={{
-                    fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 600,
-                    color: active ? '#2ecc71' : 'rgba(255,255,255,0.7)',
+                    fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, fontWeight: 600,
+                    color: active ? '#00E676' : 'rgba(255,255,255,0.7)',
                   }}>
                     {ft.label}
                   </span>
                   {active && (
-                    <span style={{ marginLeft: 'auto', color: '#2ecc71', fontSize: 14, fontWeight: 700 }}>✓</span>
+                    <span style={{ marginLeft: 'auto', color: '#00E676', fontSize: 14, fontWeight: 700 }}>✓</span>
                   )}
                 </button>
               );
@@ -1322,8 +1313,8 @@ function HeroLeadForm() {
               opacity: (!formData.facilityType || !formData.squareFootage) ? 0.45 : 1,
               cursor: (!formData.facilityType || !formData.squareFootage) ? 'not-allowed' : 'pointer',
             }}
-            onMouseOver={(e) => { if (formData.facilityType && formData.squareFootage) { e.currentTarget.style.transform = 'translateY(-1px)'; e.currentTarget.style.boxShadow = '0 6px 28px rgba(46,204,113,0.38)'; } }}
-            onMouseOut={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 20px rgba(46,204,113,0.28)'; }}
+            onMouseOver={(e) => { if (formData.facilityType && formData.squareFootage) { e.currentTarget.style.transform = 'translateY(-1px)'; e.currentTarget.style.boxShadow = '0 6px 28px rgba(0,230,118,0.38)'; } }}
+            onMouseOut={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,230,118,0.28)'; }}
           >
             Continue →
           </button>
@@ -1374,8 +1365,8 @@ function HeroLeadForm() {
               opacity: (!formData.currentProvider || !formData.timeline) ? 0.45 : 1,
               cursor: (!formData.currentProvider || !formData.timeline) ? 'not-allowed' : 'pointer',
             }}
-            onMouseOver={(e) => { if (formData.currentProvider && formData.timeline) { e.currentTarget.style.transform = 'translateY(-1px)'; e.currentTarget.style.boxShadow = '0 6px 28px rgba(46,204,113,0.38)'; } }}
-            onMouseOut={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 20px rgba(46,204,113,0.28)'; }}
+            onMouseOver={(e) => { if (formData.currentProvider && formData.timeline) { e.currentTarget.style.transform = 'translateY(-1px)'; e.currentTarget.style.boxShadow = '0 6px 28px rgba(0,230,118,0.38)'; } }}
+            onMouseOut={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,230,118,0.28)'; }}
           >
             Continue →
           </button>
@@ -1396,7 +1387,7 @@ function HeroLeadForm() {
             borderRadius: 8, padding: '7px 12px',
           }}>
             <CalendarIcon size={13} color="#d4a745" />
-            <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: '#d4a745', fontWeight: 600 }}>
+            <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 12, color: '#d4a745', fontWeight: 600 }}>
               Next available: {nextWalkthroughDate}
             </span>
           </div>
@@ -1414,7 +1405,7 @@ function HeroLeadForm() {
                 value={formData[field.key]}
                 onChange={(e) => setFormData({ ...formData, [field.key]: e.target.value })}
                 style={inputStyle}
-                onFocus={(e) => (e.target.style.borderColor = 'rgba(46,204,113,0.5)')}
+                onFocus={(e) => (e.target.style.borderColor = 'rgba(0,230,118,0.5)')}
                 onBlur={(e) => (e.target.style.borderColor = 'rgba(255,255,255,0.12)')}
               />
             </div>
@@ -1428,7 +1419,7 @@ function HeroLeadForm() {
               onChange={(e) => setFormData({ ...formData, preferredDate: e.target.value })}
               min={new Date().toISOString().split('T')[0]}
               style={{ ...inputStyle, colorScheme: 'dark' }}
-              onFocus={(e) => (e.target.style.borderColor = 'rgba(46,204,113,0.5)')}
+              onFocus={(e) => (e.target.style.borderColor = 'rgba(0,230,118,0.5)')}
               onBlur={(e) => (e.target.style.borderColor = 'rgba(255,255,255,0.12)')}
             />
           </div>
@@ -1442,13 +1433,13 @@ function HeroLeadForm() {
               opacity: (!formData.name || !formData.email || !formData.phone) ? 0.45 : 1,
               cursor: (!formData.name || !formData.email || !formData.phone) ? 'not-allowed' : 'pointer',
             }}
-            onMouseOver={(e) => { if (formData.name && formData.email && formData.phone) { e.currentTarget.style.transform = 'translateY(-1px)'; e.currentTarget.style.boxShadow = '0 6px 28px rgba(46,204,113,0.4)'; } }}
-            onMouseOut={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 20px rgba(46,204,113,0.28)'; }}
+            onMouseOver={(e) => { if (formData.name && formData.email && formData.phone) { e.currentTarget.style.transform = 'translateY(-1px)'; e.currentTarget.style.boxShadow = '0 6px 28px rgba(0,230,118,0.4)'; } }}
+            onMouseOut={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,230,118,0.28)'; }}
           >
             Schedule My Walkthrough →
           </button>
 
-          <p style={{ fontSize: 11, color: 'rgba(255,255,255,0.3)', marginTop: 14, textAlign: 'center', fontFamily: "'DM Sans', sans-serif" }}>
+          <p style={{ fontSize: 11, color: 'rgba(255,255,255,0.3)', marginTop: 14, textAlign: 'center', fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
             No obligation. Free facility assessment + custom proposal within 48 hours.
           </p>
         </>
@@ -1464,23 +1455,23 @@ function Hero() {
       className="noise-overlay"
       style={{
         position: "relative", minHeight: "100vh", display: "flex", alignItems: "center",
-        background: "linear-gradient(165deg, #0a1a12 0%, #0d2818 30%, #122d1c 60%, #0a1a12 100%)",
+        background: "#060A07",
         overflow: "hidden",
       }}
     >
       <div className="hero-orb" style={{
         position: "absolute", top: -200, right: -200, width: 600, height: 600,
-        background: "radial-gradient(circle, rgba(46,204,113,0.1) 0%, rgba(46,204,113,0.03) 40%, transparent 70%)",
+        background: "radial-gradient(circle, rgba(0,230,118,0.1) 0%, rgba(0,230,118,0.03) 40%, transparent 70%)",
         borderRadius: "50%",
       }} />
       <div className="hero-orb-2" style={{
         position: "absolute", bottom: -100, left: -100, width: 500, height: 500,
-        background: "radial-gradient(circle, rgba(46,204,113,0.07) 0%, transparent 70%)",
+        background: "radial-gradient(circle, rgba(0,230,118,0.07) 0%, transparent 70%)",
         borderRadius: "50%",
       }} />
       <div className="hero-orb" style={{
         position: "absolute", top: "40%", left: "15%", width: 300, height: 300,
-        background: "radial-gradient(circle, rgba(46,204,113,0.04) 0%, transparent 70%)",
+        background: "radial-gradient(circle, rgba(0,230,118,0.04) 0%, transparent 70%)",
         borderRadius: "50%",
       }} />
       <div style={{
@@ -1493,26 +1484,26 @@ function Hero() {
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "center" }} className="hero-grid">
           <div>
             <div className="hero-badge-anim" style={{
-              display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(46,204,113,0.1)",
-              border: "1px solid rgba(46,204,113,0.25)", borderRadius: 100, padding: "6px 16px", marginBottom: 28,
+              display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(0,230,118,0.1)",
+              border: "1px solid rgba(0,230,118,0.25)", borderRadius: 100, padding: "6px 16px", marginBottom: 28,
             }}>
-              <div style={{ width: 8, height: 8, borderRadius: "50%", background: "#2ecc71", animation: "pulse 2s infinite" }} />
-              <span style={{ fontSize: 12, color: "#2ecc71", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", fontFamily: "'DM Sans', sans-serif" }}>
+              <div style={{ width: 8, height: 8, borderRadius: "50%", background: "#00E676", animation: "pulse 2s infinite" }} />
+              <span style={{ fontSize: 12, color: "#00E676", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
                 MBE Certified • Licensed & Insured
               </span>
             </div>
 
             <h1 className="hero-title-anim" style={{
-              fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(36px, 5vw, 64px)",
+              fontFamily: "'Syne', sans-serif", fontSize: "clamp(36px, 5vw, 64px)",
               fontWeight: 700, color: "#fff", lineHeight: 1.08, marginBottom: 24, letterSpacing: "-0.02em",
             }}>
               Your Facility Passes<br />
               Every Inspection.<br />
-              <span style={{ color: "#2ecc71" }}>We Guarantee It.</span>
+              <span style={{ color: "#00E676" }}>We Guarantee It.</span>
             </h1>
 
             <p className="hero-subtitle-anim" style={{
-              fontFamily: "'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.65)",
+              fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.65)",
               lineHeight: 1.7, marginBottom: 36, maxWidth: 520,
             }}>
               MBE-certified facility maintenance for schools, healthcare, houses of worship, and government buildings across NY, NJ, CT, PA &amp; FL. Every cleaning session verified in real-time through JaniTrack.
@@ -1520,23 +1511,23 @@ function Hero() {
 
             <div className="hero-ctas-anim" style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
               <a href="#" onClick={(e) => { e.preventDefault(); scrollTo("schedule"); }} className="cta-glow" style={{
-                background: "linear-gradient(135deg, #2ecc71, #27ae60)", color: "#fff", padding: "16px 36px",
-                borderRadius: 10, fontWeight: 700, fontSize: 16, textDecoration: "none", fontFamily: "'DM Sans', sans-serif",
-                boxShadow: "0 4px 24px rgba(46,204,113,0.3)", transition: "transform 0.2s, box-shadow 0.2s",
+                background: "#00E676", color: "#060A07", padding: "16px 36px",
+                borderRadius: 4, fontWeight: 700, fontSize: 14, textDecoration: "none", fontFamily: "'Syne', sans-serif",
+                letterSpacing: "0.04em", textTransform: "uppercase", transition: "transform 0.2s",
                 display: "inline-flex", alignItems: "center", gap: 8,
               }}
-                onMouseOver={(e) => { e.currentTarget.style.transform = "translateY(-2px)"; e.currentTarget.style.boxShadow = "0 6px 32px rgba(46,204,113,0.45)"; }}
-                onMouseOut={(e) => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "0 4px 24px rgba(46,204,113,0.3)"; }}
+                onMouseOver={(e) => { e.currentTarget.style.transform = "translateY(-2px)"; e.currentTarget.style.boxShadow = "0 6px 32px rgba(0,230,118,0.45)"; }}
+                onMouseOut={(e) => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "0 4px 24px rgba(0,230,118,0.3)"; }}
               >
                 Schedule a Free Walkthrough
                 <span style={{ fontSize: 20 }}>→</span>
               </a>
               <a href="#" onClick={(e) => { e.preventDefault(); scrollTo("quote"); }} style={{
                 background: "rgba(255,255,255,0.05)", color: "#fff", padding: "16px 36px",
-                borderRadius: 10, fontWeight: 600, fontSize: 16, textDecoration: "none", fontFamily: "'DM Sans', sans-serif",
+                borderRadius: 10, fontWeight: 600, fontSize: 16, textDecoration: "none", fontFamily: "'Plus Jakarta Sans', sans-serif",
                 border: "1px solid rgba(255,255,255,0.15)", transition: "all 0.2s",
               }}
-                onMouseOver={(e) => { e.currentTarget.style.background = "rgba(255,255,255,0.1)"; e.currentTarget.style.borderColor = "rgba(46,204,113,0.4)"; }}
+                onMouseOver={(e) => { e.currentTarget.style.background = "rgba(255,255,255,0.1)"; e.currentTarget.style.borderColor = "rgba(0,230,118,0.4)"; }}
                 onMouseOut={(e) => { e.currentTarget.style.background = "rgba(255,255,255,0.05)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.15)"; }}
               >
                 Get an Instant Estimate
@@ -1550,9 +1541,9 @@ function Hero() {
                 { text: "$2M+ Insurance" },
                 { text: "Background-Checked Teams" },
               ].map((item) => (
-                <div key={item.text} style={{ display: "flex", alignItems: "center", gap: 6, background: "rgba(46,204,113,0.08)", border: "1px solid rgba(46,204,113,0.2)", borderRadius: 100, padding: "5px 14px" }}>
-                  <span style={{ color: "#2ecc71", fontWeight: 700, fontSize: 12 }}>✓</span>
-                  <span style={{ color: "rgba(255,255,255,0.7)", fontSize: 12, fontFamily: "'DM Sans', sans-serif", fontWeight: 600 }}>{item.text}</span>
+                <div key={item.text} style={{ display: "flex", alignItems: "center", gap: 6, background: "rgba(0,230,118,0.08)", border: "1px solid rgba(0,230,118,0.2)", borderRadius: 100, padding: "5px 14px" }}>
+                  <span style={{ color: "#00E676", fontWeight: 700, fontSize: 12 }}>✓</span>
+                  <span style={{ color: "rgba(255,255,255,0.7)", fontSize: 12, fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 600 }}>{item.text}</span>
                 </div>
               ))}
             </div>
@@ -1569,9 +1560,9 @@ function Hero() {
 
 function StatsBar() {
   return (
-    <section className="noise-overlay" style={{ background: "linear-gradient(135deg, #0a1a12 0%, #0d2818 50%, #122d1c 100%)", position: "relative", overflow: "hidden" }}>
+    <section className="noise-overlay" style={{ background: "#0A0F0B", position: "relative", overflow: "hidden" }}>
       {/* Shimmer top line */}
-      <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 1, background: "linear-gradient(90deg, transparent, rgba(46,204,113,0.4), transparent)" }} />
+      <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 1, background: "linear-gradient(90deg, transparent, rgba(0,230,118,0.4), transparent)" }} />
       <div style={{ maxWidth: 1280, margin: "0 auto", padding: "56px 24px", display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 0, textAlign: "center", position: "relative", zIndex: 1 }} className="stats-grid">
         {TRUST_STATS.map((stat, i) => (
           <AnimatedSection key={stat.label} delay={i * 0.1}>
@@ -1579,10 +1570,10 @@ function StatsBar() {
               padding: "20px 24px",
               borderRight: i < TRUST_STATS.length - 1 ? "1px solid rgba(255,255,255,0.06)" : "none",
             }}>
-              <div className="stat-number" style={{ fontSize: "clamp(32px, 4vw, 48px)", fontWeight: 800, fontFamily: "'Playfair Display', Georgia, serif", lineHeight: 1 }}>
+              <div className="stat-number" style={{ fontSize: "clamp(32px, 4vw, 48px)", fontWeight: 800, fontFamily: "'Syne', sans-serif", lineHeight: 1 }}>
                 {stat.number}
               </div>
-              <div style={{ fontSize: 13, color: "rgba(255,255,255,0.5)", marginTop: 10, fontFamily: "'DM Sans', sans-serif", fontWeight: 500, lineHeight: 1.4 }}>
+              <div style={{ fontSize: 13, color: "rgba(255,255,255,0.5)", marginTop: 10, fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 500, lineHeight: 1.4 }}>
                 {stat.label}
               </div>
             </div>
@@ -1590,32 +1581,22 @@ function StatsBar() {
         ))}
       </div>
       {/* Shimmer bottom line */}
-      <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: 1, background: "linear-gradient(90deg, transparent, rgba(46,204,113,0.2), transparent)" }} />
+      <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: 1, background: "linear-gradient(90deg, transparent, rgba(0,230,118,0.2), transparent)" }} />
     </section>
   );
 }
 
 function AuthorityBar() {
+  const items = ["NYC Charter Schools", "Westchester Medical Offices", "NJ Houses of Worship", "CT Office Buildings", "PA Educational Facilities", "Bronx Community Centers", "Miami Healthcare Clinics", "Government Facilities", "MBE/MWBE Certified", "SAM.gov Registered", "$2M+ Insured"];
   return (
-    <section style={{ background: "#fff", padding: "40px 24px", borderBottom: "1px solid #eee" }}>
-      <div style={{ maxWidth: 1280, margin: "0 auto", textAlign: "center" }}>
-        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: "#999", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.12em", marginBottom: 20 }}>
-          Trusted by Schools, Healthcare Facilities &amp; Government Buildings Across the Tri-State
-        </div>
-        <div style={{ display: "flex", justifyContent: "center", gap: 32, flexWrap: "wrap", alignItems: "center" }}>
-          {[
-            { label: "NYC Charter Schools", iconKey: "school" },
-            { label: "Westchester Medical Offices", iconKey: "medical" },
-            { label: "NJ Houses of Worship", iconKey: "church" },
-            { label: "CT Office Buildings", iconKey: "briefcase" },
-            { label: "PA Educational Facilities", iconKey: "school" },
-          ].map((client) => (
-            <div key={client.label} style={{ display: "flex", alignItems: "center", gap: 8, padding: "8px 16px", background: "#fafbfa", borderRadius: 8, border: "1px solid #eee" }}>
-              <span style={{ display: 'flex' }}>{getIcon(client.iconKey, 18, '#27ae60')}</span>
-              <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "#555", fontWeight: 600 }}>{client.label}</span>
-            </div>
-          ))}
-        </div>
+    <section style={{ background: '#0D1310', borderTop: '1px solid rgba(0,230,118,0.08)', borderBottom: '1px solid rgba(0,230,118,0.08)', padding: '14px 0', overflow: 'hidden', position: 'relative' }}>
+      <div style={{ display: 'flex', animation: 'marquee 30s linear infinite', whiteSpace: 'nowrap' }}>
+        {[...items, ...items].map((item, i) => (
+          <div key={i} style={{ display: 'inline-flex', alignItems: 'center', gap: 24, padding: '0 32px' }}>
+            <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 11, color: 'rgba(0,230,118,0.6)', letterSpacing: '0.1em', textTransform: 'uppercase' }}>{item}</span>
+            <span style={{ color: 'rgba(0,230,118,0.2)', fontSize: 10 }}>◆</span>
+          </div>
+        ))}
       </div>
     </section>
   );
@@ -1623,15 +1604,15 @@ function AuthorityBar() {
 
 function ComplianceSection() {
   return (
-    <section id="compliance" className="noise-overlay" style={{ background: "linear-gradient(135deg, #0d2818, #1a4d2e)", padding: "80px 24px", position: "relative", overflow: "hidden" }}>
+    <section id="compliance" className="noise-overlay" style={{ background: "#060A07", padding: "80px 24px", position: "relative", overflow: "hidden" }}>
       <div style={{ maxWidth: 1280, margin: "0 auto" }}>
         <AnimatedSection>
           <div style={{ textAlign: "center", marginBottom: 48 }}>
-            <div style={{ fontSize: 12, color: "#2ecc71", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'DM Sans', sans-serif" }}>
+            <div style={{ fontSize: 10, color: "#00E676", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
               Compliance &amp; Certifications
             </div>
-            <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 700, color: "#fff", lineHeight: 1.15 }}>
-              RFP-Ready. Procurement-Compliant.<br /><span style={{ color: "#2ecc71" }}>Audit-Proof.</span>
+            <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 700, color: "#fff", lineHeight: 1.15 }}>
+              RFP-Ready. Procurement-Compliant.<br /><span style={{ color: "#00E676" }}>Audit-Proof.</span>
             </h2>
           </div>
         </AnimatedSection>
@@ -1643,27 +1624,27 @@ function ComplianceSection() {
             { iconKey: "clipboard", title: "OSHA Compliant", desc: "All field staff trained on OSHA safety standards. Background-checked and drug-tested workforce." },
           ].map((item) => (
             <AnimatedSection key={item.title}>
-              <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 16, padding: 32, textAlign: "center", height: "100%", display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+              <div style={{ background: "#0D1310", border: "1px solid rgba(0,230,118,0.1)", borderRadius: 0, padding: 32, textAlign: "center", height: "100%", display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                 <IconBox size={64} radius={16} dark>
                   {getIcon(item.iconKey, 32)}
                 </IconBox>
                 <div style={{ height: 16 }} />
-                <div style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 700, fontSize: 16, color: "#fff", marginBottom: 10 }}>{item.title}</div>
-                <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.7 }}>{item.desc}</div>
+                <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 700, fontSize: 16, color: "#fff", marginBottom: 10 }}>{item.title}</div>
+                <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.7 }}>{item.desc}</div>
               </div>
             </AnimatedSection>
           ))}
         </div>
         <div style={{ textAlign: "center", marginTop: 40 }}>
-          <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.4)", marginBottom: 8 }}>NAICS Codes: 561720 (Janitorial Services) | 238210 (Electrical Contractors) | 561790 (Other Services to Buildings)</div>
+          <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.4)", marginBottom: 8 }}>NAICS Codes: 561720 (Janitorial Services) | 238210 (Electrical Contractors) | 561790 (Other Services to Buildings)</div>
           <a href="#" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }} style={{
             display: "inline-flex", alignItems: "center", gap: 8, marginTop: 16,
-            background: "rgba(46,204,113,0.12)", color: "#2ecc71", padding: "10px 24px", borderRadius: 8,
-            fontWeight: 600, fontSize: 14, textDecoration: "none", fontFamily: "'DM Sans', sans-serif",
-            border: "1px solid rgba(46,204,113,0.25)", transition: "all 0.2s",
+            background: "rgba(0,230,118,0.12)", color: "#00E676", padding: "10px 24px", borderRadius: 8,
+            fontWeight: 600, fontSize: 14, textDecoration: "none", fontFamily: "'Plus Jakarta Sans', sans-serif",
+            border: "1px solid rgba(0,230,118,0.25)", transition: "all 0.2s",
           }}
-            onMouseOver={(e) => { e.currentTarget.style.background = "rgba(46,204,113,0.2)"; }}
-            onMouseOut={(e) => { e.currentTarget.style.background = "rgba(46,204,113,0.12)"; }}
+            onMouseOver={(e) => { e.currentTarget.style.background = "rgba(0,230,118,0.2)"; }}
+            onMouseOut={(e) => { e.currentTarget.style.background = "rgba(0,230,118,0.12)"; }}
           >
             Request Capability Statement &amp; W-9 \u2192
           </a>
@@ -1675,21 +1656,21 @@ function ComplianceSection() {
 
 function About() {
   return (
-    <section id="about" style={{ background: "#fafbfa", padding: "100px 24px" }}>
+    <section id="about" style={{ background: "#0A0F0B", padding: "100px 24px" }}>
       <div style={{ maxWidth: 1280, margin: "0 auto" }}>
         <AnimatedSection>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "center" }} className="about-grid">
             <div>
-              <div style={{ fontSize: 12, color: "#2ecc71", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'DM Sans', sans-serif" }}>
+              <div style={{ fontSize: 10, color: "#00E676", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
                 About GreenPoint
               </div>
-              <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#0d2818", lineHeight: 1.15, marginBottom: 24 }}>
-                Your Last Cleaning Company<br />Didn't Show Up. <span style={{ color: "#2ecc71" }}>We Will.</span>
+              <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#fff", lineHeight: 1.15, marginBottom: 24 }}>
+                Your Last Cleaning Company<br />Didn't Show Up. <span style={{ color: "#00E676" }}>We Will.</span>
               </h2>
-              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 16, color: "#555", lineHeight: 1.8, marginBottom: 20 }}>
+              <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "rgba(255,255,255,0.6)", lineHeight: 1.8, marginBottom: 20 }}>
                 GreenPoint Maintenance Services Corp is an MBE-certified facility services provider headquartered in New York, serving institutional and commercial clients across five states since 2018. We specialize in the facilities that can't afford missed cleanings: schools with health inspections, medical offices with OSHA requirements, and government buildings with procurement compliance standards.
               </p>
-              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 16, color: "#555", lineHeight: 1.8, marginBottom: 28 }}>
+              <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "rgba(255,255,255,0.6)", lineHeight: 1.8, marginBottom: 28 }}>
                 Every cleaning session is verified in real-time through JaniTrack — our proprietary system that provides timestamped photo documentation, GPS-tagged task completion, and ATP bioluminescence readings. You don't have to trust that we cleaned. You can see the proof.
               </p>
 
@@ -1701,12 +1682,12 @@ function About() {
                   { label: "OSHA Compliant", sub: "Trained Workforce" },
                 ].map((item) => (
                   <div key={item.label} style={{ display: "flex", alignItems: "flex-start", gap: 12 }}>
-                    <div style={{ width: 36, height: 36, borderRadius: 8, background: "rgba(46,204,113,0.1)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                      <span style={{ color: "#2ecc71", fontWeight: 700, fontSize: 16 }}>✓</span>
+                    <div style={{ width: 36, height: 36, borderRadius: 8, background: "rgba(0,230,118,0.1)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                      <span style={{ color: "#00E676", fontWeight: 700, fontSize: 16 }}>✓</span>
                     </div>
                     <div>
-                      <div style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 700, fontSize: 14, color: "#0d2818" }}>{item.label}</div>
-                      <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: "#888" }}>{item.sub}</div>
+                      <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 700, fontSize: 14, color: "#fff" }}>{item.label}</div>
+                      <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 12, color: "rgba(255,255,255,0.4)" }}>{item.sub}</div>
                     </div>
                   </div>
                 ))}
@@ -1715,25 +1696,25 @@ function About() {
 
             <div style={{ position: "relative" }}>
               <div style={{
-                background: "linear-gradient(135deg, #0d2818, #1a4d2e)", borderRadius: 20, padding: 48,
+                background: "#0D1310", borderRadius: 0, border: "1px solid rgba(0,230,118,0.15)", padding: 48,
                 position: "relative", overflow: "hidden",
               }}>
-                <div style={{ position: "absolute", top: -60, right: -60, width: 200, height: 200, background: "radial-gradient(circle, rgba(46,204,113,0.15), transparent)", borderRadius: "50%" }} />
+                <div style={{ position: "absolute", top: -60, right: -60, width: 200, height: 200, background: "radial-gradient(circle, rgba(0,230,118,0.15), transparent)", borderRadius: "50%" }} />
                 <div style={{ position: "relative", zIndex: 1 }}>
-                  <div style={{ marginBottom: 20 }}><AwardIcon size={48} color="#2ecc71" /></div>
-                  <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: 28, color: "#fff", marginBottom: 12 }}>
+                  <div style={{ marginBottom: 20 }}><AwardIcon size={48} color="#00E676" /></div>
+                  <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: 28, color: "#fff", marginBottom: 12 }}>
                     Certified Minority Business Enterprise
                   </h3>
-                  <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 15, color: "rgba(255,255,255,0.65)", lineHeight: 1.7, marginBottom: 24 }}>
+                  <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 15, color: "rgba(255,255,255,0.65)", lineHeight: 1.7, marginBottom: 24 }}>
                     Registered with New York State and the City of New York. Eligible for all diversity procurement programs and MWBE set-aside contracts.
                   </p>
                   <div style={{ borderTop: "1px solid rgba(255,255,255,0.1)", paddingTop: 20 }}>
-                    <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.45)", marginBottom: 8 }}>Also registered with:</div>
+                    <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.45)", marginBottom: 8 }}>Also registered with:</div>
                     <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
                       {["SAM.gov", "OSHA Compliant", "EPA Standards"].map((badge) => (
                         <span key={badge} style={{
-                          background: "rgba(46,204,113,0.15)", color: "#2ecc71", padding: "4px 12px",
-                          borderRadius: 6, fontSize: 12, fontWeight: 600, fontFamily: "'DM Sans', sans-serif",
+                          background: "rgba(0,230,118,0.15)", color: "#00E676", padding: "4px 12px",
+                          borderRadius: 6, fontSize: 12, fontWeight: 600, fontFamily: "'Plus Jakarta Sans', sans-serif",
                         }}>
                           {badge}
                         </span>
@@ -1752,18 +1733,22 @@ function About() {
 
 function Services() {
   return (
-    <section id="services" className="dot-texture" style={{ background: "#fff", padding: "100px 24px" }}>
-      <div style={{ maxWidth: 1280, margin: "0 auto" }}>
+    <section id="services" style={{ background: "#060A07", padding: "100px 24px", position: "relative", overflow: "hidden" }}>
+      {/* Dot grid texture */}
+      <div style={{ position: "absolute", inset: 0, opacity: 0.4, pointerEvents: "none", backgroundImage: "radial-gradient(circle, rgba(13,40,24,0.05) 0.8px, transparent 0.8px)", backgroundSize: "28px 28px" }} />
+      {/* Ambient green glow */}
+      <div style={{ position: "absolute", top: "30%", left: "-10%", width: 600, height: 600, background: "radial-gradient(circle, rgba(0,230,118,0.04) 0%, transparent 60%)", borderRadius: "50%", pointerEvents: "none" }} />
+      <div style={{ maxWidth: 1280, margin: "0 auto", position: "relative", zIndex: 1 }}>
         <AnimatedSection>
           <div style={{ textAlign: "center", marginBottom: 64 }}>
             <div className="green-line-center" />
-            <div style={{ fontSize: 12, color: "#2ecc71", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'DM Sans', sans-serif" }}>
+            <div style={{ fontSize: 10, color: "#00E676", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
               Our Services
             </div>
-            <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#0d2818", lineHeight: 1.15, marginBottom: 16 }}>
-              Complete Facility Solutions.<br /><span style={{ color: "#2ecc71" }}>One Contract. One Invoice.</span>
+            <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#fff", lineHeight: 1.15, marginBottom: 16 }}>
+              Complete Facility Solutions.<br /><span style={{ color: "#00E676" }}>One Contract. One Invoice.</span>
             </h2>
-            <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 16, color: "#666", maxWidth: 600, margin: "0 auto", lineHeight: 1.7 }}>
+            <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "rgba(255,255,255,0.55)", maxWidth: 600, margin: "0 auto", lineHeight: 1.7 }}>
               Consolidate your facility services under one provider. From daily janitorial to emergency response — managed, documented, and verified.
             </p>
           </div>
@@ -1775,9 +1760,9 @@ function Services() {
               <div
                 className="premium-card card-accent-top"
                 style={{
-                  background: "#fff", borderRadius: 16, padding: 36, border: "1px solid rgba(0,0,0,0.07)",
+                  background: "#0D1310",
+                  borderRadius: 0, padding: 40, border: "1px solid rgba(0,230,118,0.1)",
                   cursor: "default", height: "100%",
-                  boxShadow: "0 2px 16px rgba(0,0,0,0.05)",
                   position: "relative", overflow: "hidden",
                 }}
               >
@@ -1785,15 +1770,15 @@ function Services() {
                   {getIcon(svc.iconKey, 28)}
                 </IconBox>
                 <div style={{ height: 18 }} />
-                <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: 20, fontWeight: 700, color: "#0d2818", marginBottom: 6 }}>
+                <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: 20, fontWeight: 700, color: "#fff", marginBottom: 6 }}>
                   {svc.title}
                 </h3>
                 {svc.outcome && (
-                  <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "#2ecc71", fontWeight: 700, marginBottom: 10 }}>
+                  <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "#00E676", fontWeight: 700, marginBottom: 10 }}>
                     {svc.outcome}
                   </div>
                 )}
-                <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: "#666", lineHeight: 1.7 }}>
+                <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.6)", lineHeight: 1.7 }}>
                   {svc.desc}
                 </p>
               </div>
@@ -1809,18 +1794,18 @@ function IndustriesSection() {
   const [active, setActive] = useState(0);
 
   return (
-    <section id="industries" className="noise-overlay" style={{ background: "linear-gradient(165deg, #0a1a12, #0d2818, #122d1c)", padding: "100px 24px", position: "relative", overflow: "hidden" }}>
+    <section id="industries" className="noise-overlay" style={{ background: "#060A07", padding: "100px 24px", position: "relative", overflow: "hidden" }}>
       <div style={{ maxWidth: 1280, margin: "0 auto" }}>
         <AnimatedSection>
           <div style={{ textAlign: "center", marginBottom: 64 }}>
-            <div style={{ fontSize: 12, color: "#2ecc71", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'DM Sans', sans-serif" }}>
+            <div style={{ fontSize: 10, color: "#00E676", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
               Industries We Serve
             </div>
-            <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#fff", lineHeight: 1.15, marginBottom: 16 }}>
+            <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#fff", lineHeight: 1.15, marginBottom: 16 }}>
               Specialized Cleaning for<br />
-              <span style={{ color: "#2ecc71" }}>Every Facility Type</span>
+              <span style={{ color: "#00E676" }}>Every Facility Type</span>
             </h2>
-            <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 16, color: "rgba(255,255,255,0.55)", maxWidth: 600, margin: "0 auto", lineHeight: 1.7 }}>
+            <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "rgba(255,255,255,0.55)", maxWidth: 600, margin: "0 auto", lineHeight: 1.7 }}>
               Each industry has unique requirements. We've built dedicated protocols for every vertical we serve.
             </p>
           </div>
@@ -1834,14 +1819,14 @@ function IndustriesSection() {
                 onClick={() => setActive(i)}
                 style={{
                   padding: "10px 20px", borderRadius: 100, border: "1px solid",
-                  borderColor: active === i ? "#2ecc71" : "rgba(255,255,255,0.15)",
-                  background: active === i ? "rgba(46,204,113,0.15)" : "transparent",
-                  color: active === i ? "#2ecc71" : "rgba(255,255,255,0.6)",
-                  fontSize: 14, fontWeight: 600, cursor: "pointer", fontFamily: "'DM Sans', sans-serif",
+                  borderColor: active === i ? "#00E676" : "rgba(255,255,255,0.15)",
+                  background: active === i ? "rgba(0,230,118,0.15)" : "transparent",
+                  color: active === i ? "#00E676" : "rgba(255,255,255,0.6)",
+                  fontSize: 14, fontWeight: 600, cursor: "pointer", fontFamily: "'Plus Jakarta Sans', sans-serif",
                   transition: "all 0.2s", display: "flex", alignItems: "center", gap: 8,
                 }}
               >
-                <span style={{ display: 'flex' }}>{getIcon(ind.iconKey, 16, active === i ? '#2ecc71' : 'rgba(255,255,255,0.5)')}</span> {ind.title.split("&")[0].trim()}
+                <span style={{ display: 'flex' }}>{getIcon(ind.iconKey, 16, active === i ? '#00E676' : 'rgba(255,255,255,0.5)')}</span> {ind.title.split("&")[0].trim()}
               </button>
             ))}
           </div>
@@ -1854,28 +1839,28 @@ function IndustriesSection() {
             position: "relative", overflow: "hidden",
           }} className="industry-detail">
             {/* Corner glow accent */}
-            <div style={{ position: "absolute", top: -80, right: -80, width: 300, height: 300, background: "radial-gradient(circle, rgba(46,204,113,0.08) 0%, transparent 65%)", borderRadius: "50%", pointerEvents: "none" }} />
+            <div style={{ position: "absolute", top: -80, right: -80, width: 300, height: 300, background: "radial-gradient(circle, rgba(0,230,118,0.08) 0%, transparent 65%)", borderRadius: "50%", pointerEvents: "none" }} />
             <div>
               <IconBox size={72} radius={18} dark>
                 {getIcon(INDUSTRIES[active].iconKey, 36)}
               </IconBox>
               <div style={{ height: 16 }} />
-              <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: 28, fontWeight: 700, color: "#fff", marginBottom: 14 }}>
+              <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: 28, fontWeight: 700, color: "#fff", marginBottom: 14 }}>
                 {INDUSTRIES[active].title}
               </h3>
-              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 16, color: "rgba(255,255,255,0.6)", lineHeight: 1.8, marginBottom: 28 }}>
+              <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "rgba(255,255,255,0.6)", lineHeight: 1.8, marginBottom: 28 }}>
                 {INDUSTRIES[active].desc}
               </p>
               <a href="#" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }} style={{
                 display: "inline-flex", alignItems: "center", gap: 8,
-                background: "#2ecc71", color: "#fff", padding: "12px 28px", borderRadius: 8,
-                fontWeight: 600, fontSize: 14, textDecoration: "none", fontFamily: "'DM Sans', sans-serif",
+                background: "#00E676", color: "#fff", padding: "12px 28px", borderRadius: 8,
+                fontWeight: 600, fontSize: 14, textDecoration: "none", fontFamily: "'Plus Jakarta Sans', sans-serif",
               }}>
                 Get a {INDUSTRIES[active].title.split("&")[0].trim()} Cleaning Quote →
               </a>
             </div>
             <div>
-              <div style={{ fontSize: 13, color: "rgba(255,255,255,0.4)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 18, fontFamily: "'DM Sans', sans-serif" }}>
+              <div style={{ fontSize: 13, color: "rgba(255,255,255,0.4)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 18, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
                 What's Included
               </div>
               {INDUSTRIES[active].features.map((feat, i) => (
@@ -1884,12 +1869,12 @@ function IndustriesSection() {
                   borderBottom: i < INDUSTRIES[active].features.length - 1 ? "1px solid rgba(255,255,255,0.06)" : "none",
                 }}>
                   <div style={{
-                    width: 28, height: 28, borderRadius: 7, background: "rgba(46,204,113,0.12)",
+                    width: 28, height: 28, borderRadius: 7, background: "rgba(0,230,118,0.12)",
                     display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0,
                   }}>
-                    <span style={{ color: "#2ecc71", fontSize: 13, fontWeight: 700 }}>✓</span>
+                    <span style={{ color: "#00E676", fontSize: 13, fontWeight: 700 }}>✓</span>
                   </div>
-                  <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 15, color: "rgba(255,255,255,0.8)" }}>
+                  <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 15, color: "rgba(255,255,255,0.8)" }}>
                     {feat}
                   </span>
                 </div>
@@ -1904,21 +1889,23 @@ function IndustriesSection() {
 
 function JaniTrack() {
   return (
-    <section id="janitrack" style={{ background: "#fff", padding: "100px 24px" }}>
+    <section id="janitrack" className="noise-overlay" style={{ background: "#0A0F0B", padding: "100px 24px", position: "relative", overflow: "hidden" }}>
+      {/* Ambient glow */}
+      <div style={{ position: "absolute", top: "20%", right: "10%", width: 500, height: 500, background: "radial-gradient(circle, rgba(0,230,118,0.06) 0%, transparent 70%)", borderRadius: "50%", pointerEvents: "none" }} />
       <div style={{ maxWidth: 1280, margin: "0 auto" }}>
         <AnimatedSection>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "center" }} className="janitrack-grid">
             <div style={{ position: "relative" }}>
               <div style={{
-                background: "#0d2818", borderRadius: 24, padding: 32, overflow: "hidden",
-                border: "1px solid rgba(46,204,113,0.2)", boxShadow: "0 24px 80px rgba(0,0,0,0.15)",
+                background: "#0D1310", borderRadius: 0, padding: 32, overflow: "hidden",
+                border: "1px solid rgba(0,230,118,0.2)", boxShadow: "0 24px 80px rgba(0,0,0,0.15)",
               }}>
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 28 }}>
                   <div>
-                    <div style={{ fontSize: 11, color: "#2ecc71", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", fontFamily: "'DM Sans', sans-serif" }}>JaniTrack</div>
-                    <div style={{ fontSize: 18, color: "#fff", fontWeight: 700, fontFamily: "'Playfair Display', serif", marginTop: 2 }}>Live Dashboard</div>
+                    <div style={{ fontSize: 11, color: "#00E676", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>JaniTrack</div>
+                    <div style={{ fontSize: 18, color: "#fff", fontWeight: 700, fontFamily: "'Syne', sans-serif", marginTop: 2 }}>Live Dashboard</div>
                   </div>
-                  <div style={{ width: 8, height: 8, borderRadius: "50%", background: "#2ecc71", boxShadow: "0 0 12px rgba(46,204,113,0.6)", animation: "pulse 2s infinite" }} />
+                  <div style={{ width: 8, height: 8, borderRadius: "50%", background: "#00E676", boxShadow: "0 0 12px rgba(0,230,118,0.6)", animation: "pulse 2s infinite" }} />
                 </div>
 
                 {[
@@ -1932,28 +1919,28 @@ function JaniTrack() {
                     display: "flex", justifyContent: "space-between", alignItems: "center",
                   }}>
                     <div>
-                      <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: "#fff", fontWeight: 600 }}>{entry.area}</div>
-                      <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: "rgba(255,255,255,0.4)", marginTop: 2 }}>{entry.time}</div>
+                      <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "#fff", fontWeight: 600 }}>{entry.area}</div>
+                      <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 12, color: "rgba(255,255,255,0.4)", marginTop: 2 }}>{entry.time}</div>
                     </div>
                     <div style={{ textAlign: "right" }}>
-                      <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: entry.status.includes("✓") ? "#2ecc71" : "#f39c12", fontWeight: 600 }}>{entry.status}</div>
-                      <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 18, color: "#fff", fontWeight: 800, marginTop: 2 }}>{entry.score}</div>
+                      <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 12, color: entry.status.includes("✓") ? "#00E676" : "#f39c12", fontWeight: 600 }}>{entry.status}</div>
+                      <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 18, color: "#fff", fontWeight: 800, marginTop: 2 }}>{entry.score}</div>
                     </div>
                   </div>
                 ))}
 
                 <div style={{
-                  marginTop: 16, background: "rgba(46,204,113,0.08)", borderRadius: 12,
-                  padding: "18px", border: "1px solid rgba(46,204,113,0.15)",
+                  marginTop: 16, background: "rgba(0,230,118,0.08)", borderRadius: 12,
+                  padding: "18px", border: "1px solid rgba(0,230,118,0.15)",
                 }}>
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                     <div>
-                      <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "#2ecc71", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em" }}>ATP Bioluminescence</div>
-                      <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.6)", marginTop: 4 }}>High-touch surface reading</div>
+                      <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: "#00E676", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em" }}>ATP Bioluminescence</div>
+                      <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.6)", marginTop: 4 }}>High-touch surface reading</div>
                     </div>
                     <div style={{ textAlign: "right" }}>
-                      <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 28, color: "#2ecc71", fontWeight: 800 }}>12</div>
-                      <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)" }}>RLU (Pass &lt;30)</div>
+                      <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 28, color: "#00E676", fontWeight: 800 }}>12</div>
+                      <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)" }}>RLU (Pass &lt;30)</div>
                     </div>
                   </div>
                 </div>
@@ -1961,13 +1948,13 @@ function JaniTrack() {
             </div>
 
             <div>
-              <div style={{ fontSize: 12, color: "#2ecc71", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'DM Sans', sans-serif" }}>
+              <div style={{ fontSize: 10, color: "#00E676", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
                 Proprietary Technology
               </div>
-              <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#0d2818", lineHeight: 1.15, marginBottom: 24 }}>
-                JaniTrack:<br />Proof, Not Promises
+              <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#fff", lineHeight: 1.15, marginBottom: 24 }}>
+                JaniTrack:<br /><span style={{ color: "#00E676" }}>Proof, Not Promises</span>
               </h2>
-              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 16, color: "#555", lineHeight: 1.8, marginBottom: 28 }}>
+              <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "rgba(255,255,255,0.6)", lineHeight: 1.8, marginBottom: 28 }}>
                 Most cleaning companies ask you to trust that the work was done. JaniTrack gives you verifiable proof — with real-time photo documentation, timestamped task completion, and ATP bioluminescence readings that quantify surface cleanliness.
               </p>
 
@@ -1979,14 +1966,14 @@ function JaniTrack() {
               ].map((item, i) => (
                 <div key={i} style={{ display: "flex", gap: 16, marginBottom: 22 }}>
                   <div style={{
-                    width: 32, height: 32, borderRadius: 8, background: "rgba(46,204,113,0.1)",
+                    width: 32, height: 32, borderRadius: 8, background: "rgba(0,230,118,0.1)",
                     display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, marginTop: 2,
                   }}>
-                    <span style={{ color: "#2ecc71", fontWeight: 800, fontSize: 14 }}>{i + 1}</span>
+                    <span style={{ color: "#00E676", fontWeight: 800, fontSize: 14 }}>{i + 1}</span>
                   </div>
                   <div>
-                    <div style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 700, fontSize: 15, color: "#0d2818", marginBottom: 4 }}>{item.title}</div>
-                    <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: "#666", lineHeight: 1.6 }}>{item.desc}</div>
+                    <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 700, fontSize: 15, color: "#fff", marginBottom: 4 }}>{item.title}</div>
+                    <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.6 }}>{item.desc}</div>
                   </div>
                 </div>
               ))}
@@ -2000,14 +1987,17 @@ function JaniTrack() {
 
 function TestimonialsSection() {
   return (
-    <section style={{ background: "#fafbfa", padding: "100px 24px" }}>
-      <div style={{ maxWidth: 1280, margin: "0 auto" }}>
+    <section style={{ background: "#060A07", padding: "100px 24px", position: "relative", overflow: "hidden" }}>
+      {/* Decorative accent */}
+      <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 1, background: "linear-gradient(90deg, transparent 20%, rgba(0,230,118,0.15) 50%, transparent 80%)" }} />
+      <div style={{ position: "absolute", bottom: "15%", right: "-5%", width: 400, height: 400, background: "radial-gradient(circle, rgba(0,230,118,0.03) 0%, transparent 60%)", borderRadius: "50%", pointerEvents: "none" }} />
+      <div style={{ maxWidth: 1280, margin: "0 auto", position: "relative", zIndex: 1 }}>
         <AnimatedSection>
           <div style={{ textAlign: "center", marginBottom: 64 }}>
-            <div style={{ fontSize: 12, color: "#2ecc71", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'DM Sans', sans-serif" }}>
+            <div style={{ fontSize: 10, color: "#00E676", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
               Client Testimonials
             </div>
-            <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#0d2818", lineHeight: 1.15 }}>
+            <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#fff", lineHeight: 1.15 }}>
               Trusted by Facilities<br />Across the Tri-State
             </h2>
           </div>
@@ -2017,17 +2007,16 @@ function TestimonialsSection() {
           {TESTIMONIALS.map((test, i) => (
             <AnimatedSection key={i} delay={i * 0.1}>
               <div style={{
-                background: "#fff", borderRadius: 16, padding: 36, border: "1px solid rgba(0,0,0,0.07)",
-                borderLeft: "4px solid #2ecc71",
+                background: "#0D1310", borderRadius: 0, padding: 36, border: "1px solid rgba(0,230,118,0.1)",
+                borderLeft: "3px solid #00E676",
                 height: "100%", display: "flex", flexDirection: "column",
-                boxShadow: "0 4px 24px rgba(0,0,0,0.05)",
                 position: "relative",
               }}>
                 {/* Decorative quote mark */}
                 <div style={{
                   position: "absolute", top: 20, right: 24,
-                  fontSize: 80, lineHeight: 1, color: "rgba(46,204,113,0.08)",
-                  fontFamily: "'Playfair Display', serif", fontWeight: 800,
+                  fontSize: 80, lineHeight: 1, color: "rgba(0,230,118,0.08)",
+                  fontFamily: "'Syne', sans-serif", fontWeight: 800,
                   pointerEvents: "none", userSelect: "none",
                 }}>"</div>
                 <div style={{ display: "flex", gap: 2, marginBottom: 16 }}>
@@ -2035,15 +2024,15 @@ function TestimonialsSection() {
                     <span key={star} style={{ color: "#f39c12", fontSize: 16 }}>★</span>
                   ))}
                 </div>
-                <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 15, color: "#444", lineHeight: 1.75, flex: 1, fontStyle: "italic", position: "relative", zIndex: 1 }}>
+                <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 15, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, flex: 1, fontStyle: "italic", position: "relative", zIndex: 1 }}>
                   "{test.quote}"
                 </p>
                 <div style={{ marginTop: 24, paddingTop: 20, borderTop: "1px solid rgba(0,0,0,0.06)" }}>
-                  <div style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 700, fontSize: 14, color: "#0d2818" }}>{test.name}</div>
-                  <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "#888", marginTop: 2 }}>{test.role}</div>
+                  <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 700, fontSize: 14, color: "#fff" }}>{test.name}</div>
+                  <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.5)", marginTop: 2 }}>{test.role}</div>
                   <span style={{
-                    display: "inline-block", marginTop: 8, background: "rgba(46,204,113,0.1)",
-                    color: "#27ae60", padding: "3px 10px", borderRadius: 4, fontSize: 11, fontWeight: 600, fontFamily: "'DM Sans', sans-serif",
+                    display: "inline-block", marginTop: 8, background: "rgba(0,230,118,0.1)",
+                    color: "#00E676", padding: "3px 10px", borderRadius: 4, fontSize: 11, fontWeight: 600, fontFamily: "'Plus Jakarta Sans', sans-serif",
                   }}>
                     {test.vertical}
                   </span>
@@ -2059,16 +2048,16 @@ function TestimonialsSection() {
 
 function ServiceAreas() {
   return (
-    <section id="areas" style={{ background: "#fff", padding: "100px 24px" }}>
+    <section id="areas" style={{ background: "#0A0F0B", padding: "100px 24px" }}>
       <div style={{ maxWidth: 1280, margin: "0 auto" }}>
         <AnimatedSection>
           <div style={{ textAlign: "center", marginBottom: 64 }}>
-            <div style={{ fontSize: 12, color: "#2ecc71", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'DM Sans', sans-serif" }}>
+            <div style={{ fontSize: 10, color: "#00E676", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
               Service Areas
             </div>
-            <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#0d2818", lineHeight: 1.15, marginBottom: 16 }}>
+            <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#fff", lineHeight: 1.15, marginBottom: 16 }}>
               Serving Five States.<br />
-              <span style={{ color: "#2ecc71" }}>Rooted in New York.</span>
+              <span style={{ color: "#00E676" }}>Rooted in New York.</span>
             </h2>
           </div>
         </AnimatedSection>
@@ -2077,26 +2066,26 @@ function ServiceAreas() {
           {AREAS.map((area, i) => (
             <AnimatedSection key={area.state} delay={i * 0.1}>
               <div style={{
-                background: i === 0 ? "linear-gradient(135deg, #0d2818, #1a4d2e)" : "#fafbfa",
-                borderRadius: 16, padding: 32, border: i === 0 ? "none" : "1px solid #eee", height: "100%",
+                background: i === 0 ? "#00E676" : "#0D1310",
+                borderRadius: 0, padding: 32, border: "1px solid rgba(0,230,118,0.1)", height: "100%",
               }}>
                 <div style={{
-                  fontSize: 32, fontWeight: 900, fontFamily: "'Playfair Display', serif",
-                  color: i === 0 ? "#2ecc71" : "#0d2818", marginBottom: 4,
+                  fontSize: 32, fontWeight: 900, fontFamily: "'Syne', sans-serif",
+                  color: i === 0 ? "#060A07" : "#00E676", marginBottom: 4,
                 }}>
                   {area.abbr}
                 </div>
                 <div style={{
-                  fontSize: 16, fontWeight: 700, fontFamily: "'DM Sans', sans-serif",
-                  color: i === 0 ? "#fff" : "#0d2818", marginBottom: 16,
+                  fontSize: 16, fontWeight: 700, fontFamily: "'Plus Jakarta Sans', sans-serif",
+                  color: i === 0 ? "#060A07" : "#fff", marginBottom: 16,
                 }}>
                   {area.state}
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
                   {area.regions.map((region) => (
                     <span key={region} style={{
-                      fontFamily: "'DM Sans', sans-serif", fontSize: 13,
-                      color: i === 0 ? "rgba(255,255,255,0.6)" : "#777",
+                      fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13,
+                      color: i === 0 ? "rgba(6,10,7,0.7)" : "rgba(255,255,255,0.5)",
                     }}>
                       {region}
                     </span>
@@ -2113,20 +2102,20 @@ function ServiceAreas() {
 
 function LearningCenter() {
   return (
-    <section id="learning" style={{ background: "linear-gradient(165deg, #0a1a12, #0d2818)", padding: "100px 24px" }}>
+    <section id="learning" style={{ background: "#060A07", padding: "100px 24px" }}>
       <div style={{ maxWidth: 1280, margin: "0 auto" }}>
         <AnimatedSection>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: 48, flexWrap: "wrap", gap: 20 }}>
             <div>
-              <div style={{ fontSize: 12, color: "#2ecc71", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'DM Sans', sans-serif" }}>
+              <div style={{ fontSize: 10, color: "#00E676", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
                 Learning Center
               </div>
-              <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 3.5vw, 36px)", fontWeight: 700, color: "#fff", lineHeight: 1.15 }}>
+              <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 3.5vw, 36px)", fontWeight: 700, color: "#fff", lineHeight: 1.15 }}>
                 Insights for Facility Managers
               </h2>
             </div>
             <a href="#" style={{
-              color: "#2ecc71", fontFamily: "'DM Sans', sans-serif", fontSize: 14, fontWeight: 600,
+              color: "#00E676", fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, fontWeight: 600,
               textDecoration: "none", display: "flex", alignItems: "center", gap: 6,
             }}>
               View All Articles →
@@ -2142,27 +2131,27 @@ function LearningCenter() {
                 borderRadius: 16, padding: 32, height: "100%", display: "flex", flexDirection: "column",
                 transition: "all 0.3s", cursor: "pointer",
               }}
-                onMouseOver={(e) => { e.currentTarget.style.borderColor = "rgba(46,204,113,0.3)"; e.currentTarget.style.transform = "translateY(-4px)"; }}
+                onMouseOver={(e) => { e.currentTarget.style.borderColor = "rgba(0,230,118,0.3)"; e.currentTarget.style.transform = "translateY(-4px)"; }}
                 onMouseOut={(e) => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.08)"; e.currentTarget.style.transform = "translateY(0)"; }}
               >
                 <div style={{ display: "flex", gap: 10, marginBottom: 18 }}>
                   <span style={{
-                    background: "rgba(46,204,113,0.12)", color: "#2ecc71", padding: "3px 10px",
-                    borderRadius: 4, fontSize: 11, fontWeight: 600, fontFamily: "'DM Sans', sans-serif",
+                    background: "rgba(0,230,118,0.12)", color: "#00E676", padding: "3px 10px",
+                    borderRadius: 4, fontSize: 11, fontWeight: 600, fontFamily: "'Plus Jakarta Sans', sans-serif",
                   }}>
                     {post.category}
                   </span>
-                  <span style={{ color: "rgba(255,255,255,0.35)", fontSize: 12, fontFamily: "'DM Sans', sans-serif", alignSelf: "center" }}>
+                  <span style={{ color: "rgba(255,255,255,0.35)", fontSize: 12, fontFamily: "'Plus Jakarta Sans', sans-serif", alignSelf: "center" }}>
                     {post.date}
                   </span>
                 </div>
-                <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: 19, fontWeight: 700, color: "#fff", marginBottom: 12, lineHeight: 1.35, flex: 0 }}>
+                <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: 19, fontWeight: 700, color: "#fff", marginBottom: 12, lineHeight: 1.35, flex: 0 }}>
                   {post.title}
                 </h3>
-                <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.7, flex: 1 }}>
+                <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.7, flex: 1 }}>
                   {post.excerpt}
                 </p>
-                <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "#2ecc71", fontWeight: 600, marginTop: 16 }}>
+                <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "#00E676", fontWeight: 600, marginTop: 16 }}>
                   Read Article →
                 </span>
               </div>
@@ -2176,29 +2165,29 @@ function LearningCenter() {
 
 function CareersSection() {
   return (
-    <section id="careers" style={{ background: "#fff", padding: "100px 24px" }}>
+    <section id="careers" style={{ background: "#0A0F0B", padding: "100px 24px" }}>
       <div style={{ maxWidth: 1280, margin: "0 auto" }}>
         <AnimatedSection>
           <div style={{
-            background: "linear-gradient(135deg, #0d2818, #1a4d2e)", borderRadius: 24, padding: "64px",
+            background: "#0D1310", borderRadius: 0, border: "1px solid rgba(0,230,118,0.12)", padding: "64px",
             display: "grid", gridTemplateColumns: "1fr 1fr", gap: 48, alignItems: "center", overflow: "hidden", position: "relative",
           }} className="careers-card">
-            <div style={{ position: "absolute", top: -80, right: -80, width: 300, height: 300, background: "radial-gradient(circle, rgba(46,204,113,0.1), transparent)", borderRadius: "50%" }} />
+            <div style={{ position: "absolute", top: -80, right: -80, width: 300, height: 300, background: "radial-gradient(circle, rgba(0,230,118,0.1), transparent)", borderRadius: "50%" }} />
             <div style={{ position: "relative", zIndex: 1 }}>
-              <div style={{ fontSize: 12, color: "#2ecc71", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'DM Sans', sans-serif" }}>
+              <div style={{ fontSize: 10, color: "#00E676", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
                 Join Our Team
               </div>
-              <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 700, color: "#fff", lineHeight: 1.15, marginBottom: 18 }}>
+              <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 700, color: "#fff", lineHeight: 1.15, marginBottom: 18 }}>
                 Build a Career in Facility Services
               </h2>
-              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 15, color: "rgba(255,255,255,0.6)", lineHeight: 1.7, marginBottom: 28 }}>
+              <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 15, color: "rgba(255,255,255,0.6)", lineHeight: 1.7, marginBottom: 28 }}>
                 We invest in our people with competitive wages, advancement opportunities, and a culture of respect. Every team member is background-checked, trained, and valued.
               </p>
               <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
                 {["Competitive Pay", "Benefits", "Paid Training", "Growth Path"].map((perk) => (
                   <span key={perk} style={{
-                    background: "rgba(46,204,113,0.12)", color: "#2ecc71", padding: "6px 14px",
-                    borderRadius: 6, fontSize: 13, fontWeight: 600, fontFamily: "'DM Sans', sans-serif",
+                    background: "rgba(0,230,118,0.12)", color: "#00E676", padding: "6px 14px",
+                    borderRadius: 6, fontSize: 13, fontWeight: 600, fontFamily: "'Plus Jakarta Sans', sans-serif",
                   }}>
                     {perk}
                   </span>
@@ -2208,9 +2197,9 @@ function CareersSection() {
             <div style={{ position: "relative", zIndex: 1, textAlign: "center" }}>
               <a href="#" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }} style={{
                 display: "inline-flex", alignItems: "center", gap: 8,
-                background: "#2ecc71", color: "#fff", padding: "16px 36px", borderRadius: 10,
-                fontWeight: 700, fontSize: 16, textDecoration: "none", fontFamily: "'DM Sans', sans-serif",
-                boxShadow: "0 4px 24px rgba(46,204,113,0.3)",
+                background: "#00E676", color: "#fff", padding: "16px 36px", borderRadius: 10,
+                fontWeight: 700, fontSize: 16, textDecoration: "none", fontFamily: "'Plus Jakarta Sans', sans-serif",
+                boxShadow: "0 4px 24px rgba(0,230,118,0.3)",
               }}>
                 View Open Positions →
               </a>
@@ -2224,22 +2213,22 @@ function CareersSection() {
 
 function AcuitySection() {
   return (
-    <section id="schedule" style={{ background: "linear-gradient(165deg, #0a1a12 0%, #0d2818 50%, #122d1c 100%)", padding: "100px 24px", position: "relative", overflow: "hidden" }}>
-      <div style={{ position: "absolute", top: "40%", left: "50%", transform: "translate(-50%, -50%)", width: 800, height: 800, background: "radial-gradient(circle, rgba(46,204,113,0.08) 0%, transparent 60%)", borderRadius: "50%", pointerEvents: "none" }} />
+    <section id="schedule" style={{ background: "#060A07", padding: "100px 24px", position: "relative", overflow: "hidden" }}>
+      <div style={{ position: "absolute", top: "40%", left: "50%", transform: "translate(-50%, -50%)", width: 800, height: 800, background: "radial-gradient(circle, rgba(0,230,118,0.08) 0%, transparent 60%)", borderRadius: "50%", pointerEvents: "none" }} />
       <div style={{ position: "absolute", inset: 0, opacity: 0.025, backgroundImage: "linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)", backgroundSize: "60px 60px", pointerEvents: "none" }} />
       <div style={{ maxWidth: 860, margin: "0 auto", position: "relative", zIndex: 1 }}>
         <div style={{ textAlign: "center", marginBottom: 56 }}>
-          <div style={{ fontSize: 11, color: "#2ecc71", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'DM Sans', sans-serif" }}>Online Booking</div>
-          <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 700, color: "#fff", lineHeight: 1.15, marginBottom: 16, letterSpacing: "-0.02em" }}>
+          <div style={{ fontSize: 11, color: "#00E676", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>Online Booking</div>
+          <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 700, color: "#fff", lineHeight: 1.15, marginBottom: 16, letterSpacing: "-0.02em" }}>
             Schedule a Walkthrough or Phone Consultation
           </h2>
-          <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 17, color: "rgba(255,255,255,0.6)", lineHeight: 1.7, maxWidth: 580, margin: "0 auto" }}>
+          <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 17, color: "rgba(255,255,255,0.6)", lineHeight: 1.7, maxWidth: 580, margin: "0 auto" }}>
             Book a time that works for you. We'll assess your facility and provide a custom cleaning plan.
           </p>
         </div>
 
         <div style={{ position: "relative" }}>
-          <div style={{ position: "absolute", inset: -2, borderRadius: 16, background: "linear-gradient(135deg, rgba(46,204,113,0.2), rgba(46,204,113,0.05))", zIndex: 0 }} />
+          <div style={{ position: "absolute", inset: -2, borderRadius: 16, background: "linear-gradient(135deg, rgba(0,230,118,0.2), rgba(0,230,118,0.05))", zIndex: 0 }} />
           <div style={{ position: "relative", zIndex: 1, borderRadius: 14, overflow: "hidden", boxShadow: "0 20px 60px rgba(0,0,0,0.4)" }}>
             <iframe
               src="https://app.acuityscheduling.com/schedule.php?owner=15345029&ref=embedded_csp"
@@ -2254,11 +2243,11 @@ function AcuitySection() {
         </div>
 
         <div style={{ textAlign: "center", marginTop: 40 }}>
-          <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 15, color: "rgba(255,255,255,0.5)", lineHeight: 1.7 }}>
+          <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 15, color: "rgba(255,255,255,0.5)", lineHeight: 1.7 }}>
             Prefer to reach out directly?{" "}
-            <a href="tel:+13473329348" style={{ color: "#2ecc71", textDecoration: "none", fontWeight: 600 }}>Call 347-332-9348</a>
+            <a href="tel:+13473329348" style={{ color: "#00E676", textDecoration: "none", fontWeight: 600 }}>Call 347-332-9348</a>
             {" "}or{" "}
-            <a href="mailto:info@greenpointms.com" style={{ color: "#2ecc71", textDecoration: "none", fontWeight: 600 }}>email info@greenpointms.com</a>
+            <a href="mailto:info@greenpointms.com" style={{ color: "#00E676", textDecoration: "none", fontWeight: 600 }}>email info@greenpointms.com</a>
           </p>
         </div>
       </div>
@@ -2268,22 +2257,22 @@ function AcuitySection() {
 
 function ContactSection() {
   return (
-    <section id="contact" style={{ background: "#fafbfa", padding: "100px 24px" }}>
+    <section id="contact" style={{ background: "#0A0F0B", padding: "100px 24px" }}>
       <div style={{ maxWidth: 800, margin: "0 auto", textAlign: "center" }}>
         <AnimatedSection>
-          <div style={{ fontSize: 12, color: "#2ecc71", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'DM Sans', sans-serif" }}>
+          <div style={{ fontSize: 10, color: "#00E676", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
             Get Started
           </div>
-          <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#0d2818", lineHeight: 1.15, marginBottom: 16 }}>
-            Ready for a Cleaner,<br /><span style={{ color: "#2ecc71" }}>Compliant Facility?</span>
+          <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#fff", lineHeight: 1.15, marginBottom: 16 }}>
+            Ready for a Cleaner,<br /><span style={{ color: "#00E676" }}>Compliant Facility?</span>
           </h2>
-          <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 16, color: "#666", lineHeight: 1.7, marginBottom: 40, maxWidth: 560, margin: "0 auto 40px" }}>
+          <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "rgba(255,255,255,0.55)", lineHeight: 1.7, marginBottom: 40, maxWidth: 560, margin: "0 auto 40px" }}>
             Schedule a free facility walkthrough. We'll assess your space, identify compliance gaps, and deliver a fixed-price proposal within 48 hours. No obligation.
           </p>
 
           <div style={{
-            background: "#fff", borderRadius: 20, padding: 48, border: "1px solid #eee",
-            boxShadow: "0 8px 40px rgba(0,0,0,0.04)", textAlign: "left",
+            background: "#0D1310", borderRadius: 0, padding: 48, border: "1px solid rgba(0,230,118,0.1)",
+            textAlign: "left",
           }}>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }} className="contact-form-grid">
               {[
@@ -2293,13 +2282,13 @@ function ContactSection() {
                 { label: "Facility Type", type: "select" },
               ].map((field) => (
                 <div key={field.label}>
-                  <label style={{ display: "block", fontSize: 12, color: "#555", marginBottom: 6, fontWeight: 700, letterSpacing: "0.05em", textTransform: "uppercase", fontFamily: "'DM Sans', sans-serif" }}>
+                  <label style={{ display: "block", fontSize: 10, color: "rgba(0,230,118,0.7)", marginBottom: 6, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", fontFamily: "'JetBrains Mono', monospace" }}>
                     {field.label}
                   </label>
                   {field.type === "select" ? (
                     <select style={{
-                      width: "100%", padding: "12px 16px", background: "#fafbfa", border: "1px solid #ddd",
-                      borderRadius: 8, color: "#333", fontSize: 15, outline: "none", fontFamily: "'DM Sans', sans-serif", boxSizing: "border-box",
+                      width: "100%", padding: "12px 16px", background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.1)",
+                      borderRadius: 4, color: "#fff", fontSize: 15, outline: "none", fontFamily: "'Plus Jakarta Sans', sans-serif", boxSizing: "border-box",
                     }}>
                       <option value="">Select type...</option>
                       <option>School / Educational</option>
@@ -2312,28 +2301,28 @@ function ContactSection() {
                     </select>
                   ) : (
                     <input type={field.type} placeholder={field.placeholder} style={{
-                      width: "100%", padding: "12px 16px", background: "#fafbfa", border: "1px solid #ddd",
-                      borderRadius: 8, color: "#333", fontSize: 15, outline: "none", fontFamily: "'DM Sans', sans-serif", boxSizing: "border-box",
+                      width: "100%", padding: "12px 16px", background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.1)",
+                      borderRadius: 4, color: "#fff", fontSize: 15, outline: "none", fontFamily: "'Plus Jakarta Sans', sans-serif", boxSizing: "border-box",
                     }} />
                   )}
                 </div>
               ))}
             </div>
             <div style={{ marginTop: 20 }}>
-              <label style={{ display: "block", fontSize: 12, color: "#555", marginBottom: 6, fontWeight: 700, letterSpacing: "0.05em", textTransform: "uppercase", fontFamily: "'DM Sans', sans-serif" }}>
+              <label style={{ display: "block", fontSize: 10, color: "rgba(0,230,118,0.7)", marginBottom: 6, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", fontFamily: "'JetBrains Mono', monospace" }}>
                 Tell Us About Your Facility
               </label>
               <textarea rows={4} placeholder="Approximate square footage, number of floors, current cleaning schedule, any special requirements..."
                 style={{
-                  width: "100%", padding: "12px 16px", background: "#fafbfa", border: "1px solid #ddd",
-                  borderRadius: 8, color: "#333", fontSize: 15, outline: "none", fontFamily: "'DM Sans', sans-serif",
+                  width: "100%", padding: "12px 16px", background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.1)",
+                  borderRadius: 4, color: "#fff", fontSize: 15, outline: "none", fontFamily: "'Plus Jakarta Sans', sans-serif",
                   resize: "vertical", boxSizing: "border-box",
                 }} />
             </div>
             <button style={{
-              width: "100%", marginTop: 24, padding: "16px 24px", background: "linear-gradient(135deg, #2ecc71, #27ae60)",
-              border: "none", borderRadius: 10, color: "#fff", fontSize: 17, fontWeight: 700, cursor: "pointer",
-              fontFamily: "'DM Sans', sans-serif", boxShadow: "0 4px 24px rgba(46,204,113,0.3)",
+              width: "100%", marginTop: 24, padding: "16px 24px", background: "#00E676",
+              border: "none", borderRadius: 4, color: "#060A07", fontSize: 15, fontWeight: 700, cursor: "pointer",
+              fontFamily: "'Syne', sans-serif", letterSpacing: "0.04em", textTransform: "uppercase",
               transition: "transform 0.2s",
             }}
               onMouseOver={(e) => e.target.style.transform = "translateY(-1px)"}
@@ -2345,18 +2334,18 @@ function ContactSection() {
 
           <div style={{ display: "flex", justifyContent: "center", gap: 48, marginTop: 48, flexWrap: "wrap" }}>
             {[
-              { label: "Phone", value: PHONE_NUMBER, iconEl: <PhoneIcon size={24} color="#2ecc71" />, href: PHONE_HREF },
-              { label: "Email", value: "info@greenpointms.com", iconEl: <MailIcon size={24} color="#2ecc71" />, href: "mailto:info@greenpointms.com" },
-              { label: "Hours", value: "Mon–Sat 7AM–8PM • 24/7 Emergency", iconEl: <ClockIcon size={24} color="#2ecc71" /> },
+              { label: "Phone", value: PHONE_NUMBER, iconEl: <PhoneIcon size={24} color="#00E676" />, href: PHONE_HREF },
+              { label: "Email", value: "info@greenpointms.com", iconEl: <MailIcon size={24} color="#00E676" />, href: "mailto:info@greenpointms.com" },
+              { label: "Hours", value: "Mon–Sat 7AM–8PM • 24/7 Emergency", iconEl: <ClockIcon size={24} color="#00E676" /> },
             ].map((info) => (
               <div key={info.label} style={{ textAlign: "center" }}>
                 <div style={{ display: "flex", justifyContent: "center", marginBottom: 6 }}>{info.iconEl}</div>
-                <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: "#888", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.08em" }}>{info.label}</div>
+                <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 12, color: "#888", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.08em" }}>{info.label}</div>
                 {info.href ? (
-                  <a href={info.href} style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 15, color: "#0d2818", fontWeight: 600, marginTop: 4, display: "block", textDecoration: "none" }}
-                    onMouseOver={(e) => e.target.style.color = "#2ecc71"} onMouseOut={(e) => e.target.style.color = "#0d2818"}>{info.value}</a>
+                  <a href={info.href} style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 15, color: "#fff", fontWeight: 600, marginTop: 4, display: "block", textDecoration: "none" }}
+                    onMouseOver={(e) => e.target.style.color = "#00E676"} onMouseOut={(e) => e.target.style.color = "#fff"}>{info.value}</a>
                 ) : (
-                  <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 15, color: "#0d2818", fontWeight: 600, marginTop: 4 }}>{info.value}</div>
+                  <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 15, color: "#fff", fontWeight: 600, marginTop: 4 }}>{info.value}</div>
                 )}
               </div>
             ))}
@@ -2369,18 +2358,19 @@ function ContactSection() {
 
 function ProcessSection() {
   return (
-    <section id="process" style={{ background: "#fff", padding: "100px 24px" }}>
-      <div style={{ maxWidth: 1280, margin: "0 auto" }}>
+    <section id="process" className="noise-overlay" style={{ background: "#0A0F0B", padding: "100px 24px", position: "relative", overflow: "hidden" }}>
+      <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", width: 800, height: 800, background: "radial-gradient(circle, rgba(0,230,118,0.05) 0%, transparent 60%)", borderRadius: "50%", pointerEvents: "none" }} />
+      <div style={{ maxWidth: 1280, margin: "0 auto", position: "relative", zIndex: 1 }}>
         <AnimatedSection>
           <div style={{ textAlign: "center", marginBottom: 64 }}>
-            <div style={{ fontSize: 12, color: "#2ecc71", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'DM Sans', sans-serif" }}>
+            <div style={{ fontSize: 10, color: "#00E676", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
               How It Works
             </div>
-            <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#0d2818", lineHeight: 1.15, marginBottom: 16 }}>
+            <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#fff", lineHeight: 1.15, marginBottom: 16 }}>
               From First Call to<br />
-              <span style={{ color: "#2ecc71" }}>Verifiably Clean</span>
+              <span style={{ color: "#00E676" }}>Verifiably Clean</span>
             </h2>
-            <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 16, color: "#666", maxWidth: 560, margin: "0 auto", lineHeight: 1.7 }}>
+            <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "rgba(255,255,255,0.55)", maxWidth: 560, margin: "0 auto", lineHeight: 1.7 }}>
               Getting started is simple. Here's what happens when you reach out.
             </p>
           </div>
@@ -2389,29 +2379,29 @@ function ProcessSection() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 24, position: "relative" }} className="process-grid">
           <div style={{
             position: "absolute", top: 44, left: "12.5%", right: "12.5%", height: 2,
-            background: "linear-gradient(90deg, #2ecc71, rgba(46,204,113,0.3))", zIndex: 0,
+            background: "linear-gradient(90deg, rgba(0,230,118,0.6), rgba(0,230,118,0.15))", zIndex: 0,
           }} className="process-line" />
           {PROCESS_STEPS.map((step, i) => (
             <AnimatedSection key={step.step} delay={i * 0.12}>
               <div style={{ textAlign: "center", position: "relative", zIndex: 1 }}>
                 <div style={{
-                  width: 64, height: 64, borderRadius: "50%", margin: "0 auto 24px",
-                  background: i === PROCESS_STEPS.length - 1 ? "linear-gradient(135deg, #2ecc71, #27ae60)" : "#fff",
-                  border: i === PROCESS_STEPS.length - 1 ? "none" : "2px solid #2ecc71",
+                  width: 56, height: 56, borderRadius: 0, margin: "0 auto 24px",
+                  background: i === PROCESS_STEPS.length - 1 ? "#00E676" : "rgba(0,230,118,0.08)",
+                  border: i === PROCESS_STEPS.length - 1 ? "2px solid #00E676" : "2px solid rgba(0,230,118,0.3)",
                   display: "flex", alignItems: "center", justifyContent: "center",
-                  boxShadow: "0 4px 20px rgba(0,0,0,0.06)",
+                  boxShadow: i === PROCESS_STEPS.length - 1 ? "0 4px 30px rgba(0,230,118,0.3)" : "0 4px 20px rgba(0,0,0,0.2)",
                 }}>
                   <span style={{
-                    fontFamily: "'Playfair Display', serif", fontWeight: 800, fontSize: 20,
-                    color: i === PROCESS_STEPS.length - 1 ? "#fff" : "#2ecc71",
+                    fontFamily: "'JetBrains Mono', monospace", fontWeight: 700, fontSize: 16,
+                    color: i === PROCESS_STEPS.length - 1 ? "#060A07" : "#00E676",
                   }}>
                     {step.step}
                   </span>
                 </div>
-                <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: 18, fontWeight: 700, color: "#0d2818", marginBottom: 10 }}>
+                <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: 18, fontWeight: 700, color: "#fff", marginBottom: 10 }}>
                   {step.title}
                 </h3>
-                <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: "#666", lineHeight: 1.7 }}>
+                <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.7 }}>
                   {step.desc}
                 </p>
               </div>
@@ -2425,14 +2415,16 @@ function ProcessSection() {
 
 function WhyGreenPoint() {
   return (
-    <section id="why" style={{ background: "#fafbfa", padding: "100px 24px" }}>
-      <div style={{ maxWidth: 1280, margin: "0 auto" }}>
+    <section id="why" style={{ background: "#060A07", padding: "100px 24px", position: "relative", overflow: "hidden" }}>
+      {/* Subtle cross-hatch pattern */}
+      <div style={{ position: "absolute", inset: 0, opacity: 0.02, pointerEvents: "none", backgroundImage: "linear-gradient(45deg, #0d2818 1px, transparent 1px), linear-gradient(-45deg, #0d2818 1px, transparent 1px)", backgroundSize: "40px 40px" }} />
+      <div style={{ maxWidth: 1280, margin: "0 auto", position: "relative", zIndex: 1 }}>
         <AnimatedSection>
           <div style={{ textAlign: "center", marginBottom: 64 }}>
-            <div style={{ fontSize: 12, color: "#2ecc71", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'DM Sans', sans-serif" }}>
+            <div style={{ fontSize: 10, color: "#00E676", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
               Why GreenPoint
             </div>
-            <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#0d2818", lineHeight: 1.15, marginBottom: 16 }}>
+            <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#fff", lineHeight: 1.15, marginBottom: 16 }}>
               What Sets Us Apart From<br />Every Other Cleaning Company
             </h2>
           </div>
@@ -2441,27 +2433,26 @@ function WhyGreenPoint() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 24 }} className="why-grid">
           {WHY_US.map((item, i) => (
             <AnimatedSection key={item.title} delay={i * 0.1}>
-              <div style={{
-                background: "#fff", borderRadius: 16, padding: 36, border: "1px solid #eee",
+              <div className="premium-card" style={{
+                background: "#0D1310",
+                borderRadius: 0, padding: 40, border: "1px solid rgba(0,230,118,0.1)",
+                borderLeft: "3px solid #00E676",
                 display: "flex", gap: 24, alignItems: "flex-start", height: "100%",
-                transition: "all 0.3s",
               }}
-                onMouseOver={(e) => { e.currentTarget.style.borderColor = "rgba(46,204,113,0.3)"; e.currentTarget.style.boxShadow = "0 8px 32px rgba(0,0,0,0.05)"; }}
-                onMouseOut={(e) => { e.currentTarget.style.borderColor = "#eee"; e.currentTarget.style.boxShadow = "none"; }}
               >
                 <IconBox size={56} radius={14}>
                   {getIcon(item.iconKey, 28)}
                 </IconBox>
                 <div>
-                  <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: 20, fontWeight: 700, color: "#0d2818", marginBottom: 8 }}>
+                  <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: 20, fontWeight: 700, color: "#fff", marginBottom: 8 }}>
                     {item.title}
                   </h3>
-                  <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: "#555", lineHeight: 1.7, marginBottom: 12 }}>
+                  <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.6)", lineHeight: 1.7, marginBottom: 12 }}>
                     {item.desc}
                   </p>
                   <span style={{
-                    display: "inline-block", background: "rgba(46,204,113,0.08)", color: "#27ae60",
-                    padding: "4px 12px", borderRadius: 6, fontSize: 12, fontWeight: 600, fontFamily: "'DM Sans', sans-serif",
+                    display: "inline-block", background: "rgba(0,230,118,0.08)", color: "#00E676",
+                    padding: "4px 12px", borderRadius: 6, fontSize: 12, fontWeight: 600, fontFamily: "'Plus Jakarta Sans', sans-serif",
                   }}>
                     {item.competitor}
                   </span>
@@ -2479,14 +2470,15 @@ function FAQSection() {
   const [openIndex, setOpenIndex] = useState(null);
 
   return (
-    <section id="faq" style={{ background: "#fff", padding: "100px 24px" }}>
-      <div style={{ maxWidth: 880, margin: "0 auto" }}>
+    <section id="faq" className="noise-overlay" style={{ background: "#0A0F0B", padding: "100px 24px", position: "relative", overflow: "hidden" }}>
+      <div style={{ position: "absolute", top: "30%", right: "5%", width: 400, height: 400, background: "radial-gradient(circle, rgba(0,230,118,0.04) 0%, transparent 60%)", borderRadius: "50%", pointerEvents: "none" }} />
+      <div style={{ maxWidth: 880, margin: "0 auto", position: "relative", zIndex: 1 }}>
         <AnimatedSection>
           <div style={{ textAlign: "center", marginBottom: 64 }}>
-            <div style={{ fontSize: 12, color: "#2ecc71", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'DM Sans', sans-serif" }}>
+            <div style={{ fontSize: 10, color: "#00E676", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
               Frequently Asked Questions
             </div>
-            <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#0d2818", lineHeight: 1.15 }}>
+            <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#fff", lineHeight: 1.15 }}>
               Everything You Need to Know
             </h2>
           </div>
@@ -2496,7 +2488,7 @@ function FAQSection() {
           {FAQ_ITEMS.map((item, i) => (
             <AnimatedSection key={i} delay={i * 0.05}>
               <div style={{
-                borderBottom: "1px solid #eee",
+                borderBottom: "1px solid rgba(255,255,255,0.08)",
                 transition: "all 0.2s",
               }}>
                 <button
@@ -2508,13 +2500,13 @@ function FAQSection() {
                   }}
                 >
                   <span style={{
-                    fontFamily: "'DM Sans', sans-serif", fontSize: 16, fontWeight: 600,
-                    color: openIndex === i ? "#2ecc71" : "#0d2818", transition: "color 0.2s", lineHeight: 1.4,
+                    fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, fontWeight: 600,
+                    color: openIndex === i ? "#00E676" : "#fff", transition: "color 0.2s", lineHeight: 1.4,
                   }}>
                     {item.q}
                   </span>
                   <span style={{
-                    fontSize: 22, color: openIndex === i ? "#2ecc71" : "#aaa", flexShrink: 0,
+                    fontSize: 22, color: openIndex === i ? "#00E676" : "#aaa", flexShrink: 0,
                     transform: openIndex === i ? "rotate(45deg)" : "rotate(0deg)",
                     transition: "transform 0.3s, color 0.2s", lineHeight: 1,
                   }}>
@@ -2527,7 +2519,7 @@ function FAQSection() {
                   paddingBottom: openIndex === i ? 22 : 0,
                 }}>
                   <p style={{
-                    fontFamily: "'DM Sans', sans-serif", fontSize: 15, color: "#555",
+                    fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 15, color: "rgba(255,255,255,0.6)",
                     lineHeight: 1.8, paddingRight: 48,
                   }}>
                     {item.a}
@@ -2544,33 +2536,33 @@ function FAQSection() {
 
 function Footer() {
   return (
-    <footer style={{ background: "#0a1a12", padding: "0 0 0" }}>
+    <footer style={{ background: "#060A07", padding: "0 0 0" }}>
       {/* Pre-footer CTA block */}
-      <div style={{ background: "linear-gradient(135deg, #0d2818, #1a4d2e)", padding: "80px 24px", textAlign: "center", position: "relative", overflow: "hidden", borderTop: "1px solid rgba(46,204,113,0.15)" }}>
-        <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", width: 600, height: 400, background: "radial-gradient(ellipse, rgba(46,204,113,0.07) 0%, transparent 70%)", pointerEvents: "none" }} />
+      <div style={{ background: "#0A0F0B", padding: "80px 24px", textAlign: "center", position: "relative", overflow: "hidden", borderTop: "1px solid rgba(0,230,118,0.12)" }}>
+        <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", width: 600, height: 400, background: "radial-gradient(ellipse, rgba(0,230,118,0.07) 0%, transparent 70%)", pointerEvents: "none" }} />
         <div style={{ maxWidth: 720, margin: "0 auto", position: "relative", zIndex: 1 }}>
-          <div style={{ fontSize: 11, color: "#2ecc71", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'DM Sans', sans-serif" }}>
+          <div style={{ fontSize: 11, color: "#00E676", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
             Ready to Upgrade Your Facility?
           </div>
-          <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 700, color: "#fff", lineHeight: 1.15, marginBottom: 20 }}>
-            Your Facility Deserves Better.<br /><span style={{ color: "#2ecc71" }}>Let's Talk.</span>
+          <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 700, color: "#fff", lineHeight: 1.15, marginBottom: 20 }}>
+            Your Facility Deserves Better.<br /><span style={{ color: "#00E676" }}>Let's Talk.</span>
           </h2>
-          <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 16, color: "rgba(255,255,255,0.6)", lineHeight: 1.7, marginBottom: 36 }}>
+          <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "rgba(255,255,255,0.6)", lineHeight: 1.7, marginBottom: 36 }}>
             Get a custom cleaning plan in 24 hours. MBE-certified. Bonded & insured. No obligation.
           </p>
           <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
             <a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }} className="cta-glow" style={{
-              background: "linear-gradient(135deg, #2ecc71, #27ae60)", color: "#fff",
-              padding: "14px 32px", borderRadius: 8, fontWeight: 700, fontSize: 15,
-              textDecoration: "none", fontFamily: "'DM Sans', sans-serif",
-              boxShadow: "0 4px 24px rgba(46,204,113,0.35)",
+              background: "#00E676", color: "#060A07",
+              padding: "14px 32px", borderRadius: 4, fontWeight: 700, fontSize: 13,
+              textDecoration: "none", fontFamily: "'Syne', sans-serif",
+              textTransform: "uppercase", letterSpacing: "0.04em",
             }}>
               Get a Free Quote →
             </a>
             <a href={PHONE_HREF} style={{
               background: "rgba(255,255,255,0.08)", color: "#fff",
               padding: "14px 32px", borderRadius: 8, fontWeight: 600, fontSize: 15,
-              textDecoration: "none", fontFamily: "'DM Sans', sans-serif",
+              textDecoration: "none", fontFamily: "'Plus Jakarta Sans', sans-serif",
               border: "1px solid rgba(255,255,255,0.15)",
             }}>
               Call {PHONE_NUMBER}
@@ -2586,57 +2578,58 @@ function Footer() {
             <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 18 }}>
               <div style={{
                 width: 40, height: 40, borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center",
-                background: "linear-gradient(135deg, #2ecc71, #27ae60)", fontWeight: 800, fontSize: 18, color: "#fff",
+                background: "#00E676", fontWeight: 800, fontSize: 18, color: "#060A07",
+                fontFamily: "'Syne', sans-serif",
               }}>G</div>
               <div>
-                <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 18, fontWeight: 700, color: "#fff" }}>GreenPoint</div>
-                <div style={{ fontSize: 9, color: "rgba(255,255,255,0.4)", letterSpacing: "0.15em", textTransform: "uppercase", fontFamily: "'DM Sans', sans-serif" }}>Maintenance Services Corp</div>
+                <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 18, fontWeight: 700, color: "#fff" }}>GreenPoint</div>
+                <div style={{ fontSize: 9, color: "rgba(255,255,255,0.4)", letterSpacing: "0.15em", textTransform: "uppercase", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>Maintenance Services Corp</div>
               </div>
             </div>
-            <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.45)", lineHeight: 1.7, maxWidth: 320 }}>
+            <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.45)", lineHeight: 1.7, maxWidth: 320 }}>
               MBE-certified facility services provider. Commercial janitorial and facility maintenance across NY, NJ, CT, PA, and FL since 2018.
             </p>
             <div style={{ display: "flex", gap: 8, marginTop: 18, flexWrap: "wrap" }}>
               {["MBE / MWBE", "SAM.gov", "Bonded & Insured"].map((badge) => (
                 <span key={badge} style={{
-                  background: "rgba(46,204,113,0.1)", color: "#2ecc71", padding: "3px 10px",
-                  borderRadius: 4, fontSize: 10, fontWeight: 600, fontFamily: "'DM Sans', sans-serif",
+                  background: "rgba(0,230,118,0.1)", color: "#00E676", padding: "3px 10px",
+                  borderRadius: 4, fontSize: 10, fontWeight: 600, fontFamily: "'Plus Jakarta Sans', sans-serif",
                 }}>
                   {badge}
                 </span>
               ))}
             </div>
             <div style={{ marginTop: 16 }}>
-              <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.3)", lineHeight: 1.7 }}>
+              <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.3)", lineHeight: 1.7 }}>
                 NAICS: 561720 | 238210 | 561790
               </div>
-              <a href={PHONE_HREF} style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.6)", textDecoration: "none", fontWeight: 600, display: "block", marginTop: 6 }}>{PHONE_NUMBER}</a>
-              <a href="mailto:info@greenpointms.com" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.45)", textDecoration: "none", display: "block", marginTop: 4 }}>info@greenpointms.com</a>
+              <a href={PHONE_HREF} style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.6)", textDecoration: "none", fontWeight: 600, display: "block", marginTop: 6 }}>{PHONE_NUMBER}</a>
+              <a href="mailto:info@greenpointms.com" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.45)", textDecoration: "none", display: "block", marginTop: 4 }}>info@greenpointms.com</a>
             </div>
           </div>
 
           <div>
-            <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: "rgba(255,255,255,0.4)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 18 }}>Services</div>
+            <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "rgba(0,230,118,0.6)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.15em", marginBottom: 18 }}>Services</div>
             {["Commercial Janitorial", "Disinfection", "Floor Care", "Day Porter", "Facility Maintenance", "Post-Construction"].map((link) => (
-              <a key={link} href="#" onClick={(e) => { e.preventDefault(); scrollTo("services"); }} style={{ display: "block", fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.55)", textDecoration: "none", marginBottom: 10, transition: "color 0.2s" }}
-                onMouseOver={(e) => e.target.style.color = "#2ecc71"} onMouseOut={(e) => e.target.style.color = "rgba(255,255,255,0.55)"}>
+              <a key={link} href="#" onClick={(e) => { e.preventDefault(); scrollTo("services"); }} style={{ display: "block", fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.55)", textDecoration: "none", marginBottom: 10, transition: "color 0.2s" }}
+                onMouseOver={(e) => e.target.style.color = "#00E676"} onMouseOut={(e) => e.target.style.color = "rgba(255,255,255,0.55)"}>
                 {link}
               </a>
             ))}
           </div>
 
           <div>
-            <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: "rgba(255,255,255,0.4)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 18 }}>Industries</div>
+            <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "rgba(0,230,118,0.6)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.15em", marginBottom: 18 }}>Industries</div>
             {["Schools & Education", "Churches & Worship", "Healthcare & Medical", "Daycare Centers", "Government", "Commercial Offices"].map((link) => (
-              <a key={link} href="#" onClick={(e) => { e.preventDefault(); scrollTo("industries"); }} style={{ display: "block", fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.55)", textDecoration: "none", marginBottom: 10, transition: "color 0.2s" }}
-                onMouseOver={(e) => e.target.style.color = "#2ecc71"} onMouseOut={(e) => e.target.style.color = "rgba(255,255,255,0.55)"}>
+              <a key={link} href="#" onClick={(e) => { e.preventDefault(); scrollTo("industries"); }} style={{ display: "block", fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.55)", textDecoration: "none", marginBottom: 10, transition: "color 0.2s" }}
+                onMouseOver={(e) => e.target.style.color = "#00E676"} onMouseOut={(e) => e.target.style.color = "rgba(255,255,255,0.55)"}>
                 {link}
               </a>
             ))}
           </div>
 
           <div>
-            <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: "rgba(255,255,255,0.4)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 18 }}>Company</div>
+            <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "rgba(0,230,118,0.6)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.15em", marginBottom: 18 }}>Company</div>
             {[
               { label: "About", target: "about" },
               { label: "JaniTrack", target: "janitrack" },
@@ -2645,8 +2638,8 @@ function Footer() {
               { label: "Careers", target: "careers" },
               { label: "Contact", target: "contact" },
             ].map((link) => (
-              <a key={link.label} href="#" onClick={(e) => { e.preventDefault(); scrollTo(link.target); }} style={{ display: "block", fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.55)", textDecoration: "none", marginBottom: 10, transition: "color 0.2s" }}
-                onMouseOver={(e) => e.target.style.color = "#2ecc71"} onMouseOut={(e) => e.target.style.color = "rgba(255,255,255,0.55)"}>
+              <a key={link.label} href="#" onClick={(e) => { e.preventDefault(); scrollTo(link.target); }} style={{ display: "block", fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.55)", textDecoration: "none", marginBottom: 10, transition: "color 0.2s" }}
+                onMouseOver={(e) => e.target.style.color = "#00E676"} onMouseOut={(e) => e.target.style.color = "rgba(255,255,255,0.55)"}>
                 {link.label}
               </a>
             ))}
@@ -2654,12 +2647,12 @@ function Footer() {
         </div>
 
         <div style={{ borderTop: "1px solid rgba(255,255,255,0.08)", paddingTop: 24, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12 }}>
-          <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.3)" }}>
+          <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.3)" }}>
             © 2026 GreenPoint Maintenance Services Corp. All rights reserved.
           </div>
           <div style={{ display: "flex", gap: 20 }}>
             {["Privacy Policy", "Terms of Service"].map((link) => (
-              <a key={link} href="#" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>
+              <a key={link} href="#" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>
                 {link}
               </a>
             ))}
@@ -2676,8 +2669,8 @@ function StickyCtaBar({ visible }) {
   return (
     <div style={{
       position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 998,
-      background: 'rgba(10, 26, 18, 0.97)', backdropFilter: 'blur(12px)',
-      borderTop: '1px solid rgba(46, 204, 113, 0.2)',
+      background: 'rgba(6, 10, 7, 0.97)', backdropFilter: 'blur(12px)',
+      borderTop: '1px solid rgba(0, 230, 118, 0.15)',
       transform: visible ? 'translateY(0)' : 'translateY(100%)',
       transition: 'transform 0.4s ease',
       padding: '12px 24px',
@@ -2685,22 +2678,22 @@ function StickyCtaBar({ visible }) {
       <div style={{ maxWidth: 1280, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 16 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 16 }} className="sticky-cta-info">
           <div>
-            <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 16, fontWeight: 700, color: '#fff', lineHeight: 1.2 }}>
+            <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 16, fontWeight: 700, color: '#fff', lineHeight: 1.2 }}>
               Ready for a cleaner facility?
             </div>
-            <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: 'rgba(255,255,255,0.5)' }}>
+            <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 12, color: 'rgba(255,255,255,0.5)' }}>
               Free walkthrough • Fixed pricing • 48-hour proposal
             </div>
           </div>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 12, flexShrink: 0 }}>
-          <a href={PHONE_HREF} style={{ display: 'flex', alignItems: 'center', gap: 6, color: '#fff', textDecoration: 'none', fontFamily: "'DM Sans', sans-serif", fontSize: 14, fontWeight: 700 }} className="sticky-phone">
-            <PhoneIcon size={16} color="#2ecc71" /> {PHONE_NUMBER}
+          <a href={PHONE_HREF} style={{ display: 'flex', alignItems: 'center', gap: 6, color: '#fff', textDecoration: 'none', fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, fontWeight: 700 }} className="sticky-phone">
+            <PhoneIcon size={16} color="#00E676" /> {PHONE_NUMBER}
           </a>
           <a href="#contact" style={{
-            background: 'linear-gradient(135deg, #2ecc71, #27ae60)', color: '#fff', padding: '10px 24px',
-            borderRadius: 8, fontWeight: 700, fontSize: 14, textDecoration: 'none', fontFamily: "'DM Sans', sans-serif",
-            boxShadow: '0 2px 12px rgba(46,204,113,0.3)', whiteSpace: 'nowrap',
+            background: '#00E676', color: '#060A07', padding: '10px 24px',
+            borderRadius: 4, fontWeight: 700, fontSize: 13, textDecoration: 'none', fontFamily: "'Syne', sans-serif",
+            textTransform: 'uppercase', letterSpacing: '0.04em', whiteSpace: 'nowrap',
           }}>Schedule Walkthrough</a>
         </div>
       </div>
@@ -2722,8 +2715,7 @@ export default function GreenPointWebsite() {
   }, []);
 
   return (
-    <div style={{ fontFamily: "'DM Sans', sans-serif", margin: 0, padding: 0 }}>
-      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", margin: 0, padding: 0, background: '#060A07' }}>
 
       <style>{`
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -2759,8 +2751,8 @@ export default function GreenPointWebsite() {
           50% { background-position: 100% 50%; }
         }
         @keyframes borderGlow {
-          0%, 100% { border-color: rgba(46,204,113,0.15); box-shadow: 0 0 20px rgba(46,204,113,0); }
-          50% { border-color: rgba(46,204,113,0.35); box-shadow: 0 0 30px rgba(46,204,113,0.08); }
+          0%, 100% { border-color: rgba(0,230,118,0.15); box-shadow: 0 0 20px rgba(0,230,118,0); }
+          50% { border-color: rgba(0,230,118,0.35); box-shadow: 0 0 30px rgba(0,230,118,0.08); }
         }
         @keyframes grainShift {
           0%, 100% { transform: translate(0, 0); }
@@ -2793,6 +2785,10 @@ export default function GreenPointWebsite() {
         @keyframes shimmerLine {
           0% { transform: translateX(-100%); }
           100% { transform: translateX(200%); }
+        }
+        @keyframes marquee {
+          from { transform: translateX(0); }
+          to { transform: translateX(-50%); }
         }
 
         /* === HERO ENTRANCE STAGGER === */
@@ -2827,8 +2823,8 @@ export default function GreenPointWebsite() {
         }
         .premium-card:hover {
           transform: translateY(-8px) !important;
-          box-shadow: 0 20px 60px rgba(0,0,0,0.15), 0 0 40px rgba(46,204,113,0.08) !important;
-          border-color: rgba(46,204,113,0.3) !important;
+          box-shadow: 0 20px 60px rgba(0,0,0,0.15), 0 0 40px rgba(0,230,118,0.08) !important;
+          border-color: rgba(0,230,118,0.3) !important;
         }
 
         /* === DARK PREMIUM CARD === */
@@ -2837,8 +2833,8 @@ export default function GreenPointWebsite() {
         }
         .dark-card:hover {
           transform: translateY(-6px) !important;
-          box-shadow: 0 20px 60px rgba(0,0,0,0.4), 0 0 50px rgba(46,204,113,0.1) !important;
-          border-color: rgba(46,204,113,0.4) !important;
+          box-shadow: 0 20px 60px rgba(0,0,0,0.4), 0 0 50px rgba(0,230,118,0.1) !important;
+          border-color: rgba(0,230,118,0.4) !important;
         }
 
         /* === CTA BUTTON GLOW === */
@@ -2848,7 +2844,7 @@ export default function GreenPointWebsite() {
         }
         .cta-glow:hover {
           transform: translateY(-3px) scale(1.02) !important;
-          box-shadow: 0 8px 40px rgba(46,204,113,0.45), 0 0 80px rgba(46,204,113,0.15) !important;
+          box-shadow: 0 8px 40px rgba(0,230,118,0.45), 0 0 80px rgba(0,230,118,0.15) !important;
         }
         .cta-glow::after {
           content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
@@ -2884,11 +2880,11 @@ export default function GreenPointWebsite() {
 
         /* === GREEN ACCENT LINE === */
         .green-line {
-          width: 48px; height: 3px; background: linear-gradient(90deg, #2ecc71, #27ae60); border-radius: 2px;
+          width: 48px; height: 3px; background: linear-gradient(90deg, #00E676, #00E676); border-radius: 2px;
           margin-bottom: 20px;
         }
         .green-line-center {
-          width: 48px; height: 3px; background: linear-gradient(90deg, #2ecc71, #27ae60); border-radius: 2px;
+          width: 48px; height: 3px; background: linear-gradient(90deg, #00E676, #00E676); border-radius: 2px;
           margin: 0 auto 20px;
         }
 
@@ -2898,7 +2894,7 @@ export default function GreenPointWebsite() {
         }
         .green-hover-underline::after {
           content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px;
-          background: linear-gradient(90deg, #2ecc71, #27ae60);
+          background: linear-gradient(90deg, #00E676, #00E676);
           transition: width 0.3s ease;
         }
         .green-hover-underline:hover::after { width: 100%; }
@@ -2915,7 +2911,7 @@ export default function GreenPointWebsite() {
         }
         .card-accent-top::before {
           content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
-          background: linear-gradient(90deg, #2ecc71, #27ae60, #2ecc71);
+          background: linear-gradient(90deg, #00E676, #00E676, #00E676);
           background-size: 200% auto;
           animation: shimmerLine 2s linear infinite;
           opacity: 0;
@@ -2932,7 +2928,7 @@ export default function GreenPointWebsite() {
 
         /* === STAT COUNTER === */
         .stat-number {
-          background: linear-gradient(135deg, #2ecc71, #27ae60, #2ecc71);
+          background: linear-gradient(135deg, #00E676, #00E676, #00E676);
           background-size: 200% auto;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
@@ -2979,22 +2975,22 @@ export default function GreenPointWebsite() {
       <Header scrolled={scrolled} />
       <Hero />
       <StatsBar />
-      <SectionDivider fromColor="#0a1a12" toColor="#fff" />
+      <SectionDivider fromColor="#0A0F0B" toColor="#060A07" />
       <AuthorityBar />
       <Services />
-      <SectionDividerReverse fromColor="#fff" toColor="#0a1a12" />
+      <SectionDividerReverse fromColor="#060A07" toColor="#0A0F0B" />
       <IndustriesSection />
-      <SectionDivider fromColor="#0a1a12" toColor="#fff" />
       <JaniTrack />
       <QuoteCalculator />
       <AcuitySection />
-      <SectionDivider fromColor="#0a1a12" toColor="#fafbfa" />
+      <SectionDivider fromColor="#060A07" toColor="#0A0F0B" />
       <TestimonialsSection />
-      <SectionDividerReverse fromColor="#fafbfa" toColor="#0d2818" />
+      <SectionDividerReverse fromColor="#0A0F0B" toColor="#060A07" />
       <ComplianceSection />
-      <SectionDivider fromColor="#0d2818" toColor="#fff" />
       <ProcessSection />
+      <SectionDivider fromColor="#0A0F0B" toColor="#060A07" />
       <ContactSection />
+      <WhyGreenPoint />
       <FAQSection />
       <Footer />
 
@@ -3004,9 +3000,9 @@ export default function GreenPointWebsite() {
       {/* Floating mobile phone button */}
       <a href={PHONE_HREF} style={{
         position: "fixed", bottom: showStickyCta ? 68 : 20, right: 20, width: 56, height: 56,
-        borderRadius: "50%", background: "linear-gradient(135deg, #2ecc71, #27ae60)",
+        borderRadius: "50%", background: "#00E676",
         display: "flex", alignItems: "center", justifyContent: "center",
-        boxShadow: "0 4px 20px rgba(46,204,113,0.4)", zIndex: 999,
+        boxShadow: "0 4px 20px rgba(0,230,118,0.4)", zIndex: 999,
         textDecoration: "none", transition: 'bottom 0.4s ease',
       }} className="mobile-phone-float">
         <PhoneIcon size={22} color="#fff" />

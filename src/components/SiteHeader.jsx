@@ -33,22 +33,25 @@ export default function SiteHeader() {
           .site-header .mobile-toggle { display: block !important; }
         }
         @keyframes phoneGlow {
-          0%, 100% { box-shadow: 0 0 0 0 rgba(46,204,113,0); }
-          50% { box-shadow: 0 0 0 6px rgba(46,204,113,0.15); }
+          0%, 100% { box-shadow: 0 0 0 0 rgba(0,230,118,0); }
+          50% { box-shadow: 0 0 0 6px rgba(0,230,118,0.15); }
         }
-        .header-phone-cta { animation: phoneGlow 3s ease infinite; border-radius: 8px; }
-        .header-phone-cta:hover { color: #2ecc71 !important; }
+        .header-phone-cta { animation: phoneGlow 3s ease infinite; border-radius: 0; }
+        .header-phone-cta:hover { color: #00E676 !important; }
         .header-nav-link { transition: color 0.2s ease; }
         .header-cta-btn { transition: transform 0.25s ease, box-shadow 0.25s ease !important; }
-        .header-cta-btn:hover { transform: translateY(-1px) !important; box-shadow: 0 6px 24px rgba(46,204,113,0.45) !important; }
+        .header-cta-btn:hover { transform: translateY(-1px) !important; box-shadow: 0 6px 24px rgba(0,230,118,0.45) !important; }
+        .header-cap-btn:hover { border-color: rgba(0,230,118,0.4) !important; color: #00E676 !important; }
+        .header-nav-a:hover { color: #00E676 !important; }
       `}</style>
       <header
         className="site-header"
         style={{
           position: "fixed", top: 0, left: 0, right: 0, zIndex: 1000,
-          background: scrolled ? "rgba(10, 26, 18, 0.97)" : "rgba(10, 26, 18, 0.95)",
+          background: scrolled ? "rgba(6,10,7,0.97)" : "rgba(6,10,7,0.92)",
           backdropFilter: "blur(12px)",
-          borderBottom: scrolled ? "1px solid rgba(46, 204, 113, 0.15)" : "1px solid rgba(255,255,255,0.05)",
+          WebkitBackdropFilter: "blur(12px)",
+          borderBottom: scrolled ? "1px solid rgba(0,230,118,0.12)" : "1px solid rgba(255,255,255,0.04)",
           transition: "all 0.4s ease",
           padding: scrolled ? "10px 0" : "16px 0",
         }}
@@ -57,48 +60,44 @@ export default function SiteHeader() {
           {/* Logo */}
           <a href="/" style={{ display: "flex", alignItems: "center", gap: 12, textDecoration: "none" }}>
             <div style={{
-              width: 42, height: 42, borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center",
-              background: "linear-gradient(135deg, #2ecc71, #27ae60)", fontWeight: 800, fontSize: 19, color: "#fff",
-              boxShadow: "0 2px 12px rgba(46,204,113,0.3)",
+              width: 42, height: 42, borderRadius: 0, display: "flex", alignItems: "center", justifyContent: "center",
+              background: "#00E676", fontWeight: 800, fontSize: 19, color: "#060A07",
+              fontFamily: "'Syne', sans-serif",
             }}>G</div>
             <div>
-              <div style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: 19, fontWeight: 700, color: "#fff", letterSpacing: "-0.02em", lineHeight: 1.1 }}>GreenPoint</div>
-              <div style={{ fontSize: 9, color: "rgba(255,255,255,0.55)", letterSpacing: "0.15em", textTransform: "uppercase", fontFamily: "'DM Sans', sans-serif" }}>Maintenance Services Corp</div>
+              <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 19, fontWeight: 700, color: "#fff", letterSpacing: "-0.02em", lineHeight: 1.1 }}>GreenPoint</div>
+              <div style={{ fontSize: 9, color: "rgba(255,255,255,0.45)", letterSpacing: "0.15em", textTransform: "uppercase", fontFamily: "'JetBrains Mono', monospace" }}>Maintenance Services Corp</div>
             </div>
           </a>
 
           {/* Desktop Nav */}
           <nav style={{ display: "flex", alignItems: "center", gap: 20 }} className="desktop-nav">
             {NAV_LINKS.map((link) => (
-              <a key={link.label} href={link.href}
-                style={{ color: "rgba(255,255,255,0.8)", textDecoration: "none", fontSize: 13, fontWeight: 500, fontFamily: "'DM Sans', sans-serif", transition: "color 0.2s", letterSpacing: "0.01em" }}
-                onMouseOver={(e) => e.target.style.color = "#2ecc71"}
-                onMouseOut={(e) => e.target.style.color = "rgba(255,255,255,0.8)"}>
+              <a key={link.label} href={link.href} className="header-nav-a"
+                style={{ color: "rgba(255,255,255,0.7)", textDecoration: "none", fontSize: 13, fontWeight: 500, fontFamily: "'Plus Jakarta Sans', sans-serif", transition: "color 0.2s", letterSpacing: "0.01em" }}>
                 {link.label}
               </a>
             ))}
             <a href={PHONE_HREF} className="header-phone-cta" style={{
-              color: "#fff", textDecoration: "none", fontSize: 14, fontWeight: 700,
-              fontFamily: "'DM Sans', sans-serif", display: "flex", alignItems: "center", gap: 6,
+              color: "#fff", textDecoration: "none", fontSize: 13, fontWeight: 600,
+              fontFamily: "'JetBrains Mono', monospace", display: "flex", alignItems: "center", gap: 6,
               padding: "6px 10px",
             }}>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2ecc71" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00E676" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
               {PHONE_NUMBER}
             </a>
-            <a href="/capability-statement" style={{
-              color: "rgba(255,255,255,0.7)", textDecoration: "none", fontSize: 12, fontWeight: 600,
-              fontFamily: "'DM Sans', sans-serif", border: "1px solid rgba(255,255,255,0.15)",
-              padding: "8px 14px", borderRadius: 6, transition: "all 0.2s",
-            }}
-              onMouseOver={(e) => { e.target.style.borderColor = "rgba(46,204,113,0.4)"; e.target.style.color = "#2ecc71"; }}
-              onMouseOut={(e) => { e.target.style.borderColor = "rgba(255,255,255,0.15)"; e.target.style.color = "rgba(255,255,255,0.7)"; }}>
+            <a href="/capability-statement" className="header-cap-btn" style={{
+              color: "rgba(255,255,255,0.6)", textDecoration: "none", fontSize: 11, fontWeight: 600,
+              fontFamily: "'JetBrains Mono', monospace", border: "1px solid rgba(255,255,255,0.12)",
+              padding: "8px 14px", borderRadius: 0, transition: "all 0.2s", letterSpacing: "0.05em", textTransform: "uppercase",
+            }}>
               Capability Statement
             </a>
             <a href="/#contact" className="header-cta-btn" style={{
-              background: "linear-gradient(135deg, #2ecc71, #27ae60)", color: "#fff",
-              padding: "10px 22px", borderRadius: 8, fontWeight: 600, fontSize: 14,
-              textDecoration: "none", fontFamily: "'DM Sans', sans-serif",
-              boxShadow: "0 2px 12px rgba(46,204,113,0.3)",
+              background: "#00E676", color: "#060A07",
+              padding: "10px 22px", borderRadius: 4, fontWeight: 700, fontSize: 12,
+              textDecoration: "none", fontFamily: "'Syne', sans-serif",
+              letterSpacing: "0.06em", textTransform: "uppercase",
               whiteSpace: "nowrap",
             }}>
               Schedule Walkthrough
@@ -116,25 +115,25 @@ export default function SiteHeader() {
         {mobileOpen && (
           <div style={{
             position: "absolute", top: "100%", left: 0, right: 0,
-            background: "rgba(10, 26, 18, 0.98)", padding: "20px 24px",
+            background: "rgba(6,10,7,0.98)", padding: "20px 24px",
             display: "flex", flexDirection: "column", gap: 16,
-            borderBottom: "1px solid rgba(46, 204, 113, 0.2)",
+            borderBottom: "1px solid rgba(0,230,118,0.12)",
           }}>
             {NAV_LINKS.map((link) => (
               <a key={link.label} href={link.href} onClick={() => setMobileOpen(false)}
-                style={{ color: "rgba(255,255,255,0.85)", textDecoration: "none", fontSize: 16, fontFamily: "'DM Sans', sans-serif" }}>{link.label}</a>
+                style={{ color: "rgba(255,255,255,0.8)", textDecoration: "none", fontSize: 16, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>{link.label}</a>
             ))}
             <a href={PHONE_HREF} onClick={() => setMobileOpen(false)}
-              style={{ color: "#fff", textDecoration: "none", fontSize: 16, fontWeight: 700, fontFamily: "'DM Sans', sans-serif", display: "flex", alignItems: "center", gap: 8 }}>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2ecc71" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              style={{ color: "#fff", textDecoration: "none", fontSize: 15, fontWeight: 600, fontFamily: "'JetBrains Mono', monospace", display: "flex", alignItems: "center", gap: 8 }}>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00E676" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
               {PHONE_NUMBER}
             </a>
             <a href="/capability-statement" onClick={() => setMobileOpen(false)}
-              style={{ color: "rgba(255,255,255,0.7)", textDecoration: "none", fontSize: 14, fontFamily: "'DM Sans', sans-serif", fontWeight: 600 }}>
+              style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none", fontSize: 12, fontFamily: "'JetBrains Mono', monospace", fontWeight: 600, letterSpacing: "0.05em", textTransform: "uppercase" }}>
               Capability Statement
             </a>
             <a href="/#contact" onClick={() => setMobileOpen(false)}
-              style={{ background: "#2ecc71", color: "#fff", padding: "12px 24px", borderRadius: 8, fontWeight: 600, textDecoration: "none", textAlign: "center", fontFamily: "'DM Sans', sans-serif" }}>
+              style={{ background: "#00E676", color: "#060A07", padding: "12px 24px", borderRadius: 4, fontWeight: 700, textDecoration: "none", textAlign: "center", fontFamily: "'Syne', sans-serif", fontSize: 12, letterSpacing: "0.06em", textTransform: "uppercase" }}>
               Schedule Walkthrough
             </a>
           </div>

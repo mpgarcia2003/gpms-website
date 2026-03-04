@@ -6,40 +6,39 @@ const PHONE_HREF = "tel:+13473329348";
 
 export default function SiteFooter() {
   return (
-    <footer style={{ background: "#0a1a12", padding: "72px 24px 32px", position: "relative", overflow: "hidden" }}>
-      <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 1, background: "linear-gradient(90deg, transparent, rgba(46,204,113,0.3), transparent)" }} />
-      <div style={{ position: "absolute", top: -200, right: -200, width: 500, height: 500, background: "radial-gradient(circle, rgba(46,204,113,0.04) 0%, transparent 70%)", borderRadius: "50%", pointerEvents: "none" }} />
+    <footer style={{ background: "#060A07", padding: "72px 24px 32px", position: "relative", overflow: "hidden" }}>
+      <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 1, background: "linear-gradient(90deg, transparent, rgba(0,230,118,0.2), transparent)" }} />
       <div style={{ maxWidth: 1280, margin: "0 auto", position: "relative", zIndex: 1 }}>
         <div style={{ display: "grid", gridTemplateColumns: "2.5fr 1fr 1fr 1fr", gap: 48, marginBottom: 56 }} className="footer-grid">
           {/* Company Info */}
           <div>
             <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 18 }}>
-              <div style={{ width: 40, height: 40, borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center", background: "linear-gradient(135deg, #2ecc71, #27ae60)", fontWeight: 800, fontSize: 18, color: "#fff" }}>G</div>
+              <div style={{ width: 40, height: 40, borderRadius: 0, display: "flex", alignItems: "center", justifyContent: "center", background: "#00E676", fontWeight: 800, fontSize: 18, color: "#060A07", fontFamily: "'Syne', sans-serif" }}>G</div>
               <div>
-                <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 18, fontWeight: 700, color: "#fff" }}>GreenPoint</div>
-                <div style={{ fontSize: 9, color: "rgba(255,255,255,0.4)", letterSpacing: "0.15em", textTransform: "uppercase", fontFamily: "'DM Sans', sans-serif" }}>Maintenance Services Corp</div>
+                <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 18, fontWeight: 700, color: "#fff" }}>GreenPoint</div>
+                <div style={{ fontSize: 9, color: "rgba(255,255,255,0.35)", letterSpacing: "0.15em", textTransform: "uppercase", fontFamily: "'JetBrains Mono', monospace" }}>Maintenance Services Corp</div>
               </div>
             </div>
-            <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.45)", lineHeight: 1.7, maxWidth: 340 }}>
+            <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.4)", lineHeight: 1.7, maxWidth: 340 }}>
               MBE-certified facility services provider. Commercial janitorial and facility maintenance across NY, NJ, CT, PA &amp; FL. Serving institutional and commercial clients since 2018.
             </p>
             {/* Certifications */}
             <div style={{ display: "flex", gap: 8, marginTop: 18, flexWrap: "wrap" }}>
               {["MBE / MWBE", "SAM.gov Registered", "Bonded & Insured"].map((badge) => (
-                <span key={badge} style={{ background: "rgba(46,204,113,0.1)", color: "#2ecc71", padding: "4px 10px", borderRadius: 4, fontSize: 10, fontWeight: 600, fontFamily: "'DM Sans', sans-serif", border: "1px solid rgba(46,204,113,0.15)" }}>{badge}</span>
+                <span key={badge} style={{ background: "rgba(0,230,118,0.08)", color: "#00E676", padding: "4px 10px", borderRadius: 0, fontSize: 10, fontWeight: 600, fontFamily: "'JetBrains Mono', monospace", border: "1px solid rgba(0,230,118,0.15)", letterSpacing: "0.05em" }}>{badge}</span>
               ))}
             </div>
             {/* Contact */}
             <div style={{ marginTop: 20 }}>
-              <a href={PHONE_HREF} style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.65)", textDecoration: "none", fontWeight: 600, display: "block" }}>{PHONE_NUMBER}</a>
-              <a href="mailto:info@greenpointms.com" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.45)", textDecoration: "none", display: "block", marginTop: 4 }}>info@greenpointms.com</a>
+              <a href={PHONE_HREF} style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 13, color: "rgba(255,255,255,0.6)", textDecoration: "none", fontWeight: 600, display: "block" }}>{PHONE_NUMBER}</a>
+              <a href="mailto:info@greenpointms.com" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.35)", textDecoration: "none", display: "block", marginTop: 4 }}>info@greenpointms.com</a>
             </div>
             {/* Compliance Data */}
-            <div style={{ marginTop: 18, padding: "14px 0", borderTop: "1px solid rgba(255,255,255,0.06)" }}>
-              <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.3)", lineHeight: 1.8 }}>
+            <div style={{ marginTop: 18, padding: "14px 0", borderTop: "1px solid rgba(255,255,255,0.05)" }}>
+              <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "rgba(255,255,255,0.25)", lineHeight: 1.8 }}>
                 NAICS: 561720 (Janitorial Services) · 238210 (Electrical Contractors) · 561790 (Other Services to Buildings)
               </div>
-              <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.3)", lineHeight: 1.8 }}>
+              <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "rgba(255,255,255,0.25)", lineHeight: 1.8 }}>
                 $2M+ Commercial General Liability · Workers&rsquo; Compensation · Fully Bonded
               </div>
             </div>
@@ -47,11 +46,11 @@ export default function SiteFooter() {
 
           {/* Services */}
           <div>
-            <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 18, paddingBottom: 12, borderBottom: "1px solid rgba(255,255,255,0.06)" }}>Services</div>
+            <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "#00E676", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.15em", marginBottom: 18, paddingBottom: 12, borderBottom: "1px solid rgba(0,230,118,0.08)" }}>Services</div>
             {SERVICES_LIST.map((s) => (
-              <a key={s.slug} href={`/services/${s.slug}/`} style={{ display: "block", fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.5)", textDecoration: "none", marginBottom: 10, transition: "color 0.2s" }}
-                onMouseOver={(e) => e.target.style.color = "#2ecc71"}
-                onMouseOut={(e) => e.target.style.color = "rgba(255,255,255,0.5)"}>
+              <a key={s.slug} href={`/services/${s.slug}/`} style={{ display: "block", fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.45)", textDecoration: "none", marginBottom: 10, transition: "color 0.2s" }}
+                onMouseOver={(e) => e.target.style.color = "#00E676"}
+                onMouseOut={(e) => e.target.style.color = "rgba(255,255,255,0.45)"}>
                 {s.shortName}
               </a>
             ))}
@@ -59,11 +58,11 @@ export default function SiteFooter() {
 
           {/* Industries */}
           <div>
-            <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 18, paddingBottom: 12, borderBottom: "1px solid rgba(255,255,255,0.06)" }}>Industries</div>
+            <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "#00E676", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.15em", marginBottom: 18, paddingBottom: 12, borderBottom: "1px solid rgba(0,230,118,0.08)" }}>Industries</div>
             {INDUSTRIES.map((i) => (
-              <a key={i.slug} href={`/industries/${i.slug}/`} style={{ display: "block", fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.5)", textDecoration: "none", marginBottom: 10, transition: "color 0.2s" }}
-                onMouseOver={(e) => e.target.style.color = "#2ecc71"}
-                onMouseOut={(e) => e.target.style.color = "rgba(255,255,255,0.5)"}>
+              <a key={i.slug} href={`/industries/${i.slug}/`} style={{ display: "block", fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.45)", textDecoration: "none", marginBottom: 10, transition: "color 0.2s" }}
+                onMouseOver={(e) => e.target.style.color = "#00E676"}
+                onMouseOut={(e) => e.target.style.color = "rgba(255,255,255,0.45)"}>
                 {i.shortName}
               </a>
             ))}
@@ -71,7 +70,7 @@ export default function SiteFooter() {
 
           {/* Company Links + Service Areas */}
           <div>
-            <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 18, paddingBottom: 12, borderBottom: "1px solid rgba(255,255,255,0.06)" }}>Company</div>
+            <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "#00E676", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.15em", marginBottom: 18, paddingBottom: 12, borderBottom: "1px solid rgba(0,230,118,0.08)" }}>Company</div>
             {[
               { label: "Schedule a Consultation", href: "/#schedule" },
               { label: "Government Services", href: "/government-cleaning-services" },
@@ -79,17 +78,17 @@ export default function SiteFooter() {
               { label: "School Cleaning NYC", href: "/school-cleaning-nyc" },
               { label: "Janitorial Services NYC", href: "/janitorial-services-nyc" },
             ].map((link) => (
-              <a key={link.label} href={link.href} style={{ display: "block", fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.5)", textDecoration: "none", marginBottom: 10, transition: "color 0.2s" }}
-                onMouseOver={(e) => e.target.style.color = "#2ecc71"}
-                onMouseOut={(e) => e.target.style.color = "rgba(255,255,255,0.5)"}>
+              <a key={link.label} href={link.href} style={{ display: "block", fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.45)", textDecoration: "none", marginBottom: 10, transition: "color 0.2s" }}
+                onMouseOver={(e) => e.target.style.color = "#00E676"}
+                onMouseOut={(e) => e.target.style.color = "rgba(255,255,255,0.45)"}>
                 {link.label}
               </a>
             ))}
-            <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginTop: 28, marginBottom: 14, paddingBottom: 12, borderBottom: "1px solid rgba(255,255,255,0.06)" }}>Service Areas</div>
+            <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "#00E676", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.15em", marginTop: 28, marginBottom: 14, paddingBottom: 12, borderBottom: "1px solid rgba(0,230,118,0.08)" }}>Service Areas</div>
             {STATES.map((s) => (
-              <a key={s.slug} href={`/locations/${s.slug}/`} style={{ display: "block", fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.5)", textDecoration: "none", marginBottom: 8, transition: "color 0.2s" }}
-                onMouseOver={(e) => e.target.style.color = "#2ecc71"}
-                onMouseOut={(e) => e.target.style.color = "rgba(255,255,255,0.5)"}>
+              <a key={s.slug} href={`/locations/${s.slug}/`} style={{ display: "block", fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.45)", textDecoration: "none", marginBottom: 8, transition: "color 0.2s" }}
+                onMouseOver={(e) => e.target.style.color = "#00E676"}
+                onMouseOut={(e) => e.target.style.color = "rgba(255,255,255,0.45)"}>
                 {s.name}
               </a>
             ))}
@@ -97,13 +96,13 @@ export default function SiteFooter() {
         </div>
 
         {/* Bottom bar */}
-        <div style={{ borderTop: "1px solid rgba(255,255,255,0.08)", paddingTop: 24, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12 }}>
-          <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: "rgba(255,255,255,0.25)" }}>
+        <div style={{ borderTop: "1px solid rgba(255,255,255,0.06)", paddingTop: 24, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12 }}>
+          <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 11, color: "rgba(255,255,255,0.2)" }}>
             © 2026 GreenPoint Maintenance Services Corp. All rights reserved. Est. 2018.
           </div>
           <div style={{ display: "flex", gap: 20 }}>
-            <a href="/sitemap.xml" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: "rgba(255,255,255,0.25)", textDecoration: "none" }}>Sitemap</a>
-            <a href="/#contact" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, color: "rgba(255,255,255,0.25)", textDecoration: "none" }}>Contact</a>
+            <a href="/sitemap.xml" style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 11, color: "rgba(255,255,255,0.2)", textDecoration: "none" }}>Sitemap</a>
+            <a href="/#contact" style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 11, color: "rgba(255,255,255,0.2)", textDecoration: "none" }}>Contact</a>
           </div>
         </div>
       </div>
