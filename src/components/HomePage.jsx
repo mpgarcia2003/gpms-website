@@ -921,7 +921,7 @@ function QuoteCalculator() {
                 ))}
               </div>
 
-              <a href="#" onClick={(e) => { e.preventDefault(); const el = document.getElementById("contact"); if (el) el.scrollIntoView({ behavior: "smooth" }); }}
+              <a href="#" onClick={(e) => { e.preventDefault(); scrollTo('schedule'); }}
                 style={{ display: "block", width: "100%", padding: "14px", background: "#1B7A3D", border: "none", borderRadius: 4, color: "#fff", fontSize: 13, fontWeight: 700, fontFamily: "'Syne', sans-serif", textTransform: "uppercase", letterSpacing: "0.04em", textAlign: "center", textDecoration: "none", boxSizing: "border-box", cursor: "pointer" }}>
                 Request Formal Proposal →
               </a>
@@ -978,7 +978,7 @@ function QuoteCalculator() {
               {/* Walkthrough CTA */}
               <a
                 href="#"
-                onClick={(e) => { e.preventDefault(); const el = document.getElementById('contact'); if (el) el.scrollIntoView({ behavior: 'smooth' }); }}
+                onClick={(e) => { e.preventDefault(); scrollTo('schedule'); }}
                 style={{
                   display: 'block', width: '100%', marginTop: 10, padding: '12px',
                   background: '#F5F9F6', border: '1px solid #E2EBE5',
@@ -1101,7 +1101,7 @@ function Header({ scrolled }) {
             href={PHONE_HREF}
             style={{
               color: scrolled ? "#1A2B1F" : "#fff", textDecoration: "none", fontSize: 14, fontWeight: 700,
-              fontFamily: "'Plus Jakarta Sans', sans-serif", display: "flex", alignItems: "center", gap: 6,
+              fontFamily: "'Plus Jakarta Sans', sans-serif", display: "flex", alignItems: "center", gap: 6, whiteSpace: "nowrap",
             }}
           >
             <PhoneIcon size={16} color="#1B7A3D" /> {PHONE_NUMBER}
@@ -1258,6 +1258,10 @@ function HeroLeadForm() {
   function handleSubmit() {
     console.log('[GreenPoint] Walkthrough form submitted:', formData);
     setSubmitted(true);
+    // Scroll to Acuity scheduling after a brief success message
+    setTimeout(() => {
+      scrollTo('schedule');
+    }, 2000);
     setTimeout(() => {
       setSubmitted(false);
       setFormStep(1);
@@ -2390,7 +2394,7 @@ function ContactSection() {
                   resize: "vertical", boxSizing: "border-box",
                 }} />
             </div>
-            <button style={{
+            <button onClick={(e) => { e.preventDefault(); scrollTo('schedule'); }} style={{
               width: "100%", marginTop: 24, padding: "16px 24px", background: "#1B7A3D",
               border: "none", borderRadius: 4, color: "#FFFFFF", fontSize: 15, fontWeight: 700, cursor: "pointer",
               fontFamily: "'Syne', sans-serif", letterSpacing: "0.04em", textTransform: "uppercase",
@@ -2761,7 +2765,7 @@ function StickyCtaBar({ visible }) {
           <a href={PHONE_HREF} style={{ display: 'flex', alignItems: 'center', gap: 6, color: '#fff', textDecoration: 'none', fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, fontWeight: 700 }} className="sticky-phone">
             <PhoneIcon size={16} color="#1B7A3D" /> {PHONE_NUMBER}
           </a>
-          <a href="#contact" style={{
+          <a href="#" onClick={(e) => { e.preventDefault(); scrollTo('schedule'); }} style={{
             background: '#1B7A3D', color: '#fff', padding: '10px 24px',
             borderRadius: 4, fontWeight: 700, fontSize: 13, textDecoration: 'none', fontFamily: "'Syne', sans-serif",
             textTransform: 'uppercase', letterSpacing: '0.04em', whiteSpace: 'nowrap',
