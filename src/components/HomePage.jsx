@@ -9,6 +9,28 @@ import {
   MailIcon, ClockIcon, DownloadIcon, FileTextIcon, MapPinIcon, CheckCircleIcon,
 } from './Icons';
 
+// Angled SVG section divider — use between dark/light section transitions
+function SectionDivider({ fromColor = "#0a1a12", toColor = "#fff" }) {
+  return (
+    <div style={{ position: "relative", height: 60, background: toColor, marginTop: -1, lineHeight: 0 }}>
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style={{ width: "100%", height: "100%", display: "block" }}>
+        <path d="M0,0 L1440,0 L0,60 Z" fill={fromColor} />
+      </svg>
+    </div>
+  );
+}
+
+// Reverse: light section above, dark below
+function SectionDividerReverse({ fromColor = "#fff", toColor = "#0a1a12" }) {
+  return (
+    <div style={{ position: "relative", height: 60, background: toColor, marginTop: -1, lineHeight: 0 }}>
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style={{ width: "100%", height: "100%", display: "block" }}>
+        <path d="M1440,0 L1440,60 L0,60 Z" fill={fromColor} />
+      </svg>
+    </div>
+  );
+}
+
 // Icon wrapper for consistent sizing in cards
 function IconBox({ children, size = 48, bg = 'rgba(46,204,113,0.08)', radius = 14, dark = false }) {
   return (
@@ -1547,19 +1569,28 @@ function Hero() {
 
 function StatsBar() {
   return (
-    <section style={{ background: "#fff", borderBottom: "1px solid #eee" }}>
-      <div style={{ maxWidth: 1280, margin: "0 auto", padding: "48px 24px", display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 32, textAlign: "center" }} className="stats-grid">
+    <section className="noise-overlay" style={{ background: "linear-gradient(135deg, #0a1a12 0%, #0d2818 50%, #122d1c 100%)", position: "relative", overflow: "hidden" }}>
+      {/* Shimmer top line */}
+      <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 1, background: "linear-gradient(90deg, transparent, rgba(46,204,113,0.4), transparent)" }} />
+      <div style={{ maxWidth: 1280, margin: "0 auto", padding: "56px 24px", display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 0, textAlign: "center", position: "relative", zIndex: 1 }} className="stats-grid">
         {TRUST_STATS.map((stat, i) => (
           <AnimatedSection key={stat.label} delay={i * 0.1}>
-            <div className="stat-number" style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, fontFamily: "'Playfair Display', Georgia, serif", lineHeight: 1 }}>
-              {stat.number}
-            </div>
-            <div style={{ fontSize: 14, color: "#666", marginTop: 8, fontFamily: "'DM Sans', sans-serif", fontWeight: 500 }}>
-              {stat.label}
+            <div style={{
+              padding: "20px 24px",
+              borderRight: i < TRUST_STATS.length - 1 ? "1px solid rgba(255,255,255,0.06)" : "none",
+            }}>
+              <div className="stat-number" style={{ fontSize: "clamp(32px, 4vw, 48px)", fontWeight: 800, fontFamily: "'Playfair Display', Georgia, serif", lineHeight: 1 }}>
+                {stat.number}
+              </div>
+              <div style={{ fontSize: 13, color: "rgba(255,255,255,0.5)", marginTop: 10, fontFamily: "'DM Sans', sans-serif", fontWeight: 500, lineHeight: 1.4 }}>
+                {stat.label}
+              </div>
             </div>
           </AnimatedSection>
         ))}
       </div>
+      {/* Shimmer bottom line */}
+      <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: 1, background: "linear-gradient(90deg, transparent, rgba(46,204,113,0.2), transparent)" }} />
     </section>
   );
 }
@@ -1721,7 +1752,7 @@ function About() {
 
 function Services() {
   return (
-    <section id="services" style={{ background: "#fff", padding: "100px 24px" }}>
+    <section id="services" className="dot-texture" style={{ background: "#fff", padding: "100px 24px" }}>
       <div style={{ maxWidth: 1280, margin: "0 auto" }}>
         <AnimatedSection>
           <div style={{ textAlign: "center", marginBottom: 64 }}>
@@ -1742,11 +1773,12 @@ function Services() {
           {SERVICES.map((svc, i) => (
             <AnimatedSection key={svc.title} delay={i * 0.08}>
               <div
-                className="premium-card"
+                className="premium-card card-accent-top"
                 style={{
-                  background: "#fafbfa", borderRadius: 16, padding: 36, border: "1px solid #eee",
+                  background: "#fff", borderRadius: 16, padding: 36, border: "1px solid rgba(0,0,0,0.07)",
                   cursor: "default", height: "100%",
-                  boxShadow: "0 4px 20px rgba(0,0,0,0.03)",
+                  boxShadow: "0 2px 16px rgba(0,0,0,0.05)",
+                  position: "relative", overflow: "hidden",
                 }}
               >
                 <IconBox size={56} radius={14}>
@@ -1819,7 +1851,10 @@ function IndustriesSection() {
           <div style={{
             background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.08)",
             borderRadius: 20, padding: "48px", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 48, alignItems: "center",
+            position: "relative", overflow: "hidden",
           }} className="industry-detail">
+            {/* Corner glow accent */}
+            <div style={{ position: "absolute", top: -80, right: -80, width: 300, height: 300, background: "radial-gradient(circle, rgba(46,204,113,0.08) 0%, transparent 65%)", borderRadius: "50%", pointerEvents: "none" }} />
             <div>
               <IconBox size={72} radius={18} dark>
                 {getIcon(INDUSTRIES[active].iconKey, 36)}
@@ -1982,18 +2017,28 @@ function TestimonialsSection() {
           {TESTIMONIALS.map((test, i) => (
             <AnimatedSection key={i} delay={i * 0.1}>
               <div style={{
-                background: "#fff", borderRadius: 16, padding: 36, border: "1px solid #eee",
+                background: "#fff", borderRadius: 16, padding: 36, border: "1px solid rgba(0,0,0,0.07)",
+                borderLeft: "4px solid #2ecc71",
                 height: "100%", display: "flex", flexDirection: "column",
+                boxShadow: "0 4px 24px rgba(0,0,0,0.05)",
+                position: "relative",
               }}>
-                <div style={{ display: "flex", gap: 2, marginBottom: 20 }}>
+                {/* Decorative quote mark */}
+                <div style={{
+                  position: "absolute", top: 20, right: 24,
+                  fontSize: 80, lineHeight: 1, color: "rgba(46,204,113,0.08)",
+                  fontFamily: "'Playfair Display', serif", fontWeight: 800,
+                  pointerEvents: "none", userSelect: "none",
+                }}>"</div>
+                <div style={{ display: "flex", gap: 2, marginBottom: 16 }}>
                   {[1, 2, 3, 4, 5].map((star) => (
-                    <span key={star} style={{ color: "#f39c12", fontSize: 18 }}>★</span>
+                    <span key={star} style={{ color: "#f39c12", fontSize: 16 }}>★</span>
                   ))}
                 </div>
-                <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 15, color: "#444", lineHeight: 1.75, flex: 1, fontStyle: "italic" }}>
+                <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 15, color: "#444", lineHeight: 1.75, flex: 1, fontStyle: "italic", position: "relative", zIndex: 1 }}>
                   "{test.quote}"
                 </p>
-                <div style={{ marginTop: 24, paddingTop: 20, borderTop: "1px solid #eee" }}>
+                <div style={{ marginTop: 24, paddingTop: 20, borderTop: "1px solid rgba(0,0,0,0.06)" }}>
                   <div style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 700, fontSize: 14, color: "#0d2818" }}>{test.name}</div>
                   <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "#888", marginTop: 2 }}>{test.role}</div>
                   <span style={{
@@ -2499,7 +2544,42 @@ function FAQSection() {
 
 function Footer() {
   return (
-    <footer style={{ background: "#0a1a12", padding: "64px 24px 32px" }}>
+    <footer style={{ background: "#0a1a12", padding: "0 0 0" }}>
+      {/* Pre-footer CTA block */}
+      <div style={{ background: "linear-gradient(135deg, #0d2818, #1a4d2e)", padding: "80px 24px", textAlign: "center", position: "relative", overflow: "hidden", borderTop: "1px solid rgba(46,204,113,0.15)" }}>
+        <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", width: 600, height: 400, background: "radial-gradient(ellipse, rgba(46,204,113,0.07) 0%, transparent 70%)", pointerEvents: "none" }} />
+        <div style={{ maxWidth: 720, margin: "0 auto", position: "relative", zIndex: 1 }}>
+          <div style={{ fontSize: 11, color: "#2ecc71", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'DM Sans', sans-serif" }}>
+            Ready to Upgrade Your Facility?
+          </div>
+          <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 700, color: "#fff", lineHeight: 1.15, marginBottom: 20 }}>
+            Your Facility Deserves Better.<br /><span style={{ color: "#2ecc71" }}>Let's Talk.</span>
+          </h2>
+          <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 16, color: "rgba(255,255,255,0.6)", lineHeight: 1.7, marginBottom: 36 }}>
+            Get a custom cleaning plan in 24 hours. MBE-certified. Bonded & insured. No obligation.
+          </p>
+          <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
+            <a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }} className="cta-glow" style={{
+              background: "linear-gradient(135deg, #2ecc71, #27ae60)", color: "#fff",
+              padding: "14px 32px", borderRadius: 8, fontWeight: 700, fontSize: 15,
+              textDecoration: "none", fontFamily: "'DM Sans', sans-serif",
+              boxShadow: "0 4px 24px rgba(46,204,113,0.35)",
+            }}>
+              Get a Free Quote →
+            </a>
+            <a href={PHONE_HREF} style={{
+              background: "rgba(255,255,255,0.08)", color: "#fff",
+              padding: "14px 32px", borderRadius: 8, fontWeight: 600, fontSize: 15,
+              textDecoration: "none", fontFamily: "'DM Sans', sans-serif",
+              border: "1px solid rgba(255,255,255,0.15)",
+            }}>
+              Call {PHONE_NUMBER}
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div style={{ padding: "64px 24px 32px" }}>
       <div style={{ maxWidth: 1280, margin: "0 auto" }}>
         <div style={{ display: "grid", gridTemplateColumns: "2fr 1fr 1fr 1fr", gap: 48, marginBottom: 48 }} className="footer-grid">
           <div>
@@ -2585,6 +2665,7 @@ function Footer() {
             ))}
           </div>
         </div>
+      </div>
       </div>
     </footer>
   );
@@ -2705,6 +2786,14 @@ export default function GreenPointWebsite() {
           from { transform: rotate(0deg); }
           to { transform: rotate(360deg); }
         }
+        @keyframes staggerReveal {
+          from { opacity: 0; transform: translateY(30px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes shimmerLine {
+          0% { transform: translateX(-100%); }
+          100% { transform: translateX(200%); }
+        }
 
         /* === HERO ENTRANCE STAGGER === */
         .hero-badge-anim {
@@ -2803,6 +2892,37 @@ export default function GreenPointWebsite() {
           margin: 0 auto 20px;
         }
 
+        /* === GREEN HOVER UNDERLINE === */
+        .green-hover-underline {
+          position: relative; display: inline-block;
+        }
+        .green-hover-underline::after {
+          content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px;
+          background: linear-gradient(90deg, #2ecc71, #27ae60);
+          transition: width 0.3s ease;
+        }
+        .green-hover-underline:hover::after { width: 100%; }
+
+        /* === DOT GRID TEXTURE === */
+        .dot-texture {
+          background-image: radial-gradient(circle, rgba(0,0,0,0.04) 1px, transparent 1px);
+          background-size: 24px 24px;
+        }
+
+        /* === CARD TOP ACCENT === */
+        .card-accent-top {
+          position: relative; overflow: hidden;
+        }
+        .card-accent-top::before {
+          content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+          background: linear-gradient(90deg, #2ecc71, #27ae60, #2ecc71);
+          background-size: 200% auto;
+          animation: shimmerLine 2s linear infinite;
+          opacity: 0;
+          transition: opacity 0.3s ease;
+        }
+        .card-accent-top:hover::before { opacity: 1; }
+
         /* === NOISE GRAIN OVERLAY === */
         .noise-overlay::after {
           content: ''; position: absolute; inset: 0; opacity: 0.035; pointer-events: none;
@@ -2859,14 +2979,20 @@ export default function GreenPointWebsite() {
       <Header scrolled={scrolled} />
       <Hero />
       <StatsBar />
+      <SectionDivider fromColor="#0a1a12" toColor="#fff" />
       <AuthorityBar />
       <Services />
+      <SectionDividerReverse fromColor="#fff" toColor="#0a1a12" />
       <IndustriesSection />
+      <SectionDivider fromColor="#0a1a12" toColor="#fff" />
       <JaniTrack />
       <QuoteCalculator />
       <AcuitySection />
+      <SectionDivider fromColor="#0a1a12" toColor="#fafbfa" />
       <TestimonialsSection />
+      <SectionDividerReverse fromColor="#fafbfa" toColor="#0d2818" />
       <ComplianceSection />
+      <SectionDivider fromColor="#0d2818" toColor="#fff" />
       <ProcessSection />
       <ContactSection />
       <FAQSection />

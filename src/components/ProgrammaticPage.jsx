@@ -42,6 +42,14 @@ export default function ProgrammaticPage({ title, subtitle, breadcrumbs, heroIco
         .pp-related-card:hover { border-color: rgba(46,204,113,0.4) !important; box-shadow: 0 6px 24px rgba(0,0,0,0.06) !important; transform: translateY(-2px); }
         .pp-feature-card { transition: border-color 0.2s ease, box-shadow 0.2s ease; }
         .pp-feature-card:hover { border-color: rgba(46,204,113,0.25) !important; box-shadow: 0 4px 16px rgba(0,0,0,0.04) !important; }
+        @keyframes ppShimmer {
+          0% { transform: translateX(-100%); }
+          100% { transform: translateX(200%); }
+        }
+        .pp-related-card { position: relative; overflow: hidden; }
+        .pp-related-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, #2ecc71, #27ae60, #2ecc71); background-size: 200% auto; animation: ppShimmer 2.5s linear infinite; opacity: 0; transition: opacity 0.3s ease; }
+        .pp-related-card:hover::before { opacity: 1; }
+        .pp-dot-texture { background-image: radial-gradient(circle, rgba(0,0,0,0.035) 1px, transparent 1px) !important; background-size: 24px 24px !important; }
       `}</style>
       <SiteHeader />
 
@@ -95,7 +103,7 @@ export default function ProgrammaticPage({ title, subtitle, breadcrumbs, heroIco
 
       {/* Sections */}
       {sections && sections.map((section, idx) => (
-        <section key={idx} style={{ background: idx % 2 === 0 ? "#fff" : "#fafbfa", padding: "80px 24px" }}>
+        <section key={idx} className={idx % 2 === 0 ? "pp-dot-texture" : ""} style={{ background: idx % 2 === 0 ? "#fff" : "#fafbfa", padding: "80px 24px" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             {section.label && (
               <div style={{ fontSize: 12, color: "#2ecc71", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 14, fontFamily: "'DM Sans', sans-serif" }}>{section.label}</div>

@@ -59,8 +59,15 @@ export default function SeoLandingPage({
         .seo-fade-up { animation: seoFadeUp 0.7s ease forwards; opacity: 0; }
         .seo-scale-in { animation: seoScaleIn 0.5s ease forwards; opacity: 0; }
         .seo-live-dot { animation: seoPulseDot 2.5s ease infinite; }
-        .seo-svc-card { transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; }
+        @keyframes seoShimmer {
+          0% { transform: translateX(-100%); }
+          100% { transform: translateX(200%); }
+        }
+        .seo-svc-card { transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; position: relative; overflow: hidden; }
         .seo-svc-card:hover { transform: translateY(-4px) !important; box-shadow: 0 16px 48px rgba(0,0,0,0.09) !important; border-color: rgba(46,204,113,0.4) !important; }
+        .seo-svc-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, #2ecc71, #27ae60, #2ecc71); background-size: 200% auto; animation: seoShimmer 2s linear infinite; opacity: 0; transition: opacity 0.3s ease; }
+        .seo-svc-card:hover::before { opacity: 1; }
+        .seo-dot-texture { background-image: radial-gradient(circle, rgba(0,0,0,0.04) 1px, transparent 1px); background-size: 24px 24px; }
         .seo-why-card { transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease; }
         .seo-why-card:hover { background: rgba(255,255,255,0.08) !important; border-color: rgba(46,204,113,0.3) !important; transform: translateY(-2px); }
         .seo-cta-primary { transition: transform 0.3s ease, box-shadow 0.3s ease; }
@@ -170,7 +177,7 @@ export default function SeoLandingPage({
 
       {/* Services Grid */}
       {services.length > 0 && (
-        <section style={{ background: "#fafbfa", padding: "80px 24px" }}>
+        <section className="seo-dot-texture" style={{ background: "#fafbfa", padding: "80px 24px" }}>
           <div style={{ maxWidth: 1280, margin: "0 auto" }}>
             <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 700, color: "#0d2818", textAlign: "center", marginBottom: 48 }}>
               What's Included
