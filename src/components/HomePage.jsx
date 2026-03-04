@@ -1625,7 +1625,43 @@ function Hero() {
           </div>
 
           <div className="hero-form-anim">
-            <HeroLeadForm />
+            <div style={{
+              background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.12)',
+              borderRadius: 16, padding: '44px 40px', textAlign: 'center',
+            }}>
+              <div style={{ marginBottom: 20 }}>
+                <CalendarIcon size={48} color="#1B7A3D" />
+              </div>
+              <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: 24, color: '#fff', marginBottom: 8, fontWeight: 700 }}>
+                Book Your Free Walkthrough
+              </h3>
+              <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 15, color: 'rgba(255,255,255,0.55)', lineHeight: 1.6, marginBottom: 28, maxWidth: 340, margin: '0 auto 28px' }}>
+                Pick a time that works. We'll assess your facility and deliver a custom proposal within 48 hours.
+              </p>
+              <a href="#" onClick={(e) => { e.preventDefault(); scrollTo('schedule'); }} className="cta-glow" style={{
+                display: 'block', width: '100%', padding: '16px 24px', background: '#1B7A3D',
+                borderRadius: 8, color: '#fff', fontSize: 15, fontWeight: 700, textDecoration: 'none',
+                fontFamily: "'Syne', sans-serif", textTransform: 'uppercase', letterSpacing: '0.04em',
+                textAlign: 'center', boxSizing: 'border-box',
+              }}>
+                Schedule Now →
+              </a>
+              <div style={{ marginTop: 20, display: 'flex', justifyContent: 'center', gap: 24, flexWrap: 'wrap' }}>
+                <a href={PHONE_HREF} style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: 'rgba(255,255,255,0.5)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 6 }}>
+                  <PhoneIcon size={14} color="#1B7A3D" /> {PHONE_NUMBER}
+                </a>
+                <a href="mailto:info@greenpointms.com" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: 'rgba(255,255,255,0.5)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 6 }}>
+                  <MailIcon size={14} color="#1B7A3D" /> Email Us
+                </a>
+              </div>
+              <div style={{ marginTop: 24, paddingTop: 20, borderTop: '1px solid rgba(255,255,255,0.08)' }}>
+                <div style={{ display: 'flex', justifyContent: 'center', gap: 16, flexWrap: 'wrap' }}>
+                  {['MBE Certified', 'Free Assessment', 'No Obligation'].map((item) => (
+                    <span key={item} style={{ fontSize: 11, color: 'rgba(255,255,255,0.4)', fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 600 }}>✓ {item}</span>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
