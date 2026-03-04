@@ -1071,10 +1071,10 @@ function Header({ scrolled }) {
             G
           </div>
           <div>
-            <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 20, fontWeight: 700, color: "#fff", letterSpacing: "-0.02em", lineHeight: 1.1 }}>
+            <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 20, fontWeight: 700, color: scrolled ? "#1A2B1F" : "#fff", letterSpacing: "-0.02em", lineHeight: 1.1 }}>
               GreenPoint
             </div>
-            <div style={{ fontSize: 10, color: "rgba(255,255,255,0.6)", letterSpacing: "0.15em", textTransform: "uppercase", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+            <div style={{ fontSize: 10, color: scrolled ? "#C8A34D" : "rgba(255,255,255,0.6)", letterSpacing: "0.15em", textTransform: "uppercase", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
               Maintenance Services Corp
             </div>
           </div>
@@ -1087,12 +1087,12 @@ function Header({ scrolled }) {
               href="#"
               onClick={(e) => { e.preventDefault(); scrollTo(item.target); }}
               style={{
-                color: "rgba(255,255,255,0.8)", textDecoration: "none", fontSize: 13, fontWeight: 500,
+                color: scrolled ? "#4A5E52" : "rgba(255,255,255,0.8)", textDecoration: "none", fontSize: 13, fontWeight: 500,
                 fontFamily: "'Plus Jakarta Sans', sans-serif", letterSpacing: "0.01em",
                 transition: "color 0.2s",
               }}
               onMouseOver={(e) => (e.target.style.color = "#1B7A3D")}
-              onMouseOut={(e) => (e.target.style.color = "rgba(255,255,255,0.8)")}
+              onMouseOut={(e) => (e.target.style.color = scrolled ? "#4A5E52" : "rgba(255,255,255,0.8)")}
             >
               {item.label}
             </a>
@@ -1100,7 +1100,7 @@ function Header({ scrolled }) {
           <a
             href={PHONE_HREF}
             style={{
-              color: "#fff", textDecoration: "none", fontSize: 14, fontWeight: 700,
+              color: scrolled ? "#1A2B1F" : "#fff", textDecoration: "none", fontSize: 14, fontWeight: 700,
               fontFamily: "'Plus Jakarta Sans', sans-serif", display: "flex", alignItems: "center", gap: 6,
             }}
           >
@@ -1126,7 +1126,7 @@ function Header({ scrolled }) {
           className="mobile-toggle"
           onClick={() => setMobileOpen(!mobileOpen)}
           style={{
-            display: "none", background: "none", border: "none", color: "#fff", fontSize: 28, cursor: "pointer", padding: 8,
+            display: "none", background: "none", border: "none", color: scrolled ? "#1A2B1F" : "#fff", fontSize: 28, cursor: "pointer", padding: 8,
           }}
         >
           {mobileOpen ? "✕" : "☰"}
@@ -1141,12 +1141,12 @@ function Header({ scrolled }) {
         }}>
           {NAV_ITEMS.map((item) => (
             <a key={item.label} href="#" onClick={(e) => { e.preventDefault(); setMobileOpen(false); scrollTo(item.target); }}
-              style={{ color: "rgba(255,255,255,0.85)", textDecoration: "none", fontSize: 16, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+              style={{ color: "#4A5E52", textDecoration: "none", fontSize: 16, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
               {item.label}
             </a>
           ))}
           <a href={PHONE_HREF}
-            style={{ color: "#fff", textDecoration: "none", fontSize: 16, fontWeight: 700, fontFamily: "'Plus Jakarta Sans', sans-serif", display: "flex", alignItems: "center", gap: 8 }}>
+            style={{ color: "#1A2B1F", textDecoration: "none", fontSize: 16, fontWeight: 700, fontFamily: "'Plus Jakarta Sans', sans-serif", display: "flex", alignItems: "center", gap: 8 }}>
             <PhoneIcon size={16} color="#1B7A3D" /> {PHONE_NUMBER}
           </a>
           <a href="#" onClick={(e) => { e.preventDefault(); setMobileOpen(false); scrollTo("schedule"); }}
