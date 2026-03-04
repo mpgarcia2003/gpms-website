@@ -64,8 +64,8 @@ const NAV_ITEMS = [
   { label: "Government", target: "compliance" },
 ];
 
-const PHONE_NUMBER = "(347) 332-9348";
-const PHONE_HREF = "tel:3473329348";
+const PHONE_NUMBER = "347-332-9348";
+const PHONE_HREF = "tel:+13473329348";
 
 function scrollTo(id) {
   const el = document.getElementById(id);
@@ -968,9 +968,11 @@ function Header({ scrolled }) {
         left: 0,
         right: 0,
         zIndex: 1000,
-        background: scrolled ? "rgba(10, 26, 18, 0.97)" : "transparent",
-        backdropFilter: scrolled ? "blur(12px)" : "none",
-        borderBottom: scrolled ? "1px solid rgba(46, 204, 113, 0.15)" : "none",
+        background: scrolled ? "rgba(10, 26, 18, 0.85)" : "transparent",
+        backdropFilter: scrolled ? "blur(24px) saturate(1.4)" : "none",
+        WebkitBackdropFilter: scrolled ? "blur(24px) saturate(1.4)" : "none",
+        borderBottom: scrolled ? "1px solid rgba(46, 204, 113, 0.2)" : "none",
+        boxShadow: scrolled ? "0 4px 30px rgba(0,0,0,0.3)" : "none",
         transition: "all 0.4s ease",
         padding: scrolled ? "12px 0" : "20px 0",
       }}
@@ -1437,20 +1439,26 @@ function Hero() {
   return (
     <section
       id="hero"
+      className="noise-overlay"
       style={{
         position: "relative", minHeight: "100vh", display: "flex", alignItems: "center",
         background: "linear-gradient(165deg, #0a1a12 0%, #0d2818 30%, #122d1c 60%, #0a1a12 100%)",
         overflow: "hidden",
       }}
     >
-      <div style={{
+      <div className="hero-orb" style={{
         position: "absolute", top: -200, right: -200, width: 600, height: 600,
-        background: "radial-gradient(circle, rgba(46,204,113,0.08) 0%, transparent 70%)",
+        background: "radial-gradient(circle, rgba(46,204,113,0.1) 0%, rgba(46,204,113,0.03) 40%, transparent 70%)",
         borderRadius: "50%",
       }} />
-      <div style={{
-        position: "absolute", bottom: -100, left: -100, width: 400, height: 400,
-        background: "radial-gradient(circle, rgba(46,204,113,0.05) 0%, transparent 70%)",
+      <div className="hero-orb-2" style={{
+        position: "absolute", bottom: -100, left: -100, width: 500, height: 500,
+        background: "radial-gradient(circle, rgba(46,204,113,0.07) 0%, transparent 70%)",
+        borderRadius: "50%",
+      }} />
+      <div className="hero-orb" style={{
+        position: "absolute", top: "40%", left: "15%", width: 300, height: 300,
+        background: "radial-gradient(circle, rgba(46,204,113,0.04) 0%, transparent 70%)",
         borderRadius: "50%",
       }} />
       <div style={{
@@ -1462,7 +1470,7 @@ function Hero() {
       <div style={{ position: "relative", zIndex: 2, maxWidth: 1280, margin: "0 auto", padding: "140px 24px 80px", width: "100%" }}>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "center" }} className="hero-grid">
           <div>
-            <div style={{
+            <div className="hero-badge-anim" style={{
               display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(46,204,113,0.1)",
               border: "1px solid rgba(46,204,113,0.25)", borderRadius: 100, padding: "6px 16px", marginBottom: 28,
             }}>
@@ -1472,7 +1480,7 @@ function Hero() {
               </span>
             </div>
 
-            <h1 style={{
+            <h1 className="hero-title-anim" style={{
               fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(36px, 5vw, 64px)",
               fontWeight: 700, color: "#fff", lineHeight: 1.08, marginBottom: 24, letterSpacing: "-0.02em",
             }}>
@@ -1481,15 +1489,15 @@ function Hero() {
               <span style={{ color: "#2ecc71" }}>We Guarantee It.</span>
             </h1>
 
-            <p style={{
+            <p className="hero-subtitle-anim" style={{
               fontFamily: "'DM Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.65)",
               lineHeight: 1.7, marginBottom: 36, maxWidth: 520,
             }}>
               MBE-certified facility maintenance for schools, healthcare, houses of worship, and government buildings across NY, NJ, CT, PA &amp; FL. Every cleaning session verified in real-time through JaniTrack.
             </p>
 
-            <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
-              <a href="#" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }} style={{
+            <div className="hero-ctas-anim" style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
+              <a href="#" onClick={(e) => { e.preventDefault(); scrollTo("schedule"); }} className="cta-glow" style={{
                 background: "linear-gradient(135deg, #2ecc71, #27ae60)", color: "#fff", padding: "16px 36px",
                 borderRadius: 10, fontWeight: 700, fontSize: 16, textDecoration: "none", fontFamily: "'DM Sans', sans-serif",
                 boxShadow: "0 4px 24px rgba(46,204,113,0.3)", transition: "transform 0.2s, box-shadow 0.2s",
@@ -1513,7 +1521,7 @@ function Hero() {
               </a>
             </div>
 
-            <div style={{ display: "flex", gap: 20, marginTop: 48, flexWrap: "wrap" }}>
+            <div className="hero-trust-anim" style={{ display: "flex", gap: 20, marginTop: 48, flexWrap: "wrap" }}>
               {[
                 { text: "MBE / MWBE Certified" },
                 { text: "SAM.gov Registered" },
@@ -1528,7 +1536,9 @@ function Hero() {
             </div>
           </div>
 
-          <HeroLeadForm />
+          <div className="hero-form-anim">
+            <HeroLeadForm />
+          </div>
         </div>
       </div>
     </section>
@@ -1541,7 +1551,7 @@ function StatsBar() {
       <div style={{ maxWidth: 1280, margin: "0 auto", padding: "48px 24px", display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 32, textAlign: "center" }} className="stats-grid">
         {TRUST_STATS.map((stat, i) => (
           <AnimatedSection key={stat.label} delay={i * 0.1}>
-            <div style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, color: "#0d2818", fontFamily: "'Playfair Display', Georgia, serif", lineHeight: 1 }}>
+            <div className="stat-number" style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 800, fontFamily: "'Playfair Display', Georgia, serif", lineHeight: 1 }}>
               {stat.number}
             </div>
             <div style={{ fontSize: 14, color: "#666", marginTop: 8, fontFamily: "'DM Sans', sans-serif", fontWeight: 500 }}>
@@ -1582,7 +1592,7 @@ function AuthorityBar() {
 
 function ComplianceSection() {
   return (
-    <section id="compliance" style={{ background: "linear-gradient(135deg, #0d2818, #1a4d2e)", padding: "80px 24px" }}>
+    <section id="compliance" className="noise-overlay" style={{ background: "linear-gradient(135deg, #0d2818, #1a4d2e)", padding: "80px 24px", position: "relative", overflow: "hidden" }}>
       <div style={{ maxWidth: 1280, margin: "0 auto" }}>
         <AnimatedSection>
           <div style={{ textAlign: "center", marginBottom: 48 }}>
@@ -1715,6 +1725,7 @@ function Services() {
       <div style={{ maxWidth: 1280, margin: "0 auto" }}>
         <AnimatedSection>
           <div style={{ textAlign: "center", marginBottom: 64 }}>
+            <div className="green-line-center" />
             <div style={{ fontSize: 12, color: "#2ecc71", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'DM Sans', sans-serif" }}>
               Our Services
             </div>
@@ -1731,12 +1742,12 @@ function Services() {
           {SERVICES.map((svc, i) => (
             <AnimatedSection key={svc.title} delay={i * 0.08}>
               <div
+                className="premium-card"
                 style={{
                   background: "#fafbfa", borderRadius: 16, padding: 36, border: "1px solid #eee",
-                  transition: "all 0.3s ease", cursor: "default", height: "100%",
+                  cursor: "default", height: "100%",
+                  boxShadow: "0 4px 20px rgba(0,0,0,0.03)",
                 }}
-                onMouseOver={(e) => { e.currentTarget.style.borderColor = "rgba(46,204,113,0.3)"; e.currentTarget.style.transform = "translateY(-4px)"; e.currentTarget.style.boxShadow = "0 12px 40px rgba(0,0,0,0.06)"; }}
-                onMouseOut={(e) => { e.currentTarget.style.borderColor = "#eee"; e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "none"; }}
               >
                 <IconBox size={56} radius={14}>
                   {getIcon(svc.iconKey, 28)}
@@ -1766,7 +1777,7 @@ function IndustriesSection() {
   const [active, setActive] = useState(0);
 
   return (
-    <section id="industries" style={{ background: "linear-gradient(165deg, #0a1a12, #0d2818, #122d1c)", padding: "100px 24px" }}>
+    <section id="industries" className="noise-overlay" style={{ background: "linear-gradient(165deg, #0a1a12, #0d2818, #122d1c)", padding: "100px 24px", position: "relative", overflow: "hidden" }}>
       <div style={{ maxWidth: 1280, margin: "0 auto" }}>
         <AnimatedSection>
           <div style={{ textAlign: "center", marginBottom: 64 }}>
@@ -2166,6 +2177,50 @@ function CareersSection() {
   );
 }
 
+function AcuitySection() {
+  return (
+    <section id="schedule" style={{ background: "linear-gradient(165deg, #0a1a12 0%, #0d2818 50%, #122d1c 100%)", padding: "100px 24px", position: "relative", overflow: "hidden" }}>
+      <div style={{ position: "absolute", top: "40%", left: "50%", transform: "translate(-50%, -50%)", width: 800, height: 800, background: "radial-gradient(circle, rgba(46,204,113,0.08) 0%, transparent 60%)", borderRadius: "50%", pointerEvents: "none" }} />
+      <div style={{ position: "absolute", inset: 0, opacity: 0.025, backgroundImage: "linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)", backgroundSize: "60px 60px", pointerEvents: "none" }} />
+      <div style={{ maxWidth: 860, margin: "0 auto", position: "relative", zIndex: 1 }}>
+        <div style={{ textAlign: "center", marginBottom: 56 }}>
+          <div style={{ fontSize: 11, color: "#2ecc71", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'DM Sans', sans-serif" }}>Online Booking</div>
+          <h2 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 700, color: "#fff", lineHeight: 1.15, marginBottom: 16, letterSpacing: "-0.02em" }}>
+            Schedule a Walkthrough or Phone Consultation
+          </h2>
+          <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 17, color: "rgba(255,255,255,0.6)", lineHeight: 1.7, maxWidth: 580, margin: "0 auto" }}>
+            Book a time that works for you. We'll assess your facility and provide a custom cleaning plan.
+          </p>
+        </div>
+
+        <div style={{ position: "relative" }}>
+          <div style={{ position: "absolute", inset: -2, borderRadius: 16, background: "linear-gradient(135deg, rgba(46,204,113,0.2), rgba(46,204,113,0.05))", zIndex: 0 }} />
+          <div style={{ position: "relative", zIndex: 1, borderRadius: 14, overflow: "hidden", boxShadow: "0 20px 60px rgba(0,0,0,0.4)" }}>
+            <iframe
+              src="https://app.acuityscheduling.com/schedule.php?owner=15345029&ref=embedded_csp"
+              title="Schedule Appointment"
+              width="100%"
+              height="800"
+              frameBorder="0"
+              allow="payment"
+              style={{ border: "none", display: "block", background: "#fff", borderRadius: 14 }}
+            />
+          </div>
+        </div>
+
+        <div style={{ textAlign: "center", marginTop: 40 }}>
+          <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 15, color: "rgba(255,255,255,0.5)", lineHeight: 1.7 }}>
+            Prefer to reach out directly?{" "}
+            <a href="tel:+13473329348" style={{ color: "#2ecc71", textDecoration: "none", fontWeight: 600 }}>Call 347-332-9348</a>
+            {" "}or{" "}
+            <a href="mailto:info@greenpointms.com" style={{ color: "#2ecc71", textDecoration: "none", fontWeight: 600 }}>email info@greenpointms.com</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function ContactSection() {
   return (
     <section id="contact" style={{ background: "#fafbfa", padding: "100px 24px" }}>
@@ -2246,7 +2301,7 @@ function ContactSection() {
           <div style={{ display: "flex", justifyContent: "center", gap: 48, marginTop: 48, flexWrap: "wrap" }}>
             {[
               { label: "Phone", value: PHONE_NUMBER, iconEl: <PhoneIcon size={24} color="#2ecc71" />, href: PHONE_HREF },
-              { label: "Email", value: "Hello@GreenPointMS.com", iconEl: <MailIcon size={24} color="#2ecc71" />, href: "mailto:Hello@GreenPointMS.com" },
+              { label: "Email", value: "info@greenpointms.com", iconEl: <MailIcon size={24} color="#2ecc71" />, href: "mailto:info@greenpointms.com" },
               { label: "Hours", value: "Mon–Sat 7AM–8PM • 24/7 Emergency", iconEl: <ClockIcon size={24} color="#2ecc71" /> },
             ].map((info) => (
               <div key={info.label} style={{ textAlign: "center" }}>
@@ -2476,7 +2531,7 @@ function Footer() {
                 NAICS: 561720 | 238210 | 561790
               </div>
               <a href={PHONE_HREF} style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.6)", textDecoration: "none", fontWeight: 600, display: "block", marginTop: 6 }}>{PHONE_NUMBER}</a>
-              <a href="mailto:Hello@GreenPointMS.com" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.45)", textDecoration: "none", display: "block", marginTop: 4 }}>Hello@GreenPointMS.com</a>
+              <a href="mailto:info@greenpointms.com" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.45)", textDecoration: "none", display: "block", marginTop: 4 }}>info@greenpointms.com</a>
             </div>
           </div>
 
@@ -2587,14 +2642,185 @@ export default function GreenPointWebsite() {
 
   return (
     <div style={{ fontFamily: "'DM Sans', sans-serif", margin: 0, padding: 0 }}>
-      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
       <style>{`
         * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        /* === PREMIUM KEYFRAME ANIMATIONS === */
         @keyframes pulse {
           0%, 100% { opacity: 1; }
           50% { opacity: 0.4; }
         }
+        @keyframes heroFadeUp {
+          from { opacity: 0; transform: translateY(50px); filter: blur(4px); }
+          to { opacity: 1; transform: translateY(0); filter: blur(0); }
+        }
+        @keyframes heroScaleIn {
+          from { opacity: 0; transform: scale(0.92) translateY(30px); }
+          to { opacity: 1; transform: scale(1) translateY(0); }
+        }
+        @keyframes heroSlideRight {
+          from { opacity: 0; transform: translateX(60px); }
+          to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes orbFloat {
+          0%, 100% { transform: translate(0, 0) scale(1); }
+          33% { transform: translate(30px, -20px) scale(1.05); }
+          66% { transform: translate(-20px, 15px) scale(0.97); }
+        }
+        @keyframes shimmer {
+          0% { background-position: -200% center; }
+          100% { background-position: 200% center; }
+        }
+        @keyframes gradientShift {
+          0%, 100% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+        }
+        @keyframes borderGlow {
+          0%, 100% { border-color: rgba(46,204,113,0.15); box-shadow: 0 0 20px rgba(46,204,113,0); }
+          50% { border-color: rgba(46,204,113,0.35); box-shadow: 0 0 30px rgba(46,204,113,0.08); }
+        }
+        @keyframes grainShift {
+          0%, 100% { transform: translate(0, 0); }
+          10% { transform: translate(-5%, -10%); }
+          30% { transform: translate(3%, -15%); }
+          50% { transform: translate(12%, 9%); }
+          70% { transform: translate(9%, 4%); }
+          90% { transform: translate(-1%, 7%); }
+        }
+        @keyframes revealUp {
+          from { opacity: 0; transform: translateY(60px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes numberCount {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes lineGrow {
+          from { transform: scaleX(0); }
+          to { transform: scaleX(1); }
+        }
+        @keyframes iconSpin {
+          from { transform: rotate(0deg); }
+          to { transform: rotate(360deg); }
+        }
+
+        /* === HERO ENTRANCE STAGGER === */
+        .hero-badge-anim {
+          opacity: 0; animation: heroFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+        }
+        .hero-title-anim {
+          opacity: 0; animation: heroFadeUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.45s forwards;
+        }
+        .hero-subtitle-anim {
+          opacity: 0; animation: heroFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.7s forwards;
+        }
+        .hero-ctas-anim {
+          opacity: 0; animation: heroFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.9s forwards;
+        }
+        .hero-trust-anim {
+          opacity: 0; animation: heroFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 1.1s forwards;
+        }
+        .hero-form-anim {
+          opacity: 0; animation: heroScaleIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.6s forwards;
+        }
+        .hero-orb {
+          animation: orbFloat 12s ease-in-out infinite;
+        }
+        .hero-orb-2 {
+          animation: orbFloat 15s ease-in-out infinite reverse;
+        }
+
+        /* === PREMIUM CARD HOVER === */
+        .premium-card {
+          transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.4s ease !important;
+        }
+        .premium-card:hover {
+          transform: translateY(-8px) !important;
+          box-shadow: 0 20px 60px rgba(0,0,0,0.15), 0 0 40px rgba(46,204,113,0.08) !important;
+          border-color: rgba(46,204,113,0.3) !important;
+        }
+
+        /* === DARK PREMIUM CARD === */
+        .dark-card {
+          transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.4s ease !important;
+        }
+        .dark-card:hover {
+          transform: translateY(-6px) !important;
+          box-shadow: 0 20px 60px rgba(0,0,0,0.4), 0 0 50px rgba(46,204,113,0.1) !important;
+          border-color: rgba(46,204,113,0.4) !important;
+        }
+
+        /* === CTA BUTTON GLOW === */
+        .cta-glow {
+          position: relative; overflow: hidden;
+          transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease !important;
+        }
+        .cta-glow:hover {
+          transform: translateY(-3px) scale(1.02) !important;
+          box-shadow: 0 8px 40px rgba(46,204,113,0.45), 0 0 80px rgba(46,204,113,0.15) !important;
+        }
+        .cta-glow::after {
+          content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
+          background: linear-gradient(to right, transparent 0%, rgba(255,255,255,0.1) 50%, transparent 100%);
+          transform: rotate(30deg); transition: left 0.6s ease;
+          pointer-events: none;
+        }
+        .cta-glow:hover::after { left: 100%; }
+
+        /* === SECTION DIAGONAL DIVIDER === */
+        .section-divider-top {
+          position: relative;
+        }
+        .section-divider-top::before {
+          content: ''; position: absolute; top: -1px; left: 0; right: 0; height: 80px;
+          background: inherit; clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%);
+          z-index: 1;
+        }
+
+        /* === GLASS MORPHISM === */
+        .glass {
+          background: rgba(255,255,255,0.03) !important;
+          backdrop-filter: blur(20px) !important;
+          -webkit-backdrop-filter: blur(20px) !important;
+          border: 1px solid rgba(255,255,255,0.08) !important;
+        }
+
+        /* === HEADER GLASS === */
+        .header-glass {
+          backdrop-filter: blur(24px) saturate(1.4) !important;
+          -webkit-backdrop-filter: blur(24px) saturate(1.4) !important;
+        }
+
+        /* === GREEN ACCENT LINE === */
+        .green-line {
+          width: 48px; height: 3px; background: linear-gradient(90deg, #2ecc71, #27ae60); border-radius: 2px;
+          margin-bottom: 20px;
+        }
+        .green-line-center {
+          width: 48px; height: 3px; background: linear-gradient(90deg, #2ecc71, #27ae60); border-radius: 2px;
+          margin: 0 auto 20px;
+        }
+
+        /* === NOISE GRAIN OVERLAY === */
+        .noise-overlay::after {
+          content: ''; position: absolute; inset: 0; opacity: 0.035; pointer-events: none;
+          background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+          background-size: 128px 128px; animation: grainShift 4s steps(10) infinite;
+        }
+
+        /* === STAT COUNTER === */
+        .stat-number {
+          background: linear-gradient(135deg, #2ecc71, #27ae60, #2ecc71);
+          background-size: 200% auto;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          animation: gradientShift 3s ease infinite;
+        }
+
+        /* === RESPONSIVE === */
         .mobile-toggle { display: none !important; }
         @media (max-width: 1024px) {
           .hero-grid, .about-grid, .janitrack-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
@@ -2638,6 +2864,7 @@ export default function GreenPointWebsite() {
       <IndustriesSection />
       <JaniTrack />
       <QuoteCalculator />
+      <AcuitySection />
       <TestimonialsSection />
       <ComplianceSection />
       <ProcessSection />

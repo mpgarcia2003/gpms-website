@@ -63,7 +63,7 @@ const faqSchema = {
       name: "How do I request a capability statement or W-9 from GreenPoint?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "You can download our capability statement directly from greenpointms.com/capability-statement. For W-9, Certificate of Insurance, or additional procurement documentation, email Hello@GreenPointMS.com or call (347) 332-9348. We typically fulfill documentation requests within one business day.",
+        text: "You can download our capability statement directly from greenpointms.com/capability-statement. For W-9, Certificate of Insurance, or additional procurement documentation, email info@greenpointms.com or call 347-332-9348. We typically fulfill documentation requests within one business day.",
       },
     },
   ],
@@ -105,7 +105,7 @@ export default function MBECertifiedCleaningCompanyNYC() {
         { q: "What certifications does GreenPoint hold?", a: "MBE through NYC Small Business Services, MWBE through New York State, and active SAM.gov registration for federal contracting. NAICS codes: 561720, 238210, and 561790." },
         { q: "Can GreenPoint fulfill diversity procurement requirements?", a: "Yes. Our certifications satisfy diversity procurement for NYC agencies, NYS contracts, Port Authority projects, and federal contracts. We provide capability statements, W-9, COI, and compliance letters within one business day." },
         { q: "What NAICS codes does GreenPoint operate under?", a: "561720 (Janitorial Services), 238210 (Electrical Contractors and Other Wiring Installation), and 561790 (Other Services to Buildings and Dwellings)." },
-        { q: "How do I get a capability statement or W-9?", a: "Download our capability statement at greenpointms.com/capability-statement. For W-9, COI, or other procurement documents, email Hello@GreenPointMS.com or call (347) 332-9348." },
+        { q: "How do I get a capability statement or W-9?", a: "Download our capability statement at greenpointms.com/capability-statement. For W-9, COI, or other procurement documents, email info@greenpointms.com or call 347-332-9348." },
       ]}
       ctaHeadline="Request a Facility Assessment"
       ctaSubheadline="Download our capability statement, schedule a walkthrough, or request vendor documentation. MBE-certified, SAM.gov registered, fully insured."

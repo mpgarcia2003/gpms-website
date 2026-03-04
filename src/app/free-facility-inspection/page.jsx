@@ -9,8 +9,8 @@ import {
 } from '../../components/Icons';
 
 
-const PHONE_NUMBER = '(347) 332-9348';
-const PHONE_HREF = 'tel:3473329348';
+const PHONE_NUMBER = '347-332-9348';
+const PHONE_HREF = 'tel:+13473329348';
 
 const s = {
   h: { fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 700, lineHeight: 1.12, letterSpacing: '-0.02em' },

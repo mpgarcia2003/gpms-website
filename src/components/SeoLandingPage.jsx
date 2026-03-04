@@ -8,8 +8,8 @@ import {
   HeartPulseIcon, BabyIcon, LandmarkIcon, BriefcaseIcon,
 } from "./Icons";
 
-const PHONE_NUMBER = "(347) 332-9348";
-const PHONE_HREF = "tel:3473329348";
+const PHONE_NUMBER = "347-332-9348";
+const PHONE_HREF = "tel:+13473329348";
 
 function getIndustryIcon(key, size = 20, color = "#2ecc71") {
   const map = {
@@ -274,11 +274,17 @@ export default function SeoLandingPage({
               <PhoneIcon size={18} color="#2ecc71" /> {PHONE_NUMBER}
             </a>
           </div>
+          <div style={{ marginTop: 20 }}>
+            <a href="/#schedule" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.5)", textDecoration: "none", transition: "color 0.2s" }}
+              onMouseOver={(e) => e.target.style.color = "#2ecc71"} onMouseOut={(e) => e.target.style.color = "rgba(255,255,255,0.5)"}>
+              Or schedule a consultation online →
+            </a>
+          </div>
 
           <div style={{ display: "flex", justifyContent: "center", gap: 40, marginTop: 56, flexWrap: "wrap" }}>
             {[
               { label: "Phone", value: PHONE_NUMBER, href: PHONE_HREF },
-              { label: "Email", value: "Hello@GreenPointMS.com", href: "mailto:Hello@GreenPointMS.com" },
+              { label: "Email", value: "info@greenpointms.com", href: "mailto:info@greenpointms.com" },
               { label: "Hours", value: "Mon–Sat 7AM–8PM · 24/7 Emergency" },
             ].map((info) => (
               <div key={info.label} style={{ textAlign: "center" }}>

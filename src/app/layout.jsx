@@ -22,8 +22,8 @@ const localBusinessSchema = {
   "name": "GreenPoint Maintenance Services Corp",
   "description": "MBE-certified commercial janitorial and facility maintenance for schools, healthcare, churches, daycare, government buildings, and offices across NY, NJ, CT, PA, and FL.",
   "url": "https://greenpointms.com",
-  "telephone": "(347) 332-9348",
-  "email": "Hello@GreenPointMS.com",
+  "telephone": "+1-347-332-9348",
+  "email": "info@greenpointms.com",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Bronx",
@@ -56,7 +56,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}

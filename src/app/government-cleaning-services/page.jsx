@@ -11,8 +11,8 @@ export const metadata = {
   },
 };
 
-const PHONE_NUMBER = "(347) 332-9348";
-const PHONE_HREF = "tel:3473329348";
+const PHONE_NUMBER = "347-332-9348";
+const PHONE_HREF = "tel:+13473329348";
 
 const CAPABILITIES = [
   { title: "Daily Janitorial Maintenance", desc: "Scheduled cleaning of offices, restrooms, lobbies, hallways, and common areas per contract specifications." },
@@ -230,7 +230,7 @@ export default function GovernmentCleaningPage() {
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
               Download Capability Statement
             </a>
-            <a href="mailto:Hello@GreenPointMS.com?subject=Request%20for%20W-9%20and%20Certificate%20of%20Insurance%20-%20GreenPoint%20Maintenance%20Services" style={{ border: '1px solid #2ecc71', color: '#0d2818', padding: '14px 32px', borderRadius: 10, fontWeight: 600, fontSize: 15, textDecoration: 'none', fontFamily: "'DM Sans', sans-serif", display: 'inline-flex', alignItems: 'center', gap: 8 }}>
+            <a href="mailto:info@greenpointms.com?subject=Request%20for%20W-9%20and%20Certificate%20of%20Insurance%20-%20GreenPoint%20Maintenance%20Services" style={{ border: '1px solid #2ecc71', color: '#0d2818', padding: '14px 32px', borderRadius: 10, fontWeight: 600, fontSize: 15, textDecoration: 'none', fontFamily: "'DM Sans', sans-serif", display: 'inline-flex', alignItems: 'center', gap: 8 }}>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0d2818" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
               Request W-9 &amp; COI
             </a>

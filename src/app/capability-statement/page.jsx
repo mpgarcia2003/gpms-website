@@ -8,8 +8,8 @@ export const metadata = {
 };
 
 export default function CapabilityStatementPage() {
-  const PHONE_NUMBER = "(347) 332-9348";
-  const PHONE_HREF = "tel:3473329348";
+  const PHONE_NUMBER = "347-332-9348";
+  const PHONE_HREF = "tel:+13473329348";
 
   return (
     <>
@@ -286,7 +286,7 @@ export default function CapabilityStatementPage() {
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                   Download PDF
                 </a>
-                <a href="mailto:Hello@GreenPointMS.com?subject=Request%20for%20W-9%20and%20COI%20-%20GreenPoint%20Maintenance%20Services" style={{
+                <a href="mailto:info@greenpointms.com?subject=Request%20for%20W-9%20and%20COI%20-%20GreenPoint%20Maintenance%20Services" style={{
                   background: 'rgba(255,255,255,0.08)', color: '#fff', padding: '14px 32px',
                   borderRadius: 8, fontWeight: 700, fontSize: 15, textDecoration: 'none',
                   border: '1px solid rgba(255,255,255,0.2)',
@@ -302,7 +302,7 @@ export default function CapabilityStatementPage() {
                 </a>
               </div>
               <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.35)', marginTop: 24 }}>
-                GreenPoint Maintenance Services Corp • Bronx, NY • Hello@GreenPointMS.com
+                GreenPoint Maintenance Services Corp • Bronx, NY • info@greenpointms.com
               </p>
             </div>
 

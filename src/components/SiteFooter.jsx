@@ -1,8 +1,8 @@
 "use client";
 import { STATES, INDUSTRIES, SERVICES_LIST } from '../data/seo-data';
 
-const PHONE_NUMBER = "(347) 332-9348";
-const PHONE_HREF = "tel:3473329348";
+const PHONE_NUMBER = "347-332-9348";
+const PHONE_HREF = "tel:+13473329348";
 
 export default function SiteFooter() {
   return (
@@ -32,7 +32,7 @@ export default function SiteFooter() {
             {/* Contact */}
             <div style={{ marginTop: 20 }}>
               <a href={PHONE_HREF} style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.65)", textDecoration: "none", fontWeight: 600, display: "block" }}>{PHONE_NUMBER}</a>
-              <a href="mailto:Hello@GreenPointMS.com" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.45)", textDecoration: "none", display: "block", marginTop: 4 }}>Hello@GreenPointMS.com</a>
+              <a href="mailto:info@greenpointms.com" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.45)", textDecoration: "none", display: "block", marginTop: 4 }}>info@greenpointms.com</a>
             </div>
             {/* Compliance Data */}
             <div style={{ marginTop: 18, padding: "14px 0", borderTop: "1px solid rgba(255,255,255,0.06)" }}>
@@ -73,6 +73,7 @@ export default function SiteFooter() {
           <div>
             <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 18, paddingBottom: 12, borderBottom: "1px solid rgba(255,255,255,0.06)" }}>Company</div>
             {[
+              { label: "Schedule a Consultation", href: "/#schedule" },
               { label: "Government Services", href: "/government-cleaning-services" },
               { label: "Capability Statement", href: "/capability-statement" },
               { label: "School Cleaning NYC", href: "/school-cleaning-nyc" },

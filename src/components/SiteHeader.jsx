@@ -1,8 +1,8 @@
 "use client";
 import { useState, useEffect } from "react";
 
-const PHONE_NUMBER = "(347) 332-9348";
-const PHONE_HREF = "tel:3473329348";
+const PHONE_NUMBER = "347-332-9348";
+const PHONE_HREF = "tel:+13473329348";
 
 const NAV_LINKS = [
   { label: "Services", href: "/#services" },

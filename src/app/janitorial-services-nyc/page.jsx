@@ -55,7 +55,7 @@ const faqSchema = {
       name: "Do you offer emergency cleaning services in NYC?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. In addition to scheduled cleaning programs, GreenPoint offers 24/7 emergency cleaning services for water damage, biohazard incidents, post-event cleanup, and post-construction debris removal anywhere in NYC. Contact us at (347) 332-9348 for immediate dispatch.",
+        text: "Yes. In addition to scheduled cleaning programs, GreenPoint offers 24/7 emergency cleaning services for water damage, biohazard incidents, post-event cleanup, and post-construction debris removal anywhere in NYC. Contact us at 347-332-9348 for immediate dispatch.",
       },
     },
   ],
@@ -96,7 +96,7 @@ export default function JanitorialServicesNYC() {
         { q: "What types of facilities does GreenPoint clean in NYC?", a: "We serve six core verticals: K-12 schools and charter schools, churches and houses of worship, healthcare and medical offices, daycare and childcare centers, government and municipal buildings, and commercial office spaces. Each has dedicated protocols for its compliance and safety requirements." },
         { q: "How much do janitorial services cost in NYC?", a: "Pricing depends on facility type, square footage, frequency, and scope. We provide fixed-price proposals with no hidden fees after a complimentary walkthrough. Try our instant quote calculator for a preliminary estimate." },
         { q: "What makes GreenPoint different from other NYC cleaning companies?", a: "JaniTrack real-time cleaning verification with timestamped photos, GPS-tagged task completion, and ATP bioluminescence testing. Plus MBE/MWBE certification, SAM.gov registration, and $2M+ insurance coverage." },
-        { q: "Do you offer emergency cleaning services?", a: "Yes — 24/7 emergency response for water damage, biohazard incidents, post-event cleanup, and post-construction work. Call (347) 332-9348 for immediate dispatch." },
+        { q: "Do you offer emergency cleaning services?", a: "Yes — 24/7 emergency response for water damage, biohazard incidents, post-event cleanup, and post-construction work. Call 347-332-9348 for immediate dispatch." },
         { q: "What areas of NYC do you serve?", a: "We cover all five boroughs — Bronx, Manhattan, Brooklyn, Queens, and Staten Island — plus Westchester County, and the broader tri-state region including NJ, CT, PA, and FL." },
         { q: "Are your cleaning teams background-checked?", a: "Every GreenPoint team member undergoes a comprehensive background check before assignment. We carry full commercial general liability insurance, workers' compensation, and bonding." },
       ]}

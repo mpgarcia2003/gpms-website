@@ -152,11 +152,21 @@ export default function ProgrammaticPage({ title, subtitle, breadcrumbs, heroIco
             Get a complimentary facility walkthrough and customized cleaning proposal. No obligation.
           </p>
           <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
-            <a href="/#quote" style={{ background: "#2ecc71", color: "#fff", padding: "16px 36px", borderRadius: 10, fontWeight: 700, fontSize: 16, textDecoration: "none", fontFamily: "'DM Sans', sans-serif", boxShadow: "0 4px 24px rgba(46,204,113,0.3)" }}>
+            <a href="/#quote" style={{ background: "linear-gradient(135deg, #2ecc71, #27ae60)", color: "#fff", padding: "16px 36px", borderRadius: 10, fontWeight: 700, fontSize: 16, textDecoration: "none", fontFamily: "'DM Sans', sans-serif", boxShadow: "0 4px 24px rgba(46,204,113,0.3)", transition: "transform 0.3s ease, box-shadow 0.3s ease" }}
+              onMouseOver={(e) => { e.currentTarget.style.transform = "translateY(-2px)"; e.currentTarget.style.boxShadow = "0 8px 36px rgba(46,204,113,0.5)"; }}
+              onMouseOut={(e) => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "0 4px 24px rgba(46,204,113,0.3)"; }}>
               Get Instant Quote →
             </a>
-            <a href="tel:3473329348" style={{ background: "rgba(255,255,255,0.1)", color: "#fff", padding: "16px 36px", borderRadius: 10, fontWeight: 600, fontSize: 16, textDecoration: "none", fontFamily: "'DM Sans', sans-serif", border: "1px solid rgba(255,255,255,0.2)" }}>
-              Call (347) 332-9348
+            <a href="tel:+13473329348" style={{ background: "rgba(255,255,255,0.1)", color: "#fff", padding: "16px 36px", borderRadius: 10, fontWeight: 600, fontSize: 16, textDecoration: "none", fontFamily: "'DM Sans', sans-serif", border: "1px solid rgba(255,255,255,0.2)", transition: "background 0.3s ease" }}
+              onMouseOver={(e) => { e.currentTarget.style.background = "rgba(255,255,255,0.15)"; }}
+              onMouseOut={(e) => { e.currentTarget.style.background = "rgba(255,255,255,0.1)"; }}>
+              Call 347-332-9348
+            </a>
+          </div>
+          <div style={{ marginTop: 20 }}>
+            <a href="/#schedule" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.5)", textDecoration: "none", transition: "color 0.2s" }}
+              onMouseOver={(e) => e.target.style.color = "#2ecc71"} onMouseOut={(e) => e.target.style.color = "rgba(255,255,255,0.5)"}>
+              Or schedule a consultation online →
             </a>
           </div>
         </div>
