@@ -10,20 +10,91 @@ import {
 } from './Icons';
 
 // Angled SVG section divider — use between dark/light section transitions
-function SectionDivider({ fromColor = "#060A07", toColor = "#0A0F0B" }) {
+function SectionDivider({ fromColor = "#FFFFFF", toColor = "#F7FAF8" }) {
   return (
     <div style={{ height: 60, marginTop: -1, background: `linear-gradient(to bottom right, ${fromColor} 49.5%, ${toColor} 50.5%)` }} />
   );
 }
 
-function SectionDividerReverse({ fromColor = "#0A0F0B", toColor = "#060A07" }) {
+function SectionDividerReverse({ fromColor = "#F7FAF8", toColor = "#FFFFFF" }) {
   return (
     <div style={{ height: 60, marginTop: -1, background: `linear-gradient(to bottom left, ${fromColor} 49.5%, ${toColor} 50.5%)` }} />
   );
 }
 
+// Quote Choice Modal — appears when user clicks "Get a Quote" style CTAs
+function QuoteChoiceModal({ isOpen, onClose }) {
+  if (!isOpen) return null;
+  return (
+    <div style={{
+      position: 'fixed', inset: 0, zIndex: 10000,
+      display: 'flex', alignItems: 'center', justifyContent: 'center',
+      background: 'rgba(0,0,0,0.6)', backdropFilter: 'blur(6px)',
+      WebkitBackdropFilter: 'blur(6px)',
+      animation: 'modalFadeIn 0.25s ease',
+    }} onClick={onClose}>
+      <div style={{
+        background: '#fff', borderRadius: 16, padding: '48px 40px', maxWidth: 520, width: '90%',
+        boxShadow: '0 24px 80px rgba(0,0,0,0.2)', position: 'relative',
+        animation: 'modalSlideUp 0.3s cubic-bezier(0.16,1,0.3,1)',
+      }} onClick={(e) => e.stopPropagation()}>
+        <button onClick={onClose} style={{
+          position: 'absolute', top: 16, right: 16, background: 'none', border: 'none',
+          fontSize: 24, color: '#8A9B91', cursor: 'pointer', padding: 4, lineHeight: 1,
+        }}>×</button>
+        <div style={{ textAlign: 'center', marginBottom: 32 }}>
+          <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: '#C8A34D', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 12, fontWeight: 700 }}>How Can We Help?</div>
+          <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: 28, fontWeight: 700, color: '#1A2B1F', lineHeight: 1.2 }}>Let's Get You Started</h3>
+          <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 15, color: '#4A5E52', marginTop: 8, lineHeight: 1.6 }}>Choose the option that works best for you.</p>
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+          {/* Option 1: Schedule Walkthrough */}
+          <button onClick={() => { onClose(); setTimeout(() => scrollTo('schedule'), 150); }} style={{
+            display: 'flex', alignItems: 'center', gap: 16, padding: '20px 24px',
+            background: '#1B7A3D', border: 'none', borderRadius: 12, cursor: 'pointer',
+            transition: 'transform 0.2s, box-shadow 0.2s', textAlign: 'left', width: '100%',
+          }}
+            onMouseOver={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 8px 32px rgba(27,122,61,0.3)'; }}
+            onMouseOut={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}
+          >
+            <div style={{ width: 48, height: 48, borderRadius: 10, background: 'rgba(255,255,255,0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+              <CalendarIcon size={24} color="#fff" />
+            </div>
+            <div>
+              <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 16, fontWeight: 700, color: '#fff' }}>Schedule a Walkthrough</div>
+              <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: 'rgba(255,255,255,0.7)', marginTop: 2 }}>Book a free on-site assessment or phone consultation</div>
+            </div>
+            <span style={{ marginLeft: 'auto', color: 'rgba(255,255,255,0.6)', fontSize: 20, flexShrink: 0 }}>→</span>
+          </button>
+          {/* Option 2: Instant Quote */}
+          <button onClick={() => { onClose(); setTimeout(() => scrollTo('quote'), 150); }} style={{
+            display: 'flex', alignItems: 'center', gap: 16, padding: '20px 24px',
+            background: '#F7FAF8', border: '2px solid #E2EBE5', borderRadius: 12, cursor: 'pointer',
+            transition: 'transform 0.2s, border-color 0.2s', textAlign: 'left', width: '100%',
+          }}
+            onMouseOver={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.borderColor = '#1B7A3D'; }}
+            onMouseOut={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.borderColor = '#E2EBE5'; }}
+          >
+            <div style={{ width: 48, height: 48, borderRadius: 10, background: 'rgba(27,122,61,0.08)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+              <DollarIcon size={24} color="#1B7A3D" />
+            </div>
+            <div>
+              <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 16, fontWeight: 700, color: '#1A2B1F' }}>Get an Instant Quote</div>
+              <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: '#4A5E52', marginTop: 2 }}>Use our calculator for a quick estimate right now</div>
+            </div>
+            <span style={{ marginLeft: 'auto', color: '#1B7A3D', fontSize: 20, flexShrink: 0 }}>→</span>
+          </button>
+        </div>
+        <div style={{ textAlign: 'center', marginTop: 20 }}>
+          <a href="tel:+13473329348" style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 12, color: '#8A9B91', textDecoration: 'none', fontWeight: 600 }}>or call 347-332-9348</a>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 // Icon wrapper for consistent sizing in cards
-function IconBox({ children, size = 48, bg = 'rgba(0,230,118,0.08)', radius = 0, dark = false }) {
+function IconBox({ children, size = 48, bg = 'rgba(27,122,61,0.08)', radius = 8, dark = false }) {
   return (
     <div style={{
       width: size, height: size, borderRadius: radius,
@@ -36,7 +107,7 @@ function IconBox({ children, size = 48, bg = 'rgba(0,230,118,0.08)', radius = 0,
 }
 
 // Icon resolver - maps string keys to SVG components
-function getIcon(key, size = 28, color = '#00E676') {
+function getIcon(key, size = 28, color = '#1B7A3D') {
   const icons = {
     'building': <BuildingIcon size={size} color={color} />,
     'shield-check': <ShieldCheckIcon size={size} color={color} />,
@@ -2704,6 +2775,7 @@ function StickyCtaBar({ visible }) {
 export default function GreenPointWebsite() {
   const [scrolled, setScrolled] = useState(false);
   const [showStickyCta, setShowStickyCta] = useState(false);
+  const [showQuoteModal, setShowQuoteModal] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -2711,7 +2783,12 @@ export default function GreenPointWebsite() {
       setShowStickyCta(window.scrollY > 800);
     };
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    const openModal = () => setShowQuoteModal(true);
+    window.addEventListener('openQuoteModal', openModal);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('openQuoteModal', openModal);
+    };
   }, []);
 
   return (
@@ -2970,8 +3047,11 @@ export default function GreenPointWebsite() {
         @media (max-width: 640px) {
           .mobile-phone-float { display: flex !important; }
         }
+        @keyframes modalFadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes modalSlideUp { from { opacity: 0; transform: translateY(24px) scale(0.96); } to { opacity: 1; transform: translateY(0) scale(1); } }
       `}</style>
 
+      <QuoteChoiceModal isOpen={showQuoteModal} onClose={() => setShowQuoteModal(false)} />
       <Header scrolled={scrolled} />
       <Hero />
       <StatsBar />
