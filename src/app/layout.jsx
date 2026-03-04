@@ -1,0 +1,70 @@
+import './globals.css';
+
+export const metadata = {
+  title: {
+    default: 'GreenPoint Maintenance Services | Commercial Cleaning NY, NJ, CT, PA, FL',
+    template: '%s | GreenPoint Maintenance Services',
+  },
+  description: 'MBE-certified commercial janitorial and facility maintenance for schools, healthcare, churches, daycare, government buildings, and offices across NY, NJ, CT, PA, and FL. Real-time cleaning verification with JaniTrack.',
+  keywords: ['commercial cleaning', 'janitorial services', 'facility maintenance', 'MBE certified', 'school cleaning', 'medical office cleaning', 'church cleaning', 'New York', 'New Jersey', 'Connecticut', 'Pennsylvania', 'Florida'],
+  openGraph: {
+    title: 'GreenPoint Maintenance Services | Commercial Cleaning',
+    description: 'MBE-certified commercial janitorial and facility maintenance with real-time cleaning verification.',
+    url: 'https://greenpointms.com',
+    siteName: 'GreenPoint Maintenance Services',
+    type: 'website',
+  },
+};
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "GreenPoint Maintenance Services Corp",
+  "description": "MBE-certified commercial janitorial and facility maintenance for schools, healthcare, churches, daycare, government buildings, and offices across NY, NJ, CT, PA, and FL.",
+  "url": "https://greenpointms.com",
+  "telephone": "(347) 332-9348",
+  "email": "Hello@GreenPointMS.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Bronx",
+    "addressRegion": "NY",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    { "@type": "State", "name": "New York" },
+    { "@type": "State", "name": "New Jersey" },
+    { "@type": "State", "name": "Connecticut" },
+    { "@type": "State", "name": "Pennsylvania" },
+    { "@type": "State", "name": "Florida" }
+  ],
+  "priceRange": "$",
+  "foundingDate": "2018",
+  "numberOfEmployees": { "@type": "QuantitativeValue", "minValue": 80 },
+  "naics": "561720",
+  "knowsAbout": ["Commercial Janitorial", "Disinfection", "Floor Care", "Day Porter", "Facility Maintenance", "Post-Construction Cleanup"],
+  "hasCredential": [
+    { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Minority Business Enterprise (MBE) — NYC & NYS" },
+    { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "MWBE Certified" },
+    { "@type": "EducationalOccupationalCredential", "credentialCategory": "registration", "name": "SAM.gov Registered Federal Contractor" }
+  ],
+  "sameAs": []
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
+      </head>
+      <body style={{ margin: 0, padding: 0, fontFamily: "'DM Sans', sans-serif" }}>
+        {children}
+      </body>
+    </html>
+  );
+}
