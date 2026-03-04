@@ -774,7 +774,7 @@ function QuoteCalculator() {
                   </div>
                   <label style={{ display: "flex", alignItems: "center", gap: 10, cursor: "pointer" }}>
                     <input type="checkbox" checked={settings.hasSauna} onChange={(e) => setSettings({ ...settings, hasSauna: e.target.checked })} style={{ accentColor: "#1B7A3D", width: 18, height: 18 }} />
-                    <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.7)" }}>Has Sauna / Steam Room</span>
+                    <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "#4A5E52" }}>Has Sauna / Steam Room</span>
                   </label>
                 </div>
               </div>
@@ -839,7 +839,7 @@ function QuoteCalculator() {
                 <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
                   <select
                     onChange={(e) => { if (e.target.value) { addRoom(e.target.value); e.target.value = ""; } }}
-                    style={{ padding: "8px 14px", borderRadius: 8, border: "1px solid #D8E2DC", background: "#EEF4F0", color: "rgba(255,255,255,0.7)", fontSize: 13, fontFamily: "'Plus Jakarta Sans', sans-serif", cursor: "pointer" }}>
+                    style={{ padding: "8px 14px", borderRadius: 8, border: "1px solid #D8E2DC", background: "#EEF4F0", color: "#4A5E52", fontSize: 13, fontFamily: "'Plus Jakarta Sans', sans-serif", cursor: "pointer" }}>
                     <option value="">+ Add Room Type</option>
                     {industryPresets.map((p) => (<option key={p.name} value={p.name}>{p.name}</option>))}
                   </select>
@@ -922,16 +922,16 @@ function QuoteCalculator() {
               </div>
 
               <a href="#" onClick={(e) => { e.preventDefault(); const el = document.getElementById("contact"); if (el) el.scrollIntoView({ behavior: "smooth" }); }}
-                style={{ display: "block", width: "100%", padding: "14px", background: "#1B7A3D", border: "none", borderRadius: 4, color: "#1A2B1F", fontSize: 13, fontWeight: 700, fontFamily: "'Syne', sans-serif", textTransform: "uppercase", letterSpacing: "0.04em", textAlign: "center", textDecoration: "none", boxSizing: "border-box", cursor: "pointer" }}>
+                style={{ display: "block", width: "100%", padding: "14px", background: "#1B7A3D", border: "none", borderRadius: 4, color: "#fff", fontSize: 13, fontWeight: 700, fontFamily: "'Syne', sans-serif", textTransform: "uppercase", letterSpacing: "0.04em", textAlign: "center", textDecoration: "none", boxSizing: "border-box", cursor: "pointer" }}>
                 Request Formal Proposal →
               </a>
 
               {/* Email My Quote */}
-              <div style={{ marginTop: 16, padding: '18px', background: '#F5F9F6', borderRadius: 10, border: '1px solid rgba(255,255,255,0.07)' }}>
+              <div style={{ marginTop: 16, padding: '18px', background: '#F5F9F6', borderRadius: 10, border: '1px solid #E8F0EB' }}>
                 {quoteEmailSubmitted ? (
                   <div style={{ textAlign: 'center', padding: '4px 0' }}>
                     <div style={{ color: '#1B7A3D', fontSize: 20, marginBottom: 6 }}>✓</div>
-                    <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: 'rgba(255,255,255,0.7)', margin: 0 }}>
+                    <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: '#4A5E52', margin: 0 }}>
                       Check your inbox — your detailed quote has been sent.
                     </p>
                   </div>
@@ -947,10 +947,10 @@ function QuoteCalculator() {
                         value={quoteEmail}
                         onChange={(e) => setQuoteEmail(e.target.value)}
                         onFocus={(e) => (e.target.style.borderColor = 'rgba(27,122,61,0.5)')}
-                        onBlur={(e) => (e.target.style.borderColor = 'rgba(255,255,255,0.12)')}
+                        onBlur={(e) => (e.target.style.borderColor = '#E2EBE5')}
                         style={{
                           flex: 1, padding: '10px 12px', background: '#EEF4F0',
-                          border: '1px solid rgba(255,255,255,0.12)', borderRadius: 6, color: '#1A2B1F',
+                          border: '1px solid #E2EBE5', borderRadius: 6, color: '#1A2B1F',
                           fontSize: 13, outline: 'none', fontFamily: "'Plus Jakarta Sans', sans-serif", boxSizing: 'border-box',
                           transition: 'border-color 0.2s',
                         }}
@@ -981,8 +981,8 @@ function QuoteCalculator() {
                 onClick={(e) => { e.preventDefault(); const el = document.getElementById('contact'); if (el) el.scrollIntoView({ behavior: 'smooth' }); }}
                 style={{
                   display: 'block', width: '100%', marginTop: 10, padding: '12px',
-                  background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.12)',
-                  borderRadius: 10, color: 'rgba(255,255,255,0.75)', fontSize: 13, fontWeight: 600,
+                  background: '#F5F9F6', border: '1px solid #E2EBE5',
+                  borderRadius: 10, color: '#4A5E52', fontSize: 13, fontWeight: 600,
                   fontFamily: "'Plus Jakarta Sans', sans-serif", textAlign: 'center', textDecoration: 'none',
                   boxSizing: 'border-box', transition: 'background 0.2s, border-color 0.2s',
                 }}
@@ -1250,7 +1250,7 @@ function HeroLeadForm() {
 
   const continueBtn = {
     width: '100%', padding: '14px', background: '#1B7A3D',
-    border: 'none', borderRadius: 4, color: '#0A2A16', fontSize: 13, fontWeight: 700,
+    border: 'none', borderRadius: 4, color: '#fff', fontSize: 13, fontWeight: 700,
     cursor: 'pointer', fontFamily: "'Syne', sans-serif", textTransform: 'uppercase', letterSpacing: '0.04em',
     transition: 'transform 0.18s',
   };
@@ -1776,7 +1776,7 @@ function About() {
                   <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: 28, color: "#1A2B1F", marginBottom: 12 }}>
                     Certified Minority Business Enterprise
                   </h3>
-                  <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 15, color: "rgba(255,255,255,0.65)", lineHeight: 1.7, marginBottom: 24 }}>
+                  <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 15, color: "#4A5E52", lineHeight: 1.7, marginBottom: 24 }}>
                     Registered with New York State and the City of New York. Eligible for all diversity procurement programs and MWBE set-aside contracts.
                   </p>
                   <div style={{ borderTop: "1px solid #E2EBE5", paddingTop: 20 }}>
@@ -1924,7 +1924,7 @@ function IndustriesSection() {
               </p>
               <a href="#" onClick={(e) => { e.preventDefault(); scrollTo("schedule"); }} style={{
                 display: "inline-flex", alignItems: "center", gap: 8,
-                background: "#1B7A3D", color: "#1A2B1F", padding: "12px 28px", borderRadius: 8,
+                background: "#1B7A3D", color: "#fff", padding: "12px 28px", borderRadius: 8,
                 fontWeight: 600, fontSize: 14, textDecoration: "none", fontFamily: "'Plus Jakarta Sans', sans-serif",
               }}>
                 Get a {INDUSTRIES[active].title.split("&")[0].trim()} Cleaning Quote →
@@ -1945,7 +1945,7 @@ function IndustriesSection() {
                   }}>
                     <span style={{ color: "#1B7A3D", fontSize: 13, fontWeight: 700 }}>✓</span>
                   </div>
-                  <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 15, color: "rgba(255,255,255,0.8)" }}>
+                  <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 15, color: "#4A5E52" }}>
                     {feat}
                   </span>
                 </div>
@@ -2095,7 +2095,7 @@ function TestimonialsSection() {
                     <span key={star} style={{ color: "#f39c12", fontSize: 16 }}>★</span>
                   ))}
                 </div>
-                <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 15, color: "rgba(255,255,255,0.75)", lineHeight: 1.75, flex: 1, fontStyle: "italic", position: "relative", zIndex: 1 }}>
+                <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 15, color: "#4A5E52", lineHeight: 1.75, flex: 1, fontStyle: "italic", position: "relative", zIndex: 1 }}>
                   "{test.quote}"
                 </p>
                 <div style={{ marginTop: 24, paddingTop: 20, borderTop: "1px solid rgba(0,0,0,0.06)" }}>
@@ -2148,7 +2148,7 @@ function ServiceAreas() {
                 </div>
                 <div style={{
                   fontSize: 16, fontWeight: 700, fontFamily: "'Plus Jakarta Sans', sans-serif",
-                  color: i === 0 ? "#FFFFFF" : "#fff", marginBottom: 16,
+                  color: i === 0 ? "#FFFFFF" : "#1A2B1F", marginBottom: 16,
                 }}>
                   {area.state}
                 </div>
@@ -2268,7 +2268,7 @@ function CareersSection() {
             <div style={{ position: "relative", zIndex: 1, textAlign: "center" }}>
               <a href="#" onClick={(e) => { e.preventDefault(); scrollTo("schedule"); }} style={{
                 display: "inline-flex", alignItems: "center", gap: 8,
-                background: "#1B7A3D", color: "#1A2B1F", padding: "16px 36px", borderRadius: 10,
+                background: "#1B7A3D", color: "#fff", padding: "16px 36px", borderRadius: 10,
                 fontWeight: 700, fontSize: 16, textDecoration: "none", fontFamily: "'Plus Jakarta Sans', sans-serif",
                 boxShadow: "0 4px 24px rgba(27,122,61,0.3)",
               }}>
@@ -2572,7 +2572,7 @@ function FAQSection() {
                 >
                   <span style={{
                     fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, fontWeight: 600,
-                    color: openIndex === i ? "#1B7A3D" : "#fff", transition: "color 0.2s", lineHeight: 1.4,
+                    color: openIndex === i ? "#1B7A3D" : "#1A2B1F", transition: "color 0.2s", lineHeight: 1.4,
                   }}>
                     {item.q}
                   </span>
@@ -2762,7 +2762,7 @@ function StickyCtaBar({ visible }) {
             <PhoneIcon size={16} color="#1B7A3D" /> {PHONE_NUMBER}
           </a>
           <a href="#contact" style={{
-            background: '#1B7A3D', color: '#0A2A16', padding: '10px 24px',
+            background: '#1B7A3D', color: '#fff', padding: '10px 24px',
             borderRadius: 4, fontWeight: 700, fontSize: 13, textDecoration: 'none', fontFamily: "'Syne', sans-serif",
             textTransform: 'uppercase', letterSpacing: '0.04em', whiteSpace: 'nowrap',
           }}>Schedule Walkthrough</a>
