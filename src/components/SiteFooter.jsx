@@ -30,7 +30,7 @@ export default function SiteFooter() {
             </div>
             {/* Contact */}
             <div style={{ marginTop: 20 }}>
-              <a href={PHONE_HREF} style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 13, color: "rgba(255,255,255,0.7)", textDecoration: "none", fontWeight: 600, display: "block" }}>{PHONE_NUMBER}</a>
+              <a href={PHONE_HREF} style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 13, color: "rgba(255,255,255,0.7)", textDecoration: "none", fontWeight: 600, display: "block", whiteSpace: "nowrap" }}>{PHONE_NUMBER}</a>
               <a href="mailto:info@greenpointms.com" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.4)", textDecoration: "none", display: "block", marginTop: 4 }}>info@greenpointms.com</a>
             </div>
             {/* Compliance Data */}

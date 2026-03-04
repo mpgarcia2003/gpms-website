@@ -2706,7 +2706,7 @@ function Footer() {
               <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.3)", lineHeight: 1.7 }}>
                 NAICS: 561720 | 238210 | 561790
               </div>
-              <a href={PHONE_HREF} style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.6)", textDecoration: "none", fontWeight: 600, display: "block", marginTop: 6 }}>{PHONE_NUMBER}</a>
+              <a href={PHONE_HREF} style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.6)", textDecoration: "none", fontWeight: 600, display: "block", marginTop: 6, whiteSpace: "nowrap" }}>{PHONE_NUMBER}</a>
               <a href="mailto:info@greenpointms.com" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.45)", textDecoration: "none", display: "block", marginTop: 4 }}>info@greenpointms.com</a>
             </div>
           </div>
@@ -2956,8 +2956,8 @@ export default function GreenPointWebsite() {
           box-shadow: 0 8px 40px rgba(27,122,61,0.45), 0 0 80px rgba(27,122,61,0.15) !important;
         }
         .cta-glow::after {
-          content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
-          background: linear-gradient(to right, transparent 0%, #E2EBE5 50%, transparent 100%);
+          content: ''; position: absolute; top: -50%; left: -150%; width: 200%; height: 200%;
+          background: linear-gradient(to right, transparent 0%, rgba(255,255,255,0.15) 50%, transparent 100%);
           transform: rotate(30deg); transition: left 0.6s ease;
           pointer-events: none;
         }
