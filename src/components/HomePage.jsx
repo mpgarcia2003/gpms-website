@@ -1052,10 +1052,10 @@ function Header({ scrolled }) {
         left: 0,
         right: 0,
         zIndex: 1000,
-        background: scrolled ? "rgba(255,255,255,0.97)" : "transparent",
-        backdropFilter: scrolled ? "blur(24px) saturate(1.4)" : "none",
-        WebkitBackdropFilter: scrolled ? "blur(24px) saturate(1.4)" : "none",
-        borderBottom: scrolled ? "1px solid #E2EBE5" : "none",
+        background: "rgba(255,255,255,0.97)",
+        backdropFilter: "blur(24px) saturate(1.4)",
+        WebkitBackdropFilter: "blur(24px) saturate(1.4)",
+        borderBottom: scrolled ? "1px solid #E2EBE5" : "1px solid transparent",
         boxShadow: scrolled ? "0 2px 20px rgba(0,0,0,0.06)" : "none",
         transition: "all 0.4s ease",
         padding: scrolled ? "12px 0" : "20px 0",
@@ -1071,10 +1071,10 @@ function Header({ scrolled }) {
             G
           </div>
           <div>
-            <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 20, fontWeight: 700, color: scrolled ? "#1A2B1F" : "#fff", letterSpacing: "-0.02em", lineHeight: 1.1 }}>
+            <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 20, fontWeight: 700, color: "#1A2B1F", letterSpacing: "-0.02em", lineHeight: 1.1 }}>
               GreenPoint
             </div>
-            <div style={{ fontSize: 10, color: scrolled ? "#C8A34D" : "rgba(255,255,255,0.6)", letterSpacing: "0.15em", textTransform: "uppercase", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+            <div style={{ fontSize: 10, color: "#C8A34D", letterSpacing: "0.15em", textTransform: "uppercase", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
               Maintenance Services Corp
             </div>
           </div>
@@ -1087,12 +1087,12 @@ function Header({ scrolled }) {
               href="#"
               onClick={(e) => { e.preventDefault(); scrollTo(item.target); }}
               style={{
-                color: scrolled ? "#4A5E52" : "rgba(255,255,255,0.8)", textDecoration: "none", fontSize: 13, fontWeight: 500,
+                color: "#4A5E52", textDecoration: "none", fontSize: 13, fontWeight: 500,
                 fontFamily: "'Plus Jakarta Sans', sans-serif", letterSpacing: "0.01em",
                 transition: "color 0.2s",
               }}
               onMouseOver={(e) => (e.target.style.color = "#1B7A3D")}
-              onMouseOut={(e) => (e.target.style.color = scrolled ? "#4A5E52" : "rgba(255,255,255,0.8)")}
+              onMouseOut={(e) => (e.target.style.color = "#4A5E52")}
             >
               {item.label}
             </a>
@@ -1100,7 +1100,7 @@ function Header({ scrolled }) {
           <a
             href={PHONE_HREF}
             style={{
-              color: scrolled ? "#1A2B1F" : "#fff", textDecoration: "none", fontSize: 14, fontWeight: 700,
+              color: "#1A2B1F", textDecoration: "none", fontSize: 14, fontWeight: 700,
               fontFamily: "'Plus Jakarta Sans', sans-serif", display: "flex", alignItems: "center", gap: 6, whiteSpace: "nowrap",
             }}
           >
@@ -1126,7 +1126,7 @@ function Header({ scrolled }) {
           className="mobile-toggle"
           onClick={() => setMobileOpen(!mobileOpen)}
           style={{
-            display: "none", background: "none", border: "none", color: scrolled ? "#1A2B1F" : "#fff", fontSize: 28, cursor: "pointer", padding: 8,
+            display: "none", background: "none", border: "none", color: "#1A2B1F", fontSize: 28, cursor: "pointer", padding: 8,
           }}
         >
           {mobileOpen ? "✕" : "☰"}
@@ -1527,40 +1527,33 @@ function Hero() {
   return (
     <section
       id="hero"
-      className="noise-overlay"
       style={{
         position: "relative", minHeight: "100vh", display: "flex", alignItems: "center",
-        background: "#0A2A16",
+        background: "#FFFFFF",
         overflow: "hidden",
       }}
     >
-      <div className="hero-orb" style={{
-        position: "absolute", top: -200, right: -200, width: 600, height: 600,
-        background: "radial-gradient(circle, rgba(27,122,61,0.1) 0%, rgba(27,122,61,0.03) 40%, transparent 70%)",
-        borderRadius: "50%",
-      }} />
-      <div className="hero-orb-2" style={{
-        position: "absolute", bottom: -100, left: -100, width: 500, height: 500,
-        background: "radial-gradient(circle, rgba(27,122,61,0.07) 0%, transparent 70%)",
-        borderRadius: "50%",
-      }} />
-      <div className="hero-orb" style={{
-        position: "absolute", top: "40%", left: "15%", width: 300, height: 300,
-        background: "radial-gradient(circle, rgba(27,122,61,0.04) 0%, transparent 70%)",
-        borderRadius: "50%",
-      }} />
+      {/* Team photo background - faded */}
       <div style={{
-        position: "absolute", inset: 0, opacity: 0.03,
-        backgroundImage: "linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)",
-        backgroundSize: "60px 60px",
+        position: "absolute", inset: 0,
+        backgroundImage: "url('/hero-team.png')",
+        backgroundSize: "cover", backgroundPosition: "center",
+        opacity: 0.08,
+        pointerEvents: "none",
+      }} />
+      {/* Gradient overlay for readability */}
+      <div style={{
+        position: "absolute", inset: 0,
+        background: "linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(247,250,248,0.9) 50%, rgba(232,245,237,0.85) 100%)",
+        pointerEvents: "none",
       }} />
 
       <div style={{ position: "relative", zIndex: 2, maxWidth: 1280, margin: "0 auto", padding: "140px 24px 80px", width: "100%" }}>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "center" }} className="hero-grid">
           <div>
             <div className="hero-badge-anim" style={{
-              display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(27,122,61,0.1)",
-              border: "1px solid rgba(27,122,61,0.25)", borderRadius: 100, padding: "6px 16px", marginBottom: 28,
+              display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(27,122,61,0.08)",
+              border: "1px solid rgba(27,122,61,0.2)", borderRadius: 100, padding: "6px 16px", marginBottom: 28,
             }}>
               <div style={{ width: 8, height: 8, borderRadius: "50%", background: "#1B7A3D", animation: "pulse 2s infinite" }} />
               <span style={{ fontSize: 12, color: "#1B7A3D", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
@@ -1570,7 +1563,7 @@ function Hero() {
 
             <h1 className="hero-title-anim" style={{
               fontFamily: "'Syne', sans-serif", fontSize: "clamp(36px, 5vw, 64px)",
-              fontWeight: 700, color: "#fff", lineHeight: 1.08, marginBottom: 24, letterSpacing: "-0.02em",
+              fontWeight: 700, color: "#1A2B1F", lineHeight: 1.08, marginBottom: 24, letterSpacing: "-0.02em",
             }}>
               Your Facility Passes<br />
               Every Inspection.<br />
@@ -1578,7 +1571,7 @@ function Hero() {
             </h1>
 
             <p className="hero-subtitle-anim" style={{
-              fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.65)",
+              fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 18, color: "#4A5E52",
               lineHeight: 1.7, marginBottom: 36, maxWidth: 520,
             }}>
               MBE-certified facility maintenance for schools, healthcare, houses of worship, and government buildings across NY, NJ, CT, PA &amp; FL. Every cleaning session verified in real-time through JaniTrack.
@@ -1598,12 +1591,12 @@ function Hero() {
                 <span style={{ fontSize: 20 }}>→</span>
               </a>
               <a href="#" onClick={(e) => { e.preventDefault(); scrollTo("quote"); }} style={{
-                background: "rgba(255,255,255,0.05)", color: "#fff", padding: "16px 36px",
+                background: "transparent", color: "#1B7A3D", padding: "16px 36px",
                 borderRadius: 10, fontWeight: 600, fontSize: 16, textDecoration: "none", fontFamily: "'Plus Jakarta Sans', sans-serif",
-                border: "1px solid rgba(255,255,255,0.15)", transition: "all 0.2s",
+                border: "2px solid #1B7A3D", transition: "all 0.2s",
               }}
-                onMouseOver={(e) => { e.currentTarget.style.background = "rgba(255,255,255,0.1)"; e.currentTarget.style.borderColor = "rgba(27,122,61,0.4)"; }}
-                onMouseOut={(e) => { e.currentTarget.style.background = "rgba(255,255,255,0.05)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.15)"; }}
+                onMouseOver={(e) => { e.currentTarget.style.background = "#1B7A3D"; e.currentTarget.style.color = "#fff"; }}
+                onMouseOut={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = "#1B7A3D"; }}
               >
                 Get an Instant Estimate
               </a>
@@ -1616,9 +1609,9 @@ function Hero() {
                 { text: "$2M+ Insurance" },
                 { text: "Background-Checked Teams" },
               ].map((item) => (
-                <div key={item.text} style={{ display: "flex", alignItems: "center", gap: 6, background: "rgba(27,122,61,0.08)", border: "1px solid rgba(27,122,61,0.2)", borderRadius: 100, padding: "5px 14px" }}>
+                <div key={item.text} style={{ display: "flex", alignItems: "center", gap: 6, background: "rgba(27,122,61,0.06)", border: "1px solid rgba(27,122,61,0.15)", borderRadius: 100, padding: "5px 14px" }}>
                   <span style={{ color: "#1B7A3D", fontWeight: 700, fontSize: 12 }}>✓</span>
-                  <span style={{ color: "rgba(255,255,255,0.7)", fontSize: 12, fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 600 }}>{item.text}</span>
+                  <span style={{ color: "#4A5E52", fontSize: 12, fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 600 }}>{item.text}</span>
                 </div>
               ))}
             </div>
@@ -1626,39 +1619,38 @@ function Hero() {
 
           <div className="hero-form-anim">
             <div style={{
-              background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.12)',
-              borderRadius: 16, padding: '44px 40px', textAlign: 'center',
+              borderRadius: 20, overflow: 'hidden', position: 'relative',
+              boxShadow: '0 24px 80px rgba(0,0,0,0.15)',
             }}>
-              <div style={{ marginBottom: 20 }}>
-                <CalendarIcon size={48} color="#1B7A3D" />
-              </div>
-              <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: 24, color: '#fff', marginBottom: 8, fontWeight: 700 }}>
-                Book Your Free Walkthrough
-              </h3>
-              <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 15, color: 'rgba(255,255,255,0.55)', lineHeight: 1.6, marginBottom: 28, maxWidth: 340, margin: '0 auto 28px' }}>
-                Pick a time that works. We'll assess your facility and deliver a custom proposal within 48 hours.
-              </p>
-              <a href="#" onClick={(e) => { e.preventDefault(); scrollTo('schedule'); }} className="cta-glow" style={{
-                display: 'block', width: '100%', padding: '16px 24px', background: '#1B7A3D',
-                borderRadius: 8, color: '#fff', fontSize: 15, fontWeight: 700, textDecoration: 'none',
-                fontFamily: "'Syne', sans-serif", textTransform: 'uppercase', letterSpacing: '0.04em',
-                textAlign: 'center', boxSizing: 'border-box',
+              <img src="/nero-team.png" alt="GreenPoint Maintenance Services Team" style={{
+                width: '100%', height: 480, objectFit: 'cover', display: 'block',
+              }} />
+              <div style={{
+                position: 'absolute', bottom: 0, left: 0, right: 0,
+                background: 'linear-gradient(to top, rgba(10,42,22,0.95) 0%, rgba(10,42,22,0.7) 60%, transparent 100%)',
+                padding: '60px 32px 32px',
               }}>
-                Schedule Now →
-              </a>
-              <div style={{ marginTop: 20, display: 'flex', justifyContent: 'center', gap: 24, flexWrap: 'wrap' }}>
-                <a href={PHONE_HREF} style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: 'rgba(255,255,255,0.5)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 6 }}>
-                  <PhoneIcon size={14} color="#1B7A3D" /> {PHONE_NUMBER}
+                <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: 22, color: '#fff', marginBottom: 8, fontWeight: 700 }}>
+                  Book Your Free Walkthrough
+                </h3>
+                <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: 'rgba(255,255,255,0.7)', lineHeight: 1.5, marginBottom: 20 }}>
+                  We'll assess your facility and deliver a custom proposal within 48 hours.
+                </p>
+                <a href="#" onClick={(e) => { e.preventDefault(); scrollTo('schedule'); }} className="cta-glow" style={{
+                  display: 'block', width: '100%', padding: '14px 24px', background: '#1B7A3D',
+                  borderRadius: 8, color: '#fff', fontSize: 14, fontWeight: 700, textDecoration: 'none',
+                  fontFamily: "'Syne', sans-serif", textTransform: 'uppercase', letterSpacing: '0.04em',
+                  textAlign: 'center', boxSizing: 'border-box',
+                }}>
+                  Schedule Now →
                 </a>
-                <a href="mailto:info@greenpointms.com" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: 'rgba(255,255,255,0.5)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 6 }}>
-                  <MailIcon size={14} color="#1B7A3D" /> Email Us
-                </a>
-              </div>
-              <div style={{ marginTop: 24, paddingTop: 20, borderTop: '1px solid rgba(255,255,255,0.08)' }}>
-                <div style={{ display: 'flex', justifyContent: 'center', gap: 16, flexWrap: 'wrap' }}>
-                  {['MBE Certified', 'Free Assessment', 'No Obligation'].map((item) => (
-                    <span key={item} style={{ fontSize: 11, color: 'rgba(255,255,255,0.4)', fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 600 }}>✓ {item}</span>
-                  ))}
+                <div style={{ marginTop: 14, display: 'flex', justifyContent: 'center', gap: 20 }}>
+                  <a href={PHONE_HREF} style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: 'rgba(255,255,255,0.6)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 5 }}>
+                    <PhoneIcon size={13} color="#1B7A3D" /> {PHONE_NUMBER}
+                  </a>
+                  <a href="mailto:info@greenpointms.com" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: 'rgba(255,255,255,0.6)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 5 }}>
+                    <MailIcon size={13} color="#1B7A3D" /> Email Us
+                  </a>
                 </div>
               </div>
             </div>
