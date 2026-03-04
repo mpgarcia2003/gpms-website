@@ -57,14 +57,14 @@ function QuoteChoiceModal({ isOpen, onClose }) {
             onMouseOver={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 8px 32px rgba(27,122,61,0.3)'; }}
             onMouseOut={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}
           >
-            <div style={{ width: 48, height: 48, borderRadius: 10, background: 'rgba(255,255,255,0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+            <div style={{ width: 48, height: 48, borderRadius: 10, background: '#D8E2DC', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
               <CalendarIcon size={24} color="#fff" />
             </div>
             <div>
-              <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 16, fontWeight: 700, color: '#fff' }}>Schedule a Walkthrough</div>
+              <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 16, fontWeight: 700, color: '#1A2B1F' }}>Schedule a Walkthrough</div>
               <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: 'rgba(255,255,255,0.7)', marginTop: 2 }}>Book a free on-site assessment or phone consultation</div>
             </div>
-            <span style={{ marginLeft: 'auto', color: 'rgba(255,255,255,0.6)', fontSize: 20, flexShrink: 0 }}>→</span>
+            <span style={{ marginLeft: 'auto', color: '#4A5E52', fontSize: 20, flexShrink: 0 }}>→</span>
           </button>
           {/* Option 2: Instant Quote */}
           <button onClick={() => { onClose(); setTimeout(() => scrollTo('quote'), 150); }} style={{
@@ -75,7 +75,7 @@ function QuoteChoiceModal({ isOpen, onClose }) {
             onMouseOver={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.borderColor = '#1B7A3D'; }}
             onMouseOut={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.borderColor = '#E2EBE5'; }}
           >
-            <div style={{ width: 48, height: 48, borderRadius: 10, background: 'rgba(27,122,61,0.08)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+            <div style={{ width: 48, height: 48, borderRadius: 10, background: '#E8F5ED', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
               <DollarIcon size={24} color="#1B7A3D" />
             </div>
             <div>
@@ -94,7 +94,7 @@ function QuoteChoiceModal({ isOpen, onClose }) {
 }
 
 // Icon wrapper for consistent sizing in cards
-function IconBox({ children, size = 48, bg = 'rgba(27,122,61,0.08)', radius = 8, dark = false }) {
+function IconBox({ children, size = 48, bg = '#E8F5ED', radius = 8, dark = false }) {
   return (
     <div style={{
       width: size, height: size, borderRadius: radius,
@@ -630,15 +630,15 @@ function QuoteCalculator() {
   // ---- STEP 1: Industry Selection ----
   if (step === "industry") {
     return (
-      <section id="quote" style={{ background: "#060A07", padding: "100px 24px" }}>
+      <section id="quote" style={{ background: "#FFFFFF", padding: "100px 24px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto", textAlign: "center" }}>
           <div style={{ fontSize: 10, color: "#1B7A3D", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
             Step 1 of 3 — Instant Quote Calculator
           </div>
-          <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 4vw, 48px)", fontWeight: 700, color: "#fff", lineHeight: 1.15, marginBottom: 16 }}>
-            Select Your <span style={{ color: "#00E676" }}>Facility Type</span>
+          <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 4vw, 48px)", fontWeight: 700, color: "#1A2B1F", lineHeight: 1.15, marginBottom: 16 }}>
+            Select Your <span style={{ color: "#1B7A3D" }}>Facility Type</span>
           </h2>
-          <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "rgba(255,255,255,0.5)", marginBottom: 48, maxWidth: 560, margin: "0 auto 48px" }}>
+          <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "#6A7D72", marginBottom: 48, maxWidth: 560, margin: "0 auto 48px" }}>
             Choose your industry and get a customized cleaning estimate in under 60 seconds.
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: 16, maxWidth: 1000, margin: "0 auto" }}>
@@ -647,19 +647,19 @@ function QuoteCalculator() {
                 key={ind.id}
                 onClick={() => selectIndustry(ind.id)}
                 style={{
-                  background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.1)",
+                  background: "#F2F7F4", border: "1px solid #E2EBE5",
                   borderRadius: 16, padding: "32px 20px", cursor: "pointer", textAlign: "center",
                   transition: "all 0.3s",
                 }}
-                onMouseOver={(e) => { e.currentTarget.style.borderColor = "#00E676"; e.currentTarget.style.background = "rgba(0,230,118,0.08)"; e.currentTarget.style.transform = "translateY(-4px)"; }}
-                onMouseOut={(e) => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.1)"; e.currentTarget.style.background = "rgba(255,255,255,0.04)"; e.currentTarget.style.transform = "translateY(0)"; }}
+                onMouseOver={(e) => { e.currentTarget.style.borderColor = "#1B7A3D"; e.currentTarget.style.background = "#E8F5ED"; e.currentTarget.style.transform = "translateY(-4px)"; }}
+                onMouseOut={(e) => { e.currentTarget.style.borderColor = "#E2EBE5"; e.currentTarget.style.background = "#F2F7F4"; e.currentTarget.style.transform = "translateY(0)"; }}
               >
                 <IconBox size={56} radius={14} dark>
                   {getIcon(ind.iconKey, 28)}
                 </IconBox>
                 <div style={{ height: 12 }} />
-                <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 700, fontSize: 15, color: "#fff", marginBottom: 4 }}>{ind.title}</div>
-                <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)", textTransform: "uppercase", letterSpacing: "0.08em" }}>{ind.desc}</div>
+                <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 700, fontSize: 15, color: "#1A2B1F", marginBottom: 4 }}>{ind.title}</div>
+                <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: "#8A9B91", textTransform: "uppercase", letterSpacing: "0.08em" }}>{ind.desc}</div>
               </div>
             ))}
           </div>
@@ -671,37 +671,37 @@ function QuoteCalculator() {
   // ---- STEP 2: Service Type ----
   if (step === "objective") {
     return (
-      <section id="quote" style={{ background: "#060A07", padding: "100px 24px" }}>
+      <section id="quote" style={{ background: "#FFFFFF", padding: "100px 24px" }}>
         <div style={{ maxWidth: 800, margin: "0 auto", textAlign: "center" }}>
-          <button onClick={() => setStep("industry")} style={{ background: "none", border: "none", color: "rgba(255,255,255,0.4)", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", cursor: "pointer", marginBottom: 32, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>← Back to Industries</button>
-          <div style={{ fontSize: 10, color: "#00E676", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>Step 2 of 3</div>
-          <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 4vw, 48px)", fontWeight: 700, color: "#fff", lineHeight: 1.15, marginBottom: 48 }}>Service Frequency</h2>
+          <button onClick={() => setStep("industry")} style={{ background: "none", border: "none", color: "#8A9B91", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", cursor: "pointer", marginBottom: 32, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>← Back to Industries</button>
+          <div style={{ fontSize: 10, color: "#1B7A3D", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>Step 2 of 3</div>
+          <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 4vw, 48px)", fontWeight: 700, color: "#1A2B1F", lineHeight: 1.15, marginBottom: 48 }}>Service Frequency</h2>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }} className="quote-freq-grid">
             <div
               onClick={() => selectObjective("recurring")}
-              style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 20, padding: 40, cursor: "pointer", textAlign: "left", transition: "all 0.3s" }}
-              onMouseOver={(e) => { e.currentTarget.style.borderColor = "#00E676"; e.currentTarget.style.transform = "translateY(-4px)"; }}
-              onMouseOut={(e) => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.1)"; e.currentTarget.style.transform = "translateY(0)"; }}
+              style={{ background: "#F2F7F4", border: "1px solid #E2EBE5", borderRadius: 20, padding: 40, cursor: "pointer", textAlign: "left", transition: "all 0.3s" }}
+              onMouseOver={(e) => { e.currentTarget.style.borderColor = "#1B7A3D"; e.currentTarget.style.transform = "translateY(-4px)"; }}
+              onMouseOut={(e) => { e.currentTarget.style.borderColor = "#E2EBE5"; e.currentTarget.style.transform = "translateY(0)"; }}
             >
               <IconBox size={56} radius={14} dark>
                 {getIcon('calendar', 28)}
               </IconBox>
               <div style={{ height: 16 }} />
-              <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 22, fontWeight: 700, color: "#fff", marginBottom: 8 }}>Ongoing Maintenance</div>
-              <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.5)" }}>Regular daily or weekly cleaning services.</div>
+              <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 22, fontWeight: 700, color: "#1A2B1F", marginBottom: 8 }}>Ongoing Maintenance</div>
+              <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "#6A7D72" }}>Regular daily or weekly cleaning services.</div>
             </div>
             <div
               onClick={() => selectObjective("onetime")}
-              style={{ background: "rgba(0,230,118,0.08)", border: "1px solid rgba(0,230,118,0.25)", borderRadius: 20, padding: 40, cursor: "pointer", textAlign: "left", transition: "all 0.3s" }}
-              onMouseOver={(e) => { e.currentTarget.style.borderColor = "#00E676"; e.currentTarget.style.transform = "translateY(-4px)"; }}
-              onMouseOut={(e) => { e.currentTarget.style.borderColor = "rgba(0,230,118,0.25)"; e.currentTarget.style.transform = "translateY(0)"; }}
+              style={{ background: "#E8F5ED", border: "1px solid rgba(27,122,61,0.25)", borderRadius: 20, padding: 40, cursor: "pointer", textAlign: "left", transition: "all 0.3s" }}
+              onMouseOver={(e) => { e.currentTarget.style.borderColor = "#1B7A3D"; e.currentTarget.style.transform = "translateY(-4px)"; }}
+              onMouseOut={(e) => { e.currentTarget.style.borderColor = "rgba(27,122,61,0.25)"; e.currentTarget.style.transform = "translateY(0)"; }}
             >
               <IconBox size={56} radius={14} dark>
                 {getIcon('sparkles', 28)}
               </IconBox>
               <div style={{ height: 16 }} />
-              <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 22, fontWeight: 700, color: "#fff", marginBottom: 8 }}>One-Time Deep Clean</div>
-              <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.5)" }}>Post-construction, move-in/out, or seasonal refresh.</div>
+              <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 22, fontWeight: 700, color: "#1A2B1F", marginBottom: 8 }}>One-Time Deep Clean</div>
+              <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "#6A7D72" }}>Post-construction, move-in/out, or seasonal refresh.</div>
             </div>
           </div>
         </div>
@@ -714,14 +714,14 @@ function QuoteCalculator() {
   const industryLabel = QUOTE_INDUSTRIES.find((i) => i.id === settings.industry)?.title || settings.industry;
 
   return (
-    <section id="quote" style={{ background: "#060A07", padding: "100px 24px" }}>
+    <section id="quote" style={{ background: "#FFFFFF", padding: "100px 24px" }}>
       <div style={{ maxWidth: 1280, margin: "0 auto" }}>
         {/* Header */}
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 40, paddingBottom: 20, borderBottom: "1px solid rgba(255,255,255,0.08)", flexWrap: "wrap", gap: 12 }}>
-          <button onClick={() => setStep("objective")} style={{ background: "none", border: "none", color: "rgba(255,255,255,0.4)", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", cursor: "pointer", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>← Change Service</button>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 40, paddingBottom: 20, borderBottom: "1px solid #E8F0EB", flexWrap: "wrap", gap: 12 }}>
+          <button onClick={() => setStep("objective")} style={{ background: "none", border: "none", color: "#8A9B91", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", cursor: "pointer", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>← Change Service</button>
           <div style={{ display: "flex", gap: 10 }}>
-            <span style={{ background: "rgba(0,230,118,0.12)", color: "#00E676", padding: "6px 14px", borderRadius: 100, fontSize: 12, fontWeight: 700, fontFamily: "'Plus Jakarta Sans', sans-serif", textTransform: "capitalize" }}>{industryLabel}</span>
-            <span style={{ background: "rgba(255,255,255,0.08)", color: "rgba(255,255,255,0.6)", padding: "6px 14px", borderRadius: 100, fontSize: 12, fontWeight: 700, fontFamily: "'Plus Jakarta Sans', sans-serif", textTransform: "capitalize" }}>{settings.serviceType === "recurring" ? "Ongoing" : "One-Time"}</span>
+            <span style={{ background: "#E2EBE5", color: "#1B7A3D", padding: "6px 14px", borderRadius: 100, fontSize: 12, fontWeight: 700, fontFamily: "'Plus Jakarta Sans', sans-serif", textTransform: "capitalize" }}>{industryLabel}</span>
+            <span style={{ background: "#E8F0EB", color: "#4A5E52", padding: "6px 14px", borderRadius: 100, fontSize: 12, fontWeight: 700, fontFamily: "'Plus Jakarta Sans', sans-serif", textTransform: "capitalize" }}>{settings.serviceType === "recurring" ? "Ongoing" : "One-Time"}</span>
           </div>
         </div>
 
@@ -730,50 +730,50 @@ function QuoteCalculator() {
           <div>
             {/* Square Footage */}
             {!["church"].includes(settings.industry) && (
-              <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20, padding: 32, marginBottom: 24 }}>
-                <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 12 }}>Total Square Footage</div>
+              <div style={{ background: "#F2F7F4", border: "1px solid #E8F0EB", borderRadius: 20, padding: 32, marginBottom: 24 }}>
+                <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: "#8A9B91", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 12 }}>Total Square Footage</div>
                 <div style={{ display: "flex", alignItems: "baseline", gap: 10, marginBottom: 16 }}>
-                  <span style={{ fontFamily: "'Syne', sans-serif", fontSize: 36, fontWeight: 800, color: "#fff" }}>{settings.squareFootage.toLocaleString()}</span>
-                  <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.4)" }}>Sq. Ft.</span>
+                  <span style={{ fontFamily: "'Syne', sans-serif", fontSize: 36, fontWeight: 800, color: "#1A2B1F" }}>{settings.squareFootage.toLocaleString()}</span>
+                  <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "#8A9B91" }}>Sq. Ft.</span>
                 </div>
                 <input type="range" min={settings.industry === "education" ? 5000 : 1000} max={settings.industry === "education" ? 250000 : 50000} step={500} value={settings.squareFootage}
                   onChange={(e) => setSettings({ ...settings, squareFootage: parseInt(e.target.value) })}
-                  style={{ width: "100%", accentColor: "#00E676" }} />
+                  style={{ width: "100%", accentColor: "#1B7A3D" }} />
               </div>
             )}
 
             {/* Industry-specific controls */}
             {settings.industry === "church" && (
-              <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20, padding: 32, marginBottom: 24 }}>
-                <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 12 }}>Sanctuary Capacity</div>
+              <div style={{ background: "#F2F7F4", border: "1px solid #E8F0EB", borderRadius: 20, padding: 32, marginBottom: 24 }}>
+                <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: "#8A9B91", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 12 }}>Sanctuary Capacity</div>
                 <div style={{ display: "flex", alignItems: "baseline", gap: 10, marginBottom: 16 }}>
-                  <span style={{ fontFamily: "'Syne', sans-serif", fontSize: 36, fontWeight: 800, color: "#fff" }}>{settings.churchCapacity}</span>
-                  <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.4)" }}>seats</span>
+                  <span style={{ fontFamily: "'Syne', sans-serif", fontSize: 36, fontWeight: 800, color: "#1A2B1F" }}>{settings.churchCapacity}</span>
+                  <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "#8A9B91" }}>seats</span>
                 </div>
                 <input type="range" min={50} max={2000} step={50} value={settings.churchCapacity}
                   onChange={(e) => setSettings({ ...settings, churchCapacity: parseInt(e.target.value) })}
-                  style={{ width: "100%", accentColor: "#00E676" }} />
+                  style={{ width: "100%", accentColor: "#1B7A3D" }} />
                 <div style={{ display: "flex", gap: 10, marginTop: 16 }}>
                   {["pews", "chairs"].map((t) => (
                     <button key={t} onClick={() => setSettings({ ...settings, seatingType: t })}
-                      style={{ padding: "8px 20px", borderRadius: 8, border: "1px solid", borderColor: settings.seatingType === t ? "#00E676" : "rgba(255,255,255,0.15)", background: settings.seatingType === t ? "rgba(0,230,118,0.15)" : "transparent", color: settings.seatingType === t ? "#00E676" : "rgba(255,255,255,0.5)", fontSize: 13, fontWeight: 600, cursor: "pointer", fontFamily: "'Plus Jakarta Sans', sans-serif", textTransform: "capitalize" }}>{t}</button>
+                      style={{ padding: "8px 20px", borderRadius: 8, border: "1px solid", borderColor: settings.seatingType === t ? "#1B7A3D" : "#D8E2DC", background: settings.seatingType === t ? "rgba(27,122,61,0.15)" : "transparent", color: settings.seatingType === t ? "#1B7A3D" : "#6A7D72", fontSize: 13, fontWeight: 600, cursor: "pointer", fontFamily: "'Plus Jakarta Sans', sans-serif", textTransform: "capitalize" }}>{t}</button>
                   ))}
                 </div>
               </div>
             )}
 
             {settings.industry === "fitness" && (
-              <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20, padding: 32, marginBottom: 24 }}>
-                <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 16 }}>Wet Area Details</div>
+              <div style={{ background: "#F2F7F4", border: "1px solid #E8F0EB", borderRadius: 20, padding: 32, marginBottom: 24 }}>
+                <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: "#8A9B91", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 16 }}>Wet Area Details</div>
                 <div style={{ display: "flex", gap: 24, flexWrap: "wrap" }}>
                   <div>
-                    <label style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.6)", display: "block", marginBottom: 6 }}>Shower Stalls</label>
+                    <label style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "#4A5E52", display: "block", marginBottom: 6 }}>Shower Stalls</label>
                     <input type="number" value={settings.showerCount} min={0}
                       onChange={(e) => setSettings({ ...settings, showerCount: parseInt(e.target.value) || 0 })}
-                      style={{ width: 80, padding: "8px 12px", borderRadius: 8, border: "1px solid rgba(255,255,255,0.15)", background: "rgba(255,255,255,0.06)", color: "#fff", fontSize: 15, fontFamily: "'Plus Jakarta Sans', sans-serif", textAlign: "center" }} />
+                      style={{ width: 80, padding: "8px 12px", borderRadius: 8, border: "1px solid #D8E2DC", background: "#EEF4F0", color: "#1A2B1F", fontSize: 15, fontFamily: "'Plus Jakarta Sans', sans-serif", textAlign: "center" }} />
                   </div>
                   <label style={{ display: "flex", alignItems: "center", gap: 10, cursor: "pointer" }}>
-                    <input type="checkbox" checked={settings.hasSauna} onChange={(e) => setSettings({ ...settings, hasSauna: e.target.checked })} style={{ accentColor: "#00E676", width: 18, height: 18 }} />
+                    <input type="checkbox" checked={settings.hasSauna} onChange={(e) => setSettings({ ...settings, hasSauna: e.target.checked })} style={{ accentColor: "#1B7A3D", width: 18, height: 18 }} />
                     <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.7)" }}>Has Sauna / Steam Room</span>
                   </label>
                 </div>
@@ -781,89 +781,89 @@ function QuoteCalculator() {
             )}
 
             {settings.industry === "daycare" && (
-              <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20, padding: 32, marginBottom: 24 }}>
-                <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 16 }}>Enrollment Details</div>
+              <div style={{ background: "#F2F7F4", border: "1px solid #E8F0EB", borderRadius: 20, padding: 32, marginBottom: 24 }}>
+                <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: "#8A9B91", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 16 }}>Enrollment Details</div>
                 <div style={{ display: "flex", gap: 24, flexWrap: "wrap" }}>
                   <div>
-                    <label style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.6)", display: "block", marginBottom: 6 }}>Students Enrolled</label>
+                    <label style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "#4A5E52", display: "block", marginBottom: 6 }}>Students Enrolled</label>
                     <input type="number" value={settings.studentCount} min={1}
                       onChange={(e) => setSettings({ ...settings, studentCount: parseInt(e.target.value) || 1 })}
-                      style={{ width: 80, padding: "8px 12px", borderRadius: 8, border: "1px solid rgba(255,255,255,0.15)", background: "rgba(255,255,255,0.06)", color: "#fff", fontSize: 15, fontFamily: "'Plus Jakarta Sans', sans-serif", textAlign: "center" }} />
+                      style={{ width: 80, padding: "8px 12px", borderRadius: 8, border: "1px solid #D8E2DC", background: "#EEF4F0", color: "#1A2B1F", fontSize: 15, fontFamily: "'Plus Jakarta Sans', sans-serif", textAlign: "center" }} />
                   </div>
                   <div>
-                    <label style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.6)", display: "block", marginBottom: 6 }}>Changing Stations</label>
+                    <label style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "#4A5E52", display: "block", marginBottom: 6 }}>Changing Stations</label>
                     <input type="number" value={settings.changingStations} min={0}
                       onChange={(e) => setSettings({ ...settings, changingStations: parseInt(e.target.value) || 0 })}
-                      style={{ width: 80, padding: "8px 12px", borderRadius: 8, border: "1px solid rgba(255,255,255,0.15)", background: "rgba(255,255,255,0.06)", color: "#fff", fontSize: 15, fontFamily: "'Plus Jakarta Sans', sans-serif", textAlign: "center" }} />
+                      style={{ width: 80, padding: "8px 12px", borderRadius: 8, border: "1px solid #D8E2DC", background: "#EEF4F0", color: "#1A2B1F", fontSize: 15, fontFamily: "'Plus Jakarta Sans', sans-serif", textAlign: "center" }} />
                   </div>
                 </div>
               </div>
             )}
 
             {settings.industry === "hoa" && (
-              <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20, padding: 32, marginBottom: 24 }}>
-                <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 16 }}>Building Size</div>
+              <div style={{ background: "#F2F7F4", border: "1px solid #E8F0EB", borderRadius: 20, padding: 32, marginBottom: 24 }}>
+                <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: "#8A9B91", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 16 }}>Building Size</div>
                 <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
                   {["small", "medium", "large", "luxury"].map((s) => (
                     <button key={s} onClick={() => setSettings({ ...settings, buildingSize: s })}
-                      style={{ padding: "10px 20px", borderRadius: 8, border: "1px solid", borderColor: settings.buildingSize === s ? "#00E676" : "rgba(255,255,255,0.15)", background: settings.buildingSize === s ? "rgba(0,230,118,0.15)" : "transparent", color: settings.buildingSize === s ? "#00E676" : "rgba(255,255,255,0.5)", fontSize: 13, fontWeight: 600, cursor: "pointer", fontFamily: "'Plus Jakarta Sans', sans-serif", textTransform: "capitalize" }}>{s}</button>
+                      style={{ padding: "10px 20px", borderRadius: 8, border: "1px solid", borderColor: settings.buildingSize === s ? "#1B7A3D" : "#D8E2DC", background: settings.buildingSize === s ? "rgba(27,122,61,0.15)" : "transparent", color: settings.buildingSize === s ? "#1B7A3D" : "#6A7D72", fontSize: 13, fontWeight: 600, cursor: "pointer", fontFamily: "'Plus Jakarta Sans', sans-serif", textTransform: "capitalize" }}>{s}</button>
                   ))}
                 </div>
               </div>
             )}
 
             {settings.industry === "warehouse" && (
-              <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20, padding: 32, marginBottom: 24 }}>
-                <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 16 }}>Labor Details</div>
+              <div style={{ background: "#F2F7F4", border: "1px solid #E8F0EB", borderRadius: 20, padding: 32, marginBottom: 24 }}>
+                <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: "#8A9B91", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 16 }}>Labor Details</div>
                 <div style={{ display: "flex", gap: 24, flexWrap: "wrap", alignItems: "flex-end" }}>
                   <div>
-                    <label style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.6)", display: "block", marginBottom: 6 }}>Labor Hours/Day</label>
+                    <label style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "#4A5E52", display: "block", marginBottom: 6 }}>Labor Hours/Day</label>
                     <input type="number" value={settings.laborHoursPerDay} min={1} max={16}
                       onChange={(e) => setSettings({ ...settings, laborHoursPerDay: parseInt(e.target.value) || 4 })}
-                      style={{ width: 80, padding: "8px 12px", borderRadius: 8, border: "1px solid rgba(255,255,255,0.15)", background: "rgba(255,255,255,0.06)", color: "#fff", fontSize: 15, fontFamily: "'Plus Jakarta Sans', sans-serif", textAlign: "center" }} />
+                      style={{ width: 80, padding: "8px 12px", borderRadius: 8, border: "1px solid #D8E2DC", background: "#EEF4F0", color: "#1A2B1F", fontSize: 15, fontFamily: "'Plus Jakarta Sans', sans-serif", textAlign: "center" }} />
                   </div>
                   <div>
-                    <label style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.6)", display: "block", marginBottom: 6 }}>Scrubbing Sq Ft</label>
+                    <label style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "#4A5E52", display: "block", marginBottom: 6 }}>Scrubbing Sq Ft</label>
                     <input type="number" value={settings.warehouseScrubbingSqFt} min={0} step={1000}
                       onChange={(e) => setSettings({ ...settings, warehouseScrubbingSqFt: parseInt(e.target.value) || 0 })}
-                      style={{ width: 120, padding: "8px 12px", borderRadius: 8, border: "1px solid rgba(255,255,255,0.15)", background: "rgba(255,255,255,0.06)", color: "#fff", fontSize: 15, fontFamily: "'Plus Jakarta Sans', sans-serif", textAlign: "center" }} />
+                      style={{ width: 120, padding: "8px 12px", borderRadius: 8, border: "1px solid #D8E2DC", background: "#EEF4F0", color: "#1A2B1F", fontSize: 15, fontFamily: "'Plus Jakarta Sans', sans-serif", textAlign: "center" }} />
                   </div>
                 </div>
               </div>
             )}
 
             {/* Room Breakdown */}
-            <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20, padding: 32, marginBottom: 24 }}>
+            <div style={{ background: "#F2F7F4", border: "1px solid #E8F0EB", borderRadius: 20, padding: 32, marginBottom: 24 }}>
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 20, flexWrap: "wrap", gap: 12 }}>
-                <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: 20, fontWeight: 700, color: "#fff", margin: 0 }}>Room Breakdown</h3>
+                <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: 20, fontWeight: 700, color: "#1A2B1F", margin: 0 }}>Room Breakdown</h3>
                 <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
                   <select
                     onChange={(e) => { if (e.target.value) { addRoom(e.target.value); e.target.value = ""; } }}
-                    style={{ padding: "8px 14px", borderRadius: 8, border: "1px solid rgba(255,255,255,0.15)", background: "rgba(255,255,255,0.06)", color: "rgba(255,255,255,0.7)", fontSize: 13, fontFamily: "'Plus Jakarta Sans', sans-serif", cursor: "pointer" }}>
+                    style={{ padding: "8px 14px", borderRadius: 8, border: "1px solid #D8E2DC", background: "#EEF4F0", color: "rgba(255,255,255,0.7)", fontSize: 13, fontFamily: "'Plus Jakarta Sans', sans-serif", cursor: "pointer" }}>
                     <option value="">+ Add Room Type</option>
                     {industryPresets.map((p) => (<option key={p.name} value={p.name}>{p.name}</option>))}
                   </select>
-                  <button onClick={() => addRoom(null)} style={{ background: "none", border: "none", color: "#00E676", fontSize: 12, fontWeight: 700, cursor: "pointer", fontFamily: "'Plus Jakarta Sans', sans-serif", whiteSpace: "nowrap" }}>+ Custom</button>
+                  <button onClick={() => addRoom(null)} style={{ background: "none", border: "none", color: "#1B7A3D", fontSize: 12, fontWeight: 700, cursor: "pointer", fontFamily: "'Plus Jakarta Sans', sans-serif", whiteSpace: "nowrap" }}>+ Custom</button>
                 </div>
               </div>
 
               {rooms.length === 0 && (
-                <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.3)", textAlign: "center", padding: 24 }}>Add rooms above to build your quote.</p>
+                <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "#A0B0A6", textAlign: "center", padding: 24 }}>Add rooms above to build your quote.</p>
               )}
 
               <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
                 {rooms.map((room) => (
-                  <div key={room.id} style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)", borderRadius: 12, padding: "12px 16px", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12 }}>
+                  <div key={room.id} style={{ background: "#F5F9F6", border: "1px solid #EEF4F0", borderRadius: 12, padding: "12px 16px", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12 }}>
                     <input type="text" value={room.name} onChange={(e) => updateRoom(room.id, "name", e.target.value)}
-                      style={{ background: "transparent", border: "none", color: "#fff", fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 600, fontSize: 14, flex: 1, minWidth: 0, outline: "none" }} />
+                      style={{ background: "transparent", border: "none", color: "#1A2B1F", fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 600, fontSize: 14, flex: 1, minWidth: 0, outline: "none" }} />
                     <div style={{ display: "flex", alignItems: "center", gap: 10, flexShrink: 0 }}>
                       <button onClick={() => updateRoom(room.id, "quantity", Math.max(0, room.quantity - 1))}
-                        style={{ width: 32, height: 32, borderRadius: "50%", border: "1px solid rgba(255,255,255,0.15)", background: "transparent", color: "rgba(255,255,255,0.5)", fontSize: 18, cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center" }}>−</button>
-                      <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800, fontSize: 16, color: "#fff", minWidth: 24, textAlign: "center" }}>{room.quantity}</span>
+                        style={{ width: 32, height: 32, borderRadius: "50%", border: "1px solid #D8E2DC", background: "transparent", color: "#6A7D72", fontSize: 18, cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center" }}>−</button>
+                      <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800, fontSize: 16, color: "#1A2B1F", minWidth: 24, textAlign: "center" }}>{room.quantity}</span>
                       <button onClick={() => updateRoom(room.id, "quantity", room.quantity + 1)}
-                        style={{ width: 32, height: 32, borderRadius: "50%", border: "1px solid rgba(0,230,118,0.3)", background: "rgba(0,230,118,0.08)", color: "#00E676", fontSize: 18, cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center" }}>+</button>
+                        style={{ width: 32, height: 32, borderRadius: "50%", border: "1px solid rgba(27,122,61,0.3)", background: "#E8F5ED", color: "#1B7A3D", fontSize: 18, cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center" }}>+</button>
                       <button onClick={() => removeRoom(room.id)}
-                        style={{ background: "none", border: "none", color: "rgba(255,255,255,0.2)", fontSize: 16, cursor: "pointer", padding: "0 4px" }}>✕</button>
+                        style={{ background: "none", border: "none", color: "#C0CCC4", fontSize: 16, cursor: "pointer", padding: "0 4px" }}>✕</button>
                     </div>
                   </div>
                 ))}
@@ -872,27 +872,27 @@ function QuoteCalculator() {
 
             {/* Porter Services */}
             {["education", "office", "medical"].includes(settings.industry) && (
-              <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20, padding: 32 }}>
-                <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: 20, fontWeight: 700, color: "#fff", marginBottom: 20 }}>Day Porter Services</h3>
+              <div style={{ background: "#F2F7F4", border: "1px solid #E8F0EB", borderRadius: 20, padding: 32 }}>
+                <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: 20, fontWeight: 700, color: "#1A2B1F", marginBottom: 20 }}>Day Porter Services</h3>
                 {porters.map((porter) => (
-                  <div key={porter.id} style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)", borderRadius: 12, padding: 16, display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 16 }}>
+                  <div key={porter.id} style={{ background: "#F5F9F6", border: "1px solid #EEF4F0", borderRadius: 12, padding: 16, display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 16 }}>
                     <div>
-                      <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 700, fontSize: 15, color: "#fff" }}>{porter.name}</div>
-                      <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)", textTransform: "uppercase", letterSpacing: "0.08em" }}>Daily On-site Support</div>
+                      <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 700, fontSize: 15, color: "#1A2B1F" }}>{porter.name}</div>
+                      <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: "#8A9B91", textTransform: "uppercase", letterSpacing: "0.08em" }}>Daily On-site Support</div>
                     </div>
                     <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
                       <div style={{ textAlign: "center" }}>
-                        <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 10, color: "rgba(255,255,255,0.4)", textTransform: "uppercase", marginBottom: 4 }}>Hrs/Day</div>
+                        <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 10, color: "#8A9B91", textTransform: "uppercase", marginBottom: 4 }}>Hrs/Day</div>
                         <input type="number" value={porter.hoursPerDay} min={1} max={12}
                           onChange={(e) => setPorters((prev) => prev.map((p) => (p.id === porter.id ? { ...p, hoursPerDay: parseFloat(e.target.value) || 4 } : p)))}
-                          style={{ width: 56, padding: "6px", borderRadius: 8, border: "1px solid rgba(255,255,255,0.15)", background: "rgba(255,255,255,0.06)", color: "#fff", fontSize: 14, fontFamily: "'Plus Jakarta Sans', sans-serif", textAlign: "center" }} />
+                          style={{ width: 56, padding: "6px", borderRadius: 8, border: "1px solid #D8E2DC", background: "#EEF4F0", color: "#1A2B1F", fontSize: 14, fontFamily: "'Plus Jakarta Sans', sans-serif", textAlign: "center" }} />
                       </div>
                       <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
                         <button onClick={() => setPorters((prev) => prev.map((p) => (p.id === porter.id ? { ...p, quantity: Math.max(0, p.quantity - 1) } : p)))}
-                          style={{ width: 32, height: 32, borderRadius: "50%", border: "1px solid rgba(255,255,255,0.15)", background: "transparent", color: "rgba(255,255,255,0.5)", fontSize: 18, cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center" }}>−</button>
-                        <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800, fontSize: 16, color: "#fff", minWidth: 20, textAlign: "center" }}>{porter.quantity}</span>
+                          style={{ width: 32, height: 32, borderRadius: "50%", border: "1px solid #D8E2DC", background: "transparent", color: "#6A7D72", fontSize: 18, cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center" }}>−</button>
+                        <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800, fontSize: 16, color: "#1A2B1F", minWidth: 20, textAlign: "center" }}>{porter.quantity}</span>
                         <button onClick={() => setPorters((prev) => prev.map((p) => (p.id === porter.id ? { ...p, quantity: p.quantity + 1 } : p)))}
-                          style={{ width: 32, height: 32, borderRadius: "50%", border: "1px solid rgba(0,230,118,0.3)", background: "rgba(0,230,118,0.08)", color: "#00E676", fontSize: 18, cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center" }}>+</button>
+                          style={{ width: 32, height: 32, borderRadius: "50%", border: "1px solid rgba(27,122,61,0.3)", background: "#E8F5ED", color: "#1B7A3D", fontSize: 18, cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center" }}>+</button>
                       </div>
                     </div>
                   </div>
@@ -903,41 +903,41 @@ function QuoteCalculator() {
 
           {/* Right: Quote Summary (sticky) */}
           <div style={{ position: "sticky", top: 100 }}>
-            <div style={{ background: "#0D1310", border: "1px solid rgba(0,230,118,0.12)", borderRadius: 0, padding: 36 }}>
-              <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: "#00E676", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 12 }}>
+            <div style={{ background: "#FFFFFF", border: "1px solid #E2EBE5", borderRadius: 0, padding: 36 }}>
+              <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: "#1B7A3D", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 12 }}>
                 {settings.serviceType === "recurring" ? "Estimated Monthly Cost" : "One-Time Deep Clean"}
               </div>
-              <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 44, fontWeight: 800, color: "#fff", marginBottom: 24, lineHeight: 1 }}>
+              <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 44, fontWeight: 800, color: "#1A2B1F", marginBottom: 24, lineHeight: 1 }}>
                 {formatCurrency(quote.grandTotal)}
-                {settings.serviceType === "recurring" && <span style={{ fontSize: 16, color: "rgba(255,255,255,0.4)", fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 600 }}> /mo</span>}
+                {settings.serviceType === "recurring" && <span style={{ fontSize: 16, color: "#8A9B91", fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 600 }}> /mo</span>}
               </div>
 
-              <div style={{ background: "rgba(255,255,255,0.04)", borderRadius: 12, padding: 16, marginBottom: 24 }}>
+              <div style={{ background: "#F2F7F4", borderRadius: 12, padding: 16, marginBottom: 24 }}>
                 {quote.breakdown.map((item, i) => (
-                  <div key={i} style={{ display: "flex", justifyContent: "space-between", padding: "10px 0", borderBottom: i < quote.breakdown.length - 1 ? "1px solid rgba(255,255,255,0.06)" : "none" }}>
-                    <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.5)" }}>{item.label}</span>
-                    <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, fontWeight: 700, color: "#fff" }}>{formatCurrency(item.value)}</span>
+                  <div key={i} style={{ display: "flex", justifyContent: "space-between", padding: "10px 0", borderBottom: i < quote.breakdown.length - 1 ? "1px solid #EEF4F0" : "none" }}>
+                    <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "#6A7D72" }}>{item.label}</span>
+                    <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, fontWeight: 700, color: "#1A2B1F" }}>{formatCurrency(item.value)}</span>
                   </div>
                 ))}
               </div>
 
               <a href="#" onClick={(e) => { e.preventDefault(); const el = document.getElementById("contact"); if (el) el.scrollIntoView({ behavior: "smooth" }); }}
-                style={{ display: "block", width: "100%", padding: "14px", background: "#00E676", border: "none", borderRadius: 4, color: "#060A07", fontSize: 13, fontWeight: 700, fontFamily: "'Syne', sans-serif", textTransform: "uppercase", letterSpacing: "0.04em", textAlign: "center", textDecoration: "none", boxSizing: "border-box", cursor: "pointer" }}>
+                style={{ display: "block", width: "100%", padding: "14px", background: "#1B7A3D", border: "none", borderRadius: 4, color: "#1A2B1F", fontSize: 13, fontWeight: 700, fontFamily: "'Syne', sans-serif", textTransform: "uppercase", letterSpacing: "0.04em", textAlign: "center", textDecoration: "none", boxSizing: "border-box", cursor: "pointer" }}>
                 Request Formal Proposal →
               </a>
 
               {/* Email My Quote */}
-              <div style={{ marginTop: 16, padding: '18px', background: 'rgba(255,255,255,0.03)', borderRadius: 10, border: '1px solid rgba(255,255,255,0.07)' }}>
+              <div style={{ marginTop: 16, padding: '18px', background: '#F5F9F6', borderRadius: 10, border: '1px solid rgba(255,255,255,0.07)' }}>
                 {quoteEmailSubmitted ? (
                   <div style={{ textAlign: 'center', padding: '4px 0' }}>
-                    <div style={{ color: '#00E676', fontSize: 20, marginBottom: 6 }}>✓</div>
+                    <div style={{ color: '#1B7A3D', fontSize: 20, marginBottom: 6 }}>✓</div>
                     <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: 'rgba(255,255,255,0.7)', margin: 0 }}>
                       Check your inbox — your detailed quote has been sent.
                     </p>
                   </div>
                 ) : (
                   <>
-                    <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: 'rgba(255,255,255,0.5)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 10 }}>
+                    <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: '#6A7D72', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 10 }}>
                       Get Your Detailed Quote Breakdown
                     </div>
                     <div style={{ display: 'flex', gap: 8 }}>
@@ -946,11 +946,11 @@ function QuoteCalculator() {
                         placeholder="your@email.com"
                         value={quoteEmail}
                         onChange={(e) => setQuoteEmail(e.target.value)}
-                        onFocus={(e) => (e.target.style.borderColor = 'rgba(0,230,118,0.5)')}
+                        onFocus={(e) => (e.target.style.borderColor = 'rgba(27,122,61,0.5)')}
                         onBlur={(e) => (e.target.style.borderColor = 'rgba(255,255,255,0.12)')}
                         style={{
-                          flex: 1, padding: '10px 12px', background: 'rgba(255,255,255,0.06)',
-                          border: '1px solid rgba(255,255,255,0.12)', borderRadius: 6, color: '#fff',
+                          flex: 1, padding: '10px 12px', background: '#EEF4F0',
+                          border: '1px solid rgba(255,255,255,0.12)', borderRadius: 6, color: '#1A2B1F',
                           fontSize: 13, outline: 'none', fontFamily: "'Plus Jakarta Sans', sans-serif", boxSizing: 'border-box',
                           transition: 'border-color 0.2s',
                         }}
@@ -962,10 +962,10 @@ function QuoteCalculator() {
                           setQuoteEmailSubmitted(true);
                         }}
                         style={{
-                          padding: '10px 16px', background: '#00E676',
-                          border: 'none', borderRadius: 4, color: '#060A07', fontSize: 12, fontWeight: 700,
+                          padding: '10px 16px', background: '#1B7A3D',
+                          border: 'none', borderRadius: 4, color: '#FFFFFF', fontSize: 12, fontWeight: 700,
                           cursor: 'pointer', fontFamily: "'Plus Jakarta Sans', sans-serif", whiteSpace: 'nowrap',
-                          boxShadow: '0 2px 12px rgba(0,230,118,0.25)',
+                          boxShadow: '0 2px 12px rgba(27,122,61,0.25)',
                         }}
                       >
                         Send →
@@ -986,18 +986,18 @@ function QuoteCalculator() {
                   fontFamily: "'Plus Jakarta Sans', sans-serif", textAlign: 'center', textDecoration: 'none',
                   boxSizing: 'border-box', transition: 'background 0.2s, border-color 0.2s',
                 }}
-                onMouseOver={(e) => { e.currentTarget.style.background = 'rgba(0,230,118,0.08)'; e.currentTarget.style.borderColor = 'rgba(0,230,118,0.3)'; }}
+                onMouseOver={(e) => { e.currentTarget.style.background = '#E8F5ED'; e.currentTarget.style.borderColor = 'rgba(27,122,61,0.3)'; }}
                 onMouseOut={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,0.05)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.12)'; }}
               >
                 Schedule a Walkthrough to Confirm Pricing
               </a>
 
               <button onClick={() => { setStep("industry"); setRooms([]); setPorters([{ id: "p1", name: "Day Porter", quantity: 0, hoursPerDay: 4 }]); }}
-                style={{ display: "block", width: "100%", marginTop: 12, padding: "12px", background: "none", border: "none", color: "rgba(255,255,255,0.35)", fontSize: 12, fontWeight: 600, fontFamily: "'Plus Jakarta Sans', sans-serif", cursor: "pointer", textTransform: "uppercase", letterSpacing: "0.08em" }}>
+                style={{ display: "block", width: "100%", marginTop: 12, padding: "12px", background: "none", border: "none", color: "#8A9B91", fontSize: 12, fontWeight: 600, fontFamily: "'Plus Jakarta Sans', sans-serif", cursor: "pointer", textTransform: "uppercase", letterSpacing: "0.08em" }}>
                 Start Over
               </button>
 
-              <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.25)", textAlign: "center", marginTop: 16, lineHeight: 1.5 }}>
+              <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: "#A0B0A6", textAlign: "center", marginTop: 16, lineHeight: 1.5 }}>
                 Estimate based on industry standards. Final pricing confirmed after complimentary walkthrough.
               </p>
             </div>
@@ -1052,11 +1052,11 @@ function Header({ scrolled }) {
         left: 0,
         right: 0,
         zIndex: 1000,
-        background: scrolled ? "rgba(6, 10, 7, 0.92)" : "transparent",
+        background: scrolled ? "rgba(255,255,255,0.97)" : "transparent",
         backdropFilter: scrolled ? "blur(24px) saturate(1.4)" : "none",
         WebkitBackdropFilter: scrolled ? "blur(24px) saturate(1.4)" : "none",
-        borderBottom: scrolled ? "1px solid rgba(46, 204, 113, 0.2)" : "none",
-        boxShadow: scrolled ? "0 4px 30px rgba(0,0,0,0.3)" : "none",
+        borderBottom: scrolled ? "1px solid #E2EBE5" : "none",
+        boxShadow: scrolled ? "0 2px 20px rgba(0,0,0,0.06)" : "none",
         transition: "all 0.4s ease",
         padding: scrolled ? "12px 0" : "20px 0",
       }}
@@ -1064,8 +1064,8 @@ function Header({ scrolled }) {
       <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 24px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
         <a href="#" style={{ display: "flex", alignItems: "center", gap: 12, textDecoration: "none" }}>
           <div style={{
-            width: 44, height: 44, borderRadius: 0, display: "flex", alignItems: "center", justifyContent: "center",
-            background: "#00E676", fontWeight: 800, fontSize: 20, color: "#060A07",
+            width: 44, height: 44, borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center",
+            background: "#1B7A3D", fontWeight: 800, fontSize: 20, color: "#fff",
             fontFamily: "'Syne', sans-serif",
           }}>
             G
@@ -1091,7 +1091,7 @@ function Header({ scrolled }) {
                 fontFamily: "'Plus Jakarta Sans', sans-serif", letterSpacing: "0.01em",
                 transition: "color 0.2s",
               }}
-              onMouseOver={(e) => (e.target.style.color = "#00E676")}
+              onMouseOver={(e) => (e.target.style.color = "#1B7A3D")}
               onMouseOut={(e) => (e.target.style.color = "rgba(255,255,255,0.8)")}
             >
               {item.label}
@@ -1104,19 +1104,19 @@ function Header({ scrolled }) {
               fontFamily: "'Plus Jakarta Sans', sans-serif", display: "flex", alignItems: "center", gap: 6,
             }}
           >
-            <PhoneIcon size={16} color="#00E676" /> {PHONE_NUMBER}
+            <PhoneIcon size={16} color="#1B7A3D" /> {PHONE_NUMBER}
           </a>
           <a
             href="#"
             onClick={(e) => { e.preventDefault(); scrollTo("schedule"); }}
             style={{
-              background: "#00E676", color: "#060A07", padding: "10px 24px",
+              background: "#1B7A3D", color: "#fff", padding: "10px 24px",
               borderRadius: 4, fontWeight: 700, fontSize: 13, textDecoration: "none",
               fontFamily: "'Syne', sans-serif", letterSpacing: "0.04em", textTransform: "uppercase",
               transition: "transform 0.2s", whiteSpace: "nowrap",
             }}
-            onMouseOver={(e) => { e.target.style.transform = "translateY(-1px)"; e.target.style.boxShadow = "0 4px 20px rgba(0,230,118,0.4)"; }}
-            onMouseOut={(e) => { e.target.style.transform = "translateY(0)"; e.target.style.boxShadow = "0 2px 12px rgba(0,230,118,0.3)"; }}
+            onMouseOver={(e) => { e.target.style.transform = "translateY(-1px)"; e.target.style.boxShadow = "0 4px 20px rgba(27,122,61,0.4)"; }}
+            onMouseOut={(e) => { e.target.style.transform = "translateY(0)"; e.target.style.boxShadow = "0 2px 12px rgba(27,122,61,0.3)"; }}
           >
             Schedule Walkthrough
           </a>
@@ -1135,9 +1135,9 @@ function Header({ scrolled }) {
 
       {mobileOpen && (
         <div style={{
-          position: "absolute", top: "100%", left: 0, right: 0, background: "rgba(10, 26, 18, 0.98)",
+          position: "absolute", top: "100%", left: 0, right: 0, background: "rgba(255,255,255,0.98)",
           padding: "20px 24px", display: "flex", flexDirection: "column", gap: 16,
-          borderBottom: "1px solid rgba(46, 204, 113, 0.2)",
+          borderBottom: "1px solid #E2EBE5",
         }}>
           {NAV_ITEMS.map((item) => (
             <a key={item.label} href="#" onClick={(e) => { e.preventDefault(); setMobileOpen(false); scrollTo(item.target); }}
@@ -1147,10 +1147,10 @@ function Header({ scrolled }) {
           ))}
           <a href={PHONE_HREF}
             style={{ color: "#fff", textDecoration: "none", fontSize: 16, fontWeight: 700, fontFamily: "'Plus Jakarta Sans', sans-serif", display: "flex", alignItems: "center", gap: 8 }}>
-            <PhoneIcon size={16} color="#00E676" /> {PHONE_NUMBER}
+            <PhoneIcon size={16} color="#1B7A3D" /> {PHONE_NUMBER}
           </a>
-          <a href="#" onClick={(e) => { e.preventDefault(); setMobileOpen(false); scrollTo("contact"); }}
-            style={{ background: "#00E676", color: "#060A07", padding: "12px 24px", borderRadius: 4, fontWeight: 700, textDecoration: "none", textAlign: "center", fontFamily: "'Syne', sans-serif", textTransform: "uppercase", letterSpacing: "0.04em", fontSize: 13 }}>
+          <a href="#" onClick={(e) => { e.preventDefault(); setMobileOpen(false); scrollTo("schedule"); }}
+            style={{ background: "#1B7A3D", color: "#fff", padding: "12px 24px", borderRadius: 4, fontWeight: 700, textDecoration: "none", textAlign: "center", fontFamily: "'Syne', sans-serif", textTransform: "uppercase", letterSpacing: "0.04em", fontSize: 13 }}>
             Schedule Walkthrough
           </a>
         </div>
@@ -1225,7 +1225,7 @@ function HeroLeadForm() {
   };
 
   const stepLabelStyle = {
-    fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: '#00E676',
+    fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: '#1B7A3D',
     fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: 6,
   };
 
@@ -1242,15 +1242,15 @@ function HeroLeadForm() {
   const pillBtn = (active) => ({
     flex: 1, padding: '11px 8px', borderRadius: 8, fontSize: 13, fontWeight: 600,
     cursor: 'pointer', fontFamily: "'Plus Jakarta Sans', sans-serif", textAlign: 'center',
-    background: active ? 'rgba(0,230,118,0.12)' : 'rgba(255,255,255,0.04)',
-    border: '1px solid', borderColor: active ? '#00E676' : 'rgba(255,255,255,0.1)',
-    color: active ? '#00E676' : 'rgba(255,255,255,0.65)',
+    background: active ? 'rgba(27,122,61,0.12)' : 'rgba(255,255,255,0.04)',
+    border: '1px solid', borderColor: active ? '#1B7A3D' : 'rgba(255,255,255,0.1)',
+    color: active ? '#1B7A3D' : 'rgba(255,255,255,0.65)',
     transition: 'all 0.18s',
   });
 
   const continueBtn = {
-    width: '100%', padding: '14px', background: '#00E676',
-    border: 'none', borderRadius: 4, color: '#060A07', fontSize: 13, fontWeight: 700,
+    width: '100%', padding: '14px', background: '#1B7A3D',
+    border: 'none', borderRadius: 4, color: '#0A2A16', fontSize: 13, fontWeight: 700,
     cursor: 'pointer', fontFamily: "'Syne', sans-serif", textTransform: 'uppercase', letterSpacing: '0.04em',
     transition: 'transform 0.18s',
   };
@@ -1268,21 +1268,21 @@ function HeroLeadForm() {
   if (submitted) {
     return (
       <div className="hero-form" style={{
-        background: '#0D1310', border: '1px solid rgba(0,230,118,0.3)',
+        background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.12)',
         borderRadius: 0, padding: '48px 40px', textAlign: 'center',
       }}>
-        <div style={{ marginBottom: 20 }}><CheckCircleIcon size={52} color="#00E676" /></div>
+        <div style={{ marginBottom: 20 }}><CheckCircleIcon size={52} color="#1B7A3D" /></div>
         <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: 24, color: '#fff', marginBottom: 10 }}>
           Walkthrough Requested
         </h3>
         <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 15, color: 'rgba(255,255,255,0.6)', lineHeight: 1.7, marginBottom: 28 }}>
           Thank you! We'll contact you within <strong style={{ color: '#fff' }}>4 business hours</strong> to confirm your walkthrough.
         </p>
-        <div style={{ padding: '16px 20px', background: 'rgba(0,230,118,0.07)', borderRadius: 10, border: '1px solid rgba(0,230,118,0.15)' }}>
+        <div style={{ padding: '16px 20px', background: 'rgba(27,122,61,0.07)', borderRadius: 10, border: '1px solid rgba(27,122,61,0.15)' }}>
           <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 12, color: 'rgba(255,255,255,0.45)', marginBottom: 4 }}>
             Prefer to talk now?
           </div>
-          <a href={PHONE_HREF} style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 18, color: '#00E676', fontWeight: 700, textDecoration: 'none' }}>
+          <a href={PHONE_HREF} style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 18, color: '#1B7A3D', fontWeight: 700, textDecoration: 'none' }}>
             {PHONE_NUMBER}
           </a>
         </div>
@@ -1292,7 +1292,7 @@ function HeroLeadForm() {
 
   return (
     <div className="hero-form" style={{
-      background: '#0D1310', border: '1px solid rgba(0,230,118,0.1)',
+      background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)',
       borderRadius: 0, padding: '36px 40px',
     }}>
       {/* Progress bar */}
@@ -1300,7 +1300,7 @@ function HeroLeadForm() {
         {[1, 2, 3].map((s) => (
           <div key={s} style={{
             flex: 1, height: 3, borderRadius: 2,
-            background: s <= formStep ? '#00E676' : 'rgba(255,255,255,0.1)',
+            background: s <= formStep ? '#1B7A3D' : 'rgba(255,255,255,0.1)',
             transition: 'background 0.3s',
           }} />
         ))}
@@ -1325,26 +1325,26 @@ function HeroLeadForm() {
                   key={ft.value}
                   onClick={() => setFormData({ ...formData, facilityType: ft.value })}
                   style={{
-                    background: active ? 'rgba(0,230,118,0.12)' : 'rgba(255,255,255,0.03)',
-                    border: '1px solid', borderColor: active ? '#00E676' : 'rgba(255,255,255,0.1)',
+                    background: active ? 'rgba(27,122,61,0.12)' : 'rgba(255,255,255,0.03)',
+                    border: '1px solid', borderColor: active ? '#1B7A3D' : 'rgba(255,255,255,0.1)',
                     borderRadius: 10, padding: '12px 10px', cursor: 'pointer', textAlign: 'left',
                     display: 'flex', alignItems: 'center', gap: 9, transition: 'all 0.18s',
                     gridColumn: ft.value === 'other' ? 'span 2' : undefined,
                   }}
-                  onMouseOver={(e) => { if (!active) e.currentTarget.style.borderColor = 'rgba(0,230,118,0.35)'; }}
+                  onMouseOver={(e) => { if (!active) e.currentTarget.style.borderColor = 'rgba(27,122,61,0.35)'; }}
                   onMouseOut={(e) => { if (!active) e.currentTarget.style.borderColor = 'rgba(255,255,255,0.1)'; }}
                 >
                   <span style={{ display: 'flex', flexShrink: 0 }}>
-                    {getIcon(ft.iconKey, 16, active ? '#00E676' : 'rgba(255,255,255,0.45)')}
+                    {getIcon(ft.iconKey, 16, active ? '#1B7A3D' : 'rgba(255,255,255,0.45)')}
                   </span>
                   <span style={{
                     fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, fontWeight: 600,
-                    color: active ? '#00E676' : 'rgba(255,255,255,0.7)',
+                    color: active ? '#1B7A3D' : 'rgba(255,255,255,0.7)',
                   }}>
                     {ft.label}
                   </span>
                   {active && (
-                    <span style={{ marginLeft: 'auto', color: '#00E676', fontSize: 14, fontWeight: 700 }}>✓</span>
+                    <span style={{ marginLeft: 'auto', color: '#1B7A3D', fontSize: 14, fontWeight: 700 }}>✓</span>
                   )}
                 </button>
               );
@@ -1384,8 +1384,8 @@ function HeroLeadForm() {
               opacity: (!formData.facilityType || !formData.squareFootage) ? 0.45 : 1,
               cursor: (!formData.facilityType || !formData.squareFootage) ? 'not-allowed' : 'pointer',
             }}
-            onMouseOver={(e) => { if (formData.facilityType && formData.squareFootage) { e.currentTarget.style.transform = 'translateY(-1px)'; e.currentTarget.style.boxShadow = '0 6px 28px rgba(0,230,118,0.38)'; } }}
-            onMouseOut={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,230,118,0.28)'; }}
+            onMouseOver={(e) => { if (formData.facilityType && formData.squareFootage) { e.currentTarget.style.transform = 'translateY(-1px)'; e.currentTarget.style.boxShadow = '0 6px 28px rgba(27,122,61,0.38)'; } }}
+            onMouseOut={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 20px rgba(27,122,61,0.28)'; }}
           >
             Continue →
           </button>
@@ -1436,8 +1436,8 @@ function HeroLeadForm() {
               opacity: (!formData.currentProvider || !formData.timeline) ? 0.45 : 1,
               cursor: (!formData.currentProvider || !formData.timeline) ? 'not-allowed' : 'pointer',
             }}
-            onMouseOver={(e) => { if (formData.currentProvider && formData.timeline) { e.currentTarget.style.transform = 'translateY(-1px)'; e.currentTarget.style.boxShadow = '0 6px 28px rgba(0,230,118,0.38)'; } }}
-            onMouseOut={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,230,118,0.28)'; }}
+            onMouseOver={(e) => { if (formData.currentProvider && formData.timeline) { e.currentTarget.style.transform = 'translateY(-1px)'; e.currentTarget.style.boxShadow = '0 6px 28px rgba(27,122,61,0.38)'; } }}
+            onMouseOut={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 20px rgba(27,122,61,0.28)'; }}
           >
             Continue →
           </button>
@@ -1476,7 +1476,7 @@ function HeroLeadForm() {
                 value={formData[field.key]}
                 onChange={(e) => setFormData({ ...formData, [field.key]: e.target.value })}
                 style={inputStyle}
-                onFocus={(e) => (e.target.style.borderColor = 'rgba(0,230,118,0.5)')}
+                onFocus={(e) => (e.target.style.borderColor = 'rgba(27,122,61,0.5)')}
                 onBlur={(e) => (e.target.style.borderColor = 'rgba(255,255,255,0.12)')}
               />
             </div>
@@ -1490,7 +1490,7 @@ function HeroLeadForm() {
               onChange={(e) => setFormData({ ...formData, preferredDate: e.target.value })}
               min={new Date().toISOString().split('T')[0]}
               style={{ ...inputStyle, colorScheme: 'dark' }}
-              onFocus={(e) => (e.target.style.borderColor = 'rgba(0,230,118,0.5)')}
+              onFocus={(e) => (e.target.style.borderColor = 'rgba(27,122,61,0.5)')}
               onBlur={(e) => (e.target.style.borderColor = 'rgba(255,255,255,0.12)')}
             />
           </div>
@@ -1504,8 +1504,8 @@ function HeroLeadForm() {
               opacity: (!formData.name || !formData.email || !formData.phone) ? 0.45 : 1,
               cursor: (!formData.name || !formData.email || !formData.phone) ? 'not-allowed' : 'pointer',
             }}
-            onMouseOver={(e) => { if (formData.name && formData.email && formData.phone) { e.currentTarget.style.transform = 'translateY(-1px)'; e.currentTarget.style.boxShadow = '0 6px 28px rgba(0,230,118,0.4)'; } }}
-            onMouseOut={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,230,118,0.28)'; }}
+            onMouseOver={(e) => { if (formData.name && formData.email && formData.phone) { e.currentTarget.style.transform = 'translateY(-1px)'; e.currentTarget.style.boxShadow = '0 6px 28px rgba(27,122,61,0.4)'; } }}
+            onMouseOut={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 20px rgba(27,122,61,0.28)'; }}
           >
             Schedule My Walkthrough →
           </button>
@@ -1526,23 +1526,23 @@ function Hero() {
       className="noise-overlay"
       style={{
         position: "relative", minHeight: "100vh", display: "flex", alignItems: "center",
-        background: "#060A07",
+        background: "#0A2A16",
         overflow: "hidden",
       }}
     >
       <div className="hero-orb" style={{
         position: "absolute", top: -200, right: -200, width: 600, height: 600,
-        background: "radial-gradient(circle, rgba(0,230,118,0.1) 0%, rgba(0,230,118,0.03) 40%, transparent 70%)",
+        background: "radial-gradient(circle, rgba(27,122,61,0.1) 0%, rgba(27,122,61,0.03) 40%, transparent 70%)",
         borderRadius: "50%",
       }} />
       <div className="hero-orb-2" style={{
         position: "absolute", bottom: -100, left: -100, width: 500, height: 500,
-        background: "radial-gradient(circle, rgba(0,230,118,0.07) 0%, transparent 70%)",
+        background: "radial-gradient(circle, rgba(27,122,61,0.07) 0%, transparent 70%)",
         borderRadius: "50%",
       }} />
       <div className="hero-orb" style={{
         position: "absolute", top: "40%", left: "15%", width: 300, height: 300,
-        background: "radial-gradient(circle, rgba(0,230,118,0.04) 0%, transparent 70%)",
+        background: "radial-gradient(circle, rgba(27,122,61,0.04) 0%, transparent 70%)",
         borderRadius: "50%",
       }} />
       <div style={{
@@ -1555,11 +1555,11 @@ function Hero() {
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "center" }} className="hero-grid">
           <div>
             <div className="hero-badge-anim" style={{
-              display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(0,230,118,0.1)",
-              border: "1px solid rgba(0,230,118,0.25)", borderRadius: 100, padding: "6px 16px", marginBottom: 28,
+              display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(27,122,61,0.1)",
+              border: "1px solid rgba(27,122,61,0.25)", borderRadius: 100, padding: "6px 16px", marginBottom: 28,
             }}>
-              <div style={{ width: 8, height: 8, borderRadius: "50%", background: "#00E676", animation: "pulse 2s infinite" }} />
-              <span style={{ fontSize: 12, color: "#00E676", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+              <div style={{ width: 8, height: 8, borderRadius: "50%", background: "#1B7A3D", animation: "pulse 2s infinite" }} />
+              <span style={{ fontSize: 12, color: "#1B7A3D", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
                 MBE Certified • Licensed & Insured
               </span>
             </div>
@@ -1570,7 +1570,7 @@ function Hero() {
             }}>
               Your Facility Passes<br />
               Every Inspection.<br />
-              <span style={{ color: "#00E676" }}>We Guarantee It.</span>
+              <span style={{ color: "#1B7A3D" }}>We Guarantee It.</span>
             </h1>
 
             <p className="hero-subtitle-anim" style={{
@@ -1582,13 +1582,13 @@ function Hero() {
 
             <div className="hero-ctas-anim" style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
               <a href="#" onClick={(e) => { e.preventDefault(); scrollTo("schedule"); }} className="cta-glow" style={{
-                background: "#00E676", color: "#060A07", padding: "16px 36px",
+                background: "#1B7A3D", color: "#fff", padding: "16px 36px",
                 borderRadius: 4, fontWeight: 700, fontSize: 14, textDecoration: "none", fontFamily: "'Syne', sans-serif",
                 letterSpacing: "0.04em", textTransform: "uppercase", transition: "transform 0.2s",
                 display: "inline-flex", alignItems: "center", gap: 8,
               }}
-                onMouseOver={(e) => { e.currentTarget.style.transform = "translateY(-2px)"; e.currentTarget.style.boxShadow = "0 6px 32px rgba(0,230,118,0.45)"; }}
-                onMouseOut={(e) => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "0 4px 24px rgba(0,230,118,0.3)"; }}
+                onMouseOver={(e) => { e.currentTarget.style.transform = "translateY(-2px)"; e.currentTarget.style.boxShadow = "0 6px 32px rgba(27,122,61,0.45)"; }}
+                onMouseOut={(e) => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "0 4px 24px rgba(27,122,61,0.3)"; }}
               >
                 Schedule a Free Walkthrough
                 <span style={{ fontSize: 20 }}>→</span>
@@ -1598,7 +1598,7 @@ function Hero() {
                 borderRadius: 10, fontWeight: 600, fontSize: 16, textDecoration: "none", fontFamily: "'Plus Jakarta Sans', sans-serif",
                 border: "1px solid rgba(255,255,255,0.15)", transition: "all 0.2s",
               }}
-                onMouseOver={(e) => { e.currentTarget.style.background = "rgba(255,255,255,0.1)"; e.currentTarget.style.borderColor = "rgba(0,230,118,0.4)"; }}
+                onMouseOver={(e) => { e.currentTarget.style.background = "rgba(255,255,255,0.1)"; e.currentTarget.style.borderColor = "rgba(27,122,61,0.4)"; }}
                 onMouseOut={(e) => { e.currentTarget.style.background = "rgba(255,255,255,0.05)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.15)"; }}
               >
                 Get an Instant Estimate
@@ -1612,8 +1612,8 @@ function Hero() {
                 { text: "$2M+ Insurance" },
                 { text: "Background-Checked Teams" },
               ].map((item) => (
-                <div key={item.text} style={{ display: "flex", alignItems: "center", gap: 6, background: "rgba(0,230,118,0.08)", border: "1px solid rgba(0,230,118,0.2)", borderRadius: 100, padding: "5px 14px" }}>
-                  <span style={{ color: "#00E676", fontWeight: 700, fontSize: 12 }}>✓</span>
+                <div key={item.text} style={{ display: "flex", alignItems: "center", gap: 6, background: "rgba(27,122,61,0.08)", border: "1px solid rgba(27,122,61,0.2)", borderRadius: 100, padding: "5px 14px" }}>
+                  <span style={{ color: "#1B7A3D", fontWeight: 700, fontSize: 12 }}>✓</span>
                   <span style={{ color: "rgba(255,255,255,0.7)", fontSize: 12, fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 600 }}>{item.text}</span>
                 </div>
               ))}
@@ -1631,20 +1631,20 @@ function Hero() {
 
 function StatsBar() {
   return (
-    <section className="noise-overlay" style={{ background: "#0A0F0B", position: "relative", overflow: "hidden" }}>
+    <section style={{ background: "#F7FAF8", position: "relative", overflow: "hidden" }}>
       {/* Shimmer top line */}
-      <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 1, background: "linear-gradient(90deg, transparent, rgba(0,230,118,0.4), transparent)" }} />
+      <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 1, background: "linear-gradient(90deg, transparent, rgba(27,122,61,0.4), transparent)" }} />
       <div style={{ maxWidth: 1280, margin: "0 auto", padding: "56px 24px", display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 0, textAlign: "center", position: "relative", zIndex: 1 }} className="stats-grid">
         {TRUST_STATS.map((stat, i) => (
           <AnimatedSection key={stat.label} delay={i * 0.1}>
             <div style={{
               padding: "20px 24px",
-              borderRight: i < TRUST_STATS.length - 1 ? "1px solid rgba(255,255,255,0.06)" : "none",
+              borderRight: i < TRUST_STATS.length - 1 ? "1px solid #EEF4F0" : "none",
             }}>
               <div className="stat-number" style={{ fontSize: "clamp(32px, 4vw, 48px)", fontWeight: 800, fontFamily: "'Syne', sans-serif", lineHeight: 1 }}>
                 {stat.number}
               </div>
-              <div style={{ fontSize: 13, color: "rgba(255,255,255,0.5)", marginTop: 10, fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 500, lineHeight: 1.4 }}>
+              <div style={{ fontSize: 13, color: "#6A7D72", marginTop: 10, fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 500, lineHeight: 1.4 }}>
                 {stat.label}
               </div>
             </div>
@@ -1652,7 +1652,7 @@ function StatsBar() {
         ))}
       </div>
       {/* Shimmer bottom line */}
-      <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: 1, background: "linear-gradient(90deg, transparent, rgba(0,230,118,0.2), transparent)" }} />
+      <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: 1, background: "linear-gradient(90deg, transparent, rgba(27,122,61,0.2), transparent)" }} />
     </section>
   );
 }
@@ -1660,12 +1660,12 @@ function StatsBar() {
 function AuthorityBar() {
   const items = ["NYC Charter Schools", "Westchester Medical Offices", "NJ Houses of Worship", "CT Office Buildings", "PA Educational Facilities", "Bronx Community Centers", "Miami Healthcare Clinics", "Government Facilities", "MBE/MWBE Certified", "SAM.gov Registered", "$2M+ Insured"];
   return (
-    <section style={{ background: '#0D1310', borderTop: '1px solid rgba(0,230,118,0.08)', borderBottom: '1px solid rgba(0,230,118,0.08)', padding: '14px 0', overflow: 'hidden', position: 'relative' }}>
+    <section style={{ background: '#FFFFFF', borderTop: '1px solid #E8F5ED', borderBottom: '1px solid #E8F5ED', padding: '14px 0', overflow: 'hidden', position: 'relative' }}>
       <div style={{ display: 'flex', animation: 'marquee 30s linear infinite', whiteSpace: 'nowrap' }}>
         {[...items, ...items].map((item, i) => (
           <div key={i} style={{ display: 'inline-flex', alignItems: 'center', gap: 24, padding: '0 32px' }}>
-            <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 11, color: 'rgba(0,230,118,0.6)', letterSpacing: '0.1em', textTransform: 'uppercase' }}>{item}</span>
-            <span style={{ color: 'rgba(0,230,118,0.2)', fontSize: 10 }}>◆</span>
+            <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 11, color: '#8A9B91', letterSpacing: '0.1em', textTransform: 'uppercase' }}>{item}</span>
+            <span style={{ color: '#C8A34D', fontSize: 10 }}>◆</span>
           </div>
         ))}
       </div>
@@ -1675,15 +1675,15 @@ function AuthorityBar() {
 
 function ComplianceSection() {
   return (
-    <section id="compliance" className="noise-overlay" style={{ background: "#060A07", padding: "80px 24px", position: "relative", overflow: "hidden" }}>
+    <section id="compliance" style={{ background: "#FFFFFF", padding: "80px 24px", position: "relative", overflow: "hidden" }}>
       <div style={{ maxWidth: 1280, margin: "0 auto" }}>
         <AnimatedSection>
           <div style={{ textAlign: "center", marginBottom: 48 }}>
-            <div style={{ fontSize: 10, color: "#00E676", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
+            <div style={{ fontSize: 10, color: "#1B7A3D", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
               Compliance &amp; Certifications
             </div>
-            <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 700, color: "#fff", lineHeight: 1.15 }}>
-              RFP-Ready. Procurement-Compliant.<br /><span style={{ color: "#00E676" }}>Audit-Proof.</span>
+            <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 700, color: "#1A2B1F", lineHeight: 1.15 }}>
+              RFP-Ready. Procurement-Compliant.<br /><span style={{ color: "#1B7A3D" }}>Audit-Proof.</span>
             </h2>
           </div>
         </AnimatedSection>
@@ -1695,27 +1695,27 @@ function ComplianceSection() {
             { iconKey: "clipboard", title: "OSHA Compliant", desc: "All field staff trained on OSHA safety standards. Background-checked and drug-tested workforce." },
           ].map((item) => (
             <AnimatedSection key={item.title}>
-              <div style={{ background: "#0D1310", border: "1px solid rgba(0,230,118,0.1)", borderRadius: 0, padding: 32, textAlign: "center", height: "100%", display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+              <div style={{ background: "#FFFFFF", border: "1px solid #E2EBE5", borderRadius: 8, padding: 32, textAlign: "center", height: "100%", display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                 <IconBox size={64} radius={16} dark>
                   {getIcon(item.iconKey, 32)}
                 </IconBox>
                 <div style={{ height: 16 }} />
-                <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 700, fontSize: 16, color: "#fff", marginBottom: 10 }}>{item.title}</div>
-                <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.7 }}>{item.desc}</div>
+                <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 700, fontSize: 16, color: "#1A2B1F", marginBottom: 10 }}>{item.title}</div>
+                <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "#6A7D72", lineHeight: 1.7 }}>{item.desc}</div>
               </div>
             </AnimatedSection>
           ))}
         </div>
         <div style={{ textAlign: "center", marginTop: 40 }}>
-          <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.4)", marginBottom: 8 }}>NAICS Codes: 561720 (Janitorial Services) | 238210 (Electrical Contractors) | 561790 (Other Services to Buildings)</div>
-          <a href="#" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }} style={{
+          <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "#8A9B91", marginBottom: 8 }}>NAICS Codes: 561720 (Janitorial Services) | 238210 (Electrical Contractors) | 561790 (Other Services to Buildings)</div>
+          <a href="#" onClick={(e) => { e.preventDefault(); scrollTo("schedule"); }} style={{
             display: "inline-flex", alignItems: "center", gap: 8, marginTop: 16,
-            background: "rgba(0,230,118,0.12)", color: "#00E676", padding: "10px 24px", borderRadius: 8,
+            background: "#E2EBE5", color: "#1B7A3D", padding: "10px 24px", borderRadius: 8,
             fontWeight: 600, fontSize: 14, textDecoration: "none", fontFamily: "'Plus Jakarta Sans', sans-serif",
-            border: "1px solid rgba(0,230,118,0.25)", transition: "all 0.2s",
+            border: "1px solid rgba(27,122,61,0.25)", transition: "all 0.2s",
           }}
-            onMouseOver={(e) => { e.currentTarget.style.background = "rgba(0,230,118,0.2)"; }}
-            onMouseOut={(e) => { e.currentTarget.style.background = "rgba(0,230,118,0.12)"; }}
+            onMouseOver={(e) => { e.currentTarget.style.background = "rgba(27,122,61,0.2)"; }}
+            onMouseOut={(e) => { e.currentTarget.style.background = "rgba(27,122,61,0.12)"; }}
           >
             Request Capability Statement &amp; W-9 \u2192
           </a>
@@ -1727,21 +1727,21 @@ function ComplianceSection() {
 
 function About() {
   return (
-    <section id="about" style={{ background: "#0A0F0B", padding: "100px 24px" }}>
+    <section id="about" style={{ background: "#F7FAF8", padding: "100px 24px" }}>
       <div style={{ maxWidth: 1280, margin: "0 auto" }}>
         <AnimatedSection>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "center" }} className="about-grid">
             <div>
-              <div style={{ fontSize: 10, color: "#00E676", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
+              <div style={{ fontSize: 10, color: "#1B7A3D", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
                 About GreenPoint
               </div>
-              <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#fff", lineHeight: 1.15, marginBottom: 24 }}>
-                Your Last Cleaning Company<br />Didn't Show Up. <span style={{ color: "#00E676" }}>We Will.</span>
+              <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#1A2B1F", lineHeight: 1.15, marginBottom: 24 }}>
+                Your Last Cleaning Company<br />Didn't Show Up. <span style={{ color: "#1B7A3D" }}>We Will.</span>
               </h2>
-              <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "rgba(255,255,255,0.6)", lineHeight: 1.8, marginBottom: 20 }}>
+              <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "#4A5E52", lineHeight: 1.8, marginBottom: 20 }}>
                 GreenPoint Maintenance Services Corp is an MBE-certified facility services provider headquartered in New York, serving institutional and commercial clients across five states since 2018. We specialize in the facilities that can't afford missed cleanings: schools with health inspections, medical offices with OSHA requirements, and government buildings with procurement compliance standards.
               </p>
-              <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "rgba(255,255,255,0.6)", lineHeight: 1.8, marginBottom: 28 }}>
+              <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "#4A5E52", lineHeight: 1.8, marginBottom: 28 }}>
                 Every cleaning session is verified in real-time through JaniTrack — our proprietary system that provides timestamped photo documentation, GPS-tagged task completion, and ATP bioluminescence readings. You don't have to trust that we cleaned. You can see the proof.
               </p>
 
@@ -1753,12 +1753,12 @@ function About() {
                   { label: "OSHA Compliant", sub: "Trained Workforce" },
                 ].map((item) => (
                   <div key={item.label} style={{ display: "flex", alignItems: "flex-start", gap: 12 }}>
-                    <div style={{ width: 36, height: 36, borderRadius: 8, background: "rgba(0,230,118,0.1)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                      <span style={{ color: "#00E676", fontWeight: 700, fontSize: 16 }}>✓</span>
+                    <div style={{ width: 36, height: 36, borderRadius: 8, background: "#E2EBE5", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                      <span style={{ color: "#1B7A3D", fontWeight: 700, fontSize: 16 }}>✓</span>
                     </div>
                     <div>
-                      <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 700, fontSize: 14, color: "#fff" }}>{item.label}</div>
-                      <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 12, color: "rgba(255,255,255,0.4)" }}>{item.sub}</div>
+                      <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 700, fontSize: 14, color: "#1A2B1F" }}>{item.label}</div>
+                      <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 12, color: "#8A9B91" }}>{item.sub}</div>
                     </div>
                   </div>
                 ))}
@@ -1767,24 +1767,24 @@ function About() {
 
             <div style={{ position: "relative" }}>
               <div style={{
-                background: "#0D1310", borderRadius: 0, border: "1px solid rgba(0,230,118,0.15)", padding: 48,
+                background: "#FFFFFF", borderRadius: 0, border: "1px solid rgba(27,122,61,0.15)", padding: 48,
                 position: "relative", overflow: "hidden",
               }}>
-                <div style={{ position: "absolute", top: -60, right: -60, width: 200, height: 200, background: "radial-gradient(circle, rgba(0,230,118,0.15), transparent)", borderRadius: "50%" }} />
+                <div style={{ position: "absolute", top: -60, right: -60, width: 200, height: 200, background: "radial-gradient(circle, rgba(27,122,61,0.15), transparent)", borderRadius: "50%" }} />
                 <div style={{ position: "relative", zIndex: 1 }}>
-                  <div style={{ marginBottom: 20 }}><AwardIcon size={48} color="#00E676" /></div>
-                  <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: 28, color: "#fff", marginBottom: 12 }}>
+                  <div style={{ marginBottom: 20 }}><AwardIcon size={48} color="#1B7A3D" /></div>
+                  <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: 28, color: "#1A2B1F", marginBottom: 12 }}>
                     Certified Minority Business Enterprise
                   </h3>
                   <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 15, color: "rgba(255,255,255,0.65)", lineHeight: 1.7, marginBottom: 24 }}>
                     Registered with New York State and the City of New York. Eligible for all diversity procurement programs and MWBE set-aside contracts.
                   </p>
-                  <div style={{ borderTop: "1px solid rgba(255,255,255,0.1)", paddingTop: 20 }}>
-                    <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.45)", marginBottom: 8 }}>Also registered with:</div>
+                  <div style={{ borderTop: "1px solid #E2EBE5", paddingTop: 20 }}>
+                    <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "#8A9B91", marginBottom: 8 }}>Also registered with:</div>
                     <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
                       {["SAM.gov", "OSHA Compliant", "EPA Standards"].map((badge) => (
                         <span key={badge} style={{
-                          background: "rgba(0,230,118,0.15)", color: "#00E676", padding: "4px 12px",
+                          background: "rgba(27,122,61,0.15)", color: "#1B7A3D", padding: "4px 12px",
                           borderRadius: 6, fontSize: 12, fontWeight: 600, fontFamily: "'Plus Jakarta Sans', sans-serif",
                         }}>
                           {badge}
@@ -1804,22 +1804,22 @@ function About() {
 
 function Services() {
   return (
-    <section id="services" style={{ background: "#060A07", padding: "100px 24px", position: "relative", overflow: "hidden" }}>
+    <section id="services" style={{ background: "#FFFFFF", padding: "100px 24px", position: "relative", overflow: "hidden" }}>
       {/* Dot grid texture */}
       <div style={{ position: "absolute", inset: 0, opacity: 0.4, pointerEvents: "none", backgroundImage: "radial-gradient(circle, rgba(13,40,24,0.05) 0.8px, transparent 0.8px)", backgroundSize: "28px 28px" }} />
       {/* Ambient green glow */}
-      <div style={{ position: "absolute", top: "30%", left: "-10%", width: 600, height: 600, background: "radial-gradient(circle, rgba(0,230,118,0.04) 0%, transparent 60%)", borderRadius: "50%", pointerEvents: "none" }} />
+      <div style={{ position: "absolute", top: "30%", left: "-10%", width: 600, height: 600, background: "radial-gradient(circle, rgba(27,122,61,0.04) 0%, transparent 60%)", borderRadius: "50%", pointerEvents: "none" }} />
       <div style={{ maxWidth: 1280, margin: "0 auto", position: "relative", zIndex: 1 }}>
         <AnimatedSection>
           <div style={{ textAlign: "center", marginBottom: 64 }}>
             <div className="green-line-center" />
-            <div style={{ fontSize: 10, color: "#00E676", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
+            <div style={{ fontSize: 10, color: "#1B7A3D", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
               Our Services
             </div>
-            <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#fff", lineHeight: 1.15, marginBottom: 16 }}>
-              Complete Facility Solutions.<br /><span style={{ color: "#00E676" }}>One Contract. One Invoice.</span>
+            <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#1A2B1F", lineHeight: 1.15, marginBottom: 16 }}>
+              Complete Facility Solutions.<br /><span style={{ color: "#1B7A3D" }}>One Contract. One Invoice.</span>
             </h2>
-            <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "rgba(255,255,255,0.55)", maxWidth: 600, margin: "0 auto", lineHeight: 1.7 }}>
+            <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "#4A5E52", maxWidth: 600, margin: "0 auto", lineHeight: 1.7 }}>
               Consolidate your facility services under one provider. From daily janitorial to emergency response — managed, documented, and verified.
             </p>
           </div>
@@ -1831,8 +1831,8 @@ function Services() {
               <div
                 className="premium-card card-accent-top"
                 style={{
-                  background: "#0D1310",
-                  borderRadius: 0, padding: 40, border: "1px solid rgba(0,230,118,0.1)",
+                  background: "#FFFFFF",
+                  borderRadius: 0, padding: 40, border: "1px solid #E2EBE5",
                   cursor: "default", height: "100%",
                   position: "relative", overflow: "hidden",
                 }}
@@ -1841,15 +1841,15 @@ function Services() {
                   {getIcon(svc.iconKey, 28)}
                 </IconBox>
                 <div style={{ height: 18 }} />
-                <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: 20, fontWeight: 700, color: "#fff", marginBottom: 6 }}>
+                <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: 20, fontWeight: 700, color: "#1A2B1F", marginBottom: 6 }}>
                   {svc.title}
                 </h3>
                 {svc.outcome && (
-                  <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "#00E676", fontWeight: 700, marginBottom: 10 }}>
+                  <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "#1B7A3D", fontWeight: 700, marginBottom: 10 }}>
                     {svc.outcome}
                   </div>
                 )}
-                <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.6)", lineHeight: 1.7 }}>
+                <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "#4A5E52", lineHeight: 1.7 }}>
                   {svc.desc}
                 </p>
               </div>
@@ -1865,18 +1865,18 @@ function IndustriesSection() {
   const [active, setActive] = useState(0);
 
   return (
-    <section id="industries" className="noise-overlay" style={{ background: "#060A07", padding: "100px 24px", position: "relative", overflow: "hidden" }}>
+    <section id="industries" style={{ background: "#FFFFFF", padding: "100px 24px", position: "relative", overflow: "hidden" }}>
       <div style={{ maxWidth: 1280, margin: "0 auto" }}>
         <AnimatedSection>
           <div style={{ textAlign: "center", marginBottom: 64 }}>
-            <div style={{ fontSize: 10, color: "#00E676", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
+            <div style={{ fontSize: 10, color: "#1B7A3D", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
               Industries We Serve
             </div>
-            <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#fff", lineHeight: 1.15, marginBottom: 16 }}>
+            <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#1A2B1F", lineHeight: 1.15, marginBottom: 16 }}>
               Specialized Cleaning for<br />
-              <span style={{ color: "#00E676" }}>Every Facility Type</span>
+              <span style={{ color: "#1B7A3D" }}>Every Facility Type</span>
             </h2>
-            <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "rgba(255,255,255,0.55)", maxWidth: 600, margin: "0 auto", lineHeight: 1.7 }}>
+            <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "#4A5E52", maxWidth: 600, margin: "0 auto", lineHeight: 1.7 }}>
               Each industry has unique requirements. We've built dedicated protocols for every vertical we serve.
             </p>
           </div>
@@ -1890,14 +1890,14 @@ function IndustriesSection() {
                 onClick={() => setActive(i)}
                 style={{
                   padding: "10px 20px", borderRadius: 100, border: "1px solid",
-                  borderColor: active === i ? "#00E676" : "rgba(255,255,255,0.15)",
-                  background: active === i ? "rgba(0,230,118,0.15)" : "transparent",
-                  color: active === i ? "#00E676" : "rgba(255,255,255,0.6)",
+                  borderColor: active === i ? "#1B7A3D" : "#D8E2DC",
+                  background: active === i ? "rgba(27,122,61,0.15)" : "transparent",
+                  color: active === i ? "#1B7A3D" : "#4A5E52",
                   fontSize: 14, fontWeight: 600, cursor: "pointer", fontFamily: "'Plus Jakarta Sans', sans-serif",
                   transition: "all 0.2s", display: "flex", alignItems: "center", gap: 8,
                 }}
               >
-                <span style={{ display: 'flex' }}>{getIcon(ind.iconKey, 16, active === i ? '#00E676' : 'rgba(255,255,255,0.5)')}</span> {ind.title.split("&")[0].trim()}
+                <span style={{ display: 'flex' }}>{getIcon(ind.iconKey, 16, active === i ? '#1B7A3D' : '#6A7D72')}</span> {ind.title.split("&")[0].trim()}
               </button>
             ))}
           </div>
@@ -1905,45 +1905,45 @@ function IndustriesSection() {
 
         <AnimatedSection>
           <div style={{
-            background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.08)",
+            background: "#F5F9F6", border: "1px solid #E8F0EB",
             borderRadius: 20, padding: "48px", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 48, alignItems: "center",
             position: "relative", overflow: "hidden",
           }} className="industry-detail">
             {/* Corner glow accent */}
-            <div style={{ position: "absolute", top: -80, right: -80, width: 300, height: 300, background: "radial-gradient(circle, rgba(0,230,118,0.08) 0%, transparent 65%)", borderRadius: "50%", pointerEvents: "none" }} />
+            <div style={{ position: "absolute", top: -80, right: -80, width: 300, height: 300, background: "radial-gradient(circle, #E8F5ED 0%, transparent 65%)", borderRadius: "50%", pointerEvents: "none" }} />
             <div>
               <IconBox size={72} radius={18} dark>
                 {getIcon(INDUSTRIES[active].iconKey, 36)}
               </IconBox>
               <div style={{ height: 16 }} />
-              <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: 28, fontWeight: 700, color: "#fff", marginBottom: 14 }}>
+              <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: 28, fontWeight: 700, color: "#1A2B1F", marginBottom: 14 }}>
                 {INDUSTRIES[active].title}
               </h3>
-              <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "rgba(255,255,255,0.6)", lineHeight: 1.8, marginBottom: 28 }}>
+              <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "#4A5E52", lineHeight: 1.8, marginBottom: 28 }}>
                 {INDUSTRIES[active].desc}
               </p>
-              <a href="#" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }} style={{
+              <a href="#" onClick={(e) => { e.preventDefault(); scrollTo("schedule"); }} style={{
                 display: "inline-flex", alignItems: "center", gap: 8,
-                background: "#00E676", color: "#fff", padding: "12px 28px", borderRadius: 8,
+                background: "#1B7A3D", color: "#1A2B1F", padding: "12px 28px", borderRadius: 8,
                 fontWeight: 600, fontSize: 14, textDecoration: "none", fontFamily: "'Plus Jakarta Sans', sans-serif",
               }}>
                 Get a {INDUSTRIES[active].title.split("&")[0].trim()} Cleaning Quote →
               </a>
             </div>
             <div>
-              <div style={{ fontSize: 13, color: "rgba(255,255,255,0.4)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 18, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+              <div style={{ fontSize: 13, color: "#8A9B91", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 18, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
                 What's Included
               </div>
               {INDUSTRIES[active].features.map((feat, i) => (
                 <div key={i} style={{
                   display: "flex", alignItems: "center", gap: 14, padding: "14px 0",
-                  borderBottom: i < INDUSTRIES[active].features.length - 1 ? "1px solid rgba(255,255,255,0.06)" : "none",
+                  borderBottom: i < INDUSTRIES[active].features.length - 1 ? "1px solid #EEF4F0" : "none",
                 }}>
                   <div style={{
-                    width: 28, height: 28, borderRadius: 7, background: "rgba(0,230,118,0.12)",
+                    width: 28, height: 28, borderRadius: 7, background: "#E2EBE5",
                     display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0,
                   }}>
-                    <span style={{ color: "#00E676", fontSize: 13, fontWeight: 700 }}>✓</span>
+                    <span style={{ color: "#1B7A3D", fontSize: 13, fontWeight: 700 }}>✓</span>
                   </div>
                   <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 15, color: "rgba(255,255,255,0.8)" }}>
                     {feat}
@@ -1960,23 +1960,23 @@ function IndustriesSection() {
 
 function JaniTrack() {
   return (
-    <section id="janitrack" className="noise-overlay" style={{ background: "#0A0F0B", padding: "100px 24px", position: "relative", overflow: "hidden" }}>
+    <section id="janitrack" style={{ background: "#F7FAF8", padding: "100px 24px", position: "relative", overflow: "hidden" }}>
       {/* Ambient glow */}
-      <div style={{ position: "absolute", top: "20%", right: "10%", width: 500, height: 500, background: "radial-gradient(circle, rgba(0,230,118,0.06) 0%, transparent 70%)", borderRadius: "50%", pointerEvents: "none" }} />
+      <div style={{ position: "absolute", top: "20%", right: "10%", width: 500, height: 500, background: "radial-gradient(circle, rgba(27,122,61,0.06) 0%, transparent 70%)", borderRadius: "50%", pointerEvents: "none" }} />
       <div style={{ maxWidth: 1280, margin: "0 auto" }}>
         <AnimatedSection>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "center" }} className="janitrack-grid">
             <div style={{ position: "relative" }}>
               <div style={{
-                background: "#0D1310", borderRadius: 0, padding: 32, overflow: "hidden",
-                border: "1px solid rgba(0,230,118,0.2)", boxShadow: "0 24px 80px rgba(0,0,0,0.15)",
+                background: "#FFFFFF", borderRadius: 0, padding: 32, overflow: "hidden",
+                border: "1px solid rgba(27,122,61,0.2)", boxShadow: "0 24px 80px rgba(0,0,0,0.15)",
               }}>
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 28 }}>
                   <div>
-                    <div style={{ fontSize: 11, color: "#00E676", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>JaniTrack</div>
-                    <div style={{ fontSize: 18, color: "#fff", fontWeight: 700, fontFamily: "'Syne', sans-serif", marginTop: 2 }}>Live Dashboard</div>
+                    <div style={{ fontSize: 11, color: "#1B7A3D", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>JaniTrack</div>
+                    <div style={{ fontSize: 18, color: "#1A2B1F", fontWeight: 700, fontFamily: "'Syne', sans-serif", marginTop: 2 }}>Live Dashboard</div>
                   </div>
-                  <div style={{ width: 8, height: 8, borderRadius: "50%", background: "#00E676", boxShadow: "0 0 12px rgba(0,230,118,0.6)", animation: "pulse 2s infinite" }} />
+                  <div style={{ width: 8, height: 8, borderRadius: "50%", background: "#1B7A3D", boxShadow: "0 0 12px rgba(27,122,61,0.6)", animation: "pulse 2s infinite" }} />
                 </div>
 
                 {[
@@ -1985,33 +1985,33 @@ function JaniTrack() {
                   { time: "9:38 AM", area: "Conference Room B", status: "In Progress", score: "—" },
                 ].map((entry, i) => (
                   <div key={i} style={{
-                    background: "rgba(255,255,255,0.04)", borderRadius: 12, padding: "16px 18px",
-                    marginBottom: 10, border: "1px solid rgba(255,255,255,0.06)",
+                    background: "#F2F7F4", borderRadius: 12, padding: "16px 18px",
+                    marginBottom: 10, border: "1px solid #EEF4F0",
                     display: "flex", justifyContent: "space-between", alignItems: "center",
                   }}>
                     <div>
-                      <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "#fff", fontWeight: 600 }}>{entry.area}</div>
-                      <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 12, color: "rgba(255,255,255,0.4)", marginTop: 2 }}>{entry.time}</div>
+                      <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "#1A2B1F", fontWeight: 600 }}>{entry.area}</div>
+                      <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 12, color: "#8A9B91", marginTop: 2 }}>{entry.time}</div>
                     </div>
                     <div style={{ textAlign: "right" }}>
-                      <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 12, color: entry.status.includes("✓") ? "#00E676" : "#f39c12", fontWeight: 600 }}>{entry.status}</div>
-                      <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 18, color: "#fff", fontWeight: 800, marginTop: 2 }}>{entry.score}</div>
+                      <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 12, color: entry.status.includes("✓") ? "#1B7A3D" : "#f39c12", fontWeight: 600 }}>{entry.status}</div>
+                      <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 18, color: "#1A2B1F", fontWeight: 800, marginTop: 2 }}>{entry.score}</div>
                     </div>
                   </div>
                 ))}
 
                 <div style={{
-                  marginTop: 16, background: "rgba(0,230,118,0.08)", borderRadius: 12,
-                  padding: "18px", border: "1px solid rgba(0,230,118,0.15)",
+                  marginTop: 16, background: "#E8F5ED", borderRadius: 12,
+                  padding: "18px", border: "1px solid rgba(27,122,61,0.15)",
                 }}>
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                     <div>
-                      <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: "#00E676", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em" }}>ATP Bioluminescence</div>
-                      <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.6)", marginTop: 4 }}>High-touch surface reading</div>
+                      <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: "#1B7A3D", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em" }}>ATP Bioluminescence</div>
+                      <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "#4A5E52", marginTop: 4 }}>High-touch surface reading</div>
                     </div>
                     <div style={{ textAlign: "right" }}>
-                      <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 28, color: "#00E676", fontWeight: 800 }}>12</div>
-                      <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: "rgba(255,255,255,0.4)" }}>RLU (Pass &lt;30)</div>
+                      <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 28, color: "#1B7A3D", fontWeight: 800 }}>12</div>
+                      <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 11, color: "#8A9B91" }}>RLU (Pass &lt;30)</div>
                     </div>
                   </div>
                 </div>
@@ -2019,13 +2019,13 @@ function JaniTrack() {
             </div>
 
             <div>
-              <div style={{ fontSize: 10, color: "#00E676", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
+              <div style={{ fontSize: 10, color: "#1B7A3D", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
                 Proprietary Technology
               </div>
-              <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#fff", lineHeight: 1.15, marginBottom: 24 }}>
-                JaniTrack:<br /><span style={{ color: "#00E676" }}>Proof, Not Promises</span>
+              <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#1A2B1F", lineHeight: 1.15, marginBottom: 24 }}>
+                JaniTrack:<br /><span style={{ color: "#1B7A3D" }}>Proof, Not Promises</span>
               </h2>
-              <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "rgba(255,255,255,0.6)", lineHeight: 1.8, marginBottom: 28 }}>
+              <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "#4A5E52", lineHeight: 1.8, marginBottom: 28 }}>
                 Most cleaning companies ask you to trust that the work was done. JaniTrack gives you verifiable proof — with real-time photo documentation, timestamped task completion, and ATP bioluminescence readings that quantify surface cleanliness.
               </p>
 
@@ -2037,14 +2037,14 @@ function JaniTrack() {
               ].map((item, i) => (
                 <div key={i} style={{ display: "flex", gap: 16, marginBottom: 22 }}>
                   <div style={{
-                    width: 32, height: 32, borderRadius: 8, background: "rgba(0,230,118,0.1)",
+                    width: 32, height: 32, borderRadius: 8, background: "#E2EBE5",
                     display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, marginTop: 2,
                   }}>
-                    <span style={{ color: "#00E676", fontWeight: 800, fontSize: 14 }}>{i + 1}</span>
+                    <span style={{ color: "#1B7A3D", fontWeight: 800, fontSize: 14 }}>{i + 1}</span>
                   </div>
                   <div>
-                    <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 700, fontSize: 15, color: "#fff", marginBottom: 4 }}>{item.title}</div>
-                    <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.6 }}>{item.desc}</div>
+                    <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 700, fontSize: 15, color: "#1A2B1F", marginBottom: 4 }}>{item.title}</div>
+                    <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "#6A7D72", lineHeight: 1.6 }}>{item.desc}</div>
                   </div>
                 </div>
               ))}
@@ -2058,17 +2058,17 @@ function JaniTrack() {
 
 function TestimonialsSection() {
   return (
-    <section style={{ background: "#060A07", padding: "100px 24px", position: "relative", overflow: "hidden" }}>
+    <section style={{ background: "#FFFFFF", padding: "100px 24px", position: "relative", overflow: "hidden" }}>
       {/* Decorative accent */}
-      <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 1, background: "linear-gradient(90deg, transparent 20%, rgba(0,230,118,0.15) 50%, transparent 80%)" }} />
-      <div style={{ position: "absolute", bottom: "15%", right: "-5%", width: 400, height: 400, background: "radial-gradient(circle, rgba(0,230,118,0.03) 0%, transparent 60%)", borderRadius: "50%", pointerEvents: "none" }} />
+      <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 1, background: "linear-gradient(90deg, transparent 20%, rgba(27,122,61,0.15) 50%, transparent 80%)" }} />
+      <div style={{ position: "absolute", bottom: "15%", right: "-5%", width: 400, height: 400, background: "radial-gradient(circle, rgba(27,122,61,0.03) 0%, transparent 60%)", borderRadius: "50%", pointerEvents: "none" }} />
       <div style={{ maxWidth: 1280, margin: "0 auto", position: "relative", zIndex: 1 }}>
         <AnimatedSection>
           <div style={{ textAlign: "center", marginBottom: 64 }}>
-            <div style={{ fontSize: 10, color: "#00E676", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
+            <div style={{ fontSize: 10, color: "#1B7A3D", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
               Client Testimonials
             </div>
-            <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#fff", lineHeight: 1.15 }}>
+            <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#1A2B1F", lineHeight: 1.15 }}>
               Trusted by Facilities<br />Across the Tri-State
             </h2>
           </div>
@@ -2078,15 +2078,15 @@ function TestimonialsSection() {
           {TESTIMONIALS.map((test, i) => (
             <AnimatedSection key={i} delay={i * 0.1}>
               <div style={{
-                background: "#0D1310", borderRadius: 0, padding: 36, border: "1px solid rgba(0,230,118,0.1)",
-                borderLeft: "3px solid #00E676",
+                background: "#FFFFFF", borderRadius: 8, padding: 36, border: "1px solid #E2EBE5",
+                borderLeft: "3px solid #1B7A3D",
                 height: "100%", display: "flex", flexDirection: "column",
                 position: "relative",
               }}>
                 {/* Decorative quote mark */}
                 <div style={{
                   position: "absolute", top: 20, right: 24,
-                  fontSize: 80, lineHeight: 1, color: "rgba(0,230,118,0.08)",
+                  fontSize: 80, lineHeight: 1, color: "#E8F5ED",
                   fontFamily: "'Syne', sans-serif", fontWeight: 800,
                   pointerEvents: "none", userSelect: "none",
                 }}>"</div>
@@ -2099,11 +2099,11 @@ function TestimonialsSection() {
                   "{test.quote}"
                 </p>
                 <div style={{ marginTop: 24, paddingTop: 20, borderTop: "1px solid rgba(0,0,0,0.06)" }}>
-                  <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 700, fontSize: 14, color: "#fff" }}>{test.name}</div>
-                  <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.5)", marginTop: 2 }}>{test.role}</div>
+                  <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 700, fontSize: 14, color: "#1A2B1F" }}>{test.name}</div>
+                  <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "#6A7D72", marginTop: 2 }}>{test.role}</div>
                   <span style={{
-                    display: "inline-block", marginTop: 8, background: "rgba(0,230,118,0.1)",
-                    color: "#00E676", padding: "3px 10px", borderRadius: 4, fontSize: 11, fontWeight: 600, fontFamily: "'Plus Jakarta Sans', sans-serif",
+                    display: "inline-block", marginTop: 8, background: "rgba(27,122,61,0.1)",
+                    color: "#1B7A3D", padding: "3px 10px", borderRadius: 4, fontSize: 11, fontWeight: 600, fontFamily: "'Plus Jakarta Sans', sans-serif",
                   }}>
                     {test.vertical}
                   </span>
@@ -2119,16 +2119,16 @@ function TestimonialsSection() {
 
 function ServiceAreas() {
   return (
-    <section id="areas" style={{ background: "#0A0F0B", padding: "100px 24px" }}>
+    <section id="areas" style={{ background: "#F7FAF8", padding: "100px 24px" }}>
       <div style={{ maxWidth: 1280, margin: "0 auto" }}>
         <AnimatedSection>
           <div style={{ textAlign: "center", marginBottom: 64 }}>
-            <div style={{ fontSize: 10, color: "#00E676", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
+            <div style={{ fontSize: 10, color: "#1B7A3D", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
               Service Areas
             </div>
-            <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#fff", lineHeight: 1.15, marginBottom: 16 }}>
+            <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#1A2B1F", lineHeight: 1.15, marginBottom: 16 }}>
               Serving Five States.<br />
-              <span style={{ color: "#00E676" }}>Rooted in New York.</span>
+              <span style={{ color: "#1B7A3D" }}>Rooted in New York.</span>
             </h2>
           </div>
         </AnimatedSection>
@@ -2137,18 +2137,18 @@ function ServiceAreas() {
           {AREAS.map((area, i) => (
             <AnimatedSection key={area.state} delay={i * 0.1}>
               <div style={{
-                background: i === 0 ? "#00E676" : "#0D1310",
-                borderRadius: 0, padding: 32, border: "1px solid rgba(0,230,118,0.1)", height: "100%",
+                background: i === 0 ? "#1B7A3D" : "#FFFFFF",
+                borderRadius: 0, padding: 32, border: "1px solid #E2EBE5", height: "100%",
               }}>
                 <div style={{
                   fontSize: 32, fontWeight: 900, fontFamily: "'Syne', sans-serif",
-                  color: i === 0 ? "#060A07" : "#00E676", marginBottom: 4,
+                  color: i === 0 ? "#FFFFFF" : "#1B7A3D", marginBottom: 4,
                 }}>
                   {area.abbr}
                 </div>
                 <div style={{
                   fontSize: 16, fontWeight: 700, fontFamily: "'Plus Jakarta Sans', sans-serif",
-                  color: i === 0 ? "#060A07" : "#fff", marginBottom: 16,
+                  color: i === 0 ? "#FFFFFF" : "#fff", marginBottom: 16,
                 }}>
                   {area.state}
                 </div>
@@ -2156,7 +2156,7 @@ function ServiceAreas() {
                   {area.regions.map((region) => (
                     <span key={region} style={{
                       fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13,
-                      color: i === 0 ? "rgba(6,10,7,0.7)" : "rgba(255,255,255,0.5)",
+                      color: i === 0 ? "rgba(6,10,7,0.7)" : "#6A7D72",
                     }}>
                       {region}
                     </span>
@@ -2173,20 +2173,20 @@ function ServiceAreas() {
 
 function LearningCenter() {
   return (
-    <section id="learning" style={{ background: "#060A07", padding: "100px 24px" }}>
+    <section id="learning" style={{ background: "#FFFFFF", padding: "100px 24px" }}>
       <div style={{ maxWidth: 1280, margin: "0 auto" }}>
         <AnimatedSection>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: 48, flexWrap: "wrap", gap: 20 }}>
             <div>
-              <div style={{ fontSize: 10, color: "#00E676", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
+              <div style={{ fontSize: 10, color: "#1B7A3D", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
                 Learning Center
               </div>
-              <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 3.5vw, 36px)", fontWeight: 700, color: "#fff", lineHeight: 1.15 }}>
+              <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 3.5vw, 36px)", fontWeight: 700, color: "#1A2B1F", lineHeight: 1.15 }}>
                 Insights for Facility Managers
               </h2>
             </div>
             <a href="#" style={{
-              color: "#00E676", fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, fontWeight: 600,
+              color: "#1B7A3D", fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, fontWeight: 600,
               textDecoration: "none", display: "flex", alignItems: "center", gap: 6,
             }}>
               View All Articles →
@@ -2198,31 +2198,31 @@ function LearningCenter() {
           {BLOG_POSTS.map((post, i) => (
             <AnimatedSection key={i} delay={i * 0.1}>
               <div style={{
-                background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.08)",
+                background: "#F5F9F6", border: "1px solid #E8F0EB",
                 borderRadius: 16, padding: 32, height: "100%", display: "flex", flexDirection: "column",
                 transition: "all 0.3s", cursor: "pointer",
               }}
-                onMouseOver={(e) => { e.currentTarget.style.borderColor = "rgba(0,230,118,0.3)"; e.currentTarget.style.transform = "translateY(-4px)"; }}
-                onMouseOut={(e) => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.08)"; e.currentTarget.style.transform = "translateY(0)"; }}
+                onMouseOver={(e) => { e.currentTarget.style.borderColor = "rgba(27,122,61,0.3)"; e.currentTarget.style.transform = "translateY(-4px)"; }}
+                onMouseOut={(e) => { e.currentTarget.style.borderColor = "#E8F0EB"; e.currentTarget.style.transform = "translateY(0)"; }}
               >
                 <div style={{ display: "flex", gap: 10, marginBottom: 18 }}>
                   <span style={{
-                    background: "rgba(0,230,118,0.12)", color: "#00E676", padding: "3px 10px",
+                    background: "rgba(27,122,61,0.12)", color: "#1B7A3D", padding: "3px 10px",
                     borderRadius: 4, fontSize: 11, fontWeight: 600, fontFamily: "'Plus Jakarta Sans', sans-serif",
                   }}>
                     {post.category}
                   </span>
-                  <span style={{ color: "rgba(255,255,255,0.35)", fontSize: 12, fontFamily: "'Plus Jakarta Sans', sans-serif", alignSelf: "center" }}>
+                  <span style={{ color: "#8A9B91", fontSize: 12, fontFamily: "'Plus Jakarta Sans', sans-serif", alignSelf: "center" }}>
                     {post.date}
                   </span>
                 </div>
-                <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: 19, fontWeight: 700, color: "#fff", marginBottom: 12, lineHeight: 1.35, flex: 0 }}>
+                <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: 19, fontWeight: 700, color: "#1A2B1F", marginBottom: 12, lineHeight: 1.35, flex: 0 }}>
                   {post.title}
                 </h3>
-                <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.7, flex: 1 }}>
+                <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "#6A7D72", lineHeight: 1.7, flex: 1 }}>
                   {post.excerpt}
                 </p>
-                <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "#00E676", fontWeight: 600, marginTop: 16 }}>
+                <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "#1B7A3D", fontWeight: 600, marginTop: 16 }}>
                   Read Article →
                 </span>
               </div>
@@ -2236,28 +2236,28 @@ function LearningCenter() {
 
 function CareersSection() {
   return (
-    <section id="careers" style={{ background: "#0A0F0B", padding: "100px 24px" }}>
+    <section id="careers" style={{ background: "#F7FAF8", padding: "100px 24px" }}>
       <div style={{ maxWidth: 1280, margin: "0 auto" }}>
         <AnimatedSection>
           <div style={{
-            background: "#0D1310", borderRadius: 0, border: "1px solid rgba(0,230,118,0.12)", padding: "64px",
+            background: "#FFFFFF", borderRadius: 8, border: "1px solid #E2EBE5", padding: "64px",
             display: "grid", gridTemplateColumns: "1fr 1fr", gap: 48, alignItems: "center", overflow: "hidden", position: "relative",
           }} className="careers-card">
-            <div style={{ position: "absolute", top: -80, right: -80, width: 300, height: 300, background: "radial-gradient(circle, rgba(0,230,118,0.1), transparent)", borderRadius: "50%" }} />
+            <div style={{ position: "absolute", top: -80, right: -80, width: 300, height: 300, background: "radial-gradient(circle, #E2EBE5, transparent)", borderRadius: "50%" }} />
             <div style={{ position: "relative", zIndex: 1 }}>
-              <div style={{ fontSize: 10, color: "#00E676", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
+              <div style={{ fontSize: 10, color: "#1B7A3D", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
                 Join Our Team
               </div>
-              <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 700, color: "#fff", lineHeight: 1.15, marginBottom: 18 }}>
+              <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 700, color: "#1A2B1F", lineHeight: 1.15, marginBottom: 18 }}>
                 Build a Career in Facility Services
               </h2>
-              <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 15, color: "rgba(255,255,255,0.6)", lineHeight: 1.7, marginBottom: 28 }}>
+              <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 15, color: "#4A5E52", lineHeight: 1.7, marginBottom: 28 }}>
                 We invest in our people with competitive wages, advancement opportunities, and a culture of respect. Every team member is background-checked, trained, and valued.
               </p>
               <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
                 {["Competitive Pay", "Benefits", "Paid Training", "Growth Path"].map((perk) => (
                   <span key={perk} style={{
-                    background: "rgba(0,230,118,0.12)", color: "#00E676", padding: "6px 14px",
+                    background: "rgba(27,122,61,0.12)", color: "#1B7A3D", padding: "6px 14px",
                     borderRadius: 6, fontSize: 13, fontWeight: 600, fontFamily: "'Plus Jakarta Sans', sans-serif",
                   }}>
                     {perk}
@@ -2266,11 +2266,11 @@ function CareersSection() {
               </div>
             </div>
             <div style={{ position: "relative", zIndex: 1, textAlign: "center" }}>
-              <a href="#" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }} style={{
+              <a href="#" onClick={(e) => { e.preventDefault(); scrollTo("schedule"); }} style={{
                 display: "inline-flex", alignItems: "center", gap: 8,
-                background: "#00E676", color: "#fff", padding: "16px 36px", borderRadius: 10,
+                background: "#1B7A3D", color: "#1A2B1F", padding: "16px 36px", borderRadius: 10,
                 fontWeight: 700, fontSize: 16, textDecoration: "none", fontFamily: "'Plus Jakarta Sans', sans-serif",
-                boxShadow: "0 4px 24px rgba(0,230,118,0.3)",
+                boxShadow: "0 4px 24px rgba(27,122,61,0.3)",
               }}>
                 View Open Positions →
               </a>
@@ -2284,12 +2284,12 @@ function CareersSection() {
 
 function AcuitySection() {
   return (
-    <section id="schedule" style={{ background: "#060A07", padding: "100px 24px", position: "relative", overflow: "hidden" }}>
-      <div style={{ position: "absolute", top: "40%", left: "50%", transform: "translate(-50%, -50%)", width: 800, height: 800, background: "radial-gradient(circle, rgba(0,230,118,0.08) 0%, transparent 60%)", borderRadius: "50%", pointerEvents: "none" }} />
+    <section id="schedule" style={{ background: "#0A2A16", padding: "100px 24px", position: "relative", overflow: "hidden" }}>
+      <div style={{ position: "absolute", top: "40%", left: "50%", transform: "translate(-50%, -50%)", width: 800, height: 800, background: "radial-gradient(circle, rgba(27,122,61,0.08) 0%, transparent 60%)", borderRadius: "50%", pointerEvents: "none" }} />
       <div style={{ position: "absolute", inset: 0, opacity: 0.025, backgroundImage: "linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)", backgroundSize: "60px 60px", pointerEvents: "none" }} />
       <div style={{ maxWidth: 860, margin: "0 auto", position: "relative", zIndex: 1 }}>
         <div style={{ textAlign: "center", marginBottom: 56 }}>
-          <div style={{ fontSize: 11, color: "#00E676", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>Online Booking</div>
+          <div style={{ fontSize: 11, color: "#1B7A3D", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>Online Booking</div>
           <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 700, color: "#fff", lineHeight: 1.15, marginBottom: 16, letterSpacing: "-0.02em" }}>
             Schedule a Walkthrough or Phone Consultation
           </h2>
@@ -2299,7 +2299,7 @@ function AcuitySection() {
         </div>
 
         <div style={{ position: "relative" }}>
-          <div style={{ position: "absolute", inset: -2, borderRadius: 16, background: "linear-gradient(135deg, rgba(0,230,118,0.2), rgba(0,230,118,0.05))", zIndex: 0 }} />
+          <div style={{ position: "absolute", inset: -2, borderRadius: 16, background: "linear-gradient(135deg, rgba(27,122,61,0.2), rgba(27,122,61,0.05))", zIndex: 0 }} />
           <div style={{ position: "relative", zIndex: 1, borderRadius: 14, overflow: "hidden", boxShadow: "0 20px 60px rgba(0,0,0,0.4)" }}>
             <iframe
               src="https://app.acuityscheduling.com/schedule.php?owner=15345029&ref=embedded_csp"
@@ -2316,9 +2316,9 @@ function AcuitySection() {
         <div style={{ textAlign: "center", marginTop: 40 }}>
           <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 15, color: "rgba(255,255,255,0.5)", lineHeight: 1.7 }}>
             Prefer to reach out directly?{" "}
-            <a href="tel:+13473329348" style={{ color: "#00E676", textDecoration: "none", fontWeight: 600 }}>Call 347-332-9348</a>
+            <a href="tel:+13473329348" style={{ color: "#1B7A3D", textDecoration: "none", fontWeight: 600 }}>Call 347-332-9348</a>
             {" "}or{" "}
-            <a href="mailto:info@greenpointms.com" style={{ color: "#00E676", textDecoration: "none", fontWeight: 600 }}>email info@greenpointms.com</a>
+            <a href="mailto:info@greenpointms.com" style={{ color: "#1B7A3D", textDecoration: "none", fontWeight: 600 }}>email info@greenpointms.com</a>
           </p>
         </div>
       </div>
@@ -2328,21 +2328,21 @@ function AcuitySection() {
 
 function ContactSection() {
   return (
-    <section id="contact" style={{ background: "#0A0F0B", padding: "100px 24px" }}>
+    <section id="contact" style={{ background: "#F7FAF8", padding: "100px 24px" }}>
       <div style={{ maxWidth: 800, margin: "0 auto", textAlign: "center" }}>
         <AnimatedSection>
-          <div style={{ fontSize: 10, color: "#00E676", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
+          <div style={{ fontSize: 10, color: "#1B7A3D", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
             Get Started
           </div>
-          <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#fff", lineHeight: 1.15, marginBottom: 16 }}>
-            Ready for a Cleaner,<br /><span style={{ color: "#00E676" }}>Compliant Facility?</span>
+          <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#1A2B1F", lineHeight: 1.15, marginBottom: 16 }}>
+            Ready for a Cleaner,<br /><span style={{ color: "#1B7A3D" }}>Compliant Facility?</span>
           </h2>
-          <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "rgba(255,255,255,0.55)", lineHeight: 1.7, marginBottom: 40, maxWidth: 560, margin: "0 auto 40px" }}>
+          <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "#4A5E52", lineHeight: 1.7, marginBottom: 40, maxWidth: 560, margin: "0 auto 40px" }}>
             Schedule a free facility walkthrough. We'll assess your space, identify compliance gaps, and deliver a fixed-price proposal within 48 hours. No obligation.
           </p>
 
           <div style={{
-            background: "#0D1310", borderRadius: 0, padding: 48, border: "1px solid rgba(0,230,118,0.1)",
+            background: "#FFFFFF", borderRadius: 12, padding: 48, border: "1px solid #E2EBE5",
             textAlign: "left",
           }}>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }} className="contact-form-grid">
@@ -2353,13 +2353,13 @@ function ContactSection() {
                 { label: "Facility Type", type: "select" },
               ].map((field) => (
                 <div key={field.label}>
-                  <label style={{ display: "block", fontSize: 10, color: "rgba(0,230,118,0.7)", marginBottom: 6, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", fontFamily: "'JetBrains Mono', monospace" }}>
+                  <label style={{ display: "block", fontSize: 10, color: "rgba(27,122,61,0.7)", marginBottom: 6, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", fontFamily: "'JetBrains Mono', monospace" }}>
                     {field.label}
                   </label>
                   {field.type === "select" ? (
                     <select style={{
-                      width: "100%", padding: "12px 16px", background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.1)",
-                      borderRadius: 4, color: "#fff", fontSize: 15, outline: "none", fontFamily: "'Plus Jakarta Sans', sans-serif", boxSizing: "border-box",
+                      width: "100%", padding: "12px 16px", background: "#F2F7F4", border: "1px solid #E2EBE5",
+                      borderRadius: 4, color: "#1A2B1F", fontSize: 15, outline: "none", fontFamily: "'Plus Jakarta Sans', sans-serif", boxSizing: "border-box",
                     }}>
                       <option value="">Select type...</option>
                       <option>School / Educational</option>
@@ -2372,27 +2372,27 @@ function ContactSection() {
                     </select>
                   ) : (
                     <input type={field.type} placeholder={field.placeholder} style={{
-                      width: "100%", padding: "12px 16px", background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.1)",
-                      borderRadius: 4, color: "#fff", fontSize: 15, outline: "none", fontFamily: "'Plus Jakarta Sans', sans-serif", boxSizing: "border-box",
+                      width: "100%", padding: "12px 16px", background: "#F2F7F4", border: "1px solid #E2EBE5",
+                      borderRadius: 4, color: "#1A2B1F", fontSize: 15, outline: "none", fontFamily: "'Plus Jakarta Sans', sans-serif", boxSizing: "border-box",
                     }} />
                   )}
                 </div>
               ))}
             </div>
             <div style={{ marginTop: 20 }}>
-              <label style={{ display: "block", fontSize: 10, color: "rgba(0,230,118,0.7)", marginBottom: 6, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", fontFamily: "'JetBrains Mono', monospace" }}>
+              <label style={{ display: "block", fontSize: 10, color: "rgba(27,122,61,0.7)", marginBottom: 6, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", fontFamily: "'JetBrains Mono', monospace" }}>
                 Tell Us About Your Facility
               </label>
               <textarea rows={4} placeholder="Approximate square footage, number of floors, current cleaning schedule, any special requirements..."
                 style={{
-                  width: "100%", padding: "12px 16px", background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.1)",
-                  borderRadius: 4, color: "#fff", fontSize: 15, outline: "none", fontFamily: "'Plus Jakarta Sans', sans-serif",
+                  width: "100%", padding: "12px 16px", background: "#F2F7F4", border: "1px solid #E2EBE5",
+                  borderRadius: 4, color: "#1A2B1F", fontSize: 15, outline: "none", fontFamily: "'Plus Jakarta Sans', sans-serif",
                   resize: "vertical", boxSizing: "border-box",
                 }} />
             </div>
             <button style={{
-              width: "100%", marginTop: 24, padding: "16px 24px", background: "#00E676",
-              border: "none", borderRadius: 4, color: "#060A07", fontSize: 15, fontWeight: 700, cursor: "pointer",
+              width: "100%", marginTop: 24, padding: "16px 24px", background: "#1B7A3D",
+              border: "none", borderRadius: 4, color: "#FFFFFF", fontSize: 15, fontWeight: 700, cursor: "pointer",
               fontFamily: "'Syne', sans-serif", letterSpacing: "0.04em", textTransform: "uppercase",
               transition: "transform 0.2s",
             }}
@@ -2405,18 +2405,18 @@ function ContactSection() {
 
           <div style={{ display: "flex", justifyContent: "center", gap: 48, marginTop: 48, flexWrap: "wrap" }}>
             {[
-              { label: "Phone", value: PHONE_NUMBER, iconEl: <PhoneIcon size={24} color="#00E676" />, href: PHONE_HREF },
-              { label: "Email", value: "info@greenpointms.com", iconEl: <MailIcon size={24} color="#00E676" />, href: "mailto:info@greenpointms.com" },
-              { label: "Hours", value: "Mon–Sat 7AM–8PM • 24/7 Emergency", iconEl: <ClockIcon size={24} color="#00E676" /> },
+              { label: "Phone", value: PHONE_NUMBER, iconEl: <PhoneIcon size={24} color="#1B7A3D" />, href: PHONE_HREF },
+              { label: "Email", value: "info@greenpointms.com", iconEl: <MailIcon size={24} color="#1B7A3D" />, href: "mailto:info@greenpointms.com" },
+              { label: "Hours", value: "Mon–Sat 7AM–8PM • 24/7 Emergency", iconEl: <ClockIcon size={24} color="#1B7A3D" /> },
             ].map((info) => (
               <div key={info.label} style={{ textAlign: "center" }}>
                 <div style={{ display: "flex", justifyContent: "center", marginBottom: 6 }}>{info.iconEl}</div>
                 <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 12, color: "#888", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.08em" }}>{info.label}</div>
                 {info.href ? (
-                  <a href={info.href} style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 15, color: "#fff", fontWeight: 600, marginTop: 4, display: "block", textDecoration: "none" }}
-                    onMouseOver={(e) => e.target.style.color = "#00E676"} onMouseOut={(e) => e.target.style.color = "#fff"}>{info.value}</a>
+                  <a href={info.href} style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 15, color: "#1A2B1F", fontWeight: 600, marginTop: 4, display: "block", textDecoration: "none" }}
+                    onMouseOver={(e) => e.target.style.color = "#1B7A3D"} onMouseOut={(e) => e.target.style.color = "#1A2B1F"}>{info.value}</a>
                 ) : (
-                  <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 15, color: "#fff", fontWeight: 600, marginTop: 4 }}>{info.value}</div>
+                  <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 15, color: "#1A2B1F", fontWeight: 600, marginTop: 4 }}>{info.value}</div>
                 )}
               </div>
             ))}
@@ -2429,19 +2429,19 @@ function ContactSection() {
 
 function ProcessSection() {
   return (
-    <section id="process" className="noise-overlay" style={{ background: "#0A0F0B", padding: "100px 24px", position: "relative", overflow: "hidden" }}>
-      <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", width: 800, height: 800, background: "radial-gradient(circle, rgba(0,230,118,0.05) 0%, transparent 60%)", borderRadius: "50%", pointerEvents: "none" }} />
+    <section id="process" style={{ background: "#F7FAF8", padding: "100px 24px", position: "relative", overflow: "hidden" }}>
+      <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", width: 800, height: 800, background: "radial-gradient(circle, rgba(27,122,61,0.05) 0%, transparent 60%)", borderRadius: "50%", pointerEvents: "none" }} />
       <div style={{ maxWidth: 1280, margin: "0 auto", position: "relative", zIndex: 1 }}>
         <AnimatedSection>
           <div style={{ textAlign: "center", marginBottom: 64 }}>
-            <div style={{ fontSize: 10, color: "#00E676", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
+            <div style={{ fontSize: 10, color: "#1B7A3D", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
               How It Works
             </div>
-            <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#fff", lineHeight: 1.15, marginBottom: 16 }}>
+            <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#1A2B1F", lineHeight: 1.15, marginBottom: 16 }}>
               From First Call to<br />
-              <span style={{ color: "#00E676" }}>Verifiably Clean</span>
+              <span style={{ color: "#1B7A3D" }}>Verifiably Clean</span>
             </h2>
-            <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "rgba(255,255,255,0.55)", maxWidth: 560, margin: "0 auto", lineHeight: 1.7 }}>
+            <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "#4A5E52", maxWidth: 560, margin: "0 auto", lineHeight: 1.7 }}>
               Getting started is simple. Here's what happens when you reach out.
             </p>
           </div>
@@ -2450,29 +2450,29 @@ function ProcessSection() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 24, position: "relative" }} className="process-grid">
           <div style={{
             position: "absolute", top: 44, left: "12.5%", right: "12.5%", height: 2,
-            background: "linear-gradient(90deg, rgba(0,230,118,0.6), rgba(0,230,118,0.15))", zIndex: 0,
+            background: "linear-gradient(90deg, rgba(27,122,61,0.6), rgba(27,122,61,0.15))", zIndex: 0,
           }} className="process-line" />
           {PROCESS_STEPS.map((step, i) => (
             <AnimatedSection key={step.step} delay={i * 0.12}>
               <div style={{ textAlign: "center", position: "relative", zIndex: 1 }}>
                 <div style={{
                   width: 56, height: 56, borderRadius: 0, margin: "0 auto 24px",
-                  background: i === PROCESS_STEPS.length - 1 ? "#00E676" : "rgba(0,230,118,0.08)",
-                  border: i === PROCESS_STEPS.length - 1 ? "2px solid #00E676" : "2px solid rgba(0,230,118,0.3)",
+                  background: i === PROCESS_STEPS.length - 1 ? "#1B7A3D" : "#E8F5ED",
+                  border: i === PROCESS_STEPS.length - 1 ? "2px solid #1B7A3D" : "2px solid rgba(27,122,61,0.3)",
                   display: "flex", alignItems: "center", justifyContent: "center",
-                  boxShadow: i === PROCESS_STEPS.length - 1 ? "0 4px 30px rgba(0,230,118,0.3)" : "0 4px 20px rgba(0,0,0,0.2)",
+                  boxShadow: i === PROCESS_STEPS.length - 1 ? "0 4px 30px rgba(27,122,61,0.3)" : "0 4px 20px rgba(0,0,0,0.2)",
                 }}>
                   <span style={{
                     fontFamily: "'JetBrains Mono', monospace", fontWeight: 700, fontSize: 16,
-                    color: i === PROCESS_STEPS.length - 1 ? "#060A07" : "#00E676",
+                    color: i === PROCESS_STEPS.length - 1 ? "#FFFFFF" : "#1B7A3D",
                   }}>
                     {step.step}
                   </span>
                 </div>
-                <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: 18, fontWeight: 700, color: "#fff", marginBottom: 10 }}>
+                <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: 18, fontWeight: 700, color: "#1A2B1F", marginBottom: 10 }}>
                   {step.title}
                 </h3>
-                <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.7 }}>
+                <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "#6A7D72", lineHeight: 1.7 }}>
                   {step.desc}
                 </p>
               </div>
@@ -2486,16 +2486,16 @@ function ProcessSection() {
 
 function WhyGreenPoint() {
   return (
-    <section id="why" style={{ background: "#060A07", padding: "100px 24px", position: "relative", overflow: "hidden" }}>
+    <section id="why" style={{ background: "#FFFFFF", padding: "100px 24px", position: "relative", overflow: "hidden" }}>
       {/* Subtle cross-hatch pattern */}
-      <div style={{ position: "absolute", inset: 0, opacity: 0.02, pointerEvents: "none", backgroundImage: "linear-gradient(45deg, #0d2818 1px, transparent 1px), linear-gradient(-45deg, #0d2818 1px, transparent 1px)", backgroundSize: "40px 40px" }} />
+      <div style={{ position: "absolute", inset: 0, opacity: 0.02, pointerEvents: "none", backgroundImage: "linear-gradient(45deg, rgba(27,122,61,0.03) 1px, transparent 1px), linear-gradient(-45deg, rgba(27,122,61,0.03) 1px, transparent 1px)", backgroundSize: "40px 40px" }} />
       <div style={{ maxWidth: 1280, margin: "0 auto", position: "relative", zIndex: 1 }}>
         <AnimatedSection>
           <div style={{ textAlign: "center", marginBottom: 64 }}>
-            <div style={{ fontSize: 10, color: "#00E676", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
+            <div style={{ fontSize: 10, color: "#1B7A3D", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
               Why GreenPoint
             </div>
-            <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#fff", lineHeight: 1.15, marginBottom: 16 }}>
+            <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#1A2B1F", lineHeight: 1.15, marginBottom: 16 }}>
               What Sets Us Apart From<br />Every Other Cleaning Company
             </h2>
           </div>
@@ -2505,9 +2505,9 @@ function WhyGreenPoint() {
           {WHY_US.map((item, i) => (
             <AnimatedSection key={item.title} delay={i * 0.1}>
               <div className="premium-card" style={{
-                background: "#0D1310",
-                borderRadius: 0, padding: 40, border: "1px solid rgba(0,230,118,0.1)",
-                borderLeft: "3px solid #00E676",
+                background: "#FFFFFF",
+                borderRadius: 0, padding: 40, border: "1px solid #E2EBE5",
+                borderLeft: "3px solid #1B7A3D",
                 display: "flex", gap: 24, alignItems: "flex-start", height: "100%",
               }}
               >
@@ -2515,14 +2515,14 @@ function WhyGreenPoint() {
                   {getIcon(item.iconKey, 28)}
                 </IconBox>
                 <div>
-                  <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: 20, fontWeight: 700, color: "#fff", marginBottom: 8 }}>
+                  <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: 20, fontWeight: 700, color: "#1A2B1F", marginBottom: 8 }}>
                     {item.title}
                   </h3>
-                  <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.6)", lineHeight: 1.7, marginBottom: 12 }}>
+                  <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "#4A5E52", lineHeight: 1.7, marginBottom: 12 }}>
                     {item.desc}
                   </p>
                   <span style={{
-                    display: "inline-block", background: "rgba(0,230,118,0.08)", color: "#00E676",
+                    display: "inline-block", background: "#E8F5ED", color: "#1B7A3D",
                     padding: "4px 12px", borderRadius: 6, fontSize: 12, fontWeight: 600, fontFamily: "'Plus Jakarta Sans', sans-serif",
                   }}>
                     {item.competitor}
@@ -2541,15 +2541,15 @@ function FAQSection() {
   const [openIndex, setOpenIndex] = useState(null);
 
   return (
-    <section id="faq" className="noise-overlay" style={{ background: "#0A0F0B", padding: "100px 24px", position: "relative", overflow: "hidden" }}>
-      <div style={{ position: "absolute", top: "30%", right: "5%", width: 400, height: 400, background: "radial-gradient(circle, rgba(0,230,118,0.04) 0%, transparent 60%)", borderRadius: "50%", pointerEvents: "none" }} />
+    <section id="faq" style={{ background: "#F7FAF8", padding: "100px 24px", position: "relative", overflow: "hidden" }}>
+      <div style={{ position: "absolute", top: "30%", right: "5%", width: 400, height: 400, background: "radial-gradient(circle, rgba(27,122,61,0.04) 0%, transparent 60%)", borderRadius: "50%", pointerEvents: "none" }} />
       <div style={{ maxWidth: 880, margin: "0 auto", position: "relative", zIndex: 1 }}>
         <AnimatedSection>
           <div style={{ textAlign: "center", marginBottom: 64 }}>
-            <div style={{ fontSize: 10, color: "#00E676", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
+            <div style={{ fontSize: 10, color: "#1B7A3D", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
               Frequently Asked Questions
             </div>
-            <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#fff", lineHeight: 1.15 }}>
+            <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#1A2B1F", lineHeight: 1.15 }}>
               Everything You Need to Know
             </h2>
           </div>
@@ -2559,7 +2559,7 @@ function FAQSection() {
           {FAQ_ITEMS.map((item, i) => (
             <AnimatedSection key={i} delay={i * 0.05}>
               <div style={{
-                borderBottom: "1px solid rgba(255,255,255,0.08)",
+                borderBottom: "1px solid #E8F0EB",
                 transition: "all 0.2s",
               }}>
                 <button
@@ -2572,12 +2572,12 @@ function FAQSection() {
                 >
                   <span style={{
                     fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, fontWeight: 600,
-                    color: openIndex === i ? "#00E676" : "#fff", transition: "color 0.2s", lineHeight: 1.4,
+                    color: openIndex === i ? "#1B7A3D" : "#fff", transition: "color 0.2s", lineHeight: 1.4,
                   }}>
                     {item.q}
                   </span>
                   <span style={{
-                    fontSize: 22, color: openIndex === i ? "#00E676" : "#aaa", flexShrink: 0,
+                    fontSize: 22, color: openIndex === i ? "#1B7A3D" : "#aaa", flexShrink: 0,
                     transform: openIndex === i ? "rotate(45deg)" : "rotate(0deg)",
                     transition: "transform 0.3s, color 0.2s", lineHeight: 1,
                   }}>
@@ -2590,7 +2590,7 @@ function FAQSection() {
                   paddingBottom: openIndex === i ? 22 : 0,
                 }}>
                   <p style={{
-                    fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 15, color: "rgba(255,255,255,0.6)",
+                    fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 15, color: "#4A5E52",
                     lineHeight: 1.8, paddingRight: 48,
                   }}>
                     {item.a}
@@ -2607,23 +2607,23 @@ function FAQSection() {
 
 function Footer() {
   return (
-    <footer style={{ background: "#060A07", padding: "0 0 0" }}>
+    <footer style={{ background: "#0A2A16", padding: "0 0 0" }}>
       {/* Pre-footer CTA block */}
-      <div style={{ background: "#0A0F0B", padding: "80px 24px", textAlign: "center", position: "relative", overflow: "hidden", borderTop: "1px solid rgba(0,230,118,0.12)" }}>
-        <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", width: 600, height: 400, background: "radial-gradient(ellipse, rgba(0,230,118,0.07) 0%, transparent 70%)", pointerEvents: "none" }} />
+      <div style={{ background: "#071E10", padding: "80px 24px", textAlign: "center", position: "relative", overflow: "hidden", borderTop: "1px solid rgba(27,122,61,0.12)" }}>
+        <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", width: 600, height: 400, background: "radial-gradient(ellipse, rgba(27,122,61,0.07) 0%, transparent 70%)", pointerEvents: "none" }} />
         <div style={{ maxWidth: 720, margin: "0 auto", position: "relative", zIndex: 1 }}>
-          <div style={{ fontSize: 11, color: "#00E676", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+          <div style={{ fontSize: 11, color: "#1B7A3D", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
             Ready to Upgrade Your Facility?
           </div>
           <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 700, color: "#fff", lineHeight: 1.15, marginBottom: 20 }}>
-            Your Facility Deserves Better.<br /><span style={{ color: "#00E676" }}>Let's Talk.</span>
+            Your Facility Deserves Better.<br /><span style={{ color: "#1B7A3D" }}>Let's Talk.</span>
           </h2>
           <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "rgba(255,255,255,0.6)", lineHeight: 1.7, marginBottom: 36 }}>
             Get a custom cleaning plan in 24 hours. MBE-certified. Bonded & insured. No obligation.
           </p>
           <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
-            <a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }} className="cta-glow" style={{
-              background: "#00E676", color: "#060A07",
+            <a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("schedule"); }} className="cta-glow" style={{
+              background: "#1B7A3D", color: "#fff",
               padding: "14px 32px", borderRadius: 4, fontWeight: 700, fontSize: 13,
               textDecoration: "none", fontFamily: "'Syne', sans-serif",
               textTransform: "uppercase", letterSpacing: "0.04em",
@@ -2649,7 +2649,7 @@ function Footer() {
             <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 18 }}>
               <div style={{
                 width: 40, height: 40, borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center",
-                background: "#00E676", fontWeight: 800, fontSize: 18, color: "#060A07",
+                background: "#1B7A3D", fontWeight: 800, fontSize: 18, color: "#fff",
                 fontFamily: "'Syne', sans-serif",
               }}>G</div>
               <div>
@@ -2663,7 +2663,7 @@ function Footer() {
             <div style={{ display: "flex", gap: 8, marginTop: 18, flexWrap: "wrap" }}>
               {["MBE / MWBE", "SAM.gov", "Bonded & Insured"].map((badge) => (
                 <span key={badge} style={{
-                  background: "rgba(0,230,118,0.1)", color: "#00E676", padding: "3px 10px",
+                  background: "rgba(27,122,61,0.1)", color: "#1B7A3D", padding: "3px 10px",
                   borderRadius: 4, fontSize: 10, fontWeight: 600, fontFamily: "'Plus Jakarta Sans', sans-serif",
                 }}>
                   {badge}
@@ -2680,27 +2680,27 @@ function Footer() {
           </div>
 
           <div>
-            <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "rgba(0,230,118,0.6)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.15em", marginBottom: 18 }}>Services</div>
+            <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "rgba(27,122,61,0.6)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.15em", marginBottom: 18 }}>Services</div>
             {["Commercial Janitorial", "Disinfection", "Floor Care", "Day Porter", "Facility Maintenance", "Post-Construction"].map((link) => (
               <a key={link} href="#" onClick={(e) => { e.preventDefault(); scrollTo("services"); }} style={{ display: "block", fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.55)", textDecoration: "none", marginBottom: 10, transition: "color 0.2s" }}
-                onMouseOver={(e) => e.target.style.color = "#00E676"} onMouseOut={(e) => e.target.style.color = "rgba(255,255,255,0.55)"}>
+                onMouseOver={(e) => e.target.style.color = "#1B7A3D"} onMouseOut={(e) => e.target.style.color = "rgba(255,255,255,0.55)"}>
                 {link}
               </a>
             ))}
           </div>
 
           <div>
-            <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "rgba(0,230,118,0.6)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.15em", marginBottom: 18 }}>Industries</div>
+            <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "rgba(27,122,61,0.6)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.15em", marginBottom: 18 }}>Industries</div>
             {["Schools & Education", "Churches & Worship", "Healthcare & Medical", "Daycare Centers", "Government", "Commercial Offices"].map((link) => (
               <a key={link} href="#" onClick={(e) => { e.preventDefault(); scrollTo("industries"); }} style={{ display: "block", fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.55)", textDecoration: "none", marginBottom: 10, transition: "color 0.2s" }}
-                onMouseOver={(e) => e.target.style.color = "#00E676"} onMouseOut={(e) => e.target.style.color = "rgba(255,255,255,0.55)"}>
+                onMouseOver={(e) => e.target.style.color = "#1B7A3D"} onMouseOut={(e) => e.target.style.color = "rgba(255,255,255,0.55)"}>
                 {link}
               </a>
             ))}
           </div>
 
           <div>
-            <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "rgba(0,230,118,0.6)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.15em", marginBottom: 18 }}>Company</div>
+            <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "rgba(27,122,61,0.6)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.15em", marginBottom: 18 }}>Company</div>
             {[
               { label: "About", target: "about" },
               { label: "JaniTrack", target: "janitrack" },
@@ -2710,7 +2710,7 @@ function Footer() {
               { label: "Contact", target: "contact" },
             ].map((link) => (
               <a key={link.label} href="#" onClick={(e) => { e.preventDefault(); scrollTo(link.target); }} style={{ display: "block", fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.55)", textDecoration: "none", marginBottom: 10, transition: "color 0.2s" }}
-                onMouseOver={(e) => e.target.style.color = "#00E676"} onMouseOut={(e) => e.target.style.color = "rgba(255,255,255,0.55)"}>
+                onMouseOver={(e) => e.target.style.color = "#1B7A3D"} onMouseOut={(e) => e.target.style.color = "rgba(255,255,255,0.55)"}>
                 {link.label}
               </a>
             ))}
@@ -2759,10 +2759,10 @@ function StickyCtaBar({ visible }) {
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 12, flexShrink: 0 }}>
           <a href={PHONE_HREF} style={{ display: 'flex', alignItems: 'center', gap: 6, color: '#fff', textDecoration: 'none', fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, fontWeight: 700 }} className="sticky-phone">
-            <PhoneIcon size={16} color="#00E676" /> {PHONE_NUMBER}
+            <PhoneIcon size={16} color="#1B7A3D" /> {PHONE_NUMBER}
           </a>
           <a href="#contact" style={{
-            background: '#00E676', color: '#060A07', padding: '10px 24px',
+            background: '#1B7A3D', color: '#0A2A16', padding: '10px 24px',
             borderRadius: 4, fontWeight: 700, fontSize: 13, textDecoration: 'none', fontFamily: "'Syne', sans-serif",
             textTransform: 'uppercase', letterSpacing: '0.04em', whiteSpace: 'nowrap',
           }}>Schedule Walkthrough</a>
@@ -2792,7 +2792,7 @@ export default function GreenPointWebsite() {
   }, []);
 
   return (
-    <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", margin: 0, padding: 0, background: '#060A07' }}>
+    <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", margin: 0, padding: 0, background: '#FFFFFF' }}>
 
       <style>{`
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -2828,8 +2828,8 @@ export default function GreenPointWebsite() {
           50% { background-position: 100% 50%; }
         }
         @keyframes borderGlow {
-          0%, 100% { border-color: rgba(0,230,118,0.15); box-shadow: 0 0 20px rgba(0,230,118,0); }
-          50% { border-color: rgba(0,230,118,0.35); box-shadow: 0 0 30px rgba(0,230,118,0.08); }
+          0%, 100% { border-color: rgba(27,122,61,0.15); box-shadow: 0 0 20px rgba(27,122,61,0); }
+          50% { border-color: rgba(27,122,61,0.35); box-shadow: 0 0 30px #E8F5ED; }
         }
         @keyframes grainShift {
           0%, 100% { transform: translate(0, 0); }
@@ -2900,8 +2900,8 @@ export default function GreenPointWebsite() {
         }
         .premium-card:hover {
           transform: translateY(-8px) !important;
-          box-shadow: 0 20px 60px rgba(0,0,0,0.15), 0 0 40px rgba(0,230,118,0.08) !important;
-          border-color: rgba(0,230,118,0.3) !important;
+          box-shadow: 0 20px 60px rgba(0,0,0,0.15), 0 0 40px #E8F5ED !important;
+          border-color: rgba(27,122,61,0.3) !important;
         }
 
         /* === DARK PREMIUM CARD === */
@@ -2910,8 +2910,8 @@ export default function GreenPointWebsite() {
         }
         .dark-card:hover {
           transform: translateY(-6px) !important;
-          box-shadow: 0 20px 60px rgba(0,0,0,0.4), 0 0 50px rgba(0,230,118,0.1) !important;
-          border-color: rgba(0,230,118,0.4) !important;
+          box-shadow: 0 20px 60px rgba(0,0,0,0.4), 0 0 50px rgba(27,122,61,0.1) !important;
+          border-color: rgba(27,122,61,0.4) !important;
         }
 
         /* === CTA BUTTON GLOW === */
@@ -2921,11 +2921,11 @@ export default function GreenPointWebsite() {
         }
         .cta-glow:hover {
           transform: translateY(-3px) scale(1.02) !important;
-          box-shadow: 0 8px 40px rgba(0,230,118,0.45), 0 0 80px rgba(0,230,118,0.15) !important;
+          box-shadow: 0 8px 40px rgba(27,122,61,0.45), 0 0 80px rgba(27,122,61,0.15) !important;
         }
         .cta-glow::after {
           content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
-          background: linear-gradient(to right, transparent 0%, rgba(255,255,255,0.1) 50%, transparent 100%);
+          background: linear-gradient(to right, transparent 0%, #E2EBE5 50%, transparent 100%);
           transform: rotate(30deg); transition: left 0.6s ease;
           pointer-events: none;
         }
@@ -2943,10 +2943,10 @@ export default function GreenPointWebsite() {
 
         /* === GLASS MORPHISM === */
         .glass {
-          background: rgba(255,255,255,0.03) !important;
+          background: #F5F9F6 !important;
           backdrop-filter: blur(20px) !important;
           -webkit-backdrop-filter: blur(20px) !important;
-          border: 1px solid rgba(255,255,255,0.08) !important;
+          border: 1px solid #E8F0EB !important;
         }
 
         /* === HEADER GLASS === */
@@ -2957,11 +2957,11 @@ export default function GreenPointWebsite() {
 
         /* === GREEN ACCENT LINE === */
         .green-line {
-          width: 48px; height: 3px; background: linear-gradient(90deg, #00E676, #00E676); border-radius: 2px;
+          width: 48px; height: 3px; background: linear-gradient(90deg, #1B7A3D, #1B7A3D); border-radius: 2px;
           margin-bottom: 20px;
         }
         .green-line-center {
-          width: 48px; height: 3px; background: linear-gradient(90deg, #00E676, #00E676); border-radius: 2px;
+          width: 48px; height: 3px; background: linear-gradient(90deg, #1B7A3D, #1B7A3D); border-radius: 2px;
           margin: 0 auto 20px;
         }
 
@@ -2971,7 +2971,7 @@ export default function GreenPointWebsite() {
         }
         .green-hover-underline::after {
           content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px;
-          background: linear-gradient(90deg, #00E676, #00E676);
+          background: linear-gradient(90deg, #1B7A3D, #1B7A3D);
           transition: width 0.3s ease;
         }
         .green-hover-underline:hover::after { width: 100%; }
@@ -2988,7 +2988,7 @@ export default function GreenPointWebsite() {
         }
         .card-accent-top::before {
           content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
-          background: linear-gradient(90deg, #00E676, #00E676, #00E676);
+          background: linear-gradient(90deg, #1B7A3D, #1B7A3D, #1B7A3D);
           background-size: 200% auto;
           animation: shimmerLine 2s linear infinite;
           opacity: 0;
@@ -3005,7 +3005,7 @@ export default function GreenPointWebsite() {
 
         /* === STAT COUNTER === */
         .stat-number {
-          background: linear-gradient(135deg, #00E676, #00E676, #00E676);
+          background: linear-gradient(135deg, #1B7A3D, #1B7A3D, #1B7A3D);
           background-size: 200% auto;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
@@ -3055,20 +3055,20 @@ export default function GreenPointWebsite() {
       <Header scrolled={scrolled} />
       <Hero />
       <StatsBar />
-      <SectionDivider fromColor="#0A0F0B" toColor="#060A07" />
+      <SectionDivider fromColor="#F7FAF8" toColor="#FFFFFF" />
       <AuthorityBar />
       <Services />
-      <SectionDividerReverse fromColor="#060A07" toColor="#0A0F0B" />
+      <SectionDividerReverse fromColor="#FFFFFF" toColor="#F7FAF8" />
       <IndustriesSection />
       <JaniTrack />
       <QuoteCalculator />
       <AcuitySection />
-      <SectionDivider fromColor="#060A07" toColor="#0A0F0B" />
+      <SectionDivider fromColor="#FFFFFF" toColor="#F7FAF8" />
       <TestimonialsSection />
-      <SectionDividerReverse fromColor="#0A0F0B" toColor="#060A07" />
+      <SectionDividerReverse fromColor="#F7FAF8" toColor="#FFFFFF" />
       <ComplianceSection />
       <ProcessSection />
-      <SectionDivider fromColor="#0A0F0B" toColor="#060A07" />
+      <SectionDivider fromColor="#F7FAF8" toColor="#FFFFFF" />
       <ContactSection />
       <WhyGreenPoint />
       <FAQSection />
@@ -3080,9 +3080,9 @@ export default function GreenPointWebsite() {
       {/* Floating mobile phone button */}
       <a href={PHONE_HREF} style={{
         position: "fixed", bottom: showStickyCta ? 68 : 20, right: 20, width: 56, height: 56,
-        borderRadius: "50%", background: "#00E676",
+        borderRadius: "50%", background: "#1B7A3D",
         display: "flex", alignItems: "center", justifyContent: "center",
-        boxShadow: "0 4px 20px rgba(0,230,118,0.4)", zIndex: 999,
+        boxShadow: "0 4px 20px rgba(27,122,61,0.3)", zIndex: 999,
         textDecoration: "none", transition: 'bottom 0.4s ease',
       }} className="mobile-phone-float">
         <PhoneIcon size={22} color="#fff" />
