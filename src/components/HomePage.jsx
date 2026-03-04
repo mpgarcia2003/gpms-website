@@ -98,7 +98,7 @@ function IconBox({ children, size = 48, bg = 'rgba(27,122,61,0.08)', radius = 8,
   return (
     <div style={{
       width: size, height: size, borderRadius: radius,
-      background: dark ? 'rgba(0,230,118,0.12)' : bg,
+      background: dark ? 'rgba(27,122,61,0.12)' : bg,
       display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0,
     }}>
       {children}
@@ -632,7 +632,7 @@ function QuoteCalculator() {
     return (
       <section id="quote" style={{ background: "#060A07", padding: "100px 24px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto", textAlign: "center" }}>
-          <div style={{ fontSize: 10, color: "#00E676", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
+          <div style={{ fontSize: 10, color: "#1B7A3D", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: 16, fontFamily: "'JetBrains Mono', monospace" }}>
             Step 1 of 3 — Instant Quote Calculator
           </div>
           <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 4vw, 48px)", fontWeight: 700, color: "#fff", lineHeight: 1.15, marginBottom: 16 }}>
@@ -1108,7 +1108,7 @@ function Header({ scrolled }) {
           </a>
           <a
             href="#"
-            onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}
+            onClick={(e) => { e.preventDefault(); scrollTo("schedule"); }}
             style={{
               background: "#00E676", color: "#060A07", padding: "10px 24px",
               borderRadius: 4, fontWeight: 700, fontSize: 13, textDecoration: "none",
