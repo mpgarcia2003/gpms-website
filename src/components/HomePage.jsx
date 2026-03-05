@@ -144,8 +144,9 @@ const NAV_ITEMS = [
   { label: "Services", target: "services" },
   { label: "Industries", target: "industries" },
   { label: "JaniTrack", target: "janitrack" },
-  { label: "Instant Quote", target: "quote" },
   { label: "Government", target: "compliance" },
+  { label: "Instant Quote", target: "quote" },
+  { label: "Blog", href: "/blog" },
 ];
 
 const PHONE_NUMBER = "347-332-9348";
@@ -1084,8 +1085,8 @@ function Header({ scrolled }) {
           {NAV_ITEMS.map((item) => (
             <a
               key={item.label}
-              href="#"
-              onClick={(e) => { e.preventDefault(); scrollTo(item.target); }}
+              href={item.href || "#"}
+              onClick={item.href ? undefined : (e) => { e.preventDefault(); scrollTo(item.target); }}
               style={{
                 color: "#4A5E52", textDecoration: "none", fontSize: 13, fontWeight: 500,
                 fontFamily: "'Plus Jakarta Sans', sans-serif", letterSpacing: "0.01em",
@@ -1140,7 +1141,7 @@ function Header({ scrolled }) {
           borderBottom: "1px solid #E2EBE5",
         }}>
           {NAV_ITEMS.map((item) => (
-            <a key={item.label} href="#" onClick={(e) => { e.preventDefault(); setMobileOpen(false); scrollTo(item.target); }}
+            <a key={item.label} href={item.href || "#"} onClick={item.href ? () => setMobileOpen(false) : (e) => { e.preventDefault(); setMobileOpen(false); scrollTo(item.target); }}
               style={{ color: "#4A5E52", textDecoration: "none", fontSize: 16, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
               {item.label}
             </a>
