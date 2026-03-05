@@ -131,7 +131,7 @@ export default function CityIndustryPage({ params }) {
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: `${industry.shortName} Services`,
-      itemListElement: industry.features.map((f, i) => ({ "@type": "Offer", itemOffered: { "@type": "Service", name: f } })),
+      itemListElement: (industry.features || industry.includes || []).map((f, i) => ({ "@type": "Offer", itemOffered: { "@type": "Service", name: f } })),
     },
   };
 
