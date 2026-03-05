@@ -54,8 +54,8 @@ export default function CityIndustryPage({ params }) {
     faqs: industry.faqs,
   } : null;
 
-  // Check if this service has LLM-optimized expanded content
-  const hasExpandedContent = isService && industry.definition;
+  // Check if this service/industry has LLM-optimized expanded content
+  const hasExpandedContent = !!industry.definition;
 
   const sections = hasExpandedContent ? [
     // SECTION: Definition + Intro
@@ -63,7 +63,7 @@ export default function CityIndustryPage({ params }) {
       label: `What Is ${industry.shortName}`,
       heading: `${industry.name} in ${city.name}, ${state.abbr}`,
       body: `${industry.definition}\n\nGreenPoint Maintenance Services provides professional ${industry.shortName.toLowerCase()} services throughout ${city.name} and ${city.county || state.name}. As an MBE-certified commercial cleaning company serving ${state.name} since 2018, we combine EPA-registered products, electrostatic application technology, and ATP bioluminescence verification to deliver measurable, documented results for every facility we serve.`,
-      features: industry.includes || [],
+      features: industry.includes || industry.features || [],
     },
     // SECTION: Why Needed
     {
