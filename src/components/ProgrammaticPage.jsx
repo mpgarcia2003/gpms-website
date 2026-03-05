@@ -62,7 +62,7 @@ export default function ProgrammaticPage({ title, subtitle, breadcrumbs, heroIco
             </nav>
           )}
           {heroIcon && <div className="pp-hero-el" style={{ marginBottom: 16, animationDelay: "0s" }}>{getPageIcon(heroIcon, 48, "#C8A34D")}</div>}
-          <h1 className="pp-hero-el" style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 800, color: "#fff", lineHeight: 1.08, marginBottom: 20, letterSpacing: "-0.03em", animationDelay: heroIcon ? "0.1s" : "0s" }}>{title}</h1>
+          <h1 className="pp-hero-el" style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 700, color: "#fff", lineHeight: 1.1, marginBottom: 20, letterSpacing: "-0.02em", animationDelay: heroIcon ? "0.1s" : "0s" }}>{title}</h1>
           {subtitle && <p className="pp-hero-el" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.6)", lineHeight: 1.7, maxWidth: 680, animationDelay: "0.25s" }}>{subtitle}</p>}
           <div className="pp-hero-el" style={{ display: "flex", gap: 16, marginTop: 32, flexWrap: "wrap", animationDelay: "0.4s" }}>
             <a href="/#schedule" className="pp-cta-primary" style={{ background: "#1B7A3D", color: "#fff", padding: "14px 32px", borderRadius: 8, fontWeight: 700, fontSize: 13, textDecoration: "none", fontFamily: "'Syne', sans-serif", letterSpacing: "0.04em", display: "inline-flex", alignItems: "center", gap: 8 }}>Schedule a Walkthrough →</a>
@@ -81,7 +81,7 @@ export default function ProgrammaticPage({ title, subtitle, breadcrumbs, heroIco
                 <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "#C8A34D", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase" }}>{section.label}</span>
               </div>
             )}
-            {section.heading && <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 800, color: "#1A2B1F", lineHeight: 1.15, marginBottom: 20, letterSpacing: "-0.02em" }}>{section.heading}</h2>}
+            {section.heading && <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 700, color: "#1A2B1F", lineHeight: 1.15, marginBottom: 20, letterSpacing: "-0.02em" }}>{section.heading}</h2>}
             {section.body && <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "#4A5E52", lineHeight: 1.8, marginBottom: 24, maxWidth: 720 }}>{section.body}</p>}
             {section.features && (
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 16, marginTop: 24 }}>
@@ -124,7 +124,7 @@ export default function ProgrammaticPage({ title, subtitle, breadcrumbs, heroIco
             <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "#C8A34D", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase" }}>Get Started</span>
             <div style={{ height: 1, width: 48, background: "rgba(200,163,77,0.3)" }} />
           </div>
-          <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 800, color: "#fff", marginBottom: 16, letterSpacing: "-0.02em" }}>Ready for a Cleaner Facility?</h2>
+          <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 700, color: "#fff", marginBottom: 16, letterSpacing: "-0.02em" }}>Ready for a Cleaner Facility?</h2>
           <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "rgba(255,255,255,0.6)", lineHeight: 1.7, marginBottom: 32 }}>Get a complimentary facility walkthrough and customized cleaning proposal. No obligation.</p>
           <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
             <a href="/#schedule" className="pp-cta-primary" style={{ background: "#1B7A3D", color: "#fff", padding: "16px 36px", borderRadius: 8, fontWeight: 700, fontSize: 13, textDecoration: "none", fontFamily: "'Syne', sans-serif", letterSpacing: "0.04em", display: "inline-flex", alignItems: "center", gap: 8 }}>Schedule a Walkthrough →</a>

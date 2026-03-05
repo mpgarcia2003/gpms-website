@@ -70,7 +70,7 @@ export default function SeoLandingPage({
               <span style={{ fontSize: 10, color: "#C8A34D", fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", fontFamily: "'JetBrains Mono', monospace" }}>MBE Certified · Licensed & Insured · SAM.gov Registered</span>
             </div>
           </div>
-          <h1 className="seo-fade-up" style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(32px, 5vw, 56px)", fontWeight: 800, color: "#fff", lineHeight: 1.05, marginBottom: 24, letterSpacing: "-0.03em", animationDelay: "0.15s" }}>
+          <h1 className="seo-fade-up" style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(32px, 5vw, 56px)", fontWeight: 700, color: "#fff", lineHeight: 1.1, marginBottom: 24, letterSpacing: "-0.02em", animationDelay: "0.15s" }}>
             {headline} <span style={{ color: "#C8A34D" }}>{highlightWord}</span>
           </h1>
           <p className="seo-fade-up" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 18, color: "rgba(255,255,255,0.6)", lineHeight: 1.7, marginBottom: 36, maxWidth: 640, margin: "0 auto 36px", animationDelay: "0.3s" }}>{subheadline}</p>
@@ -113,7 +113,7 @@ export default function SeoLandingPage({
               <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "#C8A34D", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase" }}>Services Included</span>
               <div style={{ height: 1, width: 48, background: "rgba(200,163,77,0.3)" }} />
             </div>
-            <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 800, color: "#1A2B1F", textAlign: "center", marginBottom: 48, letterSpacing: "-0.02em" }}>What&apos;s Included</h2>
+            <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 700, color: "#1A2B1F", textAlign: "center", marginBottom: 48, letterSpacing: "-0.02em" }}>What&apos;s Included</h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 24 }}>
               {services.map((svc, i) => (
                 <div key={i} className="seo-svc-card" style={{ background: "#FFFFFF", borderRadius: 12, padding: 32, border: "1px solid #E2EBE5", boxShadow: "0 2px 12px rgba(0,0,0,0.04)" }}>
@@ -138,7 +138,7 @@ export default function SeoLandingPage({
               <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "#C8A34D", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase" }}>Why GreenPoint</span>
               <div style={{ height: 1, width: 48, background: "rgba(200,163,77,0.3)" }} />
             </div>
-            <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 800, color: "#1A2B1F", textAlign: "center", marginBottom: 48, letterSpacing: "-0.02em" }}>
+            <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 700, color: "#1A2B1F", textAlign: "center", marginBottom: 48, letterSpacing: "-0.02em" }}>
               Why Facility Managers Choose <span style={{ color: "#1B7A3D" }}>GreenPoint</span>
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }} className="why-grid-seo">
@@ -167,7 +167,7 @@ export default function SeoLandingPage({
               <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "#C8A34D", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase" }}>FAQ</span>
               <div style={{ height: 1, width: 48, background: "rgba(200,163,77,0.3)" }} />
             </div>
-            <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 800, color: "#1A2B1F", textAlign: "center", marginBottom: 48, letterSpacing: "-0.02em" }}>Frequently Asked Questions</h2>
+            <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 700, color: "#1A2B1F", textAlign: "center", marginBottom: 48, letterSpacing: "-0.02em" }}>Frequently Asked Questions</h2>
             {faqItems.map((item, i) => (
               <div key={i} className={`seo-faq-row${openFaq === i ? " faq-open" : ""}`} style={{ borderBottom: "1px solid #E2EBE5" }}>
                 <button onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center", padding: "20px 0 20px 16px", background: "none", border: "none", cursor: "pointer", textAlign: "left", gap: 20 }}>
@@ -191,7 +191,7 @@ export default function SeoLandingPage({
             <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "#C8A34D", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase" }}>Get Started</span>
             <div style={{ height: 1, width: 48, background: "rgba(200,163,77,0.3)" }} />
           </div>
-          <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(24px, 3vw, 40px)", fontWeight: 800, color: "#fff", marginBottom: 16, lineHeight: 1.1, letterSpacing: "-0.02em" }}>{ctaHeadline}</h2>
+          <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(24px, 3vw, 40px)", fontWeight: 700, color: "#fff", marginBottom: 16, lineHeight: 1.1, letterSpacing: "-0.02em" }}>{ctaHeadline}</h2>
           <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "rgba(255,255,255,0.6)", lineHeight: 1.7, marginBottom: 40 }}>{ctaSubheadline}</p>
           <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
             <a href="/#schedule" className="seo-cta-primary" style={{ background: "#1B7A3D", color: "#fff", padding: "18px 40px", borderRadius: 8, fontWeight: 700, fontSize: 13, textDecoration: "none", fontFamily: "'Syne', sans-serif", letterSpacing: "0.04em", display: "inline-flex", alignItems: "center", gap: 8 }}>Schedule My Walkthrough →</a>
