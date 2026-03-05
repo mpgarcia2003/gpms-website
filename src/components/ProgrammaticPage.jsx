@@ -84,7 +84,9 @@ export default function ProgrammaticPage({ title, subtitle, breadcrumbs, heroIco
               </div>
             )}
             {section.heading && <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 700, color: "#1A2B1F", lineHeight: 1.15, marginBottom: 20, letterSpacing: "-0.02em" }}>{section.heading}</h2>}
-            {section.body && <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "#4A5E52", lineHeight: 1.8, marginBottom: 24, maxWidth: 720 }}>{section.body}</p>}
+            {section.body && section.body.split('\n\n').map((para, pi) => (
+              <p key={pi} style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "#4A5E52", lineHeight: 1.8, marginBottom: 16, maxWidth: 720 }}>{para}</p>
+            ))}
             {section.features && (
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 16, marginTop: 24 }}>
                 {section.features.map((feat, fi) => (
@@ -101,6 +103,29 @@ export default function ProgrammaticPage({ title, subtitle, breadcrumbs, heroIco
               <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 20 }}>
                 {section.badges.map((badge, bi) => (
                   <span key={bi} style={{ background: "rgba(200,163,77,0.08)", color: "#C8A34D", padding: "6px 14px", borderRadius: 4, fontSize: 11, fontWeight: 600, fontFamily: "'JetBrains Mono', monospace", border: "1px solid rgba(200,163,77,0.2)", letterSpacing: "0.05em" }}>{badge}</span>
+                ))}
+              </div>
+            )}
+            {section.steps && (
+              <div style={{ display: "grid", gap: 16, marginTop: 24 }}>
+                {section.steps.map((item, si) => (
+                  <div key={si} style={{ display: "flex", gap: 16, background: "#FFFFFF", borderRadius: 10, padding: "20px 22px", border: "1px solid #E2EBE5" }}>
+                    <div style={{ width: 36, height: 36, borderRadius: "50%", background: "#1B7A3D", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: 14, flexShrink: 0 }}>{si + 1}</div>
+                    <div>
+                      <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 15, fontWeight: 700, color: "#1A2B1F", marginBottom: 6 }}>{item.step}</div>
+                      <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "#4A5E52", lineHeight: 1.7, margin: 0 }}>{item.detail}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+            {section.industriesServed && (
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: 16, marginTop: 24 }}>
+                {section.industriesServed.map((ind, ii) => (
+                  <div key={ii} style={{ background: "#FFFFFF", borderRadius: 10, padding: "20px 22px", border: "1px solid #E2EBE5" }}>
+                    <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 15, fontWeight: 700, color: "#1A2B1F", marginBottom: 8 }}>{ind.name}</div>
+                    <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "#4A5E52", lineHeight: 1.6, margin: 0 }}>{ind.detail}</p>
+                  </div>
                 ))}
               </div>
             )}
