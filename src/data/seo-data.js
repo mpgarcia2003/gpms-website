@@ -14,6 +14,14 @@ export const STATES = [
       { slug: "mount-vernon", name: "Mount Vernon", county: "Westchester County" },
       { slug: "white-plains", name: "White Plains", county: "Westchester County" },
       { slug: "westchester", name: "Westchester", county: "Westchester County" },
+      { slug: "hempstead", name: "Hempstead", county: "Nassau County" },
+      { slug: "freeport", name: "Freeport", county: "Nassau County" },
+      { slug: "long-beach", name: "Long Beach", county: "Nassau County" },
+      { slug: "buffalo", name: "Buffalo", county: "Erie County" },
+      { slug: "syracuse", name: "Syracuse", county: "Onondaga County" },
+      { slug: "albany", name: "Albany", county: "Albany County" },
+      { slug: "poughkeepsie", name: "Poughkeepsie", county: "Dutchess County" },
+      { slug: "spring-valley", name: "Spring Valley", county: "Rockland County" },
     ],
   },
   {
@@ -31,6 +39,14 @@ export const STATES = [
       { slug: "clifton", name: "Clifton", county: "Passaic County" },
       { slug: "passaic", name: "Passaic", county: "Passaic County" },
       { slug: "east-orange", name: "East Orange", county: "Essex County" },
+      { slug: "trenton", name: "Trenton", county: "Mercer County" },
+      { slug: "camden", name: "Camden", county: "Camden County" },
+      { slug: "edison", name: "Edison", county: "Middlesex County" },
+      { slug: "woodbridge", name: "Woodbridge", county: "Middlesex County" },
+      { slug: "toms-river", name: "Toms River", county: "Ocean County" },
+      { slug: "union-city", name: "Union City", county: "Hudson County" },
+      { slug: "bayonne", name: "Bayonne", county: "Hudson County" },
+      { slug: "north-bergen", name: "North Bergen", county: "Hudson County" },
     ],
   },
   {
@@ -46,6 +62,12 @@ export const STATES = [
       { slug: "danbury", name: "Danbury", county: "Fairfield County" },
       { slug: "waterbury", name: "Waterbury", county: "New Haven County" },
       { slug: "greenwich", name: "Greenwich", county: "Fairfield County" },
+      { slug: "new-london", name: "New London", county: "New London County" },
+      { slug: "middletown", name: "Middletown", county: "Middlesex County" },
+      { slug: "west-hartford", name: "West Hartford", county: "Hartford County" },
+      { slug: "milford", name: "Milford", county: "New Haven County" },
+      { slug: "shelton", name: "Shelton", county: "Fairfield County" },
+      { slug: "manchester", name: "Manchester", county: "Hartford County" },
     ],
   },
   {
@@ -61,6 +83,12 @@ export const STATES = [
       { slug: "king-of-prussia", name: "King of Prussia", county: "Montgomery County" },
       { slug: "norristown", name: "Norristown", county: "Montgomery County" },
       { slug: "chester", name: "Chester", county: "Delaware County" },
+      { slug: "pittsburgh", name: "Pittsburgh", county: "Allegheny County" },
+      { slug: "harrisburg", name: "Harrisburg", county: "Dauphin County" },
+      { slug: "lancaster", name: "Lancaster", county: "Lancaster County" },
+      { slug: "erie", name: "Erie", county: "Erie County" },
+      { slug: "wilkes-barre", name: "Wilkes-Barre", county: "Luzerne County" },
+      { slug: "york", name: "York", county: "York County" },
     ],
   },
   {
@@ -76,6 +104,14 @@ export const STATES = [
       { slug: "coral-gables", name: "Coral Gables", county: "Miami-Dade County" },
       { slug: "hialeah", name: "Hialeah", county: "Miami-Dade County" },
       { slug: "pembroke-pines", name: "Pembroke Pines", county: "Broward County" },
+      { slug: "tampa", name: "Tampa", county: "Hillsborough County" },
+      { slug: "jacksonville", name: "Jacksonville", county: "Duval County" },
+      { slug: "west-palm-beach", name: "West Palm Beach", county: "Palm Beach County" },
+      { slug: "boca-raton", name: "Boca Raton", county: "Palm Beach County" },
+      { slug: "clearwater", name: "Clearwater", county: "Pinellas County" },
+      { slug: "st-petersburg", name: "St. Petersburg", county: "Pinellas County" },
+      { slug: "davie", name: "Davie", county: "Broward County" },
+      { slug: "doral", name: "Doral", county: "Miami-Dade County" },
     ],
   },
 ];
@@ -321,4 +357,24 @@ export function getAllIndustryParams() {
 
 export function getAllServiceParams() {
   return SERVICES_LIST.map(s => ({ serviceSlug: s.slug }));
+}
+
+export function getAllLocationServiceParams() {
+  const params = [];
+  for (const state of STATES) {
+    for (const city of state.cities) {
+      for (const service of SERVICES_LIST) {
+        params.push({
+          stateSlug: state.slug,
+          citySlug: city.slug,
+          industrySlug: service.slug,
+        });
+      }
+    }
+  }
+  return params;
+}
+
+export function getIndustryOrService(slug) {
+  return getIndustry(slug) || getService(slug);
 }

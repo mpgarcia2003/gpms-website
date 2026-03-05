@@ -1,14 +1,14 @@
-import { STATES, INDUSTRIES, SERVICES_LIST, getState, getCity, getIndustry, getAllLocationIndustryParams } from '../../../../../data/seo-data';
+import { STATES, INDUSTRIES, SERVICES_LIST, getState, getCity, getIndustry, getService, getAllLocationIndustryParams, getAllLocationServiceParams } from '../../../../../data/seo-data';
 import ProgrammaticPage from '../../../../../components/ProgrammaticPage';
 
 export function generateStaticParams() {
-  return getAllLocationIndustryParams();
+  return [...getAllLocationIndustryParams(), ...getAllLocationServiceParams()];
 }
 
 export function generateMetadata({ params }) {
   const state = getState(params.stateSlug);
   const city = getCity(params.stateSlug, params.citySlug);
-  const industry = getIndustry(params.industrySlug);
+  const industry = getIndustry(params.industrySlug) || getService(params.industrySlug);
   if (!state || !city || !industry) return {};
 
   const title = `${industry.shortName} Services in ${city.name}, ${state.abbr}`;
@@ -25,7 +25,8 @@ export function generateMetadata({ params }) {
 export default function CityIndustryPage({ params }) {
   const state = getState(params.stateSlug);
   const city = getCity(params.stateSlug, params.citySlug);
-  const industry = getIndustry(params.industrySlug);
+  const industry = getIndustry(params.industrySlug) || getService(params.industrySlug);
+  const isService = !getIndustry(params.industrySlug) && !!getService(params.industrySlug);
 
   if (!state || !city || !industry) return <div>Page not found</div>;
 
@@ -38,7 +39,31 @@ export default function CityIndustryPage({ params }) {
     { label: industry.shortName },
   ];
 
-  const sections = [
+  const sections = isService ? [
+    {
+      label: `${industry.shortName} in ${city.name}`,
+      heading: `Professional ${industry.shortName} Services in ${city.name}, ${state.abbr}`,
+      body: `${industry.description} GreenPoint provides expert ${industry.shortName.toLowerCase()} services throughout ${city.name} and ${city.county || state.name}, backed by our proprietary JaniTrack verification system.`,
+      features: industry.includes || [],
+    },
+    {
+      label: "Why GreenPoint",
+      heading: `Why ${city.name} Facilities Trust GreenPoint`,
+      body: `As a Certified Minority Business Enterprise headquartered in New York, we understand the unique demands of facilities in ${city.name}, ${state.abbr}. Our JaniTrack system provides real-time photo verification and ATP bioluminescence testing.`,
+      stats: [
+        { number: "98%", label: "Client Retention" },
+        { number: "500+", label: "Facilities Served" },
+        { number: "5", label: "States Covered" },
+        { number: "MBE", label: "Certified" },
+      ],
+    },
+    {
+      label: "Industries We Serve",
+      heading: `${industry.shortName} for Every Facility Type in ${city.name}`,
+      body: `We deliver ${industry.shortName.toLowerCase()} services across all commercial and institutional facility types in ${city.name}.`,
+      features: INDUSTRIES.map(i => `${i.shortName}: ${i.description.split('.')[0]}.`),
+    },
+  ] : [
     {
       label: `${industry.shortName} in ${city.name}`,
       heading: `Why ${city.name} Facilities Choose GreenPoint for ${industry.shortName}`,
@@ -71,12 +96,18 @@ export default function CityIndustryPage({ params }) {
     },
   ];
 
-  // Related links: other industries in this city + this industry in nearby cities
-  const otherIndustries = INDUSTRIES.filter(i => i.slug !== industry.slug).slice(0, 3).map(i => ({
-    href: `/locations/${state.slug}/${city.slug}/${i.slug}/`,
-    label: `${i.shortName} in ${city.name}`,
-    icon: i.icon,
-  }));
+  // Related links
+  const otherItems = isService
+    ? SERVICES_LIST.filter(s => s.slug !== industry.slug).slice(0, 3).map(s => ({
+        href: `/locations/${state.slug}/${city.slug}/${s.slug}/`,
+        label: `${s.shortName} in ${city.name}`,
+        icon: s.icon,
+      }))
+    : INDUSTRIES.filter(i => i.slug !== industry.slug).slice(0, 3).map(i => ({
+        href: `/locations/${state.slug}/${city.slug}/${i.slug}/`,
+        label: `${i.shortName} in ${city.name}`,
+        icon: i.icon,
+      }));
 
   const nearbyCities = state.cities.filter(c => c.slug !== city.slug).slice(0, 3).map(c => ({
     href: `/locations/${state.slug}/${c.slug}/${industry.slug}/`,
@@ -84,7 +115,7 @@ export default function CityIndustryPage({ params }) {
     icon: industry.icon,
   }));
 
-  const relatedLinks = [...otherIndustries, ...nearbyCities];
+  const relatedLinks = [...otherItems, ...nearbyCities];
 
   const schemaMarkup = {
     "@context": "https://schema.org",
