@@ -142,6 +142,7 @@ export const INDUSTRIES = [
       { q: "How often should schools be professionally cleaned?", a: "Most schools require daily cleaning of classrooms, restrooms, and cafeterias during the school year, with deep cleaning during breaks and summer. High-touch surfaces should be disinfected multiple times per day." },
       { q: "What cleaning products are safe for use around children?", a: "We exclusively use Green Seal certified and EPA Safer Choice products that are non-toxic, fragrance-free, and allergy-safe. All products meet CDC guidelines for educational facility disinfection." },
       { q: "Do you provide cleaning during school hours?", a: "We offer flexible scheduling including after-hours, overnight, and weekend service. Day porter services are also available for continuous restroom monitoring and cafeteria turnovers during school hours." },
+      { q: "Are you approved to clean NYC public schools?", a: "Yes. GreenPoint is an NYC DOE Approved Vendor, authorized to provide cleaning products and services to New York City public schools. We are also MBE/MWBE certified, making contracts count toward diversity procurement goals." },
       { q: "How do you verify cleaning quality in schools?", a: "Our proprietary JaniTrack system provides real-time photo verification and ATP bioluminescence testing, giving administrators measurable proof that every area meets clinical-grade cleanliness standards." },
     ],
   },

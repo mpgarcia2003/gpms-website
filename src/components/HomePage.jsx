@@ -351,7 +351,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "Is GreenPoint a Minority Business Enterprise (MBE)?",
-    a: "Yes. GreenPoint Maintenance Services Corp is a Certified Minority Business Enterprise registered with New York State and the City of New York. We are also registered on SAM.gov for federal contracting. Our MBE certification qualifies us for diversity procurement programs and MWBE set-aside contracts at the city, state, and federal level.",
+    a: "Yes. GreenPoint Maintenance Services Corp is a Certified Minority Business Enterprise registered with New York State and the City of New York. We are also an NYC DOE Approved Vendor, authorized to provide products and services to New York City public schools. We are registered on SAM.gov for federal contracting. Our MBE certification qualifies us for diversity procurement programs and MWBE set-aside contracts at the city, state, and federal level.",
   },
   {
     q: "What types of facilities do you clean?",
@@ -1557,7 +1557,7 @@ function Hero() {
             }}>
               <div style={{ width: 8, height: 8, borderRadius: "50%", background: "#1B7A3D", animation: "pulse 2s infinite" }} />
               <span style={{ fontSize: 12, color: "#1B7A3D", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
-                MBE Certified • Licensed & Insured
+                MBE Certified • NYC DOE Approved Vendor • Licensed & Insured
               </span>
             </div>
 
@@ -1605,6 +1605,7 @@ function Hero() {
             <div className="hero-trust-anim" style={{ display: "flex", gap: 20, marginTop: 48, flexWrap: "wrap" }}>
               {[
                 { text: "MBE / MWBE Certified" },
+                { text: "NYC DOE Approved Vendor" },
                 { text: "SAM.gov Registered" },
                 { text: "$2M+ Insurance" },
                 { text: "Background-Checked Teams" },
@@ -1690,7 +1691,7 @@ function StatsBar() {
 }
 
 function AuthorityBar() {
-  const items = ["NYC Charter Schools", "Westchester Medical Offices", "NJ Houses of Worship", "CT Office Buildings", "PA Educational Facilities", "Bronx Community Centers", "Miami Healthcare Clinics", "Government Facilities", "MBE/MWBE Certified", "SAM.gov Registered", "$2M+ Insured"];
+  const items = ["NYC Charter Schools", "NYC DOE Approved Vendor", "Westchester Medical Offices", "NJ Houses of Worship", "CT Office Buildings", "PA Educational Facilities", "Bronx Community Centers", "Miami Healthcare Clinics", "Government Facilities", "MBE/MWBE Certified", "SAM.gov Registered", "$2M+ Insured"];
   return (
     <section style={{ background: '#FFFFFF', borderTop: '1px solid #E8F5ED', borderBottom: '1px solid #E8F5ED', padding: '14px 0', overflow: 'hidden', position: 'relative' }}>
       <div style={{ display: 'flex', animation: 'marquee 30s linear infinite', whiteSpace: 'nowrap' }}>
@@ -1722,6 +1723,7 @@ function ComplianceSection() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 20 }} className="stats-grid">
           {[
             { iconKey: "award", title: "MBE / MWBE Certified", desc: "NYC & NYS registered. Eligible for diversity procurement programs and set-aside contracts." },
+            { iconKey: "school", title: "NYC DOE Approved Vendor", desc: "Approved to provide products and services to New York City public schools through the DOE vendor system." },
             { iconKey: "file-check", title: "SAM.gov Registered", desc: "Federal contractor registration with valid CAGE code and UEI. Ready for government RFPs." },
             { iconKey: "shield", title: "$2M+ Insurance Coverage", desc: "Commercial general liability, workers' compensation, and bonding. COI available on request." },
             { iconKey: "clipboard", title: "OSHA Compliant", desc: "All field staff trained on OSHA safety standards. Background-checked and drug-tested workforce." },
@@ -1780,6 +1782,7 @@ function About() {
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}>
                 {[
                   { label: "MBE / MWBE Certified", sub: "NYS & NYC" },
+                  { label: "NYC DOE Approved Vendor", sub: "Public Schools" },
                   { label: "SAM.gov Registered", sub: "Federal Contracting" },
                   { label: "Fully Insured", sub: "$2M+ GL Coverage" },
                   { label: "OSHA Compliant", sub: "Trained Workforce" },
@@ -1814,7 +1817,7 @@ function About() {
                   <div style={{ borderTop: "1px solid #E2EBE5", paddingTop: 20 }}>
                     <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "#8A9B91", marginBottom: 8 }}>Also registered with:</div>
                     <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-                      {["SAM.gov", "OSHA Compliant", "EPA Standards"].map((badge) => (
+                      {["SAM.gov", "NYC DOE Vendor", "OSHA Compliant", "EPA Standards"].map((badge) => (
                         <span key={badge} style={{
                           background: "rgba(27,122,61,0.15)", color: "#1B7A3D", padding: "4px 12px",
                           borderRadius: 6, fontSize: 12, fontWeight: 600, fontFamily: "'Plus Jakarta Sans', sans-serif",
@@ -2693,7 +2696,7 @@ function Footer() {
               MBE-certified facility services provider. Commercial janitorial and facility maintenance across NY, NJ, CT, PA, and FL since 2018.
             </p>
             <div style={{ display: "flex", gap: 8, marginTop: 18, flexWrap: "wrap" }}>
-              {["MBE / MWBE", "SAM.gov", "Bonded & Insured"].map((badge) => (
+              {["MBE / MWBE", "NYC DOE Vendor", "SAM.gov", "Bonded & Insured"].map((badge) => (
                 <span key={badge} style={{
                   background: "rgba(27,122,61,0.1)", color: "#1B7A3D", padding: "3px 10px",
                   borderRadius: 4, fontSize: 10, fontWeight: 600, fontFamily: "'Plus Jakarta Sans', sans-serif",

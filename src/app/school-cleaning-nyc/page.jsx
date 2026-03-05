@@ -55,7 +55,7 @@ const faqSchema = {
       name: "Are you qualified for NYC school district contracts?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. GreenPoint is an MBE/MWBE certified enterprise registered with both NYC and NYS. We are also SAM.gov registered with a valid CAGE code and UEI for government procurement. Our MBE certification qualifies us for diversity procurement programs and set-aside contracts at the city, state, and federal level.",
+        text: "Yes. GreenPoint is an NYC DOE Approved Vendor and MBE/MWBE certified enterprise registered with both NYC and NYS. We are also SAM.gov registered with a valid CAGE code and UEI for government procurement. Our certifications qualify us for diversity procurement programs and set-aside contracts at the city, state, and federal level.",
       },
     },
     {
@@ -76,10 +76,10 @@ export default function SchoolCleaningNYC() {
       highlightWord="New York City"
       subheadline="CDC-compliant janitorial for K-12 schools, charter schools, and daycare centers. MBE-certified, Green Seal products, and every session verified through JaniTrack."
       trustBadges={[
+        "NYC DOE Approved Vendor",
         "MBE / MWBE Certified",
         "CDC-Compliant Protocols",
         "Green Seal Products",
-        "Background-Checked Teams",
       ]}
       introParagraphs={[
         "New York City schools face unique cleaning challenges: high-traffic environments, strict health department regulations, allergy-sensitive students, and limited budgets. GreenPoint Maintenance Services Corp provides dedicated janitorial programs designed specifically for K-12 educational facilities — from single-campus charter schools to multi-building district complexes.",

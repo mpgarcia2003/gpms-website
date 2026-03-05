@@ -15,6 +15,7 @@ export default function sitemap() {
     { url: `${BASE_URL}/government-cleaning-services/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE_URL}/capability-statement/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE_URL}/free-facility-inspection/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/nyc-doe-school-cleaning/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
   ];
 
   // State pages
