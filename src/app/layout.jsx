@@ -50,6 +50,37 @@ const localBusinessSchema = {
   "sameAs": []
 };
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "GreenPoint Maintenance Services Corp",
+  "legalName": "GreenPoint Maintenance Services Corp",
+  "url": "https://greenpointms.com",
+  "logo": "https://greenpointms.com/favicon.ico",
+  "description": "MBE-certified commercial janitorial and facility maintenance serving schools, healthcare, churches, daycare, government buildings, and offices across NY, NJ, CT, PA, and FL.",
+  "telephone": "+1-347-332-9348",
+  "email": "info@greenpointms.com",
+  "foundingDate": "2018",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1420 Outlook Ave",
+    "addressLocality": "Bronx",
+    "addressRegion": "NY",
+    "postalCode": "10465",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    { "@type": "State", "name": "New York" },
+    { "@type": "State", "name": "New Jersey" },
+    { "@type": "State", "name": "Connecticut" },
+    { "@type": "State", "name": "Pennsylvania" },
+    { "@type": "State", "name": "Florida" }
+  ],
+  "knowsAbout": ["Commercial Janitorial", "Disinfection & Sanitization", "Floor Care", "Day Porter Services", "Facility Maintenance", "Post-Construction Cleanup"],
+  "numberOfEmployees": { "@type": "QuantitativeValue", "minValue": 80 },
+  "naics": "561720"
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -60,6 +91,10 @@ export default function RootLayout({ children }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
       </head>
       <body style={{ margin: 0, padding: 0, fontFamily: "'Plus Jakarta Sans', sans-serif", background: '#FFFFFF', color: '#1A2B1F' }}>

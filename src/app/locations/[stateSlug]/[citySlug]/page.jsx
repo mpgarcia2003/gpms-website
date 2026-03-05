@@ -57,12 +57,26 @@ export default function CityPage({ params }) {
     name: `GreenPoint Maintenance Services - ${city.name}`,
     description: `Commercial cleaning services in ${city.name}, ${state.abbr}`,
     telephone: "+1-347-332-9348",
-    areaServed: { "@type": "City", name: city.name },
+    email: "info@greenpointms.com",
+    url: `https://greenpointms.com/locations/${state.slug}/${city.slug}/`,
+    areaServed: { "@type": "City", name: city.name, containedInPlace: { "@type": "State", name: state.name } },
+    priceRange: "$",
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://greenpointms.com" },
+      { "@type": "ListItem", position: 2, name: state.name, item: `https://greenpointms.com/locations/${state.slug}/` },
+      { "@type": "ListItem", position: 3, name: city.name },
+    ],
   };
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <ProgrammaticPage title={title} subtitle={subtitle} breadcrumbs={breadcrumbs} sections={sections} relatedLinks={relatedLinks} />
     </>
   );

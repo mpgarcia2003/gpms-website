@@ -41,5 +41,28 @@ export default function StatePage({ params }) {
     icon: "map-pin",
   }));
 
-  return <ProgrammaticPage title={title} subtitle={subtitle} breadcrumbs={breadcrumbs} sections={sections} relatedLinks={relatedLinks} />;
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://greenpointms.com" },
+      { "@type": "ListItem", position: 2, name: state.name },
+    ],
+  };
+
+  const serviceAreaSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: `Commercial Cleaning Services in ${state.name}`,
+    provider: { "@type": "LocalBusiness", name: "GreenPoint Maintenance Services Corp", url: "https://greenpointms.com" },
+    areaServed: state.cities.map(c => ({ "@type": "City", name: c.name })),
+  };
+
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceAreaSchema) }} />
+      <ProgrammaticPage title={title} subtitle={subtitle} breadcrumbs={breadcrumbs} sections={sections} relatedLinks={relatedLinks} />
+    </>
+  );
 }

@@ -39,6 +39,8 @@ export default function ProgrammaticPage({ title, subtitle, breadcrumbs, heroIco
         .pp-cta-primary:hover { transform:translateY(-2px) !important; box-shadow:0 8px 40px rgba(27,122,61,0.3) !important; }
         .pp-cta-ghost { transition:background 0.3s ease, color 0.3s ease, border-color 0.3s ease; }
         .pp-cta-ghost:hover { background:#1B7A3D !important; color:#fff !important; border-color:#1B7A3D !important; }
+        details summary::-webkit-details-marker { display:none; }
+        details[open] summary span:last-child { transform:rotate(45deg); }
       `}</style>
       <SiteHeader />
 
@@ -99,6 +101,19 @@ export default function ProgrammaticPage({ title, subtitle, breadcrumbs, heroIco
               <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 20 }}>
                 {section.badges.map((badge, bi) => (
                   <span key={bi} style={{ background: "rgba(200,163,77,0.08)", color: "#C8A34D", padding: "6px 14px", borderRadius: 4, fontSize: 11, fontWeight: 600, fontFamily: "'JetBrains Mono', monospace", border: "1px solid rgba(200,163,77,0.2)", letterSpacing: "0.05em" }}>{badge}</span>
+                ))}
+              </div>
+            )}
+            {section.faqs && (
+              <div style={{ display: "grid", gap: 12, marginTop: 24 }}>
+                {section.faqs.map((faq, fi) => (
+                  <details key={fi} style={{ background: "#FFFFFF", borderRadius: 10, border: "1px solid #E2EBE5", overflow: "hidden" }}>
+                    <summary style={{ padding: "18px 20px", cursor: "pointer", fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 15, fontWeight: 600, color: "#1A2B1F", lineHeight: 1.5, listStyle: "none", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                      {faq.q}
+                      <span style={{ color: "#1B7A3D", fontSize: 18, flexShrink: 0, marginLeft: 12 }}>+</span>
+                    </summary>
+                    <div style={{ padding: "0 20px 18px", fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "#4A5E52", lineHeight: 1.7 }}>{faq.a}</div>
+                  </details>
                 ))}
               </div>
             )}

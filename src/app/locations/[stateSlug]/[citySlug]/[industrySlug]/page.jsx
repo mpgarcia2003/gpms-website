@@ -39,6 +39,14 @@ export default function CityIndustryPage({ params }) {
     { label: industry.shortName },
   ];
 
+  // Build FAQ section if available
+  const faqSection = industry.faqs && industry.faqs.length > 0 ? {
+    label: "FAQ",
+    heading: `${industry.shortName} FAQ — ${city.name}, ${state.abbr}`,
+    body: `Common questions about ${industry.shortName.toLowerCase()} services in ${city.name}.`,
+    faqs: industry.faqs,
+  } : null;
+
   const sections = isService ? [
     {
       label: `${industry.shortName} in ${city.name}`,
@@ -63,6 +71,7 @@ export default function CityIndustryPage({ params }) {
       body: `We deliver ${industry.shortName.toLowerCase()} services across all commercial and institutional facility types in ${city.name}.`,
       features: INDUSTRIES.map(i => `${i.shortName}: ${i.description.split('.')[0]}.`),
     },
+    ...(faqSection ? [faqSection] : []),
   ] : [
     {
       label: `${industry.shortName} in ${city.name}`,
@@ -94,6 +103,7 @@ export default function CityIndustryPage({ params }) {
       body: `In addition to ${industry.shortName.toLowerCase()}, we offer a full suite of commercial cleaning and facility maintenance services throughout ${city.name} and ${state.name}.`,
       features: SERVICES_LIST.map(s => `${s.shortName}: ${s.description.split('.')[0]}.`),
     },
+    ...(faqSection ? [faqSection] : []),
   ];
 
   // Related links
@@ -127,7 +137,7 @@ export default function CityIndustryPage({ params }) {
     email: "info@greenpointms.com",
     areaServed: { "@type": "City", name: city.name, containedInPlace: { "@type": "State", name: state.name } },
     serviceType: industry.name,
-    priceRange: "$$",
+    priceRange: "$",
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: `${industry.shortName} Services`,
@@ -135,9 +145,48 @@ export default function CityIndustryPage({ params }) {
     },
   };
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://greenpointms.com" },
+      { "@type": "ListItem", position: 2, name: state.name, item: `https://greenpointms.com/locations/${state.slug}/` },
+      { "@type": "ListItem", position: 3, name: city.name, item: `https://greenpointms.com/locations/${state.slug}/${city.slug}/` },
+      { "@type": "ListItem", position: 4, name: `${industry.shortName}` },
+    ],
+  };
+
+  const faqSchema = industry.faqs && industry.faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: industry.faqs.map(faq => ({
+      "@type": "Question",
+      name: faq.q,
+      acceptedAnswer: { "@type": "Answer", text: faq.a },
+    })),
+  } : null;
+
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: `${industry.shortName} in ${city.name}, ${state.abbr}`,
+    description: industry.description,
+    provider: {
+      "@type": "LocalBusiness",
+      name: "GreenPoint Maintenance Services Corp",
+      telephone: "+1-347-332-9348",
+      url: "https://greenpointms.com",
+    },
+    areaServed: { "@type": "City", name: city.name, containedInPlace: { "@type": "State", name: state.name } },
+    serviceType: industry.name,
+  };
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <ProgrammaticPage
         title={title}
         subtitle={subtitle}

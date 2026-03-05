@@ -138,6 +138,12 @@ export const INDUSTRIES = [
       "High-traffic restrooms requiring multiple daily turnovers",
       "Cafeteria sanitation and food safety compliance",
     ],
+    faqs: [
+      { q: "How often should schools be professionally cleaned?", a: "Most schools require daily cleaning of classrooms, restrooms, and cafeterias during the school year, with deep cleaning during breaks and summer. High-touch surfaces should be disinfected multiple times per day." },
+      { q: "What cleaning products are safe for use around children?", a: "We exclusively use Green Seal certified and EPA Safer Choice products that are non-toxic, fragrance-free, and allergy-safe. All products meet CDC guidelines for educational facility disinfection." },
+      { q: "Do you provide cleaning during school hours?", a: "We offer flexible scheduling including after-hours, overnight, and weekend service. Day porter services are also available for continuous restroom monitoring and cafeteria turnovers during school hours." },
+      { q: "How do you verify cleaning quality in schools?", a: "Our proprietary JaniTrack system provides real-time photo verification and ATP bioluminescence testing, giving administrators measurable proof that every area meets clinical-grade cleanliness standards." },
+    ],
   },
   {
     slug: "church-cleaning",
@@ -159,6 +165,12 @@ export const INDUSTRIES = [
       "Nursery sanitization for infant and toddler safety",
       "Maintaining sacred spaces with appropriate care and respect",
       "Event-driven cleaning schedules that change weekly",
+    ],
+    faqs: [
+      { q: "How do you handle cleaning around worship schedules?", a: "We customize our cleaning schedule around your services, events, and meetings. Most churches prefer post-service cleaning with additional mid-week maintenance for high-traffic areas like fellowship halls and nurseries." },
+      { q: "Do you clean delicate sanctuary furnishings?", a: "Yes, our teams are trained in the proper care of pews, altars, stained glass surrounds, and other sanctuary elements using appropriate, non-damaging products and techniques." },
+      { q: "Can you handle event cleanup for weddings and funerals?", a: "Absolutely. We offer rapid turnaround cleaning for special events including weddings, funerals, banquets, and community gatherings, ensuring the space is ready for the next use." },
+      { q: "Is your cleaning staff background-checked?", a: "Yes, every GreenPoint team member undergoes thorough background checks and is trained in respectful conduct appropriate for houses of worship." },
     ],
   },
   {
@@ -182,6 +194,12 @@ export const INDUSTRIES = [
       "Patient-facing areas requiring pristine presentation",
       "Proper handling of medical waste and biohazards",
     ],
+    faqs: [
+      { q: "Are your medical cleaning protocols OSHA compliant?", a: "Yes, all our medical facility protocols meet OSHA bloodborne pathogen standards, use EPA-registered hospital-grade disinfectants, and follow CDC guidelines for healthcare environmental cleaning." },
+      { q: "Do you handle biohazard waste?", a: "We follow strict biohazard-safe waste handling procedures for regulated medical waste. Our staff is trained in proper segregation, containment, and disposal protocols." },
+      { q: "How do you prevent cross-contamination between exam rooms?", a: "We use color-coded microfiber systems, dedicated supplies per room, and terminal cleaning protocols between patients. ATP bioluminescence testing verifies disinfection effectiveness." },
+      { q: "Can you clean during patient hours?", a: "We offer both during-hours day porter services for waiting areas and restrooms, and after-hours deep cleaning for exam rooms and clinical spaces to avoid disrupting patient care." },
+    ],
   },
   {
     slug: "daycare-cleaning",
@@ -203,6 +221,12 @@ export const INDUSTRIES = [
       "Changing station sanitation and diaper area hygiene",
       "Health department surprise inspections",
       "Parents demanding visible cleanliness proof",
+    ],
+    faqs: [
+      { q: "What products do you use in daycare facilities?", a: "We exclusively use EPA Safer Choice and Green Seal certified products that are non-toxic, fragrance-free, and specifically approved for environments where infants and toddlers are present." },
+      { q: "How do you sanitize toys and play equipment?", a: "Toys, play surfaces, and equipment are sanitized using child-safe disinfectants with appropriate dwell times. We follow health department guidelines for toy rotation and cleaning frequency." },
+      { q: "Will you help us pass health department inspections?", a: "Our cleaning protocols are designed specifically to meet and exceed state health department standards for childcare facilities. Many of our daycare clients report improved inspection scores after switching to GreenPoint." },
+      { q: "Can parents see proof of cleaning?", a: "Yes, our JaniTrack system provides photo-verified cleaning reports that facility directors can share with parents, providing transparent proof of daily sanitization." },
     ],
   },
   {
@@ -226,6 +250,12 @@ export const INDUSTRIES = [
       "High-traffic public spaces needing constant upkeep",
       "Budget constraints with quality expectations",
     ],
+    faqs: [
+      { q: "Is GreenPoint certified for government contracts?", a: "Yes, we are MBE/MWBE certified, registered on SAM.gov, and meet all federal, state, and municipal diversity procurement requirements for government cleaning contracts." },
+      { q: "Are your employees background-checked for government facilities?", a: "All GreenPoint employees undergo comprehensive background checks, drug screening, and security clearance verification before being assigned to any government facility." },
+      { q: "Do you meet ADA compliance requirements?", a: "Yes, our service delivery is fully ADA compliant. We ensure all cleaning processes and equipment usage accommodate accessibility requirements throughout the facility." },
+      { q: "Can you handle high-traffic public building cleaning?", a: "Absolutely. We offer day porter services for continuous upkeep of high-traffic areas like lobbies, public restrooms, and courthouses during operating hours, plus comprehensive after-hours deep cleaning." },
+    ],
   },
   {
     slug: "office-cleaning",
@@ -248,6 +278,12 @@ export const INDUSTRIES = [
       "Restroom complaints from tenants and visitors",
       "Cleaning schedules conflicting with business hours",
     ],
+    faqs: [
+      { q: "Can you clean our office without disrupting business hours?", a: "Yes, we offer after-hours, overnight, and weekend cleaning schedules. For daytime needs, our day porter services handle restrooms, lobbies, and conference room turnovers without disrupting your team." },
+      { q: "How do you ensure consistent quality across multiple floors?", a: "Each floor receives a customized cleaning checklist, and our JaniTrack system provides real-time photo verification of completed tasks. Supervisors perform regular quality audits." },
+      { q: "Do you provide supplies like paper towels and soap?", a: "We offer supply management as part of our service. We monitor inventory levels, restock restroom and kitchen supplies, and manage vendor relationships for consumables." },
+      { q: "What does your office cleaning include?", a: "Our standard office cleaning covers trash removal, restroom sanitization, floor care, high-touch disinfection, kitchen and breakroom cleaning, and lobby maintenance. All services are customizable." },
+    ],
   },
 ];
 
@@ -259,6 +295,12 @@ export const SERVICES_LIST = [
     icon: "building",
     description: "Daily, weekly, and monthly cleaning programs for lobbies, restrooms, common areas, offices, and workspaces. Customized schedules that work around your operations.",
     includes: ["Trash removal and recycling", "Restroom sanitization", "Floor sweeping, mopping, and vacuuming", "High-touch surface disinfection", "Kitchen and breakroom cleaning", "Lobby and reception maintenance"],
+    faqs: [
+      { q: "How often do you provide janitorial services?", a: "We offer daily, weekly, bi-weekly, and monthly cleaning programs customized to your facility's needs and budget. Most commercial facilities benefit from daily or every-other-day service." },
+      { q: "What is included in commercial janitorial service?", a: "Our standard janitorial service includes trash removal, restroom sanitization, floor care, high-touch surface disinfection, kitchen and breakroom cleaning, and lobby maintenance. All programs are fully customizable." },
+      { q: "Do you bring your own equipment and supplies?", a: "Yes, GreenPoint provides all equipment, cleaning products, and supplies. We use commercial-grade equipment and Green Seal certified products included in our service pricing." },
+      { q: "How quickly can you start service?", a: "We can typically begin service within 5-7 business days of contract signing. Emergency or rush starts are available for urgent facility needs." },
+    ],
   },
   {
     slug: "disinfection-sanitization",
@@ -267,6 +309,12 @@ export const SERVICES_LIST = [
     icon: "sparkles",
     description: "CDC-compliant electrostatic disinfection, hospital-grade sanitizers, and ATP bioluminescence testing for verifiable pathogen elimination.",
     includes: ["Electrostatic sprayer application", "EPA N-List disinfectant protocols", "ATP bioluminescence surface testing", "High-touch point targeted treatment", "Air quality monitoring", "Verification reporting"],
+    faqs: [
+      { q: "What disinfectants do you use?", a: "We use EPA N-List registered disinfectants proven effective against SARS-CoV-2, influenza, norovirus, and other common pathogens. All products are hospital-grade and applied using electrostatic sprayer technology." },
+      { q: "What is ATP bioluminescence testing?", a: "ATP testing measures biological contamination on surfaces using a light-based reading. It provides instant, quantifiable proof that surfaces have been properly disinfected, giving you measurable cleanliness data." },
+      { q: "How often should facilities be disinfected?", a: "Frequency depends on facility type and traffic. High-risk environments like medical offices may need daily disinfection, while standard offices typically benefit from weekly targeted disinfection of high-touch surfaces." },
+      { q: "Do you provide disinfection verification reports?", a: "Yes, every disinfection service includes detailed verification reports with ATP readings, areas treated, products used, and before/after documentation through our JaniTrack system." },
+    ],
   },
   {
     slug: "floor-care",
@@ -275,6 +323,12 @@ export const SERVICES_LIST = [
     icon: "sparkles",
     description: "Strip, seal, and refinish hard floors. Carpet extraction and encapsulation. Marble and stone restoration. VCT maintenance programs.",
     includes: ["VCT strip and wax", "Carpet shampooing and extraction", "Marble and stone polishing", "Concrete sealing", "Auto-scrubber programs", "Anti-slip treatment"],
+    faqs: [
+      { q: "How often should commercial floors be stripped and waxed?", a: "Most commercial VCT floors should be stripped and refinished every 6-12 months depending on foot traffic. High-traffic areas like lobbies may need quarterly maintenance coats between full strip and wax cycles." },
+      { q: "Do you handle all floor types?", a: "Yes, we service VCT, hardwood, marble, granite, concrete, terrazzo, ceramic tile, and all carpet types. Each floor type receives specialized treatment using appropriate products and equipment." },
+      { q: "Can you restore damaged or neglected floors?", a: "In most cases, yes. Our restoration services can bring heavily worn VCT, scratched marble, and stained carpet back to like-new condition, often saving thousands versus replacement." },
+      { q: "Do you offer ongoing floor maintenance programs?", a: "Yes, we offer scheduled maintenance programs including daily auto-scrubbing, weekly buffing, monthly burnishing, and quarterly deep cleaning to keep floors looking their best year-round." },
+    ],
   },
   {
     slug: "day-porter",
@@ -283,6 +337,12 @@ export const SERVICES_LIST = [
     icon: "sparkles",
     description: "On-site daytime staff for continuous upkeep of high-traffic areas, restroom monitoring, supply replenishment, and lobby presentation.",
     includes: ["Continuous restroom monitoring", "Spill and incident response", "Supply replenishment", "Lobby and reception upkeep", "Conference room turnovers", "Visitor area presentation"],
+    faqs: [
+      { q: "What does a day porter do?", a: "A day porter provides continuous daytime facility upkeep including restroom monitoring, spill response, supply replenishment, lobby maintenance, conference room turnovers, and visitor area presentation." },
+      { q: "How is a day porter different from janitorial service?", a: "Janitorial service is typically performed after hours for deep cleaning. Day porters work during business hours to maintain facility appearance, respond to immediate needs, and keep high-traffic areas clean in real time." },
+      { q: "How many day porters does my facility need?", a: "This depends on your facility size and traffic patterns. A single day porter typically covers 50,000-75,000 sq ft. We'll assess your facility during a free walkthrough and recommend appropriate staffing." },
+      { q: "Are day porters available on weekends?", a: "Yes, we offer day porter services 7 days a week including weekends and holidays. Schedules are fully customizable to match your facility's operating hours." },
+    ],
   },
   {
     slug: "facility-maintenance",
@@ -291,6 +351,12 @@ export const SERVICES_LIST = [
     icon: "wrench",
     description: "Light plumbing, electrical, HVAC filter changes, painting touch-ups, and general handyman services — one vendor for everything.",
     includes: ["Light plumbing repairs", "Electrical fixture maintenance", "HVAC filter replacement", "Painting and touch-ups", "Furniture assembly", "General handyman services"],
+    faqs: [
+      { q: "What maintenance services do you provide?", a: "We handle light plumbing, electrical fixture maintenance, HVAC filter replacement, painting touch-ups, furniture assembly, and general handyman services — one vendor for all your facility needs." },
+      { q: "Can you replace our current maintenance vendor?", a: "Yes, many clients consolidate their cleaning and maintenance under GreenPoint for simplified vendor management, single invoicing, and consistent quality across all facility services." },
+      { q: "Do you handle emergency maintenance requests?", a: "Yes, we offer 24/7 emergency response for urgent maintenance issues like plumbing leaks, electrical problems, and other situations that can't wait for scheduled service." },
+      { q: "Is facility maintenance included in janitorial contracts?", a: "Maintenance can be bundled with janitorial service for a discounted rate, or purchased as a standalone service. Bundled clients receive priority scheduling and response times." },
+    ],
   },
   {
     slug: "post-construction-cleanup",
@@ -299,6 +365,12 @@ export const SERVICES_LIST = [
     icon: "hardhat",
     description: "Three-stage professional cleanup: rough clean, light clean, and final touch. Debris removal, dust elimination, and move-in ready preparation.",
     includes: ["Phase 1: Rough debris removal", "Phase 2: Detailed dust elimination", "Phase 3: Final polish and inspection", "Window and glass cleaning", "Fixture and surface detailing", "Move-in ready certification"],
+    faqs: [
+      { q: "What are the three phases of post-construction cleanup?", a: "Phase 1 (rough clean) removes bulk debris and construction waste. Phase 2 (light clean) eliminates dust from all surfaces, fixtures, and HVAC systems. Phase 3 (final touch) is a detailed polish to make the space move-in ready." },
+      { q: "How long does post-construction cleanup take?", a: "Timeline depends on project size and scope. A typical 10,000 sq ft space takes 2-3 days for all three phases. We provide a detailed timeline estimate after an initial site assessment." },
+      { q: "Do you handle debris removal and disposal?", a: "Yes, we handle complete debris removal including construction waste, packaging materials, and dust. We coordinate with waste hauling services and ensure proper disposal of all materials." },
+      { q: "Can you work alongside active construction crews?", a: "Yes, we can perform phased cleanup alongside ongoing construction. We coordinate with your general contractor to clean completed sections while work continues in other areas." },
+    ],
   },
 ];
 
