@@ -29,6 +29,10 @@ export default function BlogIndex() {
 
   return (
     <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", background: "#FFFFFF" }}>
+      <style>{`
+        .blog-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+        .blog-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+      `}</style>
       <SiteHeader />
 
       {/* Hero */}
@@ -54,14 +58,11 @@ export default function BlogIndex() {
           {sorted.map((post, i) => {
             const cat = CATEGORY_COLORS[post.category] || CATEGORY_COLORS.Guides;
             return (
-              <a key={post.slug} href={`/blog/${post.slug}/`} style={{
+              <a key={post.slug} href={`/blog/${post.slug}/`} className="blog-card" style={{
                 display: "block", textDecoration: "none",
                 background: "#FFFFFF", borderRadius: 12, border: "1px solid #E2EBE5",
-                padding: 28, transition: "transform 0.2s ease, box-shadow 0.2s ease",
-              }}
-              onMouseOver={e => { e.currentTarget.style.transform = "translateY(-2px)"; e.currentTarget.style.boxShadow = "0 8px 24px rgba(0,0,0,0.08)"; }}
-              onMouseOut={e => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "none"; }}
-              >
+                padding: 28,
+              }}>
                 <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 14, flexWrap: "wrap" }}>
                   <span style={{ background: cat.bg, color: cat.text, padding: "4px 10px", borderRadius: 4, fontSize: 11, fontWeight: 600, fontFamily: "'JetBrains Mono', monospace", letterSpacing: "0.05em" }}>
                     {post.category}
