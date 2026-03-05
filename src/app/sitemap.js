@@ -1,4 +1,5 @@
 import { STATES, INDUSTRIES, SERVICES_LIST } from '../data/seo-data';
+import { BLOG_POSTS } from '../data/blog-data';
 
 const BASE_URL = 'https://greenpointms.com';
 
@@ -34,6 +35,12 @@ export default function sitemap() {
         pages.push({ url: `${BASE_URL}/locations/${state.slug}/${city.slug}/${service.slug}/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 });
       }
     }
+  }
+
+  // Blog pages
+  pages.push({ url: `${BASE_URL}/blog/`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 });
+  for (const post of BLOG_POSTS) {
+    pages.push({ url: `${BASE_URL}/blog/${post.slug}/`, lastModified: new Date(post.publishedAt), changeFrequency: 'monthly', priority: 0.7 });
   }
 
   // Industry pages

@@ -10,7 +10,7 @@ const NAV_LINKS = [
   { label: "JaniTrack", href: "/#janitrack" },
   { label: "Government", href: "/government-cleaning-services" },
   { label: "Instant Quote", href: "/#quote" },
-  { label: "Resources", href: "/capability-statement" },
+  { label: "Blog", href: "/blog" },
 ];
 
 export default function SiteHeader() {
