@@ -2744,11 +2744,21 @@ function Footer() {
               { label: "Learning Center", target: "learning" },
               { label: "Careers", target: "careers" },
               { label: "Contact", target: "contact" },
+              { label: "Terms of Service", href: "/terms-of-service" },
+              { label: "Team Conduct & Safety Policy", href: "/team-conduct-safety-policy" },
+              { label: "Incident Report", href: "/incident-report" },
             ].map((link) => (
-              <a key={link.label} href="#" onClick={(e) => { e.preventDefault(); scrollTo(link.target); }} style={{ display: "block", fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.55)", textDecoration: "none", marginBottom: 10, transition: "color 0.2s" }}
-                onMouseOver={(e) => e.target.style.color = "#1B7A3D"} onMouseOut={(e) => e.target.style.color = "rgba(255,255,255,0.55)"}>
-                {link.label}
-              </a>
+              link.href ? (
+                <a key={link.label} href={link.href} style={{ display: "block", fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.55)", textDecoration: "none", marginBottom: 10, transition: "color 0.2s" }}
+                  onMouseOver={(e) => e.target.style.color = "#1B7A3D"} onMouseOut={(e) => e.target.style.color = "rgba(255,255,255,0.55)"}>
+                  {link.label}
+                </a>
+              ) : (
+                <a key={link.label} href="#" onClick={(e) => { e.preventDefault(); scrollTo(link.target); }} style={{ display: "block", fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.55)", textDecoration: "none", marginBottom: 10, transition: "color 0.2s" }}
+                  onMouseOver={(e) => e.target.style.color = "#1B7A3D"} onMouseOut={(e) => e.target.style.color = "rgba(255,255,255,0.55)"}>
+                  {link.label}
+                </a>
+              )
             ))}
           </div>
         </div>
@@ -2758,9 +2768,12 @@ function Footer() {
             © 2026 GreenPoint Maintenance Services Corp. All rights reserved.
           </div>
           <div style={{ display: "flex", gap: 20 }}>
-            {["Privacy Policy", "Terms of Service"].map((link) => (
-              <a key={link} href="#" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>
-                {link}
+            {[
+              { label: "Privacy Policy", href: "#" },
+              { label: "Terms of Service", href: "/terms-of-service" },
+            ].map((link) => (
+              <a key={link.label} href={link.href} style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>
+                {link.label}
               </a>
             ))}
           </div>

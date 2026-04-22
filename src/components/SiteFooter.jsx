@@ -77,6 +77,9 @@ export default function SiteFooter() {
               { label: "Capability Statement", href: "/capability-statement" },
               { label: "School Cleaning NYC", href: "/school-cleaning-nyc" },
               { label: "Janitorial Services NYC", href: "/janitorial-services-nyc" },
+              { label: "Terms of Service", href: "/terms-of-service" },
+              { label: "Team Conduct & Safety Policy", href: "/team-conduct-safety-policy" },
+              { label: "Incident Report", href: "/incident-report" },
             ].map((link) => (
               <a key={link.label} href={link.href} style={{ display: "block", fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "rgba(255,255,255,0.5)", textDecoration: "none", marginBottom: 10, transition: "color 0.2s" }}
                 onMouseOver={(e) => e.target.style.color = "#C8A34D"}
