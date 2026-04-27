@@ -53,6 +53,7 @@ const BLOG_INDEX = [
   { slug: "cleaning-staffing-ratios-square-footage", title: "Cleaning Staffing Ratios: How Many Cleaners Does Your Building Need?", excerpt: "Data-backed staffing formulas — square footage per cleaner ratios by facility type and workloading methodology.", category: "Industry Data", date: "2026-06-22", readTime: "7 min" },
   { slug: "commercial-cleaning-glossary-terms", title: "Commercial Cleaning Glossary: 100+ Industry Terms Defined", excerpt: "A comprehensive reference glossary — products, equipment, standards, methods, and compliance terms.", category: "Standards", date: "2026-06-25", readTime: "15 min" },
   { slug: "commercial-cleaning-vs-in-house-custodial", title: "Outsourced Cleaning vs. In-House Custodial Staff: A Complete Comparison", excerpt: "Pros, cons, and true cost comparison — financials, quality, flexibility, and risk.", category: "Business", date: "2026-06-28", readTime: "8 min" },
+  { slug: "questions-to-ask-commercial-cleaning-company", title: "10 Questions to Ask Before Hiring a Commercial Cleaning Company", excerpt: "The 10 questions that separate professional cleaning companies from the rest — what to ask about staffing, verification, insurance, and accountability before you sign a contract.", category: "Buying Guide", date: "2026-04-27", readTime: "9 min" },
 ];
 
 export const metadata = {
