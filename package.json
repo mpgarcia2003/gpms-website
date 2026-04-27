@@ -4,8 +4,10 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/generate-llms-full.js",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "generate-llms": "node scripts/generate-llms-full.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.45.0",
