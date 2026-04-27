@@ -1,6 +1,26 @@
 {
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/incident-report/route": "app/api/incident-report/route.js",
+  "/free-facility-inspection/page": "app/free-facility-inspection/page.js",
+  "/incident-report/page": "app/incident-report/page.js",
   "/page": "app/page.js",
-  "/team-conduct-safety-policy/page": "app/team-conduct-safety-policy/page.js",
+  "/robots.txt/route": "app/robots.txt/route.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/blog/[slug]/page": "app/blog/[slug]/page.js",
+  "/church-cleaning-nyc/page": "app/church-cleaning-nyc/page.js",
+  "/commercial-cleaning-bronx/page": "app/commercial-cleaning-bronx/page.js",
+  "/industries/[industrySlug]/page": "app/industries/[industrySlug]/page.js",
+  "/janitorial-services-nyc/page": "app/janitorial-services-nyc/page.js",
+  "/government-cleaning-services/page": "app/government-cleaning-services/page.js",
+  "/blog/page": "app/blog/page.js",
+  "/capability-statement/page": "app/capability-statement/page.js",
+  "/locations/[stateSlug]/[citySlug]/page": "app/locations/[stateSlug]/[citySlug]/page.js",
+  "/locations/[stateSlug]/[citySlug]/[industrySlug]/page": "app/locations/[stateSlug]/[citySlug]/[industrySlug]/page.js",
+  "/locations/[stateSlug]/page": "app/locations/[stateSlug]/page.js",
+  "/mbe-certified-cleaning-company-nyc/page": "app/mbe-certified-cleaning-company-nyc/page.js",
+  "/nyc-doe-school-cleaning/page": "app/nyc-doe-school-cleaning/page.js",
+  "/school-cleaning-nyc/page": "app/school-cleaning-nyc/page.js",
+  "/services/[serviceSlug]/page": "app/services/[serviceSlug]/page.js",
   "/terms-of-service/page": "app/terms-of-service/page.js",
-  "/incident-report/page": "app/incident-report/page.js"
+  "/team-conduct-safety-policy/page": "app/team-conduct-safety-policy/page.js"
 }

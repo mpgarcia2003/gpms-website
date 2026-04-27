@@ -15,7 +15,7 @@ export const BLOG_POSTS = [
     excerpt: "A comprehensive collection of commercial cleaning industry data — market size, growth rates, labor statistics, pricing benchmarks, and facility-specific metrics compiled from ISSA, BLS, IBIS, and primary sources.",
     category: "Industry Data",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-01-05",
+    publishedAt: "2025-04-01",
     readTime: "12 min read",
     keywords: ["commercial cleaning industry statistics", "janitorial industry data", "cleaning industry market size"],
     content: [
@@ -42,7 +42,7 @@ export const BLOG_POSTS = [
     excerpt: "How often should each area of your facility be cleaned? A data-backed reference guide with recommended frequencies for offices, schools, healthcare, daycare, churches, and government buildings.",
     category: "Standards",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-01-12",
+    publishedAt: "2025-04-01",
     readTime: "10 min read",
     keywords: ["cleaning frequency standards", "how often to clean commercial building", "janitorial cleaning schedule"],
     content: [
@@ -69,7 +69,7 @@ export const BLOG_POSTS = [
     excerpt: "A detailed explanation of ISSA's five cleaning appearance levels used in commercial cleaning contracts — what each level looks like, costs, and which level your facility actually needs.",
     category: "Standards",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-01-20",
+    publishedAt: "2025-04-08",
     readTime: "8 min read",
     keywords: ["ISSA clean standards", "cleaning appearance levels", "commercial cleaning quality levels"],
     content: [
@@ -96,7 +96,7 @@ export const BLOG_POSTS = [
     excerpt: "How cleaning practices directly impact indoor air quality — including VOC emissions from cleaning products, particulate matter from vacuuming, and evidence-based strategies for IAQ improvement.",
     category: "Research",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-01-28",
+    publishedAt: "2025-04-16",
     readTime: "9 min read",
     keywords: ["indoor air quality cleaning", "VOC cleaning products", "IAQ commercial buildings"],
     content: [
@@ -121,7 +121,7 @@ export const BLOG_POSTS = [
     excerpt: "Research-backed analysis of how environmental cleaning prevents HAIs — covering transmission pathways, high-touch surface contamination data, and evidence for cleaning intervention effectiveness.",
     category: "Research",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-02-02",
+    publishedAt: "2025-04-24",
     readTime: "10 min read",
     keywords: ["healthcare associated infections cleaning", "HAI environmental cleaning", "hospital cleaning infection prevention"],
     content: [
@@ -146,7 +146,7 @@ export const BLOG_POSTS = [
     excerpt: "A transparent breakdown of commercial cleaning pricing by facility type, service frequency, and region — so you can benchmark proposals accurately.",
     category: "Pricing",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-02-08",
+    publishedAt: "2025-05-02",
     readTime: "7 min read",
     keywords: ["commercial cleaning cost per square foot", "janitorial service pricing", "commercial cleaning rates 2026"],
     content: [
@@ -169,7 +169,7 @@ export const BLOG_POSTS = [
     excerpt: "Why the monthly invoice from your cleaning company is only part of the story — a framework for calculating total cleaning cost including hidden expenses, management overhead, and quality failures.",
     category: "Business",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-02-12",
+    publishedAt: "2025-05-10",
     readTime: "8 min read",
     keywords: ["total cost of cleaning", "facility cleaning budget", "cleaning cost analysis"],
     content: [
@@ -194,7 +194,7 @@ export const BLOG_POSTS = [
     excerpt: "How the commercial cleaning industry's 200-400% annual turnover rate impacts service quality — and what to look for in a cleaning partner that actually retains its employees.",
     category: "Industry Data",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-02-18",
+    publishedAt: "2025-05-18",
     readTime: "7 min read",
     keywords: ["janitorial employee turnover", "cleaning company employee retention", "custodial staff turnover"],
     content: [
@@ -223,7 +223,7 @@ export const BLOG_POSTS = [
     excerpt: "Understanding OSHA cleaning requirements for medical offices, dental practices, and outpatient clinics — including bloodborne pathogen standards and terminal cleaning protocols.",
     category: "Compliance",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-02-22",
+    publishedAt: "2025-05-26",
     readTime: "9 min read",
     keywords: ["medical office cleaning requirements", "OSHA cleaning standards", "healthcare cleaning compliance"],
     content: [
@@ -250,7 +250,7 @@ export const BLOG_POSTS = [
     excerpt: "A complete guide to OSHA's Hazard Communication Standard for cleaning chemicals — understanding GHS labels, Safety Data Sheets, employee training requirements, and chemical storage rules.",
     category: "Compliance",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-02-26",
+    publishedAt: "2025-06-03",
     readTime: "8 min read",
     keywords: ["OSHA cleaning chemical safety", "GHS labels cleaning", "SDS requirements janitorial"],
     content: [
@@ -275,7 +275,7 @@ export const BLOG_POSTS = [
     excerpt: "How ADA requirements apply to commercial cleaning operations — from accessible restroom maintenance to equipment storage and service delivery accommodations.",
     category: "Compliance",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-03-01",
+    publishedAt: "2025-06-11",
     readTime: "7 min read",
     keywords: ["ADA compliance cleaning", "ADA facility maintenance", "accessible restroom cleaning"],
     content: [
@@ -298,7 +298,7 @@ export const BLOG_POSTS = [
     excerpt: "How EPA disinfectant registration works, what List N and List K mean, how to verify product claims, and why 'hospital-grade' alone isn't enough.",
     category: "Compliance",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-03-05",
+    publishedAt: "2025-06-19",
     readTime: "8 min read",
     keywords: ["EPA registered disinfectant", "EPA List N disinfectants", "hospital grade disinfectant explained"],
     content: [
@@ -323,7 +323,7 @@ export const BLOG_POSTS = [
     excerpt: "A practical guide to ensuring your childcare facility passes health department inspections with flying colors — covering sanitization, documentation, and common citations.",
     category: "Compliance",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-03-08",
+    publishedAt: "2025-06-27",
     readTime: "7 min read",
     keywords: ["daycare health inspection", "childcare cleaning inspection", "daycare sanitization requirements"],
     content: [
@@ -346,7 +346,7 @@ export const BLOG_POSTS = [
     excerpt: "How NFPA and local fire codes regulate cleaning chemical storage in commercial buildings — flammability classifications, maximum quantities, cabinet requirements, and common violations.",
     category: "Compliance",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-03-10",
+    publishedAt: "2025-07-05",
     readTime: "7 min read",
     keywords: ["fire code cleaning chemicals", "chemical storage fire safety", "NFPA cleaning chemical storage"],
     content: [
@@ -369,7 +369,7 @@ export const BLOG_POSTS = [
     excerpt: "How HIPAA privacy and security rules apply to cleaning operations in healthcare facilities — including document handling, after-hours access, and Business Associate requirements.",
     category: "Compliance",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-03-12",
+    publishedAt: "2025-07-13",
     readTime: "7 min read",
     keywords: ["HIPAA cleaning company", "medical office cleaning HIPAA", "healthcare cleaning privacy"],
     content: [
@@ -392,7 +392,7 @@ export const BLOG_POSTS = [
     excerpt: "How federal and state prevailing wage laws affect government cleaning contracts — Davis-Bacon, state little Davis-Bacon acts, Service Contract Act, and their impact on pricing and compliance.",
     category: "Compliance",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-03-14",
+    publishedAt: "2025-07-21",
     readTime: "8 min read",
     keywords: ["prevailing wage cleaning contract", "Davis-Bacon janitorial", "Service Contract Act cleaning"],
     content: [
@@ -419,7 +419,7 @@ export const BLOG_POSTS = [
     excerpt: "Hiring the wrong cleaning company costs more than money — it costs tenant satisfaction, compliance scores, and your reputation. Here's exactly what to look for.",
     category: "Guides",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-03-16",
+    publishedAt: "2025-07-29",
     readTime: "8 min read",
     keywords: ["commercial cleaning company", "how to choose cleaning company", "janitorial service selection"],
     content: [
@@ -446,7 +446,7 @@ export const BLOG_POSTS = [
     excerpt: "A room-by-room cleaning checklist for K-12 schools covering classrooms, cafeterias, gyms, restrooms, and common areas — with frequency recommendations.",
     category: "Checklists",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-03-18",
+    publishedAt: "2025-08-06",
     readTime: "10 min read",
     keywords: ["school cleaning checklist", "custodial cleaning checklist", "school janitorial checklist"],
     content: [
@@ -471,7 +471,7 @@ export const BLOG_POSTS = [
     excerpt: "How GSA cleaning standards, security requirements, and diversity procurement goals shape government facility maintenance — a guide for both agencies and contractors.",
     category: "Guides",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-03-20",
+    publishedAt: "2025-08-14",
     readTime: "9 min read",
     keywords: ["government building cleaning", "GSA cleaning standards", "government janitorial services"],
     content: [
@@ -494,7 +494,7 @@ export const BLOG_POSTS = [
     excerpt: "A practical comparison of volunteer-based church cleaning versus professional services, including cost analysis and hybrid approaches that work.",
     category: "Guides",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-03-22",
+    publishedAt: "2025-08-22",
     readTime: "6 min read",
     keywords: ["church cleaning services", "church volunteer cleaning", "house of worship cleaning"],
     content: [
@@ -517,7 +517,7 @@ export const BLOG_POSTS = [
     excerpt: "Specialized cleaning requirements for senior care facilities — covering infection control, fall prevention, dementia-sensitive approaches, and regulatory compliance.",
     category: "Guides",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-03-24",
+    publishedAt: "2025-08-30",
     readTime: "8 min read",
     keywords: ["nursing home cleaning protocols", "assisted living cleaning", "senior care facility cleaning"],
     content: [
@@ -540,7 +540,7 @@ export const BLOG_POSTS = [
     excerpt: "How shared workspace models create distinct cleaning challenges — hot-desking hygiene, community kitchen management, phone booth sanitization, and member satisfaction strategies.",
     category: "Guides",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-03-26",
+    publishedAt: "2025-09-07",
     readTime: "6 min read",
     keywords: ["coworking space cleaning", "shared office cleaning", "flexible workspace hygiene"],
     content: [
@@ -563,7 +563,7 @@ export const BLOG_POSTS = [
     excerpt: "How to maintain clean, safe, and OSHA-compliant warehouse and industrial environments — covering floor maintenance, dust control, spill management, and regulatory requirements.",
     category: "Guides",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-03-28",
+    publishedAt: "2025-09-15",
     readTime: "7 min read",
     keywords: ["warehouse cleaning", "industrial cleaning best practices", "warehouse floor maintenance"],
     content: [
@@ -590,7 +590,7 @@ export const BLOG_POSTS = [
     excerpt: "Everything you need to know about maintaining VCT (vinyl composition tile) floors — stripping schedules, product selection, application techniques, and maintenance programs that extend floor life.",
     category: "Services",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-04-01",
+    publishedAt: "2025-09-23",
     readTime: "9 min read",
     keywords: ["VCT floor care", "strip and wax floors", "vinyl composition tile maintenance"],
     content: [
@@ -617,7 +617,7 @@ export const BLOG_POSTS = [
     excerpt: "A technical comparison of commercial carpet cleaning methods — hot water extraction, encapsulation, bonnet cleaning, and dry compound — including when to use each and expected results.",
     category: "Services",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-04-05",
+    publishedAt: "2025-10-01",
     readTime: "8 min read",
     keywords: ["commercial carpet cleaning methods", "carpet extraction vs encapsulation", "office carpet cleaning"],
     content: [
@@ -642,7 +642,7 @@ export const BLOG_POSTS = [
     excerpt: "A comprehensive technical guide to electrostatic spraying technology — the science behind it, effectiveness data, appropriate applications, limitations, and cost considerations.",
     category: "Technology",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-04-08",
+    publishedAt: "2025-10-09",
     readTime: "7 min read",
     keywords: ["electrostatic disinfection", "electrostatic sprayer cleaning", "electrostatic sanitization"],
     content: [
@@ -667,7 +667,7 @@ export const BLOG_POSTS = [
     excerpt: "Why restrooms are the most critical area in any commercial facility — and a comprehensive protocol for maintaining clean, well-stocked, complaint-free restrooms in high-traffic environments.",
     category: "Services",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-04-12",
+    publishedAt: "2025-10-16",
     readTime: "8 min read",
     keywords: ["commercial restroom cleaning", "restroom maintenance protocol", "high traffic restroom cleaning"],
     content: [
@@ -690,7 +690,7 @@ export const BLOG_POSTS = [
     excerpt: "A detailed walkthrough of rough clean, light clean, and final clean phases — what each includes, how long they take, and how to ensure your space is truly move-in ready.",
     category: "Services",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-04-15",
+    publishedAt: "2025-10-24",
     readTime: "6 min read",
     keywords: ["post construction cleaning", "construction cleanup phases", "post construction cleaning checklist"],
     content: [
@@ -713,7 +713,7 @@ export const BLOG_POSTS = [
     excerpt: "How ATP testing works, what the numbers mean, and why it's becoming the gold standard for verifying cleaning quality in commercial facilities.",
     category: "Technology",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-04-18",
+    publishedAt: "2025-11-01",
     readTime: "6 min read",
     keywords: ["ATP bioluminescence testing", "ATP testing cleaning", "cleaning verification technology"],
     content: [
@@ -736,7 +736,7 @@ export const BLOG_POSTS = [
     excerpt: "How color-coded microfiber cleaning systems prevent cross-contamination between areas — the science behind microfiber, industry-standard color assignments, and implementation best practices.",
     category: "Technology",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-04-22",
+    publishedAt: "2025-11-09",
     readTime: "6 min read",
     keywords: ["color coded cleaning system", "microfiber cleaning cross contamination", "commercial microfiber system"],
     content: [
@@ -759,7 +759,7 @@ export const BLOG_POSTS = [
     excerpt: "How digital verification systems like GPS tracking, photo documentation, IoT sensors, and ATP integration are transforming accountability in commercial cleaning.",
     category: "Technology",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-04-25",
+    publishedAt: "2025-11-17",
     readTime: "7 min read",
     keywords: ["cleaning verification system", "digital janitorial management", "cleaning quality tracking software"],
     content: [
@@ -786,7 +786,7 @@ export const BLOG_POSTS = [
     excerpt: "How contracting with MBE/MWBE-certified vendors helps meet diversity procurement goals, improves bid scores, and supports community economic development.",
     category: "Business",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-04-28",
+    publishedAt: "2025-11-25",
     readTime: "6 min read",
     keywords: ["MBE certified cleaning company", "MWBE cleaning vendor", "diversity procurement cleaning"],
     content: [
@@ -809,7 +809,7 @@ export const BLOG_POSTS = [
     excerpt: "A step-by-step guide to writing an effective cleaning services RFP — including scope of work templates, evaluation criteria, and common mistakes that lead to poor vendor selection.",
     category: "Business",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-05-01",
+    publishedAt: "2025-12-03",
     readTime: "9 min read",
     keywords: ["cleaning services RFP", "janitorial RFP template", "commercial cleaning bid request"],
     content: [
@@ -834,7 +834,7 @@ export const BLOG_POSTS = [
     excerpt: "Essential contract terms in commercial cleaning agreements — from performance guarantees and termination clauses to scope change procedures and insurance requirements.",
     category: "Business",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-05-05",
+    publishedAt: "2025-12-11",
     readTime: "8 min read",
     keywords: ["commercial cleaning contract", "janitorial contract terms", "cleaning service agreement"],
     content: [
@@ -859,7 +859,7 @@ export const BLOG_POSTS = [
     excerpt: "Why consolidating janitorial, floor care, disinfection, and maintenance under a single vendor reduces costs, improves accountability, and simplifies facility management.",
     category: "Business",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-05-08",
+    publishedAt: "2025-12-19",
     readTime: "6 min read",
     keywords: ["vendor consolidation cleaning", "single source cleaning vendor", "facility services consolidation"],
     content: [
@@ -882,7 +882,7 @@ export const BLOG_POSTS = [
     excerpt: "A framework for systematic quality assurance in commercial cleaning — inspection methodologies, scoring systems, corrective action procedures, and continuous improvement cycles.",
     category: "Business",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-05-12",
+    publishedAt: "2025-12-27",
     readTime: "8 min read",
     keywords: ["cleaning quality assurance", "janitorial inspection program", "commercial cleaning QA"],
     content: [
@@ -905,7 +905,7 @@ export const BLOG_POSTS = [
     excerpt: "Separating green cleaning facts from marketing hype — which certifications matter, which products work, and how to implement a sustainable cleaning program.",
     category: "Sustainability",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-05-15",
+    publishedAt: "2026-01-04",
     readTime: "7 min read",
     keywords: ["green cleaning commercial", "sustainable cleaning products", "Green Seal certified cleaning"],
     content: [
@@ -928,7 +928,7 @@ export const BLOG_POSTS = [
     excerpt: "Why HEPA vacuum filtration matters for indoor air quality — the science of particle capture, when HEPA is required versus recommended, and how to verify HEPA performance.",
     category: "Technology",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-05-18",
+    publishedAt: "2026-01-12",
     readTime: "6 min read",
     keywords: ["HEPA vacuum commercial cleaning", "HEPA filtration cleaning", "indoor air quality vacuum"],
     content: [
@@ -953,7 +953,7 @@ export const BLOG_POSTS = [
     excerpt: "A comprehensive winter preparation and maintenance guide for commercial buildings in the Northeast — covering snow/ice management, HVAC, plumbing, interior cleaning, and safety protocols.",
     category: "Seasonal",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-05-22",
+    publishedAt: "2026-01-20",
     readTime: "7 min read",
     keywords: ["winter facility maintenance", "commercial building winter prep", "winter cleaning checklist"],
     content: [
@@ -976,7 +976,7 @@ export const BLOG_POSTS = [
     excerpt: "How to maximize the summer break for school deep cleaning — a comprehensive task list by area, timeline planning, budget considerations, and preparation for fall reopening.",
     category: "Seasonal",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-05-25",
+    publishedAt: "2026-01-28",
     readTime: "8 min read",
     keywords: ["summer school cleaning", "school deep cleaning checklist", "school summer maintenance"],
     content: [
@@ -999,7 +999,7 @@ export const BLOG_POSTS = [
     excerpt: "Which pandemic-era cleaning practices are here to stay, which were temporary overreactions, and how facility cleaning standards have permanently evolved since 2020.",
     category: "Industry Data",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-05-28",
+    publishedAt: "2026-02-05",
     readTime: "7 min read",
     keywords: ["post COVID cleaning standards", "pandemic cleaning changes", "cleaning standards after COVID"],
     content: [
@@ -1022,7 +1022,7 @@ export const BLOG_POSTS = [
     excerpt: "Key New York City local laws that affect commercial building maintenance — from Local Law 11 facade inspections to energy benchmarking, and how cleaning operations intersect with compliance.",
     category: "Compliance",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-06-01",
+    publishedAt: "2026-02-13",
     readTime: "7 min read",
     keywords: ["NYC local law building maintenance", "NYC building compliance cleaning", "New York City building maintenance requirements"],
     content: [
@@ -1045,7 +1045,7 @@ export const BLOG_POSTS = [
     excerpt: "Pre-storm preparation, emergency response, and post-hurricane cleanup protocols for commercial buildings in Florida — from water extraction to mold prevention.",
     category: "Seasonal",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-06-05",
+    publishedAt: "2026-02-21",
     readTime: "7 min read",
     keywords: ["hurricane preparedness commercial building", "post hurricane cleaning", "Florida facility storm preparation"],
     content: [
@@ -1068,7 +1068,7 @@ export const BLOG_POSTS = [
     excerpt: "The essential insurance coverages every commercial cleaning company should carry — general liability, workers' compensation, commercial auto, and umbrella policies explained.",
     category: "Business",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-06-08",
+    publishedAt: "2026-03-01",
     readTime: "7 min read",
     keywords: ["cleaning company insurance requirements", "janitorial insurance coverage", "commercial cleaning liability insurance"],
     content: [
@@ -1091,7 +1091,7 @@ export const BLOG_POSTS = [
     excerpt: "How LEED certification affects your cleaning program — required product certifications, documentation standards, IAQ protocols, and how to maintain credits through ongoing operations.",
     category: "Sustainability",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-06-12",
+    publishedAt: "2026-03-09",
     readTime: "7 min read",
     keywords: ["LEED certified building cleaning", "LEED cleaning requirements", "green cleaning LEED credits"],
     content: [
@@ -1114,7 +1114,7 @@ export const BLOG_POSTS = [
     excerpt: "A complete guide to commercial pressure washing — building exteriors, sidewalks, parking structures, and loading docks. Includes water reclamation requirements and environmental regulations.",
     category: "Services",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-06-15",
+    publishedAt: "2026-03-17",
     readTime: "6 min read",
     keywords: ["commercial pressure washing", "building exterior cleaning", "commercial power washing"],
     content: [
@@ -1137,7 +1137,7 @@ export const BLOG_POSTS = [
     excerpt: "A systematic framework for evaluating your cleaning vendor's performance — covering quality, compliance, communication, staffing, and value. Use this before your next contract renewal.",
     category: "Checklists",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-06-18",
+    publishedAt: "2026-03-25",
     readTime: "9 min read",
     keywords: ["cleaning audit checklist", "janitorial performance evaluation", "cleaning vendor assessment"],
     content: [
@@ -1162,7 +1162,7 @@ export const BLOG_POSTS = [
     excerpt: "Data-backed staffing formulas for commercial cleaning — square footage per cleaner ratios by facility type, workloading methodology, and how to evaluate whether your vendor is adequately staffed.",
     category: "Industry Data",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-06-22",
+    publishedAt: "2026-04-02",
     readTime: "7 min read",
     keywords: ["cleaning staffing ratio", "janitor to square foot ratio", "commercial cleaning workload"],
     content: [
@@ -1185,7 +1185,7 @@ export const BLOG_POSTS = [
     excerpt: "A comprehensive reference glossary of commercial cleaning terminology — from ATP testing to zone cleaning, covering products, equipment, standards, methods, and compliance terms.",
     category: "Standards",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-06-25",
+    publishedAt: "2026-04-10",
     readTime: "15 min read",
     keywords: ["commercial cleaning glossary", "janitorial terms defined", "cleaning industry terminology"],
     content: [
@@ -1208,7 +1208,7 @@ export const BLOG_POSTS = [
     excerpt: "The pros, cons, and true cost comparison of outsourcing your cleaning to a commercial company versus employing in-house custodial staff — covering financials, quality, flexibility, and risk.",
     category: "Business",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-06-28",
+    publishedAt: "2026-04-18",
     readTime: "8 min read",
     keywords: ["outsource vs in house cleaning", "commercial cleaning vs custodial staff", "outsource janitorial services"],
     content: [
@@ -1229,11 +1229,12 @@ export const BLOG_POSTS = [
 
   {
     slug: "questions-to-ask-commercial-cleaning-company",
+    image: "/blog/questions-to-ask-commercial-cleaning-company.jpg",
     title: "10 Questions to Ask Before Hiring a Commercial Cleaning Company",
     excerpt: "The 10 questions that separate professional cleaning companies from the rest — what to ask about staffing, verification, insurance, and accountability before you sign a contract.",
     category: "Buying Guide",
     author: "GreenPoint Maintenance",
-    publishedAt: "2026-04-27",
+    publishedAt: "2026-04-26",
     readTime: "9 min read",
     keywords: ["questions to ask cleaning company", "hire commercial cleaning vendor", "cleaning company evaluation", "janitorial vendor questions"],
     content: [

@@ -1,4 +1,4 @@
-// File: C:\Users\mpgar\Projects\gpms-website\src\app\terms-of-service\page.jsx
+// File: /tmp/gpms-preview/src/app/terms-of-service/page.jsx
 import * as entry from '../../../../src/app/terms-of-service/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

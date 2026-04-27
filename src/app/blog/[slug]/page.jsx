@@ -108,6 +108,17 @@ export default function BlogPostPage({ params }) {
         </div>
       </section>
 
+      {/* Hero Image */}
+      {post.image && (
+        <div style={{ maxWidth: 900, margin: "-32px auto 0", padding: "0 24px", position: "relative", zIndex: 2 }}>
+          <img
+            src={post.image}
+            alt={post.title}
+            style={{ width: "100%", height: "auto", borderRadius: 12, boxShadow: "0 12px 40px rgba(0,0,0,0.15)", display: "block" }}
+          />
+        </div>
+      )}
+
       {/* Article Body */}
       <article style={{ maxWidth: 720, margin: "0 auto", padding: "48px 24px 64px" }}>
         {post.content.map((block, i) => {

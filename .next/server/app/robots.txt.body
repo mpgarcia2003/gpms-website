@@ -1,0 +1,12 @@
+User-Agent: Googlebot
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+User-Agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+Host: https://greenpointms.com
+Sitemap: https://greenpointms.com/sitemap.xml
