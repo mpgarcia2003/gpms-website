@@ -150,6 +150,8 @@ export default function TeamConductSafetyPolicyPage() {
               <p><strong>(g) Emergencies.</strong> For life-threatening injuries, <strong>call 911 first</strong>, then notify Miguel Garcia at 347-332-9348 as soon as reasonably possible.</p>
 
               <p><strong>(h) No Retaliation.</strong> GreenPoint will not retaliate against any Team Member for reporting an injury or filing a workers&apos; compensation claim in good faith. Retaliation is illegal under New York law and a violation of this policy.</p>
+
+              <p><strong>(i) Maximum Reporting Window — 30 Days.</strong> All workplace injuries — regardless of perceived severity, including those the Team Member initially believes do not require medical attention — must be reported to GreenPoint as soon as reasonably possible, ideally on the same day of occurrence and in no event later than <strong>thirty (30) days</strong>, consistent with New York Workers&apos; Compensation Law &sect; 18. <strong>Failure to report within thirty (30) days may result in forfeiture of workers&apos; compensation benefits under New York law and may also result in disciplinary action up to and including termination, regardless of the legal status of the workers&apos; compensation claim.</strong> This includes injuries that initially appear minor but later worsen, repetitive-strain injuries that develop over time, and injuries the Team Member believes are unrelated to a specific incident.</p>
             </Section>
 
             <Section number="4" title="Personal Protective Equipment (PPE)">
@@ -317,8 +319,136 @@ export default function TeamConductSafetyPolicyPage() {
               ]} />
             </Section>
 
-            <Section number="16" title="Acknowledgment">
-              <p>By signing below &mdash; or by continuing to perform work for GreenPoint after receiving this policy &mdash; you acknowledge that you have received, read, understood, and agreed to comply with this Team Member Conduct &amp; Safety Policy in full.</p>
+            <Section number="16" title="Off-the-Clock Work — Strictly Prohibited" flagged>
+              <CalloutBox>This rule protects both you (you get paid for all work) and the Company (no surprise wage claims). Follow it strictly.</CalloutBox>
+              <p>Team Members shall <strong>not</strong> perform work-related tasks before clocking in or after clocking out. This includes, but is not limited to:</p>
+              <ListRules items={[
+                "Pre-shift preparation, equipment loading, or supply pickup before clocking in.",
+                "Post-shift equipment cleaning, paperwork, or reporting after clocking out.",
+                "Driving Company vehicles or transporting supplies off the clock.",
+                "Responding to work-related calls, texts, or emails outside of paid hours without prior authorization.",
+                "Performing any task at a client site outside of recorded hours.",
+              ]} />
+              <p><strong>If a task requires more time than your scheduled shift, contact Miguel Garcia for authorization BEFORE performing the work.</strong> Performing unrecorded work is a violation of Company policy. By signing this Policy, you acknowledge that any unrecorded work performed in violation of this section was done without Company authorization, and you waive any claim for unpaid wages related to such unauthorized work.</p>
+            </Section>
+
+            <Section number="17" title="Pre-Existing Conditions &amp; Medical Disclosure" flagged>
+              <p>Team Members must disclose any pre-existing medical condition, prior workplace injury, or physical limitation that may affect their ability to perform their duties safely. Disclosures should be made directly to Miguel Garcia and will be kept confidential to the extent permitted by law.</p>
+              <p>Examples of conditions that should be disclosed include (but are not limited to):</p>
+              <ListRules items={[
+                "Prior back, neck, knee, shoulder, or joint injuries.",
+                "Repetitive-stress injuries (carpal tunnel, tendinitis).",
+                "Chronic conditions affecting balance, vision, hearing, or stamina.",
+                "Cardiac, respiratory, or neurological conditions affecting physical work capacity.",
+                "Allergies or chemical sensitivities.",
+                "Pregnancy or other temporary conditions affecting work capacity.",
+              ]} />
+              <p><strong>Failure to disclose a known pre-existing condition</strong> may result in (a) denial of workers&apos; compensation claims related to the aggravation of that condition to the extent permitted by law, and (b) disciplinary action up to and including termination. Disclosure is not a basis for adverse employment action; the Company will work in good faith to provide reasonable accommodation under the ADA and New York Human Rights Law where applicable.</p>
+            </Section>
+
+            <Section number="18" title="Training Acknowledgment &amp; Duty to Refuse Untrained Work" flagged>
+              <p>By signing this Policy, the Team Member confirms that they have received training in:</p>
+              <ListRules items={[
+                "Ladder safety and the two-person rule (Section 2).",
+                "Proper lifting technique and weight limits (Section 5).",
+                "Slip, trip, and fall prevention, including mopping protocols (Section 6).",
+                "Chemical safety, dilution, and SDS review (Section 7).",
+                "Equipment operation for assigned equipment (Section 8).",
+                "PPE selection, use, and limitations (Section 4).",
+                "Emergency procedures and incident reporting (Section 3).",
+              ]} />
+              <p><strong>Duty to Refuse.</strong> Team Members agree to immediately report to Miguel Garcia any task or condition they have NOT been trained for, and to <strong>refuse to perform such work until proper training has been provided</strong>. This duty applies regardless of client pressure, deadline pressure, or instruction from any non-GreenPoint personnel.</p>
+              <p><strong>Performing untrained work without raising the issue waives any claim that training was insufficient.</strong> By signing this Policy, the Team Member affirms that any work performed without prior objection was within the scope of their training, or was a task they should have refused under this section.</p>
+            </Section>
+
+            <Section number="19" title="PPE Compliance &amp; Forfeiture Clause" flagged>
+              <CalloutBox>PPE non-use is one of the leading causes of preventable cleaning-industry injuries. Wear it every time, every task.</CalloutBox>
+              <p>All required PPE is provided by the Company at no cost. Refusal to wear, removal of, or willful misuse of provided PPE during the performance of work duties is a deliberate violation of Company policy.</p>
+              <p>Consequences of PPE non-use may include:</p>
+              <ListRules items={[
+                "Denial of related workers' compensation claims to the extent permitted by New York law.",
+                "Disciplinary action up to and including immediate termination.",
+                "Personal liability for any injuries to self or others sustained as a result of PPE non-use.",
+                "Forfeiture of any Company-provided supplemental injury benefits beyond statutory workers' compensation.",
+              ]} />
+              <p>If PPE is damaged, missing, or inadequate for a task, the Team Member must <strong>stop work immediately and contact Miguel Garcia</strong> for replacement. Working without proper PPE due to inconvenience, time pressure, or personal preference is never acceptable.</p>
+            </Section>
+
+            <Section number="20" title="Excluded Conduct — Horseplay, Misconduct, Intoxication" flagged>
+              <p>Under New York Workers&apos; Compensation Law &sect; 10(1) and &sect; 10(3), workers&apos; compensation benefits may be denied for injuries resulting from certain categories of excluded conduct. The following are <strong>strictly prohibited</strong> and any injury resulting from them will be reported as potentially excluded conduct:</p>
+              <ListRules items={[
+                "Horseplay, practical jokes, or non-work-related physical activity during work hours.",
+                "Fighting or physical altercations with coworkers, clients, or members of the public.",
+                "Working while under the influence of alcohol, cannabis, illegal drugs, or impairing prescription medications without Company knowledge.",
+                "Willful, reckless, or intentional violation of any safety rule in this Policy.",
+                "Self-inflicted injuries or injuries sustained while attempting to harm another person.",
+                "Injuries sustained while committing a crime, including theft from a client site.",
+              ]} />
+              <p>By signing this Policy, the Team Member acknowledges that injuries resulting from excluded conduct may be denied workers&apos; compensation coverage under New York law, and that such injuries are also grounds for immediate termination.</p>
+            </Section>
+
+            <Section number="21" title="Scope of Employment &amp; Authorized Locations" flagged>
+              <p>Team Members are required to remain at their assigned client site during work hours and to perform only the duties assigned by GreenPoint. The following are outside the scope of employment:</p>
+              <ListRules items={[
+                "Visiting unauthorized locations during work hours, including personal errands, side jobs, or visits to friends/family.",
+                "Performing work for any party other than GreenPoint while on the clock.",
+                "Detouring from assigned routes when driving Company vehicles between assignments.",
+                "Bringing the work site to an unauthorized location (e.g., taking Company equipment home without authorization).",
+                "Performing tasks not on the assigned cleaning checklist or Statement of Work without supervisor approval.",
+              ]} />
+              <p><strong>Injuries sustained while at an unauthorized location, on personal errands during work hours, or while engaged in activities outside the scope of assigned duties are not within the course and scope of employment</strong> and may not be covered by Company workers&apos; compensation. By signing this Policy, the Team Member acknowledges this limitation.</p>
+            </Section>
+
+            <Section number="22" title="Post-Incident Cooperation &amp; Investigation" flagged>
+              <p>Following any reported incident, the Team Member agrees to cooperate fully with all Company and insurance investigations, including:</p>
+              <ListRules items={[
+                "Providing a written statement describing the incident in their own words within seven (7) days.",
+                "Identifying and providing contact information for any witnesses.",
+                "Submitting to post-incident drug and alcohol testing where applicable under Section 13 (Drug & Alcohol Policy).",
+                "Preserving any physical evidence (clothing, equipment, tools, packaging) related to the incident.",
+                "Cooperating with site walkthroughs, photo/video documentation, and re-enactments as requested.",
+                "Attending all required medical appointments, independent medical examinations (IMEs), and depositions.",
+                "Providing access to relevant medical records pertaining to the injury.",
+              ]} />
+              <p><strong>Failure to cooperate with post-incident investigation may result in (a) denial or suspension of workers&apos; compensation benefits to the extent permitted by law, and (b) disciplinary action up to and including termination.</strong> The Company&apos;s investigation rights are independent of any criminal or civil proceedings.</p>
+            </Section>
+
+            <Section number="23" title="Light Duty &amp; Return-to-Work" flagged>
+              <p>If a Team Member is medically cleared for light duty, modified duty, or alternative work following an injury, the Company may offer reasonable alternative work consistent with the medical restrictions.</p>
+              <p>The Team Member agrees to:</p>
+              <ListRules items={[
+                "Provide complete medical clearance documentation specifying any restrictions.",
+                "Accept reasonable alternative duty offered by the Company that is within the medical restrictions.",
+                "Communicate any change in medical status promptly to Miguel Garcia.",
+                "Cooperate with the Company's return-to-work program, including any required check-ins or progress evaluations.",
+              ]} />
+              <p><strong>Refusal to accept reasonable alternative duty</strong> offered by the Company that is within the Team Member&apos;s documented medical restrictions <strong>may result in suspension of supplemental wage benefits to the extent permitted under New York Workers&apos; Compensation Law &sect; 15(7).</strong> The Company will work in good faith to find suitable alternative work but is not obligated to create a position that does not otherwise exist.</p>
+            </Section>
+
+            <Section number="24" title="Shared Safety Responsibility &amp; Comparative Negligence" flagged>
+              <p>Workplace safety is a <strong>shared responsibility</strong> between the Company and each Team Member. By accepting employment with GreenPoint and continuing to perform work, the Team Member acknowledges that:</p>
+              <ListRules items={[
+                "Safety rules in this Policy exist for the Team Member's own protection.",
+                "The Team Member has a personal duty to follow all safety rules at all times, regardless of client pressure, deadline pressure, or perceived inconvenience.",
+                "The Team Member has a duty to refuse unsafe work and to immediately report unsafe conditions, defective equipment, or safety hazards to Miguel Garcia.",
+                "The Team Member has a duty to ask for clarification or training when uncertain how to perform a task safely.",
+                "Knowing violations of safety rules contribute to any resulting injuries to the extent of such violations.",
+              ]} />
+              <p>The Team Member further agrees that, to the maximum extent permitted by New York law, the doctrine of <strong>comparative negligence</strong> shall apply to any claim against the Company arising from a workplace injury, and that any damages awarded shall be reduced in proportion to the Team Member&apos;s own contribution to the injury through violation of this Policy.</p>
+              <p><em>Note: This section does not waive the Team Member&apos;s rights under the New York Workers&apos; Compensation Law, which is the exclusive remedy for most workplace injuries. It applies to any claims that fall outside workers&apos; compensation exclusivity.</em></p>
+            </Section>
+
+            <Section number="25" title="Acknowledgment">
+              <p>By signing below — or by continuing to perform work for GreenPoint after receiving this policy — you acknowledge that you have received, read, understood, and agreed to comply with this Team Member Conduct &amp; Safety Policy <strong>in full</strong>, including specifically:</p>
+              <ListRules items={[
+                "Section 2 — Ladder Safety Two-Person Rule.",
+                "Section 3 — Injury Reporting (same-day Company policy + 30-day NY legal maximum).",
+                "Section 5 — Lifting, Pushing, Pulling Limits (50 lb solo / 40 lb trash bag).",
+                "Section 6 — Slip/Trip/Fall Prevention and Mopping Rules.",
+                "Section 9 — Phone & Personal Device Policy.",
+                "Sections 16-24 — Off-the-Clock Work, Pre-Existing Conditions, Training Acknowledgment, PPE Compliance, Excluded Conduct, Scope of Employment, Post-Incident Cooperation, Light Duty, and Shared Safety Responsibility.",
+              ]} />
+              <p>You further acknowledge that you have had the opportunity to ask questions about any provision of this Policy and that you understand the consequences of violation.</p>
 
               <div style={{
                 marginTop: 24, padding: 28, background: '#f5f7f5', borderRadius: 10,

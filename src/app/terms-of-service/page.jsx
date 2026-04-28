@@ -102,6 +102,7 @@ export default function TermsOfServicePage() {
 
             <Section number="9" title="Insurance">
               <p>GreenPoint maintains commercial general liability, workers&apos; compensation, and auto liability insurance as required by law and as specified in the Service Agreement. Certificates of insurance are available upon written request.</p>
+              <p>GreenPoint also maintains a comprehensive <a href="/team-conduct-safety-policy" style={{ color: '#1B7A3D', fontWeight: 600 }}>Team Member Conduct &amp; Safety Policy</a> that all personnel must acknowledge and follow. The Policy includes mandatory injury reporting, ladder safety, lifting limits, PPE compliance, and post-incident investigation cooperation — protecting both Client facilities and GreenPoint personnel.</p>
             </Section>
 
             <Section number="10" title="Limitation of Liability">
