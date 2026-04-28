@@ -1,6 +1,6 @@
 # GreenPoint Maintenance Services Corp — Full Content Index
 
-Last Updated: 2026-04-27
+Last Updated: 2026-04-28
 
 This file contains the full text of GreenPoint's most important pages, optimized for ingestion by AI assistants and language models. For a curated index of resources, see https://greenpointms.com/llms.txt.
 
@@ -84,31 +84,31 @@ Full list of 80+ cities at https://greenpointms.com/sitemap.xml.
 
 The following articles are published on the GreenPoint blog. Each represents original research and analysis on commercial cleaning standards, compliance, technology, and best practices.
 
-Total articles: 50
+Total articles: 53
 
 ## Category: Industry Data
 
 ### Commercial Cleaning Industry Statistics: 50+ Data Points for 2026
 
-Published: 2026-01-05
+Published: 2025-04-01
 URL: https://greenpointms.com/blog/commercial-cleaning-industry-statistics
 Summary: A comprehensive collection of commercial cleaning industry data — market size, growth rates, labor statistics, pricing benchmarks, and facility-specific metrics compiled from ISSA, BLS, IBIS, and primary sources.
 
 ### The Hidden Cost of Janitorial Turnover: Why Your Cleaning Company
 
-Published: 2026-02-18
+Published: 2025-05-18
 URL: https://greenpointms.com/blog/janitorial-employee-turnover-impact
 Summary: How the commercial cleaning industry
 
 ### Post-COVID Cleaning Standards: What
 
-Published: 2026-05-28
+Published: 2026-02-05
 URL: https://greenpointms.com/blog/covid-cleaning-standards-permanent-changes
 Summary: Which pandemic-era cleaning practices are here to stay, which were temporary overreactions, and how facility cleaning standards have permanently evolved since 2020.
 
 ### Cleaning Staffing Ratios: How Many Cleaners Does Your Building Need?
 
-Published: 2026-06-22
+Published: 2026-04-02
 URL: https://greenpointms.com/blog/cleaning-staffing-ratios-square-footage
 Summary: Data-backed staffing formulas for commercial cleaning — square footage per cleaner ratios by facility type, workloading methodology, and how to evaluate whether your vendor is adequately staffed.
 
@@ -116,19 +116,19 @@ Summary: Data-backed staffing formulas for commercial cleaning — square footag
 
 ### Cleaning Frequency Standards by Facility Type: The Definitive Reference
 
-Published: 2026-01-12
+Published: 2025-04-01
 URL: https://greenpointms.com/blog/cleaning-frequency-standards-by-facility-type
 Summary: How often should each area of your facility be cleaned? A data-backed reference guide with recommended frequencies for offices, schools, healthcare, daycare, churches, and government buildings.
 
 ### ISSA Clean Standards: Understanding the 5-Level Appearance Scale
 
-Published: 2026-01-20
+Published: 2025-04-08
 URL: https://greenpointms.com/blog/issa-clean-standards-appearance-levels
 Summary: A detailed explanation of ISSA
 
 ### Commercial Cleaning Glossary: 100+ Industry Terms Defined
 
-Published: 2026-06-25
+Published: 2026-04-10
 URL: https://greenpointms.com/blog/commercial-cleaning-glossary-terms
 Summary: A comprehensive reference glossary of commercial cleaning terminology — from ATP testing to zone cleaning, covering products, equipment, standards, methods, and compliance terms.
 
@@ -136,13 +136,13 @@ Summary: A comprehensive reference glossary of commercial cleaning terminology �
 
 ### Indoor Air Quality and Commercial Cleaning: What the Research Shows
 
-Published: 2026-01-28
+Published: 2025-04-16
 URL: https://greenpointms.com/blog/indoor-air-quality-commercial-cleaning
 Summary: How cleaning practices directly impact indoor air quality — including VOC emissions from cleaning products, particulate matter from vacuuming, and evidence-based strategies for IAQ improvement.
 
 ### Healthcare-Associated Infections: The Critical Role of Environmental Cleaning
 
-Published: 2026-02-02
+Published: 2025-04-24
 URL: https://greenpointms.com/blog/healthcare-associated-infections-environmental-cleaning
 Summary: Research-backed analysis of how environmental cleaning prevents HAIs — covering transmission pathways, high-touch surface contamination data, and evidence for cleaning intervention effectiveness.
 
@@ -150,7 +150,7 @@ Summary: Research-backed analysis of how environmental cleaning prevents HAIs �
 
 ### Commercial Cleaning Costs: What to Expect Per Square Foot in 2026
 
-Published: 2026-02-08
+Published: 2025-05-02
 URL: https://greenpointms.com/blog/commercial-cleaning-cost-per-square-foot
 Summary: A transparent breakdown of commercial cleaning pricing by facility type, service frequency, and region — so you can benchmark proposals accurately.
 
@@ -158,49 +158,49 @@ Summary: A transparent breakdown of commercial cleaning pricing by facility type
 
 ### Calculating Your Facility
 
-Published: 2026-02-12
+Published: 2025-05-10
 URL: https://greenpointms.com/blog/calculating-true-cleaning-cost-tco
 Summary: Why the monthly invoice from your cleaning company is only part of the story — a framework for calculating total cleaning cost including hidden expenses, management overhead, and quality failures.
 
 ### Why Hiring an MBE-Certified Cleaning Company Matters for Your Organization
 
-Published: 2026-04-28
+Published: 2025-11-25
 URL: https://greenpointms.com/blog/mbe-certified-cleaning-company-benefits
 Summary: How contracting with MBE/MWBE-certified vendors helps meet diversity procurement goals, improves bid scores, and supports community economic development.
 
 ### How to Write an RFP for Commercial Cleaning Services
 
-Published: 2026-05-01
+Published: 2025-12-03
 URL: https://greenpointms.com/blog/how-to-write-rfp-commercial-cleaning
 Summary: A step-by-step guide to writing an effective cleaning services RFP — including scope of work templates, evaluation criteria, and common mistakes that lead to poor vendor selection.
 
 ### Commercial Cleaning Contract Negotiation: 12 Key Terms to Understand
 
-Published: 2026-05-05
+Published: 2025-12-11
 URL: https://greenpointms.com/blog/commercial-cleaning-contract-key-terms
 Summary: Essential contract terms in commercial cleaning agreements — from performance guarantees and termination clauses to scope change procedures and insurance requirements.
 
 ### Vendor Consolidation: The Case for Using One Cleaning Company for All Services
 
-Published: 2026-05-08
+Published: 2025-12-19
 URL: https://greenpointms.com/blog/vendor-consolidation-one-cleaning-company
 Summary: Why consolidating janitorial, floor care, disinfection, and maintenance under a single vendor reduces costs, improves accountability, and simplifies facility management.
 
 ### Building a Quality Assurance Program for Your Commercial Cleaning Operation
 
-Published: 2026-05-12
+Published: 2025-12-27
 URL: https://greenpointms.com/blog/quality-assurance-commercial-cleaning-program
 Summary: A framework for systematic quality assurance in commercial cleaning — inspection methodologies, scoring systems, corrective action procedures, and continuous improvement cycles.
 
 ### Cleaning Company Insurance Requirements: What to Verify Before Signing a Contract
 
-Published: 2026-06-08
+Published: 2026-03-01
 URL: https://greenpointms.com/blog/cleaning-company-insurance-requirements
 Summary: The essential insurance coverages every commercial cleaning company should carry — general liability, workers
 
 ### Outsourced Cleaning vs. In-House Custodial Staff: A Complete Comparison
 
-Published: 2026-06-28
+Published: 2026-04-18
 URL: https://greenpointms.com/blog/commercial-cleaning-vs-in-house-custodial
 Summary: The pros, cons, and true cost comparison of outsourcing your cleaning to a commercial company versus employing in-house custodial staff — covering financials, quality, flexibility, and risk.
 
@@ -208,55 +208,55 @@ Summary: The pros, cons, and true cost comparison of outsourcing your cleaning t
 
 ### Medical Office Cleaning Requirements: OSHA Compliance Guide
 
-Published: 2026-02-22
+Published: 2025-05-26
 URL: https://greenpointms.com/blog/medical-office-cleaning-requirements-osha
 Summary: Understanding OSHA cleaning requirements for medical offices, dental practices, and outpatient clinics — including bloodborne pathogen standards and terminal cleaning protocols.
 
 ### OSHA Cleaning Chemical Safety: GHS Labels, SDS Requirements, and Compliance
 
-Published: 2026-02-26
+Published: 2025-06-03
 URL: https://greenpointms.com/blog/osha-cleaning-chemical-safety-ghs-sds
 Summary: A complete guide to OSHA
 
 ### ADA Compliance in Facility Maintenance: What Cleaning Companies Must Know
 
-Published: 2026-03-01
+Published: 2025-06-11
 URL: https://greenpointms.com/blog/ada-compliance-facility-maintenance
 Summary: How ADA requirements apply to commercial cleaning operations — from accessible restroom maintenance to equipment storage and service delivery accommodations.
 
 ### EPA Disinfectant Registration: What Facility Managers Need to Know
 
-Published: 2026-03-05
+Published: 2025-06-19
 URL: https://greenpointms.com/blog/epa-disinfectant-registration-guide
 Summary: How EPA disinfectant registration works, what List N and List K mean, how to verify product claims, and why 
 
 ### How to Prepare Your Daycare for a Health Department Inspection
 
-Published: 2026-03-08
+Published: 2025-06-27
 URL: https://greenpointms.com/blog/daycare-cleaning-health-department-inspection
 Summary: A practical guide to ensuring your childcare facility passes health department inspections with flying colors — covering sanitization, documentation, and common citations.
 
 ### Fire Code Compliance: Cleaning Chemical Storage Requirements
 
-Published: 2026-03-10
+Published: 2025-07-05
 URL: https://greenpointms.com/blog/fire-code-cleaning-chemical-storage
 Summary: How NFPA and local fire codes regulate cleaning chemical storage in commercial buildings — flammability classifications, maximum quantities, cabinet requirements, and common violations.
 
 ### HIPAA and Medical Office Cleaning: What Your Cleaning Company Must Know
 
-Published: 2026-03-12
+Published: 2025-07-13
 URL: https://greenpointms.com/blog/hipaa-considerations-medical-office-cleaning
 Summary: How HIPAA privacy and security rules apply to cleaning operations in healthcare facilities — including document handling, after-hours access, and Business Associate requirements.
 
 ### Prevailing Wage Requirements for Government Cleaning Contracts
 
-Published: 2026-03-14
+Published: 2025-07-21
 URL: https://greenpointms.com/blog/prevailing-wage-government-cleaning-contracts
 Summary: How federal and state prevailing wage laws affect government cleaning contracts — Davis-Bacon, state little Davis-Bacon acts, Service Contract Act, and their impact on pricing and compliance.
 
 ### NYC Local Law Compliance for Commercial Building Maintenance
 
-Published: 2026-06-01
+Published: 2026-02-13
 URL: https://greenpointms.com/blog/nyc-local-law-building-maintenance
 Summary: Key New York City local laws that affect commercial building maintenance — from Local Law 11 facade inspections to energy benchmarking, and how cleaning operations intersect with compliance.
 
@@ -264,37 +264,37 @@ Summary: Key New York City local laws that affect commercial building maintenanc
 
 ### How to Choose a Commercial Cleaning Company: The Complete Guide
 
-Published: 2026-03-16
+Published: 2025-07-29
 URL: https://greenpointms.com/blog/how-to-choose-commercial-cleaning-company
 Summary: Hiring the wrong cleaning company costs more than money — it costs tenant satisfaction, compliance scores, and your reputation. Here
 
 ### The Complete Guide to Government Building Cleaning and GSA Standards
 
-Published: 2026-03-20
+Published: 2025-08-14
 URL: https://greenpointms.com/blog/government-building-cleaning-gsa-standards
 Summary: How GSA cleaning standards, security requirements, and diversity procurement goals shape government facility maintenance — a guide for both agencies and contractors.
 
 ### Church Cleaning: When to Use Volunteers vs. Professional Services
 
-Published: 2026-03-22
+Published: 2025-08-22
 URL: https://greenpointms.com/blog/church-cleaning-tips-volunteers-vs-professionals
 Summary: A practical comparison of volunteer-based church cleaning versus professional services, including cost analysis and hybrid approaches that work.
 
 ### Assisted Living and Nursing Home Cleaning: Protocols for Vulnerable Populations
 
-Published: 2026-03-24
+Published: 2025-08-30
 URL: https://greenpointms.com/blog/assisted-living-nursing-home-cleaning-protocols
 Summary: Specialized cleaning requirements for senior care facilities — covering infection control, fall prevention, dementia-sensitive approaches, and regulatory compliance.
 
 ### Coworking Space Cleaning: Unique Challenges and Practical Solutions
 
-Published: 2026-03-26
+Published: 2025-09-07
 URL: https://greenpointms.com/blog/coworking-space-cleaning-challenges
 Summary: How shared workspace models create distinct cleaning challenges — hot-desking hygiene, community kitchen management, phone booth sanitization, and member satisfaction strategies.
 
 ### Warehouse and Industrial Facility Cleaning: Best Practices and Safety Standards
 
-Published: 2026-03-28
+Published: 2025-09-15
 URL: https://greenpointms.com/blog/warehouse-industrial-cleaning-best-practices
 Summary: How to maintain clean, safe, and OSHA-compliant warehouse and industrial environments — covering floor maintenance, dust control, spill management, and regulatory requirements.
 
@@ -302,13 +302,13 @@ Summary: How to maintain clean, safe, and OSHA-compliant warehouse and industria
 
 ### School Cleaning Checklist: A Complete Guide for Custodial Staff
 
-Published: 2026-03-18
+Published: 2025-08-06
 URL: https://greenpointms.com/blog/school-cleaning-checklist-custodial-staff
 Summary: A room-by-room cleaning checklist for K-12 schools covering classrooms, cafeterias, gyms, restrooms, and common areas — with frequency recommendations.
 
 ### How to Audit Your Current Cleaning Program: A 50-Point Inspection Checklist
 
-Published: 2026-06-18
+Published: 2026-03-25
 URL: https://greenpointms.com/blog/cleaning-audit-checklist-facility-managers
 Summary: A systematic framework for evaluating your cleaning vendor
 
@@ -316,31 +316,31 @@ Summary: A systematic framework for evaluating your cleaning vendor
 
 ### VCT Floor Care: The Complete Guide to Strip, Seal, and Wax
 
-Published: 2026-04-01
+Published: 2025-09-23
 URL: https://greenpointms.com/blog/vct-floor-care-strip-seal-wax-guide
 Summary: Everything you need to know about maintaining VCT (vinyl composition tile) floors — stripping schedules, product selection, application techniques, and maintenance programs that extend floor life.
 
 ### Commercial Carpet Cleaning Methods Compared: Extraction vs. Encapsulation vs. Bonnet
 
-Published: 2026-04-05
+Published: 2025-10-01
 URL: https://greenpointms.com/blog/carpet-cleaning-methods-compared
 Summary: A technical comparison of commercial carpet cleaning methods — hot water extraction, encapsulation, bonnet cleaning, and dry compound — including when to use each and expected results.
 
 ### Restroom Cleaning and Maintenance: Best Practices for High-Traffic Commercial Facilities
 
-Published: 2026-04-12
+Published: 2025-10-16
 URL: https://greenpointms.com/blog/restroom-cleaning-best-practices-high-traffic
 Summary: Why restrooms are the most critical area in any commercial facility — and a comprehensive protocol for maintaining clean, well-stocked, complaint-free restrooms in high-traffic environments.
 
 ### The 3 Phases of Post-Construction Cleaning: What to Expect
 
-Published: 2026-04-15
+Published: 2025-10-24
 URL: https://greenpointms.com/blog/post-construction-cleaning-phases-explained
 Summary: A detailed walkthrough of rough clean, light clean, and final clean phases — what each includes, how long they take, and how to ensure your space is truly move-in ready.
 
 ### Pressure Washing for Commercial Properties: Methods, Frequency, and Regulations
 
-Published: 2026-06-15
+Published: 2026-03-17
 URL: https://greenpointms.com/blog/pressure-washing-commercial-properties
 Summary: A complete guide to commercial pressure washing — building exteriors, sidewalks, parking structures, and loading docks. Includes water reclamation requirements and environmental regulations.
 
@@ -348,31 +348,31 @@ Summary: A complete guide to commercial pressure washing — building exteriors,
 
 ### Electrostatic Disinfection: How It Works, When to Use It, and What It Costs
 
-Published: 2026-04-08
+Published: 2025-10-09
 URL: https://greenpointms.com/blog/electrostatic-disinfection-explained
 Summary: A comprehensive technical guide to electrostatic spraying technology — the science behind it, effectiveness data, appropriate applications, limitations, and cost considerations.
 
 ### What Is ATP Bioluminescence Testing and Why It Matters for Your Facility
 
-Published: 2026-04-18
+Published: 2025-11-01
 URL: https://greenpointms.com/blog/what-is-atp-bioluminescence-testing-cleaning
 Summary: How ATP testing works, what the numbers mean, and why it
 
 ### Color-Coded Microfiber Systems: The Science of Preventing Cross-Contamination
 
-Published: 2026-04-22
+Published: 2025-11-09
 URL: https://greenpointms.com/blog/color-coded-microfiber-systems-guide
 Summary: How color-coded microfiber cleaning systems prevent cross-contamination between areas — the science behind microfiber, industry-standard color assignments, and implementation best practices.
 
 ### Digital Cleaning Verification Systems: Moving Beyond Paper Checklists
 
-Published: 2026-04-25
+Published: 2025-11-17
 URL: https://greenpointms.com/blog/digital-cleaning-verification-systems
 Summary: How digital verification systems like GPS tracking, photo documentation, IoT sensors, and ATP integration are transforming accountability in commercial cleaning.
 
 ### HEPA Filtration in Commercial Cleaning: What Facility Managers Need to Know
 
-Published: 2026-05-18
+Published: 2026-01-12
 URL: https://greenpointms.com/blog/hepa-filtration-commercial-cleaning
 Summary: Why HEPA vacuum filtration matters for indoor air quality — the science of particle capture, when HEPA is required versus recommended, and how to verify HEPA performance.
 
@@ -380,13 +380,13 @@ Summary: Why HEPA vacuum filtration matters for indoor air quality — the scien
 
 ### Green Cleaning for Commercial Buildings: What Actually Works
 
-Published: 2026-05-15
+Published: 2026-01-04
 URL: https://greenpointms.com/blog/green-cleaning-commercial-buildings-guide
 Summary: Separating green cleaning facts from marketing hype — which certifications matter, which products work, and how to implement a sustainable cleaning program.
 
 ### Cleaning Requirements for LEED-Certified Buildings: A Facility Manager
 
-Published: 2026-06-12
+Published: 2026-03-09
 URL: https://greenpointms.com/blog/cleaning-for-leed-certified-buildings
 Summary: How LEED certification affects your cleaning program — required product certifications, documentation standards, IAQ protocols, and how to maintain credits through ongoing operations.
 
@@ -394,21 +394,43 @@ Summary: How LEED certification affects your cleaning program — required produ
 
 ### Winter Facility Maintenance Checklist for Northeast Commercial Buildings
 
-Published: 2026-05-22
+Published: 2026-01-20
 URL: https://greenpointms.com/blog/winter-facility-maintenance-checklist-northeast
 Summary: A comprehensive winter preparation and maintenance guide for commercial buildings in the Northeast — covering snow/ice management, HVAC, plumbing, interior cleaning, and safety protocols.
 
 ### Summer Deep Cleaning Checklist for K-12 Schools
 
-Published: 2026-05-25
+Published: 2026-01-28
 URL: https://greenpointms.com/blog/summer-deep-cleaning-checklist-schools
 Summary: How to maximize the summer break for school deep cleaning — a comprehensive task list by area, timeline planning, budget considerations, and preparation for fall reopening.
 
 ### Hurricane Preparedness and Recovery Cleaning for Florida Commercial Facilities
 
-Published: 2026-06-05
+Published: 2026-02-21
 URL: https://greenpointms.com/blog/hurricane-preparedness-florida-commercial-facilities
 Summary: Pre-storm preparation, emergency response, and post-hurricane cleanup protocols for commercial buildings in Florida — from water extraction to mold prevention.
+
+## Category: Buying Guide
+
+### 10 Questions to Ask Before Hiring a Commercial Cleaning Company
+
+Published: 2026-04-26
+URL: https://greenpointms.com/blog/questions-to-ask-commercial-cleaning-company
+Summary: The 10 questions that separate professional cleaning companies from the rest — what to ask about staffing, verification, insurance, and accountability before you sign a contract.
+
+## Category: Local SEO
+
+### Commercial Cleaning in Manhattan: A Facility Manager
+
+Published: 2026-04-28
+URL: https://greenpointms.com/blog/commercial-cleaning-manhattan-vendor-guide
+Summary: A proof-driven guide to selecting a Manhattan commercial cleaning vendor — specs, compliance, staffing, and verification for Class A to mixed-use buildings.
+
+### Commercial Cleaning in the Bronx: What Facility Managers Should Know
+
+Published: 2026-04-28
+URL: https://greenpointms.com/blog/commercial-cleaning-bronx-facility-managers
+Summary: A Bronx-focused playbook for commercial cleaning: staffing, compliance, transit-heavy traffic patterns, and how to verify quality across offices, schools, and clinics.
 
 
 ---
@@ -479,4 +501,4 @@ This file is regenerated whenever blog content changes. For the most up-to-date 
 
 For the curated index of GreenPoint's most important pages, see https://greenpointms.com/llms.txt.
 
-Last generated: 2026-04-27T21:36:36.369Z
+Last generated: 2026-04-28T12:45:41.723Z

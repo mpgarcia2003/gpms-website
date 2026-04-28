@@ -41,6 +41,7 @@ export default function sitemap() {
   // Blog pages
   pages.push({ url: `${BASE_URL}/blog/`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 });
   for (const post of BLOG_POSTS) {
+    if (!post || !post.slug) continue;
     pages.push({ url: `${BASE_URL}/blog/${post.slug}/`, lastModified: new Date(post.publishedAt), changeFrequency: 'monthly', priority: 0.7 });
   }
 

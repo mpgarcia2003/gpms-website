@@ -61,7 +61,7 @@ export default function BlogPostPage({ params }) {
 
   // Get related posts (same category, excluding current)
   const related = BLOG_POSTS
-    .filter(p => p.slug !== post.slug)
+    .filter(p => p && p.slug && p.slug !== post.slug)
     .sort((a, b) => (a.category === post.category ? -1 : 1))
     .slice(0, 3);
 
