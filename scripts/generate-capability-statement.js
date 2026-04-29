@@ -227,7 +227,7 @@ hLine(y + 58, COL1_X + 12, COL1_X + COL1_W - 12, [255, 255, 255, 0.15], 0.4);
 
 doc.save().font('Helvetica').fontSize(8).fillColor([200, 230, 210])
   .text('(347) 332-9348', COL1_X + 12, y + 66)
-  .text('Hello@GreenPointMS.com', COL1_X + 12, y + 80)
+  .text('info@greenpointms.com', COL1_X + 12, y + 80)
   .text('Bronx, New York', COL1_X + 12, y + 94)
   .restore();
 
@@ -325,7 +325,7 @@ diffs.forEach((d, i) => {
 // ── Page 1 Footer ────────────────────────────────────────────────────────────
 fillRect(0, H - 28, W, 28, C.darkGreen);
 doc.save().font('Helvetica').fontSize(7.5).fillColor([150, 200, 170])
-  .text('GreenPoint Maintenance Services Corp  •  Bronx, NY  •  Hello@GreenPointMS.com  •  (347) 332-9348  •  gpms-website.vercel.app', MARGIN, H - 18, { width: W - MARGIN * 2 })
+  .text('GreenPoint Maintenance Services Corp  •  Bronx, NY  •  info@greenpointms.com  •  (347) 332-9348  •  greenpointms.com', MARGIN, H - 18, { width: W - MARGIN * 2 })
   .restore();
 doc.save().font('Helvetica').fontSize(7.5).fillColor([150, 200, 170])
   .text('1 of 2', 0, H - 18, { align: 'right', width: W - MARGIN })
@@ -518,13 +518,13 @@ doc.save().font('Helvetica-Bold').fontSize(9).fillColor(C.midGreen)
   .restore();
 
 doc.save().font('Helvetica').fontSize(9).fillColor(C.midGreen)
-  .text('  •  Hello@GreenPointMS.com', MARGIN + 80, p2y + 24)
+  .text('  •  info@greenpointms.com', MARGIN + 80, p2y + 24)
   .restore();
 
 // ── Page 2 Footer ─────────────────────────────────────────────────────────────
 fillRect(0, H - 28, W, 28, C.darkGreen);
 doc.save().font('Helvetica').fontSize(7.5).fillColor([150, 200, 170])
-  .text('GreenPoint Maintenance Services Corp  •  Bronx, NY  •  Hello@GreenPointMS.com  •  (347) 332-9348  •  SAM.gov Active  •  EIN: 83-3561154', MARGIN, H - 18, { width: W - MARGIN * 2 })
+  .text('GreenPoint Maintenance Services Corp  •  Bronx, NY  •  info@greenpointms.com  •  (347) 332-9348  •  SAM.gov Active  •  EIN: 83-3561154', MARGIN, H - 18, { width: W - MARGIN * 2 })
   .restore();
 doc.save().font('Helvetica').fontSize(7.5).fillColor([150, 200, 170])
   .text('2 of 2', 0, H - 18, { align: 'right', width: W - MARGIN })
