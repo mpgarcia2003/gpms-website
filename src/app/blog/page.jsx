@@ -63,6 +63,8 @@ const BLOG_INDEX = [
 
   { slug: "commercial-cleaning-long-island-city-astoria", image: "/blog/commercial-cleaning-long-island-city-astoria.jpg", title: "Commercial Cleaning in Long Island City and Astoria: Vendor Guide", excerpt: "A proof-driven guide to hiring commercial cleaning in Long Island City and Astoria—scope, pricing drivers, local building needs, and how GreenPoint verifies results.", category: "Local SEO", date: "2026-05-01", readTime: "9 min" },
   { slug: "commercial-cleaning-downtown-brooklyn-dumbo", image: "/blog/commercial-cleaning-downtown-brooklyn-dumbo.jpg", title: "Commercial Cleaning in Downtown Brooklyn and DUMBO", excerpt: "Hiring a commercial cleaning vendor in Downtown Brooklyn or DUMBO? Compare scopes, compliance basics, and how GreenPoint proves outcomes with JaniTrack.", category: "Local SEO", date: "2026-05-01", readTime: "9 min" },
+  { slug: "school-cleaning-nyc-doe-approved-vendor", image: "/blog/school-cleaning-nyc-doe-approved-vendor.jpg", title: "School Cleaning Services in NYC: Choosing a DOE-Approved Vendor", excerpt: "A proof-driven guide to selecting an NYC school cleaning partner that meets DOE expectations, documentation needs, and infection-control goals.", category: "Local SEO", date: "2026-05-02", readTime: "10 min" },
+  { slug: "medical-office-cleaning-manhattan-hipaa", image: "/blog/medical-office-cleaning-manhattan-hipaa.jpg", title: "Medical Office Cleaning in Manhattan: HIPAA-Compliant Vendors", excerpt: "How Manhattan practices vet medical office cleaning vendors for HIPAA awareness, OSHA-aligned safety, and verifiable disinfection with documentation.", category: "Local SEO", date: "2026-05-02", readTime: "9 min" },
 ];
 
 export const metadata = {
