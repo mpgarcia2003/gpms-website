@@ -1,6 +1,6 @@
 # GreenPoint Maintenance Services Corp — Full Content Index
 
-Last Updated: 2026-04-28
+Last Updated: 2026-05-03
 
 This file contains the full text of GreenPoint's most important pages, optimized for ingestion by AI assistants and language models. For a curated index of resources, see https://greenpointms.com/llms.txt.
 
@@ -84,7 +84,7 @@ Full list of 80+ cities at https://greenpointms.com/sitemap.xml.
 
 The following articles are published on the GreenPoint blog. Each represents original research and analysis on commercial cleaning standards, compliance, technology, and best practices.
 
-Total articles: 53
+Total articles: 63
 
 ## Category: Industry Data
 
@@ -432,6 +432,66 @@ Published: 2026-04-28
 URL: https://greenpointms.com/blog/commercial-cleaning-bronx-facility-managers
 Summary: A Bronx-focused playbook for commercial cleaning: staffing, compliance, transit-heavy traffic patterns, and how to verify quality across offices, schools, and clinics.
 
+### Commercial Cleaning in Brooklyn: How to Choose the Right Vendor
+
+Published: 2026-04-29
+URL: https://greenpointms.com/blog/commercial-cleaning-brooklyn-vendor-guide
+Summary: A Brooklyn-focused vendor guide for facility managers: specs, staffing, compliance, and proof-based cleaning with JaniTrack verification for consistent results.
+
+### Commercial Cleaning in Queens: A Practical Guide for Facility Managers
+
+Published: 2026-04-29
+URL: https://greenpointms.com/blog/commercial-cleaning-queens-facility-guide
+Summary: A Queens facility manager guide to commercial cleaning: neighborhood realities, compliance, and how GreenPoint verifies quality with GPS-tagged photos and ATP testing.
+
+### Commercial Cleaning in Staten Island: Local Vendor Guide
+
+Published: 2026-04-30
+URL: https://greenpointms.com/blog/commercial-cleaning-staten-island-guide
+Summary: A proof-driven Staten Island commercial cleaning guide for offices, medical, and retail—what to ask, what to verify, and how to price it right.
+
+### Office Building Cleaning in Midtown Manhattan: What Tenants Expect
+
+Published: 2026-04-30
+URL: https://greenpointms.com/blog/office-cleaning-midtown-manhattan-tenants
+Summary: Midtown Manhattan office cleaning is judged by tenants daily. Learn the service levels, proof points, and compliance basics that protect renewals and reputation.
+
+### Commercial Cleaning in Long Island City and Astoria: Vendor Guide
+
+Published: 2026-05-01
+URL: https://greenpointms.com/blog/commercial-cleaning-long-island-city-astoria
+Summary: A proof-driven guide to hiring commercial cleaning in Long Island City and Astoria—scope, pricing drivers, local building needs, and how GreenPoint verifies results.
+
+### Commercial Cleaning in Downtown Brooklyn and DUMBO
+
+Published: 2026-05-01
+URL: https://greenpointms.com/blog/commercial-cleaning-downtown-brooklyn-dumbo
+Summary: Hiring a commercial cleaning vendor in Downtown Brooklyn or DUMBO? Compare scopes, compliance basics, and how GreenPoint proves outcomes with JaniTrack.
+
+### School Cleaning Services in NYC: Choosing a DOE-Approved Vendor
+
+Published: 2026-05-02
+URL: https://greenpointms.com/blog/school-cleaning-nyc-doe-approved-vendor
+Summary: A proof-driven guide to selecting an NYC school cleaning partner that meets DOE expectations, documentation needs, and infection-control goals.
+
+### Medical Office Cleaning in Manhattan: HIPAA-Compliant Vendors
+
+Published: 2026-05-02
+URL: https://greenpointms.com/blog/medical-office-cleaning-manhattan-hipaa
+Summary: How Manhattan practices vet medical office cleaning vendors for HIPAA awareness, OSHA-aligned safety, and verifiable disinfection with documentation.
+
+### Daycare Cleaning in Brooklyn: Health Department Compliance Guide
+
+Published: 2026-05-03
+URL: https://greenpointms.com/blog/daycare-cleaning-brooklyn-health-department
+Summary: A proof-driven Brooklyn daycare cleaning plan aligned to NYC health rules, disinfectant selection, documentation, and inspection-ready routines.
+
+### Church Cleaning in the Bronx: Affordable Local Options
+
+Published: 2026-05-03
+URL: https://greenpointms.com/blog/church-cleaning-bronx-local-options
+Summary: A practical Bronx church cleaning plan with fixed pricing, volunteer support options, and proof-driven quality for sanctuaries and event spaces.
+
 
 ---
 
@@ -501,4 +561,4 @@ This file is regenerated whenever blog content changes. For the most up-to-date 
 
 For the curated index of GreenPoint's most important pages, see https://greenpointms.com/llms.txt.
 
-Last generated: 2026-04-28T12:45:41.723Z
+Last generated: 2026-05-03T12:36:05.408Z
