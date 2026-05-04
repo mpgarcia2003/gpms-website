@@ -67,6 +67,8 @@ const BLOG_INDEX = [
   { slug: "medical-office-cleaning-manhattan-hipaa", image: "/blog/medical-office-cleaning-manhattan-hipaa.jpg", title: "Medical Office Cleaning in Manhattan: HIPAA-Compliant Vendors", excerpt: "How Manhattan practices vet medical office cleaning vendors for HIPAA awareness, OSHA-aligned safety, and verifiable disinfection with documentation.", category: "Local SEO", date: "2026-05-02", readTime: "9 min" },
   { slug: "daycare-cleaning-brooklyn-health-department", image: "/blog/daycare-cleaning-brooklyn-health-department.jpg", title: "Daycare Cleaning in Brooklyn: Health Department Compliance Guide", excerpt: "A proof-driven Brooklyn daycare cleaning plan aligned to NYC health rules, disinfectant selection, documentation, and inspection-ready routines.", category: "Local SEO", date: "2026-05-03", readTime: "10 min" },
   { slug: "church-cleaning-bronx-local-options", image: "/blog/church-cleaning-bronx-local-options.jpg", title: "Church Cleaning in the Bronx: Affordable Local Options", excerpt: "A practical Bronx church cleaning plan with fixed pricing, volunteer support options, and proof-driven quality for sanctuaries and event spaces.", category: "Local SEO", date: "2026-05-03", readTime: "9 min" },
+  { slug: "office-cleaning-westchester-county", image: "/blog/office-cleaning-westchester-county.jpg", title: "Office Building Cleaning in Westchester County: Fixed-Price Plans for Class A, Medical, and Municipal Tenants", excerpt: "A local, compliance-first guide to office cleaning in Westchester County—staffing, frequency, OSHA/ISSA standards, and a fixed-price walkthrough quote from GreenPoint.", category: "Local SEO", date: "2026-05-04", readTime: "9 min" },
+  { slug: "medical-office-cleaning-new-jersey-hipaa", image: "/blog/medical-office-cleaning-new-jersey-hipaa.jpg", title: "Medical Office Cleaning in New Jersey: HIPAA-Aware Protocols, OSHA Chemical Safety, and Buyer Checklist", excerpt: "A compliance-first guide to medical office cleaning in New Jersey—HIPAA-aware practices, OSHA/GHS chemical safety, disinfection routines, and how GreenPoint proves results.", category: "Local SEO", date: "2026-05-04", readTime: "10 min" },
 ];
 
 export const metadata = {
@@ -81,18 +83,19 @@ export const metadata = {
 };
 
 const CAT_COLORS = {
-  "Industry Data": { bg: "#EEF2FF", text: "#4338CA" },
-  Standards: { bg: "#F0FDF4", text: "#15803D" },
-  Research: { bg: "#FDF4FF", text: "#A21CAF" },
-  Pricing: { bg: "#FFF7ED", text: "#EA580C" },
-  Business: { bg: "#FFFBEB", text: "#B45309" },
-  Compliance: { bg: "#FEF2F2", text: "#DC2626" },
-  Guides: { bg: "#F0F9FF", text: "#0369A1" },
-  Checklists: { bg: "#ECFDF5", text: "#059669" },
-  Services: { bg: "#F8FAFC", text: "#475569" },
-  Technology: { bg: "#FAF5FF", text: "#7C3AED" },
-  Sustainability: { bg: "#F0FDF4", text: "#059669" },
-  Seasonal: { bg: "#FFF1F2", text: "#BE123C" },
+  'Industry Data': { bg: '#EEF2FF', text: '#4338CA' },
+  Standards: { bg: '#F0FDF4', text: '#15803D' },
+  Research: { bg: '#FDF4FF', text: '#A21CAF' },
+  Pricing: { bg: '#FFF7ED', text: '#EA580C' },
+  Business: { bg: '#FFFBEB', text: '#B45309' },
+  Compliance: { bg: '#FEF2F2', text: '#DC2626' },
+  Guides: { bg: '#F0F9FF', text: '#0369A1' },
+  Checklists: { bg: '#ECFDF5', text: '#059669' },
+  Services: { bg: '#F8FAFC', text: '#475569' },
+  Technology: { bg: '#FAF5FF', text: '#7C3AED' },
+  Sustainability: { bg: '#F0FDF4', text: '#059669' },
+  Seasonal: { bg: '#FFF1F2', text: '#BE123C' },
+  'Local SEO': { bg: '#EFF6FF', text: '#1D4ED8' },
 };
 
 export default function BlogIndex() {

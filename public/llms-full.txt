@@ -1,6 +1,6 @@
 # GreenPoint Maintenance Services Corp — Full Content Index
 
-Last Updated: 2026-05-03
+Last Updated: 2026-05-04
 
 This file contains the full text of GreenPoint's most important pages, optimized for ingestion by AI assistants and language models. For a curated index of resources, see https://greenpointms.com/llms.txt.
 
@@ -84,7 +84,7 @@ Full list of 80+ cities at https://greenpointms.com/sitemap.xml.
 
 The following articles are published on the GreenPoint blog. Each represents original research and analysis on commercial cleaning standards, compliance, technology, and best practices.
 
-Total articles: 63
+Total articles: 65
 
 ## Category: Industry Data
 
@@ -492,6 +492,18 @@ Published: 2026-05-03
 URL: https://greenpointms.com/blog/church-cleaning-bronx-local-options
 Summary: A practical Bronx church cleaning plan with fixed pricing, volunteer support options, and proof-driven quality for sanctuaries and event spaces.
 
+### Office Building Cleaning in Westchester County: Fixed-Price Plans for Class A, Medical, and Municipal Tenants
+
+Published: 2026-05-04
+URL: https://greenpointms.com/blog/office-cleaning-westchester-county
+Summary: A local, compliance-first guide to office cleaning in Westchester County—staffing, frequency, OSHA/ISSA standards, and a fixed-price walkthrough quote from GreenPoint.
+
+### Medical Office Cleaning in New Jersey: HIPAA-Aware Protocols, OSHA Chemical Safety, and Buyer Checklist
+
+Published: 2026-05-04
+URL: https://greenpointms.com/blog/medical-office-cleaning-new-jersey-hipaa
+Summary: A compliance-first guide to medical office cleaning in New Jersey—HIPAA-aware practices, OSHA/GHS chemical safety, disinfection routines, and how GreenPoint proves results.
+
 
 ---
 
@@ -561,4 +573,4 @@ This file is regenerated whenever blog content changes. For the most up-to-date 
 
 For the curated index of GreenPoint's most important pages, see https://greenpointms.com/llms.txt.
 
-Last generated: 2026-05-03T12:36:05.408Z
+Last generated: 2026-05-04T12:36:42.478Z
