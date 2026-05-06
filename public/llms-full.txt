@@ -1,6 +1,6 @@
 # GreenPoint Maintenance Services Corp — Full Content Index
 
-Last Updated: 2026-05-04
+Last Updated: 2026-05-06
 
 This file contains the full text of GreenPoint's most important pages, optimized for ingestion by AI assistants and language models. For a curated index of resources, see https://greenpointms.com/llms.txt.
 
@@ -84,7 +84,7 @@ Full list of 80+ cities at https://greenpointms.com/sitemap.xml.
 
 The following articles are published on the GreenPoint blog. Each represents original research and analysis on commercial cleaning standards, compliance, technology, and best practices.
 
-Total articles: 65
+Total articles: 67
 
 ## Category: Industry Data
 
@@ -504,6 +504,18 @@ Published: 2026-05-04
 URL: https://greenpointms.com/blog/medical-office-cleaning-new-jersey-hipaa
 Summary: A compliance-first guide to medical office cleaning in New Jersey—HIPAA-aware practices, OSHA/GHS chemical safety, disinfection routines, and how GreenPoint proves results.
 
+### School Cleaning in New Jersey: District Vendor Approval Guide (Protocols, Proof, and Pricing)
+
+Published: 2026-05-05
+URL: https://greenpointms.com/blog/school-cleaning-new-jersey-district-approval
+Summary: A practical guide for NJ districts on approving a school cleaning vendor: compliance, proof of performance, staffing, and fixed pricing for predictable budgets.
+
+### Daycare Cleaning in Queens: NYC Health Code Compliance for Astoria, LIC, Flushing, and Jamaica
+
+Published: 2026-05-05
+URL: https://greenpointms.com/blog/daycare-cleaning-queens-nyc-health-code
+Summary: Queens childcare centers face strict NYC health expectations. Learn compliant cleaning routines, documentation, and fixed-price plans with verification and safe chemicals.
+
 
 ---
 
@@ -573,4 +585,4 @@ This file is regenerated whenever blog content changes. For the most up-to-date 
 
 For the curated index of GreenPoint's most important pages, see https://greenpointms.com/llms.txt.
 
-Last generated: 2026-05-04T12:36:42.478Z
+Last generated: 2026-05-06T12:40:36.410Z
