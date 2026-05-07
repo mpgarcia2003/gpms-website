@@ -1,6 +1,6 @@
 # GreenPoint Maintenance Services Corp — Full Content Index
 
-Last Updated: 2026-05-06
+Last Updated: 2026-05-07
 
 This file contains the full text of GreenPoint's most important pages, optimized for ingestion by AI assistants and language models. For a curated index of resources, see https://greenpointms.com/llms.txt.
 
@@ -84,7 +84,7 @@ Full list of 80+ cities at https://greenpointms.com/sitemap.xml.
 
 The following articles are published on the GreenPoint blog. Each represents original research and analysis on commercial cleaning standards, compliance, technology, and best practices.
 
-Total articles: 67
+Total articles: 69
 
 ## Category: Industry Data
 
@@ -516,6 +516,18 @@ Published: 2026-05-05
 URL: https://greenpointms.com/blog/daycare-cleaning-queens-nyc-health-code
 Summary: Queens childcare centers face strict NYC health expectations. Learn compliant cleaning routines, documentation, and fixed-price plans with verification and safe chemicals.
 
+### Restaurant and Hospitality Cleaning in NYC Tri-State: A Proof-Driven Vendor Guide
+
+Published: 2026-05-07
+URL: https://greenpointms.com/blog/restaurant-hospitality-cleaning-nyc-tri-state
+Summary: A tri-state cleaning playbook for restaurants and hotels: health code readiness, ISSA-based standards, JaniTrack verification, and fixed pricing from GreenPoint.
+
+### Warehouse and Industrial Cleaning in NJ Tri-State: Safety-First, Audit-Ready Janitorial
+
+Published: 2026-05-07
+URL: https://greenpointms.com/blog/warehouse-industrial-cleaning-nj-tri-state
+Summary: A buyer guide for NJ warehouses: dust control, OSHA-aligned chemical handling, dock and aisle standards, and JaniTrack verification from GreenPoint Maintenance Services.
+
 
 ---
 
@@ -585,4 +597,4 @@ This file is regenerated whenever blog content changes. For the most up-to-date 
 
 For the curated index of GreenPoint's most important pages, see https://greenpointms.com/llms.txt.
 
-Last generated: 2026-05-06T12:40:36.410Z
+Last generated: 2026-05-07T12:40:38.539Z

@@ -73,6 +73,25 @@ const BLOG_INDEX = [
   { slug: "daycare-cleaning-queens-nyc-health-code", image: "/blog/daycare-cleaning-queens-nyc-health-code.jpg", title: "Daycare Cleaning in Queens: NYC Health Code Compliance for Astoria, LIC, Flushing, and Jamaica", excerpt: "Queens childcare centers face strict NYC health expectations. Learn compliant cleaning routines, documentation, and fixed-price plans with verification and safe chemicals.", category: "Local SEO", date: "2026-05-05", readTime: "9 min" },
   {"slug": "government-building-cleaning-connecticut", "image": "/blog/government-building-cleaning-connecticut.jpg", "title": "Government Building Cleaning in Connecticut: Bid Vendor Guide", "excerpt": "A proof-driven guide to CT municipal and state facility cleaning: scope, compliance, staffing, and how to evaluate vendors for measurable outcomes.", "category": "Local SEO", "date": "2026-05-06", "readTime": "10 min"},
   {"slug": "coworking-cleaning-manhattan-vendor-selection", "image": "/blog/coworking-cleaning-manhattan-vendor-selection.jpg", "title": "Coworking Space Cleaning in Manhattan: Vendor Selection Guide", "excerpt": "How Manhattan coworking operators choose a janitorial partner: measurable QA, fast turnarounds, restroom hygiene, and predictable fixed pricing.", "category": "Local SEO", "date": "2026-05-06", "readTime": "9 min"},
+
+  {
+    slug: "restaurant-hospitality-cleaning-nyc-tri-state",
+    image: "/blog/restaurant-hospitality-cleaning-nyc-tri-state.jpg",
+    title: "Restaurant and Hospitality Cleaning in NYC Tri-State: A Proof-Driven Vendor Guide",
+    excerpt: "A tri-state cleaning playbook for restaurants and hotels: health code readiness, ISSA-based standards, JaniTrack verification, and fixed pricing from GreenPoint.",
+    category: "Local SEO",
+    date: "2026-05-07",
+    readTime: "10 min"
+  },
+  {
+    slug: "warehouse-industrial-cleaning-nj-tri-state",
+    image: "/blog/warehouse-industrial-cleaning-nj-tri-state.jpg",
+    title: "Warehouse and Industrial Cleaning in NJ Tri-State: Safety-First, Audit-Ready Janitorial",
+    excerpt: "A buyer guide for NJ warehouses: dust control, OSHA-aligned chemical handling, dock and aisle standards, and JaniTrack verification from GreenPoint Maintenance Services.",
+    category: "Local SEO",
+    date: "2026-05-07",
+    readTime: "9 min"
+  },
 ];
 
 export const metadata = {
