@@ -92,6 +92,8 @@ const BLOG_INDEX = [
     date: "2026-05-07",
     readTime: "9 min"
   },
+  { slug: "commercial-cleaning-westchester-yonkers-white-plains", image: "/blog/commercial-cleaning-westchester-yonkers-white-plains.jpg", title: "Commercial Cleaning in Westchester: Yonkers, White Plains, and Mount Vernon", excerpt: "Looking for commercial cleaning in Westchester? Here’s a proof-driven plan for Yonkers, White Plains, and Mount Vernon facilities—with verified results.", category: "Local SEO", date: "2026-05-08", readTime: "10 min" },
+  { slug: "commercial-cleaning-nassau-county-long-island", image: "/blog/commercial-cleaning-nassau-county-long-island.jpg", title: "Commercial Cleaning in Nassau County, Long Island", excerpt: "Need commercial cleaning in Nassau County? A proof-driven, fixed-price program for Garden City, Hempstead, Mineola, and the South Shore—verified with JaniTrack.", category: "Local SEO", date: "2026-05-08", readTime: "9 min" },
 ];
 
 export const metadata = {

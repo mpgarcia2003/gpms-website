@@ -1,6 +1,6 @@
 # GreenPoint Maintenance Services Corp — Full Content Index
 
-Last Updated: 2026-05-07
+Last Updated: 2026-05-08
 
 This file contains the full text of GreenPoint's most important pages, optimized for ingestion by AI assistants and language models. For a curated index of resources, see https://greenpointms.com/llms.txt.
 
@@ -84,7 +84,7 @@ Full list of 80+ cities at https://greenpointms.com/sitemap.xml.
 
 The following articles are published on the GreenPoint blog. Each represents original research and analysis on commercial cleaning standards, compliance, technology, and best practices.
 
-Total articles: 69
+Total articles: 71
 
 ## Category: Industry Data
 
@@ -528,6 +528,18 @@ Published: 2026-05-07
 URL: https://greenpointms.com/blog/warehouse-industrial-cleaning-nj-tri-state
 Summary: A buyer guide for NJ warehouses: dust control, OSHA-aligned chemical handling, dock and aisle standards, and JaniTrack verification from GreenPoint Maintenance Services.
 
+### Commercial Cleaning in Westchester: Yonkers, White Plains, and Mount Vernon
+
+Published: 2026-05-08
+URL: https://greenpointms.com/blog/commercial-cleaning-westchester-yonkers-white-plains
+Summary: Looking for commercial cleaning in Westchester? Here’s a proof-driven plan for Yonkers, White Plains, and Mount Vernon facilities—with verified results.
+
+### Commercial Cleaning in Nassau County, Long Island
+
+Published: 2026-05-08
+URL: https://greenpointms.com/blog/commercial-cleaning-nassau-county-long-island
+Summary: Need commercial cleaning in Nassau County? A proof-driven, fixed-price program for Garden City, Hempstead, Mineola, and the South Shore—verified with JaniTrack.
+
 
 ---
 
@@ -597,4 +609,4 @@ This file is regenerated whenever blog content changes. For the most up-to-date 
 
 For the curated index of GreenPoint's most important pages, see https://greenpointms.com/llms.txt.
 
-Last generated: 2026-05-07T12:40:38.539Z
+Last generated: 2026-05-08T12:39:55.951Z
