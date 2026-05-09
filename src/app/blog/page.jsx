@@ -94,6 +94,25 @@ const BLOG_INDEX = [
   },
   { slug: "commercial-cleaning-westchester-yonkers-white-plains", image: "/blog/commercial-cleaning-westchester-yonkers-white-plains.jpg", title: "Commercial Cleaning in Westchester: Yonkers, White Plains, and Mount Vernon", excerpt: "Looking for commercial cleaning in Westchester? Here’s a proof-driven plan for Yonkers, White Plains, and Mount Vernon facilities—with verified results.", category: "Local SEO", date: "2026-05-08", readTime: "10 min" },
   { slug: "commercial-cleaning-nassau-county-long-island", image: "/blog/commercial-cleaning-nassau-county-long-island.jpg", title: "Commercial Cleaning in Nassau County, Long Island", excerpt: "Need commercial cleaning in Nassau County? A proof-driven, fixed-price program for Garden City, Hempstead, Mineola, and the South Shore—verified with JaniTrack.", category: "Local SEO", date: "2026-05-08", readTime: "9 min" },
+
+  {
+    slug: "commercial-cleaning-suffolk-county-long-island",
+    image: "/blog/commercial-cleaning-suffolk-county-long-island.jpg",
+    title: "Commercial Cleaning in Suffolk County, Long Island: A Proof-Driven Guide for Facilities",
+    excerpt: "Need a reliable Suffolk County commercial cleaning partner? See scopes, local considerations, and how GreenPoint verifies results with JaniTrack.",
+    category: "Local SEO",
+    date: "2026-05-09",
+    readTime: "10 min"
+  },
+  {
+    slug: "commercial-cleaning-northern-new-jersey-newark-jersey-city",
+    image: "/blog/commercial-cleaning-northern-new-jersey-newark-jersey-city.jpg",
+    title: "Commercial Cleaning in Northern New Jersey (Newark, Jersey City, Hoboken): What Buyers Should Demand",
+    excerpt: "Searching for commercial cleaning in Newark, Jersey City, or Hoboken? Learn scope, compliance, and how GreenPoint proves results with JaniTrack.",
+    category: "Local SEO",
+    date: "2026-05-09",
+    readTime: "9 min"
+  },
 ];
 
 export const metadata = {
