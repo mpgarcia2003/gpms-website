@@ -113,7 +113,8 @@ const BLOG_INDEX = [
     date: "2026-05-09",
     readTime: "9 min"
   },
-];
+  { slug: "commercial-cleaning-fairfield-county-connecticut", image: "/blog/commercial-cleaning-fairfield-county-connecticut.jpg", title: "Commercial Cleaning in Fairfield County, Connecticut (Stamford & Greenwich)", excerpt: "Proof-driven commercial cleaning for Stamford and Greenwich offices. Learn pricing drivers, compliance basics, and how GreenPoint verifies results.", category: "Local SEO", date: "2026-05-10", readTime: "10 min" },
+  { slug: "nyc-local-law-26-97-cleaning-impact", image: "/blog/nyc-local-law-26-97-cleaning-impact.jpg", title: "NYC Local Law 26 & 97: What They Change About Your Cleaning Vendor", excerpt: "Local Law 26 and 97 are building laws, but they influence janitorial specs, documentation, and green cleaning choices. Here’s what to demand from vendors.", category: "Compliance", date: "2026-05-10", readTime: "9 min" },];
 
 export const metadata = {
   title: 'Blog | GreenPoint Maintenance Services',

@@ -1,6 +1,6 @@
 # GreenPoint Maintenance Services Corp — Full Content Index
 
-Last Updated: 2026-05-08
+Last Updated: 2026-05-10
 
 This file contains the full text of GreenPoint's most important pages, optimized for ingestion by AI assistants and language models. For a curated index of resources, see https://greenpointms.com/llms.txt.
 
@@ -84,7 +84,7 @@ Full list of 80+ cities at https://greenpointms.com/sitemap.xml.
 
 The following articles are published on the GreenPoint blog. Each represents original research and analysis on commercial cleaning standards, compliance, technology, and best practices.
 
-Total articles: 71
+Total articles: 75
 
 ## Category: Industry Data
 
@@ -259,6 +259,12 @@ Summary: How federal and state prevailing wage laws affect government cleaning c
 Published: 2026-02-13
 URL: https://greenpointms.com/blog/nyc-local-law-building-maintenance
 Summary: Key New York City local laws that affect commercial building maintenance — from Local Law 11 facade inspections to energy benchmarking, and how cleaning operations intersect with compliance.
+
+### NYC Local Law 26 & 97: What They Change About Your Cleaning Vendor
+
+Published: 2026-05-10
+URL: https://greenpointms.com/blog/nyc-local-law-26-97-cleaning-impact
+Summary: Local Law 26 and 97 are building laws, but they influence janitorial specs, documentation, and green cleaning choices. Here’s what to demand from vendors.
 
 ## Category: Guides
 
@@ -540,6 +546,24 @@ Published: 2026-05-08
 URL: https://greenpointms.com/blog/commercial-cleaning-nassau-county-long-island
 Summary: Need commercial cleaning in Nassau County? A proof-driven, fixed-price program for Garden City, Hempstead, Mineola, and the South Shore—verified with JaniTrack.
 
+### Commercial Cleaning in Suffolk County, Long Island: A Proof-Driven Guide for Facilities
+
+Published: 2026-05-09
+URL: https://greenpointms.com/blog/commercial-cleaning-suffolk-county-long-island
+Summary: Need a reliable Suffolk County commercial cleaning partner? See scopes, local considerations, and how GreenPoint verifies results with JaniTrack.
+
+### Commercial Cleaning in Northern New Jersey (Newark, Jersey City, Hoboken): What Buyers Should Demand
+
+Published: 2026-05-09
+URL: https://greenpointms.com/blog/commercial-cleaning-northern-new-jersey-newark-jersey-city
+Summary: Searching for commercial cleaning in Newark, Jersey City, or Hoboken? Learn scope, compliance, and how GreenPoint proves results with JaniTrack.
+
+### Commercial Cleaning in Fairfield County, Connecticut (Stamford & Greenwich)
+
+Published: 2026-05-10
+URL: https://greenpointms.com/blog/commercial-cleaning-fairfield-county-connecticut
+Summary: Proof-driven commercial cleaning for Stamford and Greenwich offices. Learn pricing drivers, compliance basics, and how GreenPoint verifies results.
+
 
 ---
 
@@ -609,4 +633,4 @@ This file is regenerated whenever blog content changes. For the most up-to-date 
 
 For the curated index of GreenPoint's most important pages, see https://greenpointms.com/llms.txt.
 
-Last generated: 2026-05-08T12:39:55.951Z
+Last generated: 2026-05-10T12:39:41.899Z
