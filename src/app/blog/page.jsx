@@ -114,7 +114,10 @@ const BLOG_INDEX = [
     readTime: "9 min"
   },
   { slug: "commercial-cleaning-fairfield-county-connecticut", image: "/blog/commercial-cleaning-fairfield-county-connecticut.jpg", title: "Commercial Cleaning in Fairfield County, Connecticut (Stamford & Greenwich)", excerpt: "Proof-driven commercial cleaning for Stamford and Greenwich offices. Learn pricing drivers, compliance basics, and how GreenPoint verifies results.", category: "Local SEO", date: "2026-05-10", readTime: "10 min" },
-  { slug: "nyc-local-law-26-97-cleaning-impact", image: "/blog/nyc-local-law-26-97-cleaning-impact.jpg", title: "NYC Local Law 26 & 97: What They Change About Your Cleaning Vendor", excerpt: "Local Law 26 and 97 are building laws, but they influence janitorial specs, documentation, and green cleaning choices. Here’s what to demand from vendors.", category: "Compliance", date: "2026-05-10", readTime: "9 min" },];
+  { slug: "nyc-local-law-26-97-cleaning-impact", image: "/blog/nyc-local-law-26-97-cleaning-impact.jpg", title: "NYC Local Law 26 & 97: What They Change About Your Cleaning Vendor", excerpt: "Local Law 26 and 97 are building laws, but they influence janitorial specs, documentation, and green cleaning choices. Here’s what to demand from vendors.", category: "Compliance", date: "2026-05-10", readTime: "9 min" },
+  { slug: "nj-doe-school-cleaning-requirements", image: "/blog/nj-doe-school-cleaning-requirements.jpg", title: "NJ Department of Education School Cleaning Requirements (Practical Compliance Guide)", excerpt: "A practical NJ school cleaning compliance guide: schedules, disinfecting rules, OSHA-safe chemicals, documentation, and how to verify results campus-wide.", category: "Compliance", date: "2026-05-11", readTime: "10 min" },
+  { slug: "nyc-mwbe-cleaning-vendors-procurement", image: "/blog/nyc-mwbe-cleaning-vendors-procurement.jpg", title: "NYC MWBE Cleaning Vendors: A Procurement Guide for Facilities and Agencies", excerpt: "How to source MWBE cleaning vendors in NYC: compliance, scopes, verification, and how to evaluate minority-owned janitorial bids without sacrificing quality.", category: "Business", date: "2026-05-11", readTime: "9 min" },
+];
 
 export const metadata = {
   title: 'Blog | GreenPoint Maintenance Services',

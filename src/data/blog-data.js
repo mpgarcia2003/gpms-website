@@ -3540,7 +3540,264 @@ export const BLOG_POSTS = [
         "text": "If Local Law 26/97 and sustainability reporting are raising the bar for your building operations, your cleaning vendor should help—not add risk. Schedule a compliance-focused walkthrough with GreenPoint Maintenance Services and get a fixed-price scope with JaniTrack verification and audit-ready reporting. Call 347-332-9348 or email info@greenpointms.com. Proof point: 98% client retention backed by documented inspections and corrective actions."
       }
     ],
+  },
+
+  {
+    slug: "nj-doe-school-cleaning-requirements",
+    image: "/blog/nj-doe-school-cleaning-requirements.jpg",
+    title: "NJ Department of Education School Cleaning Requirements (Practical Compliance Guide)",
+    excerpt: "A practical NJ school cleaning compliance guide: schedules, disinfecting rules, OSHA-safe chemicals, documentation, and how to verify results campus-wide.",
+    category: "Compliance",
+    author: "GreenPoint Maintenance",
+    publishedAt: "2026-05-11",
+    readTime: "10 min read",
+    keywords: ["NJ DOE school cleaning", "New Jersey school cleaning compliance", "NJ school janitorial standards"],
+    content: [
+      {
+        type: "intro",
+        text: "If you manage a public, charter, or private school in New Jersey, “clean enough” is not a feeling — it is a documented program. NJ Department of Education expectations touch daily custodial routines, health and safety practices, chemical controls, and clear records you can show during audits, parent inquiries, or incident reviews. GreenPoint Maintenance Services helps tri-state facilities build proof-driven cleaning programs that reduce risk and protect attendance, while keeping budgets predictable with fixed pricing (no hourly surprises). Call 347-332-9348 to schedule a walkthrough and get a school-specific scope and quote."
+      },
+      {
+        type: "paragraph",
+        text: "In this guide, we translate NJ DOE-aligned expectations into a practical playbook: what to clean, how often, how to use disinfectants safely, what to document, and how to verify performance with tools like ATP testing and GPS-tagged photos through JaniTrack. If you also manage NYC campuses, compare your program to our NYC-focused resources like [school cleaning checklist for custodial staff](/blog/school-cleaning-checklist-custodial-staff/) and [NYC DOE-approved vendor considerations](/blog/school-cleaning-nyc-doe-approved-vendor/)."
+      },
+      {
+        type: "heading",
+        text: "What “NJ DOE school cleaning requirements” means in practice"
+      },
+      {
+        type: "paragraph",
+        text: "School cleaning expectations in New Jersey typically align with three realities: (1) infection prevention in high-contact environments, (2) safe chemical handling for staff and students, and (3) documented procedures that can be repeated every day regardless of who is on shift. GreenPoint’s approach is evidence-based: we treat cleaning as a controllable process, not an “effort.” That means written scopes, training, inspection routines, and measurable verification — the type of operational discipline that supports a 98% client retention rate."
+      },
+      {
+        type: "paragraph",
+        text: "You will see different terminology across districts and guidance documents, but your compliance foundation is consistent: a frequency plan by space type, a disinfection protocol for touchpoints, a safety plan for chemicals and equipment, and a record system. If you want a quick benchmark on frequency by space, use [cleaning frequency standards by facility type](/blog/cleaning-frequency-standards-by-facility-type/) as a starting point and then tailor it to your building use and student age groups."
+      },
+      {
+        type: "heading",
+        text: "Facility zones NJ schools must prioritize (and why auditors ask about them)"
+      },
+      {
+        type: "paragraph",
+        text: "New Jersey schools are built around repeated, dense circulation: students move bell-to-bell through corridors, stairwells, cafeterias, gyms, and shared restrooms. That makes specific zones higher risk for both germs and visible cleanliness issues. GreenPoint typically organizes scopes into zones so supervisors can inspect consistently and districts can understand what they’re paying for."
+      },
+      {
+        type: "paragraph",
+        text: "Core zones to prioritize: main entrances and vestibules, hallways and stair rails, classroom touchpoints (desks, door handles, shared supplies areas), nurse’s office, restrooms, cafeterias and serving lines, gyms/locker rooms, media centers, and staff break rooms. Also include bus loading areas and security desks because those touchpoints are used continuously during arrival and dismissal near transit corridors like NJ Transit stations or major arterials such as Route 1, Route 9, and the Garden State Parkway."
+      },
+      {
+        type: "heading",
+        text: "Recommended school cleaning frequencies: daily, weekly, monthly"
+      },
+      {
+        type: "paragraph",
+        text: "A defensible frequency plan is one of the easiest ways to show you have control. At minimum, most schools use a layered schedule: daily “touchpoint + trash + restroom” coverage, weekly detail work, and periodic deep cleaning aligned to breaks. The exact schedule should reflect student density, after-school activities, and community health conditions."
+      },
+      {
+        type: "paragraph",
+        text: "Daily: restrooms (multiple checks), high-touch points, cafeteria tables and floors, trash removal, spot mopping, and entry glass/handles. Weekly: detailed floor edging, classroom sink fixtures, disinfecting shared equipment, and deeper restroom detailing. Monthly/quarterly: VCT scrub-and-recoat planning, carpet extraction, high dusting, vent cover wipe-downs, and storage room organization. For floor care planning, see [VCT floor care strip, seal, and wax](/blog/vct-floor-care-strip-seal-wax-guide/) and for carpet strategy review [carpet cleaning methods compared](/blog/carpet-cleaning-methods-compared/)."
+      },
+      {
+        type: "heading",
+        text: "Disinfecting vs cleaning in schools: what to document"
+      },
+      {
+        type: "paragraph",
+        text: "Cleaning removes soils; disinfecting uses an EPA-registered product to reduce pathogens on surfaces. In schools, you need both — and you need your documentation to show the difference. A common compliance gap is “we wiped everything down” without listing the product, dwell time, and targeted surfaces."
+      },
+      {
+        type: "paragraph",
+        text: "GreenPoint Maintenance Services standardizes disinfection documentation with (1) a defined touchpoint list, (2) product name and EPA registration confirmation, (3) dwell time used, and (4) shift sign-off. For an accessible overview of product registration expectations, reference [EPA disinfectant registration basics](/blog/epa-disinfectant-registration-guide/). This protects your district during stakeholder questions and aligns with the safety discipline expected in regulated environments."
+      },
+      {
+        type: "heading",
+        text: "OSHA chemical safety: SDS access, labeling, and training"
+      },
+      {
+        type: "paragraph",
+        text: "Regardless of what a district calls its “requirements,” chemical safety is non-negotiable. OSHA’s Hazard Communication principles matter in custodial closets, loading docks, and any area where concentrates or aerosols are stored. Schools should maintain accessible Safety Data Sheets (SDS), ensure secondary containers are labeled, and train staff on correct dilution, PPE, and what to do during spills."
+      },
+      {
+        type: "paragraph",
+        text: "GreenPoint builds chemical controls into the program: we align products to Green Seal-oriented options where feasible, reduce unnecessary chemical variety, and require consistent labeling and SDS availability. If your team needs a refresher, use [OSHA cleaning chemical safety (GHS/SDS)](/blog/osha-cleaning-chemical-safety-ghs-sds/) and pair it with controlled storage practices like those outlined in [fire code chemical storage basics](/blog/fire-code-cleaning-chemical-storage/)."
+      },
+      {
+        type: "heading",
+        text: "NJ school documentation checklist: what you should be able to show in 5 minutes"
+      },
+      {
+        type: "paragraph",
+        text: "A practical test: if a superintendent, principal, or parent asks how you maintain sanitation, can you show a complete picture quickly? A five-minute documentation packet reduces stress and prevents “policy drift” where expectations change by building or shift."
+      },
+      {
+        type: "paragraph",
+        text: "At minimum, GreenPoint recommends: an area-by-area scope of work, cleaning frequency matrix, disinfecting touchpoint list, product list with EPA registration confirmation and SDS links/locations, staff training logs, inspection forms, and an issue escalation process. If you use an RFP, incorporate documentation requirements early (see [how to write an RFP for commercial cleaning](/blog/how-to-write-rfp-commercial-cleaning/)) so bidders price the real standard, not an assumed one."
+      },
+      {
+        type: "heading",
+        text: "How to verify cleaning in schools (JaniTrack + ATP testing)"
+      },
+      {
+        type: "paragraph",
+        text: "Verification is how you move from “we think it’s clean” to “we can prove it.” GreenPoint uses JaniTrack, a digital verification system that captures timestamped, GPS-tagged photos and supervisor checklists in a live dashboard. This is especially useful across multi-school portfolios in Bergen, Essex, Hudson, Union, Middlesex, and Monmouth counties where consistency is the biggest challenge."
+      },
+      {
+        type: "paragraph",
+        text: "For higher-risk areas like nurse offices, special education rooms, and cafeterias, we can add ATP bioluminescence testing as a spot-audit tool to measure residual organic material on surfaces. If you want the science in plain terms, review [what ATP testing means for cleaning verification](/blog/what-is-atp-bioluminescence-testing-cleaning/) and consider pairing it with [digital cleaning verification systems](/blog/digital-cleaning-verification-systems/)."
+      },
+      {
+        type: "heading",
+        text: "Staffing, turnover, and consistency: the hidden compliance risk"
+      },
+      {
+        type: "paragraph",
+        text: "Many school cleaning problems are not caused by “bad workers,” but by inconsistent staffing and unclear expectations. When turnover rises, training quality drops and the program becomes person-dependent. That is when touchpoints get missed, restrooms degrade, and documentation becomes a last-minute scramble."
+      },
+      {
+        type: "paragraph",
+        text: "GreenPoint builds resilience into the process: standardized checklists, role-based training, and supervisor verification. If your district is evaluating in-house versus contracted labor, use [commercial cleaning vs in-house custodial](/blog/commercial-cleaning-vs-in-house-custodial/) and consider the operational impact discussed in [janitorial employee turnover impact](/blog/janitorial-employee-turnover-impact/)."
+      },
+      {
+        type: "heading",
+        text: "How to scope and price NJ school cleaning without hourly surprises"
+      },
+      {
+        type: "paragraph",
+        text: "School administrators often get trapped by hourly billing: the invoice changes with staffing gaps, weather, events, or “extra attention” requests. GreenPoint Maintenance Services uses fixed pricing built around an explicit scope and verification plan, so you know what you’re buying and what “complete” means each day."
+      },
+      {
+        type: "paragraph",
+        text: "To estimate budget drivers, review [commercial cleaning cost per square foot](/blog/commercial-cleaning-cost-per-square-foot/) and then validate your “true cost” including supervision, supplies, and quality failures with [calculating total cost of ownership](/blog/calculating-true-cleaning-cost-tco/). For a tailored NJ school plan, call 347-332-9348 to schedule an on-site walkthrough."
+      },
+      {
+        type: "callout",
+        text: "Need a documented, audit-ready NJ school cleaning program? GreenPoint Maintenance Services can build a zone-based scope, frequency schedule, OSHA-safe chemical plan, and verification routine using JaniTrack (timestamped GPS-tagged photos) with optional ATP spot testing. Schedule a walkthrough and quote at 347-332-9348 or email info@greenpointms.com — most districts choose us for proof-driven quality and predictable fixed pricing."
+      }
+    ]
+  },
+
+  {
+    slug: "nyc-mwbe-cleaning-vendors-procurement",
+    image: "/blog/nyc-mwbe-cleaning-vendors-procurement.jpg",
+    title: "NYC MWBE Cleaning Vendors: A Procurement Guide for Facilities and Agencies",
+    excerpt: "How to source MWBE cleaning vendors in NYC: compliance, scopes, verification, and how to evaluate minority-owned janitorial bids without sacrificing quality.",
+    category: "Business",
+    author: "GreenPoint Maintenance",
+    publishedAt: "2026-05-11",
+    readTime: "9 min read",
+    keywords: ["NYC MWBE cleaning", "minority owned cleaning NYC", "NYC procurement diversity janitorial"],
+    content: [
+      {
+        type: "intro",
+        text: "If you are sourcing janitorial services in New York City, supplier diversity is not just a value statement — it is often a formal requirement. MWBE participation is built into many public-sector and large enterprise procurement programs, and it can be a major differentiator when bids look similar on price. GreenPoint Maintenance Services is an MBE/MWBE-certified commercial cleaning company serving NYC and the tri-state region with proof-driven quality controls (including JaniTrack verification and ATP testing). For a walkthrough and fixed-price quote, call 347-332-9348."
+      },
+      {
+        type: "paragraph",
+        text: "This guide explains how to evaluate NYC MWBE cleaning vendors the same way you evaluate any mission-critical vendor: clear scope, measurable outcomes, safety compliance, and documentation. If you also want to benchmark pricing and contract terms, start with [commercial cleaning contract key terms](/blog/commercial-cleaning-contract-key-terms/) and [questions to ask a commercial cleaning company](/blog/questions-to-ask-commercial-cleaning-company/)."
+      },
+      {
+        type: "heading",
+        text: "What MWBE certification means for NYC cleaning procurement"
+      },
+      {
+        type: "paragraph",
+        text: "MWBE stands for Minority- and Women-Owned Business Enterprise. In NYC, MWBE participation can appear in RFP scoring, subcontracting goals, or required vendor eligibility. The practical outcome for facilities teams is that a “qualified” janitorial vendor may need specific certifications and documentation to be considered for award."
+      },
+      {
+        type: "paragraph",
+        text: "GreenPoint Maintenance Services is certified through key local programs (including NYS and NYC certification frameworks, and NYC DOE where applicable) and is SAM.gov registered for organizations that procure through federal pathways. This matters because it reduces onboarding friction, accelerates contract execution, and provides transparent proof of eligibility when procurement teams are under deadline pressure."
+      },
+      {
+        type: "heading",
+        text: "Why procurement diversity matters in NYC buildings (beyond compliance)"
+      },
+      {
+        type: "paragraph",
+        text: "NYC is one of the most complex operating environments in the U.S.: high foot traffic, dense vertical buildings, strict waste rules, and constant public visibility. In this context, the best vendor programs are built around measurable outcomes, not just staffing. MWBE participation becomes even more meaningful when the vendor can also prove consistent delivery."
+      },
+      {
+        type: "paragraph",
+        text: "A strong MWBE vendor can reduce risk in three ways: better accountability (clear ownership), better transparency (visible documentation), and stronger responsiveness (faster decisions). GreenPoint’s proof-driven model pairs supplier diversity with performance discipline: verified tasks, supervisor inspections, and data-backed quality checks — a key reason GreenPoint maintains approximately 98% client retention."
+      },
+      {
+        type: "heading",
+        text: "NYC procurement basics: scope clarity is the #1 bid-quality driver"
+      },
+      {
+        type: "paragraph",
+        text: "The fastest way to get “apples-to-oranges” proposals is a vague scope. In NYC, that is especially dangerous because buildings vary drastically (Class A Midtown towers vs. converted industrial spaces in Long Island City, or schools near major hubs like Grand Central Terminal, Penn Station, and Atlantic Terminal). Your bid package should define what “done” means."
+      },
+      {
+        type: "paragraph",
+        text: "Use a zone-based scope: lobbies, elevators, stairwells, restrooms, pantries, conference rooms, loading docks, and exterior entries. Add frequency standards, shift coverage windows, consumables expectations, and a defined escalation process. If you need a structure, see [how to choose a commercial cleaning company](/blog/how-to-choose-commercial-cleaning-company/) and [how to write an RFP for commercial cleaning](/blog/how-to-write-rfp-commercial-cleaning/)."
+      },
+      {
+        type: "heading",
+        text: "Local NYC factors to include: regulations, waste flow, and building rules"
+      },
+      {
+        type: "paragraph",
+        text: "Your NYC scope should reflect local operational realities: Local Law requirements affecting building operations, union or prevailing wage rules for certain contracts, and strict rules for chemical storage and waste handling. Buildings with multiple tenants may also restrict elevator use, loading dock delivery windows, and the times staff can move through secure areas."
+      },
+      {
+        type: "paragraph",
+        text: "If your cleaning contract is tied to government work, review [prevailing wage government cleaning contracts](/blog/prevailing-wage-government-cleaning-contracts/) and for building-operations context consider [NYC local law building maintenance](/blog/nyc-local-law-building-maintenance/). Vendors should be prepared to document training and provide safety materials aligned with OSHA expectations."
+      },
+      {
+        type: "heading",
+        text: "How to evaluate MWBE cleaning vendors: evidence you should request"
+      },
+      {
+        type: "paragraph",
+        text: "Supplier diversity should not lower your standards. For NYC facility managers, the evaluation should be proof-based: can the vendor show they deliver consistent results across shifts and sites? Ask for an inspection sample, a sample scope, training approach, and a plan for incident response."
+      },
+      {
+        type: "paragraph",
+        text: "GreenPoint commonly provides: a site-specific scope and frequency plan, proof of insurance, safety plan, supervisory structure, and a quality assurance program. If you want an inspection framework, use [quality assurance commercial cleaning program](/blog/quality-assurance-commercial-cleaning-program/) and the operational measurement approach in [cleaning audit checklist for facility managers](/blog/cleaning-audit-checklist-facility-managers/). (If you see underscores in a copied link, convert them to hyphens before publishing.)"
+      },
+      {
+        type: "heading",
+        text: "Verification and transparency: JaniTrack, photos, and ATP spot checks"
+      },
+      {
+        type: "paragraph",
+        text: "In NYC, you cannot supervise every task in person — especially across multiple floors, multiple buildings, and multiple shifts. That is why verification technology matters. GreenPoint uses JaniTrack to provide timestamped, GPS-tagged photos, completed checklists, and a live dashboard that managers can review without walking the building at midnight."
+      },
+      {
+        type: "paragraph",
+        text: "For high-sensitivity spaces (medical offices, childcare, high-traffic restrooms), ATP testing can add measurable proof that surfaces are being cleaned effectively. Pair this with process control tools like [color-coded microfiber systems](/blog/color-coded-microfiber-systems-guide/) and the ventilation-focused practices in [indoor air quality and commercial cleaning](/blog/indoor-air-quality-commercial-cleaning/)."
+      },
+      {
+        type: "heading",
+        text: "Pricing in NYC: avoid hidden costs with fixed-scope contracting"
+      },
+      {
+        type: "paragraph",
+        text: "NYC bids can be misleading when vendors price low and then add charges for “extras” — day porter requests, event resets, additional restroom checks, or supply markups. GreenPoint Maintenance Services uses fixed pricing tied to a documented scope and verification plan. You know what you are buying, and you have proof it happened."
+      },
+      {
+        type: "paragraph",
+        text: "If you need a pricing sanity check, see [commercial cleaning cost per square foot](/blog/commercial-cleaning-cost-per-square-foot/) and then validate lifecycle costs with [calculating true cleaning cost (TCO)](/blog/calculating-true-cleaning-cost-tco/). For a NYC walkthrough and quote, call 347-332-9348 — especially if your building is in Midtown, Downtown Brooklyn, Long Island City, Astoria, or along major corridors like the 4/5/6, A/C/E, or L lines where foot traffic drives restroom and lobby demand."
+      },
+      {
+        type: "heading",
+        text: "How to choose an MWBE janitorial partner that will last"
+      },
+      {
+        type: "paragraph",
+        text: "The best vendor relationships last because expectations are explicit and performance is measured. When you evaluate MWBE vendors, score them on: documented scope quality, training and safety readiness, supervision plan, quality assurance methods, and the clarity of escalation and communication. Strong vendors make procurement’s life easier."
+      },
+      {
+        type: "paragraph",
+        text: "GreenPoint’s differentiators are designed for long-term partnerships: MWBE certification, SAM.gov registration, Green Seal-aligned products, and verification through JaniTrack with optional ATP testing. To confirm fit quickly, schedule a walkthrough and request a fixed-price proposal at 347-332-9348 or email info@greenpointms.com."
+      },
+      {
+        type: "callout",
+        text: "Need an MWBE-certified cleaning vendor in NYC that can prove performance? GreenPoint Maintenance Services provides fixed-price, scope-defined commercial cleaning with JaniTrack verification (timestamped GPS-tagged photos) and optional ATP spot testing for high-risk areas. Schedule a walkthrough at 347-332-9348 or email info@greenpointms.com — procurement teams choose us for measurable quality and reliable documentation."
+      }
+    ]
   }
+
 ];
 
 // ─────────────────────────────────────────────────────
