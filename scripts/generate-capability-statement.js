@@ -287,7 +287,6 @@ const competencies = [
   { title: 'Healthcare & Education Compliance', desc: 'CDC-compliant sanitization for schools, daycares, and medical offices. OSHA-aware protocols. Safe for occupants.' },
   { title: 'Day Porter & On-Site Services', desc: 'Dedicated on-site personnel for high-traffic facilities. Restroom maintenance, trash management, and spot cleaning.' },
   { title: 'Floor Care Programs', desc: 'Strip, wax, buff, scrub, and refinish programs for VCT, LVT, hardwood, and epoxy surfaces.' },
-  { title: 'Post-Construction Cleanup', desc: 'Certified post-construction and pre-occupancy cleaning for commercial and institutional spaces.' },
 ];
 
 competencies.forEach((c, i) => {
@@ -446,7 +445,6 @@ const industries = [
   'Houses of Worship',
   'Daycares & Child-Care Centers',
   'Commercial Office Buildings',
-  'Post-Construction Sites',
   'Day Porter Services',
 ];
 

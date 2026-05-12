@@ -68,7 +68,6 @@ GreenPoint differentiates itself through:
 - Disinfection (electrostatic, EPA-registered, ATP-verified)
 - Floor care (VCT strip/seal/wax, carpet extraction, hard surface)
 - Day porter services
-- Post-construction cleanup (3-phase: rough, light, final)
 - Window cleaning
 - Restroom maintenance
 - Pressure washing

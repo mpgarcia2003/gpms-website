@@ -186,13 +186,7 @@ const SERVICES = [
     iconKey: "wrench",
     title: "Facility Maintenance",
     outcome: "One vendor. One invoice. One call.",
-    desc: "Light plumbing, electrical, HVAC filter changes, painting touch-ups, and general handyman services — all managed under one contract.",
-  },
-  {
-    iconKey: "hardhat",
-    title: "Post-Construction Cleanup",
-    outcome: "Move-in ready in 48 hours.",
-    desc: "Three-stage professional cleanup: rough clean, light clean, and final touch. Debris removal, dust elimination, and final inspection.",
+    desc: "Light plumbing, electrical, HVAC filter changes, and painting touch-ups — all managed under one contract.",
   },
 ];
 
@@ -372,7 +366,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "Can you handle emergency or one-time cleaning requests?",
-    a: "Absolutely. In addition to scheduled cleaning programs, we offer 24/7 emergency cleaning services for situations like water damage, biohazard incidents, post-event cleanup, and post-construction debris removal. Contact us anytime and we'll dispatch a team.",
+    a: "Absolutely. In addition to scheduled cleaning programs, we offer 24/7 emergency cleaning services for situations like water damage, biohazard incidents, and emergency response cleaning. Contact us anytime and we'll dispatch a team.",
   },
 ];
 
@@ -702,7 +696,7 @@ function QuoteCalculator() {
               </IconBox>
               <div style={{ height: 16 }} />
               <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 22, fontWeight: 700, color: "#1A2B1F", marginBottom: 8 }}>One-Time Deep Clean</div>
-              <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "#6A7D72" }}>Post-construction, move-in/out, or seasonal refresh.</div>
+              <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "#6A7D72" }}>Move-in/out or seasonal refresh deep cleaning.</div>
             </div>
           </div>
         </div>
@@ -2717,7 +2711,7 @@ function Footer() {
 
           <div>
             <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "rgba(27,122,61,0.6)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.15em", marginBottom: 18 }}>Services</div>
-            {["Commercial Janitorial", "Disinfection", "Floor Care", "Day Porter", "Facility Maintenance", "Post-Construction"].map((link) => (
+            {["Commercial Janitorial", "Disinfection", "Floor Care", "Day Porter", "Facility Maintenance"].map((link) => (
               <a key={link} href="#" onClick={(e) => { e.preventDefault(); scrollTo("services"); }} style={{ display: "block", fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.55)", textDecoration: "none", marginBottom: 10, transition: "color 0.2s" }}
                 onMouseOver={(e) => e.target.style.color = "#1B7A3D"} onMouseOut={(e) => e.target.style.color = "rgba(255,255,255,0.55)"}>
                 {link}

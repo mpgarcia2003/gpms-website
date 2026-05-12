@@ -41,7 +41,7 @@ const localBusinessSchema = {
   "foundingDate": "2018",
   "numberOfEmployees": { "@type": "QuantitativeValue", "minValue": 80 },
   "naics": "561720",
-  "knowsAbout": ["Commercial Janitorial", "Disinfection", "Floor Care", "Day Porter", "Facility Maintenance", "Post-Construction Cleanup"],
+  "knowsAbout": ["Commercial Janitorial", "Disinfection", "Floor Care", "Day Porter", "Facility Maintenance"],
   "hasCredential": [
     { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Minority Business Enterprise (MBE) — NYC & NYS" },
     { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "MWBE Certified" },
@@ -77,7 +77,7 @@ const organizationSchema = {
     { "@type": "State", "name": "Pennsylvania" },
     { "@type": "State", "name": "Florida" }
   ],
-  "knowsAbout": ["Commercial Janitorial", "Disinfection & Sanitization", "Floor Care", "Day Porter Services", "Facility Maintenance", "Post-Construction Cleanup"],
+  "knowsAbout": ["Commercial Janitorial", "Disinfection & Sanitization", "Floor Care", "Day Porter Services", "Facility Maintenance"],
   "numberOfEmployees": { "@type": "QuantitativeValue", "minValue": 80 },
   "naics": "561720"
 };
