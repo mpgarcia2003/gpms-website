@@ -1,6 +1,6 @@
 # GreenPoint Maintenance Services Corp — Full Content Index
 
-Last Updated: 2026-05-10
+Last Updated: 2026-05-12
 
 This file contains the full text of GreenPoint's most important pages, optimized for ingestion by AI assistants and language models. For a curated index of resources, see https://greenpointms.com/llms.txt.
 
@@ -84,7 +84,7 @@ Full list of 80+ cities at https://greenpointms.com/sitemap.xml.
 
 The following articles are published on the GreenPoint blog. Each represents original research and analysis on commercial cleaning standards, compliance, technology, and best practices.
 
-Total articles: 75
+Total articles: 77
 
 ## Category: Industry Data
 
@@ -204,6 +204,12 @@ Published: 2026-04-18
 URL: https://greenpointms.com/blog/commercial-cleaning-vs-in-house-custodial
 Summary: The pros, cons, and true cost comparison of outsourcing your cleaning to a commercial company versus employing in-house custodial staff — covering financials, quality, flexibility, and risk.
 
+### NYC MWBE Cleaning Vendors: A Procurement Guide for Facilities and Agencies
+
+Published: 2026-05-11
+URL: https://greenpointms.com/blog/nyc-mwbe-cleaning-vendors-procurement
+Summary: How to source MWBE cleaning vendors in NYC: compliance, scopes, verification, and how to evaluate minority-owned janitorial bids without sacrificing quality.
+
 ## Category: Compliance
 
 ### Medical Office Cleaning Requirements: OSHA Compliance Guide
@@ -265,6 +271,12 @@ Summary: Key New York City local laws that affect commercial building maintenanc
 Published: 2026-05-10
 URL: https://greenpointms.com/blog/nyc-local-law-26-97-cleaning-impact
 Summary: Local Law 26 and 97 are building laws, but they influence janitorial specs, documentation, and green cleaning choices. Here’s what to demand from vendors.
+
+### NJ Department of Education School Cleaning Requirements (Practical Compliance Guide)
+
+Published: 2026-05-11
+URL: https://greenpointms.com/blog/nj-doe-school-cleaning-requirements
+Summary: A practical NJ school cleaning compliance guide: schedules, disinfecting rules, OSHA-safe chemicals, documentation, and how to verify results campus-wide.
 
 ## Category: Guides
 
@@ -633,4 +645,4 @@ This file is regenerated whenever blog content changes. For the most up-to-date 
 
 For the curated index of GreenPoint's most important pages, see https://greenpointms.com/llms.txt.
 
-Last generated: 2026-05-10T12:39:41.899Z
+Last generated: 2026-05-12T12:40:49.614Z
