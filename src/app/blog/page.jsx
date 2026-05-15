@@ -119,6 +119,8 @@ const BLOG_INDEX = [
   { slug: "nyc-mwbe-cleaning-vendors-procurement", image: "/blog/nyc-mwbe-cleaning-vendors-procurement.jpg", title: "NYC MWBE Cleaning Vendors: A Procurement Guide for Facilities and Agencies", excerpt: "How to source MWBE cleaning vendors in NYC: compliance, scopes, verification, and how to evaluate minority-owned janitorial bids without sacrificing quality.", category: "Business", date: "2026-05-11", readTime: "9 min" },
   {"slug": "nyc-building-class-cleaning-standards", "image": "/blog/nyc-building-class-cleaning-standards.jpg", "title": "NYC Building Class Cleaning Standards: Class A vs B vs C (What Tenants Expect)", "excerpt": "Class A, B, and C buildings have different cleaning expectations, audit routines, and risk exposure. A practical NYC guide for owners and tenants.", "category": "Standards", "date": "2026-05-12", "readTime": "10 min"},
   {"slug": "ct-ny-daycare-cleaning-compliance-differences", "image": "/blog/ct-ny-daycare-cleaning-compliance-differences.jpg", "title": "CT vs NY Daycare Cleaning Compliance: What Changes Across the Tri-State Line", "excerpt": "Operating child care in NY and CT? Here’s how cleaning, disinfection, documentation, and inspection readiness differ—and how to standardize your janitorial program.", "category": "Compliance", "date": "2026-05-12", "readTime": "9 min"},
+  { slug: "commercial-cleaning-bergen-county-nj", image: "/blog/commercial-cleaning-bergen-county-nj.jpg", title: "Commercial Cleaning in Bergen County, NJ: Facility Manager’s Local Vendor Guide", excerpt: "A Bergen County vendor guide for offices, medical, retail, and industrial sites—what to ask for, what it should cost, and how to verify results.", category: "Local SEO", date: "2026-05-15", readTime: "9 min" },
+  { slug: "commercial-cleaning-hudson-county-jersey-city-hoboken", image: "/blog/commercial-cleaning-hudson-county-jersey-city-hoboken.jpg", title: "Commercial Cleaning in Hudson County: Jersey City, Hoboken & Bayonne Vendor Guide", excerpt: "A proof-driven vendor guide for Hudson County facilities—how to scope cleaning for waterfront towers, transit hubs, and industrial sites without surprises.", category: "Local SEO", date: "2026-05-15", readTime: "10 min" },
 ];
 
 export const metadata = {
@@ -146,6 +148,9 @@ const CAT_COLORS = {
   Sustainability: { bg: '#F0FDF4', text: '#059669' },
   Seasonal: { bg: '#FFF1F2', text: '#BE123C' },
   'Local SEO': { bg: '#EFF6FF', text: '#1D4ED8' },
+  'Industry Verticals': { bg: '#F5F3FF', text: '#6D28D9' },
+  'Buyer Guides': { bg: '#F0F9FF', text: '#0369A1' },
+  'Specialty Services': { bg: '#F8FAFC', text: '#0F172A' },
 };
 
 export default function BlogIndex() {
