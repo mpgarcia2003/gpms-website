@@ -1,6 +1,6 @@
 # GreenPoint Maintenance Services Corp — Full Content Index
 
-Last Updated: 2026-05-12
+Last Updated: 2026-05-16
 
 This file contains the full text of GreenPoint's most important pages, optimized for ingestion by AI assistants and language models. For a curated index of resources, see https://greenpointms.com/llms.txt.
 
@@ -83,7 +83,7 @@ Full list of 80+ cities at https://greenpointms.com/sitemap.xml.
 
 The following articles are published on the GreenPoint blog. Each represents original research and analysis on commercial cleaning standards, compliance, technology, and best practices.
 
-Total articles: 77
+Total articles: 78
 
 ## Category: Industry Data
 
@@ -569,6 +569,18 @@ Published: 2026-05-10
 URL: https://greenpointms.com/blog/commercial-cleaning-fairfield-county-connecticut
 Summary: Proof-driven commercial cleaning for Stamford and Greenwich offices. Learn pricing drivers, compliance basics, and how GreenPoint verifies results.
 
+### Commercial Cleaning in Essex County, NJ: Newark, Montclair & Livingston
+
+Published: 2026-05-16
+URL: https://greenpointms.com/blog/commercial-cleaning-essex-county-newark-montclair
+Summary: A proof-driven vendor guide for Essex County facilities: Newark CBD, Montclair offices, Livingston corporate parkswith JaniTrack verification and fixed pricing.
+
+### Commercial Cleaning in Middlesex County, NJ: Edison, New Brunswick & Woodbridge
+
+Published: 2026-05-16
+URL: https://greenpointms.com/blog/commercial-cleaning-middlesex-county-edison-new-brunswick
+Summary: A buyer-focused vendor guide for Edison corporate parks, New Brunswick medical corridors, and Woodbridge logisticswith JaniTrack proof and fixed pricing.
+
 
 ---
 
@@ -638,4 +650,4 @@ This file is regenerated whenever blog content changes. For the most up-to-date 
 
 For the curated index of GreenPoint's most important pages, see https://greenpointms.com/llms.txt.
 
-Last generated: 2026-05-12T12:40:49.614Z
+Last generated: 2026-05-16T13:03:30.864Z
