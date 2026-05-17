@@ -1,6 +1,6 @@
 # GreenPoint Maintenance Services Corp — Full Content Index
 
-Last Updated: 2026-05-16
+Last Updated: 2026-05-17
 
 This file contains the full text of GreenPoint's most important pages, optimized for ingestion by AI assistants and language models. For a curated index of resources, see https://greenpointms.com/llms.txt.
 
@@ -83,7 +83,7 @@ Full list of 80+ cities at https://greenpointms.com/sitemap.xml.
 
 The following articles are published on the GreenPoint blog. Each represents original research and analysis on commercial cleaning standards, compliance, technology, and best practices.
 
-Total articles: 78
+Total articles: 80
 
 ## Category: Industry Data
 
@@ -581,6 +581,18 @@ Published: 2026-05-16
 URL: https://greenpointms.com/blog/commercial-cleaning-middlesex-county-edison-new-brunswick
 Summary: A buyer-focused vendor guide for Edison corporate parks, New Brunswick medical corridors, and Woodbridge logisticswith JaniTrack proof and fixed pricing.
 
+### Commercial Cleaning in Union County, NJ: Elizabeth, Summit & Westfield
+
+Published: 2026-05-17
+URL: https://greenpointms.com/blog/commercial-cleaning-union-county-elizabeth-summit
+Summary: Need reliable janitorial in Union County? A proof-driven vendor guide for Elizabeth, Summit, and Westfield facilities—QA, compliance, and fixed pricing.
+
+### Commercial Cleaning in Morris County, NJ: Parsippany, Morristown & Whippany Corporate Parks
+
+Published: 2026-05-17
+URL: https://greenpointms.com/blog/commercial-cleaning-morris-county-parsippany-morristown
+Summary: A Morris County vendor guide for Parsippany, Morristown, and Whippany corporate parks—fixed pricing, compliance-ready cleaning, and proof-driven QA.
+
 
 ---
 
@@ -650,4 +662,4 @@ This file is regenerated whenever blog content changes. For the most up-to-date 
 
 For the curated index of GreenPoint's most important pages, see https://greenpointms.com/llms.txt.
 
-Last generated: 2026-05-16T13:03:30.864Z
+Last generated: 2026-05-17T12:39:51.959Z
