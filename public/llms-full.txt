@@ -1,6 +1,6 @@
 # GreenPoint Maintenance Services Corp — Full Content Index
 
-Last Updated: 2026-05-17
+Last Updated: 2026-05-19
 
 This file contains the full text of GreenPoint's most important pages, optimized for ingestion by AI assistants and language models. For a curated index of resources, see https://greenpointms.com/llms.txt.
 
@@ -83,7 +83,7 @@ Full list of 80+ cities at https://greenpointms.com/sitemap.xml.
 
 The following articles are published on the GreenPoint blog. Each represents original research and analysis on commercial cleaning standards, compliance, technology, and best practices.
 
-Total articles: 80
+Total articles: 84
 
 ## Category: Industry Data
 
@@ -593,6 +593,30 @@ Published: 2026-05-17
 URL: https://greenpointms.com/blog/commercial-cleaning-morris-county-parsippany-morristown
 Summary: A Morris County vendor guide for Parsippany, Morristown, and Whippany corporate parks—fixed pricing, compliance-ready cleaning, and proof-driven QA.
 
+### Commercial Cleaning in Hartford County, CT: Vendor Guide for Insurance & Government Tenants
+
+Published: 2026-05-18
+URL: https://greenpointms.com/blog/commercial-cleaning-hartford-county-ct
+Summary: A proof-driven vendor guide for Hartford County facilities: frequencies, compliance, and how GreenPoint verifies results with JaniTrack and ATP testing.
+
+### Commercial Cleaning in New Haven County, CT: Yale, Bio, and Downtown Vendor Guide
+
+Published: 2026-05-18
+URL: https://greenpointms.com/blog/commercial-cleaning-new-haven-county-ct
+Summary: A New Haven County cleaning vendor guide for Yale-adjacent offices and bio/life-science spaces—standards, compliance, and proof-driven QA from GreenPoint.
+
+### Commercial Cleaning in Center City Philadelphia: Class A Tower Vendor Guide
+
+Published: 2026-05-19
+URL: https://greenpointms.com/blog/commercial-cleaning-philadelphia-center-city
+Summary: A proof-driven vendor guide to Center City commercial cleaning: pricing drivers, compliance needs, and how GreenPoint verifies results with JaniTrack.
+
+### Commercial Cleaning in King of Prussia & Philadelphia Suburbs
+
+Published: 2026-05-19
+URL: https://greenpointms.com/blog/commercial-cleaning-king-of-prussia-philadelphia-suburbs
+Summary: A facilities-ready guide to commercial cleaning in King of Prussia and the Philadelphia suburbs, with fixed pricing and verifiable results from GreenPoint.
+
 
 ---
 
@@ -662,4 +686,4 @@ This file is regenerated whenever blog content changes. For the most up-to-date 
 
 For the curated index of GreenPoint's most important pages, see https://greenpointms.com/llms.txt.
 
-Last generated: 2026-05-17T12:39:51.959Z
+Last generated: 2026-05-19T12:39:23.239Z
