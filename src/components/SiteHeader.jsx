@@ -9,6 +9,7 @@ const NAV_LINKS = [
   { label: "Industries", href: "/#industries" },
   { label: "JaniTrack", href: "/#janitrack" },
   { label: "Government", href: "/government-cleaning-services" },
+  { label: "Careers", href: "/careers" },
   { label: "Instant Quote", href: "/#quote" },
   { label: "Blog", href: "/blog" },
 ];
@@ -39,6 +40,7 @@ export default function SiteHeader() {
         .header-cap-btn { transition: all 0.2s ease; }
         .header-cap-btn:hover { border-color: #C8A34D !important; color: #C8A34D !important; }
         .header-phone:hover { color: #1B7A3D !important; }
+        .careers-link { color: #1B7A3D !important; font-weight: 600 !important; }
       `}</style>
       <header
         className="site-header"
@@ -70,7 +72,7 @@ export default function SiteHeader() {
           {/* Desktop Nav */}
           <nav style={{ display: "flex", alignItems: "center", gap: 20 }} className="desktop-nav">
             {NAV_LINKS.map((link) => (
-              <a key={link.label} href={link.href} className="header-nav-a"
+              <a key={link.label} href={link.href} className={`header-nav-a${link.label === "Careers" ? " careers-link" : ""}`}
                 style={{ color: "#4A5E52", textDecoration: "none", fontSize: 13, fontWeight: 500, fontFamily: "'Plus Jakarta Sans', sans-serif", letterSpacing: "0.01em" }}>
                 {link.label}
               </a>
@@ -119,7 +121,7 @@ export default function SiteHeader() {
           }}>
             {NAV_LINKS.map((link) => (
               <a key={link.label} href={link.href} onClick={() => setMobileOpen(false)}
-                style={{ color: "#4A5E52", textDecoration: "none", fontSize: 16, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>{link.label}</a>
+                style={{ color: link.label === "Careers" ? "#1B7A3D" : "#4A5E52", fontWeight: link.label === "Careers" ? 600 : 400, textDecoration: "none", fontSize: 16, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>{link.label}</a>
             ))}
             <a href={PHONE_HREF} onClick={() => setMobileOpen(false)}
               style={{ color: "#1A2B1F", textDecoration: "none", fontSize: 15, fontWeight: 600, fontFamily: "'JetBrains Mono', monospace", display: "flex", alignItems: "center", gap: 8 }}>
