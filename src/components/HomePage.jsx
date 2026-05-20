@@ -2296,13 +2296,13 @@ function CareersSection() {
               </div>
             </div>
             <div style={{ position: "relative", zIndex: 1, textAlign: "center" }}>
-              <a href="#" onClick={(e) => { e.preventDefault(); scrollTo("schedule"); }} style={{
+              <a href="/careers" style={{
                 display: "inline-flex", alignItems: "center", gap: 8,
                 background: "#1B7A3D", color: "#fff", padding: "16px 36px", borderRadius: 10,
                 fontWeight: 700, fontSize: 16, textDecoration: "none", fontFamily: "'Plus Jakarta Sans', sans-serif",
                 boxShadow: "0 4px 24px rgba(27,122,61,0.3)",
               }}>
-                View Open Positions →
+                View Open Positions \u2192
               </a>
             </div>
           </div>
@@ -2736,7 +2736,7 @@ function Footer() {
               { label: "JaniTrack", target: "janitrack" },
               { label: "Service Areas", target: "areas" },
               { label: "Learning Center", target: "learning" },
-              { label: "Careers", target: "careers" },
+              { label: "Careers \u2014 We\u2019re Hiring!", href: "/careers" },
               { label: "Contact", target: "contact" },
               { label: "Terms of Service", href: "/terms-of-service" },
               { label: "Team Conduct & Safety Policy", href: "/team-conduct-safety-policy" },
