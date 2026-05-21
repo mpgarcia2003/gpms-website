@@ -131,6 +131,26 @@ const BLOG_INDEX = [
   { slug: "commercial-cleaning-king-of-prussia-philadelphia-suburbs", image: "/blog/commercial-cleaning-king-of-prussia-philadelphia-suburbs.jpg", title: "Commercial Cleaning in King of Prussia & Philadelphia Suburbs", excerpt: "A facilities-ready guide to commercial cleaning in King of Prussia and the Philadelphia suburbs, with fixed pricing and verifiable results from GreenPoint.", category: "Local SEO", date: "2026-05-19", readTime: "10 min" },
   { slug: "commercial-cleaning-miami-dade-county-florida", image: "/blog/commercial-cleaning-miami-dade-county-florida.jpg", title: "Commercial Cleaning in Miami-Dade County, FL: Brickell, Downtown & Doral Vendor Guide", excerpt: "A proof-driven vendor guide for Miami-Dade facilities—Brickell, Downtown, and Doral. Scope, pricing, verification, and how to hire the right crew.", category: "Local SEO", date: "2026-05-20", readTime: "10 min" },
   { slug: "commercial-cleaning-broward-fort-lauderdale", image: "/blog/commercial-cleaning-broward-fort-lauderdale.jpg", title: "Commercial Cleaning in Broward County, FL: Fort Lauderdale, Plantation & Sunrise", excerpt: "A local vendor guide for Broward County facilities—Fort Lauderdale, Plantation, and Sunrise—covering scopes, verification, pricing, and compliance for buyers.", category: "Local SEO", date: "2026-05-20", readTime: "9 min" },
+  {
+    slug: "gym-fitness-center-cleaning-nyc",
+    image: "/blog/gym-fitness-center-cleaning-nyc.jpg",
+    title: "Gym and Fitness Center Cleaning in NYC: Member Safety, Mold, and Equipment Protocols",
+    excerpt:
+      "A proof-driven playbook for NYC gym cleaning: equipment disinfection, locker-room mold control, and audit-ready verification that protects members and staff.",
+    category: "Industry Verticals",
+    date: "2026-05-21",
+    readTime: "10 min",
+  },
+  {
+    slug: "law-firm-office-cleaning-manhattan",
+    image: "/blog/law-firm-office-cleaning-manhattan.jpg",
+    title: "Law Firm Cleaning in Manhattan: Confidentiality, After-Hours, and White-Glove Service",
+    excerpt:
+      "A Manhattan law firm cleaning plan must protect confidentiality, support after-hours access, and deliver measurable quality with documented verification.",
+    category: "Industry Verticals",
+    date: "2026-05-21",
+    readTime: "9 min",
+  },
 ];
 
 export const metadata = {
