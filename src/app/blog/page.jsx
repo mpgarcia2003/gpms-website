@@ -151,6 +151,24 @@ const BLOG_INDEX = [
     date: "2026-05-21",
     readTime: "9 min",
   },
+  {
+    slug: "financial-services-office-cleaning-nyc",
+    image: "/blog/financial-services-office-cleaning-nyc.jpg",
+    title: "Financial Services Office Cleaning in NYC: Trading Floors, Banks & Confidential Workspaces",
+    excerpt: "A proof-driven cleaning playbook for NYC banks and trading floors: audit trails, confidentiality, opening-ready details, and fixed-price service that passes vendor due diligence.",
+    category: "Industry Verticals",
+    date: "2026-05-22",
+    readTime: "10 min"
+  },
+  {
+    slug: "post-construction-cleaning-nyc-doh-co",
+    image: "/blog/post-construction-cleaning-nyc-doh-co.jpg",
+    title: "Post-Construction Cleaning in NYC: 3 Phases, DOB Compliance & Certificate of Occupancy Readiness",
+    excerpt: "A NYC post-construction cleaning playbook for owners and GCs: rough, light, and final clean phases, OSHA dust control, DSNY debris rules, and CO walkthrough readiness.",
+    category: "Industry Verticals",
+    date: "2026-05-22",
+    readTime: "11 min"
+  },
 ];
 
 export const metadata = {

@@ -1,6 +1,6 @@
 # GreenPoint Maintenance Services Corp — Full Content Index
 
-Last Updated: 2026-05-19
+Last Updated: 2026-05-22
 
 This file contains the full text of GreenPoint's most important pages, optimized for ingestion by AI assistants and language models. For a curated index of resources, see https://greenpointms.com/llms.txt.
 
@@ -83,7 +83,7 @@ Full list of 80+ cities at https://greenpointms.com/sitemap.xml.
 
 The following articles are published on the GreenPoint blog. Each represents original research and analysis on commercial cleaning standards, compliance, technology, and best practices.
 
-Total articles: 84
+Total articles: 90
 
 ## Category: Industry Data
 
@@ -617,6 +617,44 @@ Published: 2026-05-19
 URL: https://greenpointms.com/blog/commercial-cleaning-king-of-prussia-philadelphia-suburbs
 Summary: A facilities-ready guide to commercial cleaning in King of Prussia and the Philadelphia suburbs, with fixed pricing and verifiable results from GreenPoint.
 
+### Commercial Cleaning in Miami-Dade County, FL: Brickell, Downtown & Doral Vendor Guide
+
+Published: 2026-05-20
+URL: https://greenpointms.com/blog/commercial-cleaning-miami-dade-county-florida
+Summary: A proof-driven vendor guide for Miami-Dade facilities—Brickell, Downtown, and Doral. Scope, pricing, verification, and how to hire the right crew.
+
+### Commercial Cleaning in Broward County, FL: Fort Lauderdale, Plantation & Sunrise
+
+Published: 2026-05-20
+URL: https://greenpointms.com/blog/commercial-cleaning-broward-fort-lauderdale
+Summary: A local vendor guide for Broward County facilities—Fort Lauderdale, Plantation, and Sunrise—covering scopes, verification, pricing, and compliance for buyers.
+
+## Category: Industry Verticals
+
+### Gym and Fitness Center Cleaning in NYC: Member Safety, Mold, and Equipment Protocols
+
+Published: 2026-05-21
+URL: https://greenpointms.com/blog/gym-fitness-center-cleaning-nyc
+Summary: A proof-driven playbook for NYC gym cleaning: equipment disinfection, locker-room mold control, and audit-ready verification that protects members and staff.
+
+### Law Firm Cleaning in Manhattan: Confidentiality, After-Hours, and White-Glove Service
+
+Published: 2026-05-21
+URL: https://greenpointms.com/blog/law-firm-office-cleaning-manhattan
+Summary: A Manhattan law firm cleaning plan must protect confidentiality, support after-hours access, and deliver measurable quality with documented verification.
+
+### Financial Services Office Cleaning in NYC: Trading Floors, Banks & Confidential Workspaces
+
+Published: 2026-05-22
+URL: https://greenpointms.com/blog/financial-services-office-cleaning-nyc
+Summary: A proof-driven cleaning playbook for NYC banks and trading floors: audit trails, confidentiality, opening-ready details, and fixed-price service that passes vendor due diligence.
+
+### Post-Construction Cleaning in NYC: 3 Phases, DOB Compliance & Certificate of Occupancy Readiness
+
+Published: 2026-05-22
+URL: https://greenpointms.com/blog/post-construction-cleaning-nyc-doh-co
+Summary: A NYC post-construction cleaning playbook for owners and GCs: rough, light, and final clean phases, OSHA dust control, DSNY debris rules, and CO walkthrough readiness.
+
 
 ---
 
@@ -686,4 +724,4 @@ This file is regenerated whenever blog content changes. For the most up-to-date 
 
 For the curated index of GreenPoint's most important pages, see https://greenpointms.com/llms.txt.
 
-Last generated: 2026-05-19T12:39:23.239Z
+Last generated: 2026-05-22T13:08:59.569Z
