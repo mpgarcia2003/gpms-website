@@ -169,6 +169,8 @@ const BLOG_INDEX = [
     date: "2026-05-22",
     readTime: "11 min"
   },
+  {"slug": "retail-store-cleaning-nyc-tri-state", "image": "/blog/retail-store-cleaning-nyc-tri-state.jpg", "title": "Retail Store Cleaning in NYC and the Tri-State: Sales-Floor Standards, Fitting Rooms & Window Care", "excerpt": "Proof-driven retail store cleaning for NYC and the tri-state: sales-floor shine, fitting-room sanitation, glass care, and verified opening readiness with JaniTrack.", "category": "Industry Verticals", "date": "2026-05-23", "readTime": "10 min"},
+  {"slug": "salon-spa-cleaning-nyc-health-code", "image": "/blog/salon-spa-cleaning-nyc-health-code.jpg", "title": "Salon and Spa Cleaning in NYC: Health-Code Compliance, Tool Disinfection & Mold Prevention", "excerpt": "Salon and spa cleaning built for NYC compliance: disinfectant dwell times, wash-bowl sanitation, laundry control, and documented verification with JaniTrack.", "category": "Industry Verticals", "date": "2026-05-23", "readTime": "9 min"},
 ];
 
 export const metadata = {
