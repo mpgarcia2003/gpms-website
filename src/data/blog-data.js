@@ -6440,7 +6440,214 @@ export const BLOG_POSTS = [
     }
   ]
 }
+,
 
+  {
+    "slug": "commercial-cleaning-rfp-evaluation-criteria",
+    "image": "/blog/commercial-cleaning-rfp-evaluation-criteria.jpg",
+    "title": "How to Evaluate Commercial Cleaning RFP Responses: A Scoring Framework",
+    "excerpt": "Use a weighted scoring model to compare janitorial bids apples-to-apples—price, QA proof, compliance, references, and MBE value—without costly surprises.",
+    "category": "Buyer Guides",
+    "author": "GreenPoint Maintenance",
+    "publishedAt": "2026-05-27",
+    "readTime": "10 min read",
+    "keywords": [
+      "commercial cleaning RFP evaluation",
+      "cleaning RFP scoring",
+      "janitorial RFP evaluation",
+      "vendor selection criteria cleaning",
+      "RFP weighting framework"
+    ],
+    "content": [
+      {
+        "type": "intro",
+        "text": "If you have ever read three janitorial proposals that all promise \"high quality\" and \"reliable service\" yet come back with wildly different pricing, you are not alone. The fastest way to pick the wrong vendor is to evaluate an RFP like a marketing brochure instead of a controlled comparison. This guide gives facility managers in NYC and the tri-state a practical scoring framework—so you can select a cleaning partner based on proof, compliance, and total cost, not guesswork. If you want GreenPoint Maintenance Services to score your current bids or provide a benchmark proposal, call 347-332-9348 for a walkthrough and fixed-price quote."
+      },
+      {
+        "type": "heading",
+        "text": "Why most cleaning RFPs fail: unclear scope and unscored risk"
+      },
+      {
+        "type": "paragraph",
+        "text": "Commercial cleaning bids become incomparable when the scope is vague (\"clean restrooms daily\") and the risk is not priced (coverage for call-outs, supply logistics, overtime rules, union/prevailing wage exposure). In New York, the details matter: a Midtown tower with freight-elevator restrictions, a Brooklyn waterfront site with salt and tracked-in debris, or a Bronx healthcare office near a busy transit hub all change labor and QA needs. GreenPoint recommends defining scope by space type, frequency, and measurable outcomes—then scoring how each bidder will prove they delivered."
+      },
+      {
+        "type": "heading",
+        "text": "Set up an apples-to-apples scoring sheet (before you read proposals)"
+      },
+      {
+        "type": "paragraph",
+        "text": "Before you open a single proposal, create a one-page scoring sheet with categories, weights, and a 1–5 scale. Doing this first prevents \"price anchoring\"—where the lowest bid feels automatically correct. A simple starting point is 100 total points with five categories: Price 30, Quality & QA Proof 30, Compliance & Safety 20, References & Retention 10, and Diversity/MBE Value 10. You can adjust weights for your building type (for example, a medical office may push compliance higher). If you are unsure how to define outcomes, use the standards in [cleaning frequency standards by facility type](/blog/cleaning-frequency-standards-by-facility-type/) as a baseline."
+      },
+      {
+        "type": "heading",
+        "text": "Category 1 (30%): Price—evaluate transparency, not just the monthly number"
+      },
+      {
+        "type": "paragraph",
+        "text": "A credible price section should make it easy to understand exactly what is included and what triggers additional charges. GreenPoint Maintenance Services uses fixed pricing—no hourly billing and no hidden fees—because it aligns incentives around outcomes. When scoring price, look for: (1) a clear staffing plan (days, shifts, coverage), (2) supply and consumables rules (included vs pass-through), (3) floor care inclusions (burnishing, scrub/recoat, strip/wax where applicable), and (4) a written change-order process. If a bidder cannot explain their cost drivers, you may be buying future surprises. For benchmarking, see [commercial cleaning cost per square foot](/blog/commercial-cleaning-cost-per-square-foot/)."
+      },
+      {
+        "type": "heading",
+        "text": "Category 2 (30%): Quality and proof of clean—what gets measured gets managed"
+      },
+      {
+        "type": "paragraph",
+        "text": "Quality should be scored on evidence, not adjectives. Ask bidders how they will verify completion and cleanliness in a way you can audit. GreenPoint uses JaniTrack verification with timestamped, GPS-tagged photos, plus ATP testing where appropriate, and a live dashboard that facility managers can review during monthly check-ins. In your scoring rubric, award points for: documented inspection routes, named supervisors, issue-response SLAs, and objective tools like ATP bioluminescence testing for high-touch areas. (If you have not used ATP before, start with [what is ATP testing](/blog/what-is-atp-bioluminescence-testing-cleaning/).)"
+      },
+      {
+        "type": "heading",
+        "text": "Category 3 (20%): Compliance, safety, and regulatory readiness (NYC-specific)"
+      },
+      {
+        "type": "paragraph",
+        "text": "Compliance is where low bids often cut corners. Score proposals on whether they document OSHA-aligned chemical handling (GHS/SDS), PPE training, incident reporting, and insurance. In NYC facilities, you may also need vendor familiarity with building rules (after-hours access, freight elevator scheduling, waste streams) and agency requirements for schools or public buildings (such as NYC DOE vendor expectations when relevant). GreenPoint’s crews train on OSHA chemical safety and maintain clear documentation because it protects your tenants and reduces risk. If a bidder cannot produce a certificate of insurance, safety training plan, and SDS process at the proposal stage, score them accordingly."
+      },
+      {
+        "type": "heading",
+        "text": "Category 4 (10%): References, retention, and operational continuity"
+      },
+      {
+        "type": "paragraph",
+        "text": "Cleaning is a people-and-process service. The best predictor of your experience is whether the vendor keeps clients and keeps teams stable. GreenPoint’s client retention is 98%, and we design onboarding to avoid the \"revolving door\" effect that drives inconsistent results. When scoring references, request contact details for accounts similar to yours (square footage, hours, union environment, industry). Ask specific questions: How quickly were issues resolved? Did staffing match the proposal? Did the vendor provide documentation after audits or tenant complaints? High retention plus detailed references is worth more than a generic testimonial."
+      },
+      {
+        "type": "heading",
+        "text": "Category 5 (10%): MBE value and procurement advantages (real, quantifiable)"
+      },
+      {
+        "type": "paragraph",
+        "text": "Many organizations have supplier diversity goals, and those goals should be evaluated with the same rigor as other categories. GreenPoint Maintenance Services is MBE/MWBE certified (NYS, NYC, NYC DOE) and SAM.gov registered, which can support RFP requirements for public-sector and enterprise procurement. Score this category on documented certifications, reporting capability, and the vendor’s ability to support your compliance workflows (W-9s, COIs, onboarding portals). In practice, selecting an MBE-certified vendor can reduce procurement friction and support corporate reporting without sacrificing quality—if the vendor’s QA proof is strong."
+      },
+      {
+        "type": "heading",
+        "text": "Red flags to score down (or disqualify) in any janitorial bid"
+      },
+      {
+        "type": "paragraph",
+        "text": "Some issues should reduce the score dramatically because they correlate with service failure: vague staffing plans, hourly billing without caps, missing insurance documentation, subcontracting without oversight, unclear background-check policies, and \"we will figure it out\" language around QA. Another red flag is avoiding measurable outcomes—no audit checklist, no photo verification, no reporting cadence. If you want a structured list, use [questions to ask a commercial cleaning company](/blog/questions-to-ask-commercial-cleaning-company/) as a companion checklist during finalist interviews."
+      },
+      {
+        "type": "heading",
+        "text": "A practical 100-point scoring template you can use today"
+      },
+      {
+        "type": "paragraph",
+        "text": "Here is a simple approach that works well for tri-state offices, mixed-use buildings, and light industrial spaces: Price (0–30), Quality & Proof (0–30), Compliance & Safety (0–20), References & Retention (0–10), MBE/Diversity Value (0–10). For each category, define 3–6 sub-criteria and score 1–5 with short written justification. This converts opinion into documentation you can defend internally—especially when stakeholders ask why you did not take the lowest bid. GreenPoint can share a sample scoring sheet and an RFP-ready scope outline on a walkthrough—call 347-332-9348 to schedule."
+      },
+      {
+        "type": "heading",
+        "text": "How GreenPoint positions a proof-driven RFP response (what to look for)"
+      },
+      {
+        "type": "paragraph",
+        "text": "A strong proposal should make the work tangible: a site-specific scope by area, a staffing schedule, a supervisor escalation tree, a defined QA program, and sample reporting. GreenPoint typically includes (1) a first-30-days stabilization plan, (2) JaniTrack verification sample screenshots, (3) Green Seal product approach for sensitive environments, and (4) a fixed-price model that avoids nickel-and-diming. If your facility spans multiple sites across Manhattan, Brooklyn, Queens, the Bronx, Staten Island, Westchester, Long Island, NJ, or CT, vendor consolidation can simplify management; see [vendor consolidation with one cleaning company](/blog/vendor-consolidation-one-cleaning-company/) for how to evaluate that option."
+      },
+      {
+        "type": "callout",
+        "text": "Need help scoring bids before you award the contract? GreenPoint Maintenance Services will do a no-pressure walkthrough and provide a fixed-price proposal you can score against competitors—backed by JaniTrack photo verification and optional ATP testing. Call 347-332-9348 or email info@greenpointms.com to schedule this week."
+      }
+    ]
+  },
+
+  {
+    "slug": "switching-cleaning-vendors-transition-plan",
+    "image": "/blog/switching-cleaning-vendors-transition-plan.jpg",
+    "title": "Switching Commercial Cleaning Vendors: A 30-Day Transition Plan That Avoids Service Gaps",
+    "excerpt": "A step-by-step 30-day changeover plan for tri-state facilities—audits, kickoff deep clean, staffing alignment, and proof-driven QA—so quality improves on day one.",
+    "category": "Buyer Guides",
+    "author": "GreenPoint Maintenance",
+    "publishedAt": "2026-05-27",
+    "readTime": "9 min read",
+    "keywords": [
+      "switching cleaning vendors",
+      "cleaning vendor transition",
+      "janitorial onboarding",
+      "facility services changeover"
+    ],
+    "content": [
+      {
+        "type": "intro",
+        "text": "Switching janitorial vendors is one of the highest-risk moments in facility operations—because you are changing processes, people, and routines while the building still has to look perfect every day. The good news: a disciplined 30-day transition can eliminate service gaps, reset standards, and build a measurable QA baseline that prevents backsliding. This playbook is built for tri-state buildings (NY, NJ, CT) where access rules, freight elevator schedules, and tenant expectations can be intense. If you want GreenPoint Maintenance Services to run your transition with a fixed-price plan and documented proof of clean, call 347-332-9348 to schedule a walkthrough."
+      },
+      {
+        "type": "heading",
+        "text": "Before Day 1: lock the scope, access, and responsibilities (so nothing falls between teams)"
+      },
+      {
+        "type": "paragraph",
+        "text": "Most transition problems are not \"cleaning\" problems—they are scope and access problems. Before the first shift, confirm who owns keys, badge access, alarms, loading dock rules, freight elevator times, trash staging locations, and who supplies consumables. In NYC, simple constraints—like a Midtown building restricting freight use during peak hours or a Downtown Brooklyn site coordinating with MTA-adjacent foot traffic—can break a schedule if not planned. GreenPoint starts every transition with a walkthrough and a written scope-by-area so both sides agree on what \"done\" means."
+      },
+      {
+        "type": "heading",
+        "text": "Days 1–3: baseline audit and a \"stop the bleeding\" stabilization checklist"
+      },
+      {
+        "type": "paragraph",
+        "text": "Your first objective is stabilization: remove visible issues that generate tenant complaints (restrooms, lobby glass, elevator cabs, trash overflow, break rooms). GreenPoint performs a baseline audit on day one, documenting current conditions with photos and notes so you can measure improvement. We also identify high-risk areas for pathogens and cross-contamination and align cleaning frequency to the facility type; a helpful reference is [ISSA clean standards appearance levels](/blog/issa-clean-standards-appearance-levels/). If you want this audit packaged into a transition plan, call 347-332-9348."
+      },
+      {
+        "type": "heading",
+        "text": "Days 4–7: staffing alignment, zone maps, and the first supervisor cadence"
+      },
+      {
+        "type": "paragraph",
+        "text": "Transitions fail when the staffing plan on paper does not match the building reality. During week one, finalize zone maps (who owns which floors/areas), shift start times, and coverage for call-outs. GreenPoint assigns an accountable supervisor and sets a routine for end-of-shift checks. This is also the week to confirm training requirements and safety expectations, including OSHA-aligned chemical handling and SDS access for the products used onsite."
+      },
+      {
+        "type": "heading",
+        "text": "Days 8–14: kickoff deep clean to reset the building (the \"new vendor\" moment)"
+      },
+      {
+        "type": "paragraph",
+        "text": "A deep clean in the first two weeks creates a visible step-change and removes legacy buildup that makes daily cleaning look ineffective. Typical priorities include: restroom detail (grout lines, fixtures, drains), glass and stainless steel polishing in lobbies, break-room appliance exteriors, conference room touchpoints, and entry-mat programs. In winter months, salt and slush residue can require more aggressive floor care near entrances and vestibules. GreenPoint plans the deep clean around tenant schedules and can execute after-hours to avoid disruption—ask for a walkthrough at 347-332-9348."
+      },
+      {
+        "type": "heading",
+        "text": "Days 8–14: establish a measurable QA baseline with JaniTrack + ATP (where it matters)"
+      },
+      {
+        "type": "paragraph",
+        "text": "The fastest way to prevent \"it was cleaned\" arguments is to create a baseline of proof. GreenPoint uses JaniTrack verification—timestamped, GPS-tagged photos tied to tasks—so facility managers can verify completion without walking every floor. For higher-risk environments or high-touch areas, ATP testing adds an objective cleanliness metric. If you want the method explained, see [digital cleaning verification systems](/blog/digital-cleaning-verification-systems/) and [what is ATP testing](/blog/what-is-atp-bioluminescence-testing-cleaning/). A baseline in week two becomes your yardstick for every monthly review."
+      },
+      {
+        "type": "heading",
+        "text": "Days 15–21: tenant communication plan (reduce noise while you improve outcomes)"
+      },
+      {
+        "type": "paragraph",
+        "text": "In occupied buildings, perception drives complaint volume. Tell tenants what is changing, what to expect, and how to report issues. For example: signage in restrooms during detail cleaning, a short email to office managers about new nightly routines, and a single channel for requests. GreenPoint supports a clear escalation path so small issues do not become multi-day problems. If your property has multiple entrances near transit hubs (Penn Station, Grand Central, Atlantic Terminal, or major bus corridors), call out which entry points get extra attention during peak traffic hours."
+      },
+      {
+        "type": "heading",
+        "text": "Days 22–30: tighten the cadence—inspections, metrics, and a monthly operating rhythm"
+      },
+      {
+        "type": "paragraph",
+        "text": "By week four, the work should be predictable and auditable. Lock a recurring inspection schedule, define audit checklists by area, and set a monthly review meeting with metrics. GreenPoint recommends tracking: audit score, complaint count, response time, attendance, photo-proof completion rate, and ATP results where used. This aligns with the philosophy that what gets measured gets managed—especially in multi-tenant buildings where expectations vary by floor. If you want help building this into your contract language, see [quality assurance commercial cleaning program](/blog/quality-assurance-commercial-cleaning-program/) (and if that link ever shows an underscore, it will still be readable, but we recommend using hyphens)."
+      },
+      {
+        "type": "heading",
+        "text": "Common transition pitfalls (and how to prevent them)"
+      },
+      {
+        "type": "paragraph",
+        "text": "The most common pitfalls are: unclear supplies responsibility, missing access to closets or mechanical rooms, underestimating restroom traffic, and failing to plan floor care. Another hidden issue is chemical compatibility—using the wrong product on stone, VCT, or LVT can cause damage. GreenPoint avoids this by documenting surfaces and using Green Seal certified products where possible. For facilities with sensitive IAQ needs, integrate HEPA filtration practices and review [indoor air quality commercial cleaning](/blog/indoor-air-quality-commercial-cleaning/) for best practices."
+      },
+      {
+        "type": "heading",
+        "text": "Why fixed pricing helps transitions: fewer disputes, faster stabilization"
+      },
+      {
+        "type": "paragraph",
+        "text": "Hourly billing during a transition often creates conflict—because the building needs extra attention early, yet every additional hour becomes a negotiation. GreenPoint Maintenance Services uses fixed pricing and a defined onboarding plan so the first month focuses on outcomes, not timecards. The result is a cleaner building faster, with fewer surprises for property management. If you are comparing contract models, read [commercial cleaning contract key terms](/blog/commercial-cleaning-contract-key-terms/) and then schedule a walkthrough at 347-332-9348."
+      },
+      {
+        "type": "callout",
+        "text": "Planning a vendor changeover in NYC or the tri-state? GreenPoint Maintenance Services can execute a 30-day transition with a kickoff deep clean, JaniTrack photo verification, and optional ATP testing—backed by a fixed-price proposal and a 98% client-retention track record. Call 347-332-9348 or email info@greenpointms.com to schedule a walkthrough and get a quote."
+      }
+    ]
+  }
 ];
 
 // ─────────────────────────────────────────────────────
