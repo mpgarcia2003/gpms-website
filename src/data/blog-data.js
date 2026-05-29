@@ -6870,6 +6870,205 @@ export const BLOG_POSTS = [
       }
     ]
   }
+,
+
+  {
+    "slug": "tenant-improvement-cleaning-nyc",
+    "image": "/blog/tenant-improvement-cleaning-nyc.jpg",
+    "title": "Tenant Improvement Cleaning in NYC: Move-In Ready Standards for Class A Tenants",
+    "excerpt": "A TI space can look finished and still fail a broker walk. Here’s the move-in ready cleaning scope NYC Class A tenants expect—plus proof controls.",
+    "category": "Industry Verticals",
+    "author": "GreenPoint Maintenance",
+    "publishedAt": "2026-05-29",
+    "readTime": "9 min read",
+    "keywords": [
+      "tenant improvement cleaning",
+      "TI cleaning NYC",
+      "move-in cleaning office",
+      "Class A turnover cleaning"
+    ],
+    "content": [
+      {
+        "type": "intro",
+        "text": "In NYC, tenant improvement (TI) work moves fast—and the last 48 hours can decide whether a tenant signs off, a broker lists the space as move-in ready, or a punch-list grows. TI cleaning is not the same as post-construction cleaning: the space may already be ‘substantially complete,’ but it still needs a presentation-grade reset that reads as Class A the moment the doors open. GreenPoint Maintenance Services specializes in proof-driven TI cleaning across Manhattan, Brooklyn, Queens, the Bronx, Staten Island, Westchester, and Long Island, with fixed pricing and zero hourly surprises. If you have a turnover date, call 347-332-9348 to schedule a walkthrough and lock the scope before trades demobilize."
+      },
+      {
+        "type": "heading",
+        "text": "What ‘tenant improvement cleaning’ means in NYC (and why it’s different from post-construction)"
+      },
+      {
+        "type": "paragraph",
+        "text": "Post-construction cleaning is built around debris removal and phased dust control; TI cleaning is built around readiness for occupancy and inspection. In Class A buildings near Hudson Yards, Midtown East, the Flatiron District, and the World Trade Center corridor, your TI clean has to survive scrutiny from owners, property management, and brokers who know what a premium space should look like. GreenPoint’s TI scope focuses on the surfaces prospects and new employees touch and see first: glass, edges, chrome, restroom fixtures, breakroom details, and the floors that reflect overhead lighting. If you need a move-in ready standard by a hard date, GreenPoint can walk the space and confirm the plan—call 347-332-9348."
+      },
+      {
+        "type": "heading",
+        "text": "The broker walk-through standard: what gets noticed in the first 30 seconds"
+      },
+      {
+        "type": "paragraph",
+        "text": "NYC brokers and tenant reps start judging before they reach the reception area. Entrances near busy corridors—Penn Station, Grand Central Terminal, Port Authority, Fulton Center, and major MTA hubs—bring in fine dust, grit, and heel marks that show up instantly on polished surfaces. GreenPoint builds a TI presentation checklist around high-visibility items: smudge-free glass from floor to ceiling, clean baseboards and corner edges, fingerprint-free push plates, elevator lobby touchpoints, and floors that read uniform under bright LED lighting. A space can be technically clean and still fail the ‘looks ready’ test; our crews clean for that first impression and verify completion with photo evidence."
+      },
+      {
+        "type": "heading",
+        "text": "Detail scope that makes a TI space feel ‘new’: glass, frames, vents, and edge work"
+      },
+      {
+        "type": "paragraph",
+        "text": "Most TI dissatisfaction comes from edges—window tracks, door frames, mullions, outlet plates, and HVAC vent lips that collect final-stage dust. GreenPoint Maintenance Services treats these as line items, not ‘extras.’ We wipe and detail door hardware, glass partitions, mullion seams, and the top edges of low walls where trades leave residue. We also pay attention to supply/return vents and diffusers so the space doesn’t re-dust immediately after cleaning. For facilities that want measurable verification, GreenPoint can incorporate ATP testing on key touchpoints to validate that surfaces are not just visually clean. To set the right scope early, schedule a walkthrough at 347-332-9348."
+      },
+      {
+        "type": "heading",
+        "text": "Floors are the credibility test: VCT, LVT, polished concrete, and carpet reset"
+      },
+      {
+        "type": "paragraph",
+        "text": "In NYC office TI projects, the floor finish is often the largest visual surface—and the one most likely to show final-construction tracking. GreenPoint selects floor methods by material: auto-scrub and neutral-clean for sealed concrete; strip-and-finish timing where VCT is in play; low-residue methods for LVT; and targeted carpet extraction or encapsulation for tenant suites and corridors. For a deeper comparison of carpet methods, see our guide on [carpet cleaning methods](/blog/carpet-cleaning-methods-compared/). If you’re budgeting TI turnover, our breakdown of [commercial cleaning cost per square foot](/blog/commercial-cleaning-cost-per-square-foot/) helps you pressure-test proposals. For an on-site assessment, call 347-332-9348."
+      },
+      {
+        "type": "heading",
+        "text": "Restrooms and pantries: high-risk areas for move-in day complaints"
+      },
+      {
+        "type": "paragraph",
+        "text": "Even in a brand-new buildout, restrooms and pantries generate the fastest complaints because they combine bright lighting, reflective finishes, and high-touch hardware. GreenPoint’s TI protocol includes fixture polishing, grout-line attention, mirror and stainless detailing, and a final high-touch wipe of handles, levers, and dispenser faces. We also verify that supply cabinets and under-sink areas are clean—an often-missed item that can cause odor or pest risk. Where disinfectants are used, we follow label directions and dwell time expectations consistent with EPA registration requirements and OSHA chemical safety practices."
+      },
+      {
+        "type": "heading",
+        "text": "Compliance and safety on TI sites: OSHA awareness, chemical control, and handoff timing"
+      },
+      {
+        "type": "paragraph",
+        "text": "TI cleaning happens in a live jobsite environment—often with trades finishing millwork, painters touching up, or IT teams pulling cable. GreenPoint plans sequencing to reduce rework and support safe operations: chemical labeling and SDS access aligned with OSHA’s Hazard Communication expectations, clear walk paths, and coordination with building management rules for freight elevators and loading docks. In NYC, that coordination matters in tight logistics zones like Midtown, the Financial District, and Downtown Brooklyn, where curb access and loading time windows are strict. Our goal is to leave the site compliant, controlled, and ready for handoff without creating hazards or delays."
+      },
+      {
+        "type": "heading",
+        "text": "How GreenPoint proves the TI clean is done: JaniTrack photo verification + optional ATP results"
+      },
+      {
+        "type": "paragraph",
+        "text": "TI schedules are compressed, and stakeholders can’t always be on-site. GreenPoint uses JaniTrack verification to document completion with timestamped, GPS-tagged photos that can be reviewed in a live dashboard. That proof reduces disputes during punch lists and helps property management confirm the space is ready for marketing photos or tenant move-in. For clients who want objective validation, we can add ATP testing for defined touchpoints—useful when the cleaning standard must be defensible to leadership or a tenant rep. This proof-driven process is a major reason GreenPoint maintains ~98% client retention. To see the dashboard approach, call 347-332-9348 for a walkthrough."
+      },
+      {
+        "type": "heading",
+        "text": "NYC-local planning checklist: neighborhoods, transit hubs, and building rules that affect TI cleaning"
+      },
+      {
+        "type": "paragraph",
+        "text": "A TI clean plan that works in suburban office parks can fail in NYC without local logistics. In Manhattan neighborhoods like Chelsea, SoHo, Tribeca, and the Upper East Side, freight elevator reservations and after-hours noise rules can limit cleaning windows. In Brooklyn areas like DUMBO and Downtown Brooklyn, loading access can be tight and street traffic unpredictable. GreenPoint plans staffing and equipment to match those realities, including entrances near high-traffic MTA stops and PATH-adjacent properties where salt, grit, and dust track-in are common. If you tell us the building and turnover date, we’ll recommend the right shift timing and scope."
+      },
+      {
+        "type": "heading",
+        "text": "What to ask in a TI cleaning quote (so you don’t pay twice)"
+      },
+      {
+        "type": "paragraph",
+        "text": "TI cleaning proposals can hide scope gaps behind vague language like ‘wipe down surfaces’ or ‘clean floors.’ Ask whether glass includes frames and edges, whether vents and diffusers are included, what method is planned for each floor type, and whether a final ‘broker-ready’ detail pass is part of the price. Also ask how the vendor verifies completion—because without proof, the PM team ends up re-walking the site and re-ordering work. GreenPoint Maintenance Services prices TI work as fixed-scope, fixed-price, and we document the result through JaniTrack. If you want a clean handoff with fewer punch-list loops, schedule a walkthrough at 347-332-9348."
+      },
+      {
+        "type": "callout",
+        "text": "Need tenant improvement cleaning in NYC on a fixed price and a hard timeline? GreenPoint Maintenance Services can walk your space, define a broker-ready scope, and prove completion with JaniTrack timestamped photo verification (and optional ATP testing). Call 347-332-9348 or email info@greenpointms.com to schedule a walkthrough and get a quote."
+      }
+    ]
+  },
+
+  {
+    "slug": "co-op-condo-cleaning-nyc-board",
+    "image": "/blog/co-op-condo-cleaning-nyc-board.jpg",
+    "title": "Co-op and Condo Common Area Cleaning in NYC: What Boards Should Demand",
+    "excerpt": "NYC boards can’t manage what they can’t verify. Here’s a common-area cleaning standard for co-ops/condos—plus proof controls that stop recurring complaints.",
+    "category": "Industry Verticals",
+    "author": "GreenPoint Maintenance",
+    "publishedAt": "2026-05-29",
+    "readTime": "10 min read",
+    "keywords": [
+      "co-op cleaning NYC",
+      "condo common area cleaning",
+      "NYC building lobby cleaning",
+      "residential building janitorial Manhattan"
+    ],
+    "content": [
+      {
+        "type": "intro",
+        "text": "NYC co-op and condo boards live in the reality of recurring complaints: lobby fingerprints, elevator smudges, package-room odors, and trash rooms that never feel fully under control. The challenge isn’t just hiring a vendor—it’s setting a standard that can be verified, week after week, without drama. GreenPoint Maintenance Services supports common-area cleaning for residential buildings across Manhattan, Brooklyn, Queens, the Bronx, and Staten Island with fixed pricing, Green Seal-aligned products, and JaniTrack proof (timestamped, GPS-tagged photos) so boards can see what was done. If your building is re-bidding janitorial service, call 347-332-9348 to schedule a walkthrough and get a board-ready scope and quote."
+      },
+      {
+        "type": "heading",
+        "text": "What boards should define first: appearance levels, frequencies, and ‘resident-touch’ zones"
+      },
+      {
+        "type": "paragraph",
+        "text": "A vendor can’t meet a standard that isn’t defined. Boards should start by clarifying the appearance level expected in each zone (lobby vs. back hallways vs. trash rooms) and the frequency needed to maintain it. Industry guidance like ISSA’s cleaning standards frameworks can help you describe outcomes in plain terms—what ‘clean’ should look like at 9 a.m. and again at 6 p.m. GreenPoint translates that into a zone plan: resident-touch points (handles, call buttons, handrails), high-visibility surfaces (glass, brass, stone), and back-of-house controls (trash, compactor, loading areas)."
+      },
+      {
+        "type": "heading",
+        "text": "Lobby first impressions: marble, brass, glass, and the NYC ‘pre-war’ finish problem"
+      },
+      {
+        "type": "paragraph",
+        "text": "Pre-war lobbies in neighborhoods like the Upper West Side, Park Slope, Brooklyn Heights, and the West Village often combine marble, terrazzo, brass, and ornate stone that can be damaged by the wrong chemistry or pads. GreenPoint trains crews on finish-safe methods: neutral cleaners for stone, correct dilution control, and microfiber systems that reduce grit abrasion. Brass elevator doors and hardware need consistent polishing without leaving residue that attracts fingerprints. The goal is a lobby that looks premium without over-aggressive methods that shorten finish life."
+      },
+      {
+        "type": "heading",
+        "text": "Elevators and stairwells: where most resident complaints originate"
+      },
+      {
+        "type": "paragraph",
+        "text": "Elevators are small, reflective, and touched constantly—so they show missed details immediately. Boards should require a documented routine: interior panel wipe-down, door edge detailing, button panels, handrails, and floor corner edges. Stairwells often get ignored until there’s a safety complaint; GreenPoint includes stair tread edge cleaning, handrails, and landing corners where dust piles up. For buildings near heavy transit corridors (e.g., near Union Square, Atlantic Terminal, or Queensboro Plaza), we also factor in track-in soil patterns that accelerate stairwell and corridor wear."
+      },
+      {
+        "type": "heading",
+        "text": "Package rooms, mail areas, and amenity spaces: sanitation + odor control"
+      },
+      {
+        "type": "paragraph",
+        "text": "Package volume is now a permanent operating condition in NYC buildings, and package rooms can become odor and pest risks if not managed. GreenPoint’s common-area program includes floor and shelf wipe-down routines, high-touch sanitation, and trash control practices that reduce residue and smells. Gyms, resident lounges, and kids’ playrooms require a tighter cadence on touchpoints, plus product selection that balances disinfection needs with occupant sensitivity. Where disinfectants are used, we follow EPA label requirements and dwell times, and we maintain OSHA-aligned chemical safety practices (SDS access and training)."
+      },
+      {
+        "type": "heading",
+        "text": "Trash rooms, compactors, and loading areas: the hidden driver of pests and complaints"
+      },
+      {
+        "type": "paragraph",
+        "text": "Boards often under-scope back-of-house work, then wonder why odors, leaks, and pests persist. Trash rooms need more than sweeping: floor scrubbing, corner detail, bin wipe-down, and spill response. Loading areas and compactor zones also need routine cleaning so grime doesn’t migrate into resident areas. GreenPoint’s approach is to treat back-of-house sanitation as the upstream control that protects lobbies and hallways—especially during hot months when odor risk spikes. If you want a realistic scope, schedule a walkthrough at 347-332-9348."
+      },
+      {
+        "type": "heading",
+        "text": "Floor care programs that protect capital: matting, neutralization, and seasonal planning"
+      },
+      {
+        "type": "paragraph",
+        "text": "Common-area floors take the most abuse—and replacement costs are real. A board-level cleaning standard should include entry matting strategy, routine neutral cleaning, and periodic deep restoration appropriate to the surface. In winter, salt and slush can etch stone and degrade finishes; our [winter facility maintenance checklist](/blog/winter-facility-maintenance-checklist-northeast/) explains how mat programs and neutralizers reduce damage. For boards budgeting floor maintenance, our [VCT floor care guide](/blog/vct-floor-care-strip-seal-wax-guide/) helps explain strip-and-finish timing and expectations. GreenPoint can align the program to the building’s actual traffic patterns."
+      },
+      {
+        "type": "heading",
+        "text": "Verification is what boards are really buying: JaniTrack dashboards and photo proof"
+      },
+      {
+        "type": "paragraph",
+        "text": "Most board dissatisfaction comes from uncertainty: ‘Was it done, or not?’ GreenPoint uses JaniTrack verification to provide timestamped, GPS-tagged photos of completed work, organized by area (lobby, elevators, hallways, trash rooms). That visibility reduces repeat complaints and gives property managers a simple way to confirm performance before residents call. For buildings that want measurable validation, ATP testing can be added on defined touchpoints to verify that high-touch surfaces meet a cleanliness benchmark beyond appearance. This proof-driven model supports GreenPoint’s ~98% client retention and helps boards make decisions based on evidence."
+      },
+      {
+        "type": "heading",
+        "text": "NYC board RFP checklist: staffing stability, compliance, and fixed pricing"
+      },
+      {
+        "type": "paragraph",
+        "text": "A strong board RFP should ask about staffing continuity, training, and compliance—because turnover is a quality risk. GreenPoint is a certified MBE/MWBE cleaning company and is SAM.gov registered, which signals operational maturity and documentation discipline. We also price common-area service with fixed pricing—no hourly billing games—so boards can budget confidently. For more on writing strong specs, see [how to write an RFP](/blog/how-to-write-rfp-commercial-cleaning/). If you want a board-ready walkthrough and proposal, call 347-332-9348."
+      },
+      {
+        "type": "heading",
+        "text": "Service-area reality: how tri-state staffing supports NYC buildings with weekend and holiday needs"
+      },
+      {
+        "type": "paragraph",
+        "text": "Many NYC residential buildings need weekend coverage, holiday support, and rapid response after events (move-ins, leak incidents, elevator outages). GreenPoint’s tri-state footprint across NY, NJ, and CT helps us staff flexibly while maintaining consistent supervision and QA. For buildings with multiple properties or management portfolios, standardizing reporting and verification across sites is often the fastest way to reduce noise—and that’s where the JaniTrack dashboard becomes especially valuable. If you manage multiple buildings, call 347-332-9348 to discuss a portfolio-level plan."
+      },
+      {
+        "type": "callout",
+        "text": "If your NYC co-op or condo board wants fewer complaints and more proof, GreenPoint Maintenance Services can deliver a defined common-area standard with fixed pricing and JaniTrack photo verification (plus optional ATP testing for touchpoints). Call 347-332-9348 or email info@greenpointms.com to schedule a walkthrough and receive a board-ready proposal."
+      }
+    ]
+  }
 
 ];
 

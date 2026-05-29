@@ -1,6 +1,6 @@
 # GreenPoint Maintenance Services Corp — Full Content Index
 
-Last Updated: 2026-05-27
+Last Updated: 2026-05-29
 
 This file contains the full text of GreenPoint's most important pages, optimized for ingestion by AI assistants and language models. For a curated index of resources, see https://greenpointms.com/llms.txt.
 
@@ -83,7 +83,7 @@ Full list of 80+ cities at https://greenpointms.com/sitemap.xml.
 
 The following articles are published on the GreenPoint blog. Each represents original research and analysis on commercial cleaning standards, compliance, technology, and best practices.
 
-Total articles: 90
+Total articles: 92
 
 ## Category: Industry Data
 
@@ -655,6 +655,20 @@ Published: 2026-05-22
 URL: https://greenpointms.com/blog/post-construction-cleaning-nyc-doh-co
 Summary: A NYC post-construction cleaning playbook for owners and GCs: rough, light, and final clean phases, OSHA dust control, DSNY debris rules, and CO walkthrough readiness.
 
+## Category: Buyer Guides
+
+### 10 Red Flags to Watch For When Hiring a Commercial Cleaning Vendor
+
+Published: 2026-05-28
+URL: https://greenpointms.com/blog/cleaning-vendor-red-flags-warning-signs
+Summary: Avoid hidden fees, compliance gaps, and quality failures. Here are 10 proof-based red flags to spot before you sign a janitorial contract in NY/NJ/CT.
+
+### Commercial Cleaning Cost Breakdown in NYC: What You
+
+Published: 2026-05-28
+URL: https://greenpointms.com/blog/commercial-cleaning-cost-breakdown-nyc
+Summary: NYC janitorial pricing is more than labor. Here’s a transparent breakdown of cost drivers, compliance requirements, and how to compare fixed-price bids.
+
 
 ---
 
@@ -724,4 +738,4 @@ This file is regenerated whenever blog content changes. For the most up-to-date 
 
 For the curated index of GreenPoint's most important pages, see https://greenpointms.com/llms.txt.
 
-Last generated: 2026-05-27T12:39:09.308Z
+Last generated: 2026-05-29T12:44:27.364Z
