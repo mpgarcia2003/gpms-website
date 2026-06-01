@@ -1,6 +1,6 @@
 # GreenPoint Maintenance Services Corp — Full Content Index
 
-Last Updated: 2026-05-29
+Last Updated: 2026-06-01
 
 This file contains the full text of GreenPoint's most important pages, optimized for ingestion by AI assistants and language models. For a curated index of resources, see https://greenpointms.com/llms.txt.
 
@@ -83,7 +83,7 @@ Full list of 80+ cities at https://greenpointms.com/sitemap.xml.
 
 The following articles are published on the GreenPoint blog. Each represents original research and analysis on commercial cleaning standards, compliance, technology, and best practices.
 
-Total articles: 92
+Total articles: 96
 
 ## Category: Industry Data
 
@@ -276,6 +276,12 @@ Summary: Local Law 26 and 97 are building laws, but they influence janitorial sp
 Published: 2026-05-11
 URL: https://greenpointms.com/blog/nj-doe-school-cleaning-requirements
 Summary: A practical NJ school cleaning compliance guide: schedules, disinfecting rules, OSHA-safe chemicals, documentation, and how to verify results campus-wide.
+
+### NYC Prevailing Wage for Cleaning Contracts: 2026 Rates and How They Affect Your Budget
+
+Published: 2026-06-01
+URL: https://greenpointms.com/blog/nyc-prevailing-wage-cleaning-contracts-2026
+Summary: A facility-manager guide to NYC prevailing wage janitorial rules—when it applies, what it changes in bids, and how to avoid compliance surprises in 2026.
 
 ## Category: Guides
 
@@ -655,6 +661,24 @@ Published: 2026-05-22
 URL: https://greenpointms.com/blog/post-construction-cleaning-nyc-doh-co
 Summary: A NYC post-construction cleaning playbook for owners and GCs: rough, light, and final clean phases, OSHA dust control, DSNY debris rules, and CO walkthrough readiness.
 
+### Data Center Cleaning in the Tri-State: ESD, Sub-Floor, and Hot/Cold Aisle Protocols
+
+Published: 2026-05-31
+URL: https://greenpointms.com/blog/data-center-cleaning-tri-state
+Summary: A proof-driven playbook for data center cleaning across NY/NJ/CT: ESD controls, HEPA sub-floor work, audit logs, and JaniTrack verification.
+
+### Warehouse and Distribution Cleaning in NJ: Amazon-Tier Standards and Audit Readiness
+
+Published: 2026-05-31
+URL: https://greenpointms.com/blog/warehouse-cleaning-amazon-vendor-tier
+Summary: A NJ warehouse cleaning guide built for high-volume operations: 5S discipline, ride-on scrubbers, breakroom standards, and proof-driven audit logs.
+
+### Manufacturing Plant Cleaning in the Northeast: Production-Floor and Office Bundle
+
+Published: 2026-06-01
+URL: https://greenpointms.com/blog/manufacturing-plant-cleaning-northeast
+Summary: A proof-driven plan for safe, compliant manufacturing plant cleaning across NY/NJ/CT/PA—production floors, offices, and breakrooms under one fixed-price scope.
+
 ## Category: Buyer Guides
 
 ### 10 Red Flags to Watch For When Hiring a Commercial Cleaning Vendor
@@ -738,4 +762,4 @@ This file is regenerated whenever blog content changes. For the most up-to-date 
 
 For the curated index of GreenPoint's most important pages, see https://greenpointms.com/llms.txt.
 
-Last generated: 2026-05-29T12:44:27.364Z
+Last generated: 2026-06-01T12:53:59.644Z

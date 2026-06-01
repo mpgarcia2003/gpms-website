@@ -7386,6 +7386,242 @@ export const BLOG_POSTS = [
     ]
   }
 
+,
+
+    {
+    slug: "manufacturing-plant-cleaning-northeast",
+    image: "/blog/manufacturing-plant-cleaning-northeast.jpg",
+    title: "Manufacturing Plant Cleaning in the Northeast: Production-Floor and Office Bundle",
+    excerpt: "A proof-driven plan for safe, compliant manufacturing plant cleaning across NY/NJ/CT/PA—production floors, offices, and breakrooms under one fixed-price scope.",
+    category: "Industry Verticals",
+    author: "GreenPoint Maintenance",
+    publishedAt: "2026-06-01",
+    readTime: "10 min read",
+    keywords: [
+      "manufacturing cleaning NJ",
+      "industrial janitorial northeast",
+      "production floor cleaning",
+      "manufacturing facility maintenance",
+    ],
+    content: [
+      {
+        type: "intro",
+        text: "If you manage a manufacturing site in NY, NJ, CT, or PA, you already know the trap: production-floor cleaning has safety and compliance constraints, while office and breakroom cleaning has appearance and health expectations. Most vendors treat these as separate worlds, which is how you end up with gaps, add-on charges, and inconsistent results. This guide lays out how GreenPoint Maintenance Services bundles production, office, and common areas into one fixed-price scope—built around OSHA-aware procedures, documented outcomes, and verification through JaniTrack (timestamped, GPS-tagged photos and optional ATP testing). To price and scope your facility, call 347-332-9348 or email info@greenpointms.com for a walkthrough and quote.",
+      },
+      {
+        type: "heading",
+        text: "Why manufacturing cleaning is different (and why bundling matters)",
+      },
+      {
+        type: "paragraph",
+        text: "In an industrial environment, the “dirty” is not just dust—think oils, coolants, metal fines, pallet debris, stretch-wrap scraps, and tracked-in grit that can degrade traction. A basic janitorial checklist misses the operational reality of production traffic patterns, shift changes, and material staging zones. GreenPoint plans cleaning like a facility operation: defined routes, defined touchpoints, and defined exceptions (for example, what is never touched without your authorization).",
+      },
+      {
+        type: "paragraph",
+        text: "Bundling matters because manufacturing sites rarely fail only in one area. A spotless floor loses impact if the breakroom and restrooms are neglected, and a clean office lobby still looks “off” if tracked oils show up at entrances and corridors. GreenPoint Maintenance Services scopes the whole facility—production edges, corridors, offices, restrooms, and breakrooms—so the site looks and performs like one system. For a fixed-price walkthrough, call 347-332-9348.",
+      },
+      {
+        type: "heading",
+        text: "Production-floor scope: safety-first, traction-focused, and shift-aware",
+      },
+      {
+        type: "paragraph",
+        text: "A production-floor program should start with a map, not a mop. We identify forklift lanes, pedestrian aisles, receiving doors, QA stations, scrap areas, and battery-charging zones. Then we set a frequency plan that fits your shifts—many plants need a quick “end-of-shift reset” plus a deeper weekly detail so grime does not become baked-in. GreenPoint designs the plan to minimize interference with production and to reduce slip-and-fall risk by targeting entry points and high-turn zones.",
+      },
+      {
+        type: "paragraph",
+        text: "We also match methods to surfaces: polished concrete, sealed concrete, epoxy, and anti-fatigue mat areas each respond differently to cleaners and scrubber settings. Where needed, GreenPoint can incorporate neutral-cleaning cycles and spot oil-response protocols so small spills do not become recurring stains. If you want proof beyond “it looks clean,” ask about ATP bioluminescence testing and process verification in our JaniTrack dashboard. Schedule a walkthrough at 347-332-9348.",
+      },
+      {
+        type: "heading",
+        text: "OSHA-aware work practices: how we avoid creating new hazards",
+      },
+      {
+        type: "paragraph",
+        text: "Manufacturing cleaning sits next to real hazards: moving equipment, powered industrial trucks, stored energy, and chemicals. GreenPoint trains teams to work in defined “cleaning windows” and to respect safety boundaries: do not enter restricted zones without escort, do not clean inside machine guarding, and do not handle process chemicals unless specifically authorized in your scope. For facilities with lockout/tagout rules, our standard operating approach is simple—clean around equipment and follow your site safety instructions, rather than improvising.",
+      },
+      {
+        type: "paragraph",
+        text: "Chemical safety is part of the plan. GreenPoint uses SDS-driven product selection and labeling practices aligned with OSHA Hazard Communication expectations (GHS/SDS). If you want a deeper safety framework, see our related guide: [OSHA Cleaning Chemical Safety: GHS + SDS Explained](/blog/osha-cleaning-chemical-safety-ghs-sds/). If you are comparing vendors, ask each one how they control chemical dilution, where chemicals are stored, and how they document training.",
+      },
+      {
+        type: "heading",
+        text: "Spill response and oil-control: what a realistic program includes",
+      },
+      {
+        type: "paragraph",
+        text: "Plants don’t need perfection—they need a repeatable response. A realistic program defines what the cleaning team can do immediately (spot absorbent, neutral clean, signage) and what requires your EHS or maintenance team. GreenPoint’s scopes typically include daily spotting at known problem areas (press lines, machining cells, pallet drop zones) plus periodic mechanical scrubbing to lift embedded residues before they create a traction problem.",
+      },
+      {
+        type: "paragraph",
+        text: "From an appearance perspective, controlling oils and fines protects your brand too—especially if you host customer audits. GreenPoint’s verification approach is built for audit-readiness: JaniTrack photo logs, issue notes, and optional ATP testing where hygiene matters (breakrooms, restrooms, and wellness rooms). If your plant supports ISO, food-grade, or pharma-adjacent standards, we can align verification with your internal checklist during a walkthrough at 347-332-9348.",
+      },
+      {
+        type: "heading",
+        text: "Office, lobby, and conference spaces: protect the “client-facing” perimeter",
+      },
+      {
+        type: "paragraph",
+        text: "Many Northeast plants include a visitor-facing perimeter: reception, conference rooms, executive offices, and training rooms. This is where “clean” becomes obvious to prospects, auditors, and new hires. GreenPoint runs these spaces to an appearance standard: fingerprints on glass, dust on ledges, smudges on doors, and trash staging all matter. We also build a restocking routine for paper goods and soaps, because a “clean” restroom still fails if the dispensers are empty.",
+      },
+      {
+        type: "paragraph",
+        text: "If you are budgeting across multiple facility types, our cost framework can help: [Commercial Cleaning Cost Per Square Foot](/blog/commercial-cleaning-cost-per-square-foot/). GreenPoint will provide fixed pricing with defined outcomes—no hourly billing surprises and no hidden fees—so you can forecast confidently. For a site walkthrough, call 347-332-9348.",
+      },
+      {
+        type: "heading",
+        text: "Breakrooms and restrooms: where health outcomes intersect with morale",
+      },
+      {
+        type: "paragraph",
+        text: "Manufacturing teams notice breakrooms and restrooms more than almost any other area because these spaces affect daily comfort. They are also where hygiene risk concentrates: touchpoints, sinks, microwaves, refrigerator handles, and shared tables. GreenPoint focuses on high-touch disinfection where it matters, while still keeping fixtures and floors in an appearance-ready state.",
+      },
+      {
+        type: "paragraph",
+        text: "We also build a supply program that reduces “empty dispenser” incidents and helps avoid emergency runs. If you want to see what a transparent supply model looks like, read: [Restroom Paper and Supply Management: The Hidden Cost in Your Cleaning Contract](/blog/restroom-paper-and-supply-management-cleaning/). GreenPoint can incorporate inventory checkpoints into JaniTrack photo routines so shortages show up before they become complaints.",
+      },
+      {
+        type: "heading",
+        text: "Verification that facility managers can actually use: JaniTrack + KPIs",
+      },
+      {
+        type: "paragraph",
+        text: "Manufacturing FMs are measured on uptime, safety, and audit readiness. Cleaning should support those goals with measurable outputs. GreenPoint uses JaniTrack to document completion with timestamped, GPS-tagged photos and issue notes, and we can layer in ATP testing in hygiene-critical areas. The result is a simple feedback loop: verify, correct, and stabilize.",
+      },
+      {
+        type: "paragraph",
+        text: "If you want to formalize reporting, see: [The Monthly Cleaning KPI Dashboard Every Facility Manager Should Demand](/blog/facility-manager-monthly-cleaning-kpi-dashboard/). We can align KPIs like audit score, response time, attendance verification, and complaint trends to your monthly FM review. For a demo and walkthrough, call 347-332-9348 or email info@greenpointms.com.",
+      },
+      {
+        type: "heading",
+        text: "What to ask when hiring a manufacturing cleaning vendor in NY/NJ/CT/PA",
+      },
+      {
+        type: "paragraph",
+        text: "Buyer-style questions uncover whether a vendor understands plant reality. Ask: How do you schedule around shifts and deliveries? What is your plan for forklift lanes and pedestrian aisles? How do you handle oils and metal fines without spreading them? How do you manage chemical safety, labeling, and storage? And what is excluded (for example, machine interiors, high-level work, or hazardous waste) so you do not find out later via an invoice?",
+      },
+      {
+        type: "paragraph",
+        text: "Also ask for proof. GreenPoint can show you a verification workflow, not just promises—JaniTrack photo logs, optional ATP results, and a clear escalation path. We serve NY (Manhattan, Bronx, Brooklyn, Queens, Staten Island, Westchester, and Long Island) plus NJ, CT, PA, and FL, and we structure scopes for multi-site operators who need consistency.",
+      },
+      {
+        type: "callout",
+        text: "Need a bundled manufacturing + office cleaning scope with audit-ready proof? Call GreenPoint Maintenance Services at 347-332-9348 or email info@greenpointms.com to schedule a walkthrough. We provide fixed pricing (no hourly billing, no hidden fees) and verification via JaniTrack with timestamped GPS-tagged photos—plus optional ATP testing for hygiene-critical areas.",
+      },
+    ],
+  },
+
+  {
+    slug: "nyc-prevailing-wage-cleaning-contracts-2026",
+    image: "/blog/nyc-prevailing-wage-cleaning-contracts-2026.jpg",
+    title: "NYC Prevailing Wage for Cleaning Contracts: 2026 Rates and How They Affect Your Budget",
+    excerpt: "A facility-manager guide to NYC prevailing wage janitorial rules—when it applies, what it changes in bids, and how to avoid compliance surprises in 2026.",
+    category: "Compliance",
+    author: "GreenPoint Maintenance",
+    publishedAt: "2026-06-01",
+    readTime: "9 min read",
+    keywords: [
+      "NYC prevailing wage cleaning",
+      "Comptroller cleaning rates 2026",
+      "prevailing wage janitorial NYC",
+      "Local Law 18 cleaning",
+    ],
+    content: [
+      {
+        type: "intro",
+        text: "Prevailing wage can turn a “normal” cleaning bid into a compliance project. In NYC, certain publicly-funded work and specific contract structures require contractors to pay wage and benefit levels set by law and updated by the NYC Comptroller. If you are budgeting a janitorial contract for 2026—especially for a government building, publicly-funded project, or a building with requirements tied to public incentives—you need to know when prevailing wage triggers, how it changes pricing, and what documentation your vendor should provide. GreenPoint Maintenance Services supports compliance-driven cleaning scopes across NYC and the tri-state; call 347-332-9348 for a walkthrough and fixed-price proposal.",
+      },
+      {
+        type: "heading",
+        text: "What “prevailing wage” means for cleaning contracts in NYC",
+      },
+      {
+        type: "paragraph",
+        text: "Prevailing wage is a labor standard that sets minimum pay and benefit levels for covered work, often on publicly-funded projects. The intent is to prevent underbidding by cutting wages and to ensure workers on covered projects are paid consistent rates. For facility managers, the practical takeaway is that a compliant vendor must price labor differently and must maintain documentation that can withstand audits.",
+      },
+      {
+        type: "paragraph",
+        text: "In janitorial procurement, prevailing wage often shows up when the owner is a public agency, the funding has public components, or the building is tied to programs that create labor requirements. If you are unsure, the safest step is to treat it as a procurement risk: ask your counsel or procurement team whether the project is covered, and require bidders to state their compliance approach in writing.",
+      },
+      {
+        type: "heading",
+        text: "Common triggers: publicly-funded work, agencies, and covered project structures",
+      },
+      {
+        type: "paragraph",
+        text: "While specifics depend on the contracting entity and the rules attached to the project, prevailing wage most commonly appears in NYC when work is performed for a government entity or on publicly-funded construction and related services. Cleaning can be part of that ecosystem—especially when the scope is tied to a public facility or when the contract language explicitly references prevailing wage requirements.",
+      },
+      {
+        type: "paragraph",
+        text: "From a practical standpoint, ask three questions early: (1) Who is the contracting party (agency, authority, publicly-funded owner)? (2) Does the solicitation or contract reference prevailing wage, wage schedules, certified payroll, or labor law compliance reporting? (3) Are there audits, site access requirements, or background checks typical of government work? If yes, plan for prevailing-wage pricing and documentation. GreenPoint can review the scope and help you build a compliant service plan during a walkthrough at 347-332-9348.",
+      },
+      {
+        type: "heading",
+        text: "How prevailing wage changes your 2026 cleaning budget",
+      },
+      {
+        type: "paragraph",
+        text: "The biggest budget shift is that the wage floor is not negotiable, so the bid becomes about efficiency, scope design, and management systems. Expect compliant bids to cluster closer together on base labor cost, with differences driven by supervision levels, verification, and what is included (supplies, floor care, day porter coverage). If one bid is dramatically lower, it may be missing compliance costs or cutting scope in ways that show up later as change orders.",
+      },
+      {
+        type: "paragraph",
+        text: "Prevailing wage also makes turnover and staffing reliability more visible. In a compliant environment, the winning vendor is often the one that can recruit, train, and retain staff while still meeting performance expectations. If you want to see why retention and staffing stability matter financially, read: [Janitorial Employee Turnover Impact](/blog/janitorial-employee-turnover-impact/). GreenPoint’s 98% client retention is built on stable operations and proof-driven QA.",
+      },
+      {
+        type: "heading",
+        text: "Documentation and audit readiness: what a compliant vendor should provide",
+      },
+      {
+        type: "paragraph",
+        text: "On covered work, documentation is not optional. Your vendor may need to provide certified payroll reports, wage determinations, proof of fringe benefits, and compliance attestations. As the facility manager, your risk is not just paying more—it is being caught in a dispute if a vendor underpays workers or fails an audit. The cleanest way to reduce risk is to require documentation as part of procurement and to include clear contract language about compliance responsibilities.",
+      },
+      {
+        type: "paragraph",
+        text: "Operational proof helps too. GreenPoint uses JaniTrack verification (timestamped, GPS-tagged photos, plus optional ATP testing) so performance is documented alongside compliance paperwork. That matters on government sites where service interruptions create immediate stakeholder pressure. If you are building a QA program into your RFP, see: [Quality Assurance Commercial Cleaning Program](/blog/quality-assurance-commercial-cleaning-program/).",
+      },
+      {
+        type: "heading",
+        text: "NYC-specific realities: access rules, security, and “no surprises” scheduling",
+      },
+      {
+        type: "paragraph",
+        text: "Government and publicly-funded sites often add constraints that private offices don’t have: sign-in procedures, restricted loading docks, freight elevator windows, background checks, and strict after-hours policies. In Manhattan, that might mean coordinating around Midtown transit peaks near Penn Station or Grand Central; in Downtown Brooklyn, it may mean staging around Jay St–MetroTech and court schedules. A compliant vendor must plan staffing and supervision to meet these realities without running up overtime or missing service windows.",
+      },
+      {
+        type: "paragraph",
+        text: "GreenPoint plans these sites with a “no surprises” model: fixed pricing, defined service windows, and escalation paths for access issues. For NYC DOE-adjacent work, vendor approvals and compliance expectations can be strict; see our related NYC school guidance: [School Cleaning: NYC DOE Approved Vendor](/blog/school-cleaning-nyc-doe-approved-vendor/).",
+      },
+      {
+        type: "heading",
+        text: "How GreenPoint bids and operates on compliance-driven contracts",
+      },
+      {
+        type: "paragraph",
+        text: "GreenPoint Maintenance Services is MBE/MWBE certified (NYS, NYC, and NYC DOE) and SAM.gov registered, which supports participation in public procurement workflows. Our approach is evidence-based: clear scope definitions, fixed pricing (no hourly billing), and verification through JaniTrack. For facility managers, that means fewer disputes—because you can see what was done, when, and where.",
+      },
+      {
+        type: "paragraph",
+        text: "We also align work practices to safety expectations and documentation norms, including OSHA-aware chemical handling and staff training. If your contract includes chemical storage or labeling requirements, our safety framework is detailed here: [Fire Code Cleaning Chemical Storage](/blog/fire-code-cleaning-chemical-storage/) and [OSHA Cleaning Chemical Safety: GHS + SDS Explained](/blog/osha-cleaning-chemical-safety-ghs-sds/). To discuss your 2026 bid, call 347-332-9348 or email info@greenpointms.com.",
+      },
+      {
+        type: "heading",
+        text: "Bid checklist: how to compare vendors without getting burned",
+      },
+      {
+        type: "paragraph",
+        text: "To compare bids, force clarity. Require each bidder to list: covered labor assumptions, supervision ratios, what is included (supplies, floor care, porters), the documentation they will provide, and their change-order policy. Ask how they verify attendance and task completion. And ask what happens when access issues occur—because government sites often have unexpected restrictions.",
+      },
+      {
+        type: "paragraph",
+        text: "If you want a model set of procurement questions, use: [Questions to Ask a Commercial Cleaning Company](/blog/questions-to-ask-commercial-cleaning-company/). GreenPoint will walk your site, confirm the compliance triggers you suspect, and build a fixed-price scope that stands up to audits and daily reality.",
+      },
+      {
+        type: "callout",
+        text: "If you’re budgeting a prevailing-wage cleaning contract in NYC for 2026, schedule a walkthrough with GreenPoint Maintenance Services. Call 347-332-9348 or email info@greenpointms.com for a fixed-price proposal built around compliance documentation and proof-driven QA. Our JaniTrack system provides timestamped GPS-tagged photos (and optional ATP testing) so you can manage performance with evidence—not guesswork.",
+      },
+    ],
+  }
+
 ];
 
 // ─────────────────────────────────────────────────────
