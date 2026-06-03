@@ -190,6 +190,9 @@ const BLOG_INDEX = [
   { slug: "manufacturing-plant-cleaning-northeast", image: "/blog/manufacturing-plant-cleaning-northeast.jpg", title: "Manufacturing Plant Cleaning in the Northeast: Production-Floor and Office Bundle", excerpt: "A proof-driven plan for safe, compliant manufacturing plant cleaning across NY/NJ/CT/PA—production floors, offices, and breakrooms under one fixed-price scope.", category: "Industry Verticals", date: "2026-06-01", readTime: "10 min" },
   { slug: "nyc-prevailing-wage-cleaning-contracts-2026", image: "/blog/nyc-prevailing-wage-cleaning-contracts-2026.jpg", title: "NYC Prevailing Wage for Cleaning Contracts: 2026 Rates and How They Affect Your Budget", excerpt: "A facility-manager guide to NYC prevailing wage janitorial rules—when it applies, what it changes in bids, and how to avoid compliance surprises in 2026.", category: "Compliance", date: "2026-06-01", readTime: "9 min" },
 
+
+  {"slug": "32bj-union-cleaning-vs-non-union-nyc", "image": "/blog/32bj-union-cleaning-vs-non-union-nyc.jpg", "title": "32BJ Union vs Non-Union Cleaning Contractors in NYC: What Facility Managers Need to Know", "excerpt": "A proof-driven guide to SEIU 32BJ, wage classifications, cost drivers, and how to structure a compliant NYC cleaning contract that still fits your budget.", "category": "Compliance", "date": "2026-06-03", "readTime": "10 min"},
+  {"slug": "osha-bloodborne-pathogen-office-cleaning", "image": "/blog/osha-bloodborne-pathogen-office-cleaning.jpg", "title": "OSHA Bloodborne Pathogen Standard for Office Cleaning: Compliance Guide for Facility Managers", "excerpt": "Office incidents can trigger OSHA 1910.1030. Learn what counts as exposure risk, required documentation, training, and how to structure compliant cleaning.", "category": "Compliance", "date": "2026-06-03", "readTime": "9 min"},
 ];
 
 export const metadata = {
@@ -200,10 +203,12 @@ export const metadata = {
     title: 'Blog | GreenPoint Maintenance Services',
     description: 'Expert insights on commercial cleaning, facility maintenance, compliance, and industry best practices.',
     url: 'https://greenpointms.com/blog/',
+    siteName: 'GreenPoint Maintenance Services',
+    type: 'website',
   },
 };
 
-const CAT_COLORS = {
+const COLORS = {
   'Industry Data': { bg: '#EEF2FF', text: '#4338CA' },
   Standards: { bg: '#F0FDF4', text: '#15803D' },
   Research: { bg: '#FDF4FF', text: '#A21CAF' },
@@ -252,7 +257,7 @@ export default function BlogIndex() {
       <section style={{ padding: "64px 24px", maxWidth: 900, margin: "0 auto" }}>
         <div style={{ display: "grid", gap: 20 }}>
           {sorted.map((post) => {
-            const cat = CAT_COLORS[post.category] || CAT_COLORS.Guides;
+            const cat = COLORS[post.category] || COLORS.Guides;
             return (
               <a key={post.slug} href={`/blog/${post.slug}/`} className="blog-card" style={{
                 display: "flex", flexDirection: post.image ? "row" : "column", gap: post.image ? 20 : 0, textDecoration: "none",

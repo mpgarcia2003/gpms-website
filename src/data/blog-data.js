@@ -7621,6 +7621,206 @@ export const BLOG_POSTS = [
       },
     ],
   }
+,
+
+  {
+  "slug": "32bj-union-cleaning-vs-non-union-nyc",
+  "image": "/blog/32bj-union-cleaning-vs-non-union-nyc.jpg",
+  "title": "32BJ Union vs Non-Union Cleaning Contractors in NYC: What Facility Managers Need to Know",
+  "excerpt": "A proof-driven guide to SEIU 32BJ, wage classifications, cost drivers, and how to structure a compliant NYC cleaning contract that still fits your budget.",
+  "category": "Compliance",
+  "author": "GreenPoint Maintenance",
+  "publishedAt": "2026-06-03",
+  "readTime": "10 min read",
+  "keywords": [
+    "32BJ union cleaning",
+    "union vs non-union janitorial NYC",
+    "SEIU 32BJ cleaning contracts",
+    "NYC commercial cleaning labor"
+  ],
+  "content": [
+    {
+      "type": "intro",
+      "text": "If you manage a commercial building in New York City, you have probably heard some version of this question: \"Do we need a 32BJ union cleaning contractor?\" The honest answer is: it depends on your building type, your labor history, and how your contract is structured. GreenPoint Maintenance Services helps facility managers compare union and non-union models with a compliance-first lens: documented training, correct safety data sheets, site-specific task lists, and verification through JaniTrack (timestamped, GPS-tagged photos, optional ATP testing, and a live dashboard). If you want a walkthrough and a fixed-price proposal (no hourly billing and no hidden fees), call 347-332-9348."
+    },
+    {
+      "type": "heading",
+      "text": "What 32BJ is (and what it is not) in NYC commercial cleaning"
+    },
+    {
+      "type": "paragraph",
+      "text": "SEIU 32BJ is a labor union that represents many building service workers in the NYC metro area, including cleaners, porters, and building maintenance staff. When a site is covered by a collective bargaining agreement (CBA) that includes 32BJ positions, wage rates, benefits, and work rules are negotiated and standardized. What 32BJ is not: a city agency and not a universal legal requirement for every private office, retail location, or medical office. The practical reality is that 32BJ becomes relevant when (1) your building is already unionized, (2) your property owner or management company requires it, or (3) your procurement approach triggers labor peace expectations. GreenPoint will walk you through which scenario you are in before you sign anything."
+    },
+    {
+      "type": "heading",
+      "text": "How union vs non-union impacts pricing (and why comparing bids is tricky)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Many NYC bid comparisons fail because they compare \"hours\" instead of outcomes and risk controls. Union labor generally has higher fully loaded labor costs due to negotiated wages, healthcare, pension contributions, and paid time off. Non-union contracts can price lower, but they must still cover legitimate payroll, workers’ comp, supervision, training, and supplies. GreenPoint Maintenance Services prices fixed-scope programs (not hourly) so you can compare apples to apples: what gets cleaned, how often, what products are used, and what proof you receive. Our clients use JaniTrack evidence to validate that the work you paid for actually happened, especially in high-visibility areas like lobbies, elevator cabs, and restrooms near commuter peaks."
+    },
+    {
+      "type": "heading",
+      "text": "NYC facility types where 32BJ is commonly encountered"
+    },
+    {
+      "type": "paragraph",
+      "text": "You are more likely to encounter 32BJ requirements in Class A and trophy office towers in Midtown and the Financial District, large mixed-use properties, and unionized buildings with long-standing labor relationships. In practice, we see this around Grand Central Terminal, Penn Station / Moynihan Train Hall, Hudson Yards, Bryant Park, and the World Trade Center area, where tenant expectations and building standards are tightly managed. In contrast, smaller owner-managed offices in Long Island City, Downtown Brooklyn, or the Bronx Hub may have more flexibility, as long as the vendor meets safety and documentation requirements. GreenPoint serves NYC plus Westchester, Long Island, northern New Jersey, and Connecticut, so we can align labor strategy to each site’s market reality."
+    },
+    {
+      "type": "heading",
+      "text": "Prevailing wage vs union: what triggers compliance obligations"
+    },
+    {
+      "type": "paragraph",
+      "text": "Facility managers sometimes mix up prevailing wage requirements with union requirements. Prevailing wage can apply to certain public projects and government-related work depending on the contract and funding source, and it is enforced through documentation, certified payroll, and auditability. A union vendor may already have systems aligned to wage schedules; a non-union vendor can still operate compliantly if they follow the applicable wage determinations and maintain correct records. GreenPoint is MWBE/MBE-certified and SAM.gov registered, and we routinely support documentation-heavy environments where audit trails matter. If you are unsure whether your site triggers prevailing wage obligations, schedule a walkthrough and ask us to map the compliance items before you execute the scope. Call 347-332-9348."
+    },
+    {
+      "type": "heading",
+      "text": "Operational realities: staffing, coverage, and responsiveness"
+    },
+    {
+      "type": "paragraph",
+      "text": "Union and non-union programs can both succeed or fail depending on supervision and quality systems. The best cleaning outcomes come from clear task design (what, where, frequency), strong onboarding, and real verification. GreenPoint uses documented checklists, color-coded microfiber systems, and routine safety refreshers tied to SDS/GHS labeling practices (see our chemical-safety guide: [OSHA cleaning chemical safety (GHS/SDS)](/blog/osha-cleaning-chemical-safety-ghs-sds/)). For multi-tenant buildings, we also plan for predictable surge periods: Monday morning return-to-office peaks, event nights, and weather-driven entryway mess. When incidents happen (spills, restroom issues, or loading dock debris), we define response expectations up front instead of guessing after the fact."
+    },
+    {
+      "type": "heading",
+      "text": "Quality proof: why verification matters more than the labor model"
+    },
+    {
+      "type": "paragraph",
+      "text": "A union label does not automatically mean \"clean,\" and a non-union label does not automatically mean \"cheap but risky.\" The missing piece is measurable proof. GreenPoint’s JaniTrack system provides timestamped, GPS-tagged photos and completion logs so you can verify nightly work without walking every floor. For sites that want higher assurance, we can deploy ATP testing to quantify surface cleanliness and trend results over time (background: [what ATP bioluminescence testing is](/blog/what-is-atp-bioluminescence-testing-cleaning/)). This proof-driven approach is one reason GreenPoint maintains 98% client retention across NY, NJ, and CT."
+    },
+    {
+      "type": "heading",
+      "text": "Contract structure: scope clarity, fixed pricing, and avoiding hidden costs"
+    },
+    {
+      "type": "paragraph",
+      "text": "Whether you choose a 32BJ union contractor or a non-union contractor, your contract should state: exact areas covered, frequencies, consumables responsibilities, floor care schedule, and add-on pricing for periodic work like carpet extraction or strip-and-wax. GreenPoint Maintenance Services uses fixed pricing so you are not exposed to hourly drift or \"extra\" charges for routine tasks that should have been scoped. For buyers comparing vendors, it also helps to learn the contract terms that create real leverage and prevent disputes (see: [commercial cleaning contract key terms](/blog/commercial-cleaning-contract-key-terms/))."
+    },
+    {
+      "type": "heading",
+      "text": "Risk management checklist for NYC facility managers"
+    },
+    {
+      "type": "paragraph",
+      "text": "Before you award a contract, confirm these items in writing: (1) workers’ comp and liability coverage appropriate for NYC properties, (2) site-specific training and supervision plan, (3) chemical inventory with SDS access, (4) GHS labeling and storage controls, (5) a documented quality assurance program, and (6) verifiable service evidence. If your building has union history, ask how the vendor handles transitions and what labor harmony commitments exist. If your building is not unionized, validate that the vendor still meets OSHA expectations for hazard communication and PPE use. GreenPoint can review these items during a walkthrough in Manhattan, Brooklyn, Queens, the Bronx, or Staten Island—call 347-332-9348 to schedule."
+    },
+    {
+      "type": "heading",
+      "text": "When non-union can be the best fit (and still fully compliant)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Non-union cleaning can be a strong option for many private offices, retail spaces, and medical office suites when the vendor is disciplined about training, supervision, and documentation. It can also be a fit for buildings seeking fixed, predictable monthly pricing and rapid program adjustments as tenant occupancy changes. GreenPoint supports these environments with standardized processes, Green Seal certified products, and digital verification so you can defend decisions with evidence, not opinions. If you are managing sites across the tri-state area (NY/NJ/CT) and want one accountable vendor with consistent reporting, we can map a portfolio plan and roll out a standard. Call 347-332-9348 for a quote."
+    },
+    {
+      "type": "callout",
+      "text": "Need a union vs non-union cleaning decision that you can defend to ownership? GreenPoint Maintenance Services will do a site walkthrough, confirm scope and compliance requirements, and deliver fixed pricing with proof via JaniTrack verification. Call 347-332-9348 or email info@greenpointms.com to schedule—our 98% client retention is built on measurable results, not promises."
+    }
+  ]
+}
+,
+
+  {
+  "slug": "osha-bloodborne-pathogen-office-cleaning",
+  "image": "/blog/osha-bloodborne-pathogen-office-cleaning.jpg",
+  "title": "OSHA Bloodborne Pathogen Standard for Office Cleaning: Compliance Guide for Facility Managers",
+  "excerpt": "Office incidents can trigger OSHA 1910.1030. Learn what counts as exposure risk, required documentation, training, and how to structure compliant cleaning.",
+  "category": "Compliance",
+  "author": "GreenPoint Maintenance",
+  "publishedAt": "2026-06-03",
+  "readTime": "9 min read",
+  "keywords": [
+    "bloodborne pathogen cleaning",
+    "OSHA 1910.1030 office",
+    "biohazard cleanup commercial",
+    "needle stick exposure plan"
+  ],
+  "content": [
+    {
+      "type": "intro",
+      "text": "Most office cleaning programs are designed around dust control, restrooms, and high-touch disinfection—but incidents happen: a first-aid response in the lobby, blood in a restroom, or a discarded needle in a stairwell near a transit hub. When there is potential exposure to blood or other potentially infectious materials (OPIM), OSHA’s Bloodborne Pathogens Standard (29 CFR 1910.1030) becomes relevant. GreenPoint Maintenance Services helps offices across NYC and the tri-state build cleaning programs that are practical and audit-ready: documented procedures, correct PPE, and proof of completion through JaniTrack verification (timestamped GPS-tagged photos and optional ATP testing). For a compliance walkthrough and fixed-price proposal, call 347-332-9348."
+    },
+    {
+      "type": "heading",
+      "text": "What OSHA 1910.1030 covers in an office environment"
+    },
+    {
+      "type": "paragraph",
+      "text": "OSHA 1910.1030 is often associated with hospitals, but offices can face bloodborne pathogen risks whenever employees might encounter blood or OPIM during job duties. In an office, that risk most commonly appears in restrooms, wellness rooms, security/concierge stations, loading docks, and stairwells—especially in high-traffic buildings near Penn Station, Port Authority, Fulton Center, or major bus routes where public access is common. The standard focuses on protecting workers through an Exposure Control Plan, training, recordkeeping, and specific work practice controls. GreenPoint aligns janitorial protocols with these requirements so you can show a defensible plan if questions arise."
+    },
+    {
+      "type": "heading",
+      "text": "The Exposure Control Plan: the document most offices are missing"
+    },
+    {
+      "type": "paragraph",
+      "text": "A compliant program typically includes a written Exposure Control Plan (ECP) that identifies which job classifications have potential exposure, what tasks create risk, and what controls are used. For most offices, the goal is not to classify every cleaner as routinely exposed—it is to define incident response steps that prevent exposure, including escalation rules (when to stop work and call a specialized biohazard vendor). GreenPoint helps facility managers design realistic ECP language tied to actual site conditions: public restroom access rules, sharps container placement (if applicable), and who is authorized to handle regulated waste. When you schedule a walkthrough, we will map incident scenarios and build a scope that fits your building. Call 347-332-9348."
+    },
+    {
+      "type": "heading",
+      "text": "PPE and engineering controls: what should be on the cart"
+    },
+    {
+      "type": "paragraph",
+      "text": "For blood or OPIM incidents, the right PPE and supplies matter. That typically includes disposable gloves, eye/face protection when splash is possible, and absorbent materials plus EPA-registered disinfectants used per label contact time. Engineering controls might include sharps containers in specific locations (common in some mixed-use properties and public-facing lobbies). Work practice controls include do-not-touch rules for loose sharps and a clear escalation process. GreenPoint standardizes carts and training so responses are consistent across Manhattan, Brooklyn, Queens, the Bronx, Staten Island, Westchester, and northern New Jersey sites."
+    },
+    {
+      "type": "heading",
+      "text": "Training and documentation: what to keep on file"
+    },
+    {
+      "type": "paragraph",
+      "text": "OSHA expects training for employees with occupational exposure, and facility managers should also ensure vendors have documented training aligned to their scope. In practice, you should be able to produce: training records, incident response procedures, and chemical safety documentation (SDS). Hazard Communication overlaps here—your vendor should have proper GHS labels and SDS access for disinfectants and cleaners used in incident response (see: [OSHA cleaning chemical safety (GHS/SDS)](/blog/osha-cleaning-chemical-safety-ghs-sds/)). GreenPoint is proof-driven: we pair documentation with JaniTrack verification so you can show both a program and evidence of execution."
+    },
+    {
+      "type": "heading",
+      "text": "What counts as regulated waste in offices (and how it should be handled)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Office buildings are not hospitals, but certain incident materials can still be treated as regulated waste depending on saturation and local disposal requirements. The key is consistency: define what the cleaning team is authorized to bag and remove, and what must be handled by a specialized service. A common failure mode is ad-hoc decision-making at 10:30 PM with no supervisor present. GreenPoint builds a site-specific decision tree so your team knows when to stop, isolate the area, and escalate. If you manage a property with public access near subway entrances (e.g., 34 St–Penn Station, Times Sq–42 St, Atlantic Ave–Barclays, or Jamaica Center), this planning is especially important."
+    },
+    {
+      "type": "heading",
+      "text": "Designing an incident response protocol that does not disrupt the whole building"
+    },
+    {
+      "type": "paragraph",
+      "text": "Good incident response is about containment, speed, and documentation. The protocol should specify: who is notified (building management, security), what barriers/signage are used, which products are approved, and how the event is logged. GreenPoint can document response with JaniTrack photos (appropriate to privacy rules) and task completion notes. For buildings with multiple tenants and late-night cleaning windows, we plan routes and response kits so a single restroom incident does not derail the entire nightly program."
+    },
+    {
+      "type": "heading",
+      "text": "How GreenPoint builds measurable quality into high-risk cleaning"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bloodborne pathogen compliance is not only about the emergency moment; it is about preventing repeat issues through better routine cleaning and verification. GreenPoint uses quality assurance checklists and can add ATP testing for targeted validation when clients want objective data on high-touch areas after an event (background: [what ATP testing measures](/blog/what-is-atp-bioluminescence-testing-cleaning/)). We also recommend aligning your overall QA approach with a documented program so your compliance posture is not dependent on one supervisor’s memory (see: [quality assurance commercial cleaning program](/blog/quality-assurance-commercial-cleaning-program/))."
+    },
+    {
+      "type": "heading",
+      "text": "Common office mistakes that create OSHA exposure risk"
+    },
+    {
+      "type": "paragraph",
+      "text": "The most common mistakes we see in tri-state office environments are: unclear authority (who handles sharps), missing incident kits, using the wrong disinfectant or ignoring contact times, and lack of documentation when something happens. Another frequent issue is assuming that a standard janitorial scope includes biohazard cleanup—it often should not. GreenPoint Maintenance Services will clarify boundaries in writing, build a response plan, and keep verification records so you can demonstrate due diligence. If you want to reduce risk without overpaying, start with a walkthrough. Call 347-332-9348."
+    },
+    {
+      "type": "heading",
+      "text": "How to procure compliant office cleaning (questions to ask bidders)"
+    },
+    {
+      "type": "paragraph",
+      "text": "When you send out an RFP or compare bids, ask vendors to describe their OSHA 1910.1030 approach: Do they have an Exposure Control Plan? What training do they provide and how is it documented? What PPE and incident kits are staged on-site? What is the escalation path for sharps or significant blood events? Do they have a digital verification system like JaniTrack? GreenPoint answers these questions with specific documentation and fixed pricing, so you can make a defensible decision. For procurement tips and scope clarity, see: [how to choose a commercial cleaning company](/blog/how-to-choose-commercial-cleaning-company/)."
+    },
+    {
+      "type": "callout",
+      "text": "Want an OSHA-ready office cleaning program with proof of execution? GreenPoint Maintenance Services will do a site walkthrough, define an incident response protocol aligned to OSHA 1910.1030, and deliver fixed pricing with JaniTrack verification. Call 347-332-9348 or email info@greenpointms.com to schedule—our 98% client retention is built on documented results."
+    }
+  ]
+}
 
 ];
 
