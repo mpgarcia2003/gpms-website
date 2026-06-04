@@ -1,6 +1,6 @@
 # GreenPoint Maintenance Services Corp — Full Content Index
 
-Last Updated: 2026-06-01
+Last Updated: 2026-06-04
 
 This file contains the full text of GreenPoint's most important pages, optimized for ingestion by AI assistants and language models. For a curated index of resources, see https://greenpointms.com/llms.txt.
 
@@ -83,7 +83,7 @@ Full list of 80+ cities at https://greenpointms.com/sitemap.xml.
 
 The following articles are published on the GreenPoint blog. Each represents original research and analysis on commercial cleaning standards, compliance, technology, and best practices.
 
-Total articles: 96
+Total articles: 98
 
 ## Category: Industry Data
 
@@ -283,6 +283,12 @@ Published: 2026-06-01
 URL: https://greenpointms.com/blog/nyc-prevailing-wage-cleaning-contracts-2026
 Summary: A facility-manager guide to NYC prevailing wage janitorial rules—when it applies, what it changes in bids, and how to avoid compliance surprises in 2026.
 
+### How New York Paid Sick Leave Laws Affect Your Commercial Cleaning Contract
+
+Published: 2026-06-04
+URL: https://greenpointms.com/blog/ny-paid-sick-leave-impact-cleaning-contracts
+Summary: NYC and NYS paid sick leave rules change staffing risk in janitorial contracts. Learn what should be covered, what’s pass-through, and how to price fairly.
+
 ## Category: Guides
 
 ### How to Choose a Commercial Cleaning Company: The Complete Guide
@@ -426,6 +432,12 @@ Summary: How to maximize the summer break for school deep cleaning — a compreh
 Published: 2026-02-21
 URL: https://greenpointms.com/blog/hurricane-preparedness-florida-commercial-facilities
 Summary: Pre-storm preparation, emergency response, and post-hurricane cleanup protocols for commercial buildings in Florida — from water extraction to mold prevention.
+
+### Spring Deep Cleaning Checklist for Tri-State Offices: 47-Point Facility Reset
+
+Published: 2026-06-04
+URL: https://greenpointms.com/blog/spring-deep-cleaning-offices-checklist-tri-state
+Summary: A tri-state spring deep clean fixes winter soil, salt, and air quality issues. Use this 47-point checklist with timing guidance for NYC, NJ, CT offices.
 
 ## Category: Buying Guide
 
@@ -762,4 +774,4 @@ This file is regenerated whenever blog content changes. For the most up-to-date 
 
 For the curated index of GreenPoint's most important pages, see https://greenpointms.com/llms.txt.
 
-Last generated: 2026-06-01T12:53:59.644Z
+Last generated: 2026-06-04T12:48:35.312Z
