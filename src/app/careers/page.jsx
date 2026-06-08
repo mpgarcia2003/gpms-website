@@ -5,8 +5,6 @@ export const metadata = {
   description: "Join the GreenPoint Maintenance team. Now hiring janitorial technicians, day porters, site supervisors across NYC.",
 };
 
-const positions = ["Janitorial Technician", "Day Porter", "Site Supervisor", "Floor Care Specialist", "Maintenance Technician"];
-
 export default function CareersPage() {
   return (
     <main style={{ minHeight: "100vh", paddingTop: 80 }}>
@@ -43,10 +41,7 @@ export default function CareersPage() {
       {/* Application Form */}
       <section id="apply" style={{ padding: "64px 24px", background: "var(--off-white)" }}>
         <div style={{ maxWidth: 800, margin: "0 auto" }}>
-          <h2 style={{ fontFamily: "var(--heading)", fontSize: 32, fontWeight: 700, color: "var(--dark-text)", textAlign: "center", marginBottom: 8 }}>Apply Online</h2>
-          <p style={{ color: "var(--body-text)", textAlign: "center", marginBottom: 8 }}>All fields marked * are required.</p>
-          <p style={{ color: "var(--subtle-text)", textAlign: "center", fontSize: 14, marginBottom: 40 }}>Prefer paper? <a href="/GreenPoint_Employment_Application.pdf" download style={{ color: "var(--green)", fontWeight: 600 }}>Download PDF</a> and email to info@greenpointms.com</p>
-          <ApplicationForm positions={positions} />
+          <ApplicationForm />
         </div>
       </section>
 
