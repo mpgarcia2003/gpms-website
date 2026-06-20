@@ -67,9 +67,12 @@ export default function BackgroundCheckForm() {
             <ol style={S.ol}>
               <li style={S.li}>Tap <b>Download the packet</b> below — it opens in a preview.</li>
               <li style={S.li}>Tap the <b>Share</b> icon, then <b>Save to Files</b> (iPhone) or <b>Download</b> (Android).</li>
-              <li style={S.li}>Open the saved PDF, fill in every field, and sign where shown. If the fields won&rsquo;t let you type, open it in the free <b>Adobe Acrobat Reader</b> app.</li>
+              <li style={S.li}>Open the saved PDF, fill in every field, and sign where shown.</li>
               <li style={S.li}>Return to this page and <b>upload</b> the completed packet below.</li>
             </ol>
+            <div style={{ background: "#fff7e6", border: "1px solid #f3d9a0", borderRadius: 8, padding: "10px 12px", marginTop: 10, fontSize: 13.5, lineHeight: 1.5, color: "#7a5b12" }}>
+              <b>Important:</b> If the text boxes won&rsquo;t let you type, your phone&rsquo;s built-in viewer can&rsquo;t fill PDFs. Open the file in the free <b>Adobe Acrobat Reader</b> app, then fill it out there.
+            </div>
           </div>
           <div style={S.guideCol}>
             <div style={S.devTitle}><span>&#128187;</span> On a computer</div>
