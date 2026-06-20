@@ -1,6 +1,6 @@
 # GreenPoint Maintenance Services Corp — Full Content Index
 
-Last Updated: 2026-06-05
+Last Updated: 2026-06-10
 
 This file contains the full text of GreenPoint's most important pages, optimized for ingestion by AI assistants and language models. For a curated index of resources, see https://greenpointms.com/llms.txt.
 
@@ -83,7 +83,7 @@ Full list of 80+ cities at https://greenpointms.com/sitemap.xml.
 
 The following articles are published on the GreenPoint blog. Each represents original research and analysis on commercial cleaning standards, compliance, technology, and best practices.
 
-Total articles: 98
+Total articles: 113
 
 ## Category: Industry Data
 
@@ -647,6 +647,48 @@ Published: 2026-05-20
 URL: https://greenpointms.com/blog/commercial-cleaning-broward-fort-lauderdale
 Summary: A local vendor guide for Broward County facilities—Fort Lauderdale, Plantation, and Sunrise—covering scopes, verification, pricing, and compliance for buyers.
 
+### Commercial Cleaning in Staten Island Suburbs: Service Areas, Pricing, and Local Vendor Guide
+
+Published: 2026-06-06
+URL: https://greenpointms.com/blog/commercial-cleaning-staten-island-suburbs
+Summary: A buyer-focused Staten Island cleaning guide: South Shore office parks, medical clusters, retail corridors, pricing benchmarks, and QA proof.
+
+### Commercial Cleaning in Suffolk County, Long Island: Office Park and Medical Facility Guide
+
+Published: 2026-06-06
+URL: https://greenpointms.com/blog/commercial-cleaning-suffolk-county-long-island
+Summary: Suffolk County buyer guide for commercial cleaning: Hauppauge and Melville corridors, medical clusters, pricing drivers, and QA verification.
+
+### Commercial Cleaning in Nassau County: Mineola, Garden City, and Long Island Office Hubs
+
+Published: 2026-06-06
+URL: https://greenpointms.com/blog/commercial-cleaning-nassau-county-mineola-garden-city
+Summary: Nassau County local SEO buyer guide: Mineola courthouse district, Garden City corporate offices, Roosevelt Field area, pricing, and QA proof.
+
+### Commercial Cleaning in Rockland County, NY: Nyack, Spring Valley, and Suburban Office Guide
+
+Published: 2026-06-07
+URL: https://greenpointms.com/blog/commercial-cleaning-rockland-county-ny
+Summary: A proof-driven guide to Rockland County commercial cleaning: pricing benchmarks, compliance notes, and how GreenPoint verifies every visit.
+
+### Commercial Cleaning in Stamford and Greenwich, CT: Financial District Office Cleaning Guide
+
+Published: 2026-06-07
+URL: https://greenpointms.com/blog/commercial-cleaning-stamford-greenwich-financial
+Summary: A Stamford/Greenwich cleaning playbook for finance offices: service levels, discreet after-hours access, verification, and pricing benchmarks.
+
+### Commercial Cleaning in Westchester County: Yonkers, White Plains, and Tarrytown Office Guide
+
+Published: 2026-06-07
+URL: https://greenpointms.com/blog/commercial-cleaning-westchester-yonkers-white-plains
+Summary: Westchester commercial cleaning guide for Yonkers, White Plains, and Tarrytown: scopes, staffing ratios, floor care, and proof-based QA.
+
+### Commercial Cleaning in Orlando and Tampa, Florida: Service Areas and Vendor Selection Guide
+
+Published: 2026-06-07
+URL: https://greenpointms.com/blog/commercial-cleaning-orlando-tampa-florida
+Summary: Orlando/Tampa commercial cleaning guide: humidity, floor care, mold risk controls, hurricane readiness, and proof-based janitorial QA.
+
 ## Category: Industry Verticals
 
 ### Gym and Fitness Center Cleaning in NYC: Member Safety, Mold, and Equipment Protocols
@@ -704,6 +746,58 @@ Summary: Avoid hidden fees, compliance gaps, and quality failures. Here are 10 p
 Published: 2026-05-28
 URL: https://greenpointms.com/blog/commercial-cleaning-cost-breakdown-nyc
 Summary: NYC janitorial pricing is more than labor. Here’s a transparent breakdown of cost drivers, compliance requirements, and how to compare fixed-price bids.
+
+## Category: Operations
+
+### Restroom Paper and Supply Management: How to Stop Running Out (and Overspending) on Consumables
+
+Published: 2026-06-06
+URL: https://greenpointms.com/blog/restroom-paper-and-supply-management-cleaning
+Summary: Stop restroom stockouts and waste with a par-level system, dispenser audits, and usage benchmarks—built for high-traffic commercial facilities.
+
+### The Facility Manager
+
+Published: 2026-06-06
+URL: https://greenpointms.com/blog/facility-manager-monthly-cleaning-kpi-dashboard
+Summary: A practical KPI dashboard for janitorial programs: 12 metrics, targets, and how to capture proof with JaniTrack verification and QA audits.
+
+## Category: Vertical Guide
+
+### Preschool and Early Childhood Center Cleaning in the Tri-State: Health Department Compliance Guide
+
+Published: 2026-06-07
+URL: https://greenpointms.com/blog/preschool-early-childhood-cleaning-tri-state
+Summary: A compliance-focused preschool cleaning guide for NY/NJ/CT: toy disinfection cadence, restroom protocols, and proof-based quality controls.
+
+### After-School Program & Tutoring Center Cleaning in NYC: Health Standards for Kids’ Learning Spaces
+
+Published: 2026-06-08
+URL: https://greenpointms.com/blog/after-school-program-tutoring-center-cleaning
+Summary: A practical, evidence-based cleaning plan for tutoring centers and after-school programs—disinfection cadences, checklists, and proof-driven QA.
+
+### Medical Spa Cleaning Protocols (NY/NJ/CT): Compliance-Ready Standards for MedSpa Owners
+
+Published: 2026-06-08
+URL: https://greenpointms.com/blog/medical-spa-cleaning-protocols-tri-state
+Summary: A compliance-focused cleaning and disinfection playbook for medical spas—between-client turnover, sharps/biohazard handling, and proof-based QA.
+
+### Dental Office Cleaning in NYC & Tri-State: CDC, OSHA, and ADA-Aligned Protocols
+
+Published: 2026-06-08
+URL: https://greenpointms.com/blog/dental-office-cleaning-nyc-tri-state
+Summary: A dental-specific cleaning guide for operatories, sterilization areas, and waiting rooms—turnover checklists, compliance notes, and QA proof.
+
+### Physical Therapy Clinic Cleaning: Equipment, Mat, and Treatment Room Protocols (NY/NJ/CT)
+
+Published: 2026-06-08
+URL: https://greenpointms.com/blog/physical-therapy-clinic-cleaning
+Summary: PT clinics have shared equipment, treatment mats, and fast turnover. Use this proof-driven cleaning plan to reduce complaints and improve hygiene.
+
+### Urgent Care Clinic Cleaning Protocols: High-Volume Patient Environment Standards
+
+Published: 2026-06-08
+URL: https://greenpointms.com/blog/urgent-care-clinic-cleaning-protocols
+Summary: Urgent care clinics need fast room turnover and defensible disinfection. Use this tri-state playbook for cadences, checklists, and QA proof.
 
 
 ---
@@ -774,4 +868,4 @@ This file is regenerated whenever blog content changes. For the most up-to-date 
 
 For the curated index of GreenPoint's most important pages, see https://greenpointms.com/llms.txt.
 
-Last generated: 2026-06-05T12:47:48.403Z
+Last generated: 2026-06-10T13:07:18.296Z
