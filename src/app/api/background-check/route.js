@@ -54,7 +54,7 @@ export async function POST(req) {
       method: "POST",
       headers: { "Content-Type": "application/json", Authorization: `Bearer ${RESEND_API_KEY}` },
       body: JSON.stringify({
-        from: "GreenPoint Onboarding <noreply@greenpointms.com>",
+        from: "GreenPoint Onboarding <onboarding@resend.dev>",
         to: "info@greenpointms.com",
         reply_to: email,
         subject: `Eligibility Packet: ${fullName}${location ? " - " + location : ""}`,
