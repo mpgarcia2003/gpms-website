@@ -61,6 +61,9 @@ export default function BackgroundCheckForm() {
 
       <div style={S.card}>
         <div style={S.sec}>How to apply</div>
+        <div style={{ background: "#fff4f3", border: "1px solid #f1c4be", borderLeft: "4px solid #c0392b", borderRadius: 8, padding: "12px 14px", marginBottom: 16, fontSize: 14, lineHeight: 1.55, color: "#7a2820" }}>
+          <b>Required &mdash; 28-year address history.</b> You must list <b>every address where you have lived for the past 28 years</b> (street, city, state, and the move-in/move-out dates) on the SCR form &mdash; the page with the address grid near the bottom of the packet. Our clients include medical clinics and rehabilitation facilities, and New York State requires this complete address history for the mandated background check. <b>Applications with a blank or incomplete address history cannot be processed.</b> If you need more room, attach a separate sheet.
+        </div>
         <div style={S.guideRow}>
           <div style={S.guideCol}>
             <div style={S.devTitle}><span>&#128241;</span> On your phone</div>
@@ -118,6 +121,7 @@ export default function BackgroundCheckForm() {
             <input style={S.input} type="file" name="packet" accept="application/pdf,.pdf" required onChange={(e) => setFileName(e.target.files?.[0]?.name || "")} />
             {fileName ? <div style={{ fontSize: 13, color: "#1f7a3d", marginTop: 6 }}>Selected: {fileName}</div> : null}
             <input type="text" name="company_website" tabIndex={-1} autoComplete="off" style={{ position: "absolute", left: "-9999px", width: 1, height: 1, opacity: 0 }} aria-hidden="true" />
+            <label style={{ display: "flex", gap: 8, alignItems: "flex-start", margin: "16px 0 4px", fontSize: 14, lineHeight: 1.5, color: "#3a444e" }}><input type="checkbox" name="confirm_complete" required style={{ marginTop: 3 }} /> <span>I confirm I completed every page of the packet, including my full <b>28-year address history</b> (street, city, state, and dates) on the SCR form.</span></label>
             {upError ? <div style={S.err}>{upError}</div> : null}
             <button style={S.btn} type="submit" disabled={upStatus === "submitting"}>{upStatus === "submitting" ? "Sending…" : "Submit completed packet"}</button>
           </form>
