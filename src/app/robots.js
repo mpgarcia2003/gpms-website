@@ -1,84 +1,25 @@
 export default function robots() {
+  const base = "https://www.greenpointms.com";
+  const block = ["/api/", "/_next/"];
   return {
     rules: [
-      // Traditional search engines
-      {
-        userAgent: 'Googlebot',
-        allow: '/',
-        disallow: ['/api/', '/_next/'],
-      },
-      {
-        userAgent: 'Bingbot',
-        allow: '/',
-        disallow: ['/api/', '/_next/'],
-      },
+      // Traditional search engines (also feed AI: Bing -> Copilot/ChatGPT Search, Google -> AI Overviews/Gemini)
+      { userAgent: ["Googlebot", "Bingbot"], allow: "/", disallow: block },
 
-      // AI / LLM crawlers — explicitly welcomed
-      // These bots cite content in AI-assisted search results.
-      {
-        userAgent: 'GPTBot', // OpenAI
-        allow: '/',
-        disallow: ['/api/', '/_next/'],
-      },
-      {
-        userAgent: 'ChatGPT-User', // OpenAI on-demand fetcher
-        allow: '/',
-        disallow: ['/api/', '/_next/'],
-      },
-      {
-        userAgent: 'OAI-SearchBot', // OpenAI search index
-        allow: '/',
-        disallow: ['/api/', '/_next/'],
-      },
-      {
-        userAgent: 'ClaudeBot', // Anthropic
-        allow: '/',
-        disallow: ['/api/', '/_next/'],
-      },
-      {
-        userAgent: 'Claude-Web', // Anthropic on-demand
-        allow: '/',
-        disallow: ['/api/', '/_next/'],
-      },
-      {
-        userAgent: 'PerplexityBot', // Perplexity
-        allow: '/',
-        disallow: ['/api/', '/_next/'],
-      },
-      {
-        userAgent: 'Perplexity-User', // Perplexity on-demand
-        allow: '/',
-        disallow: ['/api/', '/_next/'],
-      },
-      {
-        userAgent: 'Google-Extended', // Google Gemini training
-        allow: '/',
-        disallow: ['/api/', '/_next/'],
-      },
-      {
-        userAgent: 'CCBot', // Common Crawl (used by many LLMs)
-        allow: '/',
-        disallow: ['/api/', '/_next/'],
-      },
-      {
-        userAgent: 'anthropic-ai',
-        allow: '/',
-        disallow: ['/api/', '/_next/'],
-      },
-      {
-        userAgent: 'cohere-ai',
-        allow: '/',
-        disallow: ['/api/', '/_next/'],
-      },
+      // AI / LLM crawlers — explicitly welcomed so our pages can be crawled and cited in AI search
+      { userAgent: ["GPTBot", "ChatGPT-User", "OAI-SearchBot"], allow: "/", disallow: block }, // OpenAI
+      { userAgent: ["ClaudeBot", "Claude-User", "Claude-SearchBot", "Claude-Web", "anthropic-ai"], allow: "/", disallow: block }, // Anthropic
+      { userAgent: ["PerplexityBot", "Perplexity-User"], allow: "/", disallow: block }, // Perplexity
+      { userAgent: ["Google-Extended", "Applebot-Extended"], allow: "/", disallow: block }, // Google Gemini / Apple Intelligence
+      { userAgent: ["Amazonbot", "Meta-ExternalAgent", "DuckAssistBot", "MistralAI-User", "cohere-ai", "CCBot"], allow: "/", disallow: block }, // other AI assistants & datasets
 
-      // Catch-all for any other crawler
-      {
-        userAgent: '*',
-        allow: '/',
-        disallow: ['/api/', '/_next/'],
-      },
+      // Abusive crawler that ignores robots.txt (symbolic here; real blocking needs server/WAF rules)
+      { userAgent: "Bytespider", disallow: "/" },
+
+      // Everyone else
+      { userAgent: "*", allow: "/", disallow: block },
     ],
-    sitemap: 'https://greenpointms.com/sitemap.xml',
-    host: 'https://greenpointms.com',
+    sitemap: `${base}/sitemap.xml`,
+    host: base,
   };
 }

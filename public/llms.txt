@@ -1,130 +1,30 @@
-# GreenPoint Maintenance Services Corp
+# GreenPoint Maintenance Services
 
-> MBE-certified commercial janitorial and facility maintenance company serving NY, NJ, CT, PA, and FL since 2018. NYC DOE Approved Vendor, SAM.gov registered, bonded and insured. Specializes in schools, healthcare, government, daycare, churches, and commercial facilities. Differentiated by JaniTrack — a proprietary photo, GPS, and ATP bioluminescence verification system that documents every cleaning visit.
+> New York State-certified Minority Business Enterprise (MBE) providing commercial janitorial and facility cleaning services across New York City and the surrounding region — for government, commercial, healthcare, education, and religious facilities.
 
-## Company Information
+GreenPoint Maintenance Services Corp is a Bronx-based commercial cleaning and janitorial company. It is a New York State-certified MBE, an approved NYC Department of Education vendor, and a registered federal contractor (SAM.gov). Services span commercial and office cleaning, government and municipal janitorial contracts, school and NYC DOE cleaning, medical and behavioral-health facility cleaning, and house-of-worship cleaning, serving the five boroughs of New York City and nearby counties.
 
-- Legal name: GreenPoint Maintenance Services Corp
-- Founded: 2018
-- Address: 1420 Outlook Ave, Apt 2, Bronx, NY 10465
-- Phone: 347-332-9348
-- Email: info@greenpointms.com
-- Website: https://greenpointms.com
-- Owner / President: Miguel Garcia
-- NAICS Codes: 561720 (Janitorial Services), 238210 (Electrical Contractors), 561790 (Other Services to Buildings)
-- Service area: New York, New Jersey, Connecticut, Pennsylvania, Florida
+## Services
+- [Janitorial Services NYC](https://www.greenpointms.com/janitorial-services-nyc/): Commercial janitorial and cleaning services across New York City.
+- [Commercial Cleaning Bronx](https://www.greenpointms.com/commercial-cleaning-bronx/): Office and commercial cleaning in the Bronx.
+- [Government Cleaning Services](https://www.greenpointms.com/government-cleaning-services/): Janitorial services for government and municipal contracts.
+- [School Cleaning NYC](https://www.greenpointms.com/school-cleaning-nyc/): Cleaning services for schools.
+- [NYC DOE School Cleaning](https://www.greenpointms.com/nyc-doe-school-cleaning/): Approved NYC Department of Education cleaning vendor.
+- [Church & House of Worship Cleaning](https://www.greenpointms.com/church-cleaning-nyc/): Cleaning for churches and religious facilities.
+- [All Services](https://www.greenpointms.com/services/): Full list of cleaning and janitorial services.
 
-## Certifications
+## Industries & Service Areas
+- [Industries Served](https://www.greenpointms.com/industries/): Sectors GreenPoint cleans, including healthcare, education, government, and commercial.
+- [Service Locations](https://www.greenpointms.com/locations/): Cities and areas served across New York and the region.
 
-- MBE (Minority Business Enterprise) certified
-- MWBE (Minority and Women-Owned Business Enterprise) certified
-- NYC DOE (Department of Education) Approved Vendor
-- SAM.gov registered for federal contracting
-- Bonded and insured
+## Company
+- [MBE-Certified Cleaning Company](https://www.greenpointms.com/mbe-certified-cleaning-company-nyc/): New York State-certified Minority Business Enterprise.
+- [Capability Statement](https://www.greenpointms.com/capability-statement/): Company overview, certifications, and qualifications for contracting.
+- [Free Facility Inspection](https://www.greenpointms.com/free-facility-inspection/): Request a free on-site cleaning assessment.
 
-## Core Services
-
-- [Commercial Janitorial Services](https://greenpointms.com/janitorial-services-nyc): Daily, weekly, and monthly cleaning programs for commercial facilities
-- [School Cleaning](https://greenpointms.com/school-cleaning-nyc): K-12 specialized cleaning programs, NYC DOE compliant
-- [Government Cleaning Services](https://greenpointms.com/government-cleaning-services): Federal, state, and municipal facility maintenance
-- [MBE-Certified Cleaning](https://greenpointms.com/mbe-certified-cleaning-company-nyc): Diversity-spend qualified procurement
-- [Disinfection Services](https://greenpointms.com/blog/electrostatic-disinfection-explained): Electrostatic spraying, EPA-registered disinfectants, ATP-verified results
-- [Floor Care](https://greenpointms.com/blog/vct-floor-care-strip-seal-wax-guide): VCT strip/seal/wax, carpet extraction, hard surface maintenance
-- [Day Porter Services](https://greenpointms.com/blog/restroom-cleaning-best-practices-high-traffic): On-site cleaning during business hours for high-traffic facilities
-- Facility Maintenance: General building upkeep and repairs
-
-## Industries Served
-
-- K-12 schools, charter schools, and educational facilities
-- Healthcare and medical offices (HIPAA, OSHA compliant)
-- Government buildings (federal, state, municipal)
-- Daycare and childcare facilities (Health Department compliant)
-- Churches, synagogues, mosques, and houses of worship
-- Commercial offices and Class A buildings
-- Assisted living and senior care facilities
-- Coworking spaces
-- Warehouses and industrial facilities
-
-## Key Differentiators
-
-- **JaniTrack verification system**: Proprietary technology that captures photo evidence, GPS-stamped location, time-stamped task completion, and ATP bioluminescence test readings for every cleaning visit. Provides facility managers with verifiable proof that cleaning was performed to standard.
-- **48-hour proposal turnaround**: Fixed-price proposals delivered within 48 hours of facility walkthrough.
-- **MBE/MWBE certified**: Helps clients meet diversity procurement goals and unlocks set-aside contracts.
-- **NYC DOE Approved Vendor**: Pre-qualified to bid on New York City school district contracts.
-- **5-state coverage**: Single vendor for multi-state facility portfolios.
-- **Photo + GPS + ATP verified**: Three independent forms of cleaning verification on every visit.
-
-## Key Resources
-
-- [Capability Statement](https://greenpointms.com/capability-statement): Government procurement-ready company overview with NAICS codes, certifications, and past performance
-- [Free Facility Inspection](https://greenpointms.com/free-facility-inspection): No-obligation walkthrough and fixed-price proposal
-- [Blog: Industry Insights](https://greenpointms.com/blog): 50+ articles on commercial cleaning standards, compliance, and best practices
-- [Terms of Service](https://greenpointms.com/terms-of-service): Client agreement governing all services
-- [Team Conduct & Safety Policy](https://greenpointms.com/team-conduct-safety-policy): Internal safety standards for all GreenPoint personnel
-- [Incident Report](https://greenpointms.com/incident-report): Workplace incident reporting form
-
-## Compliance & Standards Expertise
-
-GreenPoint operates in compliance with:
-
-- OSHA Hazard Communication Standard (cleaning chemicals, GHS labels, SDS requirements)
-- OSHA Bloodborne Pathogens Standard (medical office cleaning)
-- HIPAA Privacy and Security Rules (healthcare facility cleaning)
-- ADA accessibility requirements
-- EPA disinfectant registration and List N/List K guidelines
-- NFPA fire codes for chemical storage
-- Davis-Bacon Act and Service Contract Act prevailing wage requirements
-- NY Local Laws 11, 26, 34, and 97
-- ISSA Cleaning Industry Standards (5-level appearance scale)
-- GSA cleaning standards for government buildings
-
-## Featured Articles by Topic
-
-### Compliance and Regulations
-- [Medical Office Cleaning Requirements: OSHA Compliance Guide](https://greenpointms.com/blog/medical-office-cleaning-requirements-osha)
-- [HIPAA and Medical Office Cleaning](https://greenpointms.com/blog/hipaa-considerations-medical-office-cleaning)
-- [Prevailing Wage Requirements for Government Cleaning Contracts](https://greenpointms.com/blog/prevailing-wage-government-cleaning-contracts)
-- [NYC Local Law Compliance for Commercial Building Maintenance](https://greenpointms.com/blog/nyc-local-law-building-maintenance)
-- [EPA Disinfectant Registration Guide](https://greenpointms.com/blog/epa-disinfectant-registration-guide)
-
-### Standards and Best Practices
-- [ISSA Clean Standards: Understanding the 5-Level Appearance Scale](https://greenpointms.com/blog/issa-clean-standards-appearance-levels)
-- [Cleaning Frequency Standards by Facility Type](https://greenpointms.com/blog/cleaning-frequency-standards-by-facility-type)
-- [Building a Quality Assurance Program for Commercial Cleaning](https://greenpointms.com/blog/quality-assurance-commercial-cleaning-program)
-
-### Technology and Verification
-- [What Is ATP Bioluminescence Testing and Why It Matters](https://greenpointms.com/blog/what-is-atp-bioluminescence-testing-cleaning)
-- [Digital Cleaning Verification Systems](https://greenpointms.com/blog/digital-cleaning-verification-systems)
-- [HEPA Filtration in Commercial Cleaning](https://greenpointms.com/blog/hepa-filtration-commercial-cleaning)
-- [Electrostatic Disinfection Explained](https://greenpointms.com/blog/electrostatic-disinfection-explained)
-
-### Procurement and Business
-- [How to Write an RFP for Commercial Cleaning Services](https://greenpointms.com/blog/how-to-write-rfp-commercial-cleaning)
-- [How to Choose a Commercial Cleaning Company](https://greenpointms.com/blog/how-to-choose-commercial-cleaning-company)
-- [Why Hiring an MBE-Certified Cleaning Company Matters](https://greenpointms.com/blog/mbe-certified-cleaning-company-benefits)
-- [Commercial Cleaning Costs: What to Expect Per Square Foot in 2026](https://greenpointms.com/blog/commercial-cleaning-cost-per-square-foot)
-
-## Service Areas
-
-GreenPoint serves 80+ cities across five states. Major service hubs include:
-
-- **New York**: Bronx, Manhattan, Brooklyn, Queens, Staten Island, Yonkers, White Plains, Westchester County
-- **New Jersey**: Newark, Jersey City, Hoboken, Paterson, Edison
-- **Connecticut**: Stamford, Greenwich, Hartford, New Haven
-- **Pennsylvania**: Philadelphia, Pittsburgh, Allentown
-- **Florida**: Miami, Orlando, Tampa, Jacksonville
-
-Full list at https://greenpointms.com/sitemap.xml
+## Resources
+- [Blog](https://www.greenpointms.com/blog/): Articles on commercial cleaning, facility maintenance, and janitorial best practices.
 
 ## Contact
-
-- **Phone**: 347-332-9348
-- **Email**: info@greenpointms.com
-- **Schedule a free walkthrough**: https://greenpointms.com/free-facility-inspection
-- **Headquarters**: 1420 Outlook Ave, Apt 2, Bronx, NY 10465
-
-## Optional
-
-- [Sitemap](https://greenpointms.com/sitemap.xml): Complete list of indexed pages (1,118 URLs)
-- [Robots.txt](https://greenpointms.com/robots.txt): Crawler permissions
-- [LLM Full Content Index](https://greenpointms.com/llms-full.txt): Full text of key pages for AI assistants
+- Email: info@greenpointms.com
+- Headquarters: 1420 Outlook Ave, Bronx, NY 10465
