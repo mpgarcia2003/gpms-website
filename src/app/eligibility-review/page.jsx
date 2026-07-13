@@ -80,7 +80,12 @@ export default async function ReviewPage({ searchParams }) {
     <main style={{ minHeight: "100vh", paddingTop: 80 }}>
       <div style={wrap}>
         <a href="/eligibility-review" style={{ color: "var(--green)", fontWeight: 600, fontSize: 14 }}>&larr; All packets</a>
-        <h1 style={{ fontFamily: "var(--heading)", fontSize: 26, fontWeight: 800, margin: "10px 0 2px" }}>{oneLine([r.last_name + ",", r.first_name, r.middle_initial])}</h1>
+        <div style={{ display: "flex", alignItems: "center", gap: 16, marginTop: 10, marginBottom: 2 }}>
+          <h1 style={{ fontFamily: "var(--heading)", fontSize: 26, fontWeight: 800, margin: 0 }}>{oneLine([r.last_name + ",", r.first_name, r.middle_initial])}</h1>
+          <a href={`/api/eligibility/export?id=${id}`} target="_blank" style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "var(--green)", color: "#fff", padding: "8px 16px", borderRadius: 6, fontWeight: 700, fontSize: 12, textDecoration: "none", whiteSpace: "nowrap" }}>
+            ↓ Download PDF
+          </a>
+        </div>
         <p style={{ color: "var(--subtle-text)", fontSize: 13, marginBottom: 24 }}>Submitted {new Date(r.created_at).toLocaleString()} &middot; {r.status} &middot; filled in {r.submission_language === "es" ? "Spanish" : "English"}</p>
 
         <Group title="For TRS-52 (OASAS) & JC CBC 4 — fingerprinting consent">
