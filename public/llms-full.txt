@@ -1,6 +1,6 @@
 # GreenPoint Maintenance Services Corp — Full Content Index
 
-Last Updated: 2026-06-10
+Last Updated: 2026-07-17
 
 This file contains the full text of GreenPoint's most important pages, optimized for ingestion by AI assistants and language models. For a curated index of resources, see https://greenpointms.com/llms.txt.
 
@@ -83,7 +83,7 @@ Full list of 80+ cities at https://greenpointms.com/sitemap.xml.
 
 The following articles are published on the GreenPoint blog. Each represents original research and analysis on commercial cleaning standards, compliance, technology, and best practices.
 
-Total articles: 113
+Total articles: 144
 
 ## Category: Industry Data
 
@@ -289,6 +289,42 @@ Published: 2026-06-04
 URL: https://greenpointms.com/blog/ny-paid-sick-leave-impact-cleaning-contracts
 Summary: NYC and NYS paid sick leave rules change staffing risk in janitorial contracts. Learn what should be covered, what’s pass-through, and how to price fairly.
 
+### NYC Commercial Trash and Recycling Compliance: What Your Cleaning Vendor Should Be Doing
+
+Published: 2026-06-13
+URL: https://greenpointms.com/blog/exit-trash-recycling-compliance-nyc
+Summary: NYC waste rules can trigger fines and tenant complaints. Here’s what compliant commercial trash and recycling service looks like—and how to verify it.
+
+### Cleaning Vendor Insurance Certificates (COI): What Facility Managers Should Verify
+
+Published: 2026-06-14
+URL: https://greenpointms.com/blog/cleaning-vendor-insurance-certificates-coi
+Summary: Avoid claim denials and vendor headaches. A practical COI checklist for tri-state facility managers—limits, additional insured wording, and NYC-specific pitfalls.
+
+### NYC Local Law 97 and Cleaning in 2026: What Building Managers Should Change Now
+
+Published: 2026-07-16
+URL: https://greenpointms.com/blog/nyc-local-law-97-cleaning-implications-2026
+Summary: Local Law 97 is changing building operations. Here’s how cleaning specs, green products, and documentation can support compliance and tenant ESG expectations in 2026.
+
+### Hurricane Season Florida Facility Cleaning Prep: Pre‑Storm, Post‑Storm, and Insurance Documentation
+
+Published: 2026-07-16
+URL: https://greenpointms.com/blog/hurricane-season-florida-facility-cleaning-prep
+Summary: A facility-ready hurricane cleaning plan for Florida sites: pre-storm sanitation, post-storm moisture controls, mold risk reduction, and documentation for insurance.
+
+### NYC Local Law 97 and Cleaning in 2026: What Building Managers Should Change Now
+
+Published: 2026-07-16
+URL: https://greenpointms.com/blog/nyc-local-law-97-cleaning-implications-2026
+Summary: Local Law 97 is changing building operations. Here’s how cleaning specs, green products, and documentation can support compliance and tenant ESG expectations in 2026.
+
+### Hurricane Season Florida Facility Cleaning Prep: Pre‑Storm, Post‑Storm, and Insurance Documentation
+
+Published: 2026-07-16
+URL: https://greenpointms.com/blog/hurricane-season-florida-facility-cleaning-prep
+Summary: A facility-ready hurricane cleaning plan for Florida sites: pre-storm sanitation, post-storm moisture controls, mold risk reduction, and documentation for insurance.
+
 ## Category: Guides
 
 ### How to Choose a Commercial Cleaning Company: The Complete Guide
@@ -438,6 +474,18 @@ Summary: Pre-storm preparation, emergency response, and post-hurricane cleanup p
 Published: 2026-06-04
 URL: https://greenpointms.com/blog/spring-deep-cleaning-offices-checklist-tri-state
 Summary: A tri-state spring deep clean fixes winter soil, salt, and air quality issues. Use this 47-point checklist with timing guidance for NYC, NJ, CT offices.
+
+### Winter Salt Damage on Commercial Floors: Prevention and Recovery in the Tri‑State Area
+
+Published: 2026-07-16
+URL: https://greenpointms.com/blog/winter-salt-damage-commercial-floors-tri-state
+Summary: Salt and de-icer destroy VCT, stone, and concrete finishes. Learn tri-state prevention, matting plans, and restorative floor care with proof-driven vendor QA.
+
+### Winter Salt Damage on Commercial Floors: Prevention and Recovery in the Tri‑State Area
+
+Published: 2026-07-16
+URL: https://greenpointms.com/blog/winter-salt-damage-commercial-floors-tri-state
+Summary: Salt and de-icer destroy VCT, stone, and concrete finishes. Learn tri-state prevention, matting plans, and restorative floor care with proof-driven vendor QA.
 
 ## Category: Buying Guide
 
@@ -689,6 +737,12 @@ Published: 2026-06-07
 URL: https://greenpointms.com/blog/commercial-cleaning-orlando-tampa-florida
 Summary: Orlando/Tampa commercial cleaning guide: humidity, floor care, mold risk controls, hurricane readiness, and proof-based janitorial QA.
 
+### Commercial Cleaning in Jersey City and Hoboken: Waterfront Office Guide
+
+Published: 2026-07-15
+URL: https://greenpointms.com/blog/commercial-cleaning-jersey-city-hoboken-office
+Summary: A proof-driven guide to hiring commercial cleaning in Jersey City & Hoboken offices—pricing benchmarks, waterfront building needs, and QA you can verify.
+
 ## Category: Industry Verticals
 
 ### Gym and Fitness Center Cleaning in NYC: Member Safety, Mold, and Equipment Protocols
@@ -747,6 +801,30 @@ Published: 2026-05-28
 URL: https://greenpointms.com/blog/commercial-cleaning-cost-breakdown-nyc
 Summary: NYC janitorial pricing is more than labor. Here’s a transparent breakdown of cost drivers, compliance requirements, and how to compare fixed-price bids.
 
+### Private Equity Portfolio Cleaning Rollups: Multi-Site Vendor Consolidation Playbook
+
+Published: 2026-06-12
+URL: https://greenpointms.com/blog/private-equity-portfolio-cleaning-rollup
+Summary: A proof-driven playbook for consolidating cleaning across a PE portfolio—standardize SLAs, reduce variance, and verify performance with JaniTrack.
+
+### Real Estate Broker Tour-Ready Cleaning: Office and Retail Listing Prep Guide
+
+Published: 2026-06-12
+URL: https://greenpointms.com/blog/real-estate-broker-tour-ready-cleaning
+Summary: Get your space tour-ready fast with a scope that photographs well, reduces odor and dust, and prevents last-minute rework before broker opens.
+
+### Deferred Maintenance Recovery Cleaning: Getting a Neglected Facility Back to Standard
+
+Published: 2026-06-12
+URL: https://greenpointms.com/blog/deferred-maintenance-recovery-cleaning
+Summary: A phased recovery plan for neglected facilities: assess, reset, remediate high-risk areas, and transition to a stable routine cleaning program.
+
+### Commercial Cleaning SLA: Service Level Agreement Template and Key Terms
+
+Published: 2026-06-12
+URL: https://greenpointms.com/blog/commercial-cleaning-sla-service-level-agreement
+Summary: Define measurable cleaning outcomes with SLAs, KPIs, inspections, and credits. Use this template to reduce scope disputes and improve accountability.
+
 ## Category: Operations
 
 ### Restroom Paper and Supply Management: How to Stop Running Out (and Overspending) on Consumables
@@ -798,6 +876,120 @@ Summary: PT clinics have shared equipment, treatment mats, and fast turnover. Us
 Published: 2026-06-08
 URL: https://greenpointms.com/blog/urgent-care-clinic-cleaning-protocols
 Summary: Urgent care clinics need fast room turnover and defensible disinfection. Use this tri-state playbook for cadences, checklists, and QA proof.
+
+### Rehab and Detox Facility Cleaning in NYC & Tri-State: Behavioral Health Janitorial Standards
+
+Published: 2026-06-11
+URL: https://greenpointms.com/blog/rehab-detox-facility-cleaning
+Summary: A proof-driven cleaning plan for rehab/detox facilities: contraband-aware product control, OSHA bloodborne safety, and documented disinfection you can audit.
+
+### Psychiatric & Mental Health Facility Cleaning in NYC & Tri-State: Ligature-Safe Janitorial Practices
+
+Published: 2026-06-11
+URL: https://greenpointms.com/blog/psychiatric-mental-health-facility-cleaning
+Summary: A safety-first cleaning program for psych units and mental health facilities: ligature-aware workflows, restricted chemicals, and verification you can trust.
+
+### Fire Station Cleaning in NYC & Tri-State: 24/7 Emergency Services Janitorial Guide
+
+Published: 2026-06-11
+URL: https://greenpointms.com/blog/fire-station-emergency-services-cleaning
+Summary: A practical cleaning program for fire stations and EMS facilities: apparatus bay degreasing, decon area protocols, and schedules built around shifts.
+
+### Religious Institution & Attached School Cleaning in NYC & Tri-State: Sanctuary + Classroom Protocols
+
+Published: 2026-06-11
+URL: https://greenpointms.com/blog/religious-institution-school-combined-cleaning
+Summary: A practical janitorial plan for churches, synagogues, mosques, and attached schools—service schedules around services and classes, plus proof-driven QA.
+
+### Rooftop Venue Cleaning in NYC: Outdoor Event Janitorial Guide for Turnovers & Weather
+
+Published: 2026-06-11
+URL: https://greenpointms.com/blog/outdoor-event-venue-rooftop-cleaning
+Summary: A rooftop/outdoor venue cleaning plan for NYC hospitality: between-event turnovers, drainage care, slip prevention, and documented QA for your brand.
+
+## Category: Specialty Services
+
+### ATP Bioluminescence Testing: 10 Things Facility Managers Need to Know
+
+Published: 2026-06-12
+URL: https://greenpointms.com/blog/atp-testing-ten-things-to-know
+Summary: ATP testing turns cleaning into measurable hygiene. Learn RLU basics, sampling strategy, costs, thresholds, and how to use results to drive QA.
+
+### Scheduled Disinfection vs Routine Cleaning: What’s the Difference—and What Does Your Facility Need?
+
+Published: 2026-06-13
+URL: https://greenpointms.com/blog/scheduled-disinfection-vs-cleaning-difference
+Summary: Routine cleaning removes soil; scheduled disinfection targets pathogens. Learn when to use each, typical cadences, and how GreenPoint documents results.
+
+### Mold Remediation vs Cleaning: When to Call Each (and Why It Matters for Liability)
+
+Published: 2026-06-13
+URL: https://greenpointms.com/blog/mold-remediation-vs-cleaning-when-to-call-each
+Summary: Not all ‘mold cleaning’ is safe or compliant. Learn when routine cleaning is appropriate, when remediation is required, and how to document decisions.
+
+### Elevator and Escalator Cleaning Protocols: High-Touch Hygiene for NYC Buildings
+
+Published: 2026-06-13
+URL: https://greenpointms.com/blog/elevator-escalator-cleaning-protocols
+Summary: Elevators and escalators are shared touchpoint hotspots. Use these cleaning and disinfection protocols for buttons, rails, cab interiors, and escalators.
+
+## Category: Health & Safety
+
+### Norovirus Outbreak Response: Emergency Office Cleaning Protocol (NY, NJ, CT)
+
+Published: 2026-06-13
+URL: https://greenpointms.com/blog/norovirus-outbreak-response-office-cleaning
+Summary: Norovirus spreads fast in offices. Use this step-by-step response plan—products, dwell times, PPE, and documentation—built for tri-state facilities.
+
+## Category: Industry Vertical
+
+### Law Firm Cleaning: Confidentiality, Document Security, and After-Hours Protocols
+
+Published: 2026-07-15
+URL: https://greenpointms.com/blog/law-firm-cleaning-confidentiality-nyc
+Summary: Law firm cleaning requires more than “quiet hours”—this guide covers confidentiality controls, chain-of-custody habits, and verifiable after-hours protocols.
+
+### Biotech Lab Cleaning: cGMP, ISO Classes, and What Facility Managers Should Know
+
+Published: 2026-07-15
+URL: https://greenpointms.com/blog/biotech-lab-cleaning-cgmp-iso-classes
+Summary: Biotech lab cleaning demands controlled procedures—learn cGMP expectations, ISO cleanroom concepts, documentation, and how to verify outcomes without disruption.
+
+### Dental Practice Cleaning: OSHA Compliance, Operatory Turnover, and Infection Control
+
+Published: 2026-07-15
+URL: https://greenpointms.com/blog/dental-practice-cleaning-osha-infection-control
+Summary: Dental office cleaning must support fast operatory turnover and OSHA bloodborne-pathogen safety—here are the protocols, checklists, and verification methods to use.
+
+### Fitness Center and Gym Cleaning: Antimicrobial Protocols and Locker Room Standards
+
+Published: 2026-07-15
+URL: https://greenpointms.com/blog/fitness-center-gym-cleaning-antimicrobial
+Summary: Gyms need high-touch disinfection, odor control, and locker room floor safety—this guide covers protocols, frequencies, and verification that members can trust.
+
+### Ghost Kitchen and Cloud Kitchen Cleaning in NYC: Health Code, Multi‑Tenant Protocols, and Rapid Turnover
+
+Published: 2026-07-16
+URL: https://greenpointms.com/blog/ghost-kitchen-cloud-kitchen-cleaning-nyc
+Summary: A proof-driven ghost kitchen cleaning plan for NYC: DOHMH compliance, allergen controls, rapid resets, and JaniTrack-verified sanitation for operators and landlords.
+
+### Fulfillment Warehouse Cleaning: OSHA, Forklift Safety Zones, and 3PL Realities
+
+Published: 2026-07-16
+URL: https://greenpointms.com/blog/fulfillment-warehouse-cleaning-osha-forklift-zones
+Summary: A facility-manager guide to cleaning fulfillment centers: OSHA-safe workflows, forklift zone controls, dust management, and proof-driven QA with JaniTrack verification.
+
+### Ghost Kitchen and Cloud Kitchen Cleaning in NYC: Health Code, Multi‑Tenant Protocols, and Rapid Turnover
+
+Published: 2026-07-16
+URL: https://greenpointms.com/blog/ghost-kitchen-cloud-kitchen-cleaning-nyc
+Summary: A proof-driven ghost kitchen cleaning plan for NYC: DOHMH compliance, allergen controls, rapid resets, and JaniTrack-verified sanitation for operators and landlords.
+
+### Fulfillment Warehouse Cleaning: OSHA, Forklift Safety Zones, and 3PL Realities
+
+Published: 2026-07-16
+URL: https://greenpointms.com/blog/fulfillment-warehouse-cleaning-osha-forklift-zones
+Summary: A facility-manager guide to cleaning fulfillment centers: OSHA-safe workflows, forklift zone controls, dust management, and proof-driven QA with JaniTrack verification.
 
 
 ---
@@ -868,4 +1060,4 @@ This file is regenerated whenever blog content changes. For the most up-to-date 
 
 For the curated index of GreenPoint's most important pages, see https://greenpointms.com/llms.txt.
 
-Last generated: 2026-06-10T13:07:18.296Z
+Last generated: 2026-07-17T12:46:02.727Z
