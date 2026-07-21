@@ -285,6 +285,57 @@ const BLOG_INDEX = [
   { slug: "commercial-cleaning-bushwick-bed-stuy-brooklyn", image: "/blog/commercial-cleaning-bushwick-bed-stuy-brooklyn.jpg", title: "Commercial Cleaning in Bushwick and Bed-Stuy: Creative Studios, Coworking, and Emerging Offices", excerpt: "Bushwick and Bed-Stuy cleaning guide for studios, coworking, and offices—scope, floor care, compliance, and proof with JaniTrack by GreenPoint.", category: "Local SEO", date: "2026-07-20", readTime: "10 min" },
   { slug: "commercial-cleaning-bay-ridge-bensonhurst-sunset-park", image: "/blog/commercial-cleaning-bay-ridge-bensonhurst-sunset-park.jpg", title: "Commercial Cleaning in Bay Ridge, Bensonhurst, and Sunset Park: South Brooklyn Business Guide", excerpt: "South Brooklyn cleaning guide for offices, retail, and medical spaces—scope, floor care, compliance, and JaniTrack verification from GreenPoint.", category: "Local SEO", date: "2026-07-20", readTime: "10 min" },
   { slug: "commercial-cleaning-yonkers-new-rochelle-mount-vernon", image: "/blog/commercial-cleaning-yonkers-new-rochelle-mount-vernon.jpg", title: "Commercial Cleaning in Yonkers, New Rochelle, and Mount Vernon: Lower Westchester Buyer Guide", excerpt: "Lower Westchester commercial cleaning guide—Yonkers, New Rochelle, Mount Vernon. Scope, costs, compliance, and JaniTrack verification from GreenPoint.", category: "Local SEO", date: "2026-07-20", readTime: "11 min" },
+
+
+  {
+    slug: "commercial-cleaning-greenwich-norwalk-connecticut",
+    image: "/blog/commercial-cleaning-greenwich-norwalk-connecticut.jpg",
+    title: "Commercial Cleaning in Greenwich and Norwalk CT: Financial Services and Corporate Campuses",
+    excerpt: "Proof-driven commercial cleaning for Greenwich and Norwalk offices\u2014JaniTrack photo verification, fixed pricing, and measurable results for corporate teams.",
+    category: "Local SEO",
+    date: "2026-07-21",
+    readTime: "10 min"
+  },
+
+  {
+    slug: "commercial-cleaning-hoboken-weehawken-waterfront",
+    image: "/blog/commercial-cleaning-hoboken-weehawken-waterfront.jpg",
+    title: "Commercial Cleaning in Hoboken and Weehawken: Waterfront Corporate and Startup Offices",
+    excerpt: "Hoboken/Weehawken office cleaning built for waterfront traffic\u2014verified service with JaniTrack, fixed pricing, and consistent client-facing results.",
+    category: "Local SEO",
+    date: "2026-07-21",
+    readTime: "9 min"
+  },
+
+  {
+    slug: "commercial-cleaning-edison-princeton-new-jersey",
+    image: "/blog/commercial-cleaning-edison-princeton-new-jersey.jpg",
+    title: "Commercial Cleaning in Edison and Princeton NJ: Corporate Parks and Life Sciences Corridor",
+    excerpt: "Commercial cleaning for Edison and Princeton\u2014built for corporate parks and life sciences teams with verified service, fixed pricing, and audit-ready QA.",
+    category: "Local SEO",
+    date: "2026-07-21",
+    readTime: "10 min"
+  },
+
+  {
+    slug: "coworking-space-cleaning-nyc-multi-tenant",
+    image: "/blog/coworking-space-cleaning-nyc-multi-tenant.jpg",
+    title: "Coworking Space Cleaning in NYC: Multi-Tenant Traffic and Shared Amenity Protocols",
+    excerpt: "NYC coworking cleaning protocols for multi-tenant traffic\u2014restrooms, phone booths, kitchens, and high-touch zones verified with JaniTrack.",
+    category: "Industry Vertical",
+    date: "2026-07-21",
+    readTime: "11 min"
+  },
+
+  {
+    slug: "medical-imaging-radiology-suite-cleaning",
+    image: "/blog/medical-imaging-radiology-suite-cleaning.jpg",
+    title: "Medical Imaging and Radiology Suite Cleaning: MRI, CT, and X-Ray Room Protocols",
+    excerpt: "Radiology cleaning protocols for MRI/CT/X-ray suites\u2014surface compatibility, infection control, and documentation with optional ATP testing and verification.",
+    category: "Industry Vertical",
+    date: "2026-07-21",
+    readTime: "11 min"
+  }
 ];
 
 export const metadata = {
