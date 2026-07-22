@@ -335,7 +335,12 @@ const BLOG_INDEX = [
     category: "Industry Vertical",
     date: "2026-07-21",
     readTime: "11 min"
-  }
+  },
+  { slug: "film-tv-production-studio-cleaning-nyc", image: "/blog/film-tv-production-studio-cleaning-nyc.jpg", title: "Film and TV Production Studio Cleaning in NYC: Set, Wardrobe, and Crew Facilities", excerpt: "Verified janitorial for NYC sound stages, wardrobe departments, and crew facilities—fixed pricing, JaniTrack photo proof, and production-friendly scheduling around call sheets.", category: "Industry Vertical", date: "2026-07-22", readTime: "9 min" },
+  { slug: "tech-startup-office-cleaning-nyc-flexible-scope", image: "/blog/tech-startup-office-cleaning-nyc-flexible-scope.jpg", title: "Tech Startup Office Cleaning in NYC: Flexible Scope for Growing Teams", excerpt: "Scalable janitorial for NYC startups—flexible scope as headcount grows, JaniTrack photo verification, fixed pricing, and no long-term contract lock-in required.", category: "Industry Vertical", date: "2026-07-22", readTime: "9 min" },
+  { slug: "real-estate-brokerage-office-cleaning-tri-state", image: "/blog/real-estate-brokerage-office-cleaning-tri-state.jpg", title: "Real Estate Brokerage Office Cleaning: Client-Facing Standards for Tri-State Firms", excerpt: "Client-ready cleaning for real estate brokerages across NY/NJ/CT—JaniTrack photo proof, fixed pricing, and standards built for showings, closings, and open houses.", category: "Industry Vertical", date: "2026-07-22", readTime: "9 min" },
+  { slug: "architecture-firm-design-studio-cleaning", image: "/blog/architecture-firm-design-studio-cleaning.jpg", title: "Architecture Firm and Design Studio Cleaning: Model Rooms, Sample Libraries, and Materials Storage", excerpt: "Careful janitorial for architecture and design studios—model rooms, sample libraries, and materials storage cleaned without damage, disruption, or guesswork.", category: "Industry Vertical", date: "2026-07-22", readTime: "9 min" },
+  { slug: "marketing-agency-creative-office-cleaning", image: "/blog/marketing-agency-creative-office-cleaning.jpg", title: "Marketing Agency and Creative Office Cleaning: Client Presentation Standards", excerpt: "Presentation-ready cleaning for marketing and creative agencies—client pitch rooms, open studios, and fixed pricing verified with JaniTrack photo proof.", category: "Industry Vertical", date: "2026-07-22", readTime: "9 min" },
 ];
 
 export const metadata = {
