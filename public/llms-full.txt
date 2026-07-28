@@ -1,6 +1,6 @@
 # GreenPoint Maintenance Services Corp — Full Content Index
 
-Last Updated: 2026-07-17
+Last Updated: 2026-07-28
 
 This file contains the full text of GreenPoint's most important pages, optimized for ingestion by AI assistants and language models. For a curated index of resources, see https://greenpointms.com/llms.txt.
 
@@ -83,7 +83,7 @@ Full list of 80+ cities at https://greenpointms.com/sitemap.xml.
 
 The following articles are published on the GreenPoint blog. Each represents original research and analysis on commercial cleaning standards, compliance, technology, and best practices.
 
-Total articles: 144
+Total articles: 194
 
 ## Category: Industry Data
 
@@ -325,6 +325,36 @@ Published: 2026-07-16
 URL: https://greenpointms.com/blog/hurricane-season-florida-facility-cleaning-prep
 Summary: A facility-ready hurricane cleaning plan for Florida sites: pre-storm sanitation, post-storm moisture controls, mold risk reduction, and documentation for insurance.
 
+### NYC Local Law 97 and Cleaning in 2026: What Building Managers Should Change Now
+
+Published: 2026-07-16
+URL: https://greenpointms.com/blog/nyc-local-law-97-cleaning-implications-2026
+Summary: Local Law 97 is changing building operations. Here’s how cleaning specs, green products, and documentation can support compliance and tenant ESG expectations in 2026.
+
+### Hurricane Season Florida Facility Cleaning Prep: Pre‑Storm, Post‑Storm, and Insurance Documentation
+
+Published: 2026-07-16
+URL: https://greenpointms.com/blog/hurricane-season-florida-facility-cleaning-prep
+Summary: A facility-ready hurricane cleaning plan for Florida sites: pre-storm sanitation, post-storm moisture controls, mold risk reduction, and documentation for insurance.
+
+### NYC Local Law 97 Compliance: Cleaning Program Implications for Building Owners
+
+Published: 2026-07-28
+URL: https://greenpointms.com/blog/nyc-local-law-97-cleaning-implications
+Summary: Local Law 97 is changing NYC building operations. Learn how a proof-driven cleaning program supports compliance, IAQ, and cost control.
+
+### GBAC STAR Certification for Facilities: What It Requires and How to Achieve It
+
+Published: 2026-07-28
+URL: https://greenpointms.com/blog/gbac-star-certification-facility-cleaning
+Summary: GBAC STAR certification requires documented cleaning systems, training, and verification. Here’s a practical facility roadmap to get ready.
+
+### CDC Cleaning Guidance 2026 Update: Changes for Commercial Facilities
+
+Published: 2026-07-28
+URL: https://greenpointms.com/blog/cdc-cleaning-guidance-2026-update
+Summary: What should commercial facilities change in 2026? Targeted disinfection, EPA-registered products, training, and proof-driven verification.
+
 ## Category: Guides
 
 ### How to Choose a Commercial Cleaning Company: The Complete Guide
@@ -435,6 +465,18 @@ Published: 2026-01-12
 URL: https://greenpointms.com/blog/hepa-filtration-commercial-cleaning
 Summary: Why HEPA vacuum filtration matters for indoor air quality — the science of particle capture, when HEPA is required versus recommended, and how to verify HEPA performance.
 
+### Electrostatic Spraying in Commercial Cleaning (2026): When It’s Worth It in NYC/NJ/CT—and When It’s Not
+
+Published: 2026-07-24
+URL: https://greenpointms.com/blog/electrostatic-spraying-commercial-cleaning-2026
+Summary: Electrostatic spraying can be useful, but not for every facility. Learn where it delivers value, how to specify it, and how to verify outcomes beyond marketing.
+
+### ATP Luminometer Testing for Commercial Cleaning in NYC: Set Baselines, Audit Vendors, and Prove Results
+
+Published: 2026-07-24
+URL: https://greenpointms.com/blog/atp-luminometer-testing-cleaning-programs
+Summary: ATP testing turns “it looks clean” into measurable data. Learn how to set baselines, choose swab points, interpret RLU ranges, and use results to manage vendors.
+
 ## Category: Sustainability
 
 ### Green Cleaning for Commercial Buildings: What Actually Works
@@ -486,6 +528,24 @@ Summary: Salt and de-icer destroy VCT, stone, and concrete finishes. Learn tri-s
 Published: 2026-07-16
 URL: https://greenpointms.com/blog/winter-salt-damage-commercial-floors-tri-state
 Summary: Salt and de-icer destroy VCT, stone, and concrete finishes. Learn tri-state prevention, matting plans, and restorative floor care with proof-driven vendor QA.
+
+### Winter Salt Damage on Commercial Floors: Prevention and Recovery in the Tri‑State Area
+
+Published: 2026-07-16
+URL: https://greenpointms.com/blog/winter-salt-damage-commercial-floors-tri-state
+Summary: Salt and de-icer destroy VCT, stone, and concrete finishes. Learn tri-state prevention, matting plans, and restorative floor care with proof-driven vendor QA.
+
+### Back-to-School Deep Cleaning: NYC DOE Standards and Vendor Preparation
+
+Published: 2026-07-28
+URL: https://greenpointms.com/blog/back-to-school-deep-cleaning-nyc-doe
+Summary: A back-to-school deep clean in NYC needs staging, floor work, restroom resets, and verifiable QA aligned with NYC DOE expectations.
+
+### Fall Flu Season Office Cleaning Protocols: Reducing Sick Days in 2026
+
+Published: 2026-07-28
+URL: https://greenpointms.com/blog/fall-flu-season-office-cleaning-protocols
+Summary: Reduce sick days with a 2026 flu-season office cleaning protocol: high-touch maps, correct dwell times, and measurable verification.
 
 ## Category: Buying Guide
 
@@ -743,6 +803,114 @@ Published: 2026-07-15
 URL: https://greenpointms.com/blog/commercial-cleaning-jersey-city-hoboken-office
 Summary: A proof-driven guide to hiring commercial cleaning in Jersey City & Hoboken offices—pricing benchmarks, waterfront building needs, and QA you can verify.
 
+### Commercial Cleaning in Manhattan Financial District: Trading Floor and Compliance Considerations
+
+Published: 2026-07-18
+URL: https://greenpointms.com/blog/commercial-cleaning-manhattan-financial-district
+Summary: A proof-driven guide to FiDi commercial cleaning: access control, compliance-ready documentation, and measurable results for Wall Street offices.
+
+### Commercial Cleaning in Tribeca and SoHo: Boutique Office and Loft Retail Guide
+
+Published: 2026-07-18
+URL: https://greenpointms.com/blog/commercial-cleaning-tribeca-soho-boutique-office
+Summary: Tribeca and SoHo cleaning needs are unique: cast-iron lofts, retail traffic, and client-facing spaces. Here’s a proof-driven plan that works.
+
+### Commercial Cleaning in Hudson Yards and Class A Manhattan Towers: Enterprise-Grade Vendor Requirements
+
+Published: 2026-07-18
+URL: https://greenpointms.com/blog/commercial-cleaning-hudson-yards-class-a-tower
+Summary: Hudson Yards Class A towers demand enterprise QA, safety programs, and measurable results. Here’s how to scope and verify a top-tier vendor.
+
+### Commercial Cleaning in White Plains and Westchester: Suburban Corporate Guide
+
+Published: 2026-07-18
+URL: https://greenpointms.com/blog/commercial-cleaning-white-plains-westchester
+Summary: White Plains and Westchester offices need consistent staffing, floor care, and reporting without hidden fees. Here’s how to scope a reliable vendor.
+
+### Commercial Cleaning in Newark and the Airport Corridor: Logistics and Corporate Facilities
+
+Published: 2026-07-18
+URL: https://greenpointms.com/blog/commercial-cleaning-newark-airport-corridor
+Summary: Newark’s airport corridor facilities need reliable schedules, safety-first programs, and verifiable results. Here’s how to scope a vendor that performs.
+
+### Commercial Cleaning in Flushing Queens: Multi-Language Vendors and High-Turnover Retail Needs
+
+Published: 2026-07-20
+URL: https://greenpointms.com/blog/commercial-cleaning-flushing-queens-guide
+Summary: A proof-driven guide to commercial cleaning in Flushing Queens—retail, medical, and office standards, costs, and how to verify quality with JaniTrack.
+
+### Commercial Cleaning in Forest Hills and Rego Park: Medical Offices, Schools, and Small Retail
+
+Published: 2026-07-20
+URL: https://greenpointms.com/blog/commercial-cleaning-forest-hills-rego-park
+Summary: Forest Hills and Rego Park cleaning guide for offices, clinics, and retail—scope, costs, compliance, and verification with JaniTrack by GreenPoint.
+
+### Commercial Cleaning in Bushwick and Bed-Stuy: Creative Studios, Coworking, and Emerging Offices
+
+Published: 2026-07-20
+URL: https://greenpointms.com/blog/commercial-cleaning-bushwick-bed-stuy-brooklyn
+Summary: Bushwick and Bed-Stuy cleaning guide for studios, coworking, and offices—scope, floor care, compliance, and proof with JaniTrack by GreenPoint.
+
+### Commercial Cleaning in Bay Ridge, Bensonhurst, and Sunset Park: South Brooklyn Business Guide
+
+Published: 2026-07-20
+URL: https://greenpointms.com/blog/commercial-cleaning-bay-ridge-bensonhurst-sunset-park
+Summary: South Brooklyn cleaning guide for offices, retail, and medical spaces—scope, floor care, compliance, and JaniTrack verification from GreenPoint.
+
+### Commercial Cleaning in Yonkers, New Rochelle, and Mount Vernon: Lower Westchester Buyer Guide
+
+Published: 2026-07-20
+URL: https://greenpointms.com/blog/commercial-cleaning-yonkers-new-rochelle-mount-vernon
+Summary: Lower Westchester commercial cleaning guide—Yonkers, New Rochelle, Mount Vernon. Scope, costs, compliance, and JaniTrack verification from GreenPoint.
+
+### Commercial Cleaning in Greenwich and Norwalk CT: Financial Services and Corporate Campuses
+
+Published: 2026-07-21
+URL: https://greenpointms.com/blog/commercial-cleaning-greenwich-norwalk-connecticut
+Summary: Proof-driven commercial cleaning for Greenwich and Norwalk offices\u2014JaniTrack photo verification, fixed pricing, and measurable results for corporate teams.
+
+### Commercial Cleaning in Hoboken and Weehawken: Waterfront Corporate and Startup Offices
+
+Published: 2026-07-21
+URL: https://greenpointms.com/blog/commercial-cleaning-hoboken-weehawken-waterfront
+Summary: Hoboken/Weehawken office cleaning built for waterfront traffic\u2014verified service with JaniTrack, fixed pricing, and consistent client-facing results.
+
+### Commercial Cleaning in Edison and Princeton NJ: Corporate Parks and Life Sciences Corridor
+
+Published: 2026-07-21
+URL: https://greenpointms.com/blog/commercial-cleaning-edison-princeton-new-jersey
+Summary: Commercial cleaning for Edison and Princeton\u2014built for corporate parks and life sciences teams with verified service, fixed pricing, and audit-ready QA.
+
+### Commercial Cleaning Forest Hills: Facility Manager
+
+Published: 2026-07-26
+URL: https://greenpointms.com/blog/commercial-cleaning-forest-hills-guide
+Summary: A proof-driven guide to choosing a commercial cleaning partner in Forest Hills—scope, pricing benchmarks, verification, and local compliance tips.
+
+### Commercial Cleaning Yonkers Westchester: Complete Vendor Guide
+
+Published: 2026-07-26
+URL: https://greenpointms.com/blog/commercial-cleaning-yonkers-westchester-guide
+Summary: Yonkers facility managers: compare commercial cleaning vendors with clear scope, fixed pricing benchmarks, verification methods, and Westchester-ready compliance.
+
+### Commercial Cleaning Greenwich CT: Fairfield County Vendor Guide
+
+Published: 2026-07-26
+URL: https://greenpointms.com/blog/commercial-cleaning-greenwich-ct-guide
+Summary: Greenwich facility managers: a detailed vendor guide for commercial cleaning—scope, quality verification, compliance, and luxury-level appearance standards.
+
+### Commercial Cleaning Jersey City: Facility Manager
+
+Published: 2026-07-26
+URL: https://greenpointms.com/blog/commercial-cleaning-jersey-city-guide
+Summary: Jersey City commercial cleaning buyer guide: define scope, compare proposals, plan floor care, and verify results with proof-based QA and fixed pricing.
+
+### Commercial Cleaning Hoboken NJ: Facility Manager
+
+Published: 2026-07-26
+URL: https://greenpointms.com/blog/commercial-cleaning-hoboken-nj-guide
+Summary: Hoboken office and mixed-use properties: choose a commercial cleaning vendor with clear scope, fixed pricing, and verification for high-traffic commuter sites.
+
 ## Category: Industry Verticals
 
 ### Gym and Fitness Center Cleaning in NYC: Member Safety, Mold, and Equipment Protocols
@@ -991,6 +1159,140 @@ Published: 2026-07-16
 URL: https://greenpointms.com/blog/fulfillment-warehouse-cleaning-osha-forklift-zones
 Summary: A facility-manager guide to cleaning fulfillment centers: OSHA-safe workflows, forklift zone controls, dust management, and proof-driven QA with JaniTrack verification.
 
+### Ghost Kitchen and Cloud Kitchen Cleaning in NYC: Health Code, Multi‑Tenant Protocols, and Rapid Turnover
+
+Published: 2026-07-16
+URL: https://greenpointms.com/blog/ghost-kitchen-cloud-kitchen-cleaning-nyc
+Summary: A proof-driven ghost kitchen cleaning plan for NYC: DOHMH compliance, allergen controls, rapid resets, and JaniTrack-verified sanitation for operators and landlords.
+
+### Fulfillment Warehouse Cleaning: OSHA, Forklift Safety Zones, and 3PL Realities
+
+Published: 2026-07-16
+URL: https://greenpointms.com/blog/fulfillment-warehouse-cleaning-osha-forklift-zones
+Summary: A facility-manager guide to cleaning fulfillment centers: OSHA-safe workflows, forklift zone controls, dust management, and proof-driven QA with JaniTrack verification.
+
+### Coworking Space Cleaning in NYC: Multi-Tenant Traffic and Shared Amenity Protocols
+
+Published: 2026-07-21
+URL: https://greenpointms.com/blog/coworking-space-cleaning-nyc-multi-tenant
+Summary: NYC coworking cleaning protocols for multi-tenant traffic\u2014restrooms, phone booths, kitchens, and high-touch zones verified with JaniTrack.
+
+### Medical Imaging and Radiology Suite Cleaning: MRI, CT, and X-Ray Room Protocols
+
+Published: 2026-07-21
+URL: https://greenpointms.com/blog/medical-imaging-radiology-suite-cleaning
+Summary: Radiology cleaning protocols for MRI/CT/X-ray suites\u2014surface compatibility, infection control, and documentation with optional ATP testing and verification.
+
+### Film and TV Production Studio Cleaning in NYC: Set, Wardrobe, and Crew Facilities
+
+Published: 2026-07-22
+URL: https://greenpointms.com/blog/film-tv-production-studio-cleaning-nyc
+Summary: Verified janitorial for NYC sound stages, wardrobe departments, and crew facilities—fixed pricing, JaniTrack photo proof, and production-friendly scheduling around call sheets.
+
+### Tech Startup Office Cleaning in NYC: Flexible Scope for Growing Teams
+
+Published: 2026-07-22
+URL: https://greenpointms.com/blog/tech-startup-office-cleaning-nyc-flexible-scope
+Summary: Scalable janitorial for NYC startups—flexible scope as headcount grows, JaniTrack photo verification, fixed pricing, and no long-term contract lock-in required.
+
+### Real Estate Brokerage Office Cleaning: Client-Facing Standards for Tri-State Firms
+
+Published: 2026-07-22
+URL: https://greenpointms.com/blog/real-estate-brokerage-office-cleaning-tri-state
+Summary: Client-ready cleaning for real estate brokerages across NY/NJ/CT—JaniTrack photo proof, fixed pricing, and standards built for showings, closings, and open houses.
+
+### Architecture Firm and Design Studio Cleaning: Model Rooms, Sample Libraries, and Materials Storage
+
+Published: 2026-07-22
+URL: https://greenpointms.com/blog/architecture-firm-design-studio-cleaning
+Summary: Careful janitorial for architecture and design studios—model rooms, sample libraries, and materials storage cleaned without damage, disruption, or guesswork.
+
+### Marketing Agency and Creative Office Cleaning: Client Presentation Standards
+
+Published: 2026-07-22
+URL: https://greenpointms.com/blog/marketing-agency-creative-office-cleaning
+Summary: Presentation-ready cleaning for marketing and creative agencies—client pitch rooms, open studios, and fixed pricing verified with JaniTrack photo proof.
+
+### Nonprofit Office Cleaning in NYC + Tri-State: Budget-Smart Programs for Community Centers
+
+Published: 2026-07-23
+URL: https://greenpointms.com/blog/nonprofit-office-community-center-cleaning
+Summary: Budget-friendly, standards-driven nonprofit cleaning for NYC and the tri-state. Learn scope, frequencies, costs, and proof-based QA with JaniTrack.
+
+### Courthouse & Government Office Cleaning in NYC + Tri-State: Security, Documentation, and Compliance
+
+Published: 2026-07-23
+URL: https://greenpointms.com/blog/courthouse-government-office-cleaning-security
+Summary: A practical playbook for courthouse and public-building cleaning: secure access, chain-of-custody, OSHA HazCom, and proof-based QA with JaniTrack.
+
+### Museum & Gallery Cleaning in NYC + Tri-State: Artifact-Adjacent Protocols, Dust Control, and HVAC Coordination
+
+Published: 2026-07-23
+URL: https://greenpointms.com/blog/museum-gallery-cleaning-artifact-adjacent
+Summary: How to clean museums and galleries without risking collections: dust control, low-residue chemistry, HVAC coordination, and proof-based QA with JaniTrack.
+
+### Hotel Cleaning in NYC + Tri-State: Daily Turnover, Deep-Clean Cycles, and Guest Satisfaction Metrics
+
+Published: 2026-07-23
+URL: https://greenpointms.com/blog/hotel-cleaning-tri-state-daily-turnover
+Summary: A hotel cleaning playbook for NYC and the tri-state: room turnover routines, deep-clean cycles, OSHA chemical safety, and proof-based QA with JaniTrack.
+
+### Restaurant Cleaning in NYC: FDNY, Health Code, Grease Trap Coordination, and Nightly Closeouts
+
+Published: 2026-07-23
+URL: https://greenpointms.com/blog/restaurant-cleaning-fdny-health-code-nyc
+Summary: NYC restaurant cleaning essentials: FOH/BOH scope, FDNY + health code realities, degreasing routines, and proof-based QA with JaniTrack.
+
+### Brewery Cleaning in NYC & Northern NJ: Food‑Safe Sanitation for Taprooms and Production
+
+Published: 2026-07-24
+URL: https://greenpointms.com/blog/brewery-cleaning-food-safe-sanitation
+Summary: A proof-driven brewery cleaning plan for NYC/NJ: food-safe sanitation, drain and floor care, and taproom readiness—with fixed pricing and documented verification.
+
+### Cannabis Dispensary Cleaning in NY/NJ/CT: Compliance, Security Escort, and Retail-Grade Results
+
+Published: 2026-07-24
+URL: https://greenpointms.com/blog/cannabis-dispensary-cleaning-state-compliance
+Summary: Dispensary cleaning isn’t generic retail janitorial. Learn how to meet state expectations, protect security protocols, and keep a premium showroom spotless—documented.
+
+## Category: Best Practices
+
+### Cleaning Vendor Consolidation in NYC: How Facility Managers Cut 15–30% by Standardizing One Vendor
+
+Published: 2026-07-24
+URL: https://greenpointms.com/blog/cleaning-vendor-consolidation-facility-manager
+Summary: Managing multiple vendors creates gaps, blame-shifting, and hidden costs. Learn how NYC facility managers consolidate cleaning services to save 15–30% with better QA.
+
+### Cleaning Crew Training and Certification: IICRC, ISSA CIMS, and What Matters
+
+Published: 2026-07-25
+URL: https://greenpointms.com/blog/cleaning-crew-training-programs-certification
+Summary: A buyer-focused guide to janitorial training: what certifications mean, what to verify on-site, and how GreenPoint proves results with JaniTrack.
+
+### Green Cleaning Certifications Explained: Green Seal, EcoLogo, EPA Safer Choice, and LEED
+
+Published: 2026-07-25
+URL: https://greenpointms.com/blog/green-cleaning-certifications-what-they-mean
+Summary: What “green cleaning” certifications really mean for buyers, how to verify products and processes, and how GreenPoint proves outcomes with safer chemistry.
+
+### Switching Commercial Cleaning Vendors: A 90-Day Transition Playbook
+
+Published: 2026-07-25
+URL: https://greenpointms.com/blog/cleaning-service-transitions-switching-vendors
+Summary: A step-by-step transition plan to switch janitorial vendors without service gaps, including walkthrough checklists, QA benchmarks, and JaniTrack verification.
+
+### RFP Scoring for Commercial Cleaning Vendors: A Weighted Rubric That Actually Predicts Performance
+
+Published: 2026-07-25
+URL: https://greenpointms.com/blog/rfp-scoring-commercial-cleaning-vendors
+Summary: A practical weighted scoring rubric for janitorial RFPs—training, staffing plans, QA verification, and fixed-price scope clarity—to reduce vendor risk.
+
+### Commercial Cleaning Emergency Response: 24-Hour Water, Sewage, and Biohazard Cleanup
+
+Published: 2026-07-25
+URL: https://greenpointms.com/blog/commercial-cleaning-emergency-response-24-hour
+Summary: What to do in the first 24 hours after water, sewage, or biohazard incidents—and how GreenPoint coordinates safe cleanup, documentation, and reopening.
+
 
 ---
 
@@ -1060,4 +1362,4 @@ This file is regenerated whenever blog content changes. For the most up-to-date 
 
 For the curated index of GreenPoint's most important pages, see https://greenpointms.com/llms.txt.
 
-Last generated: 2026-07-17T12:46:02.727Z
+Last generated: 2026-07-28T13:00:25.227Z
