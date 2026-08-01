@@ -254,6 +254,51 @@ const BLOG_INDEX = [
   { slug: "commercial-cleaning-white-plains-guide", image: "/blog/commercial-cleaning-white-plains-guide.jpg", title: "Commercial Cleaning White Plains NY: Westchester Vendor Guide", excerpt: "White Plains commercial cleaning for offices, towers, and medical space—benchmarks, Westchester realities, and how GreenPoint proves quality with JaniTrack.", category: "Local SEO", date: "2026-07-31", readTime: "11 min" },
   { slug: "commercial-cleaning-stamford-ct-guide", image: "/blog/commercial-cleaning-stamford-ct-guide.jpg", title: "Commercial Cleaning Stamford CT: Vendor Guide for Facility Managers", excerpt: "Stamford commercial cleaning for Class A offices and mixed-use: staffing, compliance, and how GreenPoint uses JaniTrack to prove performance.", category: "Local SEO", date: "2026-07-31", readTime: "10 min" },
   { slug: "commercial-cleaning-new-rochelle-guide", image: "/blog/commercial-cleaning-new-rochelle-guide.jpg", title: "Commercial Cleaning New Rochelle NY: Facility Manager’s Vendor Guide", excerpt: "New Rochelle commercial cleaning benchmarks: staffing, Westchester/Metro-North realities, and how GreenPoint documents results with JaniTrack.", category: "Local SEO", date: "2026-07-31", readTime: "10 min" },
+  {
+    slug: "commercial-cleaning-mount-vernon-guide",
+    image: "/blog/commercial-cleaning-mount-vernon-guide.jpg",
+    title: "Commercial Cleaning Mount Vernon NY: Vendor Guide for Offices, Schools & Medical Facilities",
+    excerpt: "Compare commercial cleaning vendors in Mount Vernon NY with pricing benchmarks, staffing ratios, compliance requirements, and a walkthrough checklist for facility managers.",
+    category: "Local SEO",
+    date: "2026-08-01",
+    readTime: "9 min"
+  },
+  {
+    slug: "commercial-cleaning-norwalk-ct-guide",
+    image: "/blog/commercial-cleaning-norwalk-ct-guide.jpg",
+    title: "Commercial Cleaning Norwalk CT: Fairfield County Vendor Guide for Facility Managers",
+    excerpt: "A proof-driven vendor guide for commercial cleaning in Norwalk CT with staffing ratios, pricing benchmarks, compliance requirements, and a walkthrough checklist.",
+    category: "Local SEO",
+    date: "2026-08-01",
+    readTime: "10 min"
+  },
+  {
+    slug: "commercial-cleaning-bridgeport-ct-guide",
+    image: "/blog/commercial-cleaning-bridgeport-ct-guide.jpg",
+    title: "Commercial Cleaning Bridgeport CT: Vendor Guide for High-Traffic Facilities",
+    excerpt: "A Bridgeport CT commercial cleaning guide with pricing benchmarks, staffing ratios, compliance documentation, and a walkthrough checklist for facility managers.",
+    category: "Local SEO",
+    date: "2026-08-01",
+    readTime: "9 min"
+  },
+  {
+    slug: "commercial-cleaning-edison-nj-guide",
+    image: "/blog/commercial-cleaning-edison-nj-guide.jpg",
+    title: "Commercial Cleaning Edison NJ: Vendor Guide for Offices, Warehouses & Medical Suites",
+    excerpt: "Find the right commercial cleaning vendor in Edison NJ with pricing benchmarks, staffing ratios, verification methods, and a facility walkthrough checklist.",
+    category: "Local SEO",
+    date: "2026-08-01",
+    readTime: "10 min"
+  },
+  {
+    slug: "commercial-cleaning-princeton-nj-guide",
+    image: "/blog/commercial-cleaning-princeton-nj-guide.jpg",
+    title: "Commercial Cleaning Princeton NJ: Vendor Guide for Offices, Campuses & Labs",
+    excerpt: "A Princeton NJ commercial cleaning vendor guide covering pricing benchmarks, staffing ratios, compliance documentation, and a walkthrough checklist.",
+    category: "Local SEO",
+    date: "2026-08-01",
+    readTime: "9 min"
+  }
 ];
 
 export const metadata = {
