@@ -298,7 +298,12 @@ const BLOG_INDEX = [
     category: "Local SEO",
     date: "2026-08-01",
     readTime: "9 min"
-  }
+  },
+  { slug: "cleaning-for-medical-specialty-clinics", image: "/blog/cleaning-for-medical-specialty-clinics.jpg", title: "Cleaning for Medical Specialty Clinics: Dermatology, Ophthalmology, Orthopedic", excerpt: "A practical guide to medical specialty cleaning with local benchmarks, compliance details, verification methods, and a walkthrough checklist for facility managers.", category: "Industry Vertical", date: "2026-08-12", readTime: "10 min" },
+  { slug: "cleaning-for-film-production-studios", image: "/blog/cleaning-for-film-production-studios.jpg", title: "Cleaning for Film Production Studios: Set Turnover and Craft Services", excerpt: "A practical guide to film studio cleaning with local benchmarks, compliance details, verification methods, and a walkthrough checklist for facility managers.", category: "Industry Vertical", date: "2026-08-12", readTime: "10 min" },
+  { slug: "cleaning-for-marketing-agencies-creative", image: "/blog/cleaning-for-marketing-agencies-creative.jpg", title: "Cleaning for Marketing Agencies and Creative Offices: Client-Ready Standards", excerpt: "A practical guide to marketing agency cleaning with local benchmarks, compliance details, verification methods, and a walkthrough checklist for facility managers.", category: "Industry Vertical", date: "2026-08-12", readTime: "10 min" },
+  { slug: "cleaning-for-insurance-corporate-offices", image: "/blog/cleaning-for-insurance-corporate-offices.jpg", title: "Cleaning for Insurance and Corporate Offices: Executive Suite Standards", excerpt: "A practical guide to insurance office cleaning with local benchmarks, compliance details, verification methods, and a walkthrough checklist for facility managers.", category: "Industry Vertical", date: "2026-08-12", readTime: "10 min" },
+  { slug: "cleaning-for-real-estate-offices-open-houses", image: "/blog/cleaning-for-real-estate-offices-open-houses.jpg", title: "Cleaning for Real Estate Offices and Open Houses: First Impressions", excerpt: "A practical guide to real estate office cleaning with local benchmarks, compliance details, verification methods, and a walkthrough checklist for facility managers.", category: "Industry Vertical", date: "2026-08-12", readTime: "10 min" }
 ];
 
 export const metadata = {
