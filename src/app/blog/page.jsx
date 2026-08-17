@@ -321,7 +321,52 @@ const BLOG_INDEX = [
   { slug: "commercial-cleaning-astoria-queens-guide", image: "/blog/commercial-cleaning-astoria-queens-guide.jpg", title: "Commercial Cleaning Astoria Queens: Vendor Guide for Facility Managers", excerpt: "A facility manager’s Astoria and Queens guide to commercial cleaning vendors, pricing, transit access, building needs, and proof-based quality assurance.", category: "Local SEO", date: "2026-08-15", readTime: "10 min" },
   { slug: "commercial-cleaning-park-slope-guide", image: "/blog/commercial-cleaning-park-slope-guide.jpg", title: "Commercial Cleaning Park Slope Brooklyn: Vendor Guide", excerpt: "A practical Park Slope and Brooklyn vendor guide covering office, school, retail, and medical cleaning, local access, pricing benchmarks, and quality proof.", category: "Local SEO", date: "2026-08-15", readTime: "10 min" },
   { slug: "commercial-cleaning-williamsburg-guide", image: "/blog/commercial-cleaning-williamsburg-guide.jpg", title: "Commercial Cleaning Williamsburg Brooklyn: Facility Manager's Guide", excerpt: "A Williamsburg Brooklyn facility manager’s guide to commercial cleaning vendors, loft offices, waterfront buildings, pricing, transit, and measurable quality.", category: "Local SEO", date: "2026-08-15", readTime: "10 min" },
-  { slug: "cleaning-for-catering-kitchens-food-halls", image: "/blog/cleaning-for-catering-kitchens-food-halls.jpg", title: "Cleaning for Catering Kitchens and Food Halls: NYC Health Code Guide", excerpt: "A practical NYC guide to catering kitchen and food hall cleaning, with Article 81 benchmarks, sanitation logs, local scheduling, pricing drivers, and proof-based QA.", category: "Industry Vertical", date: "2026-08-16", readTime: "10 min" }
+  { slug: "cleaning-for-catering-kitchens-food-halls", image: "/blog/cleaning-for-catering-kitchens-food-halls.jpg", title: "Cleaning for Catering Kitchens and Food Halls: NYC Health Code Guide", excerpt: "A practical NYC guide to catering kitchen and food hall cleaning, with Article 81 benchmarks, sanitation logs, local scheduling, pricing drivers, and proof-based QA.", category: "Industry Vertical", date: "2026-08-16", readTime: "10 min" },
+  {
+    "slug": "commercial-cleaning-flushing-queens",
+    "image": "/blog/commercial-cleaning-flushing-queens.jpg",
+    "title": "Commercial Cleaning in Flushing, Queens: A Vendor Guide for Local Businesses",
+    "excerpt": "Find commercial cleaning in Flushing Queens with practical pricing, transit-aware staffing, health and safety controls, and proof-based quality assurance for local businesses.",
+    "category": "Local SEO",
+    "date": "2026-08-17",
+    "readTime": "10 min"
+  },
+  {
+    "slug": "commercial-cleaning-forest-hills-queens",
+    "image": "/blog/commercial-cleaning-forest-hills-queens.jpg",
+    "title": "Commercial Cleaning Services in Forest Hills, Queens: What to Include",
+    "excerpt": "Compare commercial cleaning services in Forest Hills Queens with a practical scope for offices, medical suites, schools, retail, pricing, access, and documented quality.",
+    "category": "Local SEO",
+    "date": "2026-08-17",
+    "readTime": "10 min"
+  },
+  {
+    "slug": "office-cleaning-sunnyside-queens",
+    "image": "/blog/office-cleaning-sunnyside-queens.jpg",
+    "title": "Office Cleaning in Sunnyside, Queens: A Practical Buyer’s Checklist",
+    "excerpt": "Use this Sunnyside Queens office cleaning checklist to compare janitorial scopes, pricing, transit logistics, green products, inspections, and JaniTrack proof.",
+    "category": "Local SEO",
+    "date": "2026-08-17",
+    "readTime": "9 min"
+  },
+  {
+    "slug": "commercial-cleaning-bushwick-brooklyn",
+    "image": "/blog/commercial-cleaning-bushwick-brooklyn.jpg",
+    "title": "Commercial Cleaning in Bushwick, Brooklyn: Studios, Offices, and Retail Spaces",
+    "excerpt": "Commercial cleaning in Bushwick Brooklyn requires flexible staffing for studios, loft offices, retail, and hospitality. Compare scope, cost, access, and proof in this guide.",
+    "category": "Local SEO",
+    "date": "2026-08-17",
+    "readTime": "10 min"
+  },
+  {
+    "slug": "office-cleaning-bed-stuy-brooklyn",
+    "image": "/blog/office-cleaning-bed-stuy-brooklyn.jpg",
+    "title": "Office Cleaning in Bed-Stuy, Brooklyn: Reliable Service for Growing Teams",
+    "excerpt": "Plan reliable office cleaning in Bed-Stuy with practical staffing, pricing, access, green product, compliance, and JaniTrack verification guidance for growing teams.",
+    "category": "Local SEO",
+    "date": "2026-08-17",
+    "readTime": "10 min"
+  },
 ];
 
 export const metadata = {
