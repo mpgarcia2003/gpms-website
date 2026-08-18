@@ -367,6 +367,11 @@ const BLOG_INDEX = [
     "date": "2026-08-17",
     "readTime": "10 min"
   },
+  {"slug": "commercial-cleaning-crown-heights", "image": "/blog/commercial-cleaning-crown-heights.jpg", "title": "Commercial Cleaning in Crown Heights: Service Standards for Local Facilities", "excerpt": "A practical guide to commercial cleaning in Crown Heights with local access, staffing, safety, pricing, and JaniTrack verification benchmarks for facility managers.", "category": "Local SEO Guide", "date": "2026-08-18", "readTime": "10 min"},
+  {"slug": "commercial-cleaning-bay-ridge", "image": "/blog/commercial-cleaning-bay-ridge.jpg", "title": "Commercial Cleaning in Bay Ridge, Brooklyn: Choosing the Right Facility Partner", "excerpt": "A practical guide to commercial cleaning in Bay Ridge with local access, staffing, safety, pricing, and JaniTrack verification benchmarks for facility managers.", "category": "Local SEO Guide", "date": "2026-08-18", "readTime": "10 min"},
+  {"slug": "commercial-cleaning-sunset-park", "image": "/blog/commercial-cleaning-sunset-park.jpg", "title": "Commercial Cleaning in Sunset Park, Brooklyn: Industrial and Office Coverage", "excerpt": "A practical guide to commercial cleaning in Sunset Park, Brooklyn with local access, staffing, safety, pricing, and JaniTrack verification benchmarks for facility managers.", "category": "Local SEO Guide", "date": "2026-08-18", "readTime": "10 min"},
+  {"slug": "commercial-cleaning-yonkers-ny", "image": "/blog/commercial-cleaning-yonkers-ny.jpg", "title": "Commercial Cleaning in Yonkers, NY: A Facility Manager’s Selection Guide", "excerpt": "A practical guide to commercial cleaning in Yonkers, NY with local access, staffing, safety, pricing, and JaniTrack verification benchmarks for facility managers.", "category": "Local SEO Guide", "date": "2026-08-18", "readTime": "10 min"},
+  {"slug": "commercial-cleaning-new-rochelle", "image": "/blog/commercial-cleaning-new-rochelle.jpg", "title": "Commercial Cleaning in New Rochelle: Office, Medical, and Retail Needs", "excerpt": "A practical guide to commercial cleaning in New Rochelle with local access, staffing, safety, pricing, and JaniTrack verification benchmarks for facility managers.", "category": "Local SEO Guide", "date": "2026-08-18", "readTime": "10 min"},
 ];
 
 export const metadata = {
