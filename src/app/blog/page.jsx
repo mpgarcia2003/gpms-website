@@ -372,6 +372,52 @@ const BLOG_INDEX = [
   {"slug": "commercial-cleaning-sunset-park", "image": "/blog/commercial-cleaning-sunset-park.jpg", "title": "Commercial Cleaning in Sunset Park, Brooklyn: Industrial and Office Coverage", "excerpt": "A practical guide to commercial cleaning in Sunset Park, Brooklyn with local access, staffing, safety, pricing, and JaniTrack verification benchmarks for facility managers.", "category": "Local SEO Guide", "date": "2026-08-18", "readTime": "10 min"},
   {"slug": "commercial-cleaning-yonkers-ny", "image": "/blog/commercial-cleaning-yonkers-ny.jpg", "title": "Commercial Cleaning in Yonkers, NY: A Facility Manager’s Selection Guide", "excerpt": "A practical guide to commercial cleaning in Yonkers, NY with local access, staffing, safety, pricing, and JaniTrack verification benchmarks for facility managers.", "category": "Local SEO Guide", "date": "2026-08-18", "readTime": "10 min"},
   {"slug": "commercial-cleaning-new-rochelle", "image": "/blog/commercial-cleaning-new-rochelle.jpg", "title": "Commercial Cleaning in New Rochelle: Office, Medical, and Retail Needs", "excerpt": "A practical guide to commercial cleaning in New Rochelle with local access, staffing, safety, pricing, and JaniTrack verification benchmarks for facility managers.", "category": "Local SEO Guide", "date": "2026-08-18", "readTime": "10 min"},
+
+{
+    "slug": "coworking-space-cleaning-nyc",
+    "image": "/blog/coworking-space-cleaning-nyc.jpg",
+    "title": "Coworking Space Cleaning in NYC: Restrooms, Desks, Kitchens, and Shared Areas",
+    "excerpt": "A practical NYC coworking cleaning plan for desks, kitchens, restrooms, and shared rooms, with documented verification, frequencies, and budget benchmarks.",
+    "category": "Industry Vertical",
+    "date": "2026-08-19",
+    "readTime": "10 min"
+  },
+  {
+    "slug": "dental-office-cleaning-jani-track",
+    "image": "/blog/dental-office-cleaning-jani-track.jpg",
+    "title": "Dental Office Cleaning: Infection-Control Practices and Verification for NYC Clinics",
+    "excerpt": "Dental offices need cleaning that respects operatory zoning, sharps safety, patient privacy, and documented verification. Learn the NYC clinic checklist and cost factors.",
+    "category": "Industry Vertical",
+    "date": "2026-08-19",
+    "readTime": "10 min"
+  },
+  {
+    "slug": "veterinary-clinic-cleaning-tristate",
+    "image": "/blog/veterinary-clinic-cleaning-tristate.jpg",
+    "title": "Veterinary Clinic Cleaning in the Tri-State Area: Odor, Hair, and Pathogen Control",
+    "excerpt": "Veterinary clinics need pet-safe, zone-based cleaning for exam rooms, kennels, surgery support, odors, and hair. Build a verifiable NY, NJ, or CT facility plan.",
+    "category": "Industry Vertical",
+    "date": "2026-08-19",
+    "readTime": "10 min"
+  },
+  {
+    "slug": "biotech-lab-cleaning-ny-nj",
+    "image": "/blog/biotech-lab-cleaning-ny-nj.jpg",
+    "title": "Biotech Lab Cleaning in NY and NJ: Protocols for Controlled Workspaces",
+    "excerpt": "Biotech lab cleaning in NY and NJ demands zoning, contamination control, chemical safety, and audit-ready records. Learn how to scope offices, labs, and support rooms.",
+    "category": "Industry Vertical",
+    "date": "2026-08-19",
+    "readTime": "11 min"
+  },
+  {
+    "slug": "pharma-office-cleaning-tristate",
+    "image": "/blog/pharma-office-cleaning-tristate.jpg",
+    "title": "Pharmaceutical Office Cleaning: Documentation, Zoning, and Audit Readiness",
+    "excerpt": "Pharmaceutical office cleaning needs documented zones, chemical controls, privacy, and audit-ready routines. Use this Tri-State guide to scope offices and support areas.",
+    "category": "Industry Vertical",
+    "date": "2026-08-19",
+    "readTime": "10 min"
+  },
 ];
 
 export const metadata = {
