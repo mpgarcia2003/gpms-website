@@ -418,6 +418,11 @@ const BLOG_INDEX = [
     "date": "2026-08-19",
     "readTime": "10 min"
   },
+  {"slug": "architecture-firm-cleaning-nyc", "image": "/blog/architecture-firm-cleaning-nyc.jpg", "title": "Architecture Firm Cleaning in NYC: Protecting Models, Materials, and Client Spaces", "excerpt": "Architecture studios need careful NYC cleaning for models, samples, drafting surfaces, and client areas. Learn the zoning, frequency, safety, and verification benchmarks.", "category": "Industry Vertical", "date": "2026-08-20", "readTime": "10 min"},
+  {"slug": "nonprofit-office-cleaning-nyc", "image": "/blog/nonprofit-office-cleaning-nyc.jpg", "title": "Nonprofit Office Cleaning in NYC: Flexible Service for Mission-Driven Organizations", "excerpt": "A practical guide to nonprofit office cleaning in NYC, including budgets, volunteer traffic, community rooms, privacy, compliance, and proof-based service.", "category": "Industry Vertical", "date": "2026-08-20", "readTime": "10 min"},
+  {"slug": "courthouse-cleaning-compliance", "image": "/blog/courthouse-cleaning-compliance.jpg", "title": "Courthouse Cleaning and Security: RFP Requirements for Public Facilities", "excerpt": "A courthouse cleaning RFP checklist covering security, public traffic, courtroom appearance, OSHA controls, documentation, and measurable service levels for government facilities.", "category": "Industry Vertical", "date": "2026-08-20", "readTime": "11 min"},
+  {"slug": "museum-gallery-cleaning", "image": "/blog/museum-gallery-cleaning.jpg", "title": "Museum and Gallery Cleaning: Dust Control, Visitor Safety, and Exhibit Protection", "excerpt": "Museum and gallery cleaning requires exhibit-safe dust control, visitor safety, climate awareness, and documented routines. Learn the NYC facility plan and vendor checklist.", "category": "Industry Vertical", "date": "2026-08-20", "readTime": "10 min"},
+  {"slug": "nyc-local-law-97-cleaning", "image": "/blog/nyc-local-law-97-cleaning.jpg", "title": "NYC Local Law 97 and Commercial Cleaning: What Building Teams Should Know", "excerpt": "NYC Local Law 97 changes how building teams think about energy and operations. Learn how cleaning supports compliance, indoor air quality, waste, and tenant reporting.", "category": "Compliance", "date": "2026-08-20", "readTime": "10 min"}
 ];
 
 export const metadata = {
