@@ -445,6 +445,51 @@ const BLOG_INDEX = [
   {"slug": "commercial-cleaning-greenwich-medical", "image": "/blog/commercial-cleaning-greenwich-medical.jpg", "title": "Commercial Cleaning in Greenwich, CT: Executive, Medical, and Retail Facilities", "excerpt": "A practical guide to commercial cleaning in Greenwich, CT for medical offices, executive suites, and retail facilities, with patient-safety and proof standards.", "category": "Local SEO Guide", "date": "2026-08-25", "readTime": "10 min"},
   {"slug": "commercial-cleaning-fort-lauderdale-offices", "image": "/blog/commercial-cleaning-fort-lauderdale-offices.jpg", "title": "Commercial Cleaning in Fort Lauderdale, FL: Humidity, Sand, and Office Care", "excerpt": "Plan commercial cleaning in Fort Lauderdale, FL around humidity, sand, rain, and office traffic, with pricing benchmarks, local facility details, and JaniTrack proof.", "category": "Local SEO Guide", "date": "2026-08-25", "readTime": "10 min"},
   {"slug": "commercial-cleaning-orlando-hospitality", "image": "/blog/commercial-cleaning-orlando-hospitality.jpg", "title": "Commercial Cleaning in Orlando, FL: Hospitality, Offices, and High-Traffic Facilities", "excerpt": "A buyer guide to commercial cleaning in Orlando, FL for hospitality, convention, office, and high-traffic facilities, including event planning and measurable proof.", "category": "Local SEO Guide", "date": "2026-08-25", "readTime": "10 min"},
+  {
+    "slug": "commercial-cleaning-tampa-medical-offices",
+    "image": "/blog/commercial-cleaning-tampa-medical-offices.jpg",
+    "title": "Commercial Cleaning in Tampa, FL: Medical Offices, Classrooms, and Business Spaces",
+    "excerpt": "A practical guide to commercial cleaning in Tampa, FL, covering medical offices, classrooms, humidity, storm readiness, and proof-driven janitorial service.",
+    "category": "Local SEO Guide",
+    "date": "2026-08-26",
+    "readTime": "10 min"
+  },
+  {
+    "slug": "commercial-cleaning-philadelphia-university-city",
+    "image": "/blog/commercial-cleaning-philadelphia-university-city.jpg",
+    "title": "Commercial Cleaning in Philadelphia’s University City: Offices, Labs, and Clinics",
+    "excerpt": "A buyer’s guide to commercial cleaning in Philadelphia’s University City, with lab, clinic, office, transit, and campus-specific service priorities.",
+    "category": "Local SEO Guide",
+    "date": "2026-08-26",
+    "readTime": "10 min"
+  },
+  {
+    "slug": "commercial-cleaning-king-of-prussia-medical",
+    "image": "/blog/commercial-cleaning-king-of-prussia-medical.jpg",
+    "title": "Commercial Cleaning in King of Prussia, PA: Medical, Retail, and Corporate Sites",
+    "excerpt": "A local guide to commercial cleaning in King of Prussia, PA, covering medical suites, retail, corporate campuses, traffic patterns, and measurable QA.",
+    "category": "Local SEO Guide",
+    "date": "2026-08-26",
+    "readTime": "10 min"
+  },
+  {
+    "slug": "commercial-cleaning-mount-vernon-ny",
+    "image": "/blog/commercial-cleaning-mount-vernon-ny.jpg",
+    "title": "Commercial Cleaning in Mount Vernon, NY: Local Facility Service Requirements",
+    "excerpt": "A Mount Vernon, NY commercial cleaning guide for offices, clinics, schools, and municipal facilities, with Westchester-specific access and compliance details.",
+    "category": "Local SEO Guide",
+    "date": "2026-08-26",
+    "readTime": "10 min"
+  },
+  {
+    "slug": "commercial-cleaning-brooklyn-heights",
+    "image": "/blog/commercial-cleaning-brooklyn-heights.jpg",
+    "title": "Commercial Cleaning in Brooklyn Heights: Offices, Nonprofits, and Historic Spaces",
+    "excerpt": "A Brooklyn Heights commercial cleaning guide for offices, nonprofits, and historic properties, with local traffic, floor care, and NYC compliance priorities.",
+    "category": "Local SEO Guide",
+    "date": "2026-08-26",
+    "readTime": "10 min"
+  }
 ];
 
 export const metadata = {
