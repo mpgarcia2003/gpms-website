@@ -489,7 +489,12 @@ const BLOG_INDEX = [
     "category": "Local SEO Guide",
     "date": "2026-08-26",
     "readTime": "10 min"
-  }
+  },
+  {"slug": "veterinary-practice-cleaning-protocols", "image": "/blog/veterinary-practice-cleaning-protocols.jpg", "title": "Veterinary Practice Cleaning Protocols: Hair, Odor, Pathogens, and Zoning", "excerpt": "A practical veterinary practice cleaning protocol for New York, New Jersey, and Connecticut clinics, covering zoning, pet-safe products, odors, and verification.", "category": "Industry Vertical", "date": "2026-08-27", "readTime": "10 min"},
+  {"slug": "biotech-lab-cleaning-validation", "image": "/blog/biotech-lab-cleaning-validation.jpg", "title": "Biotech Lab Cleaning Validation: Documentation, Zoning, and Audit Readiness", "excerpt": "Learn how biotech laboratories in NY, NJ, and CT can validate cleaning, document zones, manage chemicals, and stay audit-ready with a commercial partner.", "category": "Industry Vertical", "date": "2026-08-27", "readTime": "10 min"},
+  {"slug": "pharma-cleanroom-cleaning-vendor", "image": "/blog/pharma-cleanroom-cleaning-vendor.jpg", "title": "How to Choose a Pharmaceutical Cleanroom Cleaning Vendor", "excerpt": "A buyer’s guide to pharmaceutical cleanroom cleaning vendors in NY, NJ, CT, PA, and FL, with GMP documentation, gowning, staffing, and cost questions.", "category": "Industry Vertical", "date": "2026-08-27", "readTime": "10 min"},
+  {"slug": "financial-services-office-cleaning-security", "image": "/blog/financial-services-office-cleaning-security.jpg", "title": "Financial Services Office Cleaning: Security, Confidentiality, and After-Hours Controls", "excerpt": "An NY, NJ, CT, PA, and FL guide to secure financial office cleaning, covering access, confidentiality, records, executive spaces, and after-hours controls.", "category": "Industry Vertical", "date": "2026-08-27", "readTime": "10 min"},
+  {"slug": "event-venue-cleaning-turnover", "image": "/blog/event-venue-cleaning-turnover.jpg", "title": "Event Venue Cleaning: Fast Turnover Plans for Conventions, Weddings, and Corporate Events", "excerpt": "Build a fast, documented event venue cleaning turnover plan for NY, NJ, CT, PA, and FL conventions, weddings, meetings, and multi-event facilities.", "category": "Industry Vertical", "date": "2026-08-27", "readTime": "10 min"},
 ];
 
 export const metadata = {
