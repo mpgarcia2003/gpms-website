@@ -499,7 +499,54 @@ const BLOG_INDEX = [
   {"slug": "restaurant-kitchen-cleaning-schedule", "image": "/blog/restaurant-kitchen-cleaning-schedule.jpg", "title": "Restaurant and Catering Kitchen Cleaning Schedule: Daily, Weekly, and Monthly Tasks", "excerpt": "Use this restaurant and catering kitchen cleaning schedule to assign daily, weekly, and monthly tasks for food-contact surfaces, grease, floors, drains, waste, and health inspection readiness.", "category": "Industry Vertical", "date": "2026-08-28", "readTime": "10 min"},
   {"slug": "epa-safer-choice-commercial-cleaning", "image": "/blog/epa-safer-choice-commercial-cleaning.jpg", "title": "EPA Safer Choice and Commercial Cleaning: How Buyers Evaluate Product Claims", "excerpt": "Learn how facility buyers can verify EPA Safer Choice claims, compare SDS and labels, control VOCs, and write a credible green commercial cleaning specification.", "category": "Compliance", "date": "2026-08-28", "readTime": "10 min"},
   {"slug": "osha-hazard-communication-cleaning", "image": "/blog/osha-hazard-communication-cleaning.jpg", "title": "OSHA Hazard Communication for Cleaning Teams: SDS, Labels, and Training", "excerpt": "Use this OSHA hazard communication checklist for cleaning teams: chemical inventory, GHS labels, SDS access, PPE, training records, spill response, and supervisor verification.", "category": "Compliance", "date": "2026-08-28", "readTime": "10 min"},
-  {"slug": "nyc-commercial-cleaning-waste-sorting", "image": "/blog/nyc-commercial-cleaning-waste-sorting.jpg", "title": "NYC Commercial Cleaning Waste Sorting: Practical Procedures for Facility Teams", "excerpt": "Create an NYC commercial waste-sorting procedure for cleaners, tenants, kitchens, and building staff with clear bin labels, DSNY coordination, contamination checks, and audit steps.", "category": "Compliance", "date": "2026-08-28", "readTime": "10 min"}
+  {"slug": "nyc-commercial-cleaning-waste-sorting", "image": "/blog/nyc-commercial-cleaning-waste-sorting.jpg", "title": "NYC Commercial Cleaning Waste Sorting: Practical Procedures for Facility Teams", "excerpt": "Create an NYC commercial waste-sorting procedure for cleaners, tenants, kitchens, and building staff with clear bin labels, DSNY coordination, contamination checks, and audit steps.", "category": "Compliance", "date": "2026-08-28", "readTime": "10 min"},
+[
+  {
+    "slug": "spring-allergen-office-cleaning",
+    "image": "/blog/spring-allergen-office-cleaning.jpg",
+    "title": "Spring Allergen Office Cleaning: Dust, Pollen, and Indoor Air Quality Priorities",
+    "excerpt": "Plan spring office cleaning that reduces pollen, dust, and tracked-in soil while protecting indoor air quality in Manhattan, Brooklyn, Queens, and the tri-state region.",
+    "category": "Seasonal",
+    "date": "2026-08-29",
+    "readTime": "10 min"
+  },
+  {
+    "slug": "summer-pest-prevention-commercial-cleaning",
+    "image": "/blog/summer-pest-prevention-commercial-cleaning.jpg",
+    "title": "Summer Pest Prevention Through Commercial Cleaning: Entry Points, Waste, and Sanitation",
+    "excerpt": "Prevent summer pest pressure with commercial cleaning controls for waste, food residue, drains, doors, loading docks, and tenant areas across NY, NJ, CT, PA, and FL.",
+    "category": "Seasonal",
+    "date": "2026-08-29",
+    "readTime": "10 min"
+  },
+  {
+    "slug": "holiday-deep-cleaning-office-planning",
+    "image": "/blog/holiday-deep-cleaning-office-planning.jpg",
+    "title": "Holiday Deep Cleaning for Offices: A Facility Manager’s Planning Timeline",
+    "excerpt": "Use this holiday office deep-cleaning timeline to plan access, staffing, floor care, kitchens, restrooms, compliance, and a clean January restart without hidden fees.",
+    "category": "Seasonal",
+    "date": "2026-08-29",
+    "readTime": "10 min"
+  },
+  {
+    "slug": "ai-cleaning-verification-facilities",
+    "image": "/blog/ai-cleaning-verification-facilities.jpg",
+    "title": "AI-Powered Cleaning Verification: What Facility Managers Should Measure",
+    "excerpt": "Learn what AI-assisted cleaning verification should measure: task completion, image evidence, ATP trends, response time, defects, and privacy controls for facilities.",
+    "category": "Emerging Technology",
+    "date": "2026-08-29",
+    "readTime": "10 min"
+  },
+  {
+    "slug": "uv-c-commercial-cleaning-safety",
+    "image": "/blog/uv-c-commercial-cleaning-safety.jpg",
+    "title": "UV-C in Commercial Cleaning: Applications, Safety Controls, and Limitations",
+    "excerpt": "Understand UV-C commercial cleaning applications, exposure controls, room setup, verification limits, and when UV-C should complement—not replace—routine cleaning.",
+    "category": "Emerging Technology",
+    "date": "2026-08-29",
+    "readTime": "10 min"
+  }
+]
 ];
 
 export const metadata = {
