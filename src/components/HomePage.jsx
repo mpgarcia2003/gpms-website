@@ -86,7 +86,7 @@ function QuoteChoiceModal({ isOpen, onClose }) {
           </button>
         </div>
         <div style={{ textAlign: 'center', marginTop: 20 }}>
-          <a href="tel:+13473329348" style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 12, color: '#8A9B91', textDecoration: 'none', fontWeight: 600 }}>or call 347-332-9348</a>
+          <a href="tel:+18448140810" style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 12, color: '#8A9B91', textDecoration: 'none', fontWeight: 600 }}>or call (844) 814-0810</a>
         </div>
       </div>
     </div>
@@ -149,8 +149,8 @@ const NAV_ITEMS = [
   { label: "Blog", href: "/blog" },
 ];
 
-const PHONE_NUMBER = "347-332-9348";
-const PHONE_HREF = "tel:+13473329348";
+const PHONE_NUMBER = "(844) 814-0810";
+const PHONE_HREF = "tel:+18448140810";
 
 function scrollTo(id) {
   const el = document.getElementById(id);
@@ -2346,7 +2346,7 @@ function AcuitySection() {
         <div style={{ textAlign: "center", marginTop: 40 }}>
           <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 15, color: "rgba(255,255,255,0.5)", lineHeight: 1.7 }}>
             Prefer to reach out directly?{" "}
-            <a href="tel:+13473329348" style={{ color: "#1B7A3D", textDecoration: "none", fontWeight: 600 }}>Call 347-332-9348</a>
+            <a href="tel:+18448140810" style={{ color: "#1B7A3D", textDecoration: "none", fontWeight: 600 }}>Call (844) 814-0810</a>
             {" "}or{" "}
             <a href="mailto:info@greenpointms.com" style={{ color: "#1B7A3D", textDecoration: "none", fontWeight: 600 }}>email info@greenpointms.com</a>
           </p>

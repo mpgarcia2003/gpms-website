@@ -22,12 +22,14 @@ const localBusinessSchema = {
   "name": "GreenPoint Maintenance Services Corp",
   "description": "MBE-certified commercial janitorial and facility maintenance for schools, healthcare, churches, daycare, government buildings, and offices across NY, NJ, CT, PA, and FL.",
   "url": "https://greenpointms.com",
-  "telephone": "+1-347-332-9348",
+  "telephone": "+1-844-814-0810",
   "email": "info@greenpointms.com",
   "address": {
     "@type": "PostalAddress",
-    "addressLocality": "Bronx",
+    "streetAddress": "32 Court Street, Suite 904-F33",
+    "addressLocality": "Brooklyn",
     "addressRegion": "NY",
+    "postalCode": "11201",
     "addressCountry": "US"
   },
   "areaServed": [
@@ -59,15 +61,15 @@ const organizationSchema = {
   "url": "https://greenpointms.com",
   "logo": "https://greenpointms.com/favicon.ico",
   "description": "MBE-certified commercial janitorial and facility maintenance serving schools, healthcare, churches, daycare, government buildings, and offices across NY, NJ, CT, PA, and FL.",
-  "telephone": "+1-347-332-9348",
+  "telephone": "+1-844-814-0810",
   "email": "info@greenpointms.com",
   "foundingDate": "2018",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "1420 Outlook Ave",
-    "addressLocality": "Bronx",
+    "streetAddress": "32 Court Street, Suite 904-F33",
+    "addressLocality": "Brooklyn",
     "addressRegion": "NY",
-    "postalCode": "10465",
+    "postalCode": "11201",
     "addressCountry": "US"
   },
   "areaServed": [

@@ -1,6 +1,6 @@
 # GreenPoint Maintenance Services Corp — Full Content Index
 
-Last Updated: 2026-07-28
+Last Updated: 2026-08-25
 
 This file contains the full text of GreenPoint's most important pages, optimized for ingestion by AI assistants and language models. For a curated index of resources, see https://greenpointms.com/llms.txt.
 
@@ -83,7 +83,7 @@ Full list of 80+ cities at https://greenpointms.com/sitemap.xml.
 
 The following articles are published on the GreenPoint blog. Each represents original research and analysis on commercial cleaning standards, compliance, technology, and best practices.
 
-Total articles: 194
+Total articles: 213
 
 ## Category: Industry Data
 
@@ -911,6 +911,66 @@ Published: 2026-07-26
 URL: https://greenpointms.com/blog/commercial-cleaning-hoboken-nj-guide
 Summary: Hoboken office and mixed-use properties: choose a commercial cleaning vendor with clear scope, fixed pricing, and verification for high-traffic commuter sites.
 
+### Commercial Cleaning Fort Lee NJ: Facility Manager’s Vendor Guide
+
+Published: 2026-07-31
+URL: https://greenpointms.com/blog/commercial-cleaning-fort-lee-nj-guide
+Summary: A Fort Lee, NJ commercial cleaning playbook: pricing benchmarks, compliance must-haves, and how GreenPoint verifies quality with JaniTrack.
+
+### Commercial Cleaning Paramus NJ: Facility Manager’s Vendor Guide
+
+Published: 2026-07-31
+URL: https://greenpointms.com/blog/commercial-cleaning-paramus-nj-guide
+Summary: Paramus commercial cleaning done right: staffing, retail/office benchmarks, compliance basics, and how GreenPoint proves results with JaniTrack.
+
+### Commercial Cleaning White Plains NY: Westchester Vendor Guide
+
+Published: 2026-07-31
+URL: https://greenpointms.com/blog/commercial-cleaning-white-plains-guide
+Summary: White Plains commercial cleaning for offices, towers, and medical space—benchmarks, Westchester realities, and how GreenPoint proves quality with JaniTrack.
+
+### Commercial Cleaning Stamford CT: Vendor Guide for Facility Managers
+
+Published: 2026-07-31
+URL: https://greenpointms.com/blog/commercial-cleaning-stamford-ct-guide
+Summary: Stamford commercial cleaning for Class A offices and mixed-use: staffing, compliance, and how GreenPoint uses JaniTrack to prove performance.
+
+### Commercial Cleaning New Rochelle NY: Facility Manager’s Vendor Guide
+
+Published: 2026-07-31
+URL: https://greenpointms.com/blog/commercial-cleaning-new-rochelle-guide
+Summary: New Rochelle commercial cleaning benchmarks: staffing, Westchester/Metro-North realities, and how GreenPoint documents results with JaniTrack.
+
+### Commercial Cleaning Mount Vernon NY: Vendor Guide for Offices, Schools & Medical Facilities
+
+Published: 2026-08-01
+URL: https://greenpointms.com/blog/commercial-cleaning-mount-vernon-guide
+Summary: Compare commercial cleaning vendors in Mount Vernon NY with pricing benchmarks, staffing ratios, compliance requirements, and a walkthrough checklist for facility managers.
+
+### Commercial Cleaning Norwalk CT: Fairfield County Vendor Guide for Facility Managers
+
+Published: 2026-08-01
+URL: https://greenpointms.com/blog/commercial-cleaning-norwalk-ct-guide
+Summary: A proof-driven vendor guide for commercial cleaning in Norwalk CT with staffing ratios, pricing benchmarks, compliance requirements, and a walkthrough checklist.
+
+### Commercial Cleaning Bridgeport CT: Vendor Guide for High-Traffic Facilities
+
+Published: 2026-08-01
+URL: https://greenpointms.com/blog/commercial-cleaning-bridgeport-ct-guide
+Summary: A Bridgeport CT commercial cleaning guide with pricing benchmarks, staffing ratios, compliance documentation, and a walkthrough checklist for facility managers.
+
+### Commercial Cleaning Edison NJ: Vendor Guide for Offices, Warehouses & Medical Suites
+
+Published: 2026-08-01
+URL: https://greenpointms.com/blog/commercial-cleaning-edison-nj-guide
+Summary: Find the right commercial cleaning vendor in Edison NJ with pricing benchmarks, staffing ratios, verification methods, and a facility walkthrough checklist.
+
+### Commercial Cleaning Princeton NJ: Vendor Guide for Offices, Campuses & Labs
+
+Published: 2026-08-01
+URL: https://greenpointms.com/blog/commercial-cleaning-princeton-nj-guide
+Summary: A Princeton NJ commercial cleaning vendor guide covering pricing benchmarks, staffing ratios, compliance documentation, and a walkthrough checklist.
+
 ## Category: Industry Verticals
 
 ### Gym and Fitness Center Cleaning in NYC: Member Safety, Mold, and Equipment Protocols
@@ -1255,6 +1315,36 @@ Published: 2026-07-24
 URL: https://greenpointms.com/blog/cannabis-dispensary-cleaning-state-compliance
 Summary: Dispensary cleaning isn’t generic retail janitorial. Learn how to meet state expectations, protect security protocols, and keep a premium showroom spotless—documented.
 
+### Cleaning for Medical Specialty Clinics: Dermatology, Ophthalmology, Orthopedic
+
+Published: 2026-08-12
+URL: https://greenpointms.com/blog/cleaning-for-medical-specialty-clinics
+Summary: A practical guide to medical specialty cleaning with local benchmarks, compliance details, verification methods, and a walkthrough checklist for facility managers.
+
+### Cleaning for Film Production Studios: Set Turnover and Craft Services
+
+Published: 2026-08-12
+URL: https://greenpointms.com/blog/cleaning-for-film-production-studios
+Summary: A practical guide to film studio cleaning with local benchmarks, compliance details, verification methods, and a walkthrough checklist for facility managers.
+
+### Cleaning for Marketing Agencies and Creative Offices: Client-Ready Standards
+
+Published: 2026-08-12
+URL: https://greenpointms.com/blog/cleaning-for-marketing-agencies-creative
+Summary: A practical guide to marketing agency cleaning with local benchmarks, compliance details, verification methods, and a walkthrough checklist for facility managers.
+
+### Cleaning for Insurance and Corporate Offices: Executive Suite Standards
+
+Published: 2026-08-12
+URL: https://greenpointms.com/blog/cleaning-for-insurance-corporate-offices
+Summary: A practical guide to insurance office cleaning with local benchmarks, compliance details, verification methods, and a walkthrough checklist for facility managers.
+
+### Cleaning for Real Estate Offices and Open Houses: First Impressions
+
+Published: 2026-08-12
+URL: https://greenpointms.com/blog/cleaning-for-real-estate-offices-open-houses
+Summary: A practical guide to real estate office cleaning with local benchmarks, compliance details, verification methods, and a walkthrough checklist for facility managers.
+
 ## Category: Best Practices
 
 ### Cleaning Vendor Consolidation in NYC: How Facility Managers Cut 15–30% by Standardizing One Vendor
@@ -1292,6 +1382,32 @@ Summary: A practical weighted scoring rubric for janitorial RFPs—training, sta
 Published: 2026-07-25
 URL: https://greenpointms.com/blog/commercial-cleaning-emergency-response-24-hour
 Summary: What to do in the first 24 hours after water, sewage, or biohazard incidents—and how GreenPoint coordinates safe cleanup, documentation, and reopening.
+
+### Restroom Cleaning Scoring Brooklyn: Objective Metrics That Reduce Complaints
+
+Published: 2026-07-29
+URL: https://greenpointms.com/blog/restroom-cleaning-scoring-metrics-brooklyn
+Summary: A Brooklyn-ready restroom scoring system—KPIs, inspection checklists, and how GreenPoint verifies quality with JaniTrack and optional ATP testing.
+
+### Floor Care Scheduling Westchester: A 12-Month Program for VCT, LVT, and Hard Surfaces
+
+Published: 2026-07-29
+URL: https://greenpointms.com/blog/floor-care-scheduling-vct-lvt-hard-surfaces-westchester
+Summary: A Westchester floor care calendar for VCT, LVT, terrazzo, and concrete—cleaning frequencies, seasonal soil load, and proof with GreenPoint.
+
+## Category: Emerging Tech
+
+### Autonomous Floor Scrubbers Manhattan: ROI, Safety, and a Real Deployment Checklist
+
+Published: 2026-07-29
+URL: https://greenpointms.com/blog/autonomous-floor-scrubbers-commercial-cleaning-manhattan
+Summary: A proof-driven guide to deploying autonomous floor scrubbers in Manhattan buildings—ROI benchmarks, safety rules, and how GreenPoint verifies results.
+
+### IoT Air Quality Sensors Jersey City: How to Tie IAQ Data to Cleaning Performance
+
+Published: 2026-07-29
+URL: https://greenpointms.com/blog/iot-air-quality-sensors-cleaning-programs-jersey-city
+Summary: Turn IAQ sensor data into a practical cleaning program in Jersey City—thresholds, KPIs, and how GreenPoint verifies work with JaniTrack.
 
 
 ---
@@ -1362,4 +1478,4 @@ This file is regenerated whenever blog content changes. For the most up-to-date 
 
 For the curated index of GreenPoint's most important pages, see https://greenpointms.com/llms.txt.
 
-Last generated: 2026-07-28T13:00:25.227Z
+Last generated: 2026-08-25T01:34:05.211Z

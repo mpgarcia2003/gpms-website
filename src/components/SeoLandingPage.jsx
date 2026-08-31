@@ -8,8 +8,8 @@ import {
   HeartPulseIcon, BabyIcon, LandmarkIcon, BriefcaseIcon,
 } from "./Icons";
 
-const PHONE_NUMBER = "347-332-9348";
-const PHONE_HREF = "tel:+13473329348";
+const PHONE_NUMBER = "(844) 814-0810";
+const PHONE_HREF = "tel:+18448140810";
 
 function getIndustryIcon(key, size = 20, color = "#1B7A3D") {
   const map = {

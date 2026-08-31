@@ -56,7 +56,7 @@ export default function CityPage({ params }) {
     "@type": "LocalBusiness",
     name: `GreenPoint Maintenance Services - ${city.name}`,
     description: `Commercial cleaning services in ${city.name}, ${state.abbr}`,
-    telephone: "+1-347-332-9348",
+    telephone: "+1-844-814-0810",
     email: "info@greenpointms.com",
     url: `https://greenpointms.com/locations/${state.slug}/${city.slug}/`,
     areaServed: { "@type": "City", name: city.name, containedInPlace: { "@type": "State", name: state.name } },

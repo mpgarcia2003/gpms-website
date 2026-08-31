@@ -1,8 +1,8 @@
 "use client";
 import { STATES, INDUSTRIES, SERVICES_LIST } from '../data/seo-data';
 
-const PHONE_NUMBER = "347-332-9348";
-const PHONE_HREF = "tel:+13473329348";
+const PHONE_NUMBER = "(844) 814-0810";
+const PHONE_HREF = "tel:+18448140810";
 
 export default function SiteFooter() {
   return (
