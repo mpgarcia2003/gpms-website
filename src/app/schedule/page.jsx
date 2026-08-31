@@ -45,7 +45,7 @@ export default function SchedulePage() {
           }}>
             <iframe
               src="https://getstockpoint.com/book/A76NhR7S0CbQq-i6a-PTEJS4?embed=1"
-              style={{ width: '100%', minHeight: 680, border: 0 }}
+              style={{ width: '100%', minHeight: 860, border: 0 }}
               title="Schedule with GreenPoint Maintenance Services"
             />
           </div>
