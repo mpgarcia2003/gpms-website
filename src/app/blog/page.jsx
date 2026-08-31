@@ -323,24 +323,6 @@ const BLOG_INDEX = [
   { slug: "commercial-cleaning-williamsburg-guide", image: "/blog/commercial-cleaning-williamsburg-guide.jpg", title: "Commercial Cleaning Williamsburg Brooklyn: Facility Manager's Guide", excerpt: "A Williamsburg Brooklyn facility manager’s guide to commercial cleaning vendors, loft offices, waterfront buildings, pricing, transit, and measurable quality.", category: "Local SEO", date: "2026-08-15", readTime: "10 min" },
   { slug: "cleaning-for-catering-kitchens-food-halls", image: "/blog/cleaning-for-catering-kitchens-food-halls.jpg", title: "Cleaning for Catering Kitchens and Food Halls: NYC Health Code Guide", excerpt: "A practical NYC guide to catering kitchen and food hall cleaning, with Article 81 benchmarks, sanitation logs, local scheduling, pricing drivers, and proof-based QA.", category: "Industry Vertical", date: "2026-08-16", readTime: "10 min" },
   {
-    "slug": "commercial-cleaning-flushing-queens",
-    "image": "/blog/commercial-cleaning-flushing-queens.jpg",
-    "title": "Commercial Cleaning in Flushing, Queens: A Vendor Guide for Local Businesses",
-    "excerpt": "Find commercial cleaning in Flushing Queens with practical pricing, transit-aware staffing, health and safety controls, and proof-based quality assurance for local businesses.",
-    "category": "Local SEO",
-    "date": "2026-08-17",
-    "readTime": "10 min"
-  },
-  {
-    "slug": "commercial-cleaning-forest-hills-queens",
-    "image": "/blog/commercial-cleaning-forest-hills-queens.jpg",
-    "title": "Commercial Cleaning Services in Forest Hills, Queens: What to Include",
-    "excerpt": "Compare commercial cleaning services in Forest Hills Queens with a practical scope for offices, medical suites, schools, retail, pricing, access, and documented quality.",
-    "category": "Local SEO",
-    "date": "2026-08-17",
-    "readTime": "10 min"
-  },
-  {
     "slug": "office-cleaning-sunnyside-queens",
     "image": "/blog/office-cleaning-sunnyside-queens.jpg",
     "title": "Office Cleaning in Sunnyside, Queens: A Practical Buyer’s Checklist",
@@ -547,6 +529,13 @@ const BLOG_INDEX = [
     "readTime": "10 min"
   }
 ]
+,
+  {"slug": "commercial-cleaning-flushing-queens", "image": "/blog/commercial-cleaning-flushing-queens.jpg", "title": "Commercial Cleaning Services in Flushing, Queens: A Buyer’s Guide", "excerpt": "A practical guide to Flushing commercial cleaning: local traffic, pricing benchmarks, compliance, staffing, and how GreenPoint verifies quality with JaniTrack.", "category": "Local SEO", "date": "2026-08-31", "readTime": "10 min"},
+  {"slug": "commercial-cleaning-forest-hills-queens", "image": "/blog/commercial-cleaning-forest-hills-queens.jpg", "title": "Commercial Cleaning in Forest Hills: What Local Businesses Should Expect", "excerpt": "A practical guide to Forest Hills commercial cleaning: local traffic, pricing benchmarks, compliance, staffing, and how GreenPoint verifies quality with JaniTrack.", "category": "Local SEO", "date": "2026-08-31", "readTime": "10 min"},
+  {"slug": "commercial-cleaning-hoboken-nj", "image": "/blog/commercial-cleaning-hoboken-nj.jpg", "title": "Commercial Cleaning Services in Hoboken, NJ: Scope, Pricing, and Quality Checks", "excerpt": "A practical guide to Hoboken commercial cleaning: local traffic, pricing benchmarks, compliance, staffing, and how GreenPoint verifies quality with JaniTrack.", "category": "Local SEO", "date": "2026-08-31", "readTime": "10 min"},
+  {"slug": "commercial-cleaning-greenwich-ct", "image": "/blog/commercial-cleaning-greenwich-ct.jpg", "title": "Commercial Cleaning in Greenwich, CT: A Facility Manager’s Vendor Checklist", "excerpt": "A practical guide to Greenwich commercial cleaning: local traffic, pricing benchmarks, compliance, staffing, and how GreenPoint verifies quality with JaniTrack.", "category": "Local SEO", "date": "2026-08-31", "readTime": "10 min"},
+  {"slug": "commercial-cleaning-new-rochelle-ny", "image": "/blog/commercial-cleaning-new-rochelle-ny.jpg", "title": "Commercial Cleaning Services in New Rochelle: How to Compare Local Vendors", "excerpt": "A practical guide to New Rochelle commercial cleaning: local traffic, pricing benchmarks, compliance, staffing, and how GreenPoint verifies quality with JaniTrack.", "category": "Local SEO", "date": "2026-08-31", "readTime": "10 min"}
+
 ];
 
 export const metadata = {
