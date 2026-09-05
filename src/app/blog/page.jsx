@@ -555,7 +555,54 @@ const BLOG_INDEX = [
   {"slug": "ai-cleaning-verification-commercial-facilities", "image": "/blog/ai-cleaning-verification-commercial-facilities.jpg", "title": "AI-Powered Cleaning Verification: Where It Helps and Where Human Audits Still Matter", "excerpt": "AI cleaning verification can help a facility find missed tasks faster, but it cannot replace a trained supervisor who understands surfaces, safety, access, and the client’s risk…", "category": "Emerging Technology", "date": "2026-09-04", "readTime": "10 min"},
   {"slug": "iaq-monitoring-cleaning-contracts", "image": "/blog/iaq-monitoring-cleaning-contracts.jpg", "title": "IAQ Monitoring in Cleaning Contracts: Turning Air Data into Facility Actions", "excerpt": "IAQ monitoring can turn indoor air quality from a complaint topic into a measurable facilities workflow, but sensors do not replace ventilation engineering or a careful cleaning…", "category": "Emerging Technology", "date": "2026-09-04", "readTime": "10 min"},
   {"slug": "uvc-disinfection-commercial-use", "image": "/blog/uvc-disinfection-commercial-use.jpg", "title": "UV-C Disinfection for Commercial Facilities: Use Cases, Limits, and Safety", "excerpt": "UV-C disinfection can support a carefully controlled commercial cleaning program, but it is not a shortcut for soil removal, ventilation, or safe chemical use. GreenPoint Mainte…", "category": "Emerging Technology", "date": "2026-09-04", "readTime": "10 min"},
-  {"slug": "commercial-cleaning-staffing-ratio-calculator", "image": "/blog/commercial-cleaning-staffing-ratio-calculator.jpg", "title": "Commercial Cleaning Staffing Ratios: Estimating Labor for Different Facility Types", "excerpt": "A commercial cleaning staffing ratio is a planning estimate, not a universal promise. Crew size changes with floor type, restroom count, furniture, occupancy, security, service…", "category": "Best Practices", "date": "2026-09-04", "readTime": "10 min"}
+  {"slug": "commercial-cleaning-staffing-ratio-calculator", "image": "/blog/commercial-cleaning-staffing-ratio-calculator.jpg", "title": "Commercial Cleaning Staffing Ratios: Estimating Labor for Different Facility Types", "excerpt": "A commercial cleaning staffing ratio is a planning estimate, not a universal promise. Crew size changes with floor type, restroom count, furniture, occupancy, security, service…", "category": "Best Practices", "date": "2026-09-04", "readTime": "10 min"},
+[
+  {
+    "slug": "restroom-quality-audit-commercial-buildings",
+    "image": "/blog/restroom-quality-audit-commercial-buildings.jpg",
+    "title": "Restroom Quality Audits: A Repeatable Checklist for Commercial Buildings",
+    "excerpt": "Use a measurable restroom quality audit for Manhattan, Bronx, Brooklyn, Queens, NJ, CT, and PA facilities, with scoring, staffing, and JaniTrack proof.",
+    "category": "Best Practices",
+    "date": "2026-09-05",
+    "readTime": "10 min"
+  },
+  {
+    "slug": "commercial-floor-care-program-selection",
+    "image": "/blog/commercial-floor-care-program-selection.jpg",
+    "title": "How to Build a Commercial Floor Care Program for Carpet, Tile, and Concrete",
+    "excerpt": "Choose frequencies, methods, staffing, and budgets for carpet, tile, VCT, and concrete floors across NY, NJ, CT, PA, and Florida commercial facilities.",
+    "category": "Best Practices",
+    "date": "2026-09-05",
+    "readTime": "10 min"
+  },
+  {
+    "slug": "commercial-cleaning-rfp-specifications-template",
+    "image": "/blog/commercial-cleaning-rfp-specifications-template.jpg",
+    "title": "Commercial Cleaning RFP Specifications: What to Include Before Soliciting Bids",
+    "excerpt": "Create a comparable commercial cleaning RFP with measurable scope, frequencies, compliance requirements, pricing instructions, and site details for tri-state facilities.",
+    "category": "RFP and Bids",
+    "date": "2026-09-05",
+    "readTime": "10 min"
+  },
+  {
+    "slug": "janitorial-sla-response-time-terms",
+    "image": "/blog/janitorial-sla-response-time-terms.jpg",
+    "title": "Janitorial SLAs: Response Times, Quality Metrics, and Contract Terms to Negotiate",
+    "excerpt": "Negotiate a janitorial SLA with response windows, quality scores, escalation rules, JaniTrack evidence, and practical metrics for NY, NJ, CT, PA, and FL sites.",
+    "category": "RFP and Bids",
+    "date": "2026-09-05",
+    "readTime": "10 min"
+  },
+  {
+    "slug": "commercial-cleaning-vendor-comparison-scorecard",
+    "image": "/blog/commercial-cleaning-vendor-comparison-scorecard.jpg",
+    "title": "Commercial Cleaning Vendor Comparison Scorecard for Facility Managers",
+    "excerpt": "Compare commercial cleaning vendors on scope, staffing, compliance, quality, technology, price, and local capacity with a scorecard built for facility managers.",
+    "category": "RFP and Bids",
+    "date": "2026-09-05",
+    "readTime": "10 min"
+  }
+]
 ];
 
 export const metadata = {
