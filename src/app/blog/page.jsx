@@ -482,7 +482,6 @@ const BLOG_INDEX = [
   {"slug": "epa-safer-choice-commercial-cleaning", "image": "/blog/epa-safer-choice-commercial-cleaning.jpg", "title": "EPA Safer Choice and Commercial Cleaning: How Buyers Evaluate Product Claims", "excerpt": "Learn how facility buyers can verify EPA Safer Choice claims, compare SDS and labels, control VOCs, and write a credible green commercial cleaning specification.", "category": "Compliance", "date": "2026-08-28", "readTime": "10 min"},
   {"slug": "osha-hazard-communication-cleaning", "image": "/blog/osha-hazard-communication-cleaning.jpg", "title": "OSHA Hazard Communication for Cleaning Teams: SDS, Labels, and Training", "excerpt": "Use this OSHA hazard communication checklist for cleaning teams: chemical inventory, GHS labels, SDS access, PPE, training records, spill response, and supervisor verification.", "category": "Compliance", "date": "2026-08-28", "readTime": "10 min"},
   {"slug": "nyc-commercial-cleaning-waste-sorting", "image": "/blog/nyc-commercial-cleaning-waste-sorting.jpg", "title": "NYC Commercial Cleaning Waste Sorting: Practical Procedures for Facility Teams", "excerpt": "Create an NYC commercial waste-sorting procedure for cleaners, tenants, kitchens, and building staff with clear bin labels, DSNY coordination, contamination checks, and audit steps.", "category": "Compliance", "date": "2026-08-28", "readTime": "10 min"},
-[
   {
     "slug": "spring-allergen-office-cleaning",
     "image": "/blog/spring-allergen-office-cleaning.jpg",
@@ -528,7 +527,6 @@ const BLOG_INDEX = [
     "date": "2026-08-29",
     "readTime": "10 min"
   }
-]
 ,
   {"slug": "commercial-cleaning-flushing-queens", "image": "/blog/commercial-cleaning-flushing-queens.jpg", "title": "Commercial Cleaning Services in Flushing, Queens: A Buyer’s Guide", "excerpt": "A practical guide to Flushing commercial cleaning: local traffic, pricing benchmarks, compliance, staffing, and how GreenPoint verifies quality with JaniTrack.", "category": "Local SEO", "date": "2026-08-31", "readTime": "10 min"},
   {"slug": "commercial-cleaning-forest-hills-queens", "image": "/blog/commercial-cleaning-forest-hills-queens.jpg", "title": "Commercial Cleaning in Forest Hills: What Local Businesses Should Expect", "excerpt": "A practical guide to Forest Hills commercial cleaning: local traffic, pricing benchmarks, compliance, staffing, and how GreenPoint verifies quality with JaniTrack.", "category": "Local SEO", "date": "2026-08-31", "readTime": "10 min"},
@@ -556,7 +554,6 @@ const BLOG_INDEX = [
   {"slug": "iaq-monitoring-cleaning-contracts", "image": "/blog/iaq-monitoring-cleaning-contracts.jpg", "title": "IAQ Monitoring in Cleaning Contracts: Turning Air Data into Facility Actions", "excerpt": "IAQ monitoring can turn indoor air quality from a complaint topic into a measurable facilities workflow, but sensors do not replace ventilation engineering or a careful cleaning…", "category": "Emerging Technology", "date": "2026-09-04", "readTime": "10 min"},
   {"slug": "uvc-disinfection-commercial-use", "image": "/blog/uvc-disinfection-commercial-use.jpg", "title": "UV-C Disinfection for Commercial Facilities: Use Cases, Limits, and Safety", "excerpt": "UV-C disinfection can support a carefully controlled commercial cleaning program, but it is not a shortcut for soil removal, ventilation, or safe chemical use. GreenPoint Mainte…", "category": "Emerging Technology", "date": "2026-09-04", "readTime": "10 min"},
   {"slug": "commercial-cleaning-staffing-ratio-calculator", "image": "/blog/commercial-cleaning-staffing-ratio-calculator.jpg", "title": "Commercial Cleaning Staffing Ratios: Estimating Labor for Different Facility Types", "excerpt": "A commercial cleaning staffing ratio is a planning estimate, not a universal promise. Crew size changes with floor type, restroom count, furniture, occupancy, security, service…", "category": "Best Practices", "date": "2026-09-04", "readTime": "10 min"},
-[
   {
     "slug": "restroom-quality-audit-commercial-buildings",
     "image": "/blog/restroom-quality-audit-commercial-buildings.jpg",
@@ -601,8 +598,12 @@ const BLOG_INDEX = [
     "category": "RFP and Bids",
     "date": "2026-09-05",
     "readTime": "10 min"
-  }
-]
+  },
+  {"slug": "commercial-cleaning-norwalk-ct", "image": "/blog/commercial-cleaning-norwalk-ct.jpg", "title": "Commercial Cleaning Services in Norwalk, CT: How to Evaluate Local Vendors", "excerpt": "A practical guide to commercial cleaning Norwalk CT: compare scope, pricing, safety, local logistics, and JaniTrack-verified quality before you choose a vendor.", "category": "Local SEO", "date": "2026-09-07", "readTime": "9 min"},
+  {"slug": "commercial-cleaning-bridgeport-ct", "image": "/blog/commercial-cleaning-bridgeport-ct.jpg", "title": "Commercial Cleaning in Bridgeport, CT: A Practical RFP and Site-Walk Guide", "excerpt": "A practical guide to commercial cleaning Bridgeport CT: compare scope, pricing, safety, local logistics, and JaniTrack-verified quality before you choose a vendor.", "category": "Local SEO", "date": "2026-09-07", "readTime": "9 min"},
+  {"slug": "commercial-cleaning-fort-lee-nj", "image": "/blog/commercial-cleaning-fort-lee-nj.jpg", "title": "Commercial Cleaning Services in Fort Lee, NJ: Pricing and Quality Standards", "excerpt": "A practical guide to commercial cleaning Fort Lee NJ: compare scope, pricing, safety, local logistics, and JaniTrack-verified quality before you choose a vendor.", "category": "Local SEO", "date": "2026-09-07", "readTime": "9 min"},
+  {"slug": "commercial-cleaning-paramus-nj", "image": "/blog/commercial-cleaning-paramus-nj.jpg", "title": "Commercial Cleaning in Paramus, NJ: Choosing a Reliable Facility Partner", "excerpt": "A practical guide to commercial cleaning Paramus NJ: compare scope, pricing, safety, local logistics, and JaniTrack-verified quality before you choose a vendor.", "category": "Local SEO", "date": "2026-09-07", "readTime": "9 min"},
+  {"slug": "commercial-cleaning-edison-nj", "image": "/blog/commercial-cleaning-edison-nj.jpg", "title": "Commercial Cleaning Services in Edison, NJ: Coverage for Offices and Industrial Sites", "excerpt": "A practical guide to commercial cleaning Edison NJ: compare scope, pricing, safety, local logistics, and JaniTrack-verified quality before you choose a vendor.", "category": "Local SEO", "date": "2026-09-07", "readTime": "9 min"},
 ];
 
 export const metadata = {
