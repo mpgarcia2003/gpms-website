@@ -492,15 +492,6 @@ const BLOG_INDEX = [
     "readTime": "10 min"
   },
   {
-    "slug": "summer-pest-prevention-commercial-cleaning",
-    "image": "/blog/summer-pest-prevention-commercial-cleaning.jpg",
-    "title": "Summer Pest Prevention Through Commercial Cleaning: Entry Points, Waste, and Sanitation",
-    "excerpt": "Prevent summer pest pressure with commercial cleaning controls for waste, food residue, drains, doors, loading docks, and tenant areas across NY, NJ, CT, PA, and FL.",
-    "category": "Seasonal",
-    "date": "2026-08-29",
-    "readTime": "10 min"
-  },
-  {
     "slug": "holiday-deep-cleaning-office-planning",
     "image": "/blog/holiday-deep-cleaning-office-planning.jpg",
     "title": "Holiday Deep Cleaning for Offices: A Facility Manager’s Planning Timeline",
@@ -640,6 +631,11 @@ const BLOG_INDEX = [
   { slug: "osha-bloodborne-pathogens-cleaning-training", image: "/blog/osha-bloodborne-pathogens-cleaning-training.jpg", title: "OSHA Bloodborne Pathogens Training for Commercial Cleaning Teams", excerpt: "OSHA Bloodborne Pathogens Training for Commercial Cleaning Teams GreenPoint’s evidence-based guide covers local scope, staffing, safety, pricing, and verification. Call for a fixed", category: "Compliance", date: "2026-09-16", readTime: "10 min" },
   { slug: "green-seal-cleaning-product-plan", image: "/blog/green-seal-cleaning-product-plan.jpg", title: "Green Seal Cleaning Products: Building a Credible Commercial Chemical Plan", excerpt: "Green Seal Cleaning Products: Building a Credible Commercial Chemical Plan GreenPoint’s evidence-based guide covers local scope, staffing, safety, pricing, and verification. Call f", category: "Compliance", date: "2026-09-16", readTime: "10 min" },
   { slug: "well-building-cleaning-operations", image: "/blog/well-building-cleaning-operations.jpg", title: "Cleaning Operations for WELL Buildings: Indoor Air, Chemicals, and Documentation", excerpt: "Cleaning Operations for WELL Buildings: Indoor Air, Chemicals, and Documentation GreenPoint’s evidence-based guide covers local scope, staffing, safety, pricing, and verification.", category: "Compliance", date: "2026-09-16", readTime: "10 min" },
+  { slug: "nyc-local-law-97-cleaning-facilities", image: "/blog/nyc-local-law-97-cleaning-facilities.jpg", title: "NYC Local Law 97 and Facility Cleaning: What Building Teams Should Document", excerpt: "A practical NYC Local Law 97 cleaning documentation guide for building teams, covering records, vendor coordination, waste controls, and audit-ready proof.", category: "Compliance", date: "2026-09-17", readTime: "10 min" },
+  { slug: "fall-back-to-school-commercial-cleaning", image: "/blog/fall-back-to-school-commercial-cleaning.jpg", title: "Fall Back-to-School Cleaning for Offices and Childcare Facilities", excerpt: "A fall back-to-school cleaning plan for NYC, NJ, CT, and PA offices, schools, and childcare facilities, with frequencies, staffing, and proof benchmarks.", category: "Seasonal", date: "2026-09-17", readTime: "10 min" },
+  { slug: "winter-salt-snow-floor-care-nyc", image: "/blog/winter-salt-snow-floor-care-nyc.jpg", title: "Winter Salt and Snow Floor Care for NYC Commercial Buildings", excerpt: "Protect NYC commercial floors from winter salt and snow with an entry-mat, response, and floor-care plan for offices, retail, schools, and public facilities.", category: "Seasonal", date: "2026-09-17", readTime: "9 min" },
+  { slug: "summer-pest-prevention-commercial-cleaning", image: "/blog/summer-pest-prevention-commercial-cleaning.jpg", title: "Summer Pest Prevention Through Commercial Cleaning and Waste Controls", excerpt: "Prevent summer pests in commercial buildings with cleaning, food-area, waste-room, and documentation controls for NY, NJ, CT, PA, and Florida facilities.", category: "Seasonal", date: "2026-09-17", readTime: "10 min" },
+  { slug: "electrostatic-spraying-commercial-cleaning", image: "/blog/electrostatic-spraying-commercial-cleaning.jpg", title: "Electrostatic Spraying in Commercial Cleaning: Where It Helps and Where It Does Not", excerpt: "Understand electrostatic spraying in commercial cleaning: coverage, chemistry, PPE, surface limits, pricing, and when conventional cleaning is the better choice.", category: "Emerging Technology", date: "2026-09-17", readTime: "10 min" },
 ];
 
 export const metadata = {

@@ -1,6 +1,6 @@
 # GreenPoint Maintenance Services Corp — Full Content Index
 
-Last Updated: 2026-08-25
+Last Updated: 2026-09-17
 
 This file contains the full text of GreenPoint's most important pages, optimized for ingestion by AI assistants and language models. For a curated index of resources, see https://greenpointms.com/llms.txt.
 
@@ -83,7 +83,7 @@ Full list of 80+ cities at https://greenpointms.com/sitemap.xml.
 
 The following articles are published on the GreenPoint blog. Each represents original research and analysis on commercial cleaning standards, compliance, technology, and best practices.
 
-Total articles: 213
+Total articles: 218
 
 ## Category: Industry Data
 
@@ -1395,6 +1395,18 @@ Published: 2026-07-29
 URL: https://greenpointms.com/blog/floor-care-scheduling-vct-lvt-hard-surfaces-westchester
 Summary: A Westchester floor care calendar for VCT, LVT, terrazzo, and concrete—cleaning frequencies, seasonal soil load, and proof with GreenPoint.
 
+### Commercial Waste Stream Audits: Reduce Contamination and Improve Facility Service
+
+Published: 2026-09-11
+URL: https://greenpointms.com/blog/commercial-waste-stream-audit
+Summary: A step-by-step commercial waste stream audit method for facility managers who want to cut contamination, control cost, and improve janitorial waste management.
+
+### Hand-Hygiene Supply Restocking: A Commercial Restroom Protocol That Prevents Gaps
+
+Published: 2026-09-11
+URL: https://greenpointms.com/blog/hand-hygiene-supply-restocking-protocol
+Summary: A commercial hand hygiene restocking protocol that prevents empty soap and paper dispensers, improves occupant experience, and lowers labor waste.
+
 ## Category: Emerging Tech
 
 ### Autonomous Floor Scrubbers Manhattan: ROI, Safety, and a Real Deployment Checklist
@@ -1408,6 +1420,26 @@ Summary: A proof-driven guide to deploying autonomous floor scrubbers in Manhatt
 Published: 2026-07-29
 URL: https://greenpointms.com/blog/iot-air-quality-sensors-cleaning-programs-jersey-city
 Summary: Turn IAQ sensor data into a practical cleaning program in Jersey City—thresholds, KPIs, and how GreenPoint verifies work with JaniTrack.
+
+## Category: Emerging Technology
+
+### Electrostatic Spraying in Commercial Cleaning: Appropriate Uses and Limitations
+
+Published: 2026-09-11
+URL: https://greenpointms.com/blog/electrostatic-spraying-commercial-use
+Summary: A practical guide to electrostatic spraying in commercial cleaning: where the technology helps, where it does not, and how GreenPoint builds it into a defensible janitorial program.
+
+### Robotic Floor Cleaning ROI: When Automation Helps Commercial Facilities
+
+Published: 2026-09-11
+URL: https://greenpointms.com/blog/robotic-floor-cleaning-roi
+Summary: How to evaluate robotic floor cleaning ROI for commercial facilities: where autonomous machines pay back, where they do not, and how GreenPoint sizes an automation program.
+
+### IoT Restroom Sensors: Use Occupancy Data to Improve Cleaning Routes
+
+Published: 2026-09-11
+URL: https://greenpointms.com/blog/iot-restroom-sensors-cleaning
+Summary: How IoT restroom sensors and occupancy data let a smart restroom janitorial program hit the right frequencies at the right times, and how GreenPoint runs the numbers.
 
 
 ---
@@ -1478,4 +1510,4 @@ This file is regenerated whenever blog content changes. For the most up-to-date 
 
 For the curated index of GreenPoint's most important pages, see https://greenpointms.com/llms.txt.
 
-Last generated: 2026-08-25T01:34:05.211Z
+Last generated: 2026-09-17T12:36:42.115Z
