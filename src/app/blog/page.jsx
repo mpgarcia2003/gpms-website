@@ -313,7 +313,6 @@ const BLOG_INDEX = [
 ,
   { slug: "holiday-deep-clean-office-january-reset", image: "/blog/holiday-deep-clean-office-january-reset.jpg", title: "Holiday Deep Clean and January Office Reset: Programs Facility Managers Use", excerpt: "Plan a holiday deep clean and January office reset with practical frequencies, budget benchmarks, local access planning, and JaniTrack proof from GreenPoint.", category: "Seasonal", date: "2026-08-14", readTime: "10 min" },
   { slug: "uv-c-disinfection-devices-commercial-facilities", image: "/blog/uv-c-disinfection-devices-commercial-facilities.jpg", title: "UV-C Disinfection Devices in Commercial Facilities: ROI and Safety", excerpt: "Understand UV-C disinfection devices for commercial facilities, including use cases, safety controls, ROI assumptions, and how GreenPoint integrates verification.", category: "Emerging Tech", date: "2026-08-14", readTime: "10 min" },
-  { slug: "ai-cleaning-verification-facilities", image: "/blog/ai-cleaning-verification-facilities.jpg", title: "AI-Powered Cleaning Verification: How Machine Vision Audits Restrooms", excerpt: "Learn how AI and machine vision can support restroom audits, response times, privacy, and cleaning quality without replacing trained supervisors or JaniTrack evidence.", category: "Emerging Tech", date: "2026-08-14", readTime: "10 min" },
   { slug: "chemical-inventory-commercial-cleaning-sds", image: "/blog/chemical-inventory-commercial-cleaning-sds.jpg", title: "Chemical Inventory Management for Commercial Cleaning: SDS and Storage", excerpt: "Build a safer commercial cleaning chemical inventory with SDS access, labels, storage, training, substitution controls, and JaniTrack inspections from GreenPoint.", category: "Best Practices", date: "2026-08-14", readTime: "10 min" },
   { slug: "waste-stream-management-commercial-buildings", image: "/blog/waste-stream-management-commercial-buildings.jpg", title: "Waste Stream Management in Commercial Buildings: Recycling, Compost, Landfill", excerpt: "Build a practical commercial waste-stream program for recycling, compost, landfill, organics, and special materials with local logistics and GreenPoint verification.", category: "Best Practices", date: "2026-08-14", readTime: "10 min" },
   { slug: "cleaning-rfp-specifications-writing", image: "/blog/cleaning-rfp-specifications-writing.jpg", title: "Writing Commercial Cleaning RFP Specifications That Get Real Bids", excerpt: "A practical, data-backed guide to writing commercial cleaning RFP specifications that attract comparable bids, protect quality, and work across NY, NJ, CT, and PA.", category: "RFP/Bid", date: "2026-08-15", readTime: "10 min" },
@@ -501,15 +500,6 @@ const BLOG_INDEX = [
     "readTime": "10 min"
   },
   {
-    "slug": "ai-cleaning-verification-facilities",
-    "image": "/blog/ai-cleaning-verification-facilities.jpg",
-    "title": "AI-Powered Cleaning Verification: What Facility Managers Should Measure",
-    "excerpt": "Learn what AI-assisted cleaning verification should measure: task completion, image evidence, ATP trends, response time, defects, and privacy controls for facilities.",
-    "category": "Emerging Technology",
-    "date": "2026-08-29",
-    "readTime": "10 min"
-  },
-  {
     "slug": "uv-c-commercial-cleaning-safety",
     "image": "/blog/uv-c-commercial-cleaning-safety.jpg",
     "title": "UV-C in Commercial Cleaning: Applications, Safety Controls, and Limitations",
@@ -636,6 +626,11 @@ const BLOG_INDEX = [
   { slug: "winter-salt-snow-floor-care-nyc", image: "/blog/winter-salt-snow-floor-care-nyc.jpg", title: "Winter Salt and Snow Floor Care for NYC Commercial Buildings", excerpt: "Protect NYC commercial floors from winter salt and snow with an entry-mat, response, and floor-care plan for offices, retail, schools, and public facilities.", category: "Seasonal", date: "2026-09-17", readTime: "9 min" },
   { slug: "summer-pest-prevention-commercial-cleaning", image: "/blog/summer-pest-prevention-commercial-cleaning.jpg", title: "Summer Pest Prevention Through Commercial Cleaning and Waste Controls", excerpt: "Prevent summer pests in commercial buildings with cleaning, food-area, waste-room, and documentation controls for NY, NJ, CT, PA, and Florida facilities.", category: "Seasonal", date: "2026-09-17", readTime: "10 min" },
   { slug: "electrostatic-spraying-commercial-cleaning", image: "/blog/electrostatic-spraying-commercial-cleaning.jpg", title: "Electrostatic Spraying in Commercial Cleaning: Where It Helps and Where It Does Not", excerpt: "Understand electrostatic spraying in commercial cleaning: coverage, chemistry, PPE, surface limits, pricing, and when conventional cleaning is the better choice.", category: "Emerging Technology", date: "2026-09-17", readTime: "10 min" },
+  { slug: "uv-c-disinfection-office-cleaning", image: "/blog/uv-c-disinfection-office-cleaning.jpg", title: "UV-C Disinfection for Commercial Facilities: Procurement Questions to Ask", excerpt: "A practical UV-C disinfection procurement guide for NYC, NJ, CT, PA, and Florida offices, covering safety, dose, labor, verification, and vendor questions.", category: "Emerging Technology", date: "2026-09-18", readTime: "10 min" },
+  { slug: "iot-sensors-restroom-cleaning", image: "/blog/iot-sensors-restroom-cleaning.jpg", title: "IoT Sensors for Restroom Cleaning: Turning Traffic Data Into Service Decisions", excerpt: "Learn how NYC, NJ, CT, PA, and Florida facility teams can use restroom traffic sensors without replacing human inspections, cleaning standards, or privacy controls.", category: "Emerging Technology", date: "2026-09-18", readTime: "9 min" },
+  { slug: "ai-cleaning-verification-facilities", image: "/blog/ai-cleaning-verification-facilities.jpg", title: "AI-Powered Cleaning Verification: Evidence, Limits, and Better Audits", excerpt: "A practical guide to AI-assisted cleaning verification for commercial facilities in NY, NJ, CT, PA, and FL, including privacy, audits, photos, ATP, and human review.", category: "Emerging Technology", date: "2026-09-18", readTime: "10 min" },
+  { slug: "cleaning-staffing-ratio-office", image: "/blog/cleaning-staffing-ratio-office.jpg", title: "Commercial Cleaning Staffing Ratios: How to Estimate Coverage by Facility Type", excerpt: "Estimate commercial cleaning staffing ratios by square footage, occupancy, floor type, and facility use for offices, schools, medical sites, warehouses, and campuses.", category: "Best Practices", date: "2026-09-18", readTime: "10 min" },
+  { slug: "commercial-cleaning-chemical-inventory", image: "/blog/commercial-cleaning-chemical-inventory.jpg", title: "Commercial Cleaning Chemical Inventory: A Safer, Audit-Ready System", excerpt: "Build an audit-ready commercial cleaning chemical inventory with SDS controls, labeling, storage, training, and JaniTrack documentation for tri-state facilities.", category: "Best Practices", date: "2026-09-18", readTime: "10 min" },
 ];
 
 export const metadata = {
