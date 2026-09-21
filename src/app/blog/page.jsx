@@ -339,16 +339,8 @@ const BLOG_INDEX = [
     "date": "2026-08-17",
     "readTime": "10 min"
   },
-  {
-    "slug": "office-cleaning-bed-stuy-brooklyn",
-    "image": "/blog/office-cleaning-bed-stuy-brooklyn.jpg",
-    "title": "Office Cleaning in Bed-Stuy, Brooklyn: Reliable Service for Growing Teams",
-    "excerpt": "Plan reliable office cleaning in Bed-Stuy with practical staffing, pricing, access, green product, compliance, and JaniTrack verification guidance for growing teams.",
-    "category": "Local SEO",
-    "date": "2026-08-17",
-    "readTime": "10 min"
-  },
-  {"slug": "commercial-cleaning-crown-heights", "image": "/blog/commercial-cleaning-crown-heights.jpg", "title": "Commercial Cleaning in Crown Heights: Service Standards for Local Facilities", "excerpt": "A practical guide to commercial cleaning in Crown Heights with local access, staffing, safety, pricing, and JaniTrack verification benchmarks for facility managers.", "category": "Local SEO Guide", "date": "2026-08-18", "readTime": "10 min"},
+  {"slug": "office-cleaning-bed-stuy-brooklyn", "image": "/blog/office-cleaning-bed-stuy-brooklyn.jpg", "title": "Office Cleaning in Bed-Stuy: A Practical Buyer’s Guide", "excerpt": "A Bed-Stuy office cleaning buyer’s guide covering shared spaces, brownstone conversions, floor care, restroom rounds, access, pricing, and verification.", "category": "Local Guides", "date": "2026-09-21", "readTime": "10 min"},
+  {"slug": "commercial-cleaning-crown-heights", "image": "/blog/commercial-cleaning-crown-heights.jpg", "title": "Commercial Cleaning Services in Crown Heights: What to Compare", "excerpt": "Compare Crown Heights commercial cleaning services by frequency, floor care, restrooms, access, QA evidence, pricing, and local Brooklyn operating conditions.", "category": "Local Guides", "date": "2026-09-21", "readTime": "10 min"},
   {"slug": "commercial-cleaning-bay-ridge", "image": "/blog/commercial-cleaning-bay-ridge.jpg", "title": "Commercial Cleaning in Bay Ridge, Brooklyn: Choosing the Right Facility Partner", "excerpt": "A practical guide to commercial cleaning in Bay Ridge with local access, staffing, safety, pricing, and JaniTrack verification benchmarks for facility managers.", "category": "Local SEO Guide", "date": "2026-08-18", "readTime": "10 min"},
   {"slug": "commercial-cleaning-sunset-park", "image": "/blog/commercial-cleaning-sunset-park.jpg", "title": "Commercial Cleaning in Sunset Park, Brooklyn: Industrial and Office Coverage", "excerpt": "A practical guide to commercial cleaning in Sunset Park, Brooklyn with local access, staffing, safety, pricing, and JaniTrack verification benchmarks for facility managers.", "category": "Local SEO Guide", "date": "2026-08-18", "readTime": "10 min"},
   {"slug": "commercial-cleaning-yonkers-ny", "image": "/blog/commercial-cleaning-yonkers-ny.jpg", "title": "Commercial Cleaning in Yonkers, NY: A Facility Manager’s Selection Guide", "excerpt": "A practical guide to commercial cleaning in Yonkers, NY with local access, staffing, safety, pricing, and JaniTrack verification benchmarks for facility managers.", "category": "Local SEO Guide", "date": "2026-08-18", "readTime": "10 min"},
@@ -453,15 +445,7 @@ const BLOG_INDEX = [
     "date": "2026-08-26",
     "readTime": "10 min"
   },
-  {
-    "slug": "commercial-cleaning-mount-vernon-ny",
-    "image": "/blog/commercial-cleaning-mount-vernon-ny.jpg",
-    "title": "Commercial Cleaning in Mount Vernon, NY: Local Facility Service Requirements",
-    "excerpt": "A Mount Vernon, NY commercial cleaning guide for offices, clinics, schools, and municipal facilities, with Westchester-specific access and compliance details.",
-    "category": "Local SEO Guide",
-    "date": "2026-08-26",
-    "readTime": "10 min"
-  },
+  {"slug": "commercial-cleaning-mount-vernon-ny", "image": "/blog/commercial-cleaning-mount-vernon-ny.jpg", "title": "Commercial Cleaning Services in Mount Vernon, NY: A Scope Checklist", "excerpt": "Use this Mount Vernon commercial cleaning scope checklist for offices, schools, retail, transit traffic, floor care, inspections, pricing, and vendor selection.", "category": "Local Guides", "date": "2026-09-21", "readTime": "10 min"},
   {
     "slug": "commercial-cleaning-brooklyn-heights",
     "image": "/blog/commercial-cleaning-brooklyn-heights.jpg",
@@ -513,7 +497,7 @@ const BLOG_INDEX = [
   {"slug": "commercial-cleaning-forest-hills-queens", "image": "/blog/commercial-cleaning-forest-hills-queens.jpg", "title": "Commercial Cleaning in Forest Hills: What Local Businesses Should Expect", "excerpt": "A practical guide to Forest Hills commercial cleaning: local traffic, pricing benchmarks, compliance, staffing, and how GreenPoint verifies quality with JaniTrack.", "category": "Local SEO", "date": "2026-08-31", "readTime": "10 min"},
   {"slug": "commercial-cleaning-hoboken-nj", "image": "/blog/commercial-cleaning-hoboken-nj.jpg", "title": "Commercial Cleaning Services in Hoboken, NJ: What to Put in the Scope", "excerpt": "Commercial Cleaning Services in Hoboken, NJ: What to Put in the Scope GreenPoint’s evidence-based guide covers local scope, pricing, staffing, safety, and verification. Contact Gre", "category": "Local Guides", "date": "2026-09-14", "readTime": "10 min"},
   {"slug": "commercial-cleaning-greenwich-ct", "image": "/blog/commercial-cleaning-greenwich-ct.jpg", "title": "Commercial Cleaning in Greenwich, CT: A Practical Vendor Selection Checklist", "excerpt": "Commercial Cleaning in Greenwich, CT: A Practical Vendor Selection Checklist GreenPoint’s evidence-based guide covers local scope, pricing, staffing, safety, and verification. Cont", "category": "Local Guides", "date": "2026-09-14", "readTime": "10 min"},
-  {"slug": "commercial-cleaning-new-rochelle-ny", "image": "/blog/commercial-cleaning-new-rochelle-ny.jpg", "title": "Commercial Cleaning Services in New Rochelle: How to Compare Local Vendors", "excerpt": "A practical guide to New Rochelle commercial cleaning: local traffic, pricing benchmarks, compliance, staffing, and how GreenPoint verifies quality with JaniTrack.", "category": "Local SEO", "date": "2026-08-31", "readTime": "10 min"}
+  {"slug": "commercial-cleaning-new-rochelle-ny", "image": "/blog/commercial-cleaning-new-rochelle-ny.jpg", "title": "Commercial Cleaning in New Rochelle: Service Frequencies and Quality Controls", "excerpt": "Plan commercial cleaning in New Rochelle with service frequencies, Westchester traffic patterns, floor care, restroom rounds, audits, and fixed-price controls.", "category": "Local Guides", "date": "2026-09-21", "readTime": "10 min"}
 ,
   {"slug": "commercial-cleaning-king-of-prussia-pa", "image": "/blog/commercial-cleaning-king-of-prussia-pa.jpg", "title": "Commercial Cleaning in King of Prussia: RFP Requirements for Office Properties", "excerpt": "Commercial cleaning in King of Prussia is a procurement decision, not simply a request for a nightly vacuum. Office properties around the King of Prussia Mall, Henderson Road, R…", "category": "Local SEO", "date": "2026-09-01", "readTime": "10 min"},
   {"slug": "coworking-space-cleaning-staffing-plan", "image": "/blog/coworking-space-cleaning-staffing-plan.jpg", "title": "Coworking Space Cleaning Staffing: Coverage for Desks, Kitchens, and Shared Rooms", "excerpt": "Coworking space cleaning requires a staffing plan that follows member behavior, not a simple square-foot formula. A 20,000-square-foot shared office in Manhattan, Brooklyn, or J…", "category": "Industry Guides", "date": "2026-09-01", "readTime": "10 min"},
@@ -636,6 +620,7 @@ const BLOG_INDEX = [
   {"slug": "commercial-cleaning-contract-sla-terms", "image": "/blog/commercial-cleaning-contract-sla-terms.jpg", "title": "Commercial Cleaning Contract Terms: SLAs, Credits, and Reporting Requirements", "excerpt": "A practical guide to commercial cleaning SLAs, service credits, inspection cadence, escalation rules, reporting, and fixed-price contract language.", "category": "RFP & Bids", "date": "2026-09-19", "readTime": "10 min"},
   {"slug": "mbe-certified-cleaning-vendor-rfp", "image": "/blog/mbe-certified-cleaning-vendor-rfp.jpg", "title": "How to Specify MBE-Certified Cleaning Vendors in an RFP", "excerpt": "Write an inclusive commercial cleaning RFP that verifies MBE/MWBE credentials, scopes participation, and evaluates diverse suppliers on delivery and evidence.", "category": "RFP & Bids", "date": "2026-09-19", "readTime": "10 min"},
   {"slug": "commercial-cleaning-fort-lauderdale-fl", "image": "/blog/commercial-cleaning-fort-lauderdale-fl.jpg", "title": "Commercial Cleaning Services in Fort Lauderdale: Humidity, Sand, and High-Traffic Care", "excerpt": "A Fort Lauderdale commercial cleaning guide for humidity, beach sand, lobby traffic, floor care, restroom service, storm readiness, and fixed-price janitorial planning.", "category": "Local Guides", "date": "2026-09-19", "readTime": "10 min"},
+  {"slug": "commercial-cleaning-bushwick-ny", "image": "/blog/commercial-cleaning-bushwick-ny.jpg", "title": "Commercial Cleaning in Bushwick, NY: Scope and Vendor Selection", "excerpt": "Compare commercial cleaning in Bushwick with a practical scope for studios, offices, retail, transit traffic, floor care, inspections, and fixed-price vendor selection.", "category": "Local Guides", "date": "2026-09-21", "readTime": "10 min"},
 ];
 
 export const metadata = {
