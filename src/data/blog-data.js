@@ -42694,7 +42694,7 @@ A: JaniTrack time-stamped GPS-tagged photos plus inspections and documented corr
       },
       {
         "type": "paragraph",
-        "text": "A: No. Confirm the floor material, finish and product directions first. Use a method that removes dissolved salt and recovered soil without leaving excess moisture or damaging the surface."
+        "text": "A: Not safely in every case: confirm the floor material, finish and product directions first. Use a method that removes dissolved salt and recovered soil without leaving excess moisture or damaging the surface."
       },
       {
         "type": "paragraph",
@@ -42710,7 +42710,7 @@ A: JaniTrack time-stamped GPS-tagged photos plus inspections and documented corr
       },
       {
         "type": "paragraph",
-        "text": "A: No. A sign alerts occupants while a hazard is addressed; it does not remove water or salt. Use barriers where needed, clean and dry the route, and reopen it only under the site’s procedure."
+        "text": "A: No, it is only a temporary warning while a hazard is addressed. It does not remove water or salt; use barriers where needed, clean and dry the route, and reopen it only under the site’s procedure."
       },
       {
         "type": "paragraph",
@@ -42722,7 +42722,7 @@ A: JaniTrack time-stamped GPS-tagged photos plus inspections and documented corr
       },
       {
         "type": "callout",
-        "text": "Request a fixed-price walkthrough from GreenPoint Maintenance Services: call 347-332-9348 or email info@greenpointms.com. GreenPoint is MBE/MWBE certified and uses JaniTrack timestamped, GPS-tagged service evidence; ask us to map a verified scope to your facility."
+        "text": "Call GreenPoint Maintenance Services at 347-332-9348 to book a fixed-price winter walkthrough. GreenPoint is MBE/MWBE certified and can document storm-response tasks with JaniTrack timestamped, GPS-tagged evidence."
       }
     ]
   },
@@ -42876,7 +42876,7 @@ A: JaniTrack time-stamped GPS-tagged photos plus inspections and documented corr
       },
       {
         "type": "callout",
-        "text": "Request a fixed-price walkthrough from GreenPoint Maintenance Services: call 347-332-9348 or email info@greenpointms.com. GreenPoint is MBE/MWBE certified and uses JaniTrack timestamped, GPS-tagged service evidence; ask us to map a verified scope to your facility."
+        "text": "Request an office spring-cleaning walkthrough from GreenPoint Maintenance Services at 347-332-9348 or info@greenpointms.com. Our MBE-certified team records approved dust-detail zones with JaniTrack evidence."
       }
     ]
   },
@@ -42998,7 +42998,7 @@ A: JaniTrack time-stamped GPS-tagged photos plus inspections and documented corr
       },
       {
         "type": "paragraph",
-        "text": "A: No. Cleaning reduces food residue and moisture, but pest control may also require monitoring, exclusion, repairs and treatment by a qualified professional."
+        "text": "A: Cleaning can reduce food residue and moisture, but a pest response may also require monitoring, exclusion, repairs and treatment by a qualified professional."
       },
       {
         "type": "paragraph",
@@ -43034,7 +43034,7 @@ A: JaniTrack time-stamped GPS-tagged photos plus inspections and documented corr
       },
       {
         "type": "callout",
-        "text": "Request a fixed-price walkthrough from GreenPoint Maintenance Services: call 347-332-9348 or email info@greenpointms.com. GreenPoint is MBE/MWBE certified and uses JaniTrack timestamped, GPS-tagged service evidence; ask us to map a verified scope to your facility."
+        "text": "Contact GreenPoint at 347-332-9348 to schedule a fixed-price sanitation walkthrough. GreenPoint Maintenance Services is MBE/MWBE certified and can document waste-route checks, photos and corrective actions in JaniTrack."
       }
     ]
   },
@@ -43192,7 +43192,7 @@ A: JaniTrack time-stamped GPS-tagged photos plus inspections and documented corr
       },
       {
         "type": "callout",
-        "text": "Request a fixed-price walkthrough from GreenPoint Maintenance Services: call 347-332-9348 or email info@greenpointms.com. GreenPoint is MBE/MWBE certified and uses JaniTrack timestamped, GPS-tagged service evidence; ask us to map a verified scope to your facility."
+        "text": "For a fixed-price flu-season office scope, call 347-332-9348 or email info@greenpointms.com to request a GreenPoint walkthrough. GreenPoint Maintenance Services is MBE/MWBE certified, with timestamped JaniTrack evidence for agreed tasks."
       }
     ]
   },
@@ -43314,7 +43314,7 @@ A: JaniTrack time-stamped GPS-tagged photos plus inspections and documented corr
       },
       {
         "type": "paragraph",
-        "text": "A: No. Soil removal and disinfection are different tasks, and some surfaces still require wiping, pre-cleaning or another label-approved method."
+        "text": "A: It does not replace soil removal; some surfaces still require wiping, pre-cleaning or another label-approved method."
       },
       {
         "type": "paragraph",
@@ -43322,7 +43322,7 @@ A: JaniTrack time-stamped GPS-tagged photos plus inspections and documented corr
       },
       {
         "type": "paragraph",
-        "text": "A: No. The specific pesticide label must authorize electrostatic application and its directions must be followed."
+        "text": "A: Only when the specific pesticide label authorizes electrostatic application and the directions are followed."
       },
       {
         "type": "paragraph",
@@ -43330,7 +43330,7 @@ A: JaniTrack time-stamped GPS-tagged photos plus inspections and documented corr
       },
       {
         "type": "paragraph",
-        "text": "A: No. Results depend on equipment, operator, distance, room layout, obstacles and surface properties. Unreachable or incompatible areas need a separate plan."
+        "text": "A: Coverage is not guaranteed; results depend on equipment, operator, distance, room layout, obstacles and surface properties. Unreachable or incompatible areas need a separate plan."
       },
       {
         "type": "paragraph",
@@ -43350,7 +43350,7 @@ A: JaniTrack time-stamped GPS-tagged photos plus inspections and documented corr
       },
       {
         "type": "callout",
-        "text": "Request a fixed-price walkthrough from GreenPoint Maintenance Services: call 347-332-9348 or email info@greenpointms.com. GreenPoint is MBE/MWBE certified and uses JaniTrack timestamped, GPS-tagged service evidence; ask us to map a verified scope to your facility."
+        "text": "Ask GreenPoint Maintenance Services for a label-and-safety walkthrough at 347-332-9348. GreenPoint is an MBE/MWBE-certified commercial cleaning provider; JaniTrack can document the approved method, service time and exceptions."
       }
     ]
   },
