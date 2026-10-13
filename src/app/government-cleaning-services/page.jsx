@@ -11,8 +11,8 @@ export const metadata = {
   },
 };
 
-const PHONE_NUMBER = "347-332-9348";
-const PHONE_HREF = "tel:+13473329348";
+const PHONE_NUMBER = "844-814-0810";
+const PHONE_HREF = "tel:+18448140810";
 
 const CAPABILITIES = [
   { title: "Daily Janitorial Maintenance", desc: "Scheduled cleaning of offices, restrooms, lobbies, hallways, and common areas per contract specifications." },

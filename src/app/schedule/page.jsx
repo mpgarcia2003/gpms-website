@@ -50,7 +50,7 @@ export default function SchedulePage() {
             />
           </div>
           <p style={{ textAlign: 'center', marginTop: 18, fontSize: 13, color: '#8aa39c' }}>
-            Prefer to talk first? Call <a href="tel:+13473329348" style={{ color: '#1B7A3D', fontWeight: 600 }}>347-332-9348</a> or
+            Prefer to talk first? Call <a href="tel:+18448140810" style={{ color: '#1B7A3D', fontWeight: 600 }}>844-814-0810</a> or
             email <a href="mailto:info@greenpointms.com" style={{ color: '#1B7A3D', fontWeight: 600 }}>info@greenpointms.com</a>.
           </p>
         </section>

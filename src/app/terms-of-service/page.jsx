@@ -137,10 +137,10 @@ export default function TermsOfServicePage() {
               }}>
                 <div><strong>GreenPoint Maintenance Services Corp</strong></div>
                 <div>Attn: Miguel Garcia</div>
-                <div>1420 Outlook Ave, Apt 2</div>
-                <div>Bronx, NY 10465</div>
+                <div>32 Court Street, Suite 904-F33</div>
+                <div>Brooklyn, NY 11201</div>
                 <div>Email: info@greenpointms.com</div>
-                <div>Phone: 347-332-9348</div>
+                <div>Phone: 844-814-0810</div>
               </div>
             </Section>
 
@@ -151,7 +151,7 @@ export default function TermsOfServicePage() {
                 By engaging GreenPoint&apos;s services, Client acknowledges having read, understood, and agreed to these Terms of Service in full.
               </p>
               <p style={{ fontSize: 13, color: '#666', margin: 0 }}>
-                Questions? Contact Miguel Garcia at <a href="mailto:info@greenpointms.com" style={{ color: '#1B7A3D', fontWeight: 600 }}>info@greenpointms.com</a> or <a href="tel:+13473329348" style={{ color: '#1B7A3D', fontWeight: 600 }}>347-332-9348</a>.
+                Questions? Contact Miguel Garcia at <a href="mailto:info@greenpointms.com" style={{ color: '#1B7A3D', fontWeight: 600 }}>info@greenpointms.com</a> or <a href="tel:+18448140810" style={{ color: '#1B7A3D', fontWeight: 600 }}>844-814-0810</a>.
               </p>
             </div>
 

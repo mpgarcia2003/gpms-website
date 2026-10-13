@@ -78,7 +78,7 @@ export async function POST(req) {
       "unknown";
     if (!checkRateLimit(ip)) {
       return NextResponse.json(
-        { error: "Too many submissions. Please try again in a minute or call 347-332-9348." },
+        { error: "Too many submissions. Please try again in a minute or call 844-814-0810." },
         { status: 429 }
       );
     }
@@ -199,7 +199,7 @@ export async function POST(req) {
       console.error("[INCIDENT REPORT] Both storage and email failed:", { supabaseError, emailError });
       return NextResponse.json(
         {
-          error: "Your report could not be processed. Please call Miguel Garcia immediately at 347-332-9348.",
+          error: "Your report could not be processed. Please call Miguel Garcia immediately at 844-814-0810.",
           reference_id,
         },
         { status: 500 }
@@ -217,7 +217,7 @@ export async function POST(req) {
   } catch (err) {
     console.error("[INCIDENT REPORT] Unhandled error:", err);
     return NextResponse.json(
-      { error: "Unexpected error. Please call Miguel Garcia at 347-332-9348." },
+      { error: "Unexpected error. Please call Miguel Garcia at 844-814-0810." },
       { status: 500 }
     );
   }
@@ -314,7 +314,7 @@ function buildAcknowledgmentEmailHtml(d) {
       </div>
 
       <p style="font-size:14px;line-height:1.7;color:#555;margin:16px 0;">
-        <strong>Next steps:</strong> If your incident involved an injury, please seek any necessary medical care. For life-threatening emergencies, call 911. Miguel Garcia can be reached at <a href="mailto:info@greenpointms.com" style="color:#1B7A3D;">info@greenpointms.com</a> or <a href="tel:+13473329348" style="color:#1B7A3D;">347-332-9348</a>.
+        <strong>Next steps:</strong> If your incident involved an injury, please seek any necessary medical care. For life-threatening emergencies, call 911. Miguel Garcia can be reached at <a href="mailto:info@greenpointms.com" style="color:#1B7A3D;">info@greenpointms.com</a> or <a href="tel:+18448140810" style="color:#1B7A3D;">844-814-0810</a>.
       </p>
 
       <p style="font-size:14px;line-height:1.7;color:#555;margin:16px 0;">
@@ -323,8 +323,8 @@ function buildAcknowledgmentEmailHtml(d) {
 
       <div style="margin-top:28px;padding-top:20px;border-top:1px solid #eee;font-size:12px;color:#888;line-height:1.6;">
         GreenPoint Maintenance Services Corp<br>
-        1420 Outlook Ave, Apt 2, Bronx, NY 10465<br>
-        info@greenpointms.com · 347-332-9348
+        32 Court Street, Suite 904-F33, Brooklyn, NY 11201<br>
+        info@greenpointms.com · 844-814-0810
       </div>
     </div>
   </div>

@@ -145,6 +145,7 @@ const NAV_ITEMS = [
   { label: "Industries", target: "industries" },
   { label: "JaniTrack", target: "janitrack" },
   { label: "Government", target: "compliance" },
+  { label: "Playbook", href: "/playbook" },
   { label: "Instant Quote", target: "quote" },
   { label: "Blog", href: "/blog" },
 ];
@@ -168,7 +169,7 @@ const SERVICES = [
     iconKey: "shield-check",
     title: "Disinfection & Sanitization",
     outcome: "CDC-compliant. ATP-verified.",
-    desc: "Electrostatic disinfection with hospital-grade sanitizers. ATP bioluminescence testing provides measurable proof of pathogen elimination.",
+    desc: "Electrostatic disinfection with hospital-grade sanitizers. ATP bioluminescence testing provides a measurable, objective reading of surface cleanliness.",
   },
   {
     iconKey: "floor",

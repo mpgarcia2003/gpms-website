@@ -108,7 +108,7 @@ export default function PoliticaConductaSeguridadPage() {
 
               <p><strong>(d) Límites de altura.</strong> Para cualquier tarea que requiera trabajar a más de <strong>10 pies (3 metros)</strong>, debe avisar a Miguel Garcia con anticipación y usar la protección contra caídas aprobada por la Compañía si está disponible. El trabajo a más de <strong>20 pies (6 metros)</strong> requiere aprobación previa por escrito del supervisor y protección contra caídas documentada.</p>
 
-              <p><strong>(e) Sin excepciones.</strong> Si no hay un segundo miembro del Personal disponible y debe realizarse una tarea con escalera, <strong>deténgase y llame a Miguel Garcia al 347-332-9348</strong>. No intente la tarea solo, aunque el cliente, el personal del cliente o el administrador del edificio se lo pida o lo presione. <strong>La presión del cliente nunca justifica violar esta regla.</strong></p>
+              <p><strong>(e) Sin excepciones.</strong> Si no hay un segundo miembro del Personal disponible y debe realizarse una tarea con escalera, <strong>deténgase y llame a Miguel Garcia al 844-814-0810</strong>. No intente la tarea solo, aunque el cliente, el personal del cliente o el administrador del edificio se lo pida o lo presione. <strong>La presión del cliente nunca justifica violar esta regla.</strong></p>
             </Section>
 
             <Section number="3" title="Reporte de Lesiones e Incidentes" flagged criticalLabel="Crítico">
@@ -124,7 +124,7 @@ export default function PoliticaConductaSeguridadPage() {
               }}>
                 <div><strong>Miguel Garcia</strong></div>
                 <div>📧 <a href="mailto:info@greenpointms.com" style={{ color: '#1B7A3D' }}>info@greenpointms.com</a></div>
-                <div>📞 <a href="tel:+13473329348" style={{ color: '#1B7A3D' }}>347-332-9348</a></div>
+                <div>📞 <a href="tel:+18448140810" style={{ color: '#1B7A3D' }}>844-814-0810</a></div>
                 <div>🔗 <a href="/incident-report" style={{ color: '#1B7A3D' }}>Enviar Reporte de Incidente de la Compañía →</a></div>
               </div>
 
@@ -146,7 +146,7 @@ export default function PoliticaConductaSeguridadPage() {
 
               <p><strong>(e) Cómo reportar.</strong></p>
               <ol style={{ paddingLeft: 22, lineHeight: 1.9 }}>
-                <li>Llame o envíe un mensaje de texto a Miguel Garcia al <strong>347-332-9348</strong> de inmediato (o escriba a <strong>info@greenpointms.com</strong>).</li>
+                <li>Llame o envíe un mensaje de texto a Miguel Garcia al <strong>844-814-0810</strong> de inmediato (o escriba a <strong>info@greenpointms.com</strong>).</li>
                 <li>Envíe el <a href="/incident-report" style={{ color: '#1B7A3D', fontWeight: 600 }}>formulario de Reporte de Incidente</a> en línea antes del fin del turno o el siguiente día hábil.</li>
                 <li>Entregue la documentación médica dentro de los cinco (5) días hábiles posteriores a cualquier tratamiento.</li>
                 <li>Coopere plenamente con cualquier reclamo de compensación laboral, investigación o proceso de regreso al trabajo.</li>
@@ -154,7 +154,7 @@ export default function PoliticaConductaSeguridadPage() {
 
               <p><strong>(f) Sus derechos bajo la ley de Nueva York — Reconocidos.</strong> La Ley de Compensación Laboral de Nueva York le otorga <strong>treinta (30) días</strong> para reportar una lesión laboral a su empleador y preservar sus beneficios de compensación laboral. <strong>Nada en esta política acorta ese plazo legal ni afecta su derecho a los beneficios.</strong> La política interna de la Compañía (mismo día / siete días) es únicamente para fines operativos y disciplinarios. Reportar tarde puede afectar su evaluación de desempeño y su historial disciplinario, pero <strong>no</strong> se usará para negarle los beneficios de compensación laboral a los que tiene derecho por ley.</p>
 
-              <p><strong>(g) Emergencias.</strong> En caso de lesiones que pongan en riesgo la vida, <strong>llame primero al 911</strong> y luego notifique a Miguel Garcia al 347-332-9348 tan pronto como sea razonablemente posible.</p>
+              <p><strong>(g) Emergencias.</strong> En caso de lesiones que pongan en riesgo la vida, <strong>llame primero al 911</strong> y luego notifique a Miguel Garcia al 844-814-0810 tan pronto como sea razonablemente posible.</p>
 
               <p><strong>(h) No represalias.</strong> GreenPoint no tomará represalias contra ningún miembro del Personal por reportar una lesión o presentar un reclamo de compensación laboral de buena fe. Las represalias son ilegales bajo la ley de Nueva York y una violación de esta política.</p>
 
@@ -314,7 +314,7 @@ export default function PoliticaConductaSeguridadPage() {
             </Section>
 
             <Section number="14" title="Contra el Acoso y la Discriminación">
-              <p>GreenPoint prohíbe el acoso o la discriminación por motivos de raza, color, religión, sexo, orientación sexual, identidad de género, origen nacional, edad, discapacidad, condición de veterano o cualquier otra característica protegida. Reporte cualquier inquietud directamente a Miguel Garcia en <strong>info@greenpointms.com</strong> o al <strong>347-332-9348</strong>. Los reportes se investigarán con prontitud y confidencialidad. Las represalias por un reporte de buena fe son en sí mismas una violación de esta política y son ilegales bajo la ley de Nueva York.</p>
+              <p>GreenPoint prohíbe el acoso o la discriminación por motivos de raza, color, religión, sexo, orientación sexual, identidad de género, origen nacional, edad, discapacidad, condición de veterano o cualquier otra característica protegida. Reporte cualquier inquietud directamente a Miguel Garcia en <strong>info@greenpointms.com</strong> o al <strong>844-814-0810</strong>. Los reportes se investigarán con prontitud y confidencialidad. Las represalias por un reporte de buena fe son en sí mismas una violación de esta política y son ilegales bajo la ley de Nueva York.</p>
             </Section>
 
             <Section number="15" title="Clima y Peligros Ambientales">
@@ -491,7 +491,7 @@ export default function PoliticaConductaSeguridadPage() {
                 ¿Preguntas o dudas sobre esta política?
               </p>
               <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.7)', margin: 0 }}>
-                Contacte a Miguel Garcia en <a href="mailto:info@greenpointms.com" style={{ color: '#C8A34D', fontWeight: 600 }}>info@greenpointms.com</a> o al <a href="tel:+13473329348" style={{ color: '#C8A34D', fontWeight: 600 }}>347-332-9348</a>
+                Contacte a Miguel Garcia en <a href="mailto:info@greenpointms.com" style={{ color: '#C8A34D', fontWeight: 600 }}>info@greenpointms.com</a> o al <a href="tel:+18448140810" style={{ color: '#C8A34D', fontWeight: 600 }}>844-814-0810</a>
               </p>
             </div>
 

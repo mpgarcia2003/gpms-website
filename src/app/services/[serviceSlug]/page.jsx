@@ -66,7 +66,7 @@ export default function ServicePage({ params }) {
     provider: {
       "@type": "LocalBusiness",
       name: "GreenPoint Maintenance Services Corp",
-      telephone: "+1-347-332-9348",
+      telephone: "+1-844-814-0810",
       email: "info@greenpointms.com",
     },
     areaServed: STATES.map(s => ({ "@type": "State", name: s.name })),

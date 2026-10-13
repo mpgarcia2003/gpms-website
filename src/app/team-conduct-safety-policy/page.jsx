@@ -104,7 +104,7 @@ export default function TeamConductSafetyPolicyPage() {
 
               <p><strong>(d) Height Limits.</strong> For any task requiring work above <strong>10 feet</strong>, you must notify Miguel Garcia in advance and use Company-approved fall protection if available. Work above <strong>20 feet</strong> requires written supervisor pre-approval and documented fall protection.</p>
 
-              <p><strong>(e) No Exceptions.</strong> If a second Team Member is not available and a ladder task must be performed, <strong>stop and call Miguel Garcia at 347-332-9348</strong>. Do not attempt the task alone, even if the client, the client&apos;s staff, or a building manager asks or pressures you to do so. <strong>Client pressure is never a justification for violating this rule.</strong></p>
+              <p><strong>(e) No Exceptions.</strong> If a second Team Member is not available and a ladder task must be performed, <strong>stop and call Miguel Garcia at 844-814-0810</strong>. Do not attempt the task alone, even if the client, the client&apos;s staff, or a building manager asks or pressures you to do so. <strong>Client pressure is never a justification for violating this rule.</strong></p>
             </Section>
 
             <Section number="3" title="Injury &amp; Incident Reporting" flagged>
@@ -120,7 +120,7 @@ export default function TeamConductSafetyPolicyPage() {
               }}>
                 <div><strong>Miguel Garcia</strong></div>
                 <div>📧 <a href="mailto:info@greenpointms.com" style={{ color: '#1B7A3D' }}>info@greenpointms.com</a></div>
-                <div>📞 <a href="tel:+13473329348" style={{ color: '#1B7A3D' }}>347-332-9348</a></div>
+                <div>📞 <a href="tel:+18448140810" style={{ color: '#1B7A3D' }}>844-814-0810</a></div>
                 <div>🔗 <a href="/incident-report" style={{ color: '#1B7A3D' }}>Submit Company Incident Report →</a></div>
               </div>
 
@@ -142,7 +142,7 @@ export default function TeamConductSafetyPolicyPage() {
 
               <p><strong>(e) How to Report.</strong></p>
               <ol style={{ paddingLeft: 22, lineHeight: 1.9 }}>
-                <li>Call or text Miguel Garcia at <strong>347-332-9348</strong> immediately (or email <strong>info@greenpointms.com</strong>).</li>
+                <li>Call or text Miguel Garcia at <strong>844-814-0810</strong> immediately (or email <strong>info@greenpointms.com</strong>).</li>
                 <li>Submit the online <a href="/incident-report" style={{ color: '#1B7A3D', fontWeight: 600 }}>Company Incident Report form</a> by end-of-shift or next business day.</li>
                 <li>Provide medical documentation within five (5) business days of any treatment.</li>
                 <li>Cooperate fully with any workers&apos; compensation claim, investigation, or return-to-work process.</li>
@@ -150,7 +150,7 @@ export default function TeamConductSafetyPolicyPage() {
 
               <p><strong>(f) Your Rights Under New York Law — Acknowledged.</strong> New York Workers&apos; Compensation Law gives you <strong>thirty (30) days</strong> to report a workplace injury to your employer to preserve workers&apos; compensation benefits. <strong>Nothing in this policy shortens that legal deadline or affects your right to benefits.</strong> The Company&apos;s internal same-day/seven-day policy is for operational and disciplinary purposes only. Late reporting may affect performance review and disciplinary standing but will <strong>not</strong> be used to deny you workers&apos; compensation benefits you are legally entitled to.</p>
 
-              <p><strong>(g) Emergencies.</strong> For life-threatening injuries, <strong>call 911 first</strong>, then notify Miguel Garcia at 347-332-9348 as soon as reasonably possible.</p>
+              <p><strong>(g) Emergencies.</strong> For life-threatening injuries, <strong>call 911 first</strong>, then notify Miguel Garcia at 844-814-0810 as soon as reasonably possible.</p>
 
               <p><strong>(h) No Retaliation.</strong> GreenPoint will not retaliate against any Team Member for reporting an injury or filing a workers&apos; compensation claim in good faith. Retaliation is illegal under New York law and a violation of this policy.</p>
 
@@ -309,7 +309,7 @@ export default function TeamConductSafetyPolicyPage() {
             </Section>
 
             <Section number="14" title="Anti-Harassment &amp; Anti-Discrimination">
-              <p>GreenPoint prohibits harassment or discrimination based on race, color, religion, sex, sexual orientation, gender identity, national origin, age, disability, veteran status, or any other protected characteristic. Report any concerns directly to Miguel Garcia at <strong>info@greenpointms.com</strong> or <strong>347-332-9348</strong>. Reports will be investigated promptly and confidentially. Retaliation for a good-faith report is itself a violation of this policy and is illegal under New York law.</p>
+              <p>GreenPoint prohibits harassment or discrimination based on race, color, religion, sex, sexual orientation, gender identity, national origin, age, disability, veteran status, or any other protected characteristic. Report any concerns directly to Miguel Garcia at <strong>info@greenpointms.com</strong> or <strong>844-814-0810</strong>. Reports will be investigated promptly and confidentially. Retaliation for a good-faith report is itself a violation of this policy and is illegal under New York law.</p>
             </Section>
 
             <Section number="15" title="Weather &amp; Environmental Hazards">
@@ -486,7 +486,7 @@ export default function TeamConductSafetyPolicyPage() {
                 Questions or concerns about this policy?
               </p>
               <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.7)', margin: 0 }}>
-                Contact Miguel Garcia at <a href="mailto:info@greenpointms.com" style={{ color: '#C8A34D', fontWeight: 600 }}>info@greenpointms.com</a> or <a href="tel:+13473329348" style={{ color: '#C8A34D', fontWeight: 600 }}>347-332-9348</a>
+                Contact Miguel Garcia at <a href="mailto:info@greenpointms.com" style={{ color: '#C8A34D', fontWeight: 600 }}>info@greenpointms.com</a> or <a href="tel:+18448140810" style={{ color: '#C8A34D', fontWeight: 600 }}>844-814-0810</a>
               </p>
             </div>
 

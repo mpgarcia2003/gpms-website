@@ -54,7 +54,7 @@ export default function EnhancedProgrammaticPage({
 
           <div style={{ display: "flex", gap: 16, marginTop: 32, flexWrap: "wrap" }}>
             <a href="/#schedule" className="ep-cta" style={{ background: "#1B7A3D", color: "#fff", padding: "14px 32px", borderRadius: 8, fontWeight: 700, fontSize: 13, textDecoration: "none", fontFamily: "'Syne', sans-serif", letterSpacing: "0.04em" }}>Schedule a Walkthrough →</a>
-            <a href="tel:+13473329348" style={{ background: "transparent", color: "#fff", padding: "14px 32px", borderRadius: 8, fontWeight: 600, fontSize: 13, textDecoration: "none", fontFamily: "'Syne', sans-serif", border: "1px solid rgba(255,255,255,0.2)" }}>Call 347-332-9348</a>
+            <a href="tel:+18448140810" style={{ background: "transparent", color: "#fff", padding: "14px 32px", borderRadius: 8, fontWeight: 600, fontSize: 13, textDecoration: "none", fontFamily: "'Syne', sans-serif", border: "1px solid rgba(255,255,255,0.2)" }}>Call 844-814-0810</a>
           </div>
         </div>
       </section>
@@ -253,7 +253,7 @@ export default function EnhancedProgrammaticPage({
           </p>
           <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
             <a href="/#schedule" className="ep-cta" style={{ background: "#1B7A3D", color: "#fff", padding: "16px 36px", borderRadius: 8, fontWeight: 700, fontSize: 13, textDecoration: "none", fontFamily: "'Syne', sans-serif", letterSpacing: "0.04em" }}>Schedule a Walkthrough →</a>
-            <a href="tel:+13473329348" style={{ background: "transparent", color: "#fff", padding: "16px 36px", borderRadius: 8, fontWeight: 600, fontSize: 13, textDecoration: "none", fontFamily: "'Syne', sans-serif", border: "1px solid rgba(255,255,255,0.2)" }}>Call 347-332-9348</a>
+            <a href="tel:+18448140810" style={{ background: "transparent", color: "#fff", padding: "16px 36px", borderRadius: 8, fontWeight: 600, fontSize: 13, textDecoration: "none", fontFamily: "'Syne', sans-serif", border: "1px solid rgba(255,255,255,0.2)" }}>Call 844-814-0810</a>
           </div>
         </div>
       </section>

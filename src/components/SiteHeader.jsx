@@ -9,6 +9,7 @@ const NAV_LINKS = [
   { label: "Industries", href: "/#industries" },
   { label: "JaniTrack", href: "/#janitrack" },
   { label: "Government", href: "/government-cleaning-services" },
+  { label: "Playbook", href: "/playbook" },
   { label: "Careers", href: "/careers" },
   { label: "Instant Quote", href: "/#quote" },
   { label: "Blog", href: "/blog" },

@@ -61,6 +61,7 @@ export default function SiteFooter() {
             {[
               { label: "Careers \u2014 We\u2019re Hiring!", href: "/careers", highlight: true },
               { label: "Schedule a Consultation", href: "/#schedule" },
+              { label: "The GreenPoint Playbook", href: "/playbook" },
               { label: "Government Services", href: "/government-cleaning-services" },
               { label: "Capability Statement", href: "/capability-statement" },
               { label: "School Cleaning NYC", href: "/school-cleaning-nyc" },

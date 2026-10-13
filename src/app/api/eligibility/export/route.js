@@ -126,7 +126,7 @@ ${sigRows || `<tr><td colspan="3" style="padding:4px 8px;border:1px solid #ddd;"
 ${r.is_minor ? `<div class="row" style="margin-top:8px"><div class="label">Minor — Guardian</div><div class="value">${r.guardian_name || "—"}</div></div>` : ""}
 
 <div class="footer">
-  GreenPoint Maintenance Services Corp &mdash; 1420 Outlook Ave, Bronx, NY 10465 &mdash; 347-332-9348 &mdash; info@greenpointms.com<br>
+  GreenPoint Maintenance Services Corp &mdash; 32 Court Street, Suite 904-F33, Brooklyn, NY 11201 &mdash; 844-814-0810 &mdash; info@greenpointms.com<br>
   This document contains sensitive personal information. Handle in accordance with company privacy policies.
 </div>
 

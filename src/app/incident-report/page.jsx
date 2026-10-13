@@ -50,7 +50,7 @@ export default function IncidentReportPage() {
       });
       const data = await res.json();
       if (!res.ok) {
-        throw new Error(data.error || "Submission failed. Please try again or call 347-332-9348.");
+        throw new Error(data.error || "Submission failed. Please try again or call 844-814-0810.");
       }
       setResult(data);
     } catch (err) {
@@ -86,7 +86,7 @@ export default function IncidentReportPage() {
               Report an Incident
             </h1>
             <p style={{ fontSize: 15, color: 'rgba(255,255,255,0.65)', lineHeight: 1.7, maxWidth: 620, margin: '0 auto' }}>
-              Submit this form as soon as possible after any incident, injury, near-miss, or accident at any GreenPoint work site. For life-threatening emergencies, <strong style={{ color: '#fff' }}>call 911 first</strong>, then call Miguel Garcia at <strong style={{ color: '#fff' }}>347-332-9348</strong>.
+              Submit this form as soon as possible after any incident, injury, near-miss, or accident at any GreenPoint work site. For life-threatening emergencies, <strong style={{ color: '#fff' }}>call 911 first</strong>, then call Miguel Garcia at <strong style={{ color: '#fff' }}>844-814-0810</strong>.
             </p>
           </div>
         </section>
@@ -224,9 +224,9 @@ export default function IncidentReportPage() {
                   marginTop: 32, padding: 20, background: '#f5f7f5', borderRadius: 8,
                   fontSize: 13, color: '#555', lineHeight: 1.7,
                 }}>
-                  <strong>Emergency?</strong> For life-threatening injuries, call <a href="tel:911" style={{ color: '#1B7A3D', fontWeight: 700 }}>911</a> first, then Miguel Garcia at <a href="tel:+13473329348" style={{ color: '#1B7A3D', fontWeight: 700 }}>347-332-9348</a>.
+                  <strong>Emergency?</strong> For life-threatening injuries, call <a href="tel:911" style={{ color: '#1B7A3D', fontWeight: 700 }}>911</a> first, then Miguel Garcia at <a href="tel:+18448140810" style={{ color: '#1B7A3D', fontWeight: 700 }}>844-814-0810</a>.
                   <br />
-                  <strong>Prefer to report another way?</strong> Email <a href="mailto:info@greenpointms.com" style={{ color: '#1B7A3D', fontWeight: 700 }}>info@greenpointms.com</a> or call/text <a href="tel:+13473329348" style={{ color: '#1B7A3D', fontWeight: 700 }}>347-332-9348</a>.
+                  <strong>Prefer to report another way?</strong> Email <a href="mailto:info@greenpointms.com" style={{ color: '#1B7A3D', fontWeight: 700 }}>info@greenpointms.com</a> or call/text <a href="tel:+18448140810" style={{ color: '#1B7A3D', fontWeight: 700 }}>844-814-0810</a>.
                 </div>
 
               </form>

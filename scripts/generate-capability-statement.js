@@ -13,8 +13,8 @@ const fs = require('fs');
 const path = require('path');
 
 // ─── UPDATE THESE when Miguel provides them ─────────────────────────────────
-const CAGE_CODE = '[TBD — Contact Miguel]';   // Replace with actual CAGE code
-const UEI_NUMBER = '[TBD — Contact Miguel]';  // Replace with actual UEI
+const CAGE_CODE = 'Available upon request';   // Replace with actual CAGE code
+const UEI_NUMBER = 'Available upon request';  // Replace with actual UEI
 // ─────────────────────────────────────────────────────────────────────────────
 
 const OUTPUT_PATH = path.join(__dirname, '..', 'public', 'greenpoint-capability-statement.pdf');
@@ -108,7 +108,7 @@ doc.save()
   .font('Helvetica')
   .fontSize(9)
   .fillColor(C.green)
-  .text('MBE/MWBE Certified Facility Services Provider  •  Est. 2018  •  Bronx, NY', MARGIN + 58, 57)
+  .text('MBE/MWBE Certified Facility Services Provider  •  Est. 2018  •  Brooklyn, NY', MARGIN + 58, 57)
   .restore();
 
 // "CAPABILITY STATEMENT" label top-right
@@ -226,9 +226,9 @@ doc.save().font('Helvetica').fontSize(8).fillColor([170, 210, 185]).text('Presid
 hLine(y + 58, COL1_X + 12, COL1_X + COL1_W - 12, [255, 255, 255, 0.15], 0.4);
 
 doc.save().font('Helvetica').fontSize(8).fillColor([200, 230, 210])
-  .text('(347) 332-9348', COL1_X + 12, y + 66)
+  .text('(844) 814-0810', COL1_X + 12, y + 66)
   .text('info@greenpointms.com', COL1_X + 12, y + 80)
-  .text('Bronx, New York', COL1_X + 12, y + 94)
+  .text('32 Court St, Suite 904-F33, Brooklyn, NY 11201', COL1_X + 12, y + 94)
   .restore();
 
 // ── RIGHT COLUMN ─────────────────────────────────────────────────────────────
@@ -251,7 +251,7 @@ doc.save()
   .fillColor(C.bodyText)
   .lineGap(3)
   .text(
-    'GreenPoint Maintenance Services Corp is a Minority Business Enterprise (MBE) certified commercial janitorial and facility maintenance provider headquartered in the Bronx, New York. We deliver verified, compliance-grade cleaning programs to educational, government, healthcare, and institutional facilities across five states.',
+    'GreenPoint Maintenance Services Corp is a Minority Business Enterprise (MBE) certified commercial janitorial and facility maintenance provider headquartered in Brooklyn, New York. We deliver verified, compliance-grade cleaning programs to educational, government, healthcare, and institutional facilities across five states.',
     COL2_X, ry2, { width: COL2_W }
   )
   .restore();
@@ -283,7 +283,7 @@ ry2 += 24;
 
 const competencies = [
   { title: 'Commercial Janitorial Programs', desc: 'Daily, weekly, and monthly facility cleaning using Green Seal certified products. Custom protocols per facility type.' },
-  { title: 'Real-Time Verification (JaniTrack)', desc: 'Proprietary verification system with timestamped photo documentation, GPS task completion, and ATP bioluminescence testing.' },
+  { title: 'Real-Time Verification (StockPoint)', desc: 'Verification platform with timestamped photo documentation, GPS task completion, and ATP surface-cleanliness readings.' },
   { title: 'Healthcare & Education Compliance', desc: 'CDC-compliant sanitization for schools, daycares, and medical offices. OSHA-aware protocols. Safe for occupants.' },
   { title: 'Day Porter & On-Site Services', desc: 'Dedicated on-site personnel for high-traffic facilities. Restroom maintenance, trash management, and spot cleaning.' },
   { title: 'Floor Care Programs', desc: 'Strip, wax, buff, scrub, and refinish programs for VCT, LVT, hardwood, and epoxy surfaces.' },
@@ -307,7 +307,7 @@ hLine(ry2 + 16, COL2_X, COL2_X + COL2_W, C.green, 1.5);
 ry2 += 24;
 
 const diffs = [
-  ['JaniTrack™ Verification', 'Only local provider with real-time photo & ATP testing documentation after every service.'],
+  ['StockPoint Verification', 'Real-time photo and ATP cleanliness documentation after every service, available to clients on request.'],
   ['MBE/MWBE Certified',      'Qualifies for diversity procurement programs, MWBE set-asides, and minority vendor registries.'],
   ['Dedicated Team Assignment','Same background-checked team for every visit — consistent service, no strangers.'],
   ['5-State Coverage',         'NY, NJ, CT, PA, FL — scalable for multi-location institutional and government contracts.'],
@@ -324,7 +324,7 @@ diffs.forEach((d, i) => {
 // ── Page 1 Footer ────────────────────────────────────────────────────────────
 fillRect(0, H - 28, W, 28, C.darkGreen);
 doc.save().font('Helvetica').fontSize(7.5).fillColor([150, 200, 170])
-  .text('GreenPoint Maintenance Services Corp  •  Bronx, NY  •  info@greenpointms.com  •  (347) 332-9348  •  greenpointms.com', MARGIN, H - 18, { width: W - MARGIN * 2 })
+  .text('GreenPoint Maintenance Services Corp  •  Brooklyn, NY  •  info@greenpointms.com  •  (844) 814-0810  •  greenpointms.com', MARGIN, H - 18, { width: W - MARGIN * 2 })
   .restore();
 doc.save().font('Helvetica').fontSize(7.5).fillColor([150, 200, 170])
   .text('1 of 2', 0, H - 18, { align: 'right', width: W - MARGIN })
@@ -512,7 +512,7 @@ doc.save().font('Helvetica-Bold').fontSize(9).fillColor(C.darkGreen)
   .restore();
 
 doc.save().font('Helvetica-Bold').fontSize(9).fillColor(C.midGreen)
-  .text('(347) 332-9348', MARGIN + 12, p2y + 24)
+  .text('(844) 814-0810', MARGIN + 12, p2y + 24)
   .restore();
 
 doc.save().font('Helvetica').fontSize(9).fillColor(C.midGreen)
@@ -522,7 +522,7 @@ doc.save().font('Helvetica').fontSize(9).fillColor(C.midGreen)
 // ── Page 2 Footer ─────────────────────────────────────────────────────────────
 fillRect(0, H - 28, W, 28, C.darkGreen);
 doc.save().font('Helvetica').fontSize(7.5).fillColor([150, 200, 170])
-  .text('GreenPoint Maintenance Services Corp  •  Bronx, NY  •  info@greenpointms.com  •  (347) 332-9348  •  SAM.gov Active  •  EIN: 83-3561154', MARGIN, H - 18, { width: W - MARGIN * 2 })
+  .text('GreenPoint Maintenance Services Corp  •  Brooklyn, NY  •  info@greenpointms.com  •  (844) 814-0810  •  SAM.gov Active  •  EIN: 83-3561154', MARGIN, H - 18, { width: W - MARGIN * 2 })
   .restore();
 doc.save().font('Helvetica').fontSize(7.5).fillColor([150, 200, 170])
   .text('2 of 2', 0, H - 18, { align: 'right', width: W - MARGIN })

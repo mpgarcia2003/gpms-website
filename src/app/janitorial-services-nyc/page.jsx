@@ -55,7 +55,7 @@ const faqSchema = {
       name: "Do you offer emergency cleaning services in NYC?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. In addition to scheduled cleaning programs, GreenPoint offers 24/7 emergency cleaning services for water damage, biohazard incidents, post-event cleanup, and post-construction debris removal anywhere in NYC. Contact us at 347-332-9348 for immediate dispatch.",
+        text: "Yes. In addition to scheduled cleaning programs, GreenPoint offers 24/7 emergency cleaning services for water damage, biohazard incidents, post-event cleanup, and post-construction debris removal anywhere in NYC. Contact us at 844-814-0810 for immediate dispatch.",
       },
     },
   ],
@@ -80,7 +80,7 @@ export default function JanitorialServicesNYC() {
       ]}
       services={[
         { iconKey: "building", title: "Daily & Nightly Janitorial", desc: "Scheduled cleaning programs for lobbies, restrooms, offices, classrooms, and common areas. Customized checklists for your facility type and traffic patterns." },
-        { iconKey: "shield", title: "Disinfection & Sanitization", desc: "Electrostatic disinfection with hospital-grade sanitizers. ATP bioluminescence testing verifies pathogen elimination on high-touch surfaces." },
+        { iconKey: "shield", title: "Disinfection & Sanitization", desc: "Electrostatic disinfection with hospital-grade sanitizers. ATP bioluminescence testing gives an objective cleanliness reading on high-touch surfaces." },
         { iconKey: "building", title: "Floor Care & Restoration", desc: "Strip, seal, and refinish hard floors. Carpet extraction and encapsulation. Marble, stone, and VCT maintenance programs for high-traffic commercial spaces." },
         { iconKey: "office", title: "Day Porter Services", desc: "On-site daytime staff for continuous upkeep — restroom monitoring, lobby presentation, conference room readiness, and supply replenishment." },
         { iconKey: "building", title: "Facility Maintenance", desc: "Light plumbing, electrical, HVAC filter changes, painting touch-ups, and general handyman services under one contract and one invoice." },
@@ -96,7 +96,7 @@ export default function JanitorialServicesNYC() {
         { q: "What types of facilities does GreenPoint clean in NYC?", a: "We serve six core verticals: K-12 schools and charter schools, churches and houses of worship, healthcare and medical offices, daycare and childcare centers, government and municipal buildings, and commercial office spaces. Each has dedicated protocols for its compliance and safety requirements." },
         { q: "How much do janitorial services cost in NYC?", a: "Pricing depends on facility type, square footage, frequency, and scope. We provide fixed-price proposals with no hidden fees after a complimentary walkthrough. Try our instant quote calculator for a preliminary estimate." },
         { q: "What makes GreenPoint different from other NYC cleaning companies?", a: "JaniTrack real-time cleaning verification with timestamped photos, GPS-tagged task completion, and ATP bioluminescence testing. Plus MBE/MWBE certification, SAM.gov registration, and $2M+ insurance coverage." },
-        { q: "Do you offer emergency cleaning services?", a: "Yes — 24/7 emergency response for water damage, biohazard incidents, post-event cleanup, and post-construction work. Call 347-332-9348 for immediate dispatch." },
+        { q: "Do you offer emergency cleaning services?", a: "Yes — 24/7 emergency response for water damage, biohazard incidents, post-event cleanup, and post-construction work. Call 844-814-0810 for immediate dispatch." },
         { q: "What areas of NYC do you serve?", a: "We cover all five boroughs — Bronx, Manhattan, Brooklyn, Queens, and Staten Island — plus Westchester County, and the broader tri-state region including NJ, CT, PA, and FL." },
         { q: "Are your cleaning teams background-checked?", a: "Every GreenPoint team member undergoes a comprehensive background check before assignment. We carry full commercial general liability insurance, workers' compensation, and bonding." },
       ]}
