@@ -302,7 +302,7 @@ export default function PoliticaConductaSeguridadPage() {
 
               <p><strong>(b) No captación de compañeros.</strong> Solicitar, reclutar o alentar a cualquier miembro del Personal de GreenPoint con quien trabajó a dejar GreenPoint para trabajar para usted o para un tercero.</p>
 
-              <p><strong>(c) Confidencialidad.</strong> No divulgue ni use los precios, métodos, listas de clientes, datos de JaniTrack, materiales de capacitación ni ninguna otra información no pública de GreenPoint para ningún propósito distinto al desempeño de sus funciones para GreenPoint. Esta obligación sobrevive a la terminación del empleo.</p>
+              <p><strong>(c) Confidencialidad.</strong> No divulgue ni use los precios, métodos, listas de clientes, datos de StockPoint, materiales de capacitación ni ninguna otra información no pública de GreenPoint para ningún propósito distinto al desempeño de sus funciones para GreenPoint. Esta obligación sobrevive a la terminación del empleo.</p>
 
               <p><strong>(d) Lo que esta sección NO restringe.</strong> Nada en esta Sección 12 le impide (i) trabajar para un competidor en una capacidad general, (ii) contactar a clientes con quienes tenía relaciones previas antes de unirse a GreenPoint, o (iii) aceptar empleo con cualquier compañía que no haya llegado a usted a través de GreenPoint.</p>
 

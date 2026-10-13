@@ -83,7 +83,7 @@ export default function TermsOfServicePage() {
 
               <p><strong>(b) Indirect Solicitation.</strong> Refer, introduce, or recommend any such Covered Personnel to any third-party cleaning, janitorial, or facility maintenance provider for the purpose of employment or contract work, where the referral is intended to circumvent this Section 6.</p>
 
-              <p><strong>(c) Acknowledgment of Legitimate Interest.</strong> Client acknowledges that GreenPoint invests significant resources in recruiting, background-checking, training, uniforming, insuring, and retaining its personnel &mdash; including specialized training in safety, equipment operation, client-site protocols, and proprietary systems including JaniTrack &mdash; and that these investments create a legitimate protectable business interest under New York law.</p>
+              <p><strong>(c) Acknowledgment of Legitimate Interest.</strong> Client acknowledges that GreenPoint invests significant resources in recruiting, background-checking, training, uniforming, insuring, and retaining its personnel &mdash; including specialized training in safety, equipment operation, client-site protocols, and proprietary systems including StockPoint &mdash; and that these investments create a legitimate protectable business interest under New York law.</p>
 
               <p><strong>(d) Liquidated Damages.</strong> Because actual damages resulting from a breach of this Section 6 are difficult to calculate with precision, Client agrees that a breach results in liquidated damages equal to <strong>the greater of (i) $15,000 per individual, or (ii) fifty percent (50%) of the individual&apos;s annualized wages</strong> paid by GreenPoint in the twelve (12) months preceding the breach, representing a reasonable estimate of GreenPoint&apos;s training, recruiting, and replacement costs. This amount is not a penalty. Liquidated damages are payable to GreenPoint within thirty (30) days of written demand.</p>
 
@@ -97,7 +97,7 @@ export default function TermsOfServicePage() {
             </Section>
 
             <Section number="8" title="Confidentiality">
-              <p>All pricing, methods, processes, checklists, training materials, software (including JaniTrack data and dashboards), supplier lists, employee information, and any other non-public information disclosed by GreenPoint is &ldquo;<strong>Confidential Information</strong>.&rdquo; Client shall not disclose, copy, or use any Confidential Information for any purpose other than receiving services under the Service Agreement. This obligation survives termination indefinitely for trade secrets and for five (5) years for all other Confidential Information.</p>
+              <p>All pricing, methods, processes, checklists, training materials, software (including StockPoint data and dashboards), supplier lists, employee information, and any other non-public information disclosed by GreenPoint is &ldquo;<strong>Confidential Information</strong>.&rdquo; Client shall not disclose, copy, or use any Confidential Information for any purpose other than receiving services under the Service Agreement. This obligation survives termination indefinitely for trade secrets and for five (5) years for all other Confidential Information.</p>
             </Section>
 
             <Section number="9" title="Insurance">

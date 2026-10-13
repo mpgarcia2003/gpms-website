@@ -10,7 +10,7 @@ export function generateMetadata({ params }) {
   const city = getCity(params.stateSlug, params.citySlug);
   if (!state || !city) return {};
   const title = `Commercial Cleaning Services in ${city.name}, ${state.abbr}`;
-  const description = `MBE-certified janitorial and facility maintenance in ${city.name}, ${state.name}. Schools, healthcare, churches, daycare, government, and office cleaning with JaniTrack verification.`;
+  const description = `MBE-certified janitorial and facility maintenance in ${city.name}, ${state.name}. Schools, healthcare, churches, daycare, government, and office cleaning with StockPoint verification.`;
   return { title, description, openGraph: { title, description }, alternates: { canonical: `https://greenpointms.com/locations/${params.stateSlug}/${params.citySlug}/` } };
 }
 
@@ -20,7 +20,7 @@ export default function CityPage({ params }) {
   if (!state || !city) return <div>Page not found</div>;
 
   const title = (<>Commercial Cleaning in <span style={{ color: "#2ecc71" }}>{city.name}, {state.abbr}</span></>);
-  const subtitle = `GreenPoint Maintenance Services provides MBE-certified commercial janitorial and facility maintenance across ${city.name} and ${city.county}. Real-time cleaning verification through JaniTrack for schools, medical offices, churches, daycare centers, government buildings, and commercial offices.`;
+  const subtitle = `GreenPoint Maintenance Services provides MBE-certified commercial janitorial and facility maintenance across ${city.name} and ${city.county}. Real-time cleaning verification through StockPoint for schools, medical offices, churches, daycare centers, government buildings, and commercial offices.`;
   const breadcrumbs = [
     { label: state.name, href: `/locations/${state.slug}/` },
     { label: city.name },
@@ -35,7 +35,7 @@ export default function CityPage({ params }) {
     },
     {
       heading: `Why ${city.name} Facilities Trust GreenPoint`,
-      body: `As a Certified Minority Business Enterprise headquartered in New York, we understand the unique demands of facilities in ${city.name}, ${state.abbr}. Our JaniTrack system provides real-time photo verification and ATP bioluminescence testing — giving you measurable proof that your facility meets clinical-grade cleanliness standards.`,
+      body: `As a Certified Minority Business Enterprise headquartered in New York, we understand the unique demands of facilities in ${city.name}, ${state.abbr}. Our StockPoint system provides real-time photo verification and ATP bioluminescence testing — giving you measurable proof that your facility meets clinical-grade cleanliness standards.`,
       stats: [
         { number: "98%", label: "Client Retention" },
         { number: "500+", label: "Facilities Served" },

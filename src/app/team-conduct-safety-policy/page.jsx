@@ -297,7 +297,7 @@ export default function TeamConductSafetyPolicyPage() {
 
               <p><strong>(b) Coworker Non-Solicit.</strong> Solicit, recruit, or encourage any GreenPoint Team Member you worked alongside to leave GreenPoint to work for you or any third party.</p>
 
-              <p><strong>(c) Confidentiality.</strong> Do not disclose or use GreenPoint&apos;s pricing, methods, client lists, JaniTrack data, training materials, or any other non-public information for any purpose other than performing your duties for GreenPoint. This obligation survives termination.</p>
+              <p><strong>(c) Confidentiality.</strong> Do not disclose or use GreenPoint&apos;s pricing, methods, client lists, StockPoint data, training materials, or any other non-public information for any purpose other than performing your duties for GreenPoint. This obligation survives termination.</p>
 
               <p><strong>(d) What This Does NOT Restrict.</strong> Nothing in this Section 12 prevents you from (i) working for a competitor in a general capacity, (ii) soliciting clients you had pre-existing relationships with before joining GreenPoint, or (iii) accepting employment with any company that did not come to you through GreenPoint.</p>
 

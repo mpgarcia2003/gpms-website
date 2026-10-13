@@ -18,7 +18,7 @@ export default function StatePage({ params }) {
   if (!state) return <div>Page not found</div>;
 
   const title = (<>Commercial Cleaning in <span style={{ color: "#2ecc71" }}>{state.name}</span></>);
-  const subtitle = `GreenPoint Maintenance Services provides MBE-certified commercial janitorial and facility maintenance across ${state.name}. We serve ${state.cities.length} cities and surrounding areas with real-time JaniTrack cleaning verification.`;
+  const subtitle = `GreenPoint Maintenance Services provides MBE-certified commercial janitorial and facility maintenance across ${state.name}. We serve ${state.cities.length} cities and surrounding areas with real-time StockPoint cleaning verification.`;
   const breadcrumbs = [{ label: state.name }];
 
   const sections = [

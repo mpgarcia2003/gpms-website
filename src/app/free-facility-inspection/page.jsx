@@ -332,7 +332,7 @@ export default function FreeFacilityInspectionPage() {
       {/* Trust bar */}
       <section style={{ background: '#0d2818', padding: '40px 24px' }}>
         <div style={{ maxWidth: 900, margin: '0 auto', display: 'flex', gap: 20, justifyContent: 'center', flexWrap: 'wrap' }}>
-          {['MBE / MWBE Certified', '$2M+ Insured & Bonded', 'Background-Checked Team', 'JaniTrack Verified', 'No Obligation'].map((item) => (
+          {['MBE / MWBE Certified', '$2M+ Insured & Bonded', 'Background-Checked Team', 'StockPoint Verified', 'No Obligation'].map((item) => (
             <div key={item} style={{ display: 'flex', alignItems: 'center', gap: 6, background: 'rgba(46,204,113,0.08)', border: '1px solid rgba(46,204,113,0.2)', borderRadius: 100, padding: '6px 14px' }}>
               <span style={{ color: '#2ecc71', fontWeight: 700, fontSize: 12 }}>✓</span>
               <span style={{ color: 'rgba(255,255,255,0.7)', fontSize: 12, fontFamily: "'DM Sans', sans-serif", fontWeight: 600 }}>{item}</span>

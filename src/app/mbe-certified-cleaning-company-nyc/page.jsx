@@ -83,7 +83,7 @@ export default function MBECertifiedCleaningCompanyNYC() {
       ]}
       introParagraphs={[
         "Procurement officers and facility managers seeking MBE-certified cleaning vendors in New York City need a provider that delivers both compliance documentation and measurable cleaning performance. GreenPoint Maintenance Services Corp holds MBE certification through NYC Small Business Services and MWBE certification through New York State — verified credentials that satisfy diversity spending goals for city, state, and federal contracts.",
-        "Beyond certification, GreenPoint brings operational rigor that separates us from checkbox vendors. Every cleaning session is documented through JaniTrack, our proprietary verification system with timestamped photos, GPS-tagged task completion, and ATP bioluminescence testing. When auditors or board members ask for proof of service, you have a real-time dashboard — not a cleaning crew's word.",
+        "Beyond certification, GreenPoint brings operational rigor that separates us from checkbox vendors. Every cleaning session is documented through StockPoint, our proprietary verification system with timestamped photos, GPS-tagged task completion, and ATP bioluminescence testing. When auditors or board members ask for proof of service, you have a real-time dashboard — not a cleaning crew's word.",
         "We serve over 80 facilities across five states with a workforce of 80+ background-checked professionals. Our NAICS codes — 561720 (Janitorial), 238210 (Electrical/Wiring), and 561790 (Building Services) — cover the full spectrum of facility maintenance. One vendor, one invoice, one point of accountability.",
       ]}
       services={[
@@ -96,7 +96,7 @@ export default function MBECertifiedCleaningCompanyNYC() {
       ]}
       whyChooseUs={[
         { iconKey: "award", title: "MBE / MWBE Certified", desc: "Verified Minority Business Enterprise through NYC SBS and NYS. Qualifies for diversity procurement, set-aside contracts, and supplier diversity programs." },
-        { iconKey: "shield", title: "JaniTrack Verification", desc: "Proprietary real-time cleaning verification with timestamped photos, GPS tagging, and ATP bioluminescence testing. Audit-ready documentation on demand." },
+        { iconKey: "shield", title: "StockPoint Verification", desc: "Proprietary real-time cleaning verification with timestamped photos, GPS tagging, and ATP bioluminescence testing. Audit-ready documentation on demand." },
         { iconKey: "landmark", title: "SAM.gov & Federal Ready", desc: "Actively registered on SAM.gov with valid CAGE code and UEI. NAICS 561720, 238210, 561790. Capability statement and full vendor package available." },
         { iconKey: "building", title: "5-State, 80+ Workforce", desc: "Operational across NY, NJ, CT, PA, and FL with 80+ background-checked professionals. Scalable from single-site to multi-location contracts." },
       ]}

@@ -9,7 +9,7 @@ export function generateMetadata({ params }) {
   const industry = getIndustry(params.industrySlug);
   if (!industry) return {};
   const title = `${industry.name} — Commercial Cleaning`;
-  const description = `${industry.description} Serving NY, NJ, CT, PA, and FL with MBE-certified cleaning and JaniTrack verification.`;
+  const description = `${industry.description} Serving NY, NJ, CT, PA, and FL with MBE-certified cleaning and StockPoint verification.`;
   return { title, description, alternates: { canonical: `https://greenpointms.com/industries/${params.industrySlug}/` } };
 }
 
@@ -18,7 +18,7 @@ export default function IndustryPage({ params }) {
   if (!industry) return <div>Page not found</div>;
 
   const title = (<>{industry.name.split('&')[0].trim()} <span style={{ color: "#2ecc71" }}>Cleaning Services</span></>);
-  const subtitle = `${industry.description} GreenPoint Maintenance Services is an MBE-certified provider serving facilities across NY, NJ, CT, PA, and FL with real-time cleaning verification through JaniTrack.`;
+  const subtitle = `${industry.description} GreenPoint Maintenance Services is an MBE-certified provider serving facilities across NY, NJ, CT, PA, and FL with real-time cleaning verification through StockPoint.`;
   const breadcrumbs = [{ label: "Industries", href: "/#industries" }, { label: industry.shortName }];
 
   const sections = [

@@ -9,7 +9,7 @@ export function generateMetadata({ params }) {
   const service = getService(params.serviceSlug);
   if (!service) return {};
   const title = `${service.name} — GreenPoint Maintenance Services`;
-  const description = `${service.description} MBE-certified provider serving NY, NJ, CT, PA, and FL with real-time JaniTrack verification.`;
+  const description = `${service.description} MBE-certified provider serving NY, NJ, CT, PA, and FL with real-time StockPoint verification.`;
   return { title, description, alternates: { canonical: `https://greenpointms.com/services/${params.serviceSlug}/` } };
 }
 
@@ -18,19 +18,19 @@ export default function ServicePage({ params }) {
   if (!service) return <div>Page not found</div>;
 
   const title = (<>{service.name.split('—')[0].trim()} <span style={{ color: "#2ecc71" }}>Services</span></>);
-  const subtitle = `${service.description} GreenPoint Maintenance Services delivers ${service.shortName.toLowerCase()} services across NY, NJ, CT, PA, and FL — backed by our proprietary JaniTrack real-time verification system.`;
+  const subtitle = `${service.description} GreenPoint Maintenance Services delivers ${service.shortName.toLowerCase()} services across NY, NJ, CT, PA, and FL — backed by our proprietary StockPoint real-time verification system.`;
   const breadcrumbs = [{ label: "Services", href: "/#services" }, { label: service.shortName }];
 
   const sections = [
     {
       label: service.shortName,
       heading: `What's Included in Our ${service.shortName} Services`,
-      body: `Our ${service.shortName.toLowerCase()} program is built around reliability, consistency, and verifiable results. Every engagement includes a customized scope of work and JaniTrack photo verification.`,
+      body: `Our ${service.shortName.toLowerCase()} program is built around reliability, consistency, and verifiable results. Every engagement includes a customized scope of work and StockPoint photo verification.`,
       features: service.includes,
     },
     {
       heading: `Why Choose GreenPoint for ${service.shortName}`,
-      body: `As an MBE-certified commercial cleaning provider, GreenPoint brings accountability and transparency to every engagement. Our JaniTrack system gives you real-time GPS-verified photo proof that every task is completed to standard.`,
+      body: `As an MBE-certified commercial cleaning provider, GreenPoint brings accountability and transparency to every engagement. Our StockPoint system gives you real-time GPS-verified photo proof that every task is completed to standard.`,
       stats: [
         { number: "98%", label: "Client Retention Rate" },
         { number: "500+", label: "Facilities Maintained" },

@@ -143,7 +143,7 @@ function getIcon(key, size = 28, color = '#1B7A3D') {
 const NAV_ITEMS = [
   { label: "Services", target: "services" },
   { label: "Industries", target: "industries" },
-  { label: "JaniTrack", target: "janitrack" },
+  { label: "StockPoint", target: "stockpoint" },
   { label: "Government", target: "compliance" },
   { label: "Playbook", href: "/playbook" },
   { label: "Instant Quote", target: "quote" },
@@ -163,7 +163,7 @@ const SERVICES = [
     iconKey: "building",
     title: "Commercial Janitorial",
     outcome: "Zero complaints. Every visit documented.",
-    desc: "Daily, weekly, and monthly cleaning programs customized to your facility. Lobbies, restrooms, offices, and common areas — all verified through JaniTrack.",
+    desc: "Daily, weekly, and monthly cleaning programs customized to your facility. Lobbies, restrooms, offices, and common areas — all verified through StockPoint.",
   },
   {
     iconKey: "shield-check",
@@ -245,7 +245,7 @@ const TRUST_STATS = [
 
 const TESTIMONIALS = [
   {
-    quote: "GreenPoint transformed our school's cleanliness standards. Their team works around our schedule perfectly, and the JaniTrack reports give our board complete confidence in the quality of service.",
+    quote: "GreenPoint transformed our school's cleanliness standards. Their team works around our schedule perfectly, and the StockPoint reports give our board complete confidence in the quality of service.",
     name: "Dr. Patricia Hernandez",
     role: "Principal, Achievement First Charter School",
     vertical: "Education",
@@ -331,7 +331,7 @@ const PROCESS_STEPS = [
   },
   {
     step: "04",
-    title: "JaniTrack Verification",
+    title: "StockPoint Verification",
     desc: "Every cleaning session is documented with timestamped photos, task checklists, and ATP readings — accessible from your dashboard.",
   },
 ];
@@ -342,8 +342,8 @@ const FAQ_ITEMS = [
     a: "We provide commercial janitorial and facility maintenance services across five states: New York (Bronx, Manhattan, Brooklyn, Queens, Westchester), New Jersey, Connecticut, Pennsylvania, and Florida (Orlando and Miami metro areas).",
   },
   {
-    q: "What is JaniTrack and how does it work?",
-    a: "JaniTrack is our proprietary real-time cleaning verification system. After every cleaning session, your team uploads timestamped, GPS-tagged photos and completes digital checklists. We also conduct ATP bioluminescence testing — the same technology hospitals use — to give you measurable proof that surfaces meet clinical-grade cleanliness standards. You access everything through a live dashboard.",
+    q: "What is StockPoint and how does it work?",
+    a: "StockPoint is our proprietary real-time cleaning verification system. After every cleaning session, your team uploads timestamped, GPS-tagged photos and completes digital checklists. We also conduct ATP bioluminescence testing — the same technology hospitals use — to give you measurable proof that surfaces meet clinical-grade cleanliness standards. You access everything through a live dashboard.",
   },
   {
     q: "Is GreenPoint a Minority Business Enterprise (MBE)?",
@@ -374,7 +374,7 @@ const FAQ_ITEMS = [
 const WHY_US = [
   {
     iconKey: "smartphone",
-    title: "JaniTrack Verification",
+    title: "StockPoint Verification",
     desc: "The only local operator with real-time photo verification and ATP bioluminescence testing. See proof, not promises.",
     competitor: "Zero local competitors offer this",
   },
@@ -1570,7 +1570,7 @@ function Hero() {
               fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 18, color: "#4A5E52",
               lineHeight: 1.7, marginBottom: 36, maxWidth: 520,
             }}>
-              MBE-certified facility maintenance for schools, healthcare, houses of worship, and government buildings across NY, NJ, CT, PA &amp; FL. Every cleaning session verified in real-time through JaniTrack.
+              MBE-certified facility maintenance for schools, healthcare, houses of worship, and government buildings across NY, NJ, CT, PA &amp; FL. Every cleaning session verified in real-time through StockPoint.
             </p>
 
             <div className="hero-ctas-anim" style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
@@ -1772,7 +1772,7 @@ function About() {
                 GreenPoint Maintenance Services Corp is an MBE-certified facility services provider headquartered in New York, serving institutional and commercial clients across five states since 2018. We specialize in the facilities that can't afford missed cleanings: schools with health inspections, medical offices with OSHA requirements, and government buildings with procurement compliance standards.
               </p>
               <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "#4A5E52", lineHeight: 1.8, marginBottom: 28 }}>
-                Every cleaning session is verified in real-time through JaniTrack — our proprietary system that provides timestamped photo documentation, GPS-tagged task completion, and ATP bioluminescence readings. You don't have to trust that we cleaned. You can see the proof.
+                Every cleaning session is verified in real-time through StockPoint — our proprietary system that provides timestamped photo documentation, GPS-tagged task completion, and ATP bioluminescence readings. You don't have to trust that we cleaned. You can see the proof.
               </p>
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}>
@@ -1989,14 +1989,14 @@ function IndustriesSection() {
   );
 }
 
-function JaniTrack() {
+function StockPoint() {
   return (
-    <section id="janitrack" style={{ background: "#F7FAF8", padding: "100px 24px", position: "relative", overflow: "hidden" }}>
+    <section id="stockpoint" style={{ background: "#F7FAF8", padding: "100px 24px", position: "relative", overflow: "hidden" }}>
       {/* Ambient glow */}
       <div style={{ position: "absolute", top: "20%", right: "10%", width: 500, height: 500, background: "radial-gradient(circle, rgba(27,122,61,0.06) 0%, transparent 70%)", borderRadius: "50%", pointerEvents: "none" }} />
       <div style={{ maxWidth: 1280, margin: "0 auto" }}>
         <AnimatedSection>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "center" }} className="janitrack-grid">
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "center" }} className="stockpoint-grid">
             <div style={{ position: "relative" }}>
               <div style={{
                 background: "#FFFFFF", borderRadius: 0, padding: 32, overflow: "hidden",
@@ -2004,7 +2004,7 @@ function JaniTrack() {
               }}>
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 28 }}>
                   <div>
-                    <div style={{ fontSize: 11, color: "#1B7A3D", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>JaniTrack</div>
+                    <div style={{ fontSize: 11, color: "#1B7A3D", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>StockPoint</div>
                     <div style={{ fontSize: 18, color: "#1A2B1F", fontWeight: 700, fontFamily: "'Syne', sans-serif", marginTop: 2 }}>Live Dashboard</div>
                   </div>
                   <div style={{ width: 8, height: 8, borderRadius: "50%", background: "#1B7A3D", boxShadow: "0 0 12px rgba(27,122,61,0.6)", animation: "pulse 2s infinite" }} />
@@ -2054,10 +2054,10 @@ function JaniTrack() {
                 Proprietary Technology
               </div>
               <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#1A2B1F", lineHeight: 1.15, marginBottom: 24 }}>
-                JaniTrack:<br /><span style={{ color: "#1B7A3D" }}>Proof, Not Promises</span>
+                StockPoint:<br /><span style={{ color: "#1B7A3D" }}>Proof, Not Promises</span>
               </h2>
               <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "#4A5E52", lineHeight: 1.8, marginBottom: 28 }}>
-                Most cleaning companies ask you to trust that the work was done. JaniTrack gives you verifiable proof — with real-time photo documentation, timestamped task completion, and ATP bioluminescence readings that quantify surface cleanliness.
+                Most cleaning companies ask you to trust that the work was done. StockPoint gives you verifiable proof — with real-time photo documentation, timestamped task completion, and ATP bioluminescence readings that quantify surface cleanliness.
               </p>
 
               {[
@@ -2734,7 +2734,7 @@ function Footer() {
             <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "rgba(27,122,61,0.6)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.15em", marginBottom: 18 }}>Company</div>
             {[
               { label: "About", target: "about" },
-              { label: "JaniTrack", target: "janitrack" },
+              { label: "StockPoint", target: "stockpoint" },
               { label: "Service Areas", target: "areas" },
               { label: "Learning Center", target: "learning" },
               { label: "Careers \u2014 We\u2019re Hiring!", href: "/careers" },
@@ -3060,7 +3060,7 @@ export default function GreenPointWebsite() {
         /* === RESPONSIVE === */
         .mobile-toggle { display: none !important; }
         @media (max-width: 1024px) {
-          .hero-grid, .about-grid, .janitrack-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+          .hero-grid, .about-grid, .stockpoint-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
           .quote-calc-grid { grid-template-columns: 1fr !important; }
           .quote-freq-grid { grid-template-columns: 1fr !important; }
           .hero-form { order: -1; }
@@ -3104,7 +3104,7 @@ export default function GreenPointWebsite() {
       <Services />
       <SectionDividerReverse fromColor="#FFFFFF" toColor="#F7FAF8" />
       <IndustriesSection />
-      <JaniTrack />
+      <StockPoint />
       <QuoteCalculator />
       <AcuitySection />
       <SectionDivider fromColor="#FFFFFF" toColor="#F7FAF8" />

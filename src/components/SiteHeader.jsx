@@ -7,7 +7,7 @@ const PHONE_HREF = "tel:+18448140810";
 const NAV_LINKS = [
   { label: "Services", href: "/#services" },
   { label: "Industries", href: "/#industries" },
-  { label: "JaniTrack", href: "/#janitrack" },
+  { label: "StockPoint", href: "/#stockpoint" },
   { label: "Government", href: "/government-cleaning-services" },
   { label: "Playbook", href: "/playbook" },
   { label: "Careers", href: "/careers" },

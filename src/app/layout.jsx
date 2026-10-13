@@ -5,7 +5,7 @@ export const metadata = {
     default: 'GreenPoint Maintenance Services | Commercial Cleaning NY, NJ, CT, PA, FL',
     template: '%s | GreenPoint Maintenance Services',
   },
-  description: 'MBE-certified commercial janitorial and facility maintenance for schools, healthcare, churches, daycare, government buildings, and offices across NY, NJ, CT, PA, and FL. Real-time cleaning verification with JaniTrack.',
+  description: 'MBE-certified commercial janitorial and facility maintenance for schools, healthcare, churches, daycare, government buildings, and offices across NY, NJ, CT, PA, and FL. Real-time cleaning verification with StockPoint.',
   keywords: ['commercial cleaning', 'janitorial services', 'facility maintenance', 'MBE certified', 'school cleaning', 'medical office cleaning', 'church cleaning', 'New York', 'New Jersey', 'Connecticut', 'Pennsylvania', 'Florida'],
   openGraph: {
     title: 'GreenPoint Maintenance Services | Commercial Cleaning',

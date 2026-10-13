@@ -17,7 +17,7 @@ export const metadata = {
   openGraph: {
     title: "Church Cleaning Services NYC | GreenPoint Maintenance",
     description:
-      "Respectful, professional cleaning for houses of worship in NYC. Sanctuary care, event turnaround, nursery sanitization. MBE certified with JaniTrack verification.",
+      "Respectful, professional cleaning for houses of worship in NYC. Sanctuary care, event turnaround, nursery sanitization. MBE certified with StockPoint verification.",
     url: "https://greenpointms.com/church-cleaning-nyc",
   },
   alternates: { canonical: "https://greenpointms.com/church-cleaning-nyc" },
@@ -64,7 +64,7 @@ const faqSchema = {
       name: "Is GreenPoint qualified for church board procurement requirements?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. GreenPoint carries $2M+ commercial general liability insurance, full workers' compensation, and is bonded. We are MBE/MWBE certified and can provide W-9, Certificates of Insurance, references, and fixed-price proposals for board review. Our JaniTrack reports give boards ongoing accountability documentation.",
+        text: "Yes. GreenPoint carries $2M+ commercial general liability insurance, full workers' compensation, and is bonded. We are MBE/MWBE certified and can provide W-9, Certificates of Insurance, references, and fixed-price proposals for board review. Our StockPoint reports give boards ongoing accountability documentation.",
       },
     },
   ],
@@ -75,7 +75,7 @@ export default function ChurchCleaningNYC() {
     <SeoLandingPage
       headline="Church & House of Worship Cleaning in"
       highlightWord="New York City"
-      subheadline="Respectful, professional janitorial for churches, temples, mosques, and synagogues. Flexible scheduling around services and events. MBE-certified with JaniTrack-verified quality."
+      subheadline="Respectful, professional janitorial for churches, temples, mosques, and synagogues. Flexible scheduling around services and events. MBE-certified with StockPoint-verified quality."
       trustBadges={[
         "MBE / MWBE Certified",
         "Flexible Scheduling",
@@ -84,7 +84,7 @@ export default function ChurchCleaningNYC() {
       ]}
       introParagraphs={[
         "Houses of worship are more than buildings — they are sacred spaces where communities gather for prayer, celebration, and support. GreenPoint Maintenance Services provides professional janitorial programs designed around the unique rhythms of religious life: worship services, fellowship events, youth programs, weddings, funerals, and holiday celebrations that can shift weekly.",
-        "Our teams understand the care required for sanctuaries, pews, altars, fellowship halls, nurseries, and multipurpose spaces that serve different functions throughout the week. We use non-toxic, pH-neutral products safe for wood, fabric, stained glass surroundings, and delicate fixtures. Every visit is documented through JaniTrack with timestamped photos and ATP bioluminescence testing — giving your board and congregation measurable proof of cleanliness.",
+        "Our teams understand the care required for sanctuaries, pews, altars, fellowship halls, nurseries, and multipurpose spaces that serve different functions throughout the week. We use non-toxic, pH-neutral products safe for wood, fabric, stained glass surroundings, and delicate fixtures. Every visit is documented through StockPoint with timestamped photos and ATP bioluminescence testing — giving your board and congregation measurable proof of cleanliness.",
         "As a certified Minority Business Enterprise, GreenPoint provides the insurance documentation, fixed pricing, and accountability that church boards and religious institution finance committees require. We serve over 80 facilities across five states with dedicated teams assigned to your facility — the same crew every visit, building familiarity and trust with your staff and congregation.",
       ]}
       services={[
@@ -97,7 +97,7 @@ export default function ChurchCleaningNYC() {
       ]}
       whyChooseUs={[
         { iconKey: "church", title: "Sacred Space Expertise", desc: "Trained in the care of religious furnishings, altar areas, and sacred items. Non-toxic products safe for wood pews, fabric, and delicate fixtures." },
-        { iconKey: "shield", title: "JaniTrack Verification", desc: "Real-time photo documentation and ATP bioluminescence testing after every service. Board-ready reports accessible through a live dashboard." },
+        { iconKey: "shield", title: "StockPoint Verification", desc: "Real-time photo documentation and ATP bioluminescence testing after every service. Board-ready reports accessible through a live dashboard." },
         { iconKey: "award", title: "MBE Certified & Insured", desc: "$2M+ commercial general liability, workers' comp, bonded. W-9, COI, and references available for board approval within one business day." },
         { iconKey: "building", title: "Dedicated Teams", desc: "Same background-checked personnel every visit. Your team learns your facility, your schedule, and your congregation's expectations." },
       ]}
@@ -106,7 +106,7 @@ export default function ChurchCleaningNYC() {
         { q: "What areas do you clean in a house of worship?", a: "Sanctuaries, fellowship halls, nurseries, classrooms, offices, restrooms, kitchens, lobbies, and outdoor entryways. Each area gets a customized protocol based on use and traffic." },
         { q: "Can you handle event turnaround cleaning?", a: "Yes — same-day turnaround for weddings, funerals, holiday services, and community events. We reset fellowship halls and sanctuaries between back-to-back gatherings." },
         { q: "Are your products safe for sanctuary furnishings?", a: "We use non-toxic, pH-neutral products safe for wood pews, fabric, stained glass surroundings, marble, and delicate fixtures. Our team is trained in religious furnishing care." },
-        { q: "What documentation do you provide for church boards?", a: "Fixed-price proposals, W-9, Certificate of Insurance, references, and ongoing JaniTrack verification reports. Everything a finance committee needs for vendor approval." },
+        { q: "What documentation do you provide for church boards?", a: "Fixed-price proposals, W-9, Certificate of Insurance, references, and ongoing StockPoint verification reports. Everything a finance committee needs for vendor approval." },
       ]}
       ctaHeadline="Schedule a Free Walkthrough for Your House of Worship"
       ctaSubheadline="We'll assess your facility, build a cleaning program around your worship calendar, and deliver a fixed-price proposal within 48 hours. No obligation."

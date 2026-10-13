@@ -17,7 +17,7 @@ const nextConfig = {
       { source: "/terms", destination: "/terms-of-service", permanent: true },
       { source: "/quote", destination: "/#quote", permanent: true },
       { source: "/get-a-quote", destination: "/#quote", permanent: true },
-      { source: "/janitrack", destination: "/#janitrack", permanent: true },
+      { source: "/janitrack", destination: "/#stockpoint", permanent: true },
     ];
   },
   async headers() {

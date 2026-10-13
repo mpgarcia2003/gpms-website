@@ -151,7 +151,7 @@ export default function GovernmentCleaningPage() {
               { title: 'SAM.gov Active & Current', desc: 'Active federal vendor registration with valid CAGE code and UEI. Eligible for federal, state, and municipal contract vehicles without additional vetting.' },
               { title: 'Background-Checked Workforce', desc: 'Every field technician passes comprehensive criminal background checks, drug screening, and facility-specific clearance. No subcontractor opacity.' },
               { title: '$2M+ Insurance Coverage', desc: "Commercial General Liability, Workers' Compensation, and surety bond available. Certificate of Insurance provided within one business day." },
-              { title: 'JaniTrack Real-Time Verification', desc: "Every cleaning session documented with timestamped GPS-verified photos and ATP bioluminescence test results. Audit-ready records on demand — not just a vendor's word." },
+              { title: 'StockPoint Real-Time Verification', desc: "Every cleaning session documented with timestamped GPS-verified photos and ATP bioluminescence test results. Audit-ready records on demand — not just a vendor's word." },
               { title: 'Fixed Pricing, No Change Orders', desc: 'Government contracts require budget predictability. GreenPoint provides fixed-price proposals with no hidden fees, no change order surprises, and transparent scope of work.' },
             ].map((item) => (
               <div key={item.title} style={{ background: '#fafbfa', borderRadius: 14, padding: '28px 28px', border: '1px solid #eee', borderLeft: '3px solid #2ecc71' }}>

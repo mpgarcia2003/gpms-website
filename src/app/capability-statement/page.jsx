@@ -161,7 +161,7 @@ export default function CapabilityStatementPage() {
                   },
                   {
                     title: 'Real-Time Cleaning Verification',
-                    desc: 'Proprietary JaniTrack system with timestamped photo documentation, GPS-tagged task completion, and ATP bioluminescence testing.',
+                    desc: 'Proprietary StockPoint system with timestamped photo documentation, GPS-tagged task completion, and ATP bioluminescence testing.',
                   },
                   {
                     title: 'Healthcare & Education Compliance',
@@ -190,7 +190,7 @@ export default function CapabilityStatementPage() {
               </h3>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 24 }}>
                 {[
-                  { title: 'JaniTrack Verification', desc: 'Real-time photo documentation and ATP bioluminescence testing after every service. No other local provider offers this.' },
+                  { title: 'StockPoint Verification', desc: 'Real-time photo documentation and ATP bioluminescence testing after every service. No other local provider offers this.' },
                   { title: 'MBE Certification', desc: 'Registered Minority Business Enterprise. Qualifies for diversity procurement programs and MWBE set-aside contracts.' },
                   { title: 'Fixed Pricing', desc: 'Transparent per-facility pricing. No hourly billing, no surprise fees. Custom proposals within 48 hours of walkthrough.' },
                   { title: 'Vertical Specialization', desc: 'Dedicated protocols for schools, healthcare, houses of worship, daycare, and government. Not one-size-fits-all.' },

@@ -16,8 +16,8 @@ export function generateMetadata({ params }) {
   const title = `${industry.shortName} Services in ${city.name}, ${state.abbr} | Professional ${industry.name}`;
   const svc = getService(params.industrySlug);
   const description = svc && svc.definition
-    ? `${svc.definition.split('.')[0]}. Professional ${industry.shortName.toLowerCase()} in ${city.name}, ${state.name}. MBE-certified, ATP-verified, JaniTrack documented. Free facility walkthrough.`
-    : `Professional ${industry.shortName.toLowerCase()} services in ${city.name}, ${state.name}. MBE-certified commercial cleaning with real-time JaniTrack verification. Free facility walkthrough.`;
+    ? `${svc.definition.split('.')[0]}. Professional ${industry.shortName.toLowerCase()} in ${city.name}, ${state.name}. MBE-certified, ATP-verified, StockPoint documented. Free facility walkthrough.`
+    : `Professional ${industry.shortName.toLowerCase()} services in ${city.name}, ${state.name}. MBE-certified commercial cleaning with real-time StockPoint verification. Free facility walkthrough.`;
 
   return {
     title,
@@ -37,8 +37,8 @@ export default function CityIndustryPage({ params }) {
 
   const title = (<>{industry.shortName} Services in {city.name}, <span style={{ color: "#2ecc71" }}>{state.abbr}</span></>);
   const subtitle = industry.definition
-    ? `${industry.definition.split('.').slice(0, 2).join('.')}. GreenPoint Maintenance Services provides MBE-certified ${industry.shortName.toLowerCase()} in ${city.name} and throughout ${state.name} with real-time ATP bioluminescence verification through JaniTrack.`
-    : `${industry.description} GreenPoint Maintenance Services provides MBE-certified ${industry.shortName.toLowerCase()} in ${city.name} and throughout ${state.name} with real-time cleaning verification through JaniTrack.`;
+    ? `${industry.definition.split('.').slice(0, 2).join('.')}. GreenPoint Maintenance Services provides MBE-certified ${industry.shortName.toLowerCase()} in ${city.name} and throughout ${state.name} with real-time ATP bioluminescence verification through StockPoint.`
+    : `${industry.description} GreenPoint Maintenance Services provides MBE-certified ${industry.shortName.toLowerCase()} in ${city.name} and throughout ${state.name} with real-time cleaning verification through StockPoint.`;
 
   const breadcrumbs = [
     { label: state.name, href: `/locations/${state.slug}/` },
@@ -99,7 +99,7 @@ export default function CityIndustryPage({ params }) {
     {
       label: "Why GreenPoint",
       heading: `Why ${city.name} Facilities Trust GreenPoint for ${industry.shortName}`,
-      body: `GreenPoint Maintenance Services is an MBE/MWBE-certified, NYC DOE Approved Vendor serving over 500 commercial facilities across ${state.name} and four additional states. Our JaniTrack verification system provides the objective, documented proof of cleaning quality that facility managers, health inspectors, and building occupants demand.`,
+      body: `GreenPoint Maintenance Services is an MBE/MWBE-certified, NYC DOE Approved Vendor serving over 500 commercial facilities across ${state.name} and four additional states. Our StockPoint verification system provides the objective, documented proof of cleaning quality that facility managers, health inspectors, and building occupants demand.`,
       stats: [
         { number: "98%", label: "Client Retention" },
         { number: "500+", label: "Facilities Served" },
@@ -111,13 +111,13 @@ export default function CityIndustryPage({ params }) {
     {
       label: `${industry.shortName} in ${city.name}`,
       heading: `Professional ${industry.shortName} Services in ${city.name}, ${state.abbr}`,
-      body: `${industry.description} GreenPoint provides expert ${industry.shortName.toLowerCase()} services throughout ${city.name} and ${city.county || state.name}, backed by our proprietary JaniTrack verification system.`,
+      body: `${industry.description} GreenPoint provides expert ${industry.shortName.toLowerCase()} services throughout ${city.name} and ${city.county || state.name}, backed by our proprietary StockPoint verification system.`,
       features: industry.includes || [],
     },
     {
       label: "Why GreenPoint",
       heading: `Why ${city.name} Facilities Trust GreenPoint`,
-      body: `As a Certified Minority Business Enterprise headquartered in New York, we understand the unique demands of facilities in ${city.name}, ${state.abbr}. Our JaniTrack system provides real-time photo verification and ATP bioluminescence testing.`,
+      body: `As a Certified Minority Business Enterprise headquartered in New York, we understand the unique demands of facilities in ${city.name}, ${state.abbr}. Our StockPoint system provides real-time photo verification and ATP bioluminescence testing.`,
       stats: [
         { number: "98%", label: "Client Retention" },
         { number: "500+", label: "Facilities Served" },
@@ -136,7 +136,7 @@ export default function CityIndustryPage({ params }) {
     {
       label: `${industry.shortName} in ${city.name}`,
       heading: `Why ${city.name} Facilities Choose GreenPoint for ${industry.shortName}`,
-      body: `Facilities in ${city.name}, ${state.abbr} face unique challenges when it comes to maintaining clean, safe, and compliant environments. Whether you manage a ${industry.name.toLowerCase().split('&')[0].trim()} in ${city.county || city.name} or oversee multiple locations across ${state.name}, GreenPoint delivers consistent, verifiable cleaning backed by our proprietary JaniTrack system.`,
+      body: `Facilities in ${city.name}, ${state.abbr} face unique challenges when it comes to maintaining clean, safe, and compliant environments. Whether you manage a ${industry.name.toLowerCase().split('&')[0].trim()} in ${city.county || city.name} or oversee multiple locations across ${state.name}, GreenPoint delivers consistent, verifiable cleaning backed by our proprietary StockPoint system.`,
       features: industry.features,
     },
     {
@@ -155,7 +155,7 @@ export default function CityIndustryPage({ params }) {
       label: "Common Challenges",
       heading: `${industry.shortName} Challenges We Solve in ${city.name}`,
       body: `Facility managers in ${city.name} consistently tell us about the same pain points with their previous cleaning providers. Here's how GreenPoint addresses each one.`,
-      features: industry.painPoints.map(p => `${p} — GreenPoint's JaniTrack verification system ensures accountability and transparency, eliminating this issue entirely.`),
+      features: industry.painPoints.map(p => `${p} — GreenPoint's StockPoint verification system ensures accountability and transparency, eliminating this issue entirely.`),
     },
     {
       label: "Our Services",
