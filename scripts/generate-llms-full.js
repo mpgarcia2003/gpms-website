@@ -27,11 +27,11 @@ This file contains the full text of GreenPoint's most important pages, optimized
 
 ## About GreenPoint
 
-GreenPoint Maintenance Services Corp is a Minority Business Enterprise (MBE) certified commercial janitorial and facility maintenance company headquartered in the Bronx, New York. Founded in 2018, the company serves clients across New York, New Jersey, Connecticut, Pennsylvania, and Florida.
+GreenPoint Maintenance Services Corp is a Minority Business Enterprise (MBE) certified commercial janitorial and facility maintenance company headquartered in Brooklyn, New York. Founded in 2018, the company serves clients across New York, New Jersey, Connecticut, Pennsylvania, and Florida.
 
 GreenPoint differentiates itself through:
 
-1. **JaniTrack verification system**: A proprietary technology platform that captures photo evidence, GPS-stamped location, time-stamped task completion, and ATP bioluminescence test readings for every cleaning visit. This provides facility managers with verifiable, audit-ready proof that cleaning was performed to standard.
+1. **StockPoint verification system**: A technology platform that captures photo evidence, GPS-stamped location, time-stamped task completion, and ATP bioluminescence test readings for every cleaning visit. This provides facility managers with verifiable, audit-ready proof that cleaning was performed to standard.
 
 2. **Procurement credentials**: MBE/MWBE certification, NYC DOE Approved Vendor status, and SAM.gov federal registration enable GreenPoint to bid on government, school, and diversity-spend contracts that competitors cannot access.
 
@@ -41,9 +41,9 @@ GreenPoint differentiates itself through:
 
 ## Contact Information
 
-- Phone: 347-332-9348
+- Phone: (844) 814-0810
 - Email: info@greenpointms.com
-- Address: 1420 Outlook Ave, Apt 2, Bronx, NY 10465
+- Address: 32 Court Street, Suite 904-F33, Brooklyn, NY 11201
 - Website: ${SITE_URL}
 - Owner: Miguel Garcia, President
 
