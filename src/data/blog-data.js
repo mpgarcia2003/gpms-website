@@ -43357,834 +43357,694 @@ A: StockPoint time-stamped GPS-tagged photos plus inspections and documented cor
 
 
   {
-  "slug": "uv-c-commercial-cleaning-vendor",
-  "image": "/blog/uv-c-commercial-cleaning-vendor.jpg",
-  "title": "UV-C in Commercial Cleaning: Questions to Ask Before Buying the Technology",
-  "excerpt": "A practical buyer's guide to UV-C cleaning vendors, safety controls, room coverage, verification, and fixed-price service for tri-state facilities.",
-  "category": "Emerging Technology",
-  "author": "GreenPoint Maintenance",
-  "publishedAt": "2026-09-26",
-  "readTime": "10 min read",
-  "keywords": [
-    "UV-C commercial cleaning",
-    "UV disinfection facility services",
-    "UV-C cleaning vendor"
-  ],
-  "content": [
-    {
-      "type": "intro",
-      "text": "UV-C can be a useful layer in a commercial cleaning program, but a lamp, robot, or cabinet is not a complete sanitation plan. Facility managers in Manhattan, the Bronx, Brooklyn, Queens, Staten Island, Westchester, Long Island, New Jersey, Connecticut, Pennsylvania, and Florida need to ask how a vendor controls exposure, proves room coverage, and connects treatment to ordinary cleaning. This guide turns a promising technology into a measurable purchasing decision. GreenPoint Maintenance Services evaluates UV-C as one tool inside a documented program that starts with soil removal, uses registered products when appropriate, and produces evidence a property team can review."
-    },
-    {
-      "type": "heading",
-      "text": "Start With the Contamination-Control Objective"
-    },
-    {
-      "type": "paragraph",
-      "text": "A buyer should define the problem before discussing wattage. Is the objective a lower microbial burden in an unoccupied exam room, a supplemental treatment for a school bus garage, odor control in a restroom, or a repeatable terminal-cleaning step? UV-C works best when the room is empty, surfaces are reasonably clean, line-of-sight limitations are understood, and the device has a validated dose at the target distance. It does not replace wiping, laundering, hand hygiene, or removal of organic soil. GreenPoint writes the objective into the scope so the proposal says what success means rather than promising that a machine makes every surface safe."
-    },
-    {
-      "type": "paragraph",
-      "text": "For a 10,000-square-foot Midtown office, the plan may call for closed-room treatment of conference suites after a respiratory illness report, while an urgent-care clinic near Jamaica requires a stricter terminal-cleaning sequence. In Newark, Stamford, Philadelphia, or a Florida coastal property, HVAC schedules, humidity, room geometry, and local building access can change the deployment. Ask the vendor to list room dimensions, furniture assumptions, reflective surfaces, treatment time, exclusion zones, and the action taken when a room fails inspection. A clear room list is more valuable than a dramatic equipment brochure."
-    },
-    {
-      "type": "heading",
-      "text": "Ask for Dose, Coverage, and Validation Data"
-    },
-    {
-      "type": "paragraph",
-      "text": "The key technical question is not whether a lamp emits UV-C; it is whether the intended surface receives a validated dose for the stated organism and device configuration. Request irradiance or dose data, calibration intervals, sensor method, distance assumptions, shadowing limitations, and the test standard used by the manufacturer. Ask whether the data applies to the exact model and lamp age being proposed. GreenPoint also asks for a room-by-room treatment map and a repeatable acceptance record. A claim such as 99.9% reduction is incomplete unless the buyer knows the organism, surface, exposure time, and test conditions."
-    },
-    {
-      "type": "paragraph",
-      "text": "A practical specification can require an equipment check before every shift, a documented start and stop time, a signed room release, and an exception note for beds, cabinets, partitions, or equipment that blocks line of sight. If the vendor cannot explain how a 2,500-square-foot Brooklyn classroom differs from a 400-square-foot Staten Island restroom, the proposal is not ready. StockPoint can hold timestamped GPS-tagged photos, room status, supervisor notes, and ATP readings when the sampling plan calls for them. That combination makes a technology claim auditable without pretending ATP is a direct UV-C dose meter."
-    },
-    {
-      "type": "heading",
-      "text": "Make Safety Controls Non-Negotiable"
-    },
-    {
-      "type": "paragraph",
-      "text": "Direct exposure to germicidal UV-C can injure eyes and skin, so safety controls belong in the contract, not in a verbal orientation. Ask for motion sensors, door interlocks, emergency-stop operation, warning signs, key or badge control, audible and visual countdowns, and a written room-release procedure. OSHA expectations for hazard communication and training still apply, as do building security rules and the client's emergency procedures. A responsible UV-C cleaning vendor names a qualified operator, records training, and explains what happens if a sensor, interlock, or lamp fails. GreenPoint will not release a room until the approved control sequence is complete."
-    },
-    {
-      "type": "paragraph",
-      "text": "In a Bronx school, the plan should coordinate with NYC DOE access rules, custodial leadership, and child-protection procedures; in a Manhattan medical suite, it should coordinate with patients, clinical staff, and infection-prevention leadership. At a Long Island distribution center, the route must protect forklift traffic and night-shift employees. Ask who checks adjacent rooms, who holds the key, how contractors are notified, and how a near miss is reported. The lowest price is not a bargain if a property manager must explain an uncontrolled exposure or an undocumented room entry."
-    },
-    {
-      "type": "heading",
-      "text": "Confirm How UV-C Fits With Routine Cleaning"
-    },
-    {
-      "type": "paragraph",
-      "text": "UV-C has no cleaning power against dust, grease, fingerprints, and residue. The service sequence should therefore identify soil removal, detergent cleaning, approved disinfection, drying or dwell time, UV-C treatment, and final release. CDC guidance on environmental cleaning supports a risk-based approach: high-touch surfaces and visibly soiled areas still need physical cleaning. GreenPoint uses color-coded microfiber systems, Green Seal certified product options, and area-specific checklists before considering an optional UV-C pass. The sequence is especially important in healthcare, childcare, and food-adjacent spaces where residue and contact patterns vary."
-    },
-    {
-      "type": "paragraph",
-      "text": "A useful contract distinguishes daily work from periodic technology work. A Queens dental office might need every-visit surface cleaning, nightly restroom service, and an unoccupied UV-C treatment after a deep clean; a Westchester office may need UV-C only for an incident response. The proposal should identify who moves furniture, who protects electronics, what stays outside the treatment area, and how the client is notified when a room is unavailable. For background on selecting a complete provider, compare [how to choose a commercial cleaning company](/blog/how-to-choose-commercial-cleaning-company/) and [electrostatic disinfection explained](/blog/electrostatic-disinfection-explained/)."
-    },
-    {
-      "type": "heading",
-      "text": "Compare Vendor Credentials and Equipment Ownership"
-    },
-    {
-      "type": "paragraph",
-      "text": "A serious evaluation includes the operator's training, insurance, equipment model, maintenance history, replacement-lamp policy, and manufacturer support. Ask whether the vendor owns the equipment or is reselling a pilot, and whether the quoted price includes calibration, batteries, filters, repairs, travel, and reporting. GreenPoint Maintenance Services is MBE/MWBE certified in New York programs, registered in SAM.gov, and able to document a broader cleaning operation rather than a single-device service. Those credentials do not prove UV-C performance by themselves; they show that procurement, risk, and continuity questions can be answered by an accountable provider."
-    },
-    {
-      "type": "paragraph",
-      "text": "The buyer should request two references with similar room geometry and operating constraints, plus a sample report with identifying information removed. Check whether the reference received room-level evidence or merely a completion invoice. A vendor that serves the Port Authority area, Grand Central offices, downtown Brooklyn, Jersey City, Stamford, or Philadelphia should explain travel windows and contingency coverage. GreenPoint assigns an operations contact, sets a response rule, and uses fixed pricing with no hourly billing or hidden fees after the walkthrough. Call 844-814-0810 if procurement needs a scope that can be compared line by line."
-    },
-    {
-      "type": "heading",
-      "text": "Set an Acceptance Test Before the Pilot"
-    },
-    {
-      "type": "paragraph",
-      "text": "A pilot should have a baseline, a defined treatment area, a control method, and a decision rule. Record room dimensions, occupancy, surface types, existing cleaning frequency, and any relevant ATP readings before the pilot. After treatment, verify equipment logs, room-release records, visual condition, and the agreed sample results. Do not make a broad health claim from one swab or one photo. GreenPoint presents the findings as operational evidence: what was treated, what was inaccessible, which exceptions were corrected, and whether the program is ready for a larger route."
-    },
-    {
-      "type": "paragraph",
-      "text": "For a 20-room medical practice, the pilot might cover four representative rooms over two service nights and compare the documentation workload with the clinical schedule. For a 50,000-square-foot school, it might cover a gym, nurse's office, two classrooms, and a restroom after deep cleaning. Include staff feedback, door-control observations, treatment time, and the cost per room. StockPoint can show the time line and corrective actions to an authorized client dashboard. Schedule a walkthrough at 844-814-0810 before buying equipment; GreenPoint can quote a controlled pilot rather than an open-ended experiment."
-    },
-    {
-      "type": "heading",
-      "text": "Price the Program, Not Just the Machine"
-    },
-    {
-      "type": "paragraph",
-      "text": "UV-C proposals can hide labor and access costs behind a device price. Ask for the number of rooms, visits per week, treatment minutes, setup and breakdown time, travel, supervisor review, consumables, calibration, emergency response, and reporting. A 30-minute treatment can require an additional 20 minutes for isolation, signage, inspection, and release. A fixed price should explain what happens when rooms are occupied, furniture blocks coverage, a security delay changes the route, or the client adds a floor. GreenPoint separates recurring cleaning, periodic treatment, and optional incident response so a facility manager can compare total cost of ownership."
-    },
-    {
-      "type": "paragraph",
-      "text": "Use square-footage and room-count benchmarks only as planning tools. A 100,000-square-foot office with open seating may have fewer treatment zones than a 20,000-square-foot clinic with many small rooms and turnover between patients. A hotel near Times Square, a school in Newark, and a warehouse in Allentown each have different access windows. GreenPoint does not bill hourly and does not add hidden fees; the walkthrough confirms scope, frequency, and exclusions before pricing. Call 844-814-0810 or email info@greenpointms.com for a documented quote tied to your floor plan."
-    },
-    {
-      "type": "heading",
-      "text": "Build Reporting That Facility Teams Will Use"
-    },
-    {
-      "type": "paragraph",
-      "text": "A technology program earns trust when the report is concise enough to read and detailed enough to investigate. Require a daily or per-visit record showing site, operator, room, equipment ID, start and stop time, safety check, exceptions, release, and corrective action. Add weekly trend data for missed rooms, access delays, repeat findings, and service response. GreenPoint's StockPoint workflow can combine timestamped GPS-tagged photos, supervisor inspections, and ATP testing where appropriate. The record supports a facilities meeting without implying that a dashboard replaces professional judgment or an infection-prevention program."
-    },
-    {
-      "type": "paragraph",
-      "text": "Local managers also need a practical escalation path. A property in Long Island City may need a same-night response when a tenant reports a concern; a Westchester campus may need next-day coordination with security; a Florida facility may need storm-related access changes. Put the phone tree in the scope and identify who approves a room release. GreenPoint provides a named contact and can schedule a walkthrough at 844-814-0810. With 98% client retention, GreenPoint has a strong reason to correct exceptions quickly and make the evidence understandable to the people paying for the service."
-    },
-    {
-      "type": "heading",
-      "text": "Frequently Asked Questions"
-    },
-    {
-      "type": "heading",
-      "text": "Is UV-C a replacement for commercial cleaning?"
-    },
-    {
-      "type": "paragraph",
-      "text": "No. UV-C is a supplemental treatment that depends on an empty room, validated dose, line of sight, and safety controls. Soil removal, detergent cleaning, registered disinfection products, ventilation, and hand hygiene remain essential. GreenPoint defines the role of UV-C in the scope before quoting."
-    },
-    {
-      "type": "heading",
-      "text": "What should a UV-C vendor document?"
-    },
-    {
-      "type": "paragraph",
-      "text": "Request equipment ID, operator, room, dimensions, treatment time, dose or irradiance method, safety checks, exceptions, room release, and corrective action. GreenPoint can organize timestamped GPS-tagged photos and inspection records in StockPoint, with ATP sampling when it is part of the approved plan."
-    },
-    {
-      "type": "heading",
-      "text": "Can UV-C be used in an occupied office or school?"
-    },
-    {
-      "type": "paragraph",
-      "text": "Only when the exact equipment and operating procedure are designed for that use and exposure controls are demonstrated. Many germicidal UV-C room treatments require the space to be empty. GreenPoint coordinates access with building staff and does not release a room until the approved safety sequence is complete."
-    },
-    {
-      "type": "heading",
-      "text": "How much does UV-C cleaning cost?"
-    },
-    {
-      "type": "paragraph",
-      "text": "Cost depends on rooms, square footage, access windows, treatment frequency, setup time, equipment, reporting, and travel. A walkthrough produces a fixed quote rather than an hourly guess. Call 844-814-0810 or email info@greenpointms.com with a floor plan and desired schedule."
-    },
-    {
-      "type": "heading",
-      "text": "Does GreenPoint serve New Jersey, Connecticut, Pennsylvania, and Florida?"
-    },
-    {
-      "type": "paragraph",
-      "text": "Yes. GreenPoint serves the New York City boroughs, Westchester, Long Island, New Jersey, Connecticut, Pennsylvania, and Florida. A site review confirms staffing, access, local requirements, and the evidence package before service begins."
-    },
-    {
-      "type": "callout",
-      "text": "Schedule a UV-C program walkthrough with GreenPoint Maintenance Services at 844-814-0810 or info@greenpointms.com. Receive fixed pricing, written safety controls, StockPoint verification, and a room-level acceptance plan backed by GreenPoint's 98% client retention record."
-    }
-  ]
-},
+    slug: "uv-c-commercial-cleaning-vendor",
+    image: "/blog/uv-c-commercial-cleaning-vendor.jpg",
+    title: "UV-C in Commercial Cleaning: Questions to Ask Before Buying the Technology",
+    excerpt: "A practical buyer's guide to UV-C cleaning claims, safety, room fit, and proof for NYC, New Jersey, and Connecticut facilities considering new equipment.",
+    category: "Emerging Technology",
+    author: "GreenPoint Maintenance",
+    publishedAt: "2026-11-03",
+    readTime: "10 min read",
+    keywords: [
+      "UV-C commercial cleaning",
+      "UV disinfection facility services",
+      "UV-C cleaning vendor"
+    ],
+    content: [
+      {
+        type: "intro",
+        text: "UV-C equipment can be useful in commercial facilities, but a glowing lamp, a robot, or a vendor's percentage claim is not proof of a safe and effective cleaning program. Buyers in Manhattan, the Bronx, Brooklyn, Queens, Staten Island, Westchester, Long Island, New Jersey, and Connecticut should first identify what the device treats, under what conditions, and how results will be verified. GreenPoint Maintenance Services helps facility teams separate air-treatment applications from surface-disinfection claims, build a safe scope, and compare the technology with routine cleaning. Call GreenPoint at 347-332-9348 to schedule a walkthrough before adding equipment to a contract."
+      },
+      {
+        type: "heading",
+        text: "Start with the use case, not the lamp"
+      },
+      {
+        type: "paragraph",
+        text: "UV-C is a band of ultraviolet light that can inactivate susceptible microorganisms when the organism receives an adequate dose. That basic mechanism does not mean every UV product disinfects every room, every surface, or every pathogen. A buyer should identify whether a proposed system is an enclosed cabinet, a mobile room unit used in an empty room, an in-duct device, or an upper-room germicidal ultraviolet system intended to treat circulating air. These are different use cases with different exposure controls and operating conditions. GreenPoint Maintenance Services asks vendors to state the application and intended outcome in plain language before discussing a purchase."
+      },
+      {
+        type: "paragraph",
+        text: "The [CDC/NIOSH overview of germicidal ultraviolet](https://www.cdc.gov/niosh/ventilation/germicidal-ultraviolet/) describes GUV as a possible part of a layered approach to reducing airborne exposure, not a substitute for ventilation or routine surface cleaning. For occupied spaces, the CDC notes that upper-room systems need suitable design and airflow; fixtures must direct energy above occupants. In a clinic near Grand Central, a school in the Bronx, or a shared office in Long Island City, the first question is therefore: what risk or cleaning gap is the equipment meant to address? GreenPoint can map existing tasks and recommend when a walkthrough should include the building engineer."
+      },
+      {
+        type: "heading",
+        text: "Ask vendors for the exact product, claim, and test conditions"
+      },
+      {
+        type: "paragraph",
+        text: "Request the manufacturer, model, wavelength, intended use, product manual, and the exact claim that appears in the proposal. Ask which organism or class of organisms was tested, whether the test used a real room or a controlled laboratory, how distance and exposure time affected the result, and whether shadows, soil, humidity, or surface type change performance. A phrase such as \"99.9 percent effective\" is incomplete unless it identifies what was measured, by which method, at what distance, and after what exposure. GreenPoint records these answers in the scope rather than treating marketing language as a service-level commitment."
+      },
+      {
+        type: "paragraph",
+        text: "For pesticide-device claims, ask whether EPA requirements apply to that product and request the relevant registration or establishment information where applicable. Do not assume that a device is EPA-registered merely because the proposal calls it a sanitizer, and do not assume that registration proves performance in your particular room. The [EPA's registered-disinfectant guidance](https://www.epa.gov/pesticide-registration/selected-epa-registered-disinfectants) explains how to read product labels and contact-time directions; device rules depend on product design and claims. A facility manager can also compare the proposed method with established cleaning steps in [EPA disinfectant registration guidance](/blog/epa-disinfectant-registration-guide/) and the operational limitations described in [electrostatic disinfection explained](/blog/electrostatic-disinfection-explained/)."
+      },
+      {
+        type: "heading",
+        text: "Treat occupied-space safety as a contract requirement"
+      },
+      {
+        type: "paragraph",
+        text: "Direct exposure to some UV-C sources can injure eyes or skin. Ask who is authorized to start the device, how a room is cleared, what interlocks or door sensors prevent accidental exposure, where warning signs are placed, and how workers confirm a cycle has ended before re-entry. If equipment is intended to operate while people are present, require a documented exposure assessment and qualified design review rather than relying on a salesperson's assurance. CDC guidance says upper-room systems must be installed so UV energy is directed away from people, and maintenance workers need training before working near fixtures."
+      },
+      {
+        type: "paragraph",
+        text: "The service plan should address lockout or power isolation during maintenance, lamp replacement, safe access above ceilings, emergency shutdown, and incident reporting. In older buildings around Downtown Brooklyn, the Garment District, or Newark's central business district, a ceiling layout or reflective finish can affect installation and exposure controls. GreenPoint treats those site conditions as part of a pre-installation walkthrough. Ask for written responsibilities among the building owner, HVAC contractor, equipment vendor, and cleaning provider so no team assumes another party owns the safety check. The CDC advises powering fixtures off when workers need to access them and training maintenance personnel before they work on a system. Put that control in the contractor's method statement, not only in a manual stored in a mechanical room."
+      },
+      {
+        type: "heading",
+        text: "Understand the difference between air treatment and surface claims"
+      },
+      {
+        type: "paragraph",
+        text: "Upper-room or in-duct systems are generally discussed as supplemental air-treatment controls. They do not remove dust, fingerprints, food residue, or soil from desks, floors, elevator buttons, and restrooms. A portable UV-C device used in an unoccupied room has a separate workflow: surfaces must be arranged within the manufacturer's validated geometry, the room must be controlled, and staff must verify that the cycle completed. A missed cycle, blocked line of sight, or poorly positioned device can produce a record of machine use without proving that each target received a validated dose."
+      },
+      {
+        type: "paragraph",
+        text: "The [CDC infection-control guidance on air](https://www.cdc.gov/infection-control/hcp/environmental-control/air.html) describes UVGI as an adjunct in selected air-cleaning applications and cautions that it does not replace HEPA filtration or other indicated engineering controls. For ordinary commercial offices, a facility's risk assessment, ventilation design, occupancy, and cleaning plan should drive the choice. GreenPoint can coordinate a scope that keeps routine cleaning, any label-compliant chemical disinfection, and supplemental technology as distinct tasks. That distinction helps buyers avoid paying twice for the same outcome or mistaking an air-cleaning measure for a surface-cleaning service."
+      },
+      {
+        type: "heading",
+        text: "Build a measurable pilot before committing to a multi-year purchase"
+      },
+      {
+        type: "paragraph",
+        text: "A pilot should identify one representative zone, a baseline, a defined operating window, training, the acceptance test, and the person who signs off. Record room dimensions, fixture locations, surface layout, cycle duration, interruptions, and the number of rooms completed during a shift. Compare the device's actual performance with the task it is meant to supplement, not with a broad claim from a brochure. A 30-day pilot is a practical planning option, not a universal scientific standard; the right duration depends on the building's operating cycle and the vendor's validated method."
+      },
+      {
+        type: "paragraph",
+        text: "GreenPoint uses a written pilot log so managers can distinguish equipment availability from successful service. StockPoint, formerly called JaniTrack, can support operational records with timestamped, GPS-tagged photos and a live dashboard for assigned cleaning tasks; it should not be represented as a UV dose meter or microbiological test. If ATP sampling is included, agree on locations, timing, baseline, threshold, and corrective action before the first reading. Call 347-332-9348 to have GreenPoint review whether a proposed pilot can be measured with the people and records your building already uses."
+      },
+      {
+        type: "heading",
+        text: "Compare total cost, maintenance, and local operating realities"
+      },
+      {
+        type: "paragraph",
+        text: "The purchase price is only one cost. Ask for installation, electrical work, controls, training, consumables, lamp replacement intervals, service response, calibration or output checks, software fees, downtime coverage, and end-of-life disposal. For a New York City office near Penn Station or the Fulton Center, evening access, freight-elevator reservations, and union or building rules may affect labor and installation windows. In Jersey City, White Plains, Stamford, or Long Island, a regional support commitment and replacement-part lead time may matter more than a small difference in equipment price."
+      },
+      {
+        type: "paragraph",
+        text: "Put the operating assumptions in a spreadsheet: hours per cycle, usable rooms per shift, annual maintenance, staff time to clear and release rooms, and expected periods of downtime. Compare that total with the cost of the existing cleaning protocol and any additional engineering controls. GreenPoint uses fixed pricing for its cleaning scope rather than hourly billing, with the building's approved technology costs separately identified when applicable. A quote should show what the buyer is paying for, what remains the owner's responsibility, and which result will be accepted."
+      },
+      {
+        type: "paragraph",
+        text: "Before approval, ask the vendor to walk the route with the building engineer and cleaning supervisor, then document access points, controls, restricted rooms, and the location of emergency power isolation. A facilities team in Manhattan may need work scheduled around freight-elevator bookings, while a Connecticut campus may require separate coordination across buildings. Keep the review record with the proposal, including open questions and the person responsible for each answer. GreenPoint can help the buyer compare those operational details with the existing cleaning schedule so the technology adds a defined function instead of creating a parallel process no one owns."
+      },
+      {
+        type: "paragraph",
+        text: "Commissioning should produce a handoff packet with the approved layout, operating instructions, maintenance schedule, emergency contacts, training record, and sign-off from the appropriate building representative. Store that packet where facilities staff can find it during a shift, and review it when a room is remodeled or a fixture is moved. A contractor should not change a lamp angle or control setting without following the system designer's instructions. GreenPoint can coordinate task boundaries with the cleaning team, while the qualified UV system provider remains responsible for technical design and commissioning."
+      },
+      {
+        type: "heading",
+        text: "FAQ: selecting a UV-C cleaning vendor"
+      },
+      {
+        type: "paragraph",
+        text: "Q: Does UV-C replace normal commercial cleaning? A: No. It does not remove soil or replace routine cleaning, and air-treatment systems do not automatically disinfect every surface. GreenPoint defines the cleaning, disinfection, and supplemental technology tasks separately."
+      },
+      {
+        type: "paragraph",
+        text: "Q: Can UV-C operate safely in an occupied office? A: Some specially designed upper-room systems are intended for occupied spaces, but installation and exposure controls matter. Ask for a qualified design review, operating instructions, restricted controls, warning signs, and maintenance training before use."
+      },
+      {
+        type: "paragraph",
+        text: "Q: What should a UV-C pilot measure? A: Define the target zone, cycle completion, coverage limitations, downtime, staff steps, and the acceptance method. Do not use a device activity log as proof of a delivered dose unless the manufacturer validates that method."
+      },
+      {
+        type: "paragraph",
+        text: "Q: Does GreenPoint install UV-C systems? A: GreenPoint can review cleaning scopes and coordinate with the building's qualified equipment or HVAC professionals, but a UV system should be selected and installed by an appropriately qualified provider. Call 347-332-9348 to schedule a scope walkthrough."
+      },
+      {
+        type: "paragraph",
+        text: "Q: Which areas does GreenPoint serve? A: GreenPoint serves Manhattan, the Bronx, Brooklyn, Queens, Staten Island, Westchester, Long Island, New Jersey, Connecticut, Pennsylvania, and Florida. The walkthrough confirms access, building type, schedule, and the services required."
+      },
+      {
+        type: "callout",
+        text: "Before buying UV-C technology, ask GreenPoint Maintenance Services for a documented cleaning-scope walkthrough at 347-332-9348 or info@greenpointms.com. GreenPoint brings a proof-driven operating plan, StockPoint task verification, and fixed-price cleaning proposals backed by a 98% client-retention record."
+      }
+    ]
+  },
 
   {
-  "slug": "robotic-floor-cleaning-rfp",
-  "image": "/blog/robotic-floor-cleaning-rfp.jpg",
-  "title": "Robotic Floor Cleaning RFPs: How to Evaluate Coverage and Human Oversight",
-  "excerpt": "A facility manager's guide to writing robotic floor-cleaning RFPs with coverage maps, labor assumptions, safety requirements, data ownership, and human accountability.",
-  "category": "Emerging Technology",
-  "author": "GreenPoint Maintenance",
-  "publishedAt": "2026-09-26",
-  "readTime": "10 min read",
-  "keywords": [
-    "robotic floor cleaning RFP",
-    "commercial cleaning robots",
-    "autonomous scrubber vendor"
-  ],
-  "content": [
-    {
-      "type": "intro",
-      "text": "An autonomous scrubber can improve repeatability in a large lobby, corridor, airport-adjacent office, or warehouse, but a robot does not make a cleaning program automatic. The buyer still needs a coverage map, trained human oversight, edge work, restroom service, spill response, charging controls, and proof that the floor is actually clean. This guide helps facility managers in New York, New Jersey, Connecticut, Pennsylvania, and Florida write a robotic floor-cleaning RFP that compares outcomes instead of comparing machines. GreenPoint Maintenance Services uses technology only where it improves measurable service, safety, and communication."
-    },
-    {
-      "type": "heading",
-      "text": "Define the Floor-Care Outcome First"
-    },
-    {
-      "type": "paragraph",
-      "text": "Start the RFP with the condition the facility expects, not a brand name or a requirement that the vendor supply a robot. Define soil load, slip-risk priorities, appearance level, floor types, operating hours, and the frequency for dust-mopping, scrubbing, and periodic refinishing. A 200,000-square-foot Queens distribution center may need dust control and aisle safety, while a 35,000-square-foot Midtown lobby needs quiet operation, polished appearance, and careful pedestrian interaction. GreenPoint maps the floor zones before selecting equipment so the technology is accountable to a result."
-    },
-    {
-      "type": "paragraph",
-      "text": "Include measurable acceptance criteria such as no visible debris in defined lanes, no standing water after a route, a documented response to spills within 10 minutes, and a target appearance level by zone. ISSA appearance levels can create a shared vocabulary, while [vct floor care strip seal wax guide](/blog/vct-floor-care-strip-seal-wax-guide/) explains why daily automation does not replace periodic restoration. A [cleaning audit checklist for facility managers](/blog/cleaning-audit-checklist-facility-managers/) can turn those conditions into an inspection routine. Ask bidders to state the labor hours behind their assumptions and identify which tasks remain manual. If an RFP says only 'autonomous cleaning,' proposals will be impossible to compare."
-    },
-    {
-      "type": "heading",
-      "text": "Build a Coverage Map With Constraints"
-    },
-    {
-      "type": "paragraph",
-      "text": "The map should show square footage, floor material, aisle width, doorway width, ramps, elevators, charging locations, restricted areas, furniture, public paths, and no-go zones. Separate open runs from edges, corners, under-desk areas, stairs, restroom thresholds, and spaces with frequent obstacles. A robot may cover 40,000 square feet per shift in ideal conditions, but that headline changes when it must stop for pedestrians or return to a charger. GreenPoint asks for an annotated route, a human finishing plan, and a method for updating the map when the client changes furniture."
-    },
-    {
-      "type": "paragraph",
-      "text": "Local buildings add practical constraints. A Lower Manhattan office may have security-controlled elevators and tenant events; a Brooklyn or Long Island City site may have loading-dock schedules; a Newark or Stamford building may need a route that avoids shift changes; a South Florida property may need to account for tracked-in sand and storm access. Put each constraint in the RFP and require a site survey. Call 844-814-0810 to schedule a GreenPoint walkthrough, because a floor plan alone cannot reveal reflective glass, door closers, uneven transitions, or the cleaning window between commuter peaks."
-    },
-    {
-      "type": "heading",
-      "text": "Require Human Oversight and Edge Work"
-    },
-    {
-      "type": "paragraph",
-      "text": "The most important RFP question is who remains responsible when the robot stops, misses an edge, encounters a spill, or reports an obstacle. Specify an on-site or on-call operator, response time, route restart procedure, manual edge work, stair cleaning, spot mopping, restroom transitions, and end-of-shift inspection. The robot should be treated as production equipment, not as a substitute for a trained cleaner. GreenPoint assigns human ownership for setup, safety checks, exception handling, and final review. This prevents a facility from paying for a completed route that left the highest-visibility edges dirty."
-    },
-    {
-      "type": "paragraph",
-      "text": "Write a service-level agreement with examples: a blocked route acknowledged within five minutes, a spill isolated immediately, a failed battery reported before the next shift, and a missed zone corrected within the same service window when feasible. Include relief coverage for vacation, training, and equipment downtime. OSHA-style hazard communication, pedestrian separation, and battery charging procedures should be documented. GreenPoint's supervisors can use StockPoint to record route exceptions, timestamped GPS-tagged photos, and closure notes. A dashboard should show accountability, not hide it behind an attractive route animation."
-    },
-    {
-      "type": "heading",
-      "text": "Compare Scrubbing, Vacuuming, and Polishing Claims"
-    },
-    {
-      "type": "paragraph",
-      "text": "Vendors often describe a robot as a floor-cleaning solution without clarifying whether it sweeps, vacuums, scrubs, dries, or polishes. Require separate performance claims for each mode and each floor type. Ask about brush pressure, water recovery, detergent dosing, drying time, noise, battery runtime, tank capacity, and how performance changes with traffic. A 12,000-square-foot VCT corridor and a concrete warehouse aisle do not have the same soil or finish requirements. GreenPoint specifies the actual task and verifies the result with visual inspection, scheduled floor measurements, and periodic restoration."
-    },
-    {
-      "type": "paragraph",
-      "text": "The RFP should identify who supplies pads, brushes, squeegees, filters, batteries, approved chemicals, and replacement parts. Green Seal certified product options can support a lower-impact program, but green claims should not replace a documented dilution and recovery process. In a Staten Island school or a Bronx public facility, the schedule may need to align with NYC DOE or municipal access rules. In Philadelphia or Florida, local client rules still govern product approval. Ask bidders to include training time, equipment downtime, and manual fallback in their price."
-    },
-    {
-      "type": "heading",
-      "text": "Set Safety, Privacy, and Accessibility Requirements"
-    },
-    {
-      "type": "paragraph",
-      "text": "A cleaning robot operates around people, doors, carts, service animals, and sometimes sensitive information. Require collision avoidance, emergency stop, audible or visual signals, speed limits, safe charging, battery inspection, and a clear process for operating near accessible routes. Ask what data the robot collects, where maps are stored, who can access route footage, and how long records are retained. GreenPoint reviews those controls with the facility team rather than assuming a manufacturer's default is acceptable. The RFP should prohibit blocking ramps, tactile paths, exits, fire equipment, or emergency egress."
-    },
-    {
-      "type": "paragraph",
-      "text": "Public-facing sites deserve extra detail. A courthouse near Queens Plaza, a school in Westchester, or an office serving clients near Grand Central may have peak periods when a machine must be parked. The vendor should identify a spotter or operator, signage, wet-floor controls, and a complaint contact. Accessibility is not achieved merely because the robot avoids a person; the finished floor must remain safe and routes must remain open. Ask for a demonstration during the actual service window, then record exceptions and corrective actions in the pilot report."
-    },
-    {
-      "type": "heading",
-      "text": "Design a Pilot With Baseline Metrics"
-    },
-    {
-      "type": "paragraph",
-      "text": "A pilot should test representative zones for at least two or three service cycles, not one staged demonstration. Record square footage, route time, manual hours, water and chemical use, battery changes, missed areas, complaints, and inspection results before and during the pilot. Define a pass threshold for coverage, dryness, edge quality, response to obstacles, and reporting. GreenPoint can use StockPoint for timestamped evidence and supervisor review, while an ATP sampling plan can add data in appropriate high-touch areas. The goal is to learn whether the process works in the building, not to validate a sales presentation."
-    },
-    {
-      "type": "paragraph",
-      "text": "Choose zones with different conditions: a wide open floor, a congested corridor, a transition between materials, a high-traffic entrance, and an area with security or elevator constraints. For a 100,000-square-foot Manhattan property, the pilot may cover one full floor and its lobby; for a 60,000-square-foot school, it may cover corridors, cafeteria, and gym entry. Ask how the vendor will respond when the robot cannot finish. GreenPoint will schedule the walkthrough at 844-814-0810 and document the baseline before proposing a recurring program."
-    },
-    {
-      "type": "heading",
-      "text": "Write the Commercial and Data Terms"
-    },
-    {
-      "type": "paragraph",
-      "text": "RFP pricing should separate lease or equipment costs, operator labor, consumables, software, data storage, training, repairs, travel, and manual completion work. State whether the client owns route maps and service data, whether a vendor can use footage for product development, and what happens if the contract ends. A lower monthly payment can become expensive if the client pays separately for every battery, software seat, or emergency visit. GreenPoint offers fixed pricing with no hourly billing or hidden fees after a confirmed scope, so procurement can compare the complete service."
-    },
-    {
-      "type": "paragraph",
-      "text": "Include a downtime guarantee and a manual fallback. If a charger fails during a Friday-night shift in Jersey City, who brings a replacement machine or assigns a cleaner? If a Florida storm changes access, how is the schedule reset? If a Long Island tenant moves furniture, who remaps the route? Name the escalation contact and response time. GreenPoint Maintenance Services is MBE/MWBE certified, SAM.gov registered, and supported by a 98% client retention record. Those proof points do not replace due diligence, but they help a buyer evaluate continuity alongside equipment features."
-    },
-    {
-      "type": "heading",
-      "text": "Turn Route Data Into Continuous Improvement"
-    },
-    {
-      "type": "paragraph",
-      "text": "The best robotic cleaning program becomes more useful over time because the team reviews exceptions instead of merely celebrating completed routes. Require a monthly report with route completion, manual interventions, blocked areas, downtime, complaints, inspection scores, consumables, and corrective actions. Compare results by zone and by shift. GreenPoint can combine route evidence with supervisor inspections, photos, and ATP results when appropriate. That makes it possible to change furniture, adjust frequency, or add manual detailing based on evidence rather than anecdote."
-    },
-    {
-      "type": "paragraph",
-      "text": "Facility leaders should also review whether automation improved service for people, not just utilization for the machine. Did the lobby dry faster? Did complaints fall? Did cleaners spend more time on restrooms and high-touch surfaces? Did the machine create an accessibility concern? A 98% client retention rate gives GreenPoint a reason to keep the conversation practical and transparent. For a written RFP scope, call 844-814-0810 or email info@greenpointms.com. GreenPoint will walk the site, identify realistic robot zones, and price the human oversight that makes the program dependable."
-    },
-    {
-      "type": "heading",
-      "text": "Frequently Asked Questions"
-    },
-    {
-      "type": "heading",
-      "text": "Can a commercial cleaning robot replace a janitorial team?"
-    },
-    {
-      "type": "paragraph",
-      "text": "No. Robots can automate repeatable open-floor routes, but people still handle edges, stairs, spills, restrooms, obstacles, safety checks, and final inspection. GreenPoint writes human oversight and manual fallback into the RFP and service-level agreement."
-    },
-    {
-      "type": "heading",
-      "text": "What square footage can an autonomous scrubber clean?"
-    },
-    {
-      "type": "paragraph",
-      "text": "The answer depends on floor type, route complexity, battery, water recovery, obstacles, and operating window. A vendor should prove coverage during a site pilot rather than relying on a brochure headline. GreenPoint measures route time and exceptions by zone."
-    },
-    {
-      "type": "heading",
-      "text": "What should a robotic floor-cleaning RFP include?"
-    },
-    {
-      "type": "paragraph",
-      "text": "Include floor maps, square footage, materials, frequencies, access windows, safety, accessibility, data ownership, response times, manual edge work, downtime coverage, consumables, reporting, pricing, and acceptance criteria. Call 844-814-0810 for a walkthrough."
-    },
-    {
-      "type": "heading",
-      "text": "How does GreenPoint verify autonomous floor cleaning?"
-    },
-    {
-      "type": "paragraph",
-      "text": "GreenPoint combines route records with supervisor inspection, timestamped GPS-tagged photos, exception notes, and ATP testing when an approved sampling plan calls for it. StockPoint helps authorized managers review completion and corrective action."
-    },
-    {
-      "type": "heading",
-      "text": "Does GreenPoint serve tri-state and Florida facilities?"
-    },
-    {
-      "type": "paragraph",
-      "text": "Yes. GreenPoint serves NYC, Westchester, Long Island, New Jersey, Connecticut, Pennsylvania, and Florida. A walkthrough confirms building access, staffing, floor types, local requirements, and the right mix of automation and human service."
-    },
-    {
-      "type": "callout",
-      "text": "Call GreenPoint Maintenance Services at 844-814-0810 or email info@greenpointms.com for a robotic floor-cleaning RFP walkthrough. Get a coverage map, human-oversight plan, fixed pricing, StockPoint evidence, and a pilot tied to measurable floor results."
-    }
-  ]
-},
+    slug: "robotic-floor-cleaning-rfp",
+    image: "/blog/robotic-floor-cleaning-rfp.jpg",
+    title: "Robotic Floor Cleaning RFPs: How to Evaluate Coverage and Human Oversight",
+    excerpt: "Write a robotics RFP that tests real route coverage, safety, edge work, data ownership, and human backup in New York, New Jersey, and Connecticut buildings.",
+    category: "Emerging Technology",
+    author: "GreenPoint Maintenance",
+    publishedAt: "2026-11-03",
+    readTime: "10 min read",
+    keywords: [
+      "robotic floor cleaning RFP",
+      "commercial cleaning robots",
+      "autonomous scrubber vendor"
+    ],
+    content: [
+      {
+        type: "intro",
+        text: "A commercial floor-cleaning robot can reduce repetitive work on large, predictable routes, but an RFP should not assume that an autonomous scrubber replaces a janitorial team. Buyers in Midtown Manhattan, Downtown Brooklyn, Queens, Newark, Jersey City, and Connecticut should specify floor area, route windows, obstacles, safety controls, manual finishing, and measurable acceptance criteria. GreenPoint Maintenance Services helps facility teams evaluate where automation fits and where trained cleaners remain essential. Call 347-332-9348 to schedule a walkthrough and map the proposed route before issuing a bid."
+      },
+      {
+        type: "heading",
+        text: "Define the business problem and baseline first"
+      },
+      {
+        type: "paragraph",
+        text: "Begin with the problem: inconsistent appearance, labor availability, overnight access, repeatable corridor cleaning, water control, or auditability. Record the current method by zone, frequency, time window, equipment, staff assignment, and complaint history. A 60,000-square-foot office is not one route if it includes carpet, VCT, stone, ramps, glass doors, security gates, and occupied meeting rooms. GreenPoint recommends mapping hard-floor square footage separately from carpet and restricted areas, then stating which outcome the robot must improve."
+      },
+      {
+        type: "paragraph",
+        text: "Baseline at least one representative month of current service where available: scheduled passes, missed zones, slip or wet-floor reports, visible soil complaints, and staff time spent on the route. Do not claim a robot will save a fixed percentage before a site test. Model a range using the building's own data, then identify the assumptions that drive the result. For context only, the [BLS Occupational Outlook Handbook](https://www.bls.gov/ooh/building-and-grounds-cleaning/janitors-and-building-cleaners.htm) reported a national 2025 median wage of $17.71 per hour for janitors and building cleaners; a local labor budget must use the correct geography, wage rules, benefits, shift differential, and contract requirements."
+      },
+      {
+        type: "heading",
+        text: "Describe floors, obstacles, routes, and access windows"
+      },
+      {
+        type: "paragraph",
+        text: "Attach a marked floor plan and an area schedule to the RFP. Identify flooring by material, square footage, slope, thresholds, elevators, low-clearance zones, furniture moves, charging locations, water-fill points, floor drains, and pedestrian crossings. A route through a Midtown tower beside Grand Central has different elevator and access constraints than a broad distribution floor in Long Island or a campus corridor near Storrs. Include cleaning frequency and the latest acceptable finish time for every route."
+      },
+      {
+        type: "paragraph",
+        text: "Ask vendors to show the route on the actual plan and label inaccessible or low-confidence areas. Specify edge cleaning along baseboards, corners, alcoves, under desks, around columns, and behind movable furniture as a separate human task if the machine does not cover it. A bidder should state whether it uses water, detergent, or a recovery system and describe how it handles spills, temporary obstructions, visitors, and route changes. GreenPoint includes these conditions in the scope so machine coverage is not confused with complete floor care."
+      },
+      {
+        type: "heading",
+        text: "Set acceptance criteria that can be observed"
+      },
+      {
+        type: "paragraph",
+        text: "Define completion as a set of verifiable results: the agreed route is performed within the access window, specified zones receive the required pass, the floor is left in an acceptable condition, exceptions are documented, and safety steps are followed. Avoid vague promises such as \"autonomous cleaning throughout the building.\" Ask for the vendor's route record, supervisor inspection, exception log, water-recovery check, and response time when a task is interrupted. If appearance standards matter, align language with a recognized system such as ISSA's cleaning-industry resources and state the building's chosen acceptance method."
+      },
+      {
+        type: "paragraph",
+        text: "A practical pilot can compare the same route under the existing method and the proposed machine, with a pre-agreed inspection checklist. Record pass completion, missed spots, manual touch-up time, refills, battery or charging interruptions, and occupant interactions. Do not turn an illustrative pilot target into a guaranteed productivity figure without measurement. GreenPoint can document assigned work through the StockPoint verification platform, formerly called JaniTrack, using timestamped, GPS-tagged photos and a live dashboard; those records show task evidence, not a laboratory measure of surface cleanliness. For broader program design, see [quality assurance for commercial cleaning programs](/blog/quality-assurance-commercial-cleaning-program/) and [cleaning staffing ratios by square footage](/blog/cleaning-staffing-ratios-square-footage/)."
+      },
+      {
+        type: "heading",
+        text: "Require trained human oversight and a manual fallback"
+      },
+      {
+        type: "paragraph",
+        text: "The RFP should name who clears the route, checks the machine, fills or changes consumables, handles alarms, responds to spills, and completes work the robot cannot reach. It should also describe safe interactions with pedestrians, emergency egress, elevators, cords, wet floors, and construction or delivery traffic. A machine can stop at a closed door, a cart, a wet spill, or a temporary barrier; the building still needs a staffed response path. GreenPoint plans for a human owner of each exception rather than assuming autonomous dispatch will solve every interruption."
+      },
+      {
+        type: "paragraph",
+        text: "Specify the manual fallback for a failed device: the same shift, the next scheduled pass, or a defined service-level window. Ask whether the operator receives site-specific training and how retraining is handled when the route, software, or equipment changes. For public schools or municipal facilities, coordinate with the owner's safety, access, and procurement teams; do not assume a general commercial robot scope satisfies a school-specific approval or safeguarding procedure. GreenPoint is MBE/MWBE certified and SAM.gov registered, and can document the qualifications and service records a public buyer requests."
+      },
+      {
+        type: "heading",
+        text: "Cover data, cybersecurity, and privacy in the bid"
+      },
+      {
+        type: "paragraph",
+        text: "Autonomous equipment may collect maps, location, route, camera, sensor, or performance data. Ask what data is collected, whether images are captured, how long data is retained, who can see it, where it is hosted, how it is exported, and whether the owner can delete it at contract end. Prohibit unnecessary recording of people or sensitive spaces, and require the vendor to explain encryption, account access, software updates, breach reporting, and third-party integrations. If the robot connects to building Wi-Fi or a facilities platform, obtain the owner's IT review before installation."
+      },
+      {
+        type: "paragraph",
+        text: "The contract should state that the owner owns building plans and any data it supplies, and should define permitted uses of operational data. Make sure access to a vendor dashboard does not disappear when a trial account ends. GreenPoint keeps its service-verification workflow separate from manufacturer telemetry; StockPoint can show task completion evidence and exceptions to authorized managers. Request a sample export and user-role demonstration during evaluation. Call 347-332-9348 if you want a walkthrough that includes facilities, security, IT, and cleaning stakeholders."
+      },
+      {
+        type: "heading",
+        text: "Evaluate total cost and avoid misleading savings math"
+      },
+      {
+        type: "paragraph",
+        text: "Compare purchase or lease fees, software subscriptions, installation, charging stations, batteries, brushes, squeegees, detergent, repairs, training, route supervision, connectivity, and manual finishing. Include the cost of spare equipment or an alternate method during downtime. Calculate current route labor using actual paid hours, not just time with a mop in hand: setup, closet travel, refill, break coverage, inspection, and exceptions all matter. BLS occupational data is a useful national reference point, not a substitute for local wage, benefit, prevailing-wage, or union calculations."
+      },
+      {
+        type: "paragraph",
+        text: "Use a transparent scenario: for example, compare the current annual cost of one defined route with a robot lease, maintenance, human supervision, and manual edges. Label every input as measured, vendor-quoted, or assumed; run a lower, expected, and higher utilization case. GreenPoint uses fixed pricing for cleaning scopes, so a technology pilot can be evaluated without confusing machine purchase costs with hourly labor invoices. A walkthrough at 347-332-9348 can establish the area map and task boundaries for a fair quote."
+      },
+      {
+        type: "paragraph",
+        text: "Require the bidder to show the machine working in a representative part of the building, not only in an empty demonstration room. During the test, introduce ordinary conditions such as a chair left outside a conference room, a temporary wet-floor sign, or a delivery cart parked at a route edge. Record how the operator responds and whether the system resumes safely. A good demonstration should include setup and shutdown, water handling, routine maintenance, and a manual recovery plan. Those steps help GreenPoint and the buyer compare actual staffing requirements instead of assuming the device runs unattended."
+      },
+      {
+        type: "paragraph",
+        text: "Include the surface-finish and water-recovery requirements that matter to the owner. A bid should explain how the machine treats a spill, how it prevents excess solution from remaining on the floor, what warning signs are used, and who checks the route before pedestrians return. Specify whether the machine may operate around tenants, visitors, patients, students, or delivery staff, and identify any areas that must remain off limits. Ask the vendor to describe obstacle detection, emergency stop, battery charging, and operator training in the actual building context. GreenPoint recommends testing these steps on a representative route before accepting a proposed service level, then documenting any floor-finish limitations in the contract."
+      },
+      {
+        type: "paragraph",
+        text: "Ask the building team to document route changes caused by construction, temporary leasing, deliveries, and seasonal entry mats. A route that worked in a clear lobby may behave differently when a tenant event moves furniture or a winter mat narrows the passage. In Midtown Manhattan, elevator scheduling and evening security checks may constrain when the robot can travel between floors; a single-floor site near Downtown Brooklyn may have a simpler route but more public foot traffic. Require the vendor to explain who updates maps, how updates are tested, and whether a changed route requires retraining. GreenPoint recommends keeping a dated map version in the service file so both the operator and facility manager know which route was approved."
+      },
+      {
+        type: "heading",
+        text: "FAQ: writing a robotic floor-cleaning RFP"
+      },
+      {
+        type: "paragraph",
+        text: "Q: Can an autonomous scrubber replace a janitorial team? A: No. It can automate defined repeatable routes, while people handle edges, stairs, spills, restrooms, obstacles, safety checks, and inspection. The RFP should identify both workstreams."
+      },
+      {
+        type: "paragraph",
+        text: "Q: How much floor area can one robot clean? A: Capacity varies with route complexity, floor type, speed, obstacles, battery, water recovery, and operating hours. Require an on-site pilot on your actual map instead of accepting a brochure maximum."
+      },
+      {
+        type: "paragraph",
+        text: "Q: What should a robotic cleaning pilot measure? A: Measure route completion, time, exceptions, rework, manual finishing, machine downtime, safety events, and appearance using the same checklist as the baseline."
+      },
+      {
+        type: "paragraph",
+        text: "Q: Should the RFP include data requirements? A: Yes. Define camera use, data ownership, retention, authorized roles, cybersecurity review, exports, and deletion when service ends."
+      },
+      {
+        type: "paragraph",
+        text: "Q: Does GreenPoint serve New York and neighboring states? A: Yes. GreenPoint serves NYC, Westchester, Long Island, New Jersey, Connecticut, Pennsylvania, and Florida. Call 347-332-9348 to schedule a facilities walkthrough."
+      },
+      {
+        type: "callout",
+        text: "Request a robotic floor-cleaning RFP walkthrough from GreenPoint Maintenance Services at 347-332-9348 or info@greenpointms.com. GreenPoint will help define the route, manual backup, acceptance checks, and fixed-price cleaning scope, with StockPoint task evidence and a 98% client-retention record."
+      }
+    ]
+  },
 
   {
-  "slug": "cleaning-contract-staffing-ratio",
-  "image": "/blog/cleaning-contract-staffing-ratio.jpg",
-  "title": "Cleaning Contract Staffing Ratios: Estimating Labor Without Underbidding",
-  "excerpt": "How to estimate janitorial labor by facility type, square footage, frequency, and task mix without hiding overtime, supervision, or quality controls.",
-  "category": "Best Practices",
-  "author": "GreenPoint Maintenance",
-  "publishedAt": "2026-09-26",
-  "readTime": "10 min read",
-  "keywords": [
-    "commercial cleaning staffing ratios",
-    "janitorial labor estimate",
-    "cleaning contract staffing"
-  ],
-  "content": [
-    {
-      "type": "intro",
-      "text": "A staffing ratio is a planning tool, not a promise that one cleaner can produce the same result in every building. Occupancy, restroom count, floor type, security, transit access, frequency, and appearance level can double the labor needed for the same square footage. This guide shows facility managers and procurement teams how to estimate cleaning contract labor without underbidding the work. GreenPoint Maintenance Services uses a task-based walkthrough, documented production assumptions, and StockPoint verification so the lowest number of people on paper does not become a missed-service problem in Manhattan, Brooklyn, New Jersey, Connecticut, Pennsylvania, or Florida."
-    },
-    {
-      "type": "heading",
-      "text": "Why Square Footage Alone Misleads"
-    },
-    {
-      "type": "paragraph",
-      "text": "A common starting point is 15,000 to 25,000 square feet per cleaner per shift for a light office, but that range is not a universal standard. A heavily furnished office with many small rooms, kitchens, and conference rooms may need less production per labor hour than an open warehouse. Healthcare, daycare, food service, and public buildings carry higher touchpoint and compliance demands. GreenPoint separates cleanable square footage from gross square footage, counts fixtures and rooms, and lists the tasks that consume time. That produces a labor estimate a buyer can inspect instead of a ratio that hides assumptions."
-    },
-    {
-      "type": "paragraph",
-      "text": "For example, a 50,000-square-foot Midtown office with two banks of restrooms, four pantries, a lobby, and daily service may need a different crew from a 50,000-square-foot Long Island warehouse with long aisles and fewer fixtures. A Bronx school adds classrooms, cafeterias, gyms, and NYC DOE access rules; a New Jersey distribution center adds loading-dock timing and shift overlap. Ask the bidder to show production rates by task, not just a total headcount. The companion guide [cleaning staffing ratios by square footage](/blog/cleaning-staffing-ratios-square-footage/) can help structure that request."
-    },
-    {
-      "type": "heading",
-      "text": "Build a Task and Frequency Matrix"
-    },
-    {
-      "type": "paragraph",
-      "text": "List every service by area, frequency, method, and quality target. Daily work may include trash, restrooms, high-touch surfaces, vacuuming, dust-mopping, and breakrooms. Weekly work may include detailed edges, low ledges, and machine scrubbing. Monthly or quarterly work may include carpet extraction, high dusting, window cleaning, and floor restoration. Put the estimated minutes next to each task and state whether the time includes setup, travel between zones, replenishment, and documentation. GreenPoint uses a task matrix so a change from three to five service nights changes the estimate transparently."
-    },
-    {
-      "type": "paragraph",
-      "text": "A 12,000-square-foot medical office near Jamaica may have 16 exam rooms and require between-patient touchpoint work that a general-office ratio misses. A church in Staten Island may have a quiet weekday schedule but a heavy Sunday reset. A Philadelphia government building may have prevailing-wage requirements and controlled entrances. Ask who cleans each zone, when they clean it, and how the supervisor verifies it. Call 844-814-0810 for a walkthrough; GreenPoint will translate the floor plan into a staffing model instead of guessing from gross area."
-    },
-    {
-      "type": "heading",
-      "text": "Use Productive Hours, Not Paid Hours"
-    },
-    {
-      "type": "paragraph",
-      "text": "Paid hours include more than hands-on production. Workers need time for opening and closing, supply staging, equipment checks, restroom replenishment, elevator travel, security sign-in, safety meetings, and reporting. A proposal that divides square footage by an ideal production rate and ignores those minutes will underbid the contract. Build a productive-hours factor into the model and show the client which assumptions can change. GreenPoint also includes supervisor time, training, relief coverage, and quality assurance so the contract does not collapse when one employee is absent."
-    },
-    {
-      "type": "paragraph",
-      "text": "A practical schedule might show 32 cleaner hours, 4 supervisor hours, and 3 relief or training hours for a five-night program, rather than pretending that 39 paid hours are all available for floor work. A high-rise in Manhattan may lose minutes to freight elevators; a campus in Westchester may lose minutes to distance between buildings; a Florida property may have heat or storm interruptions. Put travel and access into the bid. Fixed pricing should still be clear about the labor model. GreenPoint does not use hourly billing for the client, but it uses labor assumptions internally to protect service quality."
-    },
-    {
-      "type": "heading",
-      "text": "Adjust Ratios for Restrooms and Touchpoints"
-    },
-    {
-      "type": "paragraph",
-      "text": "Restrooms are usually the strongest labor driver in an office, school, retail, or transit-adjacent property. Count fixtures, partitions, dispensers, floors, mirrors, and replenishment points, then account for occupancy and mid-day touch-ups. High-touch surfaces require their own route rather than a vague promise to wipe frequently. CDC and OSHA guidance supports risk-based cleaning and safe chemical handling, while ISSA standards help define appearance. GreenPoint identifies high-use areas and assigns time for inspection, replenishment, and corrective work. A ratio that ignores fixtures will look efficient until the first tenant complaint."
-    },
-    {
-      "type": "paragraph",
-      "text": "A 30,000-square-foot Brooklyn coworking site near Atlantic Terminal may have more restroom and kitchen demand than a 60,000-square-foot low-occupancy office. An elementary school in Queens or Newark needs cafeteria and restroom work after peak periods; a medical practice needs exam-room turnover. Put service windows in the scope and require the bidder to state the number of fixtures covered. Use StockPoint for photos, supervisor checks, and supply exceptions. Call 844-814-0810 when the current contract repeatedly runs out of paper products or leaves touchpoints undocumented; those are staffing signals, not merely supply problems."
-    },
-    {
-      "type": "heading",
-      "text": "Add Supervision, Training, and Relief"
-    },
-    {
-      "type": "paragraph",
-      "text": "A credible staffing plan names who leads the shift, who performs inspections, who trains new hires, and who covers an absence. Industry turnover can be high, so a proposal that assumes every cleaner works every night is fragile. GreenPoint budgets onboarding, site orientation, chemical-safety training, cross-training, and relief coverage. The supervisor should inspect high-risk zones, review exceptions, communicate with the facility contact, and close corrective actions. A digital dashboard is useful only when a trained person acts on what it shows."
-    },
-    {
-      "type": "paragraph",
-      "text": "Ask bidders for a supervisor-to-cleaner relationship and the hours the supervisor is physically present. A 24-hour facility in Queens may need overlap at shift change; a school in Westchester may need a single accountable lead; a hospital-adjacent medical office in Connecticut may need documented terminal-cleaning review. Require a substitute plan for vacations, call-outs, weather, and transit disruption. GreenPoint's 98% client retention record reflects attention to continuity, while MBE/MWBE certification and SAM.gov registration help buyers document responsible sourcing. GreenPoint can outline the labor model during a walkthrough at 844-814-0810."
-    },
-    {
-      "type": "heading",
-      "text": "Price Compliance and Specialized Tasks"
-    },
-    {
-      "type": "paragraph",
-      "text": "Not every cleaning hour is interchangeable. Healthcare, childcare, laboratory, food-service, and government work may require extra training, PPE, color-coded tools, product controls, or prevailing-wage compliance. OSHA hazard communication and bloodborne-pathogen requirements can add preparation and documentation time. NYC DOE or municipal buildings may specify access, background checks, or approved products. GreenPoint separates routine production from specialized tasks and records the assumptions in the proposal. This protects the buyer from a low base price that later becomes change orders when compliance work appears."
-    },
-    {
-      "type": "paragraph",
-      "text": "The same principle applies to floors and finishes. VCT strip-and-refinish, carpet extraction, high dusting, pressure washing, and post-construction work should have their own labor and equipment estimates. Include square footage, frequency, furniture movement, drying time, and protection of adjacent areas. A vendor should identify what is excluded and what triggers a quote. For a complete comparison, review [commercial cleaning cost per square foot](/blog/commercial-cleaning-cost-per-square-foot/) and [calculating true cleaning cost TCO](/blog/calculating-true-cleaning-cost-tco/). GreenPoint offers fixed pricing with no hidden fees after scope confirmation."
-    },
-    {
-      "type": "heading",
-      "text": "Test the Staffing Model With a Pilot"
-    },
-    {
-      "type": "paragraph",
-      "text": "Before signing a multi-year contract, test the proposed staffing model in representative zones and compare planned versus actual minutes. Record room counts, fixture counts, access delays, missed tasks, supply use, inspection findings, and client complaints. A pilot should not be a free week that quietly uses extra labor; agree on the crew, scope, acceptance criteria, and reporting in writing. GreenPoint can use StockPoint to document attendance evidence, timestamped GPS-tagged photos, inspections, and corrective actions. The point is to validate the work content, not to reward a bidder for a low headcount."
-    },
-    {
-      "type": "paragraph",
-      "text": "Choose a week with normal occupancy and include a high-demand day. A pilot in a Manhattan office should include lobby, elevators, conference rooms, and restrooms; a Long Island school should include classrooms, cafeteria, gym, and entryways; a Florida property should include sand and weather-related entry soil. Review the results with operations and procurement together. If the model needs adjustment, say why. Call 844-814-0810 to schedule a GreenPoint walkthrough and receive a staffing estimate tied to the actual task matrix."
-    },
-    {
-      "type": "heading",
-      "text": "Use Evidence to Rebalance the Contract"
-    },
-    {
-      "type": "paragraph",
-      "text": "Staffing should be reviewed when occupancy, hours, layout, or service expectations change. Monthly data can show whether labor is being spent on the right zones: repeat restroom exceptions, high-touch misses, carpet soil, supply outages, and response times are more useful than a single complaint. GreenPoint's StockPoint records can pair operational evidence with supervisor notes and client communication. A 98% retention rate depends on making those conversations early, before a small staffing gap becomes a contract termination."
-    },
-    {
-      "type": "paragraph",
-      "text": "A responsible adjustment may be a frequency change, a day porter, a different start time, a revised route, or an added specialist rather than simply more cleaners. Put the decision rule in the contract: for example, two repeat misses in a high-priority zone trigger a root-cause review within five business days. GreenPoint provides a named contact, fixed pricing, and no hourly billing or hidden fees, so an approved change can be priced clearly. Email info@greenpointms.com or call 844-814-0810 to review a staffing model for any tri-state or Florida facility."
-    },
-    {
-      "type": "heading",
-      "text": "Frequently Asked Questions"
-    },
-    {
-      "type": "heading",
-      "text": "What is a reasonable cleaner-to-square-foot ratio?"
-    },
-    {
-      "type": "paragraph",
-      "text": "There is no universal ratio. Light offices may plan around 15,000 to 25,000 square feet per cleaner per shift, while healthcare, schools, restrooms, dense furniture, and high-frequency work require lower production assumptions. GreenPoint confirms the task matrix during a walkthrough."
-    },
-    {
-      "type": "heading",
-      "text": "How should a cleaning contract account for supervisor time?"
-    },
-    {
-      "type": "paragraph",
-      "text": "Show supervisor inspection, training, supply coordination, relief coverage, and reporting separately from hands-on production. GreenPoint uses StockPoint and named accountability so a low cleaner count does not eliminate quality control."
-    },
-    {
-      "type": "heading",
-      "text": "Why do two buildings with the same square footage need different staffing?"
-    },
-    {
-      "type": "paragraph",
-      "text": "Fixture counts, rooms, floor types, occupancy, access, security, frequency, and compliance tasks change labor. A 50,000-square-foot school, clinic, warehouse, and office are not equivalent. Call 844-814-0810 for a site-specific estimate."
-    },
-    {
-      "type": "heading",
-      "text": "Does GreenPoint bill hourly?"
-    },
-    {
-      "type": "paragraph",
-      "text": "No. GreenPoint uses internal labor assumptions to build a transparent fixed price with no hourly billing or hidden fees after the scope is confirmed. Schedule a walkthrough at 844-814-0810 or email info@greenpointms.com."
-    },
-    {
-      "type": "heading",
-      "text": "Where does GreenPoint provide staffing and janitorial service?"
-    },
-    {
-      "type": "paragraph",
-      "text": "GreenPoint serves Manhattan, the Bronx, Brooklyn, Queens, Staten Island, Westchester, Long Island, New Jersey, Connecticut, Pennsylvania, and Florida. The scope confirms local access, staffing, and compliance needs."
-    },
-    {
-      "type": "callout",
-      "text": "Call GreenPoint Maintenance Services at 844-814-0810 for a task-based staffing walkthrough. Get a fixed-price labor model, supervisor and relief coverage, StockPoint verification, and a practical plan backed by 98% client retention."
-    }
-  ]
-},
+    slug: "cleaning-contract-staffing-ratio",
+    image: "/blog/cleaning-contract-staffing-ratio.jpg",
+    title: "Cleaning Contract Staffing Ratios: Estimating Labor Without Underbidding",
+    excerpt: "Estimate janitorial labor from task hours, floor types, traffic, and local requirements instead of relying on one square-foot-per-cleaner rule for your facility.",
+    category: "Best Practices",
+    author: "GreenPoint Maintenance",
+    publishedAt: "2026-11-03",
+    readTime: "10 min read",
+    keywords: [
+      "commercial cleaning staffing ratios",
+      "janitorial labor estimate",
+      "cleaning contract staffing"
+    ],
+    content: [
+      {
+        type: "intro",
+        text: "There is no single janitorial staffing ratio that fits every commercial building. A 100,000-square-foot office near Wall Street may need a different team from a similarly sized warehouse in the Bronx because room mix, restroom traffic, floor materials, service frequency, access windows, and quality expectations change the work. GreenPoint Maintenance Services builds estimates from measurable tasks and shift hours, then checks the staffing plan against the client's service-level requirements. Call GreenPoint at 347-332-9348 to schedule a walkthrough before you accept a low bid that may not cover the scope."
+      },
+      {
+        type: "heading",
+        text: "Why square feet per cleaner is only a screening metric"
+      },
+      {
+        type: "paragraph",
+        text: "A square-foot ratio can help compare similar buildings at a high level, but it hides the work mix. Open carpeted floors can be vacuumed differently from kitchens, restrooms, stairwells, patient rooms, glass partitions, and high-touch public lobbies. A building with 80,000 square feet of open office and 20,000 square feet of dense amenity space does not have one uniform production rate. GreenPoint begins with a room-by-room inventory and labels each zone by surface, use, traffic, and frequency."
+      },
+      {
+        type: "paragraph",
+        text: "ISSA's industry resources emphasize matching cleaning task procedures and frequencies to the facility rather than treating area as the only driver. Treat any published production rate as a planning assumption to validate on site, not a promise or staffing standard. A walkthrough should count restrooms, fixtures, dispensers, stairs, elevators, conference rooms, kitchens, entrances, and waste points. For a broader scope checklist, use [cleaning staffing ratios and square footage](/blog/cleaning-staffing-ratios-square-footage/) alongside [cleaning frequency standards by facility type](/blog/cleaning-frequency-standards-by-facility-type/)."
+      },
+      {
+        type: "heading",
+        text: "Convert the scope into task hours"
+      },
+      {
+        type: "paragraph",
+        text: "Create a task table with one row per zone and task: area or count, task, frequency, method, assumed production rate, and minutes per visit. For example, separate nightly vacuuming from weekly detail work; separate restroom touch-up from full restroom cleaning; and separate trash removal from liner replacement. Compute minutes per task, multiply by weekly frequency, convert to hours, then add mobilization, supply restocking, quality checks, and travel between zones. GreenPoint can document the assumptions so a buyer can see which tasks drive the estimate."
+      },
+      {
+        type: "paragraph",
+        text: "Use a measured pilot route when possible. Time a trained worker completing the defined task under normal building conditions, then record interruptions, supply distance, furniture obstacles, and quality results. A 30-minute walkthrough observation is not enough to establish a dependable annual rate for every shift, but it can expose bad assumptions. In Midtown Manhattan, delivery schedules, elevator queues, and building access rules can consume productive time; at a Queens school, class schedules and event turnover can alter the service window. Keep allowances explicit instead of burying them in a square-foot multiplier."
+      },
+      {
+        type: "heading",
+        text: "Build staffing around the service window and attendance"
+      },
+      {
+        type: "paragraph",
+        text: "Total weekly labor hours do not automatically determine headcount. A 40-hour scope may require two people over a short evening window, one full-time person plus a part-time specialist, or staggered day and night coverage. Identify when the building is occupied, when restrooms peak, when freight elevators are available, and which tasks must be completed before tenants arrive. Include a supervisor's inspection time and a coverage plan for call-outs, holidays, vacation, and building events."
+      },
+      {
+        type: "paragraph",
+        text: "The [BLS Occupational Outlook Handbook](https://www.bls.gov/ooh/building-and-grounds-cleaning/janitors-and-building-cleaners.htm) reported a national 2025 median wage of $17.71 per hour for janitors and building cleaners, but this is not a New York contract bid rate. New York City and surrounding counties may have different labor costs, minimum-wage rules, benefits, union agreements, and prevailing-wage obligations. A realistic estimate includes wages, payroll taxes, workers' compensation, paid leave, training, uniforms, supervision, recruiting, and relief coverage. GreenPoint's fixed-price proposals account for the defined service scope rather than promising an hourly price disconnected from staffing reality."
+      },
+      {
+        type: "heading",
+        text: "Account for building type, geography, and compliance"
+      },
+      {
+        type: "paragraph",
+        text: "A healthcare office, school, transit-adjacent lobby, and light-industrial site require different task sequences and worker preparation. For a Manhattan medical practice, clarify patient areas, privacy, sharps procedures, and any owner-specific infection-control rules. For a New York City public school, ask the district or agency for applicable custodial scope, access, and vendor requirements; a general janitorial ratio does not replace NYC DOE specifications. A warehouse near Hunts Point has loading traffic and floor zones, while a Fairfield County office campus may spread tasks across several buildings."
+      },
+      {
+        type: "paragraph",
+        text: "Chemical handling, labeling, training, and access to safety data are part of labor planning. OSHA's Hazard Communication Standard requires employers to communicate hazards of workplace chemicals, maintain required safety information, and train workers. Estimate the time for dilution, PPE, storage, equipment checks, and spill response rather than assuming cleaning chemicals can be handled without preparation. GreenPoint uses Green Seal certified products where appropriate and builds task-specific training into the operating plan."
+      },
+      {
+        type: "heading",
+        text: "Price the fully burdened hours, not just the wage"
+      },
+      {
+        type: "paragraph",
+        text: "A simple estimate can be expressed as weekly productive task hours plus supervision, training, relief, and nonproductive-but-required time. Multiply paid hours by the relevant wage and employer burden, then add equipment, consumables, insurance, administration, and a defensible operating margin. As a transparent planning example, if an office requires 52 task hours, 4 supervision hours, and 8 relief or coverage hours in a week, the budget should reflect all 64 paid hours and related burden, not just the 52 task hours. The numbers are illustrative, not a GreenPoint quote."
+      },
+      {
+        type: "paragraph",
+        text: "The estimate should also distinguish fixed setup work from variable traffic-driven tasks. A supply closet that is one floor away may add walking time every round; a building with centralized waste collection may reduce repeated trips, while a tenant event can temporarily increase restroom and lobby service. Record these conditions in the assumptions column and review them with the site contact. GreenPoint uses a documented walkthrough to make the staffing model legible to both procurement and operations, so later scope changes can be priced as a change rather than absorbed through unplanned overtime."
+      },
+      {
+        type: "paragraph",
+        text: "Do not offset an underbid with vague promises that workers will simply clean faster. That often leads to skipped high-touch surfaces, rushed restroom replenishment, turnover, and change orders. Compare a bid against the task matrix and require written assumptions about occupancy, consumables, floor care, day porter work, and periodic projects. GreenPoint gives clients fixed pricing with no hourly billing and no hidden fees, and uses StockPoint, formerly called JaniTrack, to organize quality review with timestamped GPS-tagged photos and a live dashboard. Call 347-332-9348 to discuss your staffing model."
+      },
+      {
+        type: "heading",
+        text: "Use quality data to adjust a ratio over time"
+      },
+      {
+        type: "paragraph",
+        text: "Staffing is a hypothesis until it is checked against actual outcomes. Track missed tasks, rework, inspection findings, tenant complaints, absentee coverage, and scheduled-versus-completed work by zone. Where ATP testing is part of a suitable quality plan, define sampling locations and thresholds in advance; ATP readings indicate organic residue and are not a direct pathogen test. GreenPoint's StockPoint verification supports task evidence, while periodic inspections help managers determine whether staffing, frequency, method, or training should change."
+      },
+      {
+        type: "paragraph",
+        text: "Review the plan after occupancy changes, renovations, seasonal shifts, or a new tenant mix. A lobby by Port Authority may experience different foot traffic in winter than a quiet upstairs suite; summer events can change school and campus use. Set a monthly or quarterly review with the client, supervisor, and account lead, then record each approved scope adjustment. GreenPoint's 98% client retention reflects a focus on clear expectations and responsive service, not a guarantee that every building needs the same hours."
+      },
+      {
+        type: "paragraph",
+        text: "Before finalizing the estimate, test the labor plan against three operating conditions: a normal week, a high-traffic week, and an absence or equipment-failure week. The normal case checks whether routine tasks fit the promised shifts. The high-traffic case tests whether events, seasonal soil, or tenant growth require a day porter or additional restroom rounds. The disruption case checks whether a relief worker can reach the site, whether the supervisor can reassign a zone, and which periodic tasks may safely move to another day. A plan that works only when every worker is present and every closet is stocked is not a resilient contract plan."
+      },
+      {
+        type: "paragraph",
+        text: "Keep production rates tied to clearly defined methods. Vacuuming an unobstructed carpet lane with a backpack vacuum is not the same task as detail vacuuming under furniture; damp mopping an open corridor is not comparable with stripping and refinishing resilient flooring. Record whether the task includes moving light furniture, using a wet-floor sign, changing pads, setting up equipment, or inspecting the finished area. GreenPoint's supervisor can use inspection results and StockPoint completion records to see where the original estimate needs retraining, route changes, or a formal scope adjustment. This turns a staffing ratio into a management tool rather than a one-time bid number."
+      },
+      {
+        type: "paragraph",
+        text: "Invite the building's operations lead to review the task matrix before it is priced. They can identify badge delays, room closures, restricted waste, building engineering handoffs, or tenant rules that are invisible on a floor plan. Record each assumption and ask the vendor to confirm it in writing. GreenPoint uses this practical review to align the service calendar with how the property actually operates, which helps prevent avoidable missed tasks during the first weeks of a contract."
+      },
+      {
+        type: "heading",
+        text: "FAQ: janitorial staffing ratios and bids"
+      },
+      {
+        type: "paragraph",
+        text: "Q: How many square feet can one cleaner handle? A: There is no universal answer. Productivity depends on floor type, room mix, task frequency, equipment, occupancy, access, and finish expectations. Use a measured task plan for the actual facility."
+      },
+      {
+        type: "paragraph",
+        text: "Q: Is a square-foot staffing ratio enough for an RFP? A: No. It can be a screening comparison, but the RFP should define tasks, frequencies, rooms, supplies, access, supervision, and acceptance standards."
+      },
+      {
+        type: "paragraph",
+        text: "Q: Should the estimate include supervisor and relief hours? A: Yes. Inspection, training, call-out coverage, holidays, and supply movement are real service costs and should be stated in the staffing model."
+      },
+      {
+        type: "paragraph",
+        text: "Q: What wage should I use for a New York cleaning bid? A: Use current local wage, benefit, union, and prevailing-wage requirements for the contract. BLS national data is context, not a local bid rate."
+      },
+      {
+        type: "paragraph",
+        text: "Q: Can GreenPoint review a cleaning staffing plan? A: Yes. GreenPoint serves NYC, Westchester, Long Island, New Jersey, Connecticut, Pennsylvania, and Florida. Call 347-332-9348 to schedule a walkthrough."
+      },
+      {
+        type: "callout",
+        text: "For a task-based cleaning estimate, contact GreenPoint Maintenance Services at 347-332-9348 or info@greenpointms.com. Schedule a walkthrough to review staffing hours, compliance, and fixed pricing; GreenPoint backs its scope with StockPoint verification and a 98% client-retention record."
+      }
+    ]
+  },
 
   {
-  "slug": "commercial-restroom-supply-protocol",
-  "image": "/blog/commercial-restroom-supply-protocol.jpg",
-  "title": "Commercial Restroom Supply Protocols: Inventory, Refills, and Service Levels",
-  "excerpt": "A practical protocol for restroom inventory, refill thresholds, dispenser checks, service levels, and documented cleaning across tri-state commercial facilities.",
-  "category": "Best Practices",
-  "author": "GreenPoint Maintenance",
-  "publishedAt": "2026-09-26",
-  "readTime": "10 min read",
-  "keywords": [
-    "commercial restroom supply management",
-    "janitorial restroom checklist",
-    "restroom cleaning service levels"
-  ],
-  "content": [
-    {
-      "type": "intro",
-      "text": "A restroom can be visibly clean and still fail the people who use it if soap, paper, liners, or hand-drying supplies run out. The strongest commercial restroom supply protocol connects demand forecasting, storage controls, refill routes, cleaning frequency, dispenser maintenance, accessibility, and documented escalation. This guide is designed for offices, schools, healthcare practices, warehouses, public buildings, and multi-tenant properties in Manhattan, the Bronx, Brooklyn, Queens, Staten Island, Westchester, Long Island, New Jersey, Connecticut, Pennsylvania, and Florida. GreenPoint Maintenance Services treats supplies as a service-level issue, not an afterthought."
-    },
-    {
-      "type": "heading",
-      "text": "Define the Restroom Service Level"
-    },
-    {
-      "type": "paragraph",
-      "text": "Start by defining what users should experience at each inspection: fixtures clean and dry, floors free of visible soil, soap and hand-drying supplies available, liners changed before overflow, dispensers functional, odors controlled, and high-touch points addressed. Assign a frequency to each condition. A busy Midtown lobby may need checks every 60 to 90 minutes during peak hours, while a low-occupancy warehouse may need scheduled checks plus an escalation process. GreenPoint writes these expectations into a zone checklist so a refill and a full cleaning are not treated as the same task."
-    },
-    {
-      "type": "paragraph",
-      "text": "Use fixture counts and occupancy rather than square footage alone. A 20,000-square-foot Brooklyn coworking office can consume more paper and soap than a 100,000-square-foot warehouse. A Queens school needs service around arrival, lunch, and dismissal; a medical office near White Plains needs patient-room and public-restroom separation; a Florida facility may see higher water and sand load. OSHA hazard communication applies to cleaning chemicals, and accessibility rules require clear routes and usable dispensers. Schedule a walkthrough at 844-814-0810 to map the service level by restroom."
-    },
-    {
-      "type": "heading",
-      "text": "Create a Par-Level Inventory System"
-    },
-    {
-      "type": "paragraph",
-      "text": "A par level is the amount of each product that should be available to cover normal demand until the next delivery, plus a reasonable safety stock. Track rolls, folded towels, soap, sanitizer, liners, feminine-hygiene supplies, urinal screens, air-freshener refills, and approved cleaning products separately. Record pack size, dispenser compatibility, units per fixture, lead time, and storage location. GreenPoint can build a simple count sheet or digital record that shows beginning inventory, deliveries, usage, damaged stock, and ending balance. The target is enough stock to protect service without tying up cash in cartons that sit unused."
-    },
-    {
-      "type": "paragraph",
-      "text": "Set reorder points using actual consumption. If a restroom uses 18 paper-towel cases per month and delivery takes five business days, a manager should not wait until the storeroom is empty to order. Add a safety factor for events, weather, occupancy changes, and supply delays. A property near Penn Station may have event-driven peaks; a Long Island campus may have infrequent deliveries; a New Jersey distribution center may need weekend access. Compare [restroom cleaning best practices for high-traffic facilities](/blog/restroom-cleaning-best-practices-high-traffic/) with the supply protocol, then call 844-814-0810 for a site count."
-    },
-    {
-      "type": "heading",
-      "text": "Inspect Dispensers, Not Just Refill Levels"
-    },
-    {
-      "type": "paragraph",
-      "text": "A full carton does not help if a dispenser is jammed, empty at the point of use, mounted too high, leaking, or incompatible with the refill. Add dispenser function to every inspection: operate the soap pump, test the towel feed, check sensor batteries, verify toilet tissue rolls, inspect sanitary-napkin units, and look for leaks or loose mounting. GreenPoint records an exception when the issue is hardware rather than supply. The service level should identify who repairs a dispenser, how quickly, and what temporary solution protects users in the meantime."
-    },
-    {
-      "type": "paragraph",
-      "text": "In an older Bronx building, a loose dispenser may require building engineering; in a new Manhattan tower, access may require a work order; in a Florida property, humidity can affect adhesives and paper storage. Keep a fixture inventory with model numbers, keys, spare parts, and vendor contacts. Do not ask cleaners to improvise repairs or mix incompatible products. StockPoint can hold timestamped GPS-tagged photos and closure notes for recurring dispenser faults. GreenPoint can include the repair path in a fixed-price proposal so procurement sees the true operational requirement."
-    },
-    {
-      "type": "heading",
-      "text": "Separate Supply Storage From Chemical Storage"
-    },
-    {
-      "type": "paragraph",
-      "text": "Paper products and personal-care supplies should be clean, dry, protected from leaks, and easy to count. Cleaning chemicals need their own organized storage with labels, safety data sheets, ventilation, spill controls, and access restrictions consistent with OSHA hazard communication and local fire-code requirements. Never store open chemicals above paper products. GreenPoint uses a controlled supply area, color-coded tools, Green Seal product options, and a replenishment route that reduces cross-contamination. The protocol should state who checks expiration, packaging integrity, and dilution equipment."
-    },
-    {
-      "type": "paragraph",
-      "text": "A multi-tenant office in Jersey City may have a shared loading area; a school in Queens may need separate custodial storage; a medical practice in Connecticut may have clinical products that cannot be mixed with janitorial stock. Put the storage map in the site book and keep emergency contacts visible. Inspect shelves weekly for water damage, pests, and blocked egress. If an item is backordered, record the substitute and obtain client approval rather than silently changing the user experience. Call 844-814-0810 when a walkthrough should include storage and fire-code risk points."
-    },
-    {
-      "type": "heading",
-      "text": "Forecast Demand Around Occupancy"
-    },
-    {
-      "type": "paragraph",
-      "text": "Supply usage follows people, events, and service hours. Use occupancy counts, restroom visits if available, event calendars, school schedules, and historical consumption to forecast demand. A 10% occupancy increase can change hand-drying and soap demand more than a small square-footage change. GreenPoint reviews weekly usage and exception trends, then adjusts pars rather than over-ordering every product. For a public building, add an event protocol: increase checks before and during a large meeting, stage spare supplies, and assign a contact who can approve an emergency delivery."
-    },
-    {
-      "type": "paragraph",
-      "text": "Local patterns matter. A conference venue near Javits Center may have compressed peaks; a downtown Brooklyn property may see weekend events; a Long Island school has summer and holiday changes; a Florida facility may face storm-related deliveries. Put emergency stock in more than one approved location when a building is large. Train the day porter or security desk on how to report a failed dispenser without opening an unsafe chemical closet. GreenPoint's 98% client retention reflects responsiveness to the small operational details users notice first."
-    },
-    {
-      "type": "heading",
-      "text": "Measure Cleaning and Restocking Separately"
-    },
-    {
-      "type": "paragraph",
-      "text": "A restroom report should distinguish cleaning completed, supply replenishment, fixture repair, odor response, and inspection result. Combining all work into one checkbox hides the reason a restroom failed. GreenPoint uses StockPoint to capture service time, timestamped GPS-tagged photos when appropriate, exceptions, corrective action, and closure. ATP testing can be added to an approved sampling plan for selected touchpoints, but it does not replace visual inspection or a check that users can actually obtain soap and towels. The report should be readable by a facility manager in under two minutes."
-    },
-    {
-      "type": "paragraph",
-      "text": "Set service-level metrics such as 98% of scheduled inspections completed, 100% of urgent supply outages acknowledged within 10 minutes, and repeat dispenser faults closed within one business day when parts are available. Choose targets the team can verify. A facility manager in Manhattan may need a live dashboard; a smaller Westchester office may prefer a weekly summary. Call 844-814-0810 to define the right evidence package. GreenPoint's process supports accountability without turning every restroom visit into paperwork no one reads."
-    },
-    {
-      "type": "heading",
-      "text": "Write the RFP and Contract Language"
-    },
-    {
-      "type": "paragraph",
-      "text": "A restroom supply RFP should list fixtures, dispensers, products, pack sizes, approved alternatives, refill frequency, service windows, storage responsibilities, delivery terms, emergency response, repair exclusions, waste handling, and reporting. State whether consumables are included in the recurring price and how a change in occupancy is handled. GreenPoint offers fixed pricing with no hourly billing or hidden fees after the walkthrough. A clear list protects the buyer from a low cleaning price that excludes the products users depend on."
-    },
-    {
-      "type": "paragraph",
-      "text": "Require sample inspection forms and a transition plan. During mobilization, count opening inventory, photograph each dispenser, tag damaged hardware, confirm keys, and identify high-risk rooms. In a school or public building, coordinate with the facilities director and local access rules; in a medical setting, align products and cleaning steps with the practice's infection-prevention policy. Review [commercial cleaning contract key terms](/blog/commercial-cleaning-contract-key-terms/) before signing. Email info@greenpointms.com or call 844-814-0810 for a contract-ready restroom scope."
-    },
-    {
-      "type": "heading",
-      "text": "Review Exceptions and Improve the Route"
-    },
-    {
-      "type": "paragraph",
-      "text": "The monthly review should show where service failed and why: empty dispensers, late delivery, incorrect pack size, blocked storage, heavy event use, repair backlog, or missed inspection. Look for repeat patterns by restroom, shift, building, and product. GreenPoint can use StockPoint to assign corrective action and confirm closure with a supervisor inspection. If the same restroom misses towels three weeks in a row, the answer may be a different dispenser, a new par level, or a route change rather than another reminder to the cleaner."
-    },
-    {
-      "type": "paragraph",
-      "text": "Keep a short service meeting with the client, cleaning supervisor, and supply contact. Review inventory variance, out-of-stock events, complaints, repair age, and upcoming occupancy changes. A 98% client retention record is strongest when the provider explains both successes and exceptions. GreenPoint serves the tri-state area and Florida, and can schedule a walkthrough at 844-814-0810 to remeasure a route after a renovation, tenant move, or seasonal change. A dependable restroom program is visible in every user interaction."
-    },
-    {
-      "type": "heading",
-      "text": "Frequently Asked Questions"
-    },
-    {
-      "type": "heading",
-      "text": "How often should commercial restrooms be checked?"
-    },
-    {
-      "type": "paragraph",
-      "text": "Frequency depends on occupancy, fixtures, hours, and complaints. High-traffic lobbies may need 60- to 90-minute checks, while lower-traffic areas may need scheduled checks plus escalation. GreenPoint confirms the service level during a walkthrough."
-    },
-    {
-      "type": "heading",
-      "text": "What should a restroom supply par level include?"
-    },
-    {
-      "type": "paragraph",
-      "text": "Track paper, towels, soap, sanitizer, liners, feminine-hygiene supplies, screens, batteries, and pack sizes, plus lead time and safety stock. GreenPoint uses consumption and event patterns rather than a generic carton count."
-    },
-    {
-      "type": "heading",
-      "text": "Who repairs a broken dispenser?"
-    },
-    {
-      "type": "paragraph",
-      "text": "The contract should name the responsible party, response time, temporary protection, parts policy, and approval path. GreenPoint records hardware exceptions separately from cleaning and can include the repair workflow in the proposal."
-    },
-    {
-      "type": "heading",
-      "text": "How does GreenPoint document restroom service?"
-    },
-    {
-      "type": "paragraph",
-      "text": "StockPoint can capture scheduled inspections, service time, timestamped GPS-tagged photos, exceptions, corrective actions, and closure. ATP testing may supplement an approved plan but does not replace visual and supply checks."
-    },
-    {
-      "type": "heading",
-      "text": "How can a facility request a restroom supply review?"
-    },
-    {
-      "type": "paragraph",
-      "text": "Call GreenPoint at 844-814-0810 or email info@greenpointms.com. GreenPoint serves NYC, Westchester, Long Island, New Jersey, Connecticut, Pennsylvania, and Florida with fixed pricing and no hidden fees after scope confirmation."
-    },
-    {
-      "type": "callout",
-      "text": "Call GreenPoint Maintenance Services at 844-814-0810 for a restroom supply and service-level walkthrough. Get par-level inventory, dispenser checks, StockPoint verification, fixed pricing, and a response plan backed by 98% client retention."
-    }
-  ]
-},
+    slug: "commercial-restroom-supply-protocol",
+    image: "/blog/commercial-restroom-supply-protocol.jpg",
+    title: "Commercial Restroom Supply Protocols: Inventory, Refills, and Service Levels",
+    excerpt: "Prevent empty dispensers and waste with a restroom supply plan based on traffic, par levels, storage, refill checks, and documented service in tri-state facilities.",
+    category: "Best Practices",
+    author: "GreenPoint Maintenance",
+    publishedAt: "2026-11-03",
+    readTime: "9 min read",
+    keywords: [
+      "commercial restroom supply management",
+      "janitorial restroom checklist",
+      "restroom cleaning service levels"
+    ],
+    content: [
+      {
+        type: "intro",
+        text: "An empty soap dispenser or paper-towel unit can undermine an otherwise clean restroom within minutes. Commercial facility managers need a supply protocol that matches visitor volume, fixture type, storage, service hours, and tenant expectations. GreenPoint Maintenance Services helps offices, schools, medical practices, and public buildings across Manhattan, the Bronx, Brooklyn, Queens, Staten Island, Westchester, Long Island, New Jersey, and Connecticut set refill responsibilities and verify them. Call GreenPoint at 347-332-9348 to schedule a walkthrough and establish a practical supply baseline before changing vendors or ordering in bulk."
+      },
+      {
+        type: "heading",
+        text: "Count users and fixtures before setting a par level"
+      },
+      {
+        type: "paragraph",
+        text: "A par level is the planned quantity on hand to support operations until the next delivery or replenishment cycle. Start by counting restrooms, stalls, urinals, sinks, soap units, towel or dryer units, tissue dispensers, feminine-care units, and waste containers. Then estimate daily users, peak periods, open hours, event schedules, and frequency of service checks. A Midtown office near Penn Station may have a sharp morning and lunch peak; a school near Yankee Stadium may vary with class, sports, and public events."
+      },
+      {
+        type: "paragraph",
+        text: "Use actual consumption data for at least two to four weeks where possible, recording opening stock, deliveries, refills, and closing stock. If a baseline is unavailable, make a conservative pilot estimate and review it weekly rather than pretending it is a universal industry standard. For example, a facility with 100 users, two restroom visits per person per day, and an assumed average of two paper towels per visit would plan around 400 towels daily before adjustments for dryers, handwashing behavior, and visitors. That is an example calculation, not a recommended allowance for every building."
+      },
+      {
+        type: "heading",
+        text: "Choose compatible dispensers and product formats"
+      },
+      {
+        type: "paragraph",
+        text: "Document dispenser make, model, key or access method, refill size, mounting condition, and compatible product SKU. Different towel folds, roll cores, tissue widths, soap cartridges, and sanitizer bottles are not necessarily interchangeable. Before changing brands, confirm the vendor can deliver the correct consumable, the unit works, and the replacement format does not create excess waste or an inaccessible setup. GreenPoint includes dispenser condition in its walkthrough so service teams are not blamed for a broken or locked unit they cannot refill."
+      },
+      {
+        type: "paragraph",
+        text: "Select products with users and maintenance in mind: paper durability, plumbing compatibility, drying time, fragrance sensitivity, refill labor, packaging volume, and storage footprint all matter. Avoid mixing chemicals or transferring product into an unlabeled container. [OSHA's Hazard Communication guidance](https://www.osha.gov/etools/hospitals/housekeeping/hazardous-chemicals) explains employer duties for communicating chemical hazards, maintaining safety information, and training workers. GreenPoint can include Green Seal certified products where appropriate and can separate the selected product standard from the supply delivery schedule."
+      },
+      {
+        type: "heading",
+        text: "Set refill frequency and response times by traffic"
+      },
+      {
+        type: "paragraph",
+        text: "A service protocol should state how often each restroom is inspected, who performs the check, and what happens when a dispenser is empty between scheduled rounds. A low-traffic private office might need fewer checks than a public lobby near the 42nd Street subway, a clinic waiting room, or a school cafeteria. Specify peak-hour coverage separately from overnight cleaning. A restroom supply checklist can include paper, soap, sanitizer, liners, feminine-care products, odor condition, leaks, clogged fixtures, and visible soil."
+      },
+      {
+        type: "paragraph",
+        text: "Write service levels in observable terms. For example, define the maximum interval between daytime checks, a response window for urgent empty dispensers, and a threshold for escalating a plumbing or fixture issue. Avoid promising continuous availability when the building is unstaffed. A door hanger, QR code, service log, or helpdesk ticket can alert the cleaning team without asking occupants to identify an individual worker. GreenPoint uses StockPoint, formerly called JaniTrack, to document assigned work and exceptions with timestamped, GPS-tagged photos and a live dashboard for authorized managers."
+      },
+      {
+        type: "heading",
+        text: "Protect storage, deliveries, and inventory accuracy"
+      },
+      {
+        type: "paragraph",
+        text: "A supply plan can fail even when the right products are ordered if stock is damp, unsecured, inaccessible, or spread across several closets. Set minimum and maximum stock levels for each product, assign an owner, label shelves, and separate chemicals from paper goods. Keep a simple log of receiving date, quantity, storage location, and issue date. For multi-site portfolios in Brooklyn and Queens, a shared inventory sheet can reveal whether one location is overstocked while another repeatedly runs out."
+      },
+      {
+        type: "paragraph",
+        text: "Calculate a reorder point from average use during the replenishment lead time plus a buffer that reflects delivery variability. If a building consumes 12 cases per week and the supplier's normal lead time is one week, a reorder trigger should account for that week plus the site's chosen safety stock; the actual number depends on service criticality and supplier reliability. Include delivery access rules, loading dock hours, freight elevator bookings, and holiday schedules. GreenPoint can align product deliveries with the approved service calendar and fixed-price scope."
+      },
+      {
+        type: "paragraph",
+        text: "Make each inspection route easy to follow by listing the restroom sequence, expected refill levels, and the closet where backup stock is stored. When a product is unavailable, the cleaner should record the shortage and use only an approved substitute; an unplanned dispenser change can create compatibility problems and extra maintenance. During onboarding, have the supervisor confirm that the refill key works, stock is reachable, and the dispenser closes properly. GreenPoint can set these checks for a day porter, an evening crew, or both, depending on the hours when the facility is open to visitors."
+      },
+      {
+        type: "heading",
+        text: "Use a scorecard to reduce waste and complaints"
+      },
+      {
+        type: "paragraph",
+        text: "Track empty-dispenser reports, refill rounds, units consumed, stockouts, damaged dispensers, expired or unusable product, and supply cost per occupied day. Compare like locations and occupancy periods; a change in tenant headcount or event schedule can make a month-to-month comparison misleading. Review complaints by restroom and time of day, then adjust the check route or par level. GreenPoint focuses on verified tasks rather than relying on a single monthly order total to prove that a restroom was serviced."
+      },
+      {
+        type: "paragraph",
+        text: "A dashboard or service log should show the timestamp, location, task status, exception, and corrective action. StockPoint supports visibility into assigned work; managers can review recurring misses and refine the route. Supply records are most useful when they distinguish a refill from a full cleaning, a broken dispenser from a stockout, and a vendor delay from unusual event demand. See [restroom cleaning best practices for high-traffic spaces](/blog/restroom-cleaning-best-practices-high-traffic/) and [quality assurance for commercial cleaning programs](/blog/quality-assurance-commercial-cleaning-program/) for related inspection practices."
+      },
+      {
+        type: "heading",
+        text: "Coordinate hygiene, accessibility, and building requirements"
+      },
+      {
+        type: "paragraph",
+        text: "Do not block turning space, grab bars, reach ranges, egress routes, or accessible fixtures with extra stock or wall-mounted devices. When replacing dispensers, have the facility's accessibility lead review placement and usability against applicable requirements for the building and project. Confirm the building's policies for sanitary-product disposal, waste segregation, plumbing, and any school or healthcare protocols. In NYC DOE facilities, use the current owner-issued custodial and product requirements rather than assuming a generic commercial schedule applies."
+      },
+      {
+        type: "paragraph",
+        text: "Restroom supply work intersects with cleaning and disinfection, but these are separate tasks. Workers should follow product labels and site rules for any disinfectant, including the required contact time, ventilation, PPE, and surface compatibility. The [EPA's disinfectant guidance](https://www.epa.gov/pesticide-registration/selected-epa-registered-disinfectants) explains that labels state where products may be used and how long treated surfaces must remain visibly wet. GreenPoint builds safe product handling and refill routines into its operating plan, and can tailor the schedule to an office, school, clinic, or public-facing facility."
+      },
+      {
+        type: "paragraph",
+        text: "Plan for the moment when the normal inventory process fails. The checklist should state whom to contact if a shipment is late, a dispenser is broken, a product is recalled, or consumption suddenly doubles during an event. Keep approved substitute products and the decision-maker's contact information on the supply log. If a fixture leaks or a drain backs up, cleaners should isolate the area according to site procedure and notify building engineering rather than attempting an unapproved repair. GreenPoint can record these exceptions in the service workflow so supply shortages, plumbing issues, and missed cleaning rounds are not confused in the monthly review."
+      },
+      {
+        type: "paragraph",
+        text: "Use consumption data to check whether a refill schedule is wasting material. Compare packages issued to the number of occupied days and note changes in visitor volume, hybrid attendance, or school calendars. High use does not automatically mean product waste; a busy restroom may simply need more frequent replenishment. Conversely, repeated half-used product disposal can point to oversized refills or a dispenser that releases too much material. Review the same measures for each site, then adjust product format, check timing, or par levels. GreenPoint's walkthrough can identify whether the issue is ordering, storage, dispenser condition, or the cleaning route."
+      },
+      {
+        type: "paragraph",
+        text: "Post the refill and escalation instructions inside the supply closet where staff can see them, but keep restricted keys and sensitive building information secured. Include the product name, dispenser type, backup location, reorder contact, and method for reporting an empty or damaged unit. GreenPoint can use the walkthrough to confirm that these instructions match the actual storage layout and the building's access rules."
+      },
+      {
+        type: "heading",
+        text: "FAQ: restroom inventory and refill protocols"
+      },
+      {
+        type: "paragraph",
+        text: "Q: How much restroom paper should we keep on hand? A: Track actual consumption and supplier lead time, then set a site-specific reorder point and safety stock. User counts, dispenser format, dryer use, and event traffic all change demand."
+      },
+      {
+        type: "paragraph",
+        text: "Q: How often should restrooms be checked? A: Match checks to peak traffic, risk, opening hours, and complaint history. State the inspection interval and urgent-response window in the scope instead of using one schedule for every restroom. Call GreenPoint at 347-332-9348 to schedule a walkthrough and set a site-specific service interval."
+      },
+      {
+        type: "paragraph",
+        text: "Q: Should a cleaning vendor supply the consumables? A: Either model can work. The contract should name the buyer, approved products, ordering responsibility, compatible dispenser formats, price treatment, and stockout procedure."
+      },
+      {
+        type: "paragraph",
+        text: "Q: What should a restroom supply checklist include? A: Check paper, soap, sanitizer, waste, leaks, fixture condition, visible soil, and any product-specific items, then record exceptions and corrective action."
+      },
+      {
+        type: "paragraph",
+        text: "Q: Does GreenPoint provide restroom service in New York and New Jersey? A: Yes. GreenPoint serves NYC, Westchester, Long Island, New Jersey, Connecticut, Pennsylvania, and Florida. Call 347-332-9348 for a walkthrough."
+      },
+      {
+        type: "callout",
+        text: "Set up a restroom supply and refill walkthrough with GreenPoint Maintenance Services at 347-332-9348 or info@greenpointms.com. GreenPoint can map fixtures, par levels, check intervals, and fixed-price service, with StockPoint verification and a 98% client-retention record."
+      }
+    ]
+  },
 
   {
-  "slug": "cleaning-vendor-rfp-scope-template",
-  "image": "/blog/cleaning-vendor-rfp-scope-template.jpg",
-  "title": "Commercial Cleaning RFP Scope: Rooms, Frequencies, SLAs, and Exclusions",
-  "excerpt": "A contract-ready framework for commercial cleaning RFPs covering room inventories, frequencies, service levels, exclusions, proof, and fair vendor comparisons.",
-  "category": "RFP & Bids",
-  "author": "GreenPoint Maintenance",
-  "publishedAt": "2026-09-26",
-  "readTime": "10 min read",
-  "keywords": [
-    "commercial cleaning RFP scope",
-    "janitorial bid specifications",
-    "cleaning vendor SLA"
-  ],
-  "content": [
-    {
-      "type": "intro",
-      "text": "A commercial cleaning RFP succeeds when every bidder prices the same work and every stakeholder understands how performance will be judged. Vague language such as “keep the facility clean” invites low bids, change orders, and disputes over missed rooms, supplies, frequency, and specialized services. This framework helps property managers, schools, healthcare practices, government buyers, and operations teams define a complete scope for facilities in Manhattan, the Bronx, Brooklyn, Queens, Staten Island, Westchester, Long Island, New Jersey, Connecticut, Pennsylvania, and Florida. GreenPoint Maintenance Services uses walkthroughs, fixed pricing, and StockPoint evidence to make the promised service visible. It also gives finance, facilities, security, and tenant-facing teams one shared record of what is included, who owns each decision, and how a correction is confirmed. That shared language reduces procurement risk before the first cleaner reports for orientation. It creates a defensible baseline for renewals, audits, and budget discussions."
-    },
-    {
-      "type": "heading",
-      "text": "Begin With a Room and Asset Inventory"
-    },
-    {
-      "type": "paragraph",
-      "text": "The first schedule in an RFP should identify every building, floor, room type, approximate square footage, floor material, fixture count, occupancy pattern, and access restriction. Include offices, open work areas, conference rooms, lobbies, elevators, stairs, kitchens, restrooms, storage, loading zones, classrooms, clinical rooms, gyms, and outdoor touchpoints when they are in scope. GreenPoint separates gross area from cleanable area and asks the client to identify areas that are excluded or served by another vendor. Without this inventory, a bidder must guess and the bids are not comparable."
-    },
-    {
-      "type": "paragraph",
-      "text": "Mark landmarks and transit constraints that affect labor: Grand Central and Penn Station access, Port Authority security, bridge and tunnel routes, subway-adjacent entrances, loading docks, and campus buildings in Westchester or Long Island. In New Jersey and Connecticut, note parking, freight elevators, and badge procedures; in Florida, note storm access and exterior sand. Attach a floor plan where possible and schedule a GreenPoint walkthrough at 844-814-0810. The site visit catches locked closets, uneven thresholds, and room uses that a spreadsheet will miss."
-    },
-    {
-      "type": "heading",
-      "text": "Write Frequencies by Task and Zone"
-    },
-    {
-      "type": "paragraph",
-      "text": "Every task needs a frequency, method, and acceptance condition. State whether trash is removed daily or at each shift, whether restrooms are serviced once or multiple times, whether high-touch surfaces receive daily or mid-day attention, and how floors are vacuumed, dust-mopped, scrubbed, or restored. Separate routine work from weekly, monthly, quarterly, and annual projects. The frequency guide [cleaning frequency standards by facility type](/blog/cleaning-frequency-standards-by-facility-type/) can help buyers build a first draft. GreenPoint turns that draft into a room-by-room task matrix."
-    },
-    {
-      "type": "paragraph",
-      "text": "Avoid words such as “as needed” unless the RFP defines who decides and how the need is recorded. A school cafeteria may need cleaning after each meal; a medical exam room may need turnover cleaning; a warehouse aisle may need a spill response within 10 minutes; a lobby may need continuous touch-up. Include seasonal work and event support. Ask bidders to identify the labor and equipment behind each frequency. Call 844-814-0810 for a walkthrough that converts operating patterns into a priced schedule."
-    },
-    {
-      "type": "heading",
-      "text": "Set Appearance and Hygiene Standards"
-    },
-    {
-      "type": "paragraph",
-      "text": "Use a recognized framework for appearance and a separate framework for hygiene or risk controls. ISSA appearance levels can describe dust, debris, floor finish, glass, and restroom presentation. OSHA requirements inform chemical safety, PPE, hazard communication, and bloodborne-pathogen precautions where relevant. CDC guidance can inform environmental cleaning in healthcare and high-risk settings. The RFP should state which standard applies to each zone rather than asking for “hospital clean” everywhere. GreenPoint writes measurable acceptance conditions and explains how supervisors inspect them."
-    },
-    {
-      "type": "paragraph",
-      "text": "A public reception area may require Level 3 appearance, while a storage area may need Level 1 or 2. A medical office may add terminal-cleaning requirements for exam rooms; a daycare may require toy and changing-area protocols; a government facility may reference GSA expectations. State approved products, color-coded tools, dilution controls, and any Green Seal preference. Ask bidders to include training records and sample checklists. For additional context, see [ISSA clean standards and appearance levels](/blog/issa-clean-standards-appearance-levels/)."
-    },
-    {
-      "type": "heading",
-      "text": "Define Staffing, Supervision, and Continuity"
-    },
-    {
-      "type": "paragraph",
-      "text": "The RFP should request a staffing plan without forcing an arbitrary headcount. Ask for cleaner hours, supervisor hours, relief coverage, training, onboarding, background checks when required, and a plan for absences, weather, equipment failure, and turnover. GreenPoint uses internal production assumptions but prices the agreed outcome rather than billing hourly. A bidder should explain how the team moves between floors, who opens and secures areas, who inspects high-priority zones, and how the client is notified when work cannot be completed."
-    },
-    {
-      "type": "paragraph",
-      "text": "Include the local operating context. A Manhattan high-rise may lose labor time to freight elevators; a Brooklyn school may require a defined after-hours window; a Long Island office may need weekend event coverage; a New Jersey warehouse may have multiple shifts; a Florida property may need storm contingency. Require a named account manager and response time. GreenPoint's 98% client retention, MBE/MWBE certification, and SAM.gov registration help support a continuity conversation, but the RFP should still ask for references and a mobilization plan. Call 844-814-0810 to review a staffing section."
-    },
-    {
-      "type": "heading",
-      "text": "Write SLAs That Can Be Measured"
-    },
-    {
-      "type": "paragraph",
-      "text": "A service-level agreement should define scheduled completion, response time, correction time, communication, and evidence. Example metrics include 98% of planned inspections completed each month, urgent spill acknowledgment within 10 minutes, high-priority corrective action closed within one business day, and supply outages escalated immediately. Pick targets the parties can verify. GreenPoint uses StockPoint for timestamped GPS-tagged photos, supervisor inspections, exception notes, and closure records, but a dashboard should support the contract rather than replace a clear acceptance test."
-    },
-    {
-      "type": "paragraph",
-      "text": "Define the service credit or corrective process with proportionality. One missed low-priority storage closet should not be treated like an inaccessible restroom or a clinical cleaning failure. State whether the vendor gets a same-shift correction opportunity and how a dispute is reviewed. Identify the client contact, backup contact, escalation window, and monthly meeting agenda. A fixed price is easier to trust when the buyer knows what is included and what evidence will show delivery. Schedule a GreenPoint quote at 844-814-0810."
-    },
-    {
-      "type": "heading",
-      "text": "List Exclusions and Change Controls"
-    },
-    {
-      "type": "paragraph",
-      "text": "Most RFP disputes arise from missing exclusions: interior windows, exterior pressure washing, carpet extraction, strip and refinish, high dusting, pest control, biohazard response, construction dust, kitchen grease, event cleanup, snow, landscaping, and consumables. List each item as included, excluded, optional, or separately quoted. State who supplies paper and soap, who moves furniture, and what happens after a flood or construction project. GreenPoint provides fixed pricing with no hourly billing or hidden fees after a confirmed scope, while keeping truly different services separately priced."
-    },
-    {
-      "type": "paragraph",
-      "text": "Use a written change order when occupancy, floor area, operating hours, or regulatory requirements change. A tenant expansion in Queens, a renovation in Newark, or a new clinic in Connecticut can alter labor and supplies. Put the notice period, pricing method, start date, and approval authority in the contract. Compare [commercial cleaning contract key terms](/blog/commercial-cleaning-contract-key-terms/) and [calculating true cleaning cost TCO](/blog/calculating-true-cleaning-cost-tco/) before issuing the final RFP. Email info@greenpointms.com if procurement wants a scope review."
-    },
-    {
-      "type": "heading",
-      "text": "Request Evidence, Credentials, and References"
-    },
-    {
-      "type": "paragraph",
-      "text": "The proposal should request insurance certificates, licenses, certifications, training approach, safety program, product list, sample inspection report, references, technology description, and business continuity plan. MBE/MWBE certification and SAM.gov registration may be important for public and institutional buyers, while Green Seal product options can support sustainability goals. Ask for a reference with similar square footage, access, occupancy, and risk. GreenPoint Maintenance Services can provide a StockPoint example showing how photo evidence, supervisor notes, and corrective actions connect to the agreed scope."
-    },
-    {
-      "type": "paragraph",
-      "text": "Do not accept a generic technology claim as proof. Ask how often data is captured, who reviews it, what the client can see, and how long records are retained. Confirm whether the vendor uses GPS-tagged photos, ATP sampling, or other measures appropriately and without overstating what they prove. Verify the account manager's availability and the process for a missed shift. GreenPoint's 98% client retention is a useful proof point, but the buyer should compare scope, staffing, reporting, and references line by line."
-    },
-    {
-      "type": "heading",
-      "text": "Score Proposals and Mobilize Transparently"
-    },
-    {
-      "type": "paragraph",
-      "text": "Create a scoring sheet before proposals arrive. Weight technical scope, staffing, supervision, safety, continuity, evidence, references, sustainability, price, and transition plan. Do not let a low number compensate for missing tasks. Invite finalists to walk the site, answer the same questions, demonstrate a sample report, and explain the first 30 days. GreenPoint uses mobilization steps that include opening inventory, room verification, access and key control, equipment staging, training, baseline inspection, and a first-week review. Those steps make the service visible before the first invoice."
-    },
-    {
-      "type": "paragraph",
-      "text": "Set a 30-, 60-, and 90-day review with the facility contact, supervisor, and account manager. Review completed work, exceptions, complaints, supply issues, response times, and any scope assumptions that proved wrong. A 98% retention record depends on correcting small issues early, not waiting for renewal. GreenPoint serves the full tri-state region and Florida and can schedule a walkthrough at 844-814-0810. A well-written RFP does more than choose a vendor; it creates an operating agreement everyone can manage."
-    },
-    {
-      "type": "heading",
-      "text": "Frequently Asked Questions"
-    },
-    {
-      "type": "heading",
-      "text": "What should a commercial cleaning RFP scope include?"
-    },
-    {
-      "type": "paragraph",
-      "text": "Include room inventory, square footage, fixtures, floor types, frequencies, methods, appearance levels, safety, staffing, SLAs, supplies, exclusions, reporting, pricing assumptions, and transition steps. GreenPoint can review the scope during a walkthrough."
-    },
-    {
-      "type": "heading",
-      "text": "How do I compare cleaning bids fairly?"
-    },
-    {
-      "type": "paragraph",
-      "text": "Require every bidder to price the same task matrix, service windows, supplies, supervision, relief coverage, exclusions, and evidence package. Score technical completeness before looking only at the total price."
-    },
-    {
-      "type": "heading",
-      "text": "What is a useful cleaning SLA?"
-    },
-    {
-      "type": "paragraph",
-      "text": "Define scheduled completion, response time, correction time, escalation, evidence, and review cadence. GreenPoint can use StockPoint photos, inspections, and exception closure to support measurable service levels."
-    },
-    {
-      "type": "heading",
-      "text": "Should restroom supplies be included in the cleaning contract?"
-    },
-    {
-      "type": "paragraph",
-      "text": "Either include them with products, pack sizes, par levels, dispenser responsibilities, and usage assumptions, or state that they are client-provided. Ambiguity creates outages and change orders. Call 844-814-0810 for a scope review."
-    },
-    {
-      "type": "heading",
-      "text": "Where does GreenPoint provide RFP support and cleaning service?"
-    },
-    {
-      "type": "paragraph",
-      "text": "GreenPoint serves NYC, Westchester, Long Island, New Jersey, Connecticut, Pennsylvania, and Florida. GreenPoint Maintenance Services provides fixed pricing, no hourly billing, no hidden fees, and documented quality controls."
-    },
-    {
-      "type": "callout",
-      "text": "Schedule an RFP scope walkthrough with GreenPoint Maintenance Services at 844-814-0810 or info@greenpointms.com. Get a room-level task matrix, measurable SLAs, clear exclusions, StockPoint proof, and fixed pricing backed by 98% client retention."
-    }
-  ]
-},
+    slug: "cleaning-vendor-rfp-scope-template",
+    image: "/blog/cleaning-vendor-rfp-scope-template.jpg",
+    title: "Commercial Cleaning RFP Scope: Rooms, Frequencies, SLAs, and Exclusions",
+    excerpt: "A practical commercial cleaning RFP scope framework for room inventories, frequencies, measurable service levels, pricing assumptions, and New York-area procurement.",
+    category: "RFP & Bids",
+    author: "GreenPoint Maintenance",
+    publishedAt: "2026-11-03",
+    readTime: "11 min read",
+    keywords: [
+      "commercial cleaning RFP scope",
+      "janitorial bid specifications",
+      "cleaning vendor SLA"
+    ],
+    content: [
+      {
+        type: "intro",
+        text: "A commercial cleaning RFP is only as useful as the scope bidders price. If the document says \"clean the building nightly\" without listing rooms, frequencies, supplies, access, quality checks, and exclusions, proposals may look comparable while covering very different work. GreenPoint Maintenance Services helps property teams and procurement staff build a clear scope for Manhattan, the Bronx, Brooklyn, Queens, Staten Island, Westchester, Long Island, New Jersey, and Connecticut. Call 347-332-9348 to schedule a walkthrough before releasing a janitorial solicitation or comparing bids."
+      },
+      {
+        type: "heading",
+        text: "Give every bidder the same facility facts"
+      },
+      {
+        type: "paragraph",
+        text: "Include the facility address, operating hours, approximate cleanable square footage, floor plans, occupancy assumptions, public access, security rules, freight and loading access, and the date the information was verified. Provide room counts for offices, conference rooms, restrooms, kitchens, stairwells, lobbies, and specialty areas. State whether square footage is gross, rentable, or cleanable; those numbers can differ materially in a high-rise near Park Avenue or a multi-building Westchester campus."
+      },
+      {
+        type: "paragraph",
+        text: "Identify floor types and conditions, including carpet, resilient flooring, stone, polished concrete, and floor transitions. Note construction, tenant turnover, special events, seasonal matting, elevator restrictions, and any restricted rooms. Give bidders a controlled opportunity to ask questions and issue a shared addendum so one vendor does not price information another never received. GreenPoint's walkthrough records site-specific conditions that a generic square-foot count can miss."
+      },
+      {
+        type: "heading",
+        text: "Turn rooms into a task and frequency matrix"
+      },
+      {
+        type: "paragraph",
+        text: "Build a matrix with a row for each area and columns for task, method, frequency, time window, supplies, and acceptance standard. Separate daily tasks such as trash removal, restroom cleaning, and high-touch wiping from weekly detail, periodic floor work, and seasonal projects. Specify whether desks are cleared by occupants, whether interior glass is included, and whether the vendor handles recycling, liners, consumables, or only labor. A matrix reduces ambiguity for offices near Grand Central just as it does for schools in the Bronx."
+      },
+      {
+        type: "paragraph",
+        text: "Use clear verbs: empty, wipe, damp-mop, vacuum, replenish, spot-clean, inspect, report. Avoid vague words such as \"as needed\" unless the scope defines who decides and how the request is priced. For a public-facing lobby near the World Trade Center or Newark Penn Station, define daytime touch-ups separately from the overnight reset. Buyers can adapt the checklist in [how to write an RFP for commercial cleaning](/blog/how-to-write-rfp-commercial-cleaning/) and compare the resulting commitments with [key terms in a commercial cleaning contract](/blog/commercial-cleaning-contract-key-terms/)."
+      },
+      {
+        type: "heading",
+        text: "Make service levels measurable and fair"
+      },
+      {
+        type: "paragraph",
+        text: "A service-level agreement should tell both parties what counts as completion. Define inspection frequency, sample size, scoring method, response time for urgent issues, correction window, complaint escalation, and how recurring failures affect payment or renewal. A target such as \"restrooms maintained\" is hard to evaluate; a checklist can specify stocked dispensers, clean mirrors, no visible debris, and logged exceptions at agreed rounds. Keep the criteria achievable and within the vendor's control, and distinguish cleaning performance from building maintenance issues such as a leaking fixture."
+      },
+      {
+        type: "paragraph",
+        text: "Use a shared question period and written addenda so each prospective vendor prices the same interpretation. If one bidder identifies a locked storage closet, missing floor plan, or unclear event schedule, publish the answer to all bidders. Include a site-visit sign-in process and prohibit informal side instructions that are not reflected in the final scope. A consistent procurement record helps the buyer defend the evaluation and gives the selected vendor a reliable starting point. GreenPoint recommends preserving the final questions, answers, drawings, and amendments with the signed scope and mobilization checklist."
+      },
+      {
+        type: "paragraph",
+        text: "Use a consistent quality plan across bidders. Require the same sample forms, the same proposed inspection cadence, and a description of corrective action. If ATP testing is requested, state its purpose and limitations: it can indicate organic residue on a sampled surface but is not a pathogen test. StockPoint records, the platform formerly called JaniTrack, can support proof of assigned work through timestamps, GPS-tagged photos, and a live dashboard, but task evidence is not a substitute for a visual inspection or an agreed scientific test. GreenPoint can help distinguish each evidence type in the scope."
+      },
+      {
+        type: "heading",
+        text: "State labor, access, and compliance assumptions"
+      },
+      {
+        type: "paragraph",
+        text: "Tell bidders whether prevailing wage, collective bargaining, background screening, badging, security training, language support, or site-specific certifications apply. For municipal or school work, point bidders to current agency instructions and the official procurement channel; do not rely on an old template as proof of current eligibility. NYC DOE buyers should identify applicable vendor, fingerprinting, custodial, and access requirements in the solicitation. GreenPoint is MBE/MWBE certified in New York programs and NYC DOE and is SAM.gov registered, but each RFP should still state the exact evidence required."
+      },
+      {
+        type: "paragraph",
+        text: "Include chemical and equipment rules: approved product list, storage, labeling, dilution, PPE, SDS access, battery charging, noise limits, and spill reporting. [OSHA's Hazard Communication guidance](https://www.osha.gov/etools/hospitals/housekeeping/hazardous-chemicals) explains employer duties for communicating workplace chemical hazards, maintaining safety information, and training workers. Also set the boundaries for waste hauling, pest observations, high dusting, exterior glass, snow or water intrusion, and emergency work. A scope that names exclusions avoids disputes when an unusual spill or project arises."
+      },
+      {
+        type: "heading",
+        text: "Require a transparent pricing schedule"
+      },
+      {
+        type: "paragraph",
+        text: "Ask bidders to price the base scope separately from optional day porter coverage, consumables, periodic floor care, carpet extraction, post-construction cleaning, emergency response, and one-time projects. State the contract term, renewal option, annual adjustment method, taxes, invoice frequency, payment terms, and proposal validity period. Require bidders to list assumptions about occupancy, access hours, square footage, and supply quantities. If a bidder proposes a staffing count, request the underlying task-hour logic so the buyer can compare coverage rather than a headline price alone."
+      },
+      {
+        type: "paragraph",
+        text: "A useful price schedule makes exclusions visible: building water or power, high-level work, biohazard response, pest control, tenant-requested extras, event support, and repairs may require separate authorization. Avoid evaluating a low monthly amount without checking whether consumables, supervisor inspections, and relief coverage are included. GreenPoint offers fixed pricing, no hourly billing, and no hidden fees for the agreed scope. Schedule a walkthrough at 347-332-9348 to confirm areas and scope before requesting a firm quote."
+      },
+      {
+        type: "heading",
+        text: "Evaluate bidders on evidence, capacity, and fit"
+      },
+      {
+        type: "paragraph",
+        text: "Set evaluation criteria before proposals arrive. A scoring model might weight scope compliance, staffing plan, supervision, safety, relevant experience, references, technology, minority-business participation where allowed, and total evaluated cost. Ask for proof of insurance, training practices, references for similar properties, transition plans, and sample service reports. The [BLS Occupational Outlook Handbook](https://www.bls.gov/ooh/building-and-grounds-cleaning/janitors-and-building-cleaners.htm) reports national employment and wage information for janitors and building cleaners; bidders should explain how they recruit, train, and cover absences instead of assuming a fixed team will remain unchanged."
+      },
+      {
+        type: "paragraph",
+        text: "For technology claims, ask for a demonstration using your building's actual map and a sample export of task completion data. For sustainability claims, identify the products or certification standard required and how substitutions are approved. GreenPoint's differentiators include Green Seal certified products, StockPoint verification, a 98% client-retention record, and MBE/MWBE certifications. Ask each bidder to show how its proof can be reviewed by the people who manage the property, not just by the vendor's account representative."
+      },
+      {
+        type: "heading",
+        text: "Plan a controlled transition and first-month review"
+      },
+      {
+        type: "paragraph",
+        text: "A good RFP continues through mobilization. Require a transition calendar for badges, keys, equipment, closet setup, chemical approvals, staff orientation, emergency contacts, tenant communication, and baseline inspections. Set a kickoff date, a first-week check-in, and a 30-day review of complaints, missed tasks, supply use, and schedule fit. For a multi-site portfolio spanning Manhattan, Long Island City, and Jersey City, identify a single escalation path and a site-by-site readiness checklist."
+      },
+      {
+        type: "paragraph",
+        text: "The first-month review should compare actual service against the same matrix used for bid evaluation. Confirm that every room is accessible, the approved products are on site, the inspection form works, and exceptions have a named owner. Resolve one-off conditions through a written change process rather than an informal text message that never reaches the account team. GreenPoint's StockPoint dashboard can help authorized managers review scheduled task evidence and corrective actions, while the contract remains the source of truth for scope, price, and responsibilities."
+      },
+      {
+        type: "paragraph",
+        text: "Do not treat the signed contract as a substitute for an operational scope. Keep the final matrix, approved change orders, inspection forms, and service calendar together so property staff and the cleaning team use the same version. GreenPoint can pair fixed-price service with StockPoint verification, documented corrective action, and regular account reviews. A clear transition makes the first month a measured start instead of an informal trial. Call 347-332-9348 for a walkthrough and quote."
+      },
+      {
+        type: "paragraph",
+        text: "For a multi-site contract, require a separate schedule and room inventory for each property rather than copying one site's assumptions across all locations. A Manhattan tower may have an on-site day porter and limited loading access, while a Long Island office park may need a different opening routine and broader exterior-entry coverage. Keep shared standards such as approved products and inspection rules consistent, but make hours, access instructions, square footage, and emergency contacts site-specific. GreenPoint recommends identifying the person authorized to approve changes at each site so small operating decisions do not wait for a portfolio-wide approval chain."
+      },
+      {
+        type: "paragraph",
+        text: "Before award, verify that insurance documents, references, and certification records match the legal entity named in the proposal. If a buyer gives credit for a certified business or other participation goal, apply the solicitation's published rules consistently and document the evidence reviewed. GreenPoint can provide its MBE/MWBE and SAM.gov information when requested, while the procurement officer remains responsible for applying the agency's current evaluation policy."
+      },
+      {
+        type: "heading",
+        text: "FAQ: commercial cleaning RFP scopes"
+      },
+      {
+        type: "paragraph",
+        text: "Q: How much detail should a janitorial RFP include? A: List areas, surfaces, tasks, frequencies, access rules, supplies, quality checks, pricing assumptions, exclusions, and transition requirements. The detail should let qualified bidders price the same work."
+      },
+      {
+        type: "paragraph",
+        text: "Q: Should cleaning products and consumables be included in the base price? A: State exactly which products and supplies are included, who purchases them, which substitutions are permitted, and how usage or price changes are approved."
+      },
+      {
+        type: "paragraph",
+        text: "Q: How do you compare commercial cleaning bids fairly? A: Apply a pre-published scoring model, confirm scope compliance, validate staffing and references, and compare total evaluated cost with the same assumptions."
+      },
+      {
+        type: "paragraph",
+        text: "Q: What should a cleaning service-level agreement measure? A: Define inspection results, task completion, response and correction times, escalation steps, evidence records, and exclusions such as building repairs."
+      },
+      {
+        type: "paragraph",
+        text: "Q: Can GreenPoint help prepare an RFP scope? A: GreenPoint can conduct a site walkthrough and provide a fixed-price proposal for its services. Call 347-332-9348 or email info@greenpointms.com."
+      },
+      {
+        type: "callout",
+        text: "For a commercial cleaning RFP walkthrough, call GreenPoint Maintenance Services at 347-332-9348 or email info@greenpointms.com. Get a task matrix, measurable service levels, and fixed-price proposal supported by StockPoint verification, MBE/MWBE certification, and a 98% client-retention record."
+      }
+    ]
+  },
 
 {
   "slug": "commercial-cleaning-bushwick-ny",

@@ -1,6 +1,6 @@
 # GreenPoint Maintenance Services Corp — Full Content Index
 
-Last Updated: 2026-10-13
+Last Updated: 2026-11-03
 
 This file contains the full text of GreenPoint's most important pages, optimized for ingestion by AI assistants and language models. For a curated index of resources, see https://greenpointms.com/llms.txt.
 
@@ -83,7 +83,7 @@ Full list of 80+ cities at https://greenpointms.com/sitemap.xml.
 
 The following articles are published on the GreenPoint blog. Each represents original research and analysis on commercial cleaning standards, compliance, technology, and best practices.
 
-Total articles: 218
+Total articles: 223
 
 ## Category: Industry Data
 
@@ -1407,6 +1407,18 @@ Published: 2026-09-11
 URL: https://greenpointms.com/blog/hand-hygiene-supply-restocking-protocol
 Summary: A commercial hand hygiene restocking protocol that prevents empty soap and paper dispensers, improves occupant experience, and lowers labor waste.
 
+### Cleaning Contract Staffing Ratios: Estimating Labor Without Underbidding
+
+Published: 2026-11-03
+URL: https://greenpointms.com/blog/cleaning-contract-staffing-ratio
+Summary: Estimate janitorial labor from task hours, floor types, traffic, and local requirements instead of relying on one square-foot-per-cleaner rule for your facility.
+
+### Commercial Restroom Supply Protocols: Inventory, Refills, and Service Levels
+
+Published: 2026-11-03
+URL: https://greenpointms.com/blog/commercial-restroom-supply-protocol
+Summary: Prevent empty dispensers and waste with a restroom supply plan based on traffic, par levels, storage, refill checks, and documented service in tri-state facilities.
+
 ## Category: Emerging Tech
 
 ### Autonomous Floor Scrubbers Manhattan: ROI, Safety, and a Real Deployment Checklist
@@ -1440,6 +1452,26 @@ Summary: How to evaluate robotic floor cleaning ROI for commercial facilities: w
 Published: 2026-09-11
 URL: https://greenpointms.com/blog/iot-restroom-sensors-cleaning
 Summary: How IoT restroom sensors and occupancy data let a smart restroom janitorial program hit the right frequencies at the right times, and how GreenPoint runs the numbers.
+
+### UV-C in Commercial Cleaning: Questions to Ask Before Buying the Technology
+
+Published: 2026-11-03
+URL: https://greenpointms.com/blog/uv-c-commercial-cleaning-vendor
+Summary: A practical buyer
+
+### Robotic Floor Cleaning RFPs: How to Evaluate Coverage and Human Oversight
+
+Published: 2026-11-03
+URL: https://greenpointms.com/blog/robotic-floor-cleaning-rfp
+Summary: Write a robotics RFP that tests real route coverage, safety, edge work, data ownership, and human backup in New York, New Jersey, and Connecticut buildings.
+
+## Category: RFP & Bids
+
+### Commercial Cleaning RFP Scope: Rooms, Frequencies, SLAs, and Exclusions
+
+Published: 2026-11-03
+URL: https://greenpointms.com/blog/cleaning-vendor-rfp-scope-template
+Summary: A practical commercial cleaning RFP scope framework for room inventories, frequencies, measurable service levels, pricing assumptions, and New York-area procurement.
 
 
 ---
@@ -1510,4 +1542,4 @@ This file is regenerated whenever blog content changes. For the most up-to-date 
 
 For the curated index of GreenPoint's most important pages, see https://greenpointms.com/llms.txt.
 
-Last generated: 2026-10-13T02:12:14.037Z
+Last generated: 2026-11-03T16:42:42.264Z
