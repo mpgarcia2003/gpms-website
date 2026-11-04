@@ -47,7 +47,7 @@ const faqSchema = {
       name: "What makes GreenPoint different from other NYC cleaning companies?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "GreenPoint is the only local janitorial provider offering StockPoint real-time cleaning verification with timestamped photo documentation, GPS-tagged task completion, and ATP bioluminescence testing. We are also MBE/MWBE certified, SAM.gov registered, and carry $2M+ in commercial general liability insurance.",
+        text: "GreenPoint offers StockPoint real-time cleaning verification with timestamped photo documentation, GPS-tagged task completion, and ATP bioluminescence testing. We are also MBE/MWBE certified, SAM.gov registered, and carry $2M+ in commercial general liability insurance.",
       },
     },
     {
@@ -87,7 +87,7 @@ export default function JanitorialServicesNYC() {
         { iconKey: "building", title: "Post-Construction Cleanup", desc: "Three-stage professional cleanup: rough clean, light clean, and final touch. Debris removal, dust elimination, and final inspection. Move-in ready in 48 hours." },
       ]}
       whyChooseUs={[
-        { iconKey: "shield", title: "StockPoint Verification", desc: "The only local provider with real-time photo documentation, GPS tracking, and ATP bioluminescence testing. See proof of every cleaning session." },
+        { iconKey: "shield", title: "StockPoint Verification", desc: "Real-time photo documentation, GPS tracking, and ATP bioluminescence testing. See proof of every cleaning session." },
         { iconKey: "award", title: "MBE / MWBE Certified", desc: "Registered with NYC & NYS. Qualifies for diversity procurement programs and MWBE set-aside contracts at city, state, and federal level." },
         { iconKey: "building", title: "Fixed-Price Proposals", desc: "Transparent, per-facility pricing. No hourly billing, no surprise fees, no hidden charges. Know exactly what you'll pay every month." },
         { iconKey: "medical", title: "Vertical-Specific Protocols", desc: "Dedicated cleaning protocols for schools, churches, medical, daycare, government, and commercial offices. Not a one-size-fits-all approach." },
