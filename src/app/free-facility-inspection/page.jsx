@@ -1,5 +1,5 @@
 "use client";
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import SiteHeader from '../../components/SiteHeader';
 import SiteFooter from '../../components/SiteFooter';
 import {
@@ -61,11 +61,51 @@ export default function FreeFacilityInspectionPage() {
     name: '', email: '', phone: '', facilityType: '', address: '', preferredDate: '',
   });
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState('');
+  const sendLock = useRef(false);
 
-  function handleSubmit(e) {
+  function updateField(key, value) {
+    setFormData((prev) => ({ ...prev, [key]: value }));
+    if (error) setError('');
+  }
+
+  async function handleSubmit(e) {
     e.preventDefault();
-    console.log('[GreenPoint] Free inspection booking:', formData);
-    setSubmitted(true);
+    if (sendLock.current) return;
+    sendLock.current = true;
+    setError('');
+    setSubmitting(true);
+    try {
+      const res = await fetch('/api/lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          form: 'inspection',
+          name: formData.name.trim(),
+          email: formData.email.trim(),
+          phone: formData.phone.trim(),
+          facilityType: formData.facilityType,
+          address: formData.address.trim(),
+          preferredDate: formData.preferredDate,
+        }),
+      });
+      let data = null;
+      try { data = await res.json(); } catch { data = null; }
+      if (!res.ok) {
+        const message = data && typeof data.error === 'string' && data.error.length > 0 && data.error.length < 300
+          ? data.error
+          : "We couldn't send your inspection request. Please try again or call 844-814-0810.";
+        setError(message);
+        return;
+      }
+      setSubmitted(true);
+    } catch {
+      setError("We couldn't send your inspection request. Please check your connection and try again.");
+    } finally {
+      sendLock.current = false;
+      setSubmitting(false);
+    }
   }
 
   const inputStyle = {
@@ -239,7 +279,7 @@ export default function FreeFacilityInspectionPage() {
                   <label style={labelStyle}>Full Name *</label>
                   <input
                     required type="text" placeholder="Jane Smith"
-                    value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    value={formData.name} onChange={(e) => updateField('name', e.target.value)}
                     style={inputStyle}
                     onFocus={(e) => (e.target.style.borderColor = '#2ecc71')}
                     onBlur={(e) => (e.target.style.borderColor = '#e5e5e5')}
@@ -249,7 +289,7 @@ export default function FreeFacilityInspectionPage() {
                   <label style={labelStyle}>Work Email *</label>
                   <input
                     required type="email" placeholder="jane@facility.org"
-                    value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    value={formData.email} onChange={(e) => updateField('email', e.target.value)}
                     style={inputStyle}
                     onFocus={(e) => (e.target.style.borderColor = '#2ecc71')}
                     onBlur={(e) => (e.target.style.borderColor = '#e5e5e5')}
@@ -261,7 +301,7 @@ export default function FreeFacilityInspectionPage() {
                 <label style={labelStyle}>Phone Number *</label>
                 <input
                   required type="tel" placeholder="(347) 555-0100"
-                  value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                  value={formData.phone} onChange={(e) => updateField('phone', e.target.value)}
                   style={inputStyle}
                   onFocus={(e) => (e.target.style.borderColor = '#2ecc71')}
                   onBlur={(e) => (e.target.style.borderColor = '#e5e5e5')}
@@ -272,7 +312,7 @@ export default function FreeFacilityInspectionPage() {
                 <label style={labelStyle}>Facility Type *</label>
                 <select
                   required value={formData.facilityType}
-                  onChange={(e) => setFormData({ ...formData, facilityType: e.target.value })}
+                  onChange={(e) => updateField('facilityType', e.target.value)}
                   style={{ ...inputStyle, color: formData.facilityType ? '#222' : '#aaa', appearance: 'none' }}
                   onFocus={(e) => (e.target.style.borderColor = '#2ecc71')}
                   onBlur={(e) => (e.target.style.borderColor = '#e5e5e5')}
@@ -292,7 +332,7 @@ export default function FreeFacilityInspectionPage() {
                 <label style={labelStyle}>Facility Address *</label>
                 <input
                   required type="text" placeholder="123 Grand Concourse, Bronx, NY 10451"
-                  value={formData.address} onChange={(e) => setFormData({ ...formData, address: e.target.value })}
+                  value={formData.address} onChange={(e) => updateField('address', e.target.value)}
                   style={inputStyle}
                   onFocus={(e) => (e.target.style.borderColor = '#2ecc71')}
                   onBlur={(e) => (e.target.style.borderColor = '#e5e5e5')}
@@ -303,23 +343,30 @@ export default function FreeFacilityInspectionPage() {
                 <label style={labelStyle}>Preferred Inspection Date <span style={{ color: '#bbb', textTransform: 'none', letterSpacing: 0, fontWeight: 400 }}>(optional)</span></label>
                 <input
                   type="date" min={new Date().toISOString().split('T')[0]}
-                  value={formData.preferredDate} onChange={(e) => setFormData({ ...formData, preferredDate: e.target.value })}
+                  value={formData.preferredDate} onChange={(e) => updateField('preferredDate', e.target.value)}
                   style={inputStyle}
                   onFocus={(e) => (e.target.style.borderColor = '#2ecc71')}
                   onBlur={(e) => (e.target.style.borderColor = '#e5e5e5')}
                 />
               </div>
 
+              {error && (
+                <p role="alert" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: '#a83a3a', margin: '0 0 16px', lineHeight: 1.5 }}>
+                  {error}
+                </p>
+              )}
               <button
                 type="submit"
+                disabled={submitting}
                 style={{
                   width: '100%', padding: '15px', background: 'linear-gradient(135deg, #2ecc71, #27ae60)',
                   border: 'none', borderRadius: 9, color: '#fff', fontSize: 16, fontWeight: 700,
-                  cursor: 'pointer', fontFamily: "'DM Sans', sans-serif",
+                  cursor: submitting ? 'wait' : 'pointer', fontFamily: "'DM Sans', sans-serif",
                   boxShadow: '0 4px 20px rgba(46,204,113,0.3)',
+                  opacity: submitting ? 0.7 : 1,
                 }}
               >
-                Book My Free Inspection →
+                {submitting ? 'Sending…' : 'Book My Free Inspection →'}
               </button>
               <p style={{ textAlign: 'center', fontSize: 12, color: '#aaa', marginTop: 14, fontFamily: "'DM Sans', sans-serif" }}>
                 No obligation. No cost. We'll confirm within one business day.
