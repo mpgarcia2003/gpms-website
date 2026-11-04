@@ -146,7 +146,7 @@ export default function FreeFacilityInspectionPage() {
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'rgba(46,204,113,0.1)', border: '1px solid rgba(46,204,113,0.25)', borderRadius: 100, padding: '6px 16px', marginBottom: 28 }}>
             <div style={{ width: 7, height: 7, borderRadius: '50%', background: '#2ecc71' }} />
             <span style={{ fontSize: 12, color: '#2ecc71', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', fontFamily: "'DM Sans', sans-serif" }}>
-              No Obligation · No Cost · MBE Certified Team
+              No Obligation · No Cost · MBE/MWBE Certified Team
             </span>
           </div>
 

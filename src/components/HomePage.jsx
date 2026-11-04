@@ -169,8 +169,8 @@ const SERVICES = [
   {
     iconKey: "shield-check",
     title: "Disinfection & Sanitization",
-    outcome: "CDC-compliant. ATP-verified.",
-    desc: "Electrostatic disinfection with hospital-grade sanitizers. ATP bioluminescence testing provides a measurable, objective reading of surface cleanliness.",
+    outcome: "CDC-compliant. ATP testing available on request.",
+    desc: "Electrostatic disinfection with hospital-grade sanitizers. We can run an ATP test of high-touch surfaces on request.",
   },
   {
     iconKey: "floor",
@@ -212,7 +212,7 @@ const INDUSTRIES = [
     title: "Healthcare & Medical Offices",
     slug: "medical",
     desc: "OSHA-compliant cleaning for medical offices, dental practices, outpatient clinics, surgery centers, and long-term care facilities.",
-    features: ["OSHA & HIPAA-aware protocols", "Exam room & waiting area sanitization", "Biohazard-safe waste handling", "ATP testing verification"],
+    features: ["OSHA & HIPAA-aware protocols", "Exam room & waiting area sanitization", "Biohazard-safe waste handling", "ATP testing available on request"],
   },
   {
     iconKey: "baby",
@@ -225,8 +225,8 @@ const INDUSTRIES = [
     iconKey: "landmark",
     title: "Government & Municipal Buildings",
     slug: "government",
-    desc: "Secure, reliable cleaning for government offices, courthouses, community centers, and public facilities. MBE-certified for diversity procurement compliance.",
-    features: ["MBE certification for procurement", "Background-checked staff", "Secure facility protocols", "ADA-compliant service delivery"],
+    desc: "Secure, reliable cleaning for government offices, courthouses, community centers, and public facilities. MBE/MWBE-certified for diversity procurement compliance.",
+    features: ["MBE/MWBE certification for procurement", "Background-checked staff", "Secure facility protocols", "ADA-compliant service delivery"],
   },
   {
     iconKey: "briefcase",
@@ -240,7 +240,7 @@ const INDUSTRIES = [
 const TRUST_STATS = [
   { number: "80+", label: "Facilities Under Contract" },
   { number: "5", label: "States Served" },
-  { number: "MBE", label: "Certified Enterprise" },
+  { number: "MBE/MWBE", label: "Certified Enterprise" },
   { number: "24/7", label: "Emergency Response" },
 ];
 
@@ -258,7 +258,7 @@ const TESTIMONIALS = [
     vertical: "House of Worship",
   },
   {
-    quote: "As a medical office, we can't compromise on sanitization. GreenPoint's ATP testing gives us measurable proof that our exam rooms meet clinical-grade standards every single day.",
+    quote: "As a medical office, we can't compromise on sanitization. We can run an ATP test of high-touch surfaces on request, which gives us measurable proof that our exam rooms meet clinical-grade standards.",
     name: "Dr. Michael Torres",
     role: "Director, Bronx Family Medical Center",
     vertical: "Healthcare",
@@ -333,7 +333,7 @@ const PROCESS_STEPS = [
   {
     step: "04",
     title: "StockPoint Verification",
-    desc: "Every cleaning session is documented with timestamped photos, task checklists, and ATP readings — accessible from your dashboard.",
+    desc: "Every cleaning session is documented with timestamped photos and task checklists — accessible from your dashboard. ATP bioluminescence testing is available on request.",
   },
 ];
 
@@ -344,11 +344,11 @@ const FAQ_ITEMS = [
   },
   {
     q: "What is StockPoint and how does it work?",
-    a: "StockPoint is our proprietary real-time cleaning verification system. After every cleaning session, your team uploads timestamped, GPS-tagged photos and completes digital checklists. We also conduct ATP bioluminescence testing — the same technology hospitals use — to give you measurable proof that surfaces meet clinical-grade cleanliness standards. You access everything through a live dashboard.",
+    a: "StockPoint is our proprietary real-time cleaning verification system. After every cleaning session, your team uploads timestamped, GPS-tagged photos and completes digital checklists. We can run an ATP test of high-touch surfaces on request — the same technology hospitals use — to give you measurable proof that surfaces meet clinical-grade cleanliness standards. You access everything through a live dashboard.",
   },
   {
-    q: "Is GreenPoint a Minority Business Enterprise (MBE)?",
-    a: "Yes. GreenPoint Maintenance Services Corp is a Certified Minority Business Enterprise registered with New York State and the City of New York. We are also an NYC DOE Approved Vendor, authorized to provide products and services to New York City public schools. We are registered on SAM.gov for federal contracting. Our MBE certification qualifies us for diversity procurement programs and MWBE set-aside contracts at the city, state, and federal level.",
+    q: "Is GreenPoint MBE/MWBE certified?",
+    a: "Yes. GreenPoint Maintenance Services Corp is MBE/MWBE certified, registered with New York State and the City of New York. We are also an NYC DOE Approved Vendor, authorized to provide products and services to New York City public schools. We are registered on SAM.gov for federal contracting. Our MBE/MWBE certification qualifies us for diversity procurement programs and MWBE set-aside contracts at the city, state, and federal level.",
   },
   {
     q: "What types of facilities do you clean?",
@@ -381,8 +381,8 @@ const WHY_US = [
   },
   {
     iconKey: "trophy",
-    title: "MBE Certified",
-    desc: "Registered Minority Business Enterprise with NYS & NYC. Qualifies for diversity procurement and MWBE set-aside contracts.",
+    title: "MBE/MWBE Certified",
+    desc: "MBE/MWBE certified with NYS & NYC. Qualifies for diversity procurement and MWBE set-aside contracts.",
     competitor: "Certified with NYS & NYC",
   },
   {
@@ -1673,7 +1673,7 @@ function Hero() {
             }}>
               <div style={{ width: 8, height: 8, borderRadius: "50%", background: "#1B7A3D", animation: "pulse 2s infinite" }} />
               <span style={{ fontSize: 12, color: "#1B7A3D", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
-                MBE Certified • NYC DOE Approved Vendor • Licensed & Insured
+                MBE/MWBE Certified • NYC DOE Approved Vendor • Licensed & Insured
               </span>
             </div>
 
@@ -1690,7 +1690,7 @@ function Hero() {
               fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 18, color: "#4A5E52",
               lineHeight: 1.7, marginBottom: 36, maxWidth: 520,
             }}>
-              MBE-certified facility maintenance for schools, healthcare, houses of worship, and government buildings across NY, NJ, CT, PA &amp; FL. Every cleaning session verified in real-time through StockPoint.
+              MBE/MWBE-certified facility maintenance for schools, healthcare, houses of worship, and government buildings across NY, NJ, CT, PA &amp; FL. Every cleaning session verified in real-time through StockPoint.
             </p>
 
             <div className="hero-ctas-anim" style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
@@ -1790,7 +1790,7 @@ function StatsBar() {
               padding: "20px 24px",
               borderRight: i < TRUST_STATS.length - 1 ? "1px solid #EEF4F0" : "none",
             }}>
-              <div className="stat-number" style={{ fontSize: "clamp(32px, 4vw, 48px)", fontWeight: 800, fontFamily: "'Syne', sans-serif", lineHeight: 1 }}>
+              <div className="stat-number" style={{ fontSize: stat.number.length > 5 ? "clamp(18px, 4.5vw, 30px)" : "clamp(32px, 4vw, 48px)", fontWeight: 800, fontFamily: "'Syne', sans-serif", lineHeight: 1, whiteSpace: "nowrap" }}>
                 {stat.number}
               </div>
               <div style={{ fontSize: 13, color: "#6A7D72", marginTop: 10, fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 500, lineHeight: 1.4 }}>
@@ -1889,10 +1889,10 @@ function About() {
                 Your Last Cleaning Company<br />Didn't Show Up. <span style={{ color: "#1B7A3D" }}>We Will.</span>
               </h2>
               <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "#4A5E52", lineHeight: 1.8, marginBottom: 20 }}>
-                GreenPoint Maintenance Services Corp is an MBE-certified facility services provider headquartered in New York, serving institutional and commercial clients across five states since 2018. We specialize in the facilities that can't afford missed cleanings: schools with health inspections, medical offices with OSHA requirements, and government buildings with procurement compliance standards.
+                GreenPoint Maintenance Services Corp is an MBE/MWBE-certified facility services provider headquartered in New York, serving institutional and commercial clients across five states since 2018. We specialize in the facilities that can't afford missed cleanings: schools with health inspections, medical offices with OSHA requirements, and government buildings with procurement compliance standards.
               </p>
               <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "#4A5E52", lineHeight: 1.8, marginBottom: 28 }}>
-                Every cleaning session is verified in real-time through StockPoint — our proprietary system that provides timestamped photo documentation, GPS-tagged task completion, and ATP bioluminescence readings. You don't have to trust that we cleaned. You can see the proof.
+                Every cleaning session is verified in real-time through StockPoint — our proprietary system that provides timestamped photo documentation and GPS-tagged task completion. We can run an ATP test of high-touch surfaces on request. You don't have to trust that we cleaned. You can see the proof.
               </p>
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}>
@@ -1925,7 +1925,7 @@ function About() {
                 <div style={{ position: "relative", zIndex: 1 }}>
                   <div style={{ marginBottom: 20 }}><AwardIcon size={48} color="#1B7A3D" /></div>
                   <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: 28, color: "#1A2B1F", marginBottom: 12 }}>
-                    Certified Minority Business Enterprise
+                    MBE/MWBE Certified
                   </h3>
                   <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 15, color: "#4A5E52", lineHeight: 1.7, marginBottom: 24 }}>
                     Registered with New York State and the City of New York. Eligible for all diversity procurement programs and MWBE set-aside contracts.
@@ -2177,12 +2177,12 @@ function StockPoint() {
                 StockPoint:<br /><span style={{ color: "#1B7A3D" }}>Proof, Not Promises</span>
               </h2>
               <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "#4A5E52", lineHeight: 1.8, marginBottom: 28 }}>
-                Most cleaning companies ask you to trust that the work was done. StockPoint gives you verifiable proof — with real-time photo documentation, timestamped task completion, and ATP bioluminescence readings that quantify surface cleanliness.
+                Most cleaning companies ask you to trust that the work was done. StockPoint gives you verifiable proof — with real-time photo documentation and timestamped task completion. ATP bioluminescence testing of high-touch surfaces is available on request.
               </p>
 
               {[
                 { title: "Real-Time Photo Verification", desc: "Every task documented with timestamped, GPS-tagged photos accessible through your dashboard." },
-                { title: "ATP Bioluminescence Testing", desc: "Scientific measurement of surface cleanliness using the same technology hospitals use. Measurable. Reportable." },
+                { title: "ATP Bioluminescence Testing", desc: "Available on request. Scientific measurement of surface cleanliness using the same technology hospitals use. Measurable. Reportable." },
                 { title: "Digital Quality Reports", desc: "Weekly and monthly reports delivered automatically. Share with your board, tenants, or regulatory bodies." },
                 { title: "Direct Communication", desc: "Message your cleaning team directly. Request re-cleans, schedule changes, or supply orders in real-time." },
               ].map((item, i) => (
@@ -2860,7 +2860,7 @@ function Footer() {
             Your Facility Deserves Better.<br /><span style={{ color: "#1B7A3D" }}>Let's Talk.</span>
           </h2>
           <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "rgba(255,255,255,0.6)", lineHeight: 1.7, marginBottom: 36 }}>
-            Get a custom cleaning plan in 24 hours. MBE-certified. Bonded & insured. No obligation.
+            Get a custom cleaning plan in 24 hours. MBE/MWBE-certified. Bonded & insured. No obligation.
           </p>
           <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
             <a href="#schedule" data-cta-location="footer_quote" onClick={(e) => { e.preventDefault(); scrollTo("schedule"); }} className="cta-glow" style={{
@@ -2899,7 +2899,7 @@ function Footer() {
               </div>
             </div>
             <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.45)", lineHeight: 1.7, maxWidth: 320 }}>
-              MBE-certified facility services provider. Commercial janitorial and facility maintenance across NY, NJ, CT, PA, and FL since 2018.
+              MBE/MWBE-certified facility services provider. Commercial janitorial and facility maintenance across NY, NJ, CT, PA, and FL since 2018.
             </p>
             <div style={{ display: "flex", gap: 8, marginTop: 18, flexWrap: "wrap" }}>
               {["MBE / MWBE", "NYC DOE Vendor", "SAM.gov", "Bonded & Insured"].map((badge) => (

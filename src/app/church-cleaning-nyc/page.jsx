@@ -3,7 +3,7 @@ import SeoLandingPage from "../../components/SeoLandingPage";
 export const metadata = {
   title: "Church Cleaning Services NYC | Houses of Worship | GreenPoint Maintenance",
   description:
-    "Professional cleaning for churches, temples, mosques, and synagogues across NYC. Sanctuary care, fellowship hall turnaround, nursery sanitization. MBE certified. Free walkthrough.",
+    "Professional cleaning for churches, temples, mosques, and synagogues across NYC. Sanctuary care, fellowship hall turnaround, nursery sanitization. MBE/MWBE certified. Free walkthrough.",
   keywords: [
     "church cleaning services NYC",
     "house of worship cleaning",
@@ -17,7 +17,7 @@ export const metadata = {
   openGraph: {
     title: "Church Cleaning Services NYC | GreenPoint Maintenance",
     description:
-      "Respectful, professional cleaning for houses of worship in NYC. Sanctuary care, event turnaround, nursery sanitization. MBE certified with StockPoint verification.",
+      "Respectful, professional cleaning for houses of worship in NYC. Sanctuary care, event turnaround, nursery sanitization. MBE/MWBE certified with StockPoint verification.",
     url: "https://greenpointms.com/church-cleaning-nyc",
   },
   alternates: { canonical: "https://greenpointms.com/church-cleaning-nyc" },
@@ -75,7 +75,7 @@ export default function ChurchCleaningNYC() {
     <SeoLandingPage
       headline="Church & House of Worship Cleaning in"
       highlightWord="New York City"
-      subheadline="Respectful, professional janitorial for churches, temples, mosques, and synagogues. Flexible scheduling around services and events. MBE-certified with StockPoint-verified quality."
+      subheadline="Respectful, professional janitorial for churches, temples, mosques, and synagogues. Flexible scheduling around services and events. MBE/MWBE-certified with StockPoint-verified quality."
       trustBadges={[
         "MBE / MWBE Certified",
         "Flexible Scheduling",
@@ -84,21 +84,21 @@ export default function ChurchCleaningNYC() {
       ]}
       introParagraphs={[
         "Houses of worship are more than buildings — they are sacred spaces where communities gather for prayer, celebration, and support. GreenPoint Maintenance Services provides professional janitorial programs designed around the unique rhythms of religious life: worship services, fellowship events, youth programs, weddings, funerals, and holiday celebrations that can shift weekly.",
-        "Our teams understand the care required for sanctuaries, pews, altars, fellowship halls, nurseries, and multipurpose spaces that serve different functions throughout the week. We use non-toxic, pH-neutral products safe for wood, fabric, stained glass surroundings, and delicate fixtures. Every visit is documented through StockPoint with timestamped photos and ATP bioluminescence testing — giving your board and congregation measurable proof of cleanliness.",
-        "As a certified Minority Business Enterprise, GreenPoint provides the insurance documentation, fixed pricing, and accountability that church boards and religious institution finance committees require. We serve over 80 facilities across five states with dedicated teams assigned to your facility — the same crew every visit, building familiarity and trust with your staff and congregation.",
+        "Our teams understand the care required for sanctuaries, pews, altars, fellowship halls, nurseries, and multipurpose spaces that serve different functions throughout the week. We use non-toxic, pH-neutral products safe for wood, fabric, stained glass surroundings, and delicate fixtures. Every visit is documented through StockPoint with timestamped photos — giving your board and congregation measurable proof of cleanliness. We can run an ATP test of high-touch surfaces on request.",
+        "As an MBE/MWBE-certified company, GreenPoint provides the insurance documentation, fixed pricing, and accountability that church boards and religious institution finance committees require. We serve over 80 facilities across five states with dedicated teams assigned to your facility — the same crew every visit, building familiarity and trust with your staff and congregation.",
       ]}
       services={[
         { iconKey: "church", title: "Sanctuary & Worship Hall Care", desc: "Pew dusting and sanitization, altar area care, aisle vacuuming, foyer maintenance, and careful treatment of religious furnishings and sacred items." },
         { iconKey: "building", title: "Fellowship Hall Turnaround", desc: "Same-day event setup and teardown cleaning for weddings, funerals, potlucks, fundraisers, and community gatherings. Reset between back-to-back events." },
         { iconKey: "baby", title: "Nursery & Classroom Sanitization", desc: "Non-toxic, child-safe sanitization for nurseries, Sunday school rooms, and youth activity areas. Surface disinfection and toy sanitization included." },
-        { iconKey: "shield", title: "Restroom & Kitchen Disinfection", desc: "High-traffic restroom service with ATP verification. Kitchen and food prep area cleaning for fellowship meals and community programs." },
+        { iconKey: "shield", title: "Restroom & Kitchen Disinfection", desc: "High-traffic restroom service. ATP bioluminescence testing available on request. Kitchen and food prep area cleaning for fellowship meals and community programs." },
         { iconKey: "floor", title: "Floor Care & Restoration", desc: "Carpet extraction for high-traffic aisles, VCT and tile maintenance for fellowship halls, marble and stone care for lobbies and sanctuaries." },
         { iconKey: "wrench", title: "Facility Maintenance", desc: "Light plumbing, electrical, painting, and general repairs. One provider for both cleaning and building upkeep — simplified budgeting for church finance teams." },
       ]}
       whyChooseUs={[
         { iconKey: "church", title: "Sacred Space Expertise", desc: "Trained in the care of religious furnishings, altar areas, and sacred items. Non-toxic products safe for wood pews, fabric, and delicate fixtures." },
-        { iconKey: "shield", title: "StockPoint Verification", desc: "Real-time photo documentation and ATP bioluminescence testing after every service. Board-ready reports accessible through a live dashboard." },
-        { iconKey: "award", title: "MBE Certified & Insured", desc: "$2M+ commercial general liability, workers' comp, bonded. W-9, COI, and references available for board approval within one business day." },
+        { iconKey: "shield", title: "StockPoint Verification", desc: "Real-time photo documentation and ATP bioluminescence testing available on request. Board-ready reports accessible through a live dashboard." },
+        { iconKey: "award", title: "MBE/MWBE Certified & Insured", desc: "$2M+ commercial general liability, workers' comp, bonded. W-9, COI, and references available for board approval within one business day." },
         { iconKey: "building", title: "Dedicated Teams", desc: "Same background-checked personnel every visit. Your team learns your facility, your schedule, and your congregation's expectations." },
       ]}
       faqItems={[

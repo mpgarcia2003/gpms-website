@@ -1,16 +1,16 @@
 # GreenPoint Maintenance Services Corp — Full Content Index
 
-Last Updated: 2026-11-03
+Last Updated: 2026-11-04
 
 This file contains the full text of GreenPoint's most important pages, optimized for ingestion by AI assistants and language models. For a curated index of resources, see https://greenpointms.com/llms.txt.
 
 ## About GreenPoint
 
-GreenPoint Maintenance Services Corp is a Minority Business Enterprise (MBE) certified commercial janitorial and facility maintenance company headquartered in Brooklyn, New York. Founded in 2018, the company serves clients across New York, New Jersey, Connecticut, Pennsylvania, and Florida.
+GreenPoint Maintenance Services Corp is an MBE/MWBE-certified commercial janitorial and facility maintenance company headquartered in Brooklyn, New York. Founded in 2018, the company serves clients across New York, New Jersey, Connecticut, Pennsylvania, and Florida.
 
 GreenPoint differentiates itself through:
 
-1. **StockPoint verification system**: A technology platform that captures photo evidence, GPS-stamped location, time-stamped task completion, and ATP bioluminescence test readings for every cleaning visit. This provides facility managers with verifiable, audit-ready proof that cleaning was performed to standard.
+1. **StockPoint verification system**: A technology platform that captures photo evidence, GPS-stamped location, and time-stamped task completion for every cleaning visit. ATP bioluminescence testing of high-touch surfaces is available on request. This provides facility managers with verifiable, audit-ready proof that cleaning was performed to standard.
 
 2. **Procurement credentials**: MBE/MWBE certification, NYC DOE Approved Vendor status, and SAM.gov federal registration enable GreenPoint to bid on government, school, and diversity-spend contracts that competitors cannot access.
 
@@ -44,7 +44,7 @@ GreenPoint differentiates itself through:
 
 - Commercial janitorial cleaning (daily, weekly, monthly)
 - Facility maintenance
-- Disinfection (electrostatic, EPA-registered, ATP-verified)
+- Disinfection (electrostatic, EPA-registered, ATP testing available on request)
 - Floor care (VCT strip/seal/wax, carpet extraction, hard surface)
 - Day porter services
 - Window cleaning
@@ -1481,7 +1481,7 @@ Summary: A practical commercial cleaning RFP scope framework for room inventorie
 ## Homepage
 
 URL: https://greenpointms.com/
-Description: GreenPoint Maintenance Services Corp homepage. MBE-certified commercial janitorial and facility maintenance across NY, NJ, CT, PA, FL.
+Description: GreenPoint Maintenance Services Corp homepage. MBE/MWBE-certified commercial janitorial and facility maintenance across NY, NJ, CT, PA, FL.
 
 ## Capability Statement
 
@@ -1503,7 +1503,7 @@ Description: K-12 specialized cleaning programs, NYC DOE compliant. Charter scho
 URL: https://greenpointms.com/government-cleaning-services
 Description: Federal, state, and municipal facility maintenance. SAM.gov registered, Davis-Bacon compliant.
 
-## MBE-Certified Cleaning Company NYC
+## MBE/MWBE-Certified Cleaning Company NYC
 
 URL: https://greenpointms.com/mbe-certified-cleaning-company-nyc
 Description: MBE/MWBE certified diversity-spend qualified cleaning vendor for NYC procurement officers.
@@ -1542,4 +1542,4 @@ This file is regenerated whenever blog content changes. For the most up-to-date 
 
 For the curated index of GreenPoint's most important pages, see https://greenpointms.com/llms.txt.
 
-Last generated: 2026-11-03T16:42:42.264Z
+Last generated: 2026-11-04T14:53:14.017Z

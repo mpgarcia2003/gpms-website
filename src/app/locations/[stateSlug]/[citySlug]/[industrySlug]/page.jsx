@@ -16,8 +16,8 @@ export function generateMetadata({ params }) {
   const title = `${industry.shortName} Services in ${city.name}, ${state.abbr} | Professional ${industry.name}`;
   const svc = getService(params.industrySlug);
   const description = svc && svc.definition
-    ? `${svc.definition.split('.')[0]}. Professional ${industry.shortName.toLowerCase()} in ${city.name}, ${state.name}. MBE-certified, ATP-verified, StockPoint documented. Free facility walkthrough.`
-    : `Professional ${industry.shortName.toLowerCase()} services in ${city.name}, ${state.name}. MBE-certified commercial cleaning with real-time StockPoint verification. Free facility walkthrough.`;
+    ? `${svc.definition.split('.')[0]}. Professional ${industry.shortName.toLowerCase()} in ${city.name}, ${state.name}. MBE/MWBE-certified, StockPoint documented. ATP bioluminescence testing available on request. Free facility walkthrough.`
+    : `Professional ${industry.shortName.toLowerCase()} services in ${city.name}, ${state.name}. MBE/MWBE-certified commercial cleaning with real-time StockPoint verification. Free facility walkthrough.`;
 
   return {
     title,
@@ -37,8 +37,8 @@ export default function CityIndustryPage({ params }) {
 
   const title = (<>{industry.shortName} Services in {city.name}, <span style={{ color: "#2ecc71" }}>{state.abbr}</span></>);
   const subtitle = industry.definition
-    ? `${industry.definition.split('.').slice(0, 2).join('.')}. GreenPoint Maintenance Services provides MBE-certified ${industry.shortName.toLowerCase()} in ${city.name} and throughout ${state.name} with real-time ATP bioluminescence verification through StockPoint.`
-    : `${industry.description} GreenPoint Maintenance Services provides MBE-certified ${industry.shortName.toLowerCase()} in ${city.name} and throughout ${state.name} with real-time cleaning verification through StockPoint.`;
+    ? `${industry.definition.split('.').slice(0, 2).join('.')}. GreenPoint Maintenance Services provides MBE/MWBE-certified ${industry.shortName.toLowerCase()} in ${city.name} and throughout ${state.name} with real-time photo verification through StockPoint. ATP bioluminescence testing is available on request.`
+    : `${industry.description} GreenPoint Maintenance Services provides MBE/MWBE-certified ${industry.shortName.toLowerCase()} in ${city.name} and throughout ${state.name} with real-time cleaning verification through StockPoint.`;
 
   const breadcrumbs = [
     { label: state.name, href: `/locations/${state.slug}/` },
@@ -62,7 +62,7 @@ export default function CityIndustryPage({ params }) {
     {
       label: `What Is ${industry.shortName}`,
       heading: `${industry.name} in ${city.name}, ${state.abbr}`,
-      body: `${industry.definition}\n\nGreenPoint Maintenance Services provides professional ${industry.shortName.toLowerCase()} services throughout ${city.name} and ${city.county || state.name}. As an MBE-certified commercial cleaning company serving ${state.name} since 2018, we combine EPA-registered products, electrostatic application technology, and ATP bioluminescence verification to deliver measurable, documented results for every facility we serve.`,
+      body: `${industry.definition}\n\nGreenPoint Maintenance Services provides professional ${industry.shortName.toLowerCase()} services throughout ${city.name} and ${city.county || state.name}. As an MBE/MWBE-certified commercial cleaning company serving ${state.name} since 2018, we combine EPA-registered products and electrostatic application technology to deliver measurable, documented results for every facility we serve. ATP bioluminescence testing of high-touch surfaces is available on request.`,
       features: industry.includes || industry.features || [],
     },
     // SECTION: Why Needed
@@ -104,7 +104,7 @@ export default function CityIndustryPage({ params }) {
         { number: "98%", label: "Client Retention" },
         { number: "500+", label: "Facilities Served" },
         { number: "5", label: "States Covered" },
-        { number: "MBE", label: "Certified" },
+        { number: "MBE/MWBE", label: "Certified" },
       ],
     },
   ] : isService ? [
@@ -117,12 +117,12 @@ export default function CityIndustryPage({ params }) {
     {
       label: "Why GreenPoint",
       heading: `Why ${city.name} Facilities Trust GreenPoint`,
-      body: `As a Certified Minority Business Enterprise headquartered in New York, we understand the unique demands of facilities in ${city.name}, ${state.abbr}. Our StockPoint system provides real-time photo verification and ATP bioluminescence testing.`,
+      body: `As an MBE/MWBE-certified company headquartered in New York, we understand the unique demands of facilities in ${city.name}, ${state.abbr}. Our StockPoint system provides real-time photo verification. ATP bioluminescence testing is available on request.`,
       stats: [
         { number: "98%", label: "Client Retention" },
         { number: "500+", label: "Facilities Served" },
         { number: "5", label: "States Covered" },
-        { number: "MBE", label: "Certified" },
+        { number: "MBE/MWBE", label: "Certified" },
       ],
     },
     {
@@ -148,7 +148,7 @@ export default function CityIndustryPage({ params }) {
         { number: "98%", label: "Client Retention Rate" },
         { number: "500+", label: "Facilities Maintained" },
         { number: "24/7", label: "Emergency Response" },
-        { number: "MBE", label: "Certified Enterprise" },
+        { number: "MBE/MWBE", label: "Certified Enterprise" },
       ],
     },
     {

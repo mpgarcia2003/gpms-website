@@ -1,12 +1,12 @@
 import SeoLandingPage from "../../components/SeoLandingPage";
 
 export const metadata = {
-  title: "MBE Certified Cleaning Company NYC | GreenPoint Maintenance Services",
+  title: "MBE/MWBE Certified Cleaning Company NYC | GreenPoint Maintenance Services",
   description:
-    "GreenPoint Maintenance Services Corp is a certified Minority Business Enterprise providing commercial janitorial and facility maintenance across NYC. SAM.gov registered. NAICS 561720. Free facility assessment.",
+    "GreenPoint Maintenance Services Corp is an MBE/MWBE-certified company providing commercial janitorial and facility maintenance across NYC. SAM.gov registered. NAICS 561720. Free facility assessment.",
   keywords: [
-    "MBE certified cleaning company NYC",
-    "minority business enterprise janitorial",
+    "MBE/MWBE certified cleaning company NYC",
+    "MBE/MWBE janitorial",
     "MWBE cleaning services New York",
     "MBE janitorial contractor NYC",
     "diversity procurement cleaning",
@@ -14,9 +14,9 @@ export const metadata = {
     "NAICS 561720 NYC",
   ],
   openGraph: {
-    title: "MBE Certified Cleaning Company NYC | GreenPoint Maintenance",
+    title: "MBE/MWBE Certified Cleaning Company NYC | GreenPoint Maintenance",
     description:
-      "NYC & NYS certified Minority Business Enterprise. Commercial janitorial, facility maintenance, and sanitization. SAM.gov registered with NAICS 561720, 238210, 561790.",
+      "NYC & NYS MBE/MWBE-certified company. Commercial janitorial, facility maintenance, and sanitization. SAM.gov registered with NAICS 561720, 238210, 561790.",
     url: "https://greenpointms.com/mbe-certified-cleaning-company-nyc",
   },
   alternates: { canonical: "https://greenpointms.com/mbe-certified-cleaning-company-nyc" },
@@ -72,9 +72,9 @@ const faqSchema = {
 export default function MBECertifiedCleaningCompanyNYC() {
   return (
     <SeoLandingPage
-      headline="MBE-Certified Commercial Cleaning in"
+      headline="MBE/MWBE-Certified Commercial Cleaning in"
       highlightWord="New York City"
-      subheadline="GreenPoint Maintenance Services Corp is a certified Minority Business Enterprise delivering verified janitorial and facility maintenance. SAM.gov registered. NAICS 561720. 5-state coverage."
+      subheadline="GreenPoint Maintenance Services Corp is an MBE/MWBE-certified company delivering verified janitorial and facility maintenance. SAM.gov registered. NAICS 561720. 5-state coverage."
       trustBadges={[
         "MBE / MWBE Certified",
         "SAM.gov Registered",
@@ -83,20 +83,20 @@ export default function MBECertifiedCleaningCompanyNYC() {
       ]}
       introParagraphs={[
         "Procurement officers and facility managers seeking MBE-certified cleaning vendors in New York City need a provider that delivers both compliance documentation and measurable cleaning performance. GreenPoint Maintenance Services Corp holds MBE certification through NYC Small Business Services and MWBE certification through New York State — verified credentials that satisfy diversity spending goals for city, state, and federal contracts.",
-        "Beyond certification, GreenPoint brings operational rigor that separates us from checkbox vendors. Every cleaning session is documented through StockPoint, our proprietary verification system with timestamped photos, GPS-tagged task completion, and ATP bioluminescence testing. When auditors or board members ask for proof of service, you have a real-time dashboard — not a cleaning crew's word.",
+        "Beyond certification, GreenPoint brings operational rigor that separates us from checkbox vendors. Every cleaning session is documented through StockPoint, our proprietary verification system with timestamped photos and GPS-tagged task completion. ATP bioluminescence testing is available on request. When auditors or board members ask for proof of service, you have a real-time dashboard — not a cleaning crew's word.",
         "We serve over 80 facilities across five states with a workforce of 80+ background-checked professionals. Our NAICS codes — 561720 (Janitorial), 238210 (Electrical/Wiring), and 561790 (Building Services) — cover the full spectrum of facility maintenance. One vendor, one invoice, one point of accountability.",
       ]}
       services={[
         { iconKey: "building", title: "Commercial Janitorial Programs", desc: "Daily, weekly, and monthly cleaning for offices, lobbies, restrooms, and common areas. Customized scope of work with fixed pricing and no hidden fees." },
-        { iconKey: "shield", title: "Disinfection & Sanitization", desc: "CDC-compliant electrostatic disinfection and ATP-verified surface sanitization for schools, healthcare, and high-traffic environments." },
+        { iconKey: "shield", title: "Disinfection & Sanitization", desc: "CDC-compliant electrostatic disinfection for schools, healthcare, and high-traffic environments. ATP bioluminescence testing available on request." },
         { iconKey: "floor", title: "Floor Care & Restoration", desc: "VCT stripping and refinishing, carpet extraction, marble and stone maintenance, and hardwood care. Scheduled or one-time deep clean programs." },
         { iconKey: "user-check", title: "Day Porter Services", desc: "Dedicated on-site daytime staff for continuous upkeep of lobbies, restrooms, conference rooms, and high-traffic zones during business hours." },
         { iconKey: "wrench", title: "Facility Maintenance", desc: "Light plumbing, electrical, painting, and general repairs under NAICS 238210 and 561790. Consolidate vendors and reduce administrative overhead." },
         { iconKey: "hardhat", title: "Post-Construction Cleanup", desc: "Three-stage rough, light, and final construction cleanup. Dust removal, window cleaning, floor preparation. Move-in ready within 48 hours." },
       ]}
       whyChooseUs={[
-        { iconKey: "award", title: "MBE / MWBE Certified", desc: "Verified Minority Business Enterprise through NYC SBS and NYS. Qualifies for diversity procurement, set-aside contracts, and supplier diversity programs." },
-        { iconKey: "shield", title: "StockPoint Verification", desc: "Proprietary real-time cleaning verification with timestamped photos, GPS tagging, and ATP bioluminescence testing. Audit-ready documentation on demand." },
+        { iconKey: "award", title: "MBE / MWBE Certified", desc: "MBE/MWBE certified through NYC SBS and NYS. Qualifies for diversity procurement, set-aside contracts, and supplier diversity programs." },
+        { iconKey: "shield", title: "StockPoint Verification", desc: "Proprietary real-time cleaning verification with timestamped photos and GPS tagging. ATP bioluminescence testing available on request. Audit-ready documentation on demand." },
         { iconKey: "landmark", title: "SAM.gov & Federal Ready", desc: "Actively registered on SAM.gov with valid CAGE code and UEI. NAICS 561720, 238210, 561790. Capability statement and full vendor package available." },
         { iconKey: "building", title: "5-State, 80+ Workforce", desc: "Operational across NY, NJ, CT, PA, and FL with 80+ background-checked professionals. Scalable from single-site to multi-location contracts." },
       ]}
@@ -108,7 +108,7 @@ export default function MBECertifiedCleaningCompanyNYC() {
         { q: "How do I get a capability statement or W-9?", a: "Download our capability statement at greenpointms.com/capability-statement. For W-9, COI, or other procurement documents, email info@greenpointms.com or call 844-814-0810." },
       ]}
       ctaHeadline="Request a Facility Assessment"
-      ctaSubheadline="Download our capability statement, schedule a walkthrough, or request vendor documentation. MBE-certified, SAM.gov registered, fully insured."
+      ctaSubheadline="Download our capability statement, schedule a walkthrough, or request vendor documentation. MBE/MWBE-certified, SAM.gov registered, fully insured."
       schemaMarkup={faqSchema}
     />
   );

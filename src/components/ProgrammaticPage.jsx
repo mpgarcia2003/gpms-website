@@ -146,7 +146,7 @@ export default function ProgrammaticPage({ title, subtitle, breadcrumbs, heroIco
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(180px, 1fr))", gap: 20, marginTop: 28 }}>
                 {section.stats.map((stat, si) => (
                   <div key={si} style={{ textAlign: "center", padding: 20, background: "#FFFFFF", border: "1px solid #E2EBE5", borderRadius: 10, boxShadow: "0 2px 8px rgba(0,0,0,0.04)" }}>
-                    <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 36, fontWeight: 800, color: "#1B7A3D" }}>{stat.number}</div>
+                    <div style={{ fontFamily: "'Syne', sans-serif", fontSize: String(stat.number).length > 5 ? 22 : 36, fontWeight: 800, color: "#1B7A3D", whiteSpace: "nowrap" }}>{stat.number}</div>
                     <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "#6A7D72", marginTop: 6 }}>{stat.label}</div>
                   </div>
                 ))}

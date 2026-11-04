@@ -9,7 +9,7 @@ export function generateMetadata({ params }) {
   const state = getState(params.stateSlug);
   if (!state) return {};
   const title = `Commercial Cleaning Services in ${state.name} (${state.abbr})`;
-  const description = `MBE-certified commercial janitorial and facility maintenance across ${state.name}. Serving ${state.cities.map(c => c.name).join(', ')} and surrounding areas.`;
+  const description = `MBE/MWBE-certified commercial janitorial and facility maintenance across ${state.name}. Serving ${state.cities.map(c => c.name).join(', ')} and surrounding areas.`;
   return { title, description, alternates: { canonical: `https://greenpointms.com/locations/${params.stateSlug}/` } };
 }
 
@@ -18,7 +18,7 @@ export default function StatePage({ params }) {
   if (!state) return <div>Page not found</div>;
 
   const title = (<>Commercial Cleaning in <span style={{ color: "#2ecc71" }}>{state.name}</span></>);
-  const subtitle = `GreenPoint Maintenance Services provides MBE-certified commercial janitorial and facility maintenance across ${state.name}. We serve ${state.cities.length} cities and surrounding areas with real-time StockPoint cleaning verification.`;
+  const subtitle = `GreenPoint Maintenance Services provides MBE/MWBE-certified commercial janitorial and facility maintenance across ${state.name}. We serve ${state.cities.length} cities and surrounding areas with real-time StockPoint cleaning verification.`;
   const breadcrumbs = [{ label: state.name }];
 
   const sections = [

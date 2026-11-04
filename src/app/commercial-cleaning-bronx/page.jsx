@@ -3,7 +3,7 @@ import SeoLandingPage from "../../components/SeoLandingPage";
 export const metadata = {
   title: "Commercial Cleaning Services Bronx NY | GreenPoint Maintenance",
   description:
-    "Bronx-based commercial janitorial and facility maintenance. Schools, offices, medical, churches, government buildings. MBE certified. Local team, same-day response. Free walkthrough.",
+    "Bronx-based commercial janitorial and facility maintenance. Schools, offices, medical, churches, government buildings. MBE/MWBE certified. Local team, same-day response. Free walkthrough.",
   keywords: [
     "commercial cleaning Bronx",
     "janitorial services Bronx NY",
@@ -17,7 +17,7 @@ export const metadata = {
   openGraph: {
     title: "Commercial Cleaning Services Bronx NY | GreenPoint Maintenance",
     description:
-      "Headquartered in the Bronx. Commercial janitorial for schools, offices, healthcare, churches, and government facilities. MBE certified. Same-day emergency response.",
+      "Headquartered in the Bronx. Commercial janitorial for schools, offices, healthcare, churches, and government facilities. MBE/MWBE certified. Same-day emergency response.",
     url: "https://greenpointms.com/commercial-cleaning-bronx",
   },
   alternates: { canonical: "https://greenpointms.com/commercial-cleaning-bronx" },
@@ -84,21 +84,21 @@ export default function CommercialCleaningBronx() {
       ]}
       introParagraphs={[
         "GreenPoint Maintenance Services Corp is not a Manhattan company sending crews uptown — we are headquartered in the Bronx. Our teams live here, work here, and know every neighborhood from Fordham to Pelham Bay, Riverdale to Mott Haven, Throggs Neck to Parkchester. When your facility needs same-day emergency cleaning or a 6 AM crew before school opens, our proximity matters.",
-        "We serve Bronx schools, churches, medical offices, daycares, government buildings, and commercial offices with dedicated janitorial programs built for each facility type. Every cleaning session is verified through StockPoint — timestamped photos, GPS-tagged task completion, and ATP bioluminescence testing that gives facility managers audit-ready documentation, not just a promise that someone showed up.",
-        "As a certified Minority Business Enterprise with $2M+ insurance coverage and SAM.gov registration, GreenPoint meets the procurement requirements for school districts, municipal agencies, healthcare networks, and religious institutions across the Bronx and the wider NYC metro area. One vendor for cleaning and facility maintenance — fixed pricing, no surprises, no excuses.",
+        "We serve Bronx schools, churches, medical offices, daycares, government buildings, and commercial offices with dedicated janitorial programs built for each facility type. Every cleaning session is verified through StockPoint — timestamped photos and GPS-tagged task completion that give facility managers audit-ready documentation, not just a promise that someone showed up. ATP bioluminescence testing is available on request.",
+        "As an MBE/MWBE-certified company with $2M+ insurance coverage and SAM.gov registration, GreenPoint meets the procurement requirements for school districts, municipal agencies, healthcare networks, and religious institutions across the Bronx and the wider NYC metro area. One vendor for cleaning and facility maintenance — fixed pricing, no surprises, no excuses.",
       ]}
       services={[
         { iconKey: "building", title: "Commercial Janitorial", desc: "Daily, weekly, and monthly cleaning programs for offices, lobbies, restrooms, and common areas. Customized scope of work with fixed pricing and StockPoint verification." },
         { iconKey: "school", title: "School & Educational Cleaning", desc: "CDC-compliant janitorial for Bronx K-12 schools, charter schools, and educational facilities. Green Seal products, cafeteria deep cleaning, summer restoration programs." },
         { iconKey: "church", title: "House of Worship Cleaning", desc: "Sanctuary care, fellowship hall event turnaround, nursery sanitization. Flexible scheduling around worship services, events, and religious holidays." },
-        { iconKey: "medical", title: "Medical & Healthcare Cleaning", desc: "OSHA-compliant sanitization for exam rooms, waiting areas, and clinical spaces. ATP-verified surface disinfection for healthcare compliance standards." },
+        { iconKey: "medical", title: "Medical & Healthcare Cleaning", desc: "OSHA-compliant sanitization for exam rooms, waiting areas, and clinical spaces. ATP bioluminescence testing of high-touch surfaces is available on request." },
         { iconKey: "floor", title: "Floor Care & Restoration", desc: "VCT strip and refinish, carpet extraction, marble and stone polishing, hardwood maintenance. Scheduled programs or one-time deep cleans." },
         { iconKey: "hardhat", title: "Post-Construction Cleanup", desc: "Three-stage construction cleanup for Bronx renovation and new build projects. Dust removal, window cleaning, floor prep. Move-in ready in 48 hours." },
       ]}
       whyChooseUs={[
         { iconKey: "building", title: "Bronx-Based Headquarters", desc: "Local presence means faster response, same-day emergency availability, and a team that knows Bronx buildings, neighborhoods, and facility challenges firsthand." },
-        { iconKey: "shield", title: "StockPoint Verification", desc: "Every cleaning session documented with timestamped photos, GPS tagging, and ATP bioluminescence testing. Real-time dashboard access for facility managers." },
-        { iconKey: "award", title: "MBE / MWBE Certified", desc: "Registered Minority Business Enterprise qualified for diversity procurement with NYC, NYS, and federal agencies. SAM.gov registered, NAICS 561720." },
+        { iconKey: "shield", title: "StockPoint Verification", desc: "Every cleaning session documented with timestamped photos and GPS tagging. ATP bioluminescence testing available on request. Real-time dashboard access for facility managers." },
+        { iconKey: "award", title: "MBE / MWBE Certified", desc: "MBE/MWBE certified and qualified for diversity procurement with NYC, NYS, and federal agencies. SAM.gov registered, NAICS 561720." },
         { iconKey: "building", title: "Dedicated Local Teams", desc: "Same background-checked, Bronx-based crew assigned to your facility every visit. Consistency, accountability, and familiarity your staff can rely on." },
       ]}
       faqItems={[
