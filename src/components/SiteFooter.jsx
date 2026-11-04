@@ -20,7 +20,7 @@ export default function SiteFooter() {
               </div>
             </div>
             <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.7, maxWidth: 340 }}>
-              MBE-certified facility services provider. Commercial janitorial and facility maintenance across NY, NJ, CT, PA &amp; FL. Serving institutional and commercial clients since 2018.
+              MBE-certified facility services provider. Commercial janitorial and facility maintenance across New York City, New Jersey &amp; South Florida. Serving institutional and commercial clients since 2018.
             </p>
             <div style={{ display: "flex", gap: 8, marginTop: 18, flexWrap: "wrap" }}>
               {["MBE / MWBE", "SAM.gov Registered", "Bonded & Insured"].map((badge) => (

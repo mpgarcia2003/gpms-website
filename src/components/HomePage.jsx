@@ -276,19 +276,9 @@ const AREAS = [
     regions: ["Newark", "Jersey City", "Paterson", "Elizabeth", "Hackensack", "Fort Lee", "Bergen County"],
   },
   {
-    state: "Connecticut",
-    abbr: "CT",
-    regions: ["Stamford", "Bridgeport", "New Haven", "Hartford", "Norwalk", "Danbury", "Fairfield County"],
-  },
-  {
-    state: "Pennsylvania",
-    abbr: "PA",
-    regions: ["Philadelphia", "Allentown", "Scranton", "Bethlehem", "Reading", "King of Prussia"],
-  },
-  {
     state: "Florida",
     abbr: "FL",
-    regions: ["Orlando", "Miami", "Fort Lauderdale", "Kissimmee", "Miami Beach", "Coral Gables", "Hialeah"],
+    regions: ["Miami", "Fort Lauderdale", "Miami Beach", "Coral Gables", "Hialeah"],
   },
 ];
 
@@ -339,7 +329,7 @@ const PROCESS_STEPS = [
 const FAQ_ITEMS = [
   {
     q: "What areas does GreenPoint Maintenance Services serve?",
-    a: "We provide commercial janitorial and facility maintenance services across five states: New York (Bronx, Manhattan, Brooklyn, Queens, Westchester), New Jersey, Connecticut, Pennsylvania, and Florida (Orlando and Miami metro areas).",
+    a: "We provide commercial janitorial and facility maintenance services across New York City and nearby New York counties (Bronx, Manhattan, Brooklyn, Queens, Westchester), New Jersey, and South Florida (Miami and Fort Lauderdale areas).",
   },
   {
     q: "What is StockPoint and how does it work?",
@@ -1570,7 +1560,7 @@ function Hero() {
               fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 18, color: "#4A5E52",
               lineHeight: 1.7, marginBottom: 36, maxWidth: 520,
             }}>
-              MBE-certified facility maintenance for schools, healthcare, houses of worship, and government buildings across NY, NJ, CT, PA &amp; FL. Every cleaning session verified in real-time through StockPoint.
+              MBE-certified facility maintenance for schools, healthcare, houses of worship, and government buildings across New York City, New Jersey &amp; South Florida. Every cleaning session verified in real-time through StockPoint.
             </p>
 
             <div className="hero-ctas-anim" style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
@@ -1769,7 +1759,7 @@ function About() {
                 Your Last Cleaning Company<br />Didn't Show Up. <span style={{ color: "#1B7A3D" }}>We Will.</span>
               </h2>
               <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "#4A5E52", lineHeight: 1.8, marginBottom: 20 }}>
-                GreenPoint Maintenance Services Corp is an MBE-certified facility services provider headquartered in New York, serving institutional and commercial clients across five states since 2018. We specialize in the facilities that can't afford missed cleanings: schools with health inspections, medical offices with OSHA requirements, and government buildings with procurement compliance standards.
+                GreenPoint Maintenance Services Corp is an MBE-certified facility services provider headquartered in New York, serving institutional and commercial clients across New York City, New Jersey, and South Florida since 2018. We specialize in the facilities that can't afford missed cleanings: schools with health inspections, medical offices with OSHA requirements, and government buildings with procurement compliance standards.
               </p>
               <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "#4A5E52", lineHeight: 1.8, marginBottom: 28 }}>
                 Every cleaning session is verified in real-time through StockPoint — our proprietary system that provides timestamped photo documentation, GPS-tagged task completion, and ATP bioluminescence readings. You don't have to trust that we cleaned. You can see the proof.
@@ -2158,13 +2148,13 @@ function ServiceAreas() {
               Service Areas
             </div>
             <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 3.5vw, 42px)", fontWeight: 700, color: "#1A2B1F", lineHeight: 1.15, marginBottom: 16 }}>
-              Serving Five States.<br />
+              Serving NYC, NJ &amp; South Florida.<br />
               <span style={{ color: "#1B7A3D" }}>Rooted in New York.</span>
             </h2>
           </div>
         </AnimatedSection>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(5, 1fr)", gap: 20 }} className="areas-grid">
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 20 }} className="areas-grid">
           {AREAS.map((area, i) => (
             <AnimatedSection key={area.state} delay={i * 0.1}>
               <div style={{
@@ -2689,7 +2679,7 @@ function Footer() {
               </div>
             </div>
             <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "rgba(255,255,255,0.45)", lineHeight: 1.7, maxWidth: 320 }}>
-              MBE-certified facility services provider. Commercial janitorial and facility maintenance across NY, NJ, CT, PA, and FL since 2018.
+              MBE-certified facility services provider. Commercial janitorial and facility maintenance across New York City, New Jersey, and South Florida since 2018.
             </p>
             <div style={{ display: "flex", gap: 8, marginTop: 18, flexWrap: "wrap" }}>
               {["MBE / MWBE", "NYC DOE Vendor", "SAM.gov", "Bonded & Insured"].map((badge) => (
