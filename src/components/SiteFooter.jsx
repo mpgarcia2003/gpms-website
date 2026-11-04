@@ -60,7 +60,7 @@ export default function SiteFooter() {
             <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "#C8A34D", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.15em", marginBottom: 18, paddingBottom: 12, borderBottom: "1px solid rgba(200,163,77,0.15)" }}>Company</div>
             {[
               { label: "Careers \u2014 We\u2019re Hiring!", href: "/careers", highlight: true },
-              { label: "Schedule a Consultation", href: "/#schedule" },
+              { label: "Schedule a Consultation", href: "/#schedule", ctaLocation: "site_footer_consultation" },
               { label: "The GreenPoint Playbook", href: "/playbook" },
               { label: "Government Services", href: "/government-cleaning-services" },
               { label: "Capability Statement", href: "/capability-statement" },
@@ -70,7 +70,7 @@ export default function SiteFooter() {
               { label: "Team Conduct & Safety Policy", href: "/team-conduct-safety-policy" },
               { label: "Incident Report", href: "/incident-report" },
             ].map((link) => (
-              <a key={link.label} href={link.href} style={{ display: "block", fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: link.highlight ? "#C8A34D" : "rgba(255,255,255,0.5)", fontWeight: link.highlight ? 600 : 400, textDecoration: "none", marginBottom: 10, transition: "color 0.2s" }}
+              <a key={link.label} href={link.href} data-cta-location={link.ctaLocation} style={{ display: "block", fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: link.highlight ? "#C8A34D" : "rgba(255,255,255,0.5)", fontWeight: link.highlight ? 600 : 400, textDecoration: "none", marginBottom: 10, transition: "color 0.2s" }}
                 onMouseOver={(e) => e.target.style.color = "#C8A34D"} onMouseOut={(e) => e.target.style.color = link.highlight ? "#C8A34D" : "rgba(255,255,255,0.5)"}>{link.label}</a>
             ))}
             <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "#C8A34D", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.15em", marginTop: 28, marginBottom: 14, paddingBottom: 12, borderBottom: "1px solid rgba(200,163,77,0.15)" }}>Service Areas</div>

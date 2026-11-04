@@ -1,4 +1,5 @@
 import './globals.css';
+import WalkthroughCtaTracker from '../components/WalkthroughCtaTracker';
 
 export const metadata = {
   title: {
@@ -113,6 +114,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body style={{ margin: 0, padding: 0, fontFamily: "'Plus Jakarta Sans', sans-serif", background: '#FFFFFF', color: '#1A2B1F' }}>
+        <WalkthroughCtaTracker />
         {children}
       </body>
     </html>
