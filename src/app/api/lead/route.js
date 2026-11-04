@@ -137,6 +137,40 @@ function notificationRecipient() {
   return { email: candidate };
 }
 
+// greenpointms.com is not a verified Resend domain (not_started).
+// mail.getstockpoint.com is verified. Override with LEAD_FROM_EMAIL after DNS verification.
+const DEFAULT_LEAD_FROM = "GreenPoint Website <leads@mail.getstockpoint.com>";
+
+function leadFromAddress() {
+  const configured = process.env.LEAD_FROM_EMAIL;
+  if (typeof configured !== "string") return DEFAULT_LEAD_FROM;
+  const value = configured.trim();
+  return value || DEFAULT_LEAD_FROM;
+}
+
+function resendApiKey() {
+  const preferred = process.env.GREENPOINT_RESEND_API_KEY;
+  const fallback = process.env.RESEND_API_KEY;
+  const raw = typeof preferred === "string" && preferred.trim() ? preferred : fallback;
+  return typeof raw === "string" ? raw.trim() : "";
+}
+
+function logResendFailure(form, error) {
+  const source = error && typeof error === "object" ? error : {};
+  const name = typeof source.name === "string" && source.name ? source.name : "Error";
+  const rawMessage = typeof source.message === "string" && source.message ? source.message : "Resend send failed";
+  const message = rawMessage
+    .replace(/re_[A-Za-z0-9_-]+/g, "[redacted]")
+    .replace(/[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/g, "[redacted]");
+  const statusCode =
+    typeof source.statusCode === "number"
+      ? source.statusCode
+      : typeof source.status === "number"
+        ? source.status
+        : undefined;
+  console.error("[lead] resend send failed", { form, name, message, statusCode });
+}
+
 function row(label, value) {
   return `<tr>
     <td style="padding:8px 12px 8px 0;font-size:13px;color:#888;vertical-align:top;width:140px;">${escapeHtml(label)}</td>
@@ -241,7 +275,7 @@ export async function POST(req) {
       return NextResponse.json({ error: "Facility type is not recognized." }, { status: 400 });
     }
 
-    const resendKey = typeof process.env.RESEND_API_KEY === "string" ? process.env.RESEND_API_KEY.trim() : "";
+    const resendKey = resendApiKey();
     if (!resendKey) {
       console.error("[lead] email is not configured");
       return NextResponse.json(
@@ -267,14 +301,14 @@ export async function POST(req) {
     try {
       const resend = new Resend(resendKey);
       sendResult = await resend.emails.send({
-        from: "GreenPoint Website <info@greenpointms.com>",
+        from: leadFromAddress(),
         to: [recipient.email],
-        replyTo: fields.email,
+        replyTo: EMAIL_RE.test(fields.email) ? fields.email : undefined,
         subject,
         html: buildLeadEmailHtml({ formLabel: source.label, fields, submittedAt }),
       });
-    } catch {
-      console.error("[lead] notification was not sent");
+    } catch (error) {
+      logResendFailure(body.form, error);
       return NextResponse.json(
         { error: "We could not send your request. Please try again or call 844-814-0810." },
         { status: 502 }
@@ -282,7 +316,7 @@ export async function POST(req) {
     }
 
     if (sendResult?.error || !sendResult?.data?.id) {
-      console.error("[lead] notification was not sent");
+      logResendFailure(body.form, sendResult?.error);
       return NextResponse.json(
         { error: "We could not send your request. Please try again or call 844-814-0810." },
         { status: 502 }
