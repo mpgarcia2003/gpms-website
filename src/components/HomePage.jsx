@@ -476,6 +476,30 @@ function formatCurrency(amount) {
   return new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", minimumFractionDigits: 0, maximumFractionDigits: 0 }).format(amount);
 }
 
+function leadErrorMessage(data, fallback) {
+  if (data && typeof data.error === "string" && data.error.length > 0 && data.error.length < 300) return data.error;
+  return fallback;
+}
+
+async function postLead(payload) {
+  const res = await fetch("/api/lead", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload),
+  });
+  let data = null;
+  try {
+    data = await res.json();
+  } catch {
+    data = null;
+  }
+  if (!res.ok) {
+    const err = new Error(leadErrorMessage(data, "We couldn't send that. Please try again or call 844-814-0810."));
+    err.isLeadError = true;
+    throw err;
+  }
+}
+
 function calculateQuote(settings, rooms, porters) {
   const { industry, squareFootage, churchCapacity, seatingType, buildingSize, laborHoursPerDay, showerCount, hasSauna, studentCount, changingStations } = settings;
   let grandTotal = 0;
@@ -593,6 +617,9 @@ function QuoteCalculator() {
   const [porters, setPorters] = useState([{ id: "p1", name: "Day Porter", quantity: 0, hoursPerDay: 4 }]);
   const [quoteEmail, setQuoteEmail] = useState('');
   const [quoteEmailSubmitted, setQuoteEmailSubmitted] = useState(false);
+  const [quoteEmailSending, setQuoteEmailSending] = useState(false);
+  const [quoteEmailError, setQuoteEmailError] = useState('');
+  const quoteSendLock = useRef(false);
 
   const quote = calculateQuote(settings, rooms, porters);
 
@@ -709,6 +736,72 @@ function QuoteCalculator() {
   // ---- STEP 3: Calculator ----
   const industryPresets = PRESET_ROOMS[settings.industry] || [];
   const industryLabel = QUOTE_INDUSTRIES.find((i) => i.id === settings.industry)?.title || settings.industry;
+
+  function quoteDetails() {
+    const lines = [
+      `Industry: ${industryLabel}`,
+      `Service: ${settings.serviceType === "recurring" ? "Ongoing maintenance" : "One-time deep clean"}`,
+      `Estimate: ${formatCurrency(quote.grandTotal)}${settings.serviceType === "recurring" ? " per month" : ""}`,
+    ];
+    for (const item of quote.breakdown) {
+      const amount = Number(item.value);
+      if (item.label && Number.isFinite(amount)) lines.push(`${item.label}: ${formatCurrency(amount)}`);
+    }
+    if (settings.industry === "church") {
+      lines.push(`Sanctuary capacity: ${settings.churchCapacity}`);
+      lines.push(`Seating: ${settings.seatingType}`);
+    } else if (settings.squareFootage) {
+      lines.push(`Square footage: ${Number(settings.squareFootage).toLocaleString()}`);
+    }
+    if (settings.industry === "fitness") {
+      lines.push(`Shower stalls: ${settings.showerCount}`);
+      lines.push(`Sauna / steam: ${settings.hasSauna ? "yes" : "no"}`);
+    }
+    if (settings.industry === "daycare") {
+      lines.push(`Students enrolled: ${settings.studentCount}`);
+      lines.push(`Changing stations: ${settings.changingStations}`);
+    }
+    if (settings.industry === "hoa") lines.push(`Building size: ${settings.buildingSize}`);
+    if (settings.industry === "warehouse") {
+      lines.push(`Labor hours/day: ${settings.laborHoursPerDay}`);
+      lines.push(`Scrubbing sq ft: ${settings.warehouseScrubbingSqFt}`);
+    }
+    if (settings.industry === "hotel") lines.push(`Guest rooms: ${settings.hotelRooms}`);
+    const activeRooms = rooms.filter((room) => Number(room.quantity) > 0);
+    if (activeRooms.length) {
+      lines.push("Rooms: " + activeRooms.map((room) => `${room.name} x ${room.quantity}`).join(", "));
+    }
+    const activePorters = porters.filter((porter) => Number(porter.quantity) > 0);
+    if (activePorters.length) {
+      lines.push("Day porters: " + activePorters.map((porter) => `${porter.name} x ${porter.quantity}, ${porter.hoursPerDay} hrs/day`).join("; "));
+    }
+    return lines.join("\n").slice(0, 4000);
+  }
+
+  async function sendQuoteEmail() {
+    if (quoteSendLock.current) return;
+    const email = quoteEmail.trim();
+    if (!email) {
+      setQuoteEmailError("Enter your email address.");
+      return;
+    }
+    quoteSendLock.current = true;
+    setQuoteEmailError("");
+    setQuoteEmailSending(true);
+    try {
+      await postLead({ form: "quote", email, message: quoteDetails() });
+      setQuoteEmailSubmitted(true);
+    } catch (err) {
+      setQuoteEmailError(
+        err?.isLeadError
+          ? err.message
+          : "We couldn't send your quote request. Please check your connection and try again."
+      );
+    } finally {
+      quoteSendLock.current = false;
+      setQuoteEmailSending(false);
+    }
+  }
 
   return (
     <section id="quote" style={{ background: "#FFFFFF", padding: "100px 24px" }}>
@@ -942,7 +1035,10 @@ function QuoteCalculator() {
                         type="email"
                         placeholder="your@email.com"
                         value={quoteEmail}
-                        onChange={(e) => setQuoteEmail(e.target.value)}
+                        onChange={(e) => {
+                          setQuoteEmail(e.target.value);
+                          if (quoteEmailError) setQuoteEmailError('');
+                        }}
                         onFocus={(e) => (e.target.style.borderColor = 'rgba(27,122,61,0.5)')}
                         onBlur={(e) => (e.target.style.borderColor = '#E2EBE5')}
                         style={{
@@ -953,21 +1049,25 @@ function QuoteCalculator() {
                         }}
                       />
                       <button
-                        onClick={() => {
-                          if (!quoteEmail) return;
-                          console.log('[GreenPoint] Quote email capture:', { email: quoteEmail, quote, settings });
-                          setQuoteEmailSubmitted(true);
-                        }}
+                        type="button"
+                        disabled={quoteEmailSending}
+                        onClick={sendQuoteEmail}
                         style={{
                           padding: '10px 16px', background: '#1B7A3D',
                           border: 'none', borderRadius: 4, color: '#FFFFFF', fontSize: 12, fontWeight: 700,
-                          cursor: 'pointer', fontFamily: "'Plus Jakarta Sans', sans-serif", whiteSpace: 'nowrap',
+                          cursor: quoteEmailSending ? 'wait' : 'pointer', fontFamily: "'Plus Jakarta Sans', sans-serif", whiteSpace: 'nowrap',
                           boxShadow: '0 2px 12px rgba(27,122,61,0.25)',
+                          opacity: quoteEmailSending ? 0.7 : 1,
                         }}
                       >
-                        Send →
+                        {quoteEmailSending ? 'Sending…' : 'Send →'}
                       </button>
                     </div>
+                    {quoteEmailError && (
+                      <p role="alert" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 12, color: '#a83a3a', margin: '10px 0 0', lineHeight: 1.45 }}>
+                        {quoteEmailError}
+                      </p>
+                    )}
                   </>
                 )}
               </div>
@@ -2381,6 +2481,54 @@ function AcuitySection() {
 }
 
 function ContactSection() {
+  const [contact, setContact] = useState({
+    name: "", email: "", phone: "", facilityType: "", message: "",
+  });
+  const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState("");
+  const sendLock = useRef(false);
+
+  function updateContact(key, value) {
+    setContact((prev) => ({ ...prev, [key]: value }));
+    if (error) setError("");
+  }
+
+  async function submitContact(e) {
+    e.preventDefault();
+    if (sendLock.current) return;
+    if (!contact.name.trim() || !contact.email.trim() || !contact.phone.trim()) {
+      setError("Name, email, and phone are required.");
+      return;
+    }
+    sendLock.current = true;
+    setError("");
+    setSubmitting(true);
+    // Click that actually sends the walkthrough request. Empty submits and the
+    // in-flight lock do not count. No scheduler scroll: the POST is the action.
+    trackWalkthroughCta("contact_walkthrough");
+    try {
+      await postLead({
+        form: "contact",
+        name: contact.name.trim(),
+        email: contact.email.trim(),
+        phone: contact.phone.trim(),
+        facilityType: contact.facilityType,
+        message: contact.message.trim(),
+      });
+      setSubmitted(true);
+    } catch (err) {
+      setError(
+        err?.isLeadError
+          ? err.message
+          : "We couldn't send your message. Please check your connection and try again."
+      );
+    } finally {
+      sendLock.current = false;
+      setSubmitting(false);
+    }
+  }
+
   return (
     <section id="contact" style={{ background: "#F7FAF8", padding: "100px 24px" }}>
       <div style={{ maxWidth: 800, margin: "0 auto", textAlign: "center" }}>
@@ -2399,19 +2547,36 @@ function ContactSection() {
             background: "#FFFFFF", borderRadius: 12, padding: 48, border: "1px solid #E2EBE5",
             textAlign: "left",
           }}>
+            {submitted ? (
+              <div style={{ textAlign: "center", padding: "12px 0" }}>
+                <div style={{ display: "flex", justifyContent: "center", marginBottom: 12 }}>
+                  <CheckCircleIcon size={40} color="#1B7A3D" />
+                </div>
+                <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: 22, fontWeight: 700, color: "#1A2B1F", marginBottom: 8 }}>
+                  Message received
+                </h3>
+                <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 15, color: "#4A5E52", lineHeight: 1.7, margin: 0 }}>
+                  Thank you. We'll follow up within one business day.
+                </p>
+              </div>
+            ) : (
+              <>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }} className="contact-form-grid">
               {[
-                { label: "Full Name", type: "text", placeholder: "John Smith" },
-                { label: "Email", type: "email", placeholder: "john@facility.com" },
-                { label: "Phone", type: "tel", placeholder: "(555) 123-4567" },
-                { label: "Facility Type", type: "select" },
+                { label: "Full Name", type: "text", placeholder: "John Smith", key: "name" },
+                { label: "Email", type: "email", placeholder: "john@facility.com", key: "email" },
+                { label: "Phone", type: "tel", placeholder: "(555) 123-4567", key: "phone" },
+                { label: "Facility Type", type: "select", key: "facilityType" },
               ].map((field) => (
                 <div key={field.label}>
                   <label style={{ display: "block", fontSize: 10, color: "rgba(27,122,61,0.7)", marginBottom: 6, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", fontFamily: "'JetBrains Mono', monospace" }}>
                     {field.label}
                   </label>
                   {field.type === "select" ? (
-                    <select style={{
+                    <select
+                      value={contact.facilityType}
+                      onChange={(e) => updateContact("facilityType", e.target.value)}
+                      style={{
                       width: "100%", padding: "12px 16px", background: "#F2F7F4", border: "1px solid #E2EBE5",
                       borderRadius: 4, color: "#1A2B1F", fontSize: 15, outline: "none", fontFamily: "'Plus Jakarta Sans', sans-serif", boxSizing: "border-box",
                     }}>
@@ -2425,7 +2590,12 @@ function ContactSection() {
                       <option>Other</option>
                     </select>
                   ) : (
-                    <input type={field.type} placeholder={field.placeholder} style={{
+                    <input
+                      type={field.type}
+                      placeholder={field.placeholder}
+                      value={contact[field.key]}
+                      onChange={(e) => updateContact(field.key, e.target.value)}
+                      style={{
                       width: "100%", padding: "12px 16px", background: "#F2F7F4", border: "1px solid #E2EBE5",
                       borderRadius: 4, color: "#1A2B1F", fontSize: 15, outline: "none", fontFamily: "'Plus Jakarta Sans', sans-serif", boxSizing: "border-box",
                     }} />
@@ -2437,24 +2607,41 @@ function ContactSection() {
               <label style={{ display: "block", fontSize: 10, color: "rgba(27,122,61,0.7)", marginBottom: 6, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", fontFamily: "'JetBrains Mono', monospace" }}>
                 Tell Us About Your Facility
               </label>
-              <textarea rows={4} placeholder="Approximate square footage, number of floors, current cleaning schedule, any special requirements..."
+              <textarea
+                rows={4}
+                placeholder="Approximate square footage, number of floors, current cleaning schedule, any special requirements..."
+                value={contact.message}
+                onChange={(e) => updateContact("message", e.target.value)}
                 style={{
                   width: "100%", padding: "12px 16px", background: "#F2F7F4", border: "1px solid #E2EBE5",
                   borderRadius: 4, color: "#1A2B1F", fontSize: 15, outline: "none", fontFamily: "'Plus Jakarta Sans', sans-serif",
                   resize: "vertical", boxSizing: "border-box",
                 }} />
             </div>
-            <button onClick={(e) => { e.preventDefault(); trackWalkthroughCta('contact_walkthrough'); scrollTo('schedule'); }} style={{
+            {error && (
+              <p role="alert" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: "#a83a3a", margin: "16px 0 0", lineHeight: 1.5 }}>
+                {error}
+              </p>
+            )}
+            <button
+              type="button"
+              disabled={submitting}
+              onClick={submitContact}
+              style={{
               width: "100%", marginTop: 24, padding: "16px 24px", background: "#1B7A3D",
-              border: "none", borderRadius: 4, color: "#FFFFFF", fontSize: 15, fontWeight: 700, cursor: "pointer",
+              border: "none", borderRadius: 4, color: "#FFFFFF", fontSize: 15, fontWeight: 700,
+              cursor: submitting ? "wait" : "pointer",
               fontFamily: "'Syne', sans-serif", letterSpacing: "0.04em", textTransform: "uppercase",
               transition: "transform 0.2s",
+              opacity: submitting ? 0.7 : 1,
             }}
-              onMouseOver={(e) => e.target.style.transform = "translateY(-1px)"}
+              onMouseOver={(e) => { if (!submitting) e.target.style.transform = "translateY(-1px)"; }}
               onMouseOut={(e) => e.target.style.transform = "translateY(0)"}
             >
-              Schedule My Walkthrough →
+              {submitting ? "Sending…" : "Schedule My Walkthrough →"}
             </button>
+              </>
+            )}
           </div>
 
           <div style={{ display: "flex", justifyContent: "center", gap: 48, marginTop: 48, flexWrap: "wrap" }}>
