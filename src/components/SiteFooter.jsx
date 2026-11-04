@@ -65,6 +65,7 @@ export default function SiteFooter() {
               { label: "Government Services", href: "/government-cleaning-services" },
               { label: "Capability Statement", href: "/capability-statement" },
               { label: "School Cleaning NYC", href: "/school-cleaning-nyc" },
+              { label: "NYC DOE School Cleaning", href: "/nyc-doe-school-cleaning/" },
               { label: "Janitorial Services NYC", href: "/janitorial-services-nyc" },
               { label: "Terms of Service", href: "/terms-of-service" },
               { label: "Team Conduct & Safety Policy", href: "/team-conduct-safety-policy" },

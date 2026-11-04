@@ -1,7 +1,7 @@
 import SeoLandingPage from "../../components/SeoLandingPage";
 
 export const metadata = {
-  title: "School Cleaning Services NYC | K-12 Janitorial | GreenPoint Maintenance",
+  title: "School Cleaning Services NYC | K-12 Janitorial",
   description:
     "MBE-certified school cleaning services in New York City. CDC-compliant janitorial for K-12 schools, charter schools, and daycares. Green products, ATP-verified sanitization, and StockPoint documentation. Free walkthrough.",
   keywords: [
@@ -19,7 +19,7 @@ export const metadata = {
       "MBE-certified school cleaning with CDC-compliant protocols, green products, and real-time StockPoint verification. Serving NYC schools since 2018.",
     url: "https://greenpointms.com/school-cleaning-nyc",
   },
-  alternates: { canonical: "https://greenpointms.com/school-cleaning-nyc" },
+  alternates: { canonical: "https://greenpointms.com/school-cleaning-nyc/" },
 };
 
 const faqSchema = {

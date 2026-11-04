@@ -652,7 +652,7 @@ const BLOG_INDEX = [
 ];
 
 export const metadata = {
-  title: 'Blog | GreenPoint Maintenance Services',
+  title: 'Blog',
   description: 'Expert insights on commercial cleaning, facility maintenance, compliance, and industry best practices from GreenPoint Maintenance Services.',
   alternates: { canonical: 'https://greenpointms.com/blog/' },
   openGraph: {
