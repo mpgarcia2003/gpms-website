@@ -2,11 +2,11 @@ import './globals.css';
 
 export const metadata = {
   title: {
-    default: 'GreenPoint Maintenance Services | Commercial Cleaning NY, NJ, CT, PA, FL',
+    default: 'GreenPoint Maintenance Services | Commercial Cleaning NYC, NJ & South Florida',
     template: '%s | GreenPoint Maintenance Services',
   },
-  description: 'MBE-certified commercial janitorial and facility maintenance for schools, healthcare, churches, daycare, government buildings, and offices across NY, NJ, CT, PA, and FL. Real-time cleaning verification with StockPoint.',
-  keywords: ['commercial cleaning', 'janitorial services', 'facility maintenance', 'MBE certified', 'school cleaning', 'medical office cleaning', 'church cleaning', 'New York', 'New Jersey', 'Connecticut', 'Pennsylvania', 'Florida'],
+  description: 'MBE-certified commercial janitorial and facility maintenance for schools, healthcare, churches, daycare, government buildings, and offices across New York City, New Jersey, and South Florida. Real-time cleaning verification with StockPoint.',
+  keywords: ['commercial cleaning', 'janitorial services', 'facility maintenance', 'MBE certified', 'school cleaning', 'medical office cleaning', 'church cleaning', 'New York', 'New Jersey', 'Florida'],
   openGraph: {
     title: 'GreenPoint Maintenance Services | Commercial Cleaning',
     description: 'MBE-certified commercial janitorial and facility maintenance with real-time cleaning verification.',
@@ -20,7 +20,7 @@ const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "GreenPoint Maintenance Services Corp",
-  "description": "MBE-certified commercial janitorial and facility maintenance for schools, healthcare, churches, daycare, government buildings, and offices across NY, NJ, CT, PA, and FL.",
+  "description": "MBE-certified commercial janitorial and facility maintenance for schools, healthcare, churches, daycare, government buildings, and offices across New York City, New Jersey, and South Florida.",
   "url": "https://greenpointms.com",
   "telephone": "+1-844-814-0810",
   "email": "info@greenpointms.com",
@@ -35,8 +35,6 @@ const localBusinessSchema = {
   "areaServed": [
     { "@type": "State", "name": "New York" },
     { "@type": "State", "name": "New Jersey" },
-    { "@type": "State", "name": "Connecticut" },
-    { "@type": "State", "name": "Pennsylvania" },
     { "@type": "State", "name": "Florida" }
   ],
   "priceRange": "$",
@@ -60,7 +58,7 @@ const organizationSchema = {
   "legalName": "GreenPoint Maintenance Services Corp",
   "url": "https://greenpointms.com",
   "logo": "https://greenpointms.com/favicon.ico",
-  "description": "MBE-certified commercial janitorial and facility maintenance serving schools, healthcare, churches, daycare, government buildings, and offices across NY, NJ, CT, PA, and FL.",
+  "description": "MBE-certified commercial janitorial and facility maintenance serving schools, healthcare, churches, daycare, government buildings, and offices across New York City, New Jersey, and South Florida.",
   "telephone": "+1-844-814-0810",
   "email": "info@greenpointms.com",
   "foundingDate": "2018",
@@ -75,8 +73,6 @@ const organizationSchema = {
   "areaServed": [
     { "@type": "State", "name": "New York" },
     { "@type": "State", "name": "New Jersey" },
-    { "@type": "State", "name": "Connecticut" },
-    { "@type": "State", "name": "Pennsylvania" },
     { "@type": "State", "name": "Florida" }
   ],
   "knowsAbout": ["Commercial Janitorial", "Disinfection & Sanitization", "Floor Care", "Day Porter Services", "Facility Maintenance"],
