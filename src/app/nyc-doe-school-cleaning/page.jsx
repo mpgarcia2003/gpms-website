@@ -1,7 +1,7 @@
 import SeoLandingPage from "../../components/SeoLandingPage";
 
 export const metadata = {
-  title: "NYC DOE Approved Vendor | School Cleaning Services | GreenPoint Maintenance",
+  title: "NYC DOE School Cleaning | Approved Vendor",
   description:
     "GreenPoint Maintenance is an NYC DOE Approved Vendor providing professional cleaning services to New York City public schools. MBE-certified, Green Seal products, StockPoint verified. Free facility walkthrough.",
   keywords: [
@@ -20,7 +20,7 @@ export const metadata = {
       "NYC DOE Approved Vendor providing MBE-certified school cleaning with CDC-compliant protocols, Green Seal products, and real-time StockPoint verification.",
     url: "https://greenpointms.com/nyc-doe-school-cleaning",
   },
-  alternates: { canonical: "https://greenpointms.com/nyc-doe-school-cleaning" },
+  alternates: { canonical: "https://greenpointms.com/nyc-doe-school-cleaning/" },
 };
 
 const faqSchema = {
