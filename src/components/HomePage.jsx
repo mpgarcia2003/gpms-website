@@ -376,26 +376,26 @@ const WHY_US = [
   {
     iconKey: "smartphone",
     title: "StockPoint Verification",
-    desc: "The only local operator with real-time photo verification and ATP bioluminescence testing. See proof, not promises.",
-    competitor: "Zero local competitors offer this",
+    desc: "Real-time photo verification and ATP bioluminescence testing through StockPoint. See proof, not promises.",
+    competitor: "Proof of every visit",
   },
   {
     iconKey: "trophy",
     title: "MBE Certified",
     desc: "Registered Minority Business Enterprise with NYS & NYC. Qualifies for diversity procurement and MWBE set-aside contracts.",
-    competitor: "Only 2 of 17 competitors hold this",
+    competitor: "Certified with NYS & NYC",
   },
   {
     iconKey: "dollar",
     title: "Fixed Pricing",
     desc: "Transparent, per-facility pricing with no hourly billing, no surprise fees, and no hidden charges. Know exactly what you'll pay.",
-    competitor: "Most competitors hide pricing entirely",
+    competitor: "No hourly billing",
   },
   {
     iconKey: "target",
     title: "Vertical Specialists",
     desc: "Dedicated protocols for schools, churches, medical, daycare, and government — not a one-size-fits-all approach.",
-    competitor: "No local competitor has dedicated vertical pages",
+    competitor: "Protocols built for your facility type",
   },
 ];
 // =============================================
