@@ -8,6 +8,7 @@ import {
   SmartphoneIcon, TrophyIcon, DollarIcon, TargetIcon, CalendarIcon, PhoneIcon,
   MailIcon, ClockIcon, DownloadIcon, FileTextIcon, MapPinIcon, CheckCircleIcon,
 } from './Icons';
+import { trackWalkthroughCta } from '../lib/ga4';
 
 // Angled SVG section divider — use between dark/light section transitions
 function SectionDivider({ fromColor = "#FFFFFF", toColor = "#F7FAF8" }) {
@@ -49,7 +50,7 @@ function QuoteChoiceModal({ isOpen, onClose }) {
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
           {/* Option 1: Schedule Walkthrough */}
-          <button onClick={() => { onClose(); setTimeout(() => scrollTo('schedule'), 150); }} style={{
+          <button onClick={() => { trackWalkthroughCta('quote_choice_modal_walkthrough'); onClose(); setTimeout(() => scrollTo('schedule'), 150); }} style={{
             display: 'flex', alignItems: 'center', gap: 16, padding: '20px 24px',
             background: '#1B7A3D', border: 'none', borderRadius: 12, cursor: 'pointer',
             transition: 'transform 0.2s, box-shadow 0.2s', textAlign: 'left', width: '100%',
@@ -67,7 +68,7 @@ function QuoteChoiceModal({ isOpen, onClose }) {
             <span style={{ marginLeft: 'auto', color: '#4A5E52', fontSize: 20, flexShrink: 0 }}>→</span>
           </button>
           {/* Option 2: Instant Quote */}
-          <button onClick={() => { onClose(); setTimeout(() => scrollTo('quote'), 150); }} style={{
+          <button onClick={() => { trackWalkthroughCta('quote_choice_modal_instant_quote'); onClose(); setTimeout(() => scrollTo('quote'), 150); }} style={{
             display: 'flex', alignItems: 'center', gap: 16, padding: '20px 24px',
             background: '#F7FAF8', border: '2px solid #E2EBE5', borderRadius: 12, cursor: 'pointer',
             transition: 'transform 0.2s, border-color 0.2s', textAlign: 'left', width: '100%',
@@ -917,7 +918,7 @@ function QuoteCalculator() {
                 ))}
               </div>
 
-              <a href="#" onClick={(e) => { e.preventDefault(); scrollTo('schedule'); }}
+              <a href="#schedule" data-cta-location="quote_calculator_proposal" onClick={(e) => { e.preventDefault(); scrollTo('schedule'); }}
                 style={{ display: "block", width: "100%", padding: "14px", background: "#1B7A3D", border: "none", borderRadius: 4, color: "#fff", fontSize: 13, fontWeight: 700, fontFamily: "'Syne', sans-serif", textTransform: "uppercase", letterSpacing: "0.04em", textAlign: "center", textDecoration: "none", boxSizing: "border-box", cursor: "pointer" }}>
                 Request Formal Proposal →
               </a>
@@ -973,7 +974,8 @@ function QuoteCalculator() {
 
               {/* Walkthrough CTA */}
               <a
-                href="#"
+                href="#schedule"
+                data-cta-location="quote_calculator_confirm_pricing"
                 onClick={(e) => { e.preventDefault(); scrollTo('schedule'); }}
                 style={{
                   display: 'block', width: '100%', marginTop: 10, padding: '12px',
@@ -1080,7 +1082,8 @@ function Header({ scrolled }) {
           {NAV_ITEMS.map((item) => (
             <a
               key={item.label}
-              href={item.href || "#"}
+              href={item.href || `#${item.target}`}
+              data-cta-location={item.target === "quote" ? "homepage_nav_instant_quote" : undefined}
               onClick={item.href ? undefined : (e) => { e.preventDefault(); scrollTo(item.target); }}
               style={{
                 color: "#4A5E52", textDecoration: "none", fontSize: 13, fontWeight: 500,
@@ -1103,7 +1106,8 @@ function Header({ scrolled }) {
             <PhoneIcon size={16} color="#1B7A3D" /> {PHONE_NUMBER}
           </a>
           <a
-            href="#"
+            href="#schedule"
+            data-cta-location="homepage_header_desktop"
             onClick={(e) => { e.preventDefault(); scrollTo("schedule"); }}
             style={{
               background: "#1B7A3D", color: "#fff", padding: "10px 24px",
@@ -1136,7 +1140,7 @@ function Header({ scrolled }) {
           borderBottom: "1px solid #E2EBE5",
         }}>
           {NAV_ITEMS.map((item) => (
-            <a key={item.label} href={item.href || "#"} onClick={item.href ? () => setMobileOpen(false) : (e) => { e.preventDefault(); setMobileOpen(false); scrollTo(item.target); }}
+            <a key={item.label} href={item.href || `#${item.target}`} data-cta-location={item.target === "quote" ? "homepage_nav_instant_quote" : undefined} onClick={item.href ? () => setMobileOpen(false) : (e) => { e.preventDefault(); setMobileOpen(false); scrollTo(item.target); }}
               style={{ color: "#4A5E52", textDecoration: "none", fontSize: 16, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
               {item.label}
             </a>
@@ -1145,7 +1149,7 @@ function Header({ scrolled }) {
             style={{ color: "#1A2B1F", textDecoration: "none", fontSize: 16, fontWeight: 700, fontFamily: "'Plus Jakarta Sans', sans-serif", display: "flex", alignItems: "center", gap: 8 }}>
             <PhoneIcon size={16} color="#1B7A3D" /> {PHONE_NUMBER}
           </a>
-          <a href="#" onClick={(e) => { e.preventDefault(); setMobileOpen(false); scrollTo("schedule"); }}
+          <a href="#schedule" data-cta-location="homepage_header_mobile" onClick={(e) => { e.preventDefault(); setMobileOpen(false); scrollTo("schedule"); }}
             style={{ background: "#1B7A3D", color: "#fff", padding: "12px 24px", borderRadius: 4, fontWeight: 700, textDecoration: "none", textAlign: "center", fontFamily: "'Syne', sans-serif", textTransform: "uppercase", letterSpacing: "0.04em", fontSize: 13 }}>
             Schedule Walkthrough
           </a>
@@ -1155,7 +1159,9 @@ function Header({ scrolled }) {
   );
 }
 
-// Multi-step qualified lead form for hero section
+// Dead code: nothing renders <HeroLeadForm />. The GA4 calls in handleSubmit
+// are compiled out of the production bundle. Live walkthrough clicks are tracked
+// with walkthrough_cta_click. Left in place so the form can be revived deliberately.
 function HeroLeadForm() {
   const [formStep, setFormStep] = useState(1);
   const [formData, setFormData] = useState({
@@ -1588,7 +1594,7 @@ function Hero() {
             </p>
 
             <div className="hero-ctas-anim" style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
-              <a href="#" onClick={(e) => { e.preventDefault(); scrollTo("schedule"); }} className="cta-glow" style={{
+              <a href="#schedule" data-cta-location="hero_walkthrough" onClick={(e) => { e.preventDefault(); scrollTo("schedule"); }} className="cta-glow" style={{
                 background: "#1B7A3D", color: "#fff", padding: "16px 36px",
                 borderRadius: 4, fontWeight: 700, fontSize: 14, textDecoration: "none", fontFamily: "'Syne', sans-serif",
                 letterSpacing: "0.04em", textTransform: "uppercase", transition: "transform 0.2s",
@@ -1600,7 +1606,7 @@ function Hero() {
                 Schedule a Free Walkthrough
                 <span style={{ fontSize: 20 }}>→</span>
               </a>
-              <a href="#" onClick={(e) => { e.preventDefault(); scrollTo("quote"); }} style={{
+              <a href="#quote" data-cta-location="hero_instant_estimate" onClick={(e) => { e.preventDefault(); scrollTo("quote"); }} style={{
                 background: "transparent", color: "#1B7A3D", padding: "16px 36px",
                 borderRadius: 10, fontWeight: 600, fontSize: 16, textDecoration: "none", fontFamily: "'Plus Jakarta Sans', sans-serif",
                 border: "2px solid #1B7A3D", transition: "all 0.2s",
@@ -1647,7 +1653,7 @@ function Hero() {
                 <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, color: 'rgba(255,255,255,0.7)', lineHeight: 1.5, marginBottom: 20 }}>
                   We'll assess your facility and deliver a custom proposal within 48 hours.
                 </p>
-                <a href="#" onClick={(e) => { e.preventDefault(); scrollTo('schedule'); }} className="cta-glow" style={{
+                <a href="#schedule" data-cta-location="hero_card_schedule" onClick={(e) => { e.preventDefault(); scrollTo('schedule'); }} className="cta-glow" style={{
                   display: 'block', width: '100%', padding: '14px 24px', background: '#1B7A3D',
                   borderRadius: 8, color: '#fff', fontSize: 14, fontWeight: 700, textDecoration: 'none',
                   fontFamily: "'Syne', sans-serif", textTransform: 'uppercase', letterSpacing: '0.04em',
@@ -1752,7 +1758,7 @@ function ComplianceSection() {
         </div>
         <div style={{ textAlign: "center", marginTop: 40 }}>
           <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "#8A9B91", marginBottom: 8 }}>NAICS Codes: 561720 (Janitorial Services) | 238210 (Electrical Contractors) | 561790 (Other Services to Buildings)</div>
-          <a href="#" onClick={(e) => { e.preventDefault(); scrollTo("schedule"); }} style={{
+          <a href="#schedule" data-cta-location="authority_capability" onClick={(e) => { e.preventDefault(); scrollTo("schedule"); }} style={{
             display: "inline-flex", alignItems: "center", gap: 8, marginTop: 16,
             background: "#E2EBE5", color: "#1B7A3D", padding: "10px 24px", borderRadius: 8,
             fontWeight: 600, fontSize: 14, textDecoration: "none", fontFamily: "'Plus Jakarta Sans', sans-serif",
@@ -1967,7 +1973,7 @@ function IndustriesSection() {
               <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 16, color: "#4A5E52", lineHeight: 1.8, marginBottom: 28 }}>
                 {INDUSTRIES[active].desc}
               </p>
-              <a href="#" onClick={(e) => { e.preventDefault(); scrollTo("schedule"); }} style={{
+              <a href="#schedule" data-cta-location="industries_quote" onClick={(e) => { e.preventDefault(); scrollTo("schedule"); }} style={{
                 display: "inline-flex", alignItems: "center", gap: 8,
                 background: "#1B7A3D", color: "#fff", padding: "12px 28px", borderRadius: 8,
                 fontWeight: 600, fontSize: 14, textDecoration: "none", fontFamily: "'Plus Jakarta Sans', sans-serif",
@@ -2346,6 +2352,9 @@ function AcuitySection() {
         <div style={{ position: "relative" }}>
           <div style={{ position: "absolute", inset: -2, borderRadius: 16, background: "linear-gradient(135deg, rgba(27,122,61,0.2), rgba(27,122,61,0.05))", zIndex: 0 }} />
           <div style={{ position: "relative", zIndex: 1, borderRadius: 14, overflow: "hidden", boxShadow: "0 20px 60px rgba(0,0,0,0.4)" }}>
+            {/* The official embed postMessage channel is sizing, load, scroll, and a GA
+                client-id handoff. It does not emit a booking-complete event, so this
+                page cannot reliably fire generate_lead when a visit is booked. */}
             <iframe
               src="https://app.acuityscheduling.com/schedule.php?owner=15345029&ref=embedded_csp"
               title="Schedule Appointment"
@@ -2435,7 +2444,7 @@ function ContactSection() {
                   resize: "vertical", boxSizing: "border-box",
                 }} />
             </div>
-            <button onClick={(e) => { e.preventDefault(); scrollTo('schedule'); }} style={{
+            <button onClick={(e) => { e.preventDefault(); trackWalkthroughCta('contact_walkthrough'); scrollTo('schedule'); }} style={{
               width: "100%", marginTop: 24, padding: "16px 24px", background: "#1B7A3D",
               border: "none", borderRadius: 4, color: "#FFFFFF", fontSize: 15, fontWeight: 700, cursor: "pointer",
               fontFamily: "'Syne', sans-serif", letterSpacing: "0.04em", textTransform: "uppercase",
@@ -2667,7 +2676,7 @@ function Footer() {
             Get a custom cleaning plan in 24 hours. MBE-certified. Bonded & insured. No obligation.
           </p>
           <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
-            <a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("schedule"); }} className="cta-glow" style={{
+            <a href="#schedule" data-cta-location="footer_quote" onClick={(e) => { e.preventDefault(); scrollTo("schedule"); }} className="cta-glow" style={{
               background: "#1B7A3D", color: "#fff",
               padding: "14px 32px", borderRadius: 4, fontWeight: 700, fontSize: 13,
               textDecoration: "none", fontFamily: "'Syne', sans-serif",
@@ -2819,7 +2828,7 @@ function StickyCtaBar({ visible }) {
           <a href={PHONE_HREF} style={{ display: 'flex', alignItems: 'center', gap: 6, color: '#fff', textDecoration: 'none', fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, fontWeight: 700 }} className="sticky-phone">
             <PhoneIcon size={16} color="#1B7A3D" /> {PHONE_NUMBER}
           </a>
-          <a href="#" onClick={(e) => { e.preventDefault(); scrollTo('schedule'); }} style={{
+          <a href="#schedule" data-cta-location="sticky_walkthrough" onClick={(e) => { e.preventDefault(); scrollTo('schedule'); }} style={{
             background: '#1B7A3D', color: '#fff', padding: '10px 24px',
             borderRadius: 4, fontWeight: 700, fontSize: 13, textDecoration: 'none', fontFamily: "'Syne', sans-serif",
             textTransform: 'uppercase', letterSpacing: '0.04em', whiteSpace: 'nowrap',

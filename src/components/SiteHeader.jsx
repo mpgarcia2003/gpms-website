@@ -11,7 +11,7 @@ const NAV_LINKS = [
   { label: "Government", href: "/government-cleaning-services" },
   { label: "Playbook", href: "/playbook" },
   { label: "Careers", href: "/careers" },
-  { label: "Instant Quote", href: "/#quote" },
+  { label: "Instant Quote", href: "/#quote", ctaLocation: "site_header_instant_quote" },
   { label: "Blog", href: "/blog" },
 ];
 
@@ -73,7 +73,7 @@ export default function SiteHeader() {
           {/* Desktop Nav */}
           <nav style={{ display: "flex", alignItems: "center", gap: 20 }} className="desktop-nav">
             {NAV_LINKS.map((link) => (
-              <a key={link.label} href={link.href} className={`header-nav-a${link.label === "Careers" ? " careers-link" : ""}`}
+              <a key={link.label} href={link.href} data-cta-location={link.ctaLocation} className={`header-nav-a${link.label === "Careers" ? " careers-link" : ""}`}
                 style={{ color: "#4A5E52", textDecoration: "none", fontSize: 13, fontWeight: 500, fontFamily: "'Plus Jakarta Sans', sans-serif", letterSpacing: "0.01em" }}>
                 {link.label}
               </a>
@@ -93,7 +93,7 @@ export default function SiteHeader() {
             }}>
               Capability Statement
             </a>
-            <a href="/#schedule" className="header-cta-btn" style={{
+            <a href="/#schedule" data-cta-location="site_header_desktop" className="header-cta-btn" style={{
               background: "#1B7A3D", color: "#fff",
               padding: "10px 22px", borderRadius: 8, fontWeight: 700, fontSize: 12,
               textDecoration: "none", fontFamily: "'Syne', sans-serif",
@@ -121,7 +121,7 @@ export default function SiteHeader() {
             backdropFilter: "blur(12px)",
           }}>
             {NAV_LINKS.map((link) => (
-              <a key={link.label} href={link.href} onClick={() => setMobileOpen(false)}
+              <a key={link.label} href={link.href} data-cta-location={link.ctaLocation} onClick={() => setMobileOpen(false)}
                 style={{ color: link.label === "Careers" ? "#1B7A3D" : "#4A5E52", fontWeight: link.label === "Careers" ? 600 : 400, textDecoration: "none", fontSize: 16, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>{link.label}</a>
             ))}
             <a href={PHONE_HREF} onClick={() => setMobileOpen(false)}
@@ -133,7 +133,7 @@ export default function SiteHeader() {
               style={{ color: "#8A9B91", textDecoration: "none", fontSize: 12, fontFamily: "'JetBrains Mono', monospace", fontWeight: 600, letterSpacing: "0.05em", textTransform: "uppercase" }}>
               Capability Statement
             </a>
-            <a href="/#schedule" onClick={() => setMobileOpen(false)}
+            <a href="/#schedule" data-cta-location="site_header_mobile" onClick={() => setMobileOpen(false)}
               style={{ background: "#1B7A3D", color: "#fff", padding: "12px 24px", borderRadius: 8, fontWeight: 700, textDecoration: "none", textAlign: "center", fontFamily: "'Syne', sans-serif", fontSize: 13 }}>
               Schedule Walkthrough
             </a>
