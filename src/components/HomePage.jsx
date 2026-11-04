@@ -1253,6 +1253,20 @@ function HeroLeadForm() {
 
   function handleSubmit() {
     console.log('[GreenPoint] Walkthrough form submitted:', formData);
+    // GA4 lead event. Non-PII params only: never send name, email, phone or date.
+    try {
+      if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+        const leadParams = {
+          form_name: 'schedule_walkthrough',
+          facility_type: formData.facilityType || '(not set)',
+          square_footage: formData.squareFootage || '(not set)',
+          timeline: formData.timeline || '(not set)',
+          page_path: window.location.pathname,
+        };
+        window.gtag('event', 'generate_lead', leadParams);
+        window.gtag('event', 'walkthrough_form_submit', leadParams);
+      }
+    } catch (e) { /* analytics must never break the form */ }
     setSubmitted(true);
     // Scroll to Acuity scheduling after a brief success message
     setTimeout(() => {
