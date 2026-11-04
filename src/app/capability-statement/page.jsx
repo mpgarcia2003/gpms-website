@@ -3,8 +3,8 @@ import SiteFooter from '../../components/SiteFooter';
 
 export const metadata = {
   title: 'Capability Statement | GreenPoint Maintenance Services Corp',
-  description: 'Download our capability statement. MBE-certified commercial janitorial and facility maintenance provider. SAM.gov registered, CAGE code, UEI, and NAICS codes for government procurement.',
-  keywords: ['capability statement', 'MBE certified cleaning company', 'SAM.gov registered janitorial', 'government cleaning contractor', 'NAICS 561720'],
+  description: 'Download our capability statement. MBE/MWBE-certified commercial janitorial and facility maintenance provider. SAM.gov registered, CAGE code, UEI, and NAICS codes for government procurement.',
+  keywords: ['capability statement', 'MBE/MWBE certified cleaning company', 'SAM.gov registered janitorial', 'government cleaning contractor', 'NAICS 561720'],
 };
 
 export default function CapabilityStatementPage() {
@@ -74,13 +74,13 @@ export default function CapabilityStatementPage() {
                     GreenPoint Maintenance Services Corp
                   </h2>
                   <p style={{ fontSize: 14, color: '#888', margin: '4px 0 0', fontWeight: 500 }}>
-                    MBE-Certified Facility Services Provider • Est. 2018
+                    MBE/MWBE-Certified Facility Services Provider • Est. 2018
                   </p>
                 </div>
               </div>
 
               <p style={{ fontSize: 16, color: '#555', lineHeight: 1.8, marginBottom: 0 }}>
-                GreenPoint Maintenance Services Corp is a Minority Business Enterprise (MBE) certified commercial janitorial and facility maintenance provider headquartered in the Bronx, New York. We deliver verified cleaning services to institutional, government, healthcare, and educational facilities across New York, New Jersey, Connecticut, Pennsylvania, and Florida.
+                GreenPoint Maintenance Services Corp is an MBE/MWBE-certified commercial janitorial and facility maintenance provider headquartered in the Bronx, New York. We deliver verified cleaning services to institutional, government, healthcare, and educational facilities across New York, New Jersey, Connecticut, Pennsylvania, and Florida.
               </p>
             </div>
 
@@ -161,7 +161,7 @@ export default function CapabilityStatementPage() {
                   },
                   {
                     title: 'Real-Time Cleaning Verification',
-                    desc: 'Proprietary StockPoint system with timestamped photo documentation, GPS-tagged task completion, and ATP bioluminescence testing.',
+                    desc: 'Proprietary StockPoint system with timestamped photo documentation, GPS-tagged task completion, and ATP bioluminescence testing available on request.',
                   },
                   {
                     title: 'Healthcare & Education Compliance',
@@ -190,8 +190,8 @@ export default function CapabilityStatementPage() {
               </h3>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 24 }}>
                 {[
-                  { title: 'StockPoint Verification', desc: 'Real-time photo documentation and ATP bioluminescence testing after every service.' },
-                  { title: 'MBE Certification', desc: 'Registered Minority Business Enterprise. Qualifies for diversity procurement programs and MWBE set-aside contracts.' },
+                  { title: 'StockPoint Verification', desc: 'Real-time photo documentation and ATP bioluminescence testing available on request.' },
+                  { title: 'MBE/MWBE Certification', desc: 'MBE/MWBE certified. Qualifies for diversity procurement programs and MWBE set-aside contracts.' },
                   { title: 'Fixed Pricing', desc: 'Transparent per-facility pricing. No hourly billing, no surprise fees. Custom proposals within 48 hours of walkthrough.' },
                   { title: 'Vertical Specialization', desc: 'Dedicated protocols for schools, healthcare, houses of worship, daycare, and government. Not one-size-fits-all.' },
                   { title: 'Background-Checked Teams', desc: 'Every field worker undergoes comprehensive background checks, drug testing, and facility-specific training.' },
@@ -220,7 +220,7 @@ export default function CapabilityStatementPage() {
                 {
                   facility: 'Westchester Medical Office Complex',
                   type: 'Healthcare — Outpatient',
-                  scope: 'OSHA-compliant sanitization for exam rooms, waiting areas, and common spaces. ATP bioluminescence verification at every visit.',
+                  scope: 'OSHA-compliant sanitization for exam rooms, waiting areas, and common spaces. ATP bioluminescence testing available on request.',
                   outcome: 'Achieved consistently low ATP readings (under 30 RLU). Zero compliance issues during audit period.',
                 },
                 {

@@ -9,7 +9,7 @@ export function generateMetadata({ params }) {
   const service = getService(params.serviceSlug);
   if (!service) return {};
   const title = `${service.name} — GreenPoint Maintenance Services`;
-  const description = `${service.description} MBE-certified provider serving NY, NJ, CT, PA, and FL with real-time StockPoint verification.`;
+  const description = `${service.description} MBE/MWBE-certified provider serving NY, NJ, CT, PA, and FL with real-time StockPoint verification.`;
   return { title, description, alternates: { canonical: `https://greenpointms.com/services/${params.serviceSlug}/` } };
 }
 
@@ -30,7 +30,7 @@ export default function ServicePage({ params }) {
     },
     {
       heading: `Why Choose GreenPoint for ${service.shortName}`,
-      body: `As an MBE-certified commercial cleaning provider, GreenPoint brings accountability and transparency to every engagement. Our StockPoint system gives you real-time GPS-verified photo proof that every task is completed to standard.`,
+      body: `As an MBE/MWBE-certified commercial cleaning provider, GreenPoint brings accountability and transparency to every engagement. Our StockPoint system gives you real-time GPS-verified photo proof that every task is completed to standard.`,
       stats: [
         { number: "98%", label: "Client Retention Rate" },
         { number: "500+", label: "Facilities Maintained" },

@@ -161,7 +161,7 @@ export default function BlogPostPage({ params }) {
             <div style={{ width: 48, height: 48, borderRadius: 8, background: "#1B7A3D", display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", fontWeight: 800, fontFamily: "'Syne', sans-serif", fontSize: 20 }}>G</div>
             <div>
               <div style={{ fontWeight: 600, color: "#1A2B1F", fontSize: 15 }}>GreenPoint Maintenance Services</div>
-              <div style={{ fontSize: 13, color: "#8A9B91" }}>MBE-Certified Commercial Cleaning · NY, NJ, CT, PA, FL</div>
+              <div style={{ fontSize: 13, color: "#8A9B91" }}>MBE/MWBE-Certified Commercial Cleaning · NY, NJ, CT, PA, FL</div>
             </div>
           </div>
           <a href="/#schedule" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "#1B7A3D", color: "#fff", padding: "12px 24px", borderRadius: 8, fontWeight: 700, fontSize: 13, textDecoration: "none", fontFamily: "'Syne', sans-serif", letterSpacing: "0.04em", alignSelf: "flex-start" }}>

@@ -27,11 +27,11 @@ This file contains the full text of GreenPoint's most important pages, optimized
 
 ## About GreenPoint
 
-GreenPoint Maintenance Services Corp is a Minority Business Enterprise (MBE) certified commercial janitorial and facility maintenance company headquartered in Brooklyn, New York. Founded in 2018, the company serves clients across New York, New Jersey, Connecticut, Pennsylvania, and Florida.
+GreenPoint Maintenance Services Corp is an MBE/MWBE-certified commercial janitorial and facility maintenance company headquartered in Brooklyn, New York. Founded in 2018, the company serves clients across New York, New Jersey, Connecticut, Pennsylvania, and Florida.
 
 GreenPoint differentiates itself through:
 
-1. **StockPoint verification system**: A technology platform that captures photo evidence, GPS-stamped location, time-stamped task completion, and ATP bioluminescence test readings for every cleaning visit. This provides facility managers with verifiable, audit-ready proof that cleaning was performed to standard.
+1. **StockPoint verification system**: A technology platform that captures photo evidence, GPS-stamped location, and time-stamped task completion for every cleaning visit. ATP bioluminescence testing of high-touch surfaces is available on request. This provides facility managers with verifiable, audit-ready proof that cleaning was performed to standard.
 
 2. **Procurement credentials**: MBE/MWBE certification, NYC DOE Approved Vendor status, and SAM.gov federal registration enable GreenPoint to bid on government, school, and diversity-spend contracts that competitors cannot access.
 
@@ -65,7 +65,7 @@ GreenPoint differentiates itself through:
 
 - Commercial janitorial cleaning (daily, weekly, monthly)
 - Facility maintenance
-- Disinfection (electrostatic, EPA-registered, ATP-verified)
+- Disinfection (electrostatic, EPA-registered, ATP testing available on request)
 - Floor care (VCT strip/seal/wax, carpet extraction, hard surface)
 - Day porter services
 - Window cleaning
@@ -227,7 +227,7 @@ const KEY_PAGES = [
   {
     url: '/',
     title: 'Homepage',
-    description: 'GreenPoint Maintenance Services Corp homepage. MBE-certified commercial janitorial and facility maintenance across NY, NJ, CT, PA, FL.',
+    description: 'GreenPoint Maintenance Services Corp homepage. MBE/MWBE-certified commercial janitorial and facility maintenance across NY, NJ, CT, PA, FL.',
   },
   {
     url: '/capability-statement',
@@ -251,7 +251,7 @@ const KEY_PAGES = [
   },
   {
     url: '/mbe-certified-cleaning-company-nyc',
-    title: 'MBE-Certified Cleaning Company NYC',
+    title: 'MBE/MWBE-Certified Cleaning Company NYC',
     description: 'MBE/MWBE certified diversity-spend qualified cleaning vendor for NYC procurement officers.',
   },
   {

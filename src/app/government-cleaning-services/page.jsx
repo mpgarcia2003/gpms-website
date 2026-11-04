@@ -2,9 +2,9 @@ import SiteHeader from '../../components/SiteHeader';
 import SiteFooter from '../../components/SiteFooter';
 
 export const metadata = {
-  title: 'Government Cleaning Services | MBE Certified Janitorial Contractor',
+  title: 'Government Cleaning Services | MBE/MWBE Certified Janitorial Contractor',
   description: 'MBE/MWBE-certified government cleaning contractor registered on SAM.gov. Janitorial services for municipal buildings, schools, courthouses, and public facilities across NY, NJ, CT, PA. NAICS 561720. Request our Capability Statement.',
-  keywords: ['government cleaning services', 'MBE certified cleaning', 'janitorial contractor SAM.gov', 'government building cleaning NYC', 'MWBE janitorial services', 'municipal cleaning contractor'],
+  keywords: ['government cleaning services', 'MBE/MWBE certified cleaning', 'janitorial contractor SAM.gov', 'government building cleaning NYC', 'MWBE janitorial services', 'municipal cleaning contractor'],
   openGraph: {
     title: 'Government Cleaning Services | GreenPoint Maintenance Services Corp',
     description: 'MBE/MWBE-certified janitorial contractor for government and municipal facilities. SAM.gov registered. NAICS 561720.',
@@ -17,7 +17,7 @@ const PHONE_HREF = "tel:+18448140810";
 const CAPABILITIES = [
   { title: "Daily Janitorial Maintenance", desc: "Scheduled cleaning of offices, restrooms, lobbies, hallways, and common areas per contract specifications." },
   { title: "Floor Care & Restoration", desc: "Strip, seal, wax, and refinish hard floors. Carpet extraction. VCT, marble, and terrazzo maintenance programs." },
-  { title: "Disinfection & Sanitization", desc: "CDC-compliant electrostatic disinfection with hospital-grade products. ATP bioluminescence verification included." },
+  { title: "Disinfection & Sanitization", desc: "CDC-compliant electrostatic disinfection with hospital-grade products. ATP bioluminescence testing available on request." },
   { title: "Day Porter Services", desc: "On-site daytime staff for continuous facility upkeep, restroom monitoring, and supply replenishment." },
   { title: "Post-Construction Cleanup", desc: "Three-stage professional cleanup for renovated or newly constructed government facilities." },
   { title: "Emergency Response", desc: "24/7 emergency cleaning for biohazard, water damage, or post-incident decontamination." },
@@ -75,7 +75,7 @@ export default function GovernmentCleaningPage() {
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'rgba(46,204,113,0.1)', border: '1px solid rgba(46,204,113,0.25)', borderRadius: 100, padding: '6px 16px', marginBottom: 28 }}>
             <div style={{ width: 8, height: 8, borderRadius: '50%', background: '#2ecc71' }} />
             <span style={{ fontSize: 12, color: '#2ecc71', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', fontFamily: "'DM Sans', sans-serif" }}>
-              MBE Certified &bull; SAM.gov Registered &bull; NAICS 561720
+              MBE/MWBE Certified &bull; SAM.gov Registered &bull; NAICS 561720
             </span>
           </div>
 
@@ -151,7 +151,7 @@ export default function GovernmentCleaningPage() {
               { title: 'SAM.gov Active & Current', desc: 'Active federal vendor registration with valid CAGE code and UEI. Eligible for federal, state, and municipal contract vehicles without additional vetting.' },
               { title: 'Background-Checked Workforce', desc: 'Every field technician passes comprehensive criminal background checks, drug screening, and facility-specific clearance. No subcontractor opacity.' },
               { title: '$2M+ Insurance Coverage', desc: "Commercial General Liability, Workers' Compensation, and surety bond available. Certificate of Insurance provided within one business day." },
-              { title: 'StockPoint Real-Time Verification', desc: "Every cleaning session documented with timestamped GPS-verified photos and ATP bioluminescence test results. Audit-ready records on demand — not just a vendor's word." },
+              { title: 'StockPoint Real-Time Verification', desc: "Every cleaning session documented with timestamped GPS-verified photos. ATP bioluminescence testing available on request. Audit-ready records on demand — not just a vendor's word." },
               { title: 'Fixed Pricing, No Change Orders', desc: 'Government contracts require budget predictability. GreenPoint provides fixed-price proposals with no hidden fees, no change order surprises, and transparent scope of work.' },
             ].map((item) => (
               <div key={item.title} style={{ background: '#fafbfa', borderRadius: 14, padding: '28px 28px', border: '1px solid #eee', borderLeft: '3px solid #2ecc71' }}>

@@ -3,7 +3,7 @@ import SeoLandingPage from "../../components/SeoLandingPage";
 export const metadata = {
   title: "School Cleaning Services NYC | K-12 Janitorial",
   description:
-    "MBE-certified school cleaning services in New York City. CDC-compliant janitorial for K-12 schools, charter schools, and daycares. Green products, ATP-verified sanitization, and StockPoint documentation. Free walkthrough.",
+    "MBE/MWBE-certified school cleaning services in New York City. CDC-compliant janitorial for K-12 schools, charter schools, and daycares. Green products, ATP bioluminescence testing available on request, and StockPoint documentation. Free walkthrough.",
   keywords: [
     "school cleaning NYC",
     "school janitorial services New York",
@@ -16,7 +16,7 @@ export const metadata = {
   openGraph: {
     title: "School Cleaning Services NYC | GreenPoint Maintenance",
     description:
-      "MBE-certified school cleaning with CDC-compliant protocols, green products, and real-time StockPoint verification. Serving NYC schools since 2018.",
+      "MBE/MWBE-certified school cleaning with CDC-compliant protocols, green products, and real-time StockPoint verification. Serving NYC schools since 2018.",
     url: "https://greenpointms.com/school-cleaning-nyc",
   },
   alternates: { canonical: "https://greenpointms.com/school-cleaning-nyc/" },
@@ -47,7 +47,7 @@ const faqSchema = {
       name: "How do you verify cleaning quality in schools?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Through StockPoint, our proprietary verification system. Every cleaning session includes timestamped GPS-tagged photos, completed task checklists, and ATP bioluminescence testing — the same scientific measurement hospitals use to verify surface cleanliness. Administrators can access reports through a live dashboard.",
+        text: "Through StockPoint, our proprietary verification system. Every cleaning session includes timestamped GPS-tagged photos and completed task checklists. We can run an ATP test of high-touch surfaces on request — the same scientific measurement hospitals use to verify surface cleanliness. Administrators can access reports through a live dashboard.",
       },
     },
     {
@@ -74,7 +74,7 @@ export default function SchoolCleaningNYC() {
     <SeoLandingPage
       headline="School Cleaning Services in"
       highlightWord="New York City"
-      subheadline="CDC-compliant janitorial for K-12 schools, charter schools, and daycare centers. MBE-certified, Green Seal products, and every session verified through StockPoint."
+      subheadline="CDC-compliant janitorial for K-12 schools, charter schools, and daycare centers. MBE/MWBE-certified, Green Seal products, and every session verified through StockPoint."
       trustBadges={[
         "NYC DOE Approved Vendor",
         "MBE / MWBE Certified",
@@ -84,32 +84,32 @@ export default function SchoolCleaningNYC() {
       introParagraphs={[
         "New York City schools face unique cleaning challenges: high-traffic environments, strict health department regulations, allergy-sensitive students, and limited budgets. GreenPoint Maintenance Services Corp provides dedicated janitorial programs designed specifically for K-12 educational facilities — from single-campus charter schools to multi-building district complexes.",
         "Every cleaning session follows CDC-recommended protocols for educational environments. We use only Green Seal certified, non-toxic products safe for classrooms where children learn, eat, and play. Our StockPoint system gives administrators and school boards measurable proof that every surface meets clinical-grade cleanliness standards — no guesswork, no complaints, no failed inspections.",
-        "As a certified Minority Business Enterprise registered with NYC and NYS, GreenPoint qualifies for diversity procurement programs and MWBE set-aside contracts. Whether you're a charter school evaluating vendors or a district procurement officer sourcing compliant providers, we deliver the documentation, insurance, and performance standards government contracts require.",
+        "As an MBE/MWBE-certified company registered with NYC and NYS, GreenPoint qualifies for diversity procurement programs and MWBE set-aside contracts. Whether you're a charter school evaluating vendors or a district procurement officer sourcing compliant providers, we deliver the documentation, insurance, and performance standards government contracts require.",
       ]}
       services={[
         { iconKey: "school", title: "Classroom Sanitization", desc: "Daily cleaning of desks, chairs, whiteboards, door handles, light switches, and shared surfaces. Green products eliminate pathogens without toxic fumes." },
         { iconKey: "building", title: "Cafeteria & Kitchen Cleaning", desc: "Deep cleaning and sanitization of food preparation areas, serving lines, tables, and floors. Health department compliance documentation included." },
-        { iconKey: "shield", title: "Restroom Disinfection", desc: "Multi-daily restroom service with ATP bioluminescence verification. Supply replenishment, fixture sanitization, and odor control." },
+        { iconKey: "shield", title: "Restroom Disinfection", desc: "Multi-daily restroom service. ATP bioluminescence testing available on request. Supply replenishment, fixture sanitization, and odor control." },
         { iconKey: "building", title: "Gymnasium & Auditorium Care", desc: "Floor maintenance, bleacher cleaning, and event turnaround service. Dust control and air quality management for large spaces." },
         { iconKey: "medical", title: "Nurse's Office Protocols", desc: "OSHA-compliant cleaning of medical examination areas. Biohazard-safe waste handling and clinical-grade surface sanitization." },
         { iconKey: "building", title: "Summer Deep Clean Programs", desc: "Comprehensive floor stripping, sealing, carpet extraction, and facility-wide deep sanitization during summer break. Move-in ready for September." },
       ]}
       whyChooseUs={[
-        { iconKey: "shield", title: "StockPoint Verification", desc: "Real-time photo documentation, GPS-tagged task completion, and ATP bioluminescence testing accessible through your administrator dashboard." },
-        { iconKey: "award", title: "MBE Certified", desc: "Registered Minority Business Enterprise with NYC & NYS. Qualifies for diversity procurement programs and MWBE set-aside contracts." },
+        { iconKey: "shield", title: "StockPoint Verification", desc: "Real-time photo documentation and GPS-tagged task completion, accessible through your administrator dashboard. ATP bioluminescence testing available on request." },
+        { iconKey: "award", title: "MBE/MWBE Certified", desc: "MBE/MWBE certified with NYC & NYS. Qualifies for diversity procurement programs and MWBE set-aside contracts." },
         { iconKey: "medical", title: "Green Seal Products Only", desc: "Non-toxic, allergy-safe, EPA-registered cleaning products. No harsh chemical fumes in classrooms where children spend 8 hours a day." },
         { iconKey: "building", title: "Dedicated School Teams", desc: "Same background-checked, trained personnel assigned to your facility every visit. Consistency, accountability, and familiarity your staff can trust." },
       ]}
       faqItems={[
         { q: "What cleaning products do you use in NYC schools?", a: "We exclusively use Green Seal certified, EPA-registered products that are non-toxic, allergy-safe, and free from harsh chemical fumes. All products meet NYC Department of Education and Department of Health standards for use in school environments." },
         { q: "Do you follow CDC guidelines for school cleaning?", a: "Yes. Every GreenPoint school cleaning protocol is built on current CDC recommendations for K-12 environments, including high-touch surface sanitization, proper ventilation practices, and documented disinfection procedures." },
-        { q: "How do you verify cleaning quality in schools?", a: "Through StockPoint — our proprietary system that provides timestamped GPS-tagged photos, completed task checklists, and ATP bioluminescence testing. Administrators access everything through a live dashboard." },
+        { q: "How do you verify cleaning quality in schools?", a: "Through StockPoint — our proprietary system that provides timestamped GPS-tagged photos and completed task checklists. ATP bioluminescence testing is available on request. Administrators access everything through a live dashboard." },
         { q: "Are you qualified for NYC school district contracts?", a: "Yes. GreenPoint is MBE/MWBE certified with NYC and NYS, and SAM.gov registered with a valid CAGE code and UEI. We qualify for diversity procurement programs and set-aside contracts at every government level." },
         { q: "What does school cleaning from GreenPoint cost?", a: "Pricing is customized based on square footage, classrooms, frequency, and scope. We provide fixed-price proposals with no hidden fees after a free walkthrough. Try our instant quote calculator for an estimate in under 60 seconds." },
         { q: "Can you clean around school schedules?", a: "Absolutely. We offer flexible after-hours, evening, weekend, and holiday scheduling. Our teams work around your academic calendar, including early-morning pre-school arrival cleaning and event turnaround service." },
       ]}
       ctaHeadline="Get a Free School Cleaning Assessment"
-      ctaSubheadline="We'll walk your facility, identify compliance gaps, and deliver a fixed-price proposal within 48 hours. No obligation. MBE-certified."
+      ctaSubheadline="We'll walk your facility, identify compliance gaps, and deliver a fixed-price proposal within 48 hours. No obligation. MBE/MWBE-certified."
       schemaMarkup={faqSchema}
     />
   );

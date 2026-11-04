@@ -249,7 +249,7 @@ export default function EnhancedProgrammaticPage({
             Request a {serviceShortName} Quote for Your {cityName} Facility
           </h2>
           <p style={{ fontSize: 16, color: "rgba(255,255,255,0.6)", lineHeight: 1.7, marginBottom: 32 }}>
-            Get a complimentary facility walkthrough and customized {serviceShortName.toLowerCase()} proposal. MBE-certified. No obligation.
+            Get a complimentary facility walkthrough and customized {serviceShortName.toLowerCase()} proposal. MBE/MWBE-certified. No obligation.
           </p>
           <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
             <a href="/#schedule" className="ep-cta" style={{ background: "#1B7A3D", color: "#fff", padding: "16px 36px", borderRadius: 8, fontWeight: 700, fontSize: 13, textDecoration: "none", fontFamily: "'Syne', sans-serif", letterSpacing: "0.04em" }}>Schedule a Walkthrough →</a>

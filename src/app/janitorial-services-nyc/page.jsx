@@ -3,7 +3,7 @@ import SeoLandingPage from "../../components/SeoLandingPage";
 export const metadata = {
   title: "Janitorial Services NYC | Commercial Cleaning Company | GreenPoint",
   description:
-    "MBE-certified commercial janitorial services in New York City. Daily, weekly, and monthly cleaning for offices, schools, medical facilities, churches, and government buildings. Real-time StockPoint verification. Free facility walkthrough.",
+    "MBE/MWBE-certified commercial janitorial services in New York City. Daily, weekly, and monthly cleaning for offices, schools, medical facilities, churches, and government buildings. Real-time StockPoint verification. Free facility walkthrough.",
   keywords: [
     "janitorial services NYC",
     "commercial cleaning company New York",
@@ -16,7 +16,7 @@ export const metadata = {
   openGraph: {
     title: "Janitorial Services NYC | GreenPoint Maintenance Services",
     description:
-      "MBE-certified commercial janitorial with real-time verification. Schools, offices, medical, churches, and government buildings across NYC.",
+      "MBE/MWBE-certified commercial janitorial with real-time verification. Schools, offices, medical, churches, and government buildings across NYC.",
     url: "https://greenpointms.com/janitorial-services-nyc",
   },
   alternates: { canonical: "https://greenpointms.com/janitorial-services-nyc" },
@@ -66,7 +66,7 @@ export default function JanitorialServicesNYC() {
     <SeoLandingPage
       headline="Commercial Janitorial Services in"
       highlightWord="New York City"
-      subheadline="Full-service facility cleaning for offices, schools, medical facilities, churches, and government buildings. MBE-certified. Every cleaning verified in real-time through StockPoint."
+      subheadline="Full-service facility cleaning for offices, schools, medical facilities, churches, and government buildings. MBE/MWBE-certified. Every cleaning verified in real-time through StockPoint."
       trustBadges={[
         "MBE / MWBE Certified",
         "SAM.gov Registered",
@@ -76,11 +76,11 @@ export default function JanitorialServicesNYC() {
       introParagraphs={[
         "Finding a reliable janitorial company in New York City shouldn't be this hard. Missed cleanings, inconsistent quality, surprise charges, and zero accountability — that's what most facility managers deal with. GreenPoint Maintenance Services Corp exists to end that cycle.",
         "We provide commercial janitorial and facility maintenance programs tailored to the specific compliance, safety, and quality standards your facility requires. Whether you manage a school with CDC-compliant sanitization requirements, a medical office with OSHA protocols, or a government building with procurement compliance standards — we build a custom cleaning program around your facility's needs, not a one-size-fits-all package.",
-        "Every cleaning session is documented and verified in real-time through StockPoint, our proprietary system that provides timestamped photo evidence, GPS-tagged task completion, and ATP bioluminescence readings that scientifically measure surface cleanliness. Your board, tenants, or regulatory bodies get measurable proof — not promises.",
+        "Every cleaning session is documented and verified in real-time through StockPoint, our proprietary system that provides timestamped photo evidence and GPS-tagged task completion. We can run an ATP test of high-touch surfaces on request. Your board, tenants, or regulatory bodies get measurable proof — not promises.",
       ]}
       services={[
         { iconKey: "building", title: "Daily & Nightly Janitorial", desc: "Scheduled cleaning programs for lobbies, restrooms, offices, classrooms, and common areas. Customized checklists for your facility type and traffic patterns." },
-        { iconKey: "shield", title: "Disinfection & Sanitization", desc: "Electrostatic disinfection with hospital-grade sanitizers. ATP bioluminescence testing gives an objective cleanliness reading on high-touch surfaces." },
+        { iconKey: "shield", title: "Disinfection & Sanitization", desc: "Electrostatic disinfection with hospital-grade sanitizers. We can run an ATP test of high-touch surfaces on request." },
         { iconKey: "building", title: "Floor Care & Restoration", desc: "Strip, seal, and refinish hard floors. Carpet extraction and encapsulation. Marble, stone, and VCT maintenance programs for high-traffic commercial spaces." },
         { iconKey: "office", title: "Day Porter Services", desc: "On-site daytime staff for continuous upkeep — restroom monitoring, lobby presentation, conference room readiness, and supply replenishment." },
         { iconKey: "building", title: "Facility Maintenance", desc: "Light plumbing, electrical, HVAC filter changes, painting touch-ups, and general handyman services under one contract and one invoice." },
@@ -95,7 +95,7 @@ export default function JanitorialServicesNYC() {
       faqItems={[
         { q: "What types of facilities does GreenPoint clean in NYC?", a: "We serve six core verticals: K-12 schools and charter schools, churches and houses of worship, healthcare and medical offices, daycare and childcare centers, government and municipal buildings, and commercial office spaces. Each has dedicated protocols for its compliance and safety requirements." },
         { q: "How much do janitorial services cost in NYC?", a: "Pricing depends on facility type, square footage, frequency, and scope. We provide fixed-price proposals with no hidden fees after a complimentary walkthrough. Try our instant quote calculator for a preliminary estimate." },
-        { q: "What makes GreenPoint different from other NYC cleaning companies?", a: "StockPoint real-time cleaning verification with timestamped photos, GPS-tagged task completion, and ATP bioluminescence testing. Plus MBE/MWBE certification, SAM.gov registration, and $2M+ insurance coverage." },
+        { q: "What makes GreenPoint different from other NYC cleaning companies?", a: "StockPoint real-time cleaning verification with timestamped photos and GPS-tagged task completion. ATP bioluminescence testing is available on request. Plus MBE/MWBE certification, SAM.gov registration, and $2M+ insurance coverage." },
         { q: "Do you offer emergency cleaning services?", a: "Yes — 24/7 emergency response for water damage, biohazard incidents, post-event cleanup, and post-construction work. Call 844-814-0810 for immediate dispatch." },
         { q: "What areas of NYC do you serve?", a: "We cover all five boroughs — Bronx, Manhattan, Brooklyn, Queens, and Staten Island — plus Westchester County, and the broader tri-state region including NJ, CT, PA, and FL." },
         { q: "Are your cleaning teams background-checked?", a: "Every GreenPoint team member undergoes a comprehensive background check before assignment. We carry full commercial general liability insurance, workers' compensation, and bonding." },

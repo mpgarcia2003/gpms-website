@@ -67,7 +67,7 @@ export default function SeoLandingPage({
           <div className="seo-fade-up" style={{ animationDelay: "0s" }}>
             <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(200,163,77,0.12)", border: "1px solid rgba(200,163,77,0.25)", borderRadius: 6, padding: "6px 16px", marginBottom: 28 }}>
               <div className="seo-live-dot" style={{ width: 6, height: 6, borderRadius: "50%", background: "#C8A34D" }} />
-              <span style={{ fontSize: 10, color: "#C8A34D", fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", fontFamily: "'JetBrains Mono', monospace" }}>MBE Certified · Licensed & Insured · SAM.gov Registered</span>
+              <span style={{ fontSize: 10, color: "#C8A34D", fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", fontFamily: "'JetBrains Mono', monospace" }}>MBE/MWBE Certified · Licensed & Insured · SAM.gov Registered</span>
             </div>
           </div>
           <h1 className="seo-fade-up" style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(32px, 5vw, 56px)", fontWeight: 700, color: "#fff", lineHeight: 1.1, marginBottom: 24, letterSpacing: "-0.02em", animationDelay: "0.15s" }}>
