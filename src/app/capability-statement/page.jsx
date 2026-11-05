@@ -80,7 +80,7 @@ export default function CapabilityStatementPage() {
               </div>
 
               <p style={{ fontSize: 16, color: '#555', lineHeight: 1.8, marginBottom: 0 }}>
-                GreenPoint Maintenance Services Corp is an MBE/MWBE-certified commercial janitorial and facility maintenance provider headquartered in the Bronx, New York. We deliver verified cleaning services to institutional, government, healthcare, and educational facilities across New York, New Jersey, Connecticut, Pennsylvania, and Florida.
+                GreenPoint Maintenance Services Corp is an MBE/MWBE-certified commercial janitorial and facility maintenance provider headquartered in Brooklyn, New York. We deliver verified cleaning services to institutional, government, healthcare, and educational facilities across New York, New Jersey, Connecticut, Pennsylvania, and Florida.
               </p>
             </div>
 
@@ -302,7 +302,7 @@ export default function CapabilityStatementPage() {
                 </a>
               </div>
               <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.35)', marginTop: 24 }}>
-                GreenPoint Maintenance Services Corp • Bronx, NY • info@greenpointms.com
+                GreenPoint Maintenance Services Corp • Brooklyn, NY • info@greenpointms.com
               </p>
             </div>
 
