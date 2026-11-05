@@ -47,7 +47,7 @@ const faqSchema = {
       name: "Can GreenPoint fulfill diversity procurement requirements?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Our NYS MBE/MWBE certification supports New York State diversity procurement requirements. We are registered on SAM.gov for federal contracting. We provide all required documentation including capability statements, W-9, Certificates of Insurance, and compliance letters upon request.",
+        text: "Yes. GreenPoint is an NYS-certified MBE/MWBE and a Port Authority of NY & NJ certified MBE. Our NYS MBE/MWBE certification supports New York State diversity procurement requirements. We are registered on SAM.gov for federal contracting. We provide all required documentation including capability statements, W-9, Certificates of Insurance, and compliance letters upon request.",
       },
     },
     {
@@ -103,7 +103,7 @@ export default function MBECertifiedCleaningCompanyNYC() {
       faqItems={[
         { q: "What does MBE certification mean for a cleaning company?", a: "MBE certification verifies that a company is at least 51% minority-owned, operated, and controlled. For procurement, GreenPoint's NYS MBE/MWBE certification supports New York State diversity spending goals, MWBE set-aside contracts, and supplier diversity programs." },
         { q: "What certifications does GreenPoint hold?", a: "NYS MBE/MWBE certified, and active SAM.gov registration for federal contracting. NAICS codes: 561720, 238210, and 561790." },
-        { q: "Can GreenPoint fulfill diversity procurement requirements?", a: "Yes. Our NYS MBE/MWBE certification supports New York State diversity procurement. We are registered on SAM.gov for federal contracting. We provide capability statements, W-9, COI, and compliance letters within one business day." },
+        { q: "Can GreenPoint fulfill diversity procurement requirements?", a: "Yes. GreenPoint is an NYS-certified MBE/MWBE and a Port Authority of NY & NJ certified MBE. Our NYS MBE/MWBE certification supports New York State diversity procurement. We are registered on SAM.gov for federal contracting. We provide capability statements, W-9, COI, and compliance letters within one business day." },
         { q: "What NAICS codes does GreenPoint operate under?", a: "561720 (Janitorial Services), 238210 (Electrical Contractors and Other Wiring Installation), and 561790 (Other Services to Buildings and Dwellings)." },
         { q: "How do I get a capability statement or W-9?", a: "Download our capability statement at greenpointms.com/capability-statement. For W-9, COI, or other procurement documents, email info@greenpointms.com or call 844-814-0810." },
       ]}
