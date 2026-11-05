@@ -88,7 +88,7 @@ export default function JanitorialServicesNYC() {
       ]}
       whyChooseUs={[
         { iconKey: "shield", title: "StockPoint Verification", desc: "Real-time photo documentation, GPS tracking, and ATP bioluminescence testing. See proof of every cleaning session." },
-        { iconKey: "award", title: "MBE / MWBE Certified", desc: "Registered with NYC & NYS. Qualifies for diversity procurement programs and MWBE set-aside contracts at city, state, and federal level." },
+        { iconKey: "award", title: "MBE / MWBE Certified", desc: "NYS MBE/MWBE certified. Qualifies for New York State diversity procurement programs and MWBE set-aside contracts." },
         { iconKey: "building", title: "Fixed-Price Proposals", desc: "Transparent, per-facility pricing. No hourly billing, no surprise fees, no hidden charges. Know exactly what you'll pay every month." },
         { iconKey: "medical", title: "Vertical-Specific Protocols", desc: "Dedicated cleaning protocols for schools, churches, medical, daycare, government, and commercial offices. Not a one-size-fits-all approach." },
       ]}

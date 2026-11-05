@@ -16,7 +16,7 @@ export const metadata = {
   openGraph: {
     title: "MBE/MWBE Certified Cleaning Company NYC | GreenPoint Maintenance",
     description:
-      "NYC & NYS MBE/MWBE-certified company. Commercial janitorial, facility maintenance, and sanitization. SAM.gov registered with NAICS 561720, 238210, 561790.",
+      "NYS MBE/MWBE-certified company serving New York City. Commercial janitorial, facility maintenance, and sanitization. SAM.gov registered with NAICS 561720, 238210, 561790.",
     url: "https://greenpointms.com/mbe-certified-cleaning-company-nyc",
   },
   alternates: { canonical: "https://greenpointms.com/mbe-certified-cleaning-company-nyc" },
@@ -31,7 +31,7 @@ const faqSchema = {
       name: "What does MBE certification mean for a cleaning company?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "MBE (Minority Business Enterprise) certification verifies that a company is at least 51% owned, operated, and controlled by a minority individual. For procurement officers, it means GreenPoint qualifies for diversity spending goals, MWBE set-aside contracts, and supplier diversity programs at the city, state, and federal level.",
+        text: "MBE (Minority Business Enterprise) certification verifies that a company is at least 51% owned, operated, and controlled by a minority individual. For procurement officers, GreenPoint's NYS MBE/MWBE certification supports New York State diversity spending goals, MWBE set-aside contracts, and supplier diversity programs.",
       },
     },
     {
@@ -39,7 +39,7 @@ const faqSchema = {
       name: "What certifications does GreenPoint hold?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "GreenPoint holds MBE certification through NYC Small Business Services, MWBE certification through New York State, and is actively registered on SAM.gov for federal procurement. Our NAICS codes are 561720 (Janitorial Services), 238210 (Electrical Contractors and Other Wiring Installation), and 561790 (Other Services to Buildings and Dwellings).",
+        text: "GreenPoint is NYS MBE/MWBE certified and is actively registered on SAM.gov for federal procurement. Our NAICS codes are 561720 (Janitorial Services), 238210 (Electrical Contractors and Other Wiring Installation), and 561790 (Other Services to Buildings and Dwellings).",
       },
     },
     {
@@ -47,7 +47,7 @@ const faqSchema = {
       name: "Can GreenPoint fulfill diversity procurement requirements?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Our MBE/MWBE certifications satisfy diversity procurement requirements for NYC agencies, NYS contracts, Port Authority projects, and federal contracts through SAM.gov. We provide all required documentation including capability statements, W-9, Certificates of Insurance, and compliance letters upon request.",
+        text: "Yes. Our NYS MBE/MWBE certification supports New York State diversity procurement requirements. We are registered on SAM.gov for federal contracting. We provide all required documentation including capability statements, W-9, Certificates of Insurance, and compliance letters upon request.",
       },
     },
     {
@@ -82,7 +82,7 @@ export default function MBECertifiedCleaningCompanyNYC() {
         "$2M+ Insured & Bonded",
       ]}
       introParagraphs={[
-        "Procurement officers and facility managers seeking MBE-certified cleaning vendors in New York City need a provider that delivers both compliance documentation and measurable cleaning performance. GreenPoint Maintenance Services Corp holds MBE certification through NYC Small Business Services and MWBE certification through New York State — verified credentials that satisfy diversity spending goals for city, state, and federal contracts.",
+        "Procurement officers and facility managers seeking MBE-certified cleaning vendors in New York City need a provider that delivers both compliance documentation and measurable cleaning performance. GreenPoint Maintenance Services Corp is NYS MBE/MWBE certified — a verified credential that supports New York State diversity spending goals.",
         "Beyond certification, GreenPoint brings operational rigor that separates us from checkbox vendors. Every cleaning session is documented through StockPoint, our proprietary verification system with timestamped photos and GPS-tagged task completion. ATP bioluminescence testing is available on request. When auditors or board members ask for proof of service, you have a real-time dashboard — not a cleaning crew's word.",
         "We serve over 80 facilities across five states with a workforce of 80+ background-checked professionals. Our NAICS codes — 561720 (Janitorial), 238210 (Electrical/Wiring), and 561790 (Building Services) — cover the full spectrum of facility maintenance. One vendor, one invoice, one point of accountability.",
       ]}
@@ -95,15 +95,15 @@ export default function MBECertifiedCleaningCompanyNYC() {
         { iconKey: "hardhat", title: "Post-Construction Cleanup", desc: "Three-stage rough, light, and final construction cleanup. Dust removal, window cleaning, floor preparation. Move-in ready within 48 hours." },
       ]}
       whyChooseUs={[
-        { iconKey: "award", title: "MBE / MWBE Certified", desc: "MBE/MWBE certified through NYC SBS and NYS. Qualifies for diversity procurement, set-aside contracts, and supplier diversity programs." },
+        { iconKey: "award", title: "MBE / MWBE Certified", desc: "NYS MBE/MWBE certified. Qualifies for New York State diversity procurement, set-aside contracts, and supplier diversity programs." },
         { iconKey: "shield", title: "StockPoint Verification", desc: "Proprietary real-time cleaning verification with timestamped photos and GPS tagging. ATP bioluminescence testing available on request. Audit-ready documentation on demand." },
         { iconKey: "landmark", title: "SAM.gov & Federal Ready", desc: "Actively registered on SAM.gov with valid CAGE code and UEI. NAICS 561720, 238210, 561790. Capability statement and full vendor package available." },
         { iconKey: "building", title: "5-State, 80+ Workforce", desc: "Operational across NY, NJ, CT, PA, and FL with 80+ background-checked professionals. Scalable from single-site to multi-location contracts." },
       ]}
       faqItems={[
-        { q: "What does MBE certification mean for a cleaning company?", a: "MBE certification verifies that a company is at least 51% minority-owned, operated, and controlled. For procurement, it means GreenPoint qualifies for diversity spending goals, MWBE set-aside contracts, and supplier diversity programs at city, state, and federal levels." },
-        { q: "What certifications does GreenPoint hold?", a: "MBE through NYC Small Business Services, MWBE through New York State, and active SAM.gov registration for federal contracting. NAICS codes: 561720, 238210, and 561790." },
-        { q: "Can GreenPoint fulfill diversity procurement requirements?", a: "Yes. Our certifications satisfy diversity procurement for NYC agencies, NYS contracts, Port Authority projects, and federal contracts. We provide capability statements, W-9, COI, and compliance letters within one business day." },
+        { q: "What does MBE certification mean for a cleaning company?", a: "MBE certification verifies that a company is at least 51% minority-owned, operated, and controlled. For procurement, GreenPoint's NYS MBE/MWBE certification supports New York State diversity spending goals, MWBE set-aside contracts, and supplier diversity programs." },
+        { q: "What certifications does GreenPoint hold?", a: "NYS MBE/MWBE certified, and active SAM.gov registration for federal contracting. NAICS codes: 561720, 238210, and 561790." },
+        { q: "Can GreenPoint fulfill diversity procurement requirements?", a: "Yes. Our NYS MBE/MWBE certification supports New York State diversity procurement. We are registered on SAM.gov for federal contracting. We provide capability statements, W-9, COI, and compliance letters within one business day." },
         { q: "What NAICS codes does GreenPoint operate under?", a: "561720 (Janitorial Services), 238210 (Electrical Contractors and Other Wiring Installation), and 561790 (Other Services to Buildings and Dwellings)." },
         { q: "How do I get a capability statement or W-9?", a: "Download our capability statement at greenpointms.com/capability-statement. For W-9, COI, or other procurement documents, email info@greenpointms.com or call 844-814-0810." },
       ]}

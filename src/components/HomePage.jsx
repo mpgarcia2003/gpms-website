@@ -348,7 +348,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "Is GreenPoint MBE/MWBE certified?",
-    a: "Yes. GreenPoint Maintenance Services Corp is MBE/MWBE certified, registered with New York State and the City of New York. We are also an NYC DOE Approved Vendor, authorized to provide products and services to New York City public schools. We are registered on SAM.gov for federal contracting. Our MBE/MWBE certification qualifies us for diversity procurement programs and MWBE set-aside contracts at the city, state, and federal level.",
+    a: "Yes. GreenPoint Maintenance Services Corp is NYS MBE/MWBE certified. We are also an NYC DOE Approved Vendor, authorized to provide products and services to New York City public schools. We are registered on SAM.gov for federal contracting. Our NYS MBE/MWBE certification qualifies us for New York State diversity procurement programs and MWBE set-aside contracts.",
   },
   {
     q: "What types of facilities do you clean?",
@@ -382,8 +382,8 @@ const WHY_US = [
   {
     iconKey: "trophy",
     title: "MBE/MWBE Certified",
-    desc: "MBE/MWBE certified with NYS & NYC. Qualifies for diversity procurement and MWBE set-aside contracts.",
-    competitor: "Certified with NYS & NYC",
+    desc: "NYS MBE/MWBE certified. Qualifies for New York State diversity procurement and MWBE set-aside contracts.",
+    competitor: "NYS MBE/MWBE certified",
   },
   {
     iconKey: "dollar",
@@ -1838,7 +1838,7 @@ function ComplianceSection() {
         </AnimatedSection>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 20 }} className="stats-grid">
           {[
-            { iconKey: "award", title: "MBE / MWBE Certified", desc: "NYC & NYS registered. Eligible for diversity procurement programs and set-aside contracts." },
+            { iconKey: "award", title: "MBE / MWBE Certified", desc: "NYS MBE/MWBE certified. Eligible for New York State diversity procurement programs and set-aside contracts." },
             { iconKey: "school", title: "NYC DOE Approved Vendor", desc: "Approved to provide products and services to New York City public schools through the DOE vendor system." },
             { iconKey: "file-check", title: "SAM.gov Registered", desc: "Federal contractor registration with valid CAGE code and UEI. Ready for government RFPs." },
             { iconKey: "shield", title: "$2M+ Insurance Coverage", desc: "Commercial general liability, workers' compensation, and bonding. COI available on request." },
@@ -1897,7 +1897,7 @@ function About() {
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}>
                 {[
-                  { label: "MBE / MWBE Certified", sub: "NYS & NYC" },
+                  { label: "MBE / MWBE Certified", sub: "New York State" },
                   { label: "NYC DOE Approved Vendor", sub: "Public Schools" },
                   { label: "SAM.gov Registered", sub: "Federal Contracting" },
                   { label: "Fully Insured", sub: "$2M+ GL Coverage" },
@@ -1928,7 +1928,7 @@ function About() {
                     MBE/MWBE Certified
                   </h3>
                   <p style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 15, color: "#4A5E52", lineHeight: 1.7, marginBottom: 24 }}>
-                    Registered with New York State and the City of New York. Eligible for all diversity procurement programs and MWBE set-aside contracts.
+                    NYS MBE/MWBE certified. Eligible for New York State diversity procurement programs and MWBE set-aside contracts.
                   </p>
                   <div style={{ borderTop: "1px solid #E2EBE5", paddingTop: 20 }}>
                     <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 13, color: "#8A9B91", marginBottom: 8 }}>Also registered with:</div>

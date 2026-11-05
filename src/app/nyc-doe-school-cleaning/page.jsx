@@ -64,7 +64,7 @@ const faqSchema = {
       name: "Does GreenPoint qualify for NYC diversity procurement programs?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. GreenPoint is a Certified Minority Business Enterprise (MBE) registered with both NYC SBS and New York State. We are also MWBE certified and SAM.gov registered. Contracts with GreenPoint count toward your school's or district's diversity procurement targets.",
+        text: "Yes. GreenPoint is NYS MBE/MWBE certified and SAM.gov registered. Contracts with GreenPoint count toward your school's or district's diversity procurement targets.",
       },
     },
   ],
@@ -97,7 +97,7 @@ export default function NYCDOESchoolCleaning() {
       ]}
       whyChooseUs={[
         { iconKey: "school", title: "NYC DOE Approved Vendor", desc: "Authorized to provide cleaning services to New York City public schools. Full procurement compliance with DOE vendor requirements and documentation standards." },
-        { iconKey: "award", title: "MBE / MWBE Certified", desc: "MBE/MWBE certified with NYC SBS and NYS. Every contract dollar counts toward your diversity procurement goals." },
+        { iconKey: "award", title: "MBE / MWBE Certified", desc: "NYS MBE/MWBE certified. Every contract dollar counts toward your diversity procurement goals." },
         { iconKey: "shield", title: "StockPoint Verification", desc: "Real-time photo documentation and GPS-tagged task completion. ATP bioluminescence testing available on request. Administrators access everything through a live dashboard." },
         { iconKey: "medical", title: "Child-Safe Products Only", desc: "Exclusively Green Seal certified, EPA Safer Choice products. Non-toxic, fragrance-free, and allergy-safe — meeting the strictest standards for environments with children." },
       ]}
@@ -106,7 +106,7 @@ export default function NYCDOESchoolCleaning() {
         { q: "What services can you provide to NYC public schools?", a: "We provide daily janitorial service, restroom sanitization, cafeteria cleaning, floor care (stripping, sealing, carpet extraction), gymnasium maintenance, nurse's office cleaning, disinfection services, summer deep cleaning, and day porter services." },
         { q: "Do your products meet NYC DOE requirements?", a: "Yes. We exclusively use Green Seal certified, EPA Safer Choice, and EPA-registered products that meet NYC DOE and NYC Department of Health standards. All products are non-toxic, fragrance-free, and allergy-safe for children." },
         { q: "How do you verify cleaning quality?", a: "Our StockPoint system provides timestamped, GPS-tagged photo documentation and digital task checklists. ATP bioluminescence testing is available on request. Administrators access results through a live dashboard." },
-        { q: "Does hiring GreenPoint count toward diversity procurement goals?", a: "Yes. GreenPoint is MBE/MWBE certified with NYC and NYS. Every contract dollar counts toward your school's or district's diversity procurement targets." },
+        { q: "Does hiring GreenPoint count toward diversity procurement goals?", a: "Yes. GreenPoint is NYS MBE/MWBE certified. Every contract dollar counts toward your school's or district's diversity procurement targets." },
         { q: "Can you work around the school schedule?", a: "Absolutely. We offer after-hours, evening, weekend, and holiday scheduling. Our teams work around the academic calendar including early-morning cleaning, event turnaround, and comprehensive summer deep cleaning programs." },
       ]}
       ctaHeadline="Get a Free School Cleaning Assessment"

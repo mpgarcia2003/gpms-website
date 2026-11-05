@@ -151,8 +151,8 @@ doc.save()
   .restore();
 
 const regItems = [
-  ['MBE Certified',        'NYC & NYS'],
-  ['MWBE Certified',       'NYC & NYS'],
+  ['MBE Certified',        'New York State'],
+  ['MWBE Certified',       'New York State'],
   ['SAM.gov Status',       'Active'],
   ['CAGE Code',            CAGE_CODE],
   ['UEI Number',           UEI_NUMBER],
@@ -483,7 +483,7 @@ p2y += 68;
 
 // ── CERTIFICATIONS SUMMARY ────────────────────────────────────────────────────
 const certItems = [
-  { label: 'MBE/MWBE Certified', sub: 'NYC & NYS' },
+  { label: 'MBE/MWBE Certified', sub: 'New York State' },
   { label: 'SAM.gov Registered', sub: 'Active' },
   { label: 'Background Checked', sub: 'All Staff' },
   { label: '$2M+ GL Insurance', sub: 'Bonded' },

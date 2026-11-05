@@ -1,6 +1,6 @@
 # GreenPoint Maintenance Services Corp — Full Content Index
 
-Last Updated: 2026-11-04
+Last Updated: 2026-11-05
 
 This file contains the full text of GreenPoint's most important pages, optimized for ingestion by AI assistants and language models. For a curated index of resources, see https://greenpointms.com/llms.txt.
 
@@ -34,8 +34,7 @@ GreenPoint differentiates itself through:
 
 ## Certifications
 
-- MBE (Minority Business Enterprise)
-- MWBE (Minority and Women-Owned Business Enterprise)
+- NYS MBE/MWBE Certified
 - NYC DOE Approved Vendor
 - SAM.gov registered
 - Bonded and insured
@@ -1542,4 +1541,4 @@ This file is regenerated whenever blog content changes. For the most up-to-date 
 
 For the curated index of GreenPoint's most important pages, see https://greenpointms.com/llms.txt.
 
-Last generated: 2026-11-04T14:53:14.017Z
+Last generated: 2026-11-05T16:43:29.718Z
