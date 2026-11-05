@@ -46,7 +46,7 @@ const localBusinessSchema = {
   "naics": "561720",
   "knowsAbout": ["Commercial Janitorial", "Disinfection", "Floor Care", "Day Porter", "Facility Maintenance"],
   "hasCredential": [
-    { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Minority Business Enterprise (MBE) — NYC & NYS" },
+    { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "MBE/MWBE Certified — NYC & NYS" },
     { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "MWBE Certified" },
     { "@type": "EducationalOccupationalCredential", "credentialCategory": "registration", "name": "SAM.gov Registered Federal Contractor" },
     { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "NYC Department of Education (DOE) Approved Vendor" }
