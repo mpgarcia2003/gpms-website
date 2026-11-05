@@ -24,7 +24,7 @@ const CAPABILITIES = [
 ];
 
 const COMPLIANCE_ITEMS = [
-  { label: "MBE / MWBE Certified", detail: "New York State & City of New York" },
+  { label: "MBE / MWBE Certified", detail: "New York State" },
   { label: "SAM.gov Registered", detail: "Valid CAGE Code & UEI" },
   { label: "NAICS 561720", detail: "Janitorial Services" },
   { label: "NAICS 238210", detail: "Electrical Contractors" },
@@ -147,7 +147,7 @@ export default function GovernmentCleaningPage() {
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: 24 }}>
             {[
-              { title: 'MBE/MWBE Certified', desc: 'Certified through NYC SBS and New York State. Satisfies diversity procurement goals and MWBE set-aside requirements for city, state, and federal contracts.' },
+              { title: 'MBE/MWBE Certified', desc: 'NYS MBE/MWBE certified. Satisfies New York State diversity procurement goals and MWBE set-aside requirements.' },
               { title: 'SAM.gov Active & Current', desc: 'Active federal vendor registration with valid CAGE code and UEI. Eligible for federal, state, and municipal contract vehicles without additional vetting.' },
               { title: 'Background-Checked Workforce', desc: 'Every field technician passes comprehensive criminal background checks, drug screening, and facility-specific clearance. No subcontractor opacity.' },
               { title: '$2M+ Insurance Coverage', desc: "Commercial General Liability, Workers' Compensation, and surety bond available. Certificate of Insurance provided within one business day." },

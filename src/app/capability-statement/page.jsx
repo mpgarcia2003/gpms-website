@@ -92,8 +92,8 @@ export default function CapabilityStatementPage() {
                   Registrations & Certifications
                 </h3>
                 {[
-                  { label: 'MBE Certified', value: 'NYC & NYS' },
-                  { label: 'MWBE Certified', value: 'NYC & NYS' },
+                  { label: 'MBE Certified', value: 'New York State' },
+                  { label: 'MWBE Certified', value: 'New York State' },
                   { label: 'SAM.gov Status', value: 'Active Registration' },
                   { label: 'CAGE Code', value: 'Available upon request' },
                   { label: 'UEI Number', value: 'Available upon request' },

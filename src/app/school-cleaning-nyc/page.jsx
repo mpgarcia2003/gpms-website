@@ -55,7 +55,7 @@ const faqSchema = {
       name: "Are you qualified for NYC school district contracts?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. GreenPoint is an NYC DOE Approved Vendor and MBE/MWBE certified enterprise registered with both NYC and NYS. We are also SAM.gov registered with a valid CAGE code and UEI for government procurement. Our certifications qualify us for diversity procurement programs and set-aside contracts at the city, state, and federal level.",
+        text: "Yes. GreenPoint is an NYC DOE Approved Vendor and an NYS MBE/MWBE certified enterprise. We are also SAM.gov registered with a valid CAGE code and UEI for government procurement. Our NYS MBE/MWBE certification qualifies us for New York State diversity procurement programs and MWBE set-aside contracts.",
       },
     },
     {
@@ -84,7 +84,7 @@ export default function SchoolCleaningNYC() {
       introParagraphs={[
         "New York City schools face unique cleaning challenges: high-traffic environments, strict health department regulations, allergy-sensitive students, and limited budgets. GreenPoint Maintenance Services Corp provides dedicated janitorial programs designed specifically for K-12 educational facilities — from single-campus charter schools to multi-building district complexes.",
         "Every cleaning session follows CDC-recommended protocols for educational environments. We use only Green Seal certified, non-toxic products safe for classrooms where children learn, eat, and play. Our StockPoint system gives administrators and school boards measurable proof that every surface meets clinical-grade cleanliness standards — no guesswork, no complaints, no failed inspections.",
-        "As an MBE/MWBE-certified company registered with NYC and NYS, GreenPoint qualifies for diversity procurement programs and MWBE set-aside contracts. Whether you're a charter school evaluating vendors or a district procurement officer sourcing compliant providers, we deliver the documentation, insurance, and performance standards government contracts require.",
+        "As an NYS MBE/MWBE-certified company, GreenPoint qualifies for diversity procurement programs and MWBE set-aside contracts. Whether you're a charter school evaluating vendors or a district procurement officer sourcing compliant providers, we deliver the documentation, insurance, and performance standards government contracts require.",
       ]}
       services={[
         { iconKey: "school", title: "Classroom Sanitization", desc: "Daily cleaning of desks, chairs, whiteboards, door handles, light switches, and shared surfaces. Green products eliminate pathogens without toxic fumes." },
@@ -96,7 +96,7 @@ export default function SchoolCleaningNYC() {
       ]}
       whyChooseUs={[
         { iconKey: "shield", title: "StockPoint Verification", desc: "Real-time photo documentation and GPS-tagged task completion, accessible through your administrator dashboard. ATP bioluminescence testing available on request." },
-        { iconKey: "award", title: "MBE/MWBE Certified", desc: "MBE/MWBE certified with NYC & NYS. Qualifies for diversity procurement programs and MWBE set-aside contracts." },
+        { iconKey: "award", title: "MBE/MWBE Certified", desc: "NYS MBE/MWBE certified. Qualifies for diversity procurement programs and MWBE set-aside contracts." },
         { iconKey: "medical", title: "Green Seal Products Only", desc: "Non-toxic, allergy-safe, EPA-registered cleaning products. No harsh chemical fumes in classrooms where children spend 8 hours a day." },
         { iconKey: "building", title: "Dedicated School Teams", desc: "Same background-checked, trained personnel assigned to your facility every visit. Consistency, accountability, and familiarity your staff can trust." },
       ]}
@@ -104,7 +104,7 @@ export default function SchoolCleaningNYC() {
         { q: "What cleaning products do you use in NYC schools?", a: "We exclusively use Green Seal certified, EPA-registered products that are non-toxic, allergy-safe, and free from harsh chemical fumes. All products meet NYC Department of Education and Department of Health standards for use in school environments." },
         { q: "Do you follow CDC guidelines for school cleaning?", a: "Yes. Every GreenPoint school cleaning protocol is built on current CDC recommendations for K-12 environments, including high-touch surface sanitization, proper ventilation practices, and documented disinfection procedures." },
         { q: "How do you verify cleaning quality in schools?", a: "Through StockPoint — our proprietary system that provides timestamped GPS-tagged photos and completed task checklists. ATP bioluminescence testing is available on request. Administrators access everything through a live dashboard." },
-        { q: "Are you qualified for NYC school district contracts?", a: "Yes. GreenPoint is MBE/MWBE certified with NYC and NYS, and SAM.gov registered with a valid CAGE code and UEI. We qualify for diversity procurement programs and set-aside contracts at every government level." },
+        { q: "Are you qualified for NYC school district contracts?", a: "Yes. GreenPoint is NYS MBE/MWBE certified and SAM.gov registered with a valid CAGE code and UEI. Our NYS MBE/MWBE certification qualifies us for New York State diversity procurement programs and MWBE set-aside contracts." },
         { q: "What does school cleaning from GreenPoint cost?", a: "Pricing is customized based on square footage, classrooms, frequency, and scope. We provide fixed-price proposals with no hidden fees after a free walkthrough. Try our instant quote calculator for an estimate in under 60 seconds." },
         { q: "Can you clean around school schedules?", a: "Absolutely. We offer flexible after-hours, evening, weekend, and holiday scheduling. Our teams work around your academic calendar, including early-morning pre-school arrival cleaning and event turnaround service." },
       ]}

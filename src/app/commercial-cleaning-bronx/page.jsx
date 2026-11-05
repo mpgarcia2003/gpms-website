@@ -64,7 +64,7 @@ const faqSchema = {
       name: "Are you qualified for Bronx school district and government contracts?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. GreenPoint is MBE/MWBE certified through NYC SBS and NYS, and registered on SAM.gov for federal procurement. We carry $2M+ commercial general liability insurance and provide all required documentation for school district and municipal contract compliance.",
+        text: "Yes. GreenPoint is NYS MBE/MWBE certified and registered on SAM.gov for federal procurement. We carry $2M+ commercial general liability insurance and provide all required documentation for school district and municipal contract compliance.",
       },
     },
   ],
@@ -98,7 +98,7 @@ export default function CommercialCleaningBronx() {
       whyChooseUs={[
         { iconKey: "building", title: "Bronx-Based Headquarters", desc: "Local presence means faster response, same-day emergency availability, and a team that knows Bronx buildings, neighborhoods, and facility challenges firsthand." },
         { iconKey: "shield", title: "StockPoint Verification", desc: "Every cleaning session documented with timestamped photos and GPS tagging. ATP bioluminescence testing available on request. Real-time dashboard access for facility managers." },
-        { iconKey: "award", title: "MBE / MWBE Certified", desc: "MBE/MWBE certified and qualified for diversity procurement with NYC, NYS, and federal agencies. SAM.gov registered, NAICS 561720." },
+        { iconKey: "award", title: "MBE / MWBE Certified", desc: "NYS MBE/MWBE certified and qualified for New York State diversity procurement. SAM.gov registered, NAICS 561720." },
         { iconKey: "building", title: "Dedicated Local Teams", desc: "Same background-checked, Bronx-based crew assigned to your facility every visit. Consistency, accountability, and familiarity your staff can rely on." },
       ]}
       faqItems={[
@@ -106,7 +106,7 @@ export default function CommercialCleaningBronx() {
         { q: "What types of Bronx facilities do you clean?", a: "Schools, charter schools, churches, medical offices, daycares, government buildings, and commercial offices. From Fordham to Pelham Bay, Riverdale to Mott Haven." },
         { q: "How fast can you respond to emergencies?", a: "Same-day emergency response for Bronx facilities — flood cleanup, post-event turnaround, biohazard, and urgent deep cleans. Average response under 4 hours for existing clients." },
         { q: "Do you serve areas outside the Bronx?", a: "Yes — all five boroughs plus Westchester, NJ, CT, PA, and FL. But the Bronx is home base, so you get the fastest response times in the borough." },
-        { q: "Are you qualified for Bronx school and government contracts?", a: "MBE/MWBE certified through NYC and NYS, SAM.gov registered, $2M+ insured. Full documentation package available for school district and municipal procurement." },
+        { q: "Are you qualified for Bronx school and government contracts?", a: "NYS MBE/MWBE certified, SAM.gov registered, $2M+ insured. Full documentation package available for school district and municipal procurement." },
       ]}
       ctaHeadline="Get a Free Facility Assessment in the Bronx"
       ctaSubheadline="We'll walk your facility, build a customized cleaning program, and deliver a fixed-price proposal within 48 hours. Local team. No obligation."

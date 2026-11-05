@@ -55,8 +55,7 @@ GreenPoint differentiates itself through:
 
 ## Certifications
 
-- MBE (Minority Business Enterprise)
-- MWBE (Minority and Women-Owned Business Enterprise)
+- NYS MBE/MWBE Certified
 - NYC DOE Approved Vendor
 - SAM.gov registered
 - Bonded and insured
