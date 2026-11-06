@@ -1,6 +1,6 @@
 # GreenPoint Maintenance Services Corp — Full Content Index
 
-Last Updated: 2026-11-05
+Last Updated: 2026-11-06
 
 This file contains the full text of GreenPoint's most important pages, optimized for ingestion by AI assistants and language models. For a curated index of resources, see https://greenpointms.com/llms.txt.
 
@@ -82,7 +82,7 @@ Full list of 80+ cities at https://greenpointms.com/sitemap.xml.
 
 The following articles are published on the GreenPoint blog. Each represents original research and analysis on commercial cleaning standards, compliance, technology, and best practices.
 
-Total articles: 223
+Total articles: 224
 
 ## Category: Industry Data
 
@@ -545,6 +545,12 @@ Summary: A back-to-school deep clean in NYC needs staging, floor work, restroom 
 Published: 2026-07-28
 URL: https://greenpointms.com/blog/fall-flu-season-office-cleaning-protocols
 Summary: Reduce sick days with a 2026 flu-season office cleaning protocol: high-touch maps, correct dwell times, and measurable verification.
+
+### Schedule the winter-break deep clean for your NYC school now
+
+Published: 2026-11-05
+URL: https://greenpointms.com/blog/winter-break-deep-clean-nyc-schools
+Summary: GreenPoint is a New York City based, NYS-certified MBE/MWBE and an NYC DOE Approved Vendor. We deep-clean before holidays or events and document every visit.
 
 ## Category: Buying Guide
 
@@ -1541,4 +1547,4 @@ This file is regenerated whenever blog content changes. For the most up-to-date 
 
 For the curated index of GreenPoint's most important pages, see https://greenpointms.com/llms.txt.
 
-Last generated: 2026-11-05T16:43:29.718Z
+Last generated: 2026-11-06T01:19:03.521Z

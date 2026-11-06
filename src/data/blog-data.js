@@ -46948,6 +46948,45 @@ A: StockPoint time-stamped GPS-tagged photos plus inspections and documented cor
         "text": "Book a Lower East Side or Chinatown walkthrough with GreenPoint Maintenance Services at 347-332-9348. Request a fixed-price tenant scope with JaniTrack service records and a reported 98% client retention rate."
       }
     ]
+  },
+
+  {
+    slug: "winter-break-deep-clean-nyc-schools",
+    title: "Schedule the winter-break deep clean for your NYC school now",
+    excerpt: "GreenPoint is a New York City based, NYS-certified MBE/MWBE and an NYC DOE Approved Vendor. We deep-clean before holidays or events and document every visit.",
+    category: "Seasonal",
+    author: "GreenPoint Maintenance",
+    publishedAt: "2026-11-05",
+    readTime: "1 min read",
+    keywords: [
+      "NYC school winter break deep clean",
+      "NYS-certified MBE/MWBE",
+      "NYC DOE Approved Vendor",
+      "StockPoint",
+      "walkthrough"
+    ],
+    content: [
+      {
+        type: "intro",
+        text: "When the building empties for winter break, classrooms, corridors, and common areas can get a deeper clean than the regular school-year schedule allows. The useful step is to lock the dates now, while the calendar is still open."
+      },
+      {
+        type: "paragraph",
+        text: "GreenPoint Maintenance Services Corp is a New York City based, NYS-certified MBE/MWBE commercial cleaning company and an NYC DOE Approved Vendor. Since 2018 we have cleaned schools, rehab and treatment facilities, managed buildings, and houses of worship, with 80+ facilities under contract."
+      },
+      {
+        type: "paragraph",
+        text: "We schedule deep cleans before holidays or events so rooms are ready when students and staff return. Every visit is documented with timestamped, GPS-tagged photos in StockPoint. After a walkthrough we can deliver a custom cleaning plan in 24 hours. If you want extra verification of high-touch surfaces, we can run an ATP test on request."
+      },
+      {
+        type: "paragraph",
+        text: "We do not publish percent-off promotions or menu prices. The next step is a facility walkthrough: https://greenpointms.com/#schedule or (844) 814-0810."
+      },
+      {
+        type: "paragraph",
+        text: "GreenPoint Maintenance Services Corp · 32 Court Street, Suite 904-F33, Brooklyn, NY 11201"
+      }
+    ]
   }
 
 ];
