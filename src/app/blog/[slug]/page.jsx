@@ -2,6 +2,37 @@ import { BLOG_POSTS, getBlogPost, getAllBlogParams } from '../../../data/blog-da
 import SiteHeader from '../../../components/SiteHeader';
 import SiteFooter from '../../../components/SiteFooter';
 
+const MARKDOWN_LINK_PATTERN = /\[([^\]]+)\]\((https?:\/\/[^\s)]+|\/(?!\/)[A-Za-z0-9/_?=&%#.-]+)\)/g;
+
+function renderInlineLinks(text, keyPrefix) {
+  const parts = [];
+  const pattern = new RegExp(MARKDOWN_LINK_PATTERN.source, 'g');
+  let cursor = 0;
+  let match;
+
+  while ((match = pattern.exec(text)) !== null) {
+    if (match.index > cursor) parts.push(text.slice(cursor, match.index));
+    const href = match[2];
+    const external = /^https?:\/\//i.test(href);
+    parts.push(
+      <a
+        key={`${keyPrefix}-${match.index}`}
+        href={href}
+        className="blog-link"
+        target={external ? '_blank' : undefined}
+        rel={external ? 'noopener noreferrer' : undefined}
+      >
+        {match[1]}
+      </a>
+    );
+    cursor = pattern.lastIndex;
+  }
+
+  if (cursor === 0) return text;
+  if (cursor < text.length) parts.push(text.slice(cursor));
+  return parts;
+}
+
 export function generateStaticParams() {
   return getAllBlogParams();
 }
@@ -125,21 +156,21 @@ export default function BlogPostPage({ params }) {
           if (block.type === "intro") {
             return (
               <p key={i} style={{ fontSize: 18, color: "#1A2B1F", lineHeight: 1.8, marginBottom: 32, fontWeight: 500 }}>
-                {block.text}
+                {renderInlineLinks(block.text, i)}
               </p>
             );
           }
           if (block.type === "heading") {
             return (
               <h2 key={i} style={{ fontFamily: "'Syne', sans-serif", fontSize: 22, fontWeight: 700, color: "#1A2B1F", lineHeight: 1.25, marginTop: 40, marginBottom: 16, letterSpacing: "-0.01em" }}>
-                {block.text}
+                {renderInlineLinks(block.text, i)}
               </h2>
             );
           }
           if (block.type === "paragraph") {
             return (
               <p key={i} style={{ fontSize: 16, color: "#4A5E52", lineHeight: 1.8, marginBottom: 20 }}>
-                {block.text}
+                {renderInlineLinks(block.text, i)}
               </p>
             );
           }
@@ -147,7 +178,7 @@ export default function BlogPostPage({ params }) {
             return (
               <div key={i} style={{ background: "#F0F7F2", borderLeft: "3px solid #1B7A3D", padding: "20px 24px", borderRadius: "0 8px 8px 0", margin: "32px 0" }}>
                 <p style={{ fontSize: 15, color: "#1A2B1F", lineHeight: 1.7, fontWeight: 500, margin: 0 }}>
-                  {block.text}
+                  {renderInlineLinks(block.text, i)}
                 </p>
               </div>
             );
