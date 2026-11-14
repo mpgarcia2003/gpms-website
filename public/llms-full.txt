@@ -1,6 +1,6 @@
 # GreenPoint Maintenance Services Corp — Full Content Index
 
-Last Updated: 2026-11-05
+Last Updated: 2026-11-14
 
 This file contains the full text of GreenPoint's most important pages, optimized for ingestion by AI assistants and language models. For a curated index of resources, see https://greenpointms.com/llms.txt.
 
@@ -82,7 +82,7 @@ Full list of 80+ cities at https://greenpointms.com/sitemap.xml.
 
 The following articles are published on the GreenPoint blog. Each represents original research and analysis on commercial cleaning standards, compliance, technology, and best practices.
 
-Total articles: 223
+Total articles: 228
 
 ## Category: Industry Data
 
@@ -553,6 +553,12 @@ Summary: Reduce sick days with a 2026 flu-season office cleaning protocol: high-
 Published: 2026-04-26
 URL: https://greenpointms.com/blog/questions-to-ask-commercial-cleaning-company
 Summary: The 10 questions that separate professional cleaning companies from the rest — what to ask about staffing, verification, insurance, and accountability before you sign a contract.
+
+### Commercial Cleaning Contract Price Escalators: Wage, CPI, and Renewal Clauses
+
+Published: 2026-11-14
+URL: https://greenpointms.com/blog/commercial-cleaning-contract-price-escalator-clauses
+Summary: Write fair cleaning-contract escalators with a defined index, base period, formula, cap, notice, and wage-change process. A practical renewal checklist for facility buyers.
 
 ## Category: Local SEO
 
@@ -1472,6 +1478,34 @@ Published: 2026-11-03
 URL: https://greenpointms.com/blog/cleaning-vendor-rfp-scope-template
 Summary: A practical commercial cleaning RFP scope framework for room inventories, frequencies, measurable service levels, pricing assumptions, and New York-area procurement.
 
+## Category: Industry Guide
+
+### Cold Storage Facility Cleaning in NY, NJ, and CT: Scheduling and Operational Controls
+
+Published: 2026-11-14
+URL: https://greenpointms.com/blog/cold-storage-facility-cleaning-ny-nj-ct
+Summary: Plan cold storage cleaning around temperature zones, product protection, condensation, and shift windows. A practical NY, NJ, and CT buyer guide to scope and verification.
+
+### Zoo and Aquarium Cleaning Services in the Tri-State: Public Areas and Vendor Scope
+
+Published: 2026-11-14
+URL: https://greenpointms.com/blog/zoo-aquarium-cleaning-services-tristate
+Summary: A practical guide to zoo and aquarium cleaning scopes, visitor routes, animal-area boundaries, hand hygiene, and vendor controls for facilities across the Tri-State.
+
+## Category: Comparisons
+
+### Fixed-Price vs. Cost-Plus Commercial Cleaning Contracts: How Buyers Can Compare
+
+Published: 2026-11-14
+URL: https://greenpointms.com/blog/fixed-price-vs-cost-plus-commercial-cleaning
+Summary: Compare fixed-price and cost-plus janitorial contracts by risk, labor visibility, change control, and service proof. Use this buyer checklist before choosing a pricing model.
+
+### Day Porter vs. Night Cleaning Services: Choosing the Right Building Coverage
+
+Published: 2026-11-14
+URL: https://greenpointms.com/blog/day-porter-vs-night-cleaning-services
+Summary: Decide whether your building needs a day porter, night janitorial crew, or both. Compare task timing, coverage gaps, staffing assumptions, and verification before buying.
+
 
 ---
 
@@ -1541,4 +1575,4 @@ This file is regenerated whenever blog content changes. For the most up-to-date 
 
 For the curated index of GreenPoint's most important pages, see https://greenpointms.com/llms.txt.
 
-Last generated: 2026-11-05T16:43:29.718Z
+Last generated: 2026-11-14T12:46:50.153Z
