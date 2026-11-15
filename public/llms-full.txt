@@ -1,6 +1,6 @@
 # GreenPoint Maintenance Services Corp — Full Content Index
 
-Last Updated: 2026-11-14
+Last Updated: 2026-11-15
 
 This file contains the full text of GreenPoint's most important pages, optimized for ingestion by AI assistants and language models. For a curated index of resources, see https://greenpointms.com/llms.txt.
 
@@ -82,7 +82,7 @@ Full list of 80+ cities at https://greenpointms.com/sitemap.xml.
 
 The following articles are published on the GreenPoint blog. Each represents original research and analysis on commercial cleaning standards, compliance, technology, and best practices.
 
-Total articles: 228
+Total articles: 233
 
 ## Category: Industry Data
 
@@ -1478,6 +1478,20 @@ Published: 2026-11-03
 URL: https://greenpointms.com/blog/cleaning-vendor-rfp-scope-template
 Summary: A practical commercial cleaning RFP scope framework for room inventories, frequencies, measurable service levels, pricing assumptions, and New York-area procurement.
 
+## Category: Local Service Guide
+
+### Commercial Cleaning for Crown Heights Offices and Retail Spaces
+
+Published: 2026-11-15
+URL: https://greenpointms.com/blog/commercial-cleaning-crown-heights-brooklyn
+Summary: Choose Crown Heights commercial cleaning with a clear scope for offices, retail, transit-area access, restrooms, floor care, service verification, and pricing.
+
+### Commercial Cleaning in Sunnyside, Queens: How Local Businesses Choose a Vendor
+
+Published: 2026-11-15
+URL: https://greenpointms.com/blog/commercial-cleaning-sunnyside-queens-vendor-guide
+Summary: Compare commercial cleaning in Sunnyside, Queens with a practical scope for local offices, storefronts, access, quality checks, and fixed-price janitorial service.
+
 ## Category: Industry Guide
 
 ### Cold Storage Facility Cleaning in NY, NJ, and CT: Scheduling and Operational Controls
@@ -1492,6 +1506,18 @@ Published: 2026-11-14
 URL: https://greenpointms.com/blog/zoo-aquarium-cleaning-services-tristate
 Summary: A practical guide to zoo and aquarium cleaning scopes, visitor routes, animal-area boundaries, hand hygiene, and vendor controls for facilities across the Tri-State.
 
+### Veterinary Clinic Cleaning Services in NYC: Scope, Safety, and Vendor Selection
+
+Published: 2026-11-15
+URL: https://greenpointms.com/blog/veterinary-clinic-cleaning-services-nyc
+Summary: A NYC veterinary clinic cleaning guide to room scopes, OSHA safety, disinfectant labels, clinic-controlled protocols, vendor verification, and clear janitorial boundaries.
+
+### Catering Kitchen Cleaning Services in NYC: What Operators Should Require
+
+Published: 2026-11-15
+URL: https://greenpointms.com/blog/catering-kitchen-cleaning-services-nyc
+Summary: Select NYC catering kitchen cleaning with a zone-based scope, food-safety boundaries, chemical controls, shift planning, floor care, and verifiable service records.
+
 ## Category: Comparisons
 
 ### Fixed-Price vs. Cost-Plus Commercial Cleaning Contracts: How Buyers Can Compare
@@ -1505,6 +1531,14 @@ Summary: Compare fixed-price and cost-plus janitorial contracts by risk, labor v
 Published: 2026-11-14
 URL: https://greenpointms.com/blog/day-porter-vs-night-cleaning-services
 Summary: Decide whether your building needs a day porter, night janitorial crew, or both. Compare task timing, coverage gaps, staffing assumptions, and verification before buying.
+
+## Category: Vendor Selection Guide
+
+### Food Hall Cleaning Contractors in NYC: Choosing a Partner for Shared Spaces
+
+Published: 2026-11-15
+URL: https://greenpointms.com/blog/food-hall-cleaning-contractors-nyc
+Summary: Compare NYC food hall cleaning contractors for shared dining areas, restrooms, spill response, vendor boundaries, waste routes, event coverage, and documented quality.
 
 
 ---
@@ -1575,4 +1609,4 @@ This file is regenerated whenever blog content changes. For the most up-to-date 
 
 For the curated index of GreenPoint's most important pages, see https://greenpointms.com/llms.txt.
 
-Last generated: 2026-11-14T12:46:50.153Z
+Last generated: 2026-11-15T13:00:48.229Z
