@@ -1,6 +1,6 @@
 # GreenPoint Maintenance Services Corp — Full Content Index
 
-Last Updated: 2026-11-16
+Last Updated: 2026-11-17
 
 This file contains the full text of GreenPoint's most important pages, optimized for ingestion by AI assistants and language models. For a curated index of resources, see https://greenpointms.com/llms.txt.
 
@@ -82,7 +82,7 @@ Full list of 80+ cities at https://greenpointms.com/sitemap.xml.
 
 The following articles are published on the GreenPoint blog. Each represents original research and analysis on commercial cleaning standards, compliance, technology, and best practices.
 
-Total articles: 233
+Total articles: 238
 
 ## Category: Industry Data
 
@@ -1492,6 +1492,18 @@ Published: 2026-11-15
 URL: https://greenpointms.com/blog/commercial-cleaning-sunnyside-queens-vendor-guide
 Summary: Compare commercial cleaning in Sunnyside, Queens with a practical scope for local offices, storefronts, access, quality checks, and fixed-price janitorial service.
 
+### Retail Showroom Cleaning in Manhattan: Selecting a Commercial Vendor
+
+Published: 2026-11-17
+URL: https://greenpointms.com/blog/retail-showroom-cleaning-manhattan
+Summary: Compare Manhattan showroom cleaning vendors by display-safe methods, visitor-hour scheduling, glass and floor care, proof of work, and transparent scope.
+
+### Commercial Cleaning for Pet Boarding Facilities in Westchester County
+
+Published: 2026-11-17
+URL: https://greenpointms.com/blog/pet-boarding-facility-cleaning-westchester
+Summary: Plan Westchester pet-boarding cleaning with animal-safe access rules, kennel-zone task frequencies, odor and waste controls, staff training, and documented checks.
+
 ## Category: Industry Guide
 
 ### Cold Storage Facility Cleaning in NY, NJ, and CT: Scheduling and Operational Controls
@@ -1517,6 +1529,24 @@ Summary: A NYC veterinary clinic cleaning guide to room scopes, OSHA safety, dis
 Published: 2026-11-15
 URL: https://greenpointms.com/blog/catering-kitchen-cleaning-services-nyc
 Summary: Select NYC catering kitchen cleaning with a zone-based scope, food-safety boundaries, chemical controls, shift planning, floor care, and verifiable service records.
+
+### College Campus Janitorial Services in NYC: Building a Vendor Scope
+
+Published: 2026-11-17
+URL: https://greenpointms.com/blog/college-campus-janitorial-services-nyc
+Summary: Compare NYC college janitorial vendors using a campus-specific scope, zone schedules, documented quality checks, clear pricing, and practical service benchmarks.
+
+### Commercial Bakery Cleaning Services in NYC: Choosing a Qualified Contractor
+
+Published: 2026-11-17
+URL: https://greenpointms.com/blog/commercial-bakery-cleaning-services-nyc
+Summary: Choose a NYC bakery cleaning contractor with a documented sanitation scope, food-safety boundaries, shift-aware scheduling, chemical controls, and verifiable records.
+
+### Cleaning Services for Banks and Credit Unions in New Jersey
+
+Published: 2026-11-17
+URL: https://greenpointms.com/blog/bank-credit-union-cleaning-services-new-jersey
+Summary: Evaluate New Jersey bank cleaning contractors for secure access, branch-specific schedules, privacy controls, verified service, and clear fixed-price terms.
 
 ## Category: Comparisons
 
@@ -1609,4 +1639,4 @@ This file is regenerated whenever blog content changes. For the most up-to-date 
 
 For the curated index of GreenPoint's most important pages, see https://greenpointms.com/llms.txt.
 
-Last generated: 2026-11-16T12:46:05.951Z
+Last generated: 2026-11-17T12:47:02.921Z
