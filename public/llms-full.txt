@@ -1,6 +1,6 @@
 # GreenPoint Maintenance Services Corp — Full Content Index
 
-Last Updated: 2026-11-17
+Last Updated: 2026-11-18
 
 This file contains the full text of GreenPoint's most important pages, optimized for ingestion by AI assistants and language models. For a curated index of resources, see https://greenpointms.com/llms.txt.
 
@@ -82,7 +82,7 @@ Full list of 80+ cities at https://greenpointms.com/sitemap.xml.
 
 The following articles are published on the GreenPoint blog. Each represents original research and analysis on commercial cleaning standards, compliance, technology, and best practices.
 
-Total articles: 238
+Total articles: 243
 
 ## Category: Industry Data
 
@@ -1504,6 +1504,18 @@ Published: 2026-11-17
 URL: https://greenpointms.com/blog/pet-boarding-facility-cleaning-westchester
 Summary: Plan Westchester pet-boarding cleaning with animal-safe access rules, kennel-zone task frequencies, odor and waste controls, staff training, and documented checks.
 
+### Cleaning Services for Municipal Recreation Centers in the Bronx
+
+Published: 2026-11-18
+URL: https://greenpointms.com/blog/municipal-recreation-center-cleaning-bronx
+Summary: A practical Bronx recreation-center cleaning scope covers gyms, locker rooms, public programs, safe product use, measurable inspections, and predictable pricing.
+
+### Private School Cleaning Services in Westchester: Vendor Scope and Selection
+
+Published: 2026-11-18
+URL: https://greenpointms.com/blog/private-school-cleaning-services-westchester
+Summary: Choose a Westchester private-school cleaning vendor with a room-level scope, school-calendar coverage, documented safety practices, and verifiable inspections.
+
 ## Category: Industry Guide
 
 ### Cold Storage Facility Cleaning in NY, NJ, and CT: Scheduling and Operational Controls
@@ -1548,6 +1560,12 @@ Published: 2026-11-17
 URL: https://greenpointms.com/blog/bank-credit-union-cleaning-services-new-jersey
 Summary: Evaluate New Jersey bank cleaning contractors for secure access, branch-specific schedules, privacy controls, verified service, and clear fixed-price terms.
 
+### Grocery Store Cleaning Services in NYC: Vendor Scope for Daily Operations
+
+Published: 2026-11-18
+URL: https://greenpointms.com/blog/grocery-store-cleaning-services-nyc
+Summary: A grocery cleaning scope for NYC should protect customer routes, produce and food zones, restrooms, back rooms, waste areas, and documented daily inspections.
+
 ## Category: Comparisons
 
 ### Fixed-Price vs. Cost-Plus Commercial Cleaning Contracts: How Buyers Can Compare
@@ -1569,6 +1587,22 @@ Summary: Decide whether your building needs a day porter, night janitorial crew,
 Published: 2026-11-15
 URL: https://greenpointms.com/blog/food-hall-cleaning-contractors-nyc
 Summary: Compare NYC food hall cleaning contractors for shared dining areas, restrooms, spill response, vendor boundaries, waste routes, event coverage, and documented quality.
+
+## Category: Buyer Guide
+
+### Commercial Cleaning for Queens Property Managers: Scoping Multi-Tenant Buildings
+
+Published: 2026-11-18
+URL: https://greenpointms.com/blog/commercial-property-manager-cleaning-queens
+Summary: Queens property managers can compare janitorial bids more clearly by mapping tenant zones, access windows, service frequencies, inspections, and fixed-price inclusions.
+
+## Category: Compliance Guide
+
+### Outpatient Dialysis Cleaning Services in NYC: Evaluating Environmental Services
+
+Published: 2026-11-18
+URL: https://greenpointms.com/blog/outpatient-dialysis-cleaning-services-nyc
+Summary: Evaluate NYC dialysis-clinic environmental services with clear room protocols, documented product contact times, staff training, and evidence-based quality checks.
 
 
 ---
@@ -1639,4 +1673,4 @@ This file is regenerated whenever blog content changes. For the most up-to-date 
 
 For the curated index of GreenPoint's most important pages, see https://greenpointms.com/llms.txt.
 
-Last generated: 2026-11-17T12:47:02.921Z
+Last generated: 2026-11-18T12:54:36.554Z
