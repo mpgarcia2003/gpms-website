@@ -731,6 +731,56 @@ const BLOG_INDEX = [
   {slug: "private-school-cleaning-services-westchester", image: "/blog/private-school-cleaning-services-westchester.jpg", title: "Private School Cleaning Services in Westchester: Vendor Scope and Selection", excerpt: "Choose a Westchester private-school cleaning vendor with a room-level scope, school-calendar coverage, documented safety practices, and verifiable inspections.", category: "Local Service Guide", date: "2026-11-18", readTime: "9 min"},
   {slug: "outpatient-dialysis-cleaning-services-nyc", image: "/blog/outpatient-dialysis-cleaning-services-nyc.jpg", title: "Outpatient Dialysis Cleaning Services in NYC: Evaluating Environmental Services", excerpt: "Evaluate NYC dialysis-clinic environmental services with clear room protocols, documented product contact times, staff training, and evidence-based quality checks.", category: "Compliance Guide", date: "2026-11-18", readTime: "10 min"},
   {slug: "grocery-store-cleaning-services-nyc", image: "/blog/grocery-store-cleaning-services-nyc.jpg", title: "Grocery Store Cleaning Services in NYC: Vendor Scope for Daily Operations", excerpt: "A grocery cleaning scope for NYC should protect customer routes, produce and food zones, restrooms, back rooms, waste areas, and documented daily inspections.", category: "Industry Guide", date: "2026-11-18", readTime: "9 min"},
+
+  {
+    "slug": "commercial-laundromat-cleaning-services-nyc",
+    "image": "/blog/commercial-laundromat-cleaning-services-nyc.jpg",
+    "title": "Commercial Cleaning for Laundromats in NYC: Choosing an Ongoing Service",
+    "excerpt": "Compare NYC laundromat cleaning vendors by wet-floor response, lint control, restroom care, documented inspections, and a fixed scope built around operating hours.",
+    "category": "Industry Guide",
+    "date": "2026-11-19",
+    "readTime": "10 min"
+  },
+
+  {
+    "slug": "yacht-club-cleaning-services-fairfield-county",
+    "image": "/blog/yacht-club-cleaning-services-fairfield-county.jpg",
+    "title": "Yacht Club Cleaning Services in Fairfield County, Connecticut",
+    "excerpt": "A buyer's guide to yacht club cleaning in Fairfield County, including dining rooms, locker rooms, waterfront entries, event schedules, safety, and service verification.",
+    "category": "Local Service Guide",
+    "date": "2026-11-19",
+    "readTime": "10 min"
+  },
+
+  {
+    "slug": "food-manufacturing-cleaning-services-new-jersey",
+    "image": "/blog/food-manufacturing-cleaning-services-new-jersey.jpg",
+    "title": "Food Manufacturing Cleaning Services in New Jersey: Vendor Requirements",
+    "excerpt": "Evaluate New Jersey food-plant cleaning vendors by sanitation boundaries, documented procedures, training, chemical controls, verification, and audit-ready records.",
+    "category": "Compliance Guide",
+    "date": "2026-11-19",
+    "readTime": "11 min"
+  },
+
+  {
+    "slug": "luxury-residential-amenity-cleaning-manhattan",
+    "image": "/blog/luxury-residential-amenity-cleaning-manhattan.jpg",
+    "title": "Commercial Cleaning for Luxury Residential Amenity Spaces in Manhattan",
+    "excerpt": "Compare Manhattan amenity cleaning vendors on resident privacy, lobby and fitness-room routines, event resets, surface care, staffing continuity, and proof of service.",
+    "category": "Local Service Guide",
+    "date": "2026-11-19",
+    "readTime": "10 min"
+  },
+
+  {
+    "slug": "parking-garage-cleaning-services-nyc",
+    "image": "/blog/parking-garage-cleaning-services-nyc.jpg",
+    "title": "Parking Garage Cleaning Services in NYC: Vendor Scope and Safety",
+    "excerpt": "Choose NYC parking garage cleaning by comparing debris removal, spill response, drain boundaries, traffic control, worker safety, and documented service outcomes.",
+    "category": "Industry Guide",
+    "date": "2026-11-19",
+    "readTime": "10 min"
+  }
 ];
 
 export const metadata = {
