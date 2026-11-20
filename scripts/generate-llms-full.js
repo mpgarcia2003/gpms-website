@@ -123,11 +123,11 @@ function loadBlogData() {
 
     // Match pattern: slug: "..." and adjacent title/excerpt
     const posts = [];
-    const slugRegex = /slug:\s*["'`]([^"'`]+)["'`]/g;
-    const titleRegex = /title:\s*["'`]([^"'`]+)["'`]/g;
-    const excerptRegex = /excerpt:\s*["'`]([^"'`]+)["'`]/g;
-    const dateRegex = /(?:date|publishedAt):\s*["'`]([^"'`]+)["'`]/g;
-    const categoryRegex = /category:\s*["'`]([^"'`]+)["'`]/g;
+    const slugRegex = /["']?slug["']?\s*:\s*["'`]([^"'`]+)["'`]/g;
+    const titleRegex = /["']?title["']?\s*:\s*["'`]([^"'`]+)["'`]/g;
+    const excerptRegex = /["']?excerpt["']?\s*:\s*["'`]([^"'`]+)["'`]/g;
+    const dateRegex = /["']?(?:date|publishedAt)["']?\s*:\s*["'`]([^"'`]+)["'`]/g;
+    const categoryRegex = /["']?category["']?\s*:\s*["'`]([^"'`]+)["'`]/g;
 
     const slugs = [...content.matchAll(slugRegex)].map(m => m[1]);
     const titles = [...content.matchAll(titleRegex)].map(m => m[1]);
@@ -147,7 +147,12 @@ function loadBlogData() {
       });
     }
 
-    return posts;
+    const seen = new Set();
+    return posts.filter(post => {
+      if (seen.has(post.slug)) return false;
+      seen.add(post.slug);
+      return true;
+    });
   } catch (err) {
     console.error('[llms-full] Error loading blog data:', err.message);
     return [];
