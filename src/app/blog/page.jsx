@@ -788,7 +788,57 @@ const BLOG_INDEX = [
 
     {"slug": "commercial-cleaning-park-slope-brooklyn", "image": "/blog/commercial-cleaning-park-slope-brooklyn.jpg", "title": "Commercial Cleaning Services in Park Slope, Brooklyn: How to Choose a Local Contractor", "excerpt": "Compare Park Slope commercial cleaning contractors using a property walkthrough, clear office and retail scope, safety documentation, fixed pricing, and verifiable checks.", "category": "Local Service Guide", "date": "2026-11-20", "readTime": "9 min"},
 
-    {"slug": "commercial-cleaning-mott-haven-bronx", "image": "/blog/commercial-cleaning-mott-haven-bronx.jpg", "title": "Commercial Cleaning in Mott Haven, Bronx: Selecting a Vendor for Offices and Mixed-Use Buildings", "excerpt": "Select a Mott Haven commercial cleaning vendor with a route-based scope, clear mixed-use responsibilities, safety controls, fixed pricing, and documented quality follow-up.", "category": "Local Service Guide", "date": "2026-11-20", "readTime": "9 min"}
+    {"slug": "commercial-cleaning-mott-haven-bronx", "image": "/blog/commercial-cleaning-mott-haven-bronx.jpg", "title": "Commercial Cleaning in Mott Haven, Bronx: Selecting a Vendor for Offices and Mixed-Use Buildings", "excerpt": "Select a Mott Haven commercial cleaning vendor with a route-based scope, clear mixed-use responsibilities, safety controls, fixed pricing, and documented quality follow-up.", "category": "Local Service Guide", "date": "2026-11-20", "readTime": "9 min"},
+
+  {
+  "slug": "commercial-cleaning-hackensack-nj",
+  "image": "/blog/commercial-cleaning-hackensack-nj.jpg",
+  "title": "Commercial Cleaning Services in Hackensack, NJ: Choosing a Qualified Janitorial Vendor",
+  "excerpt": "Compare Hackensack commercial cleaning vendors by scope, proof of service, safety, and pricing. A practical guide for Bergen County offices, clinics, and mixed-use buildings.",
+  "category": "Local Service Guide",
+  "date": "2026-11-21",
+  "readTime": "9 min read"
+},
+
+  {
+  "slug": "commercial-cleaning-teaneck-nj",
+  "image": "/blog/commercial-cleaning-teaneck-nj.jpg",
+  "title": "Commercial Cleaning in Teaneck, New Jersey: Vendor Criteria for Offices and Clinics",
+  "excerpt": "A practical Teaneck guide to office and clinic cleaning: set a measurable scope, confirm safety and access procedures, and compare Bergen County vendor proposals.",
+  "category": "Local Service Guide",
+  "date": "2026-11-21",
+  "readTime": "9 min read"
+},
+
+  {
+  "slug": "commercial-cleaning-lehigh-valley-pa",
+  "image": "/blog/commercial-cleaning-lehigh-valley-pa.jpg",
+  "title": "Commercial Cleaning Services in the Lehigh Valley: Choosing a Contractor for Multi-Site Facilities",
+  "excerpt": "Compare Lehigh Valley janitorial contractors for offices, campuses, and warehouses with a measurable scope, site-level verification, and practical multi-location controls.",
+  "category": "Local Service Guide",
+  "date": "2026-11-21",
+  "readTime": "9 min read"
+},
+
+  {
+  "slug": "commercial-cleaning-danbury-ct",
+  "image": "/blog/commercial-cleaning-danbury-ct.jpg",
+  "title": "Commercial Cleaning in Danbury, Connecticut: How Businesses Can Compare Local Vendors",
+  "excerpt": "A Danbury vendor-selection guide for offices, clinics, and retail: define the scope, verify service with real records, and account for local schedules and building needs.",
+  "category": "Local Service Guide",
+  "date": "2026-11-21",
+  "readTime": "9 min read"
+},
+
+  {
+  "slug": "commercial-cleaning-westport-ct",
+  "image": "/blog/commercial-cleaning-westport-ct.jpg",
+  "title": "Commercial Cleaning Services in Westport, CT: Selecting a Vendor for Professional Offices",
+  "excerpt": "A Westport guide for professional offices and shared workplaces: define cleaning frequencies, verify each visit, and compare vendor proposals on the same scope.",
+  "category": "Local Service Guide",
+  "date": "2026-11-21",
+  "readTime": "9 min read"
+}
 ];
 
 export const metadata = {
