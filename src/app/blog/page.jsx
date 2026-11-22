@@ -838,7 +838,12 @@ const BLOG_INDEX = [
   "category": "Local Service Guide",
   "date": "2026-11-21",
   "readTime": "9 min read"
-}
+},
+  {"slug": "commercial-cleaning-palm-beach-county-fl", "image": "/blog/commercial-cleaning-palm-beach-county-fl.jpg", "title": "Commercial Cleaning in Palm Beach County: Vendor Selection for Offices and Commercial Properties", "excerpt": "Compare commercial cleaning vendors in Palm Beach County with a practical guide to scope, pricing, inspections, green products, and local facility needs.", "category": "Local Service Guide", "date": "2026-11-22", "readTime": "9 min"},
+  {"slug": "commercial-cleaning-jacksonville-fl", "image": "/blog/commercial-cleaning-jacksonville-fl.jpg", "title": "Commercial Cleaning Services in Jacksonville, Florida: Choosing a Reliable Facility Vendor", "excerpt": "A Jacksonville buyer's guide to janitorial scope, vendor pricing, quality verification, safety, and reliable office cleaning across Duval County facilities.", "category": "Local Service Guide", "date": "2026-11-22", "readTime": "9 min"},
+  {"slug": "commercial-cleaning-st-petersburg-fl", "image": "/blog/commercial-cleaning-st-petersburg-fl.jpg", "title": "Commercial Cleaning in St. Petersburg, Florida: How Facility Buyers Evaluate Contractors", "excerpt": "Evaluate St. Petersburg commercial cleaning contractors by scope, coastal conditions, worker safety, verified quality, and contract terms that prevent gaps.", "category": "Local Service Guide", "date": "2026-11-22", "readTime": "9 min"},
+  {"slug": "commercial-cleaning-monmouth-county-nj", "image": "/blog/commercial-cleaning-monmouth-county-nj.jpg", "title": "Commercial Cleaning in Monmouth County, NJ: A Buyer’s Guide to Local Service Contracts", "excerpt": "Select a Monmouth County commercial cleaning contractor with a complete scope, transparent price, documented quality checks, and a clear startup plan.", "category": "Local Service Guide", "date": "2026-11-22", "readTime": "9 min"},
+  {"slug": "commercial-cleaning-harrisburg-pa", "image": "/blog/commercial-cleaning-harrisburg-pa.jpg", "title": "Commercial Cleaning Services in Harrisburg, PA: Selecting a Contractor for Offices and Agencies", "excerpt": "Choose a Harrisburg commercial cleaning contractor with a detailed scope, accountable inspections, secure access procedures, and transparent pricing for buyers.", "category": "Local Service Guide", "date": "2026-11-22", "readTime": "9 min"}
 ];
 
 export const metadata = {
