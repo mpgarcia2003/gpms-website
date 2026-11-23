@@ -844,6 +844,52 @@ const BLOG_INDEX = [
   {"slug": "commercial-cleaning-st-petersburg-fl", "image": "/blog/commercial-cleaning-st-petersburg-fl.jpg", "title": "Commercial Cleaning in St. Petersburg, Florida: How Facility Buyers Evaluate Contractors", "excerpt": "Evaluate St. Petersburg commercial cleaning contractors by scope, coastal conditions, worker safety, verified quality, and contract terms that prevent gaps.", "category": "Local Service Guide", "date": "2026-11-22", "readTime": "9 min"},
   {"slug": "commercial-cleaning-monmouth-county-nj", "image": "/blog/commercial-cleaning-monmouth-county-nj.jpg", "title": "Commercial Cleaning in Monmouth County, NJ: A Buyer’s Guide to Local Service Contracts", "excerpt": "Select a Monmouth County commercial cleaning contractor with a complete scope, transparent price, documented quality checks, and a clear startup plan.", "category": "Local Service Guide", "date": "2026-11-22", "readTime": "9 min"},
   {"slug": "commercial-cleaning-harrisburg-pa", "image": "/blog/commercial-cleaning-harrisburg-pa.jpg", "title": "Commercial Cleaning Services in Harrisburg, PA: Selecting a Contractor for Offices and Agencies", "excerpt": "Choose a Harrisburg commercial cleaning contractor with a detailed scope, accountable inspections, secure access procedures, and transparent pricing for buyers.", "category": "Local Service Guide", "date": "2026-11-22", "readTime": "9 min"}
+,
+  {
+    "slug": "casino-cleaning-services-atlantic-city-nj",
+    "image": "/blog/casino-cleaning-services-atlantic-city-nj.jpg",
+    "title": "Casino Cleaning Contractors in Atlantic City: Planning Coverage for Gaming Floors and Guest Areas",
+    "excerpt": "Compare casino cleaning contractors in Atlantic City by gaming-floor access, guest-area coverage, shift coordination, safety controls, inspections, and fixed-price scope.",
+    "category": "Industry Guide",
+    "date": "2026-11-23",
+    "readTime": "9 min"
+  },
+  {
+    "slug": "commercial-cleaning-waste-transfer-stations-ny-nj",
+    "image": "/blog/commercial-cleaning-waste-transfer-stations-ny-nj.jpg",
+    "title": "Commercial Cleaning for Waste Transfer Stations in New York and New Jersey: Safety and Vendor Scope",
+    "excerpt": "Plan waste transfer station cleaning in New York and New Jersey with clear work zones, operator coordination, spill escalation, safety controls, and documented scopes.",
+    "category": "Industry Guide",
+    "date": "2026-11-23",
+    "readTime": "9 min"
+  },
+  {
+    "slug": "commercial-cleaning-aircraft-maintenance-hangars-ny-nj",
+    "image": "/blog/commercial-cleaning-aircraft-maintenance-hangars-ny-nj.jpg",
+    "title": "Commercial Cleaning for Aircraft Hangars and FBOs in New York and New Jersey",
+    "excerpt": "Choose hangar and FBO cleaning in New York and New Jersey with clear aircraft boundaries, airport access controls, FOD prevention, chemical review, and proof of service.",
+    "category": "Industry Guide",
+    "date": "2026-11-23",
+    "readTime": "9 min"
+  },
+  {
+    "slug": "commercial-cleaning-cannabis-cultivation-facilities-ny-nj",
+    "image": "/blog/commercial-cleaning-cannabis-cultivation-facilities-ny-nj.jpg",
+    "title": "Cannabis Cultivation Facility Cleaning Contractors: Vendor Selection in New York and New Jersey",
+    "excerpt": "Select cannabis cultivation cleaning contractors in New York and New Jersey with clear licensee oversight, product controls, room zoning, records, and staff access.",
+    "category": "Industry Guide",
+    "date": "2026-11-23",
+    "readTime": "9 min"
+  },
+  {
+    "slug": "commercial-cleaning-call-centers-tri-state",
+    "image": "/blog/commercial-cleaning-call-centers-tri-state.jpg",
+    "title": "Cleaning Services for 24/7 Call Centers in the Tri-State Area: Staffing and Vendor Criteria",
+    "excerpt": "Compare 24/7 call center cleaning services across New York, New Jersey, and Connecticut by shift coverage, workstation care, restroom response, staffing backup, and QA.",
+    "category": "Industry Guide",
+    "date": "2026-11-23",
+    "readTime": "9 min"
+  }
 ];
 
 export const metadata = {
