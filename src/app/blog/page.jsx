@@ -889,6 +889,56 @@ const BLOG_INDEX = [
     "category": "Industry Guide",
     "date": "2026-11-23",
     "readTime": "9 min"
+  },
+
+  {
+    "slug": "commercial-cleaning-animal-shelters-tri-state",
+    "image": "/blog/commercial-cleaning-animal-shelters-tri-state.jpg",
+    "title": "Commercial Cleaning for Animal Shelters and Adoption Centers: Contractor Requirements",
+    "excerpt": "Compare animal shelter cleaning contractors across NY, NJ, and CT by sanitation scope, safe access, documented protocols, and reliable daily coverage.",
+    "category": "Industry Guide",
+    "date": "2026-11-24",
+    "readTime": "10 min"
+  },
+
+  {
+    "slug": "commercial-cleaning-commercial-printing-plants-ny-nj",
+    "image": "/blog/commercial-cleaning-commercial-printing-plants-ny-nj.jpg",
+    "title": "Commercial Cleaning for Printing Plants: Choosing a Contractor for Pressrooms and Finishing Areas",
+    "excerpt": "Choose a New York or New Jersey printing-plant cleaning contractor by pressroom boundaries, ink and solvent controls, safe access, and documented scope.",
+    "category": "Industry Guide",
+    "date": "2026-11-24",
+    "readTime": "10 min"
+  },
+
+  {
+    "slug": "commercial-cleaning-municipal-water-treatment-plants-tri-state",
+    "image": "/blog/commercial-cleaning-municipal-water-treatment-plants-tri-state.jpg",
+    "title": "Facility Cleaning for Municipal Water Treatment Plants: Vendor Selection and Scope",
+    "excerpt": "Select a tri-state water-treatment facility cleaning vendor by access controls, clean-zone boundaries, spill rules, safety coordination, and verifiable coverage.",
+    "category": "Industry Guide",
+    "date": "2026-11-24",
+    "readTime": "10 min"
+  },
+
+  {
+    "slug": "commercial-cleaning-pharmaceutical-distribution-warehouses",
+    "image": "/blog/commercial-cleaning-pharmaceutical-distribution-warehouses.jpg",
+    "title": "Cleaning Contractors for Pharmaceutical Distribution Facilities: Compliance and Scope",
+    "excerpt": "Evaluate pharmaceutical distribution cleaning contractors by product protection, controlled-area access, approved methods, traceable records, and clear GMP boundaries.",
+    "category": "Industry Guide",
+    "date": "2026-11-24",
+    "readTime": "10 min"
+  },
+
+  {
+    "slug": "commercial-cleaning-port-terminal-facilities-ny-nj",
+    "image": "/blog/commercial-cleaning-port-terminal-facilities-ny-nj.jpg",
+    "title": "Janitorial Services for Port Terminals and Marine Logistics Facilities in New York and New Jersey",
+    "excerpt": "Compare NY and NJ port-terminal janitorial vendors by access controls, traffic separation, OSHA housekeeping, sanitation coverage, and secure reporting.",
+    "category": "Industry Guide",
+    "date": "2026-11-24",
+    "readTime": "10 min"
   }
 ];
 
