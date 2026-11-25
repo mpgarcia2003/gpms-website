@@ -939,7 +939,12 @@ const BLOG_INDEX = [
     "category": "Industry Guide",
     "date": "2026-11-24",
     "readTime": "10 min"
-  }
+  },
+  {"slug":"commercial-cleaning-automotive-dealerships-ny-nj","image":"/blog/commercial-cleaning-automotive-dealerships-ny-nj.jpg","title":"Commercial Cleaning for Automotive Dealerships in New York and New Jersey","excerpt":"A practical guide to dealership cleaning in New York and New Jersey, covering showroom glass, service bays, customer areas, schedules, safety, and vendor verification.","category":"Industry Guide","date":"2026-11-25","readTime":"10 min"},
+  {"slug":"commercial-cleaning-self-storage-facilities-ny-nj","image":"/blog/commercial-cleaning-self-storage-facilities-ny-nj.jpg","title":"Commercial Cleaning for Self-Storage Facilities in New York and New Jersey","excerpt":"Compare self-storage cleaning scopes for New York and New Jersey properties, from corridors and elevators to loading areas, restrooms, inspections, and pricing.","category":"Industry Guide","date":"2026-11-25","readTime":"10 min"},
+  {"slug":"commercial-cleaning-private-country-clubs-tristate","image":"/blog/commercial-cleaning-private-country-clubs-tristate.jpg","title":"Commercial Cleaning for Private Country Clubs Across the Tri-State Area","excerpt":"A facility-manager guide to country club cleaning across New York, New Jersey, and Connecticut, including dining rooms, locker areas, events, staffing, and quality control.","category":"Industry Guide","date":"2026-11-25","readTime":"10 min"},
+  {"slug":"commercial-cleaning-performing-arts-centers-nyc","image":"/blog/commercial-cleaning-performing-arts-centers-nyc.jpg","title":"Commercial Cleaning for Performing Arts Centers in New York City","excerpt":"How NYC theaters and performing arts centers can scope lobby, seating, restroom, backstage, and event-turnover cleaning with safer schedules and documented quality checks.","category":"Industry Guide","date":"2026-11-25","readTime":"10 min"},
+  {"slug":"commercial-cleaning-condominium-common-areas-nyc","image":"/blog/commercial-cleaning-condominium-common-areas-nyc.jpg","title":"Commercial Cleaning for New York City Condominium Common Areas","excerpt":"A practical NYC condo cleaning guide for lobbies, elevators, package rooms, amenities, restrooms, and waste areas, with vendor selection and service-verification advice.","category":"Industry Guide","date":"2026-11-25","readTime":"10 min"}
 ];
 
 export const metadata = {
